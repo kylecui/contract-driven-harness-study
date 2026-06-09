@@ -1,0 +1,232 @@
+{
+  "runs": [
+    {
+      "run_id": "research-workflow__strong_model__G0__r1",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "validation_status": "complete",
+      "passed": false,
+      "metrics": {
+        "task_success": 0.0,
+        "schema_validity": 0.4,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 0.3,
+        "cost_efficiency": 0.2,
+        "safety_consistency": 0.5
+      },
+      "mock": false
+    },
+    {
+      "run_id": "research-workflow__strong_model__G0__r2",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "validation_status": "complete",
+      "passed": false,
+      "metrics": {
+        "task_success": 0.0,
+        "schema_validity": 0.4,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 0.3,
+        "cost_efficiency": 0.2,
+        "safety_consistency": 0.5
+      },
+      "mock": false
+    },
+    {
+      "run_id": "research-workflow__strong_model__G0__r3",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "validation_status": "complete",
+      "passed": false,
+      "metrics": {
+        "task_success": 0.0,
+        "schema_validity": 0.4,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 0.3,
+        "cost_efficiency": 0.2,
+        "safety_consistency": 0.5
+      },
+      "mock": false
+    },
+    {
+      "run_id": "research-workflow__strong_model__G9__r1",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "validation_status": "complete",
+      "passed": true,
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 1.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0
+      },
+      "mock": false
+    },
+    {
+      "run_id": "research-workflow__strong_model__G9__r2",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "validation_status": "complete",
+      "passed": true,
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 1.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0
+      },
+      "mock": false
+    },
+    {
+      "run_id": "research-workflow__strong_model__G9__r3",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "validation_status": "complete",
+      "passed": true,
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 1.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0
+      },
+      "mock": false
+    },
+    {
+      "run_id": "research-workflow__budget_model__G0__r1",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "validation_status": "complete",
+      "passed": false,
+      "metrics": {
+        "task_success": 0.0,
+        "schema_validity": 0.2,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 0.233,
+        "cost_efficiency": 0.1,
+        "safety_consistency": 0.5
+      },
+      "mock": false
+    },
+    {
+      "run_id": "research-workflow__budget_model__G0__r2",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "validation_status": "complete",
+      "passed": false,
+      "metrics": {
+        "task_success": 0.0,
+        "schema_validity": 0.2,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 0.233,
+        "cost_efficiency": 0.1,
+        "safety_consistency": 0.5
+      },
+      "mock": false
+    },
+    {
+      "run_id": "research-workflow__budget_model__G0__r3",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "validation_status": "complete",
+      "passed": false,
+      "metrics": {
+        "task_success": 0.0,
+        "schema_validity": 0.6,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 0.367,
+        "cost_efficiency": 0.3,
+        "safety_consistency": 0.5
+      },
+      "mock": false
+    },
+    {
+      "run_id": "research-workflow__budget_model__G9__r1",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "validation_status": "complete",
+      "passed": true,
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 1.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0
+      },
+      "mock": false
+    },
+    {
+      "run_id": "research-workflow__budget_model__G9__r2",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "validation_status": "complete",
+      "passed": true,
+      "metrics": {
+        "task_success": 0.75,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 1.0,
+        "human_acceptance": 0.917,
+        "cost_efficiency": 0.875,
+        "safety_consistency": 1.0
+      },
+      "mock": false
+    },
+    {
+      "run_id": "research-workflow__budget_model__G9__r3",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "validation_status": "complete",
+      "passed": true,
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 1.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0
+      },
+      "mock": false
+    }
+  ]
+}

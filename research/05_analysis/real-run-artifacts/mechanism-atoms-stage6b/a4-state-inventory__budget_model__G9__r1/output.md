@@ -1,0 +1,8 @@
+
+
+{
+  "existing_files": ["AGENTS.md", "research/CONTEXT.md"],
+  "missing_files": ["research/06_outputs/README.md"],
+  "protected_files": ["AGENTS.md"],
+  "unknown_state": []
+}

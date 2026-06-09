@@ -1,0 +1,88 @@
+{
+  "note": "Rerun only remaining pending Stage 6 A8 budget G8/G9 runs after recheck.",
+  "run_count": 4,
+  "runs_dir": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48",
+  "runs": [
+    {
+      "run_id": "a8-evidence-type-separation__budget_model__G8__r1",
+      "fixture": "a8-evidence-type-separation",
+      "task_type": "mechanism_atom",
+      "model": "budget_model",
+      "harness_arm": "G8",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G8__r1\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G8__r1\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G8__r1\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G8__r1\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G8__r1\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G8__r1\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "a8-evidence-type-separation__budget_model__G8__r2",
+      "fixture": "a8-evidence-type-separation",
+      "task_type": "mechanism_atom",
+      "model": "budget_model",
+      "harness_arm": "G8",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G8__r2\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G8__r2\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G8__r2\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G8__r2\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G8__r2\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G8__r2\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "a8-evidence-type-separation__budget_model__G9__r1",
+      "fixture": "a8-evidence-type-separation",
+      "task_type": "mechanism_atom",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G9__r1\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G9__r1\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G9__r1\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G9__r1\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G9__r1\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G9__r1\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "a8-evidence-type-separation__budget_model__G9__r2",
+      "fixture": "a8-evidence-type-separation",
+      "task_type": "mechanism_atom",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G9__r2\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G9__r2\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G9__r2\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G9__r2\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G9__r2\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G9__r2\\adapter_request.json"
+      }
+    }
+  ],
+  "parent_manifest": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48-manifest-with-prompts.json",
+  "selection_filters": {
+    "fixture": [
+      "a8-evidence-type-separation"
+    ],
+    "model": [
+      "budget_model"
+    ],
+    "harness_arm": [
+      "G8",
+      "G9"
+    ],
+    "repetition": [
+      "1",
+      "2"
+    ]
+  }
+}

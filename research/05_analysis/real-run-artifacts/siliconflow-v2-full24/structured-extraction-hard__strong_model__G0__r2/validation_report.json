@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Output is not valid JSON.",
+  "findings": [
+    "Expected a JSON object with title, target_venue, fallback_venue, primary_metric, blocker, evidence_ids."
+  ],
+  "run_id": "structured-extraction-hard__strong_model__G0__r2",
+  "fixture": "structured-extraction-hard",
+  "model": "strong_model",
+  "harness_arm": "G0"
+}

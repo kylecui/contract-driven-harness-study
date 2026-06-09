@@ -1,0 +1,27 @@
+{
+  "task_spec_version": "0.1.0",
+  "task_id": "project_initialization_001",
+  "task_type": "project_initialization",
+  "intent": {
+    "goal": "Create a no-overwrite academic research project scaffold.",
+    "language": "en",
+    "freshness": "local_snapshot"
+  },
+  "constraints": [
+    "Do not overwrite existing AGENTS.md.",
+    "Create missing files only.",
+    "Use research workflow directories."
+  ],
+  "required_skills": [
+    "project-initializer",
+    "research-router"
+  ],
+  "allowed_tools": [
+    "filesystem"
+  ],
+  "risk_profile": "medium",
+  "memory_slice_id": "mem_project_initialization_001",
+  "evidence_bundle_id": "ev_project_initialization_001",
+  "output_contract_id": "out_project_initialization_001"
+}
+

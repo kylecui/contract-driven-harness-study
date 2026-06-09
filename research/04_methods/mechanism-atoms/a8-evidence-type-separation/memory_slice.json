@@ -1,0 +1,16 @@
+{
+  "memory_slice_id": "mem_mechanism_a8_evidence_type_separation_001",
+  "task_id": "mechanism_a8_evidence_type_separation_001",
+  "active_topic_id": "mechanism_atom_a8",
+  "mode": "task",
+  "must_load": [
+    "Claims include one directly measured result, one inference from multiple slices, one unresolved risk, and one recommended next action."
+  ],
+  "may_load": [
+    "Composition role: Research."
+  ],
+  "must_not_load": [
+    "Old broad workflow plans that bypass mechanism atoms."
+  ],
+  "token_budget": 1200
+}

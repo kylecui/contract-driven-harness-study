@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Hard structured extraction evaluated against active-proposal routing expectations.",
+  "findings": [],
+  "parsed_output": {
+    "proposal_name": "Contract-Driven Agent Harness Engineering",
+    "primary_venue": "ACL 2026 Findings",
+    "primary_metric": "cross-model gap compression",
+    "fallback_venue": "COLM systems workshop",
+    "other_fields": null
+  },
+  "run_id": "structured-extraction-hard__budget_model__G0__r1",
+  "fixture": "structured-extraction-hard",
+  "model": "budget_model",
+  "harness_arm": "G0"
+}

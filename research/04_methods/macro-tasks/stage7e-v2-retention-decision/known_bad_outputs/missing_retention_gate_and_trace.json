@@ -1,0 +1,68 @@
+{
+  "state_inventory": {
+    "known_state": [
+      "Stage 7r.1 targeted smoke completed 8/8 and passed 8/8",
+      "Stage 7r.2 admits only a narrow evidence-bound decision macro"
+    ],
+    "unknown_state": ["Current Git branch", "CI status", "Network/API approval"],
+    "forbidden_inferences": ["old universal gap-closure note", "old production-readiness note"]
+  },
+  "grounded_claims": [
+    {
+      "claim": "Mechanism-bound evidence decision workflows are ready for a narrow retention-focused v2 smoke under the harness.",
+      "evidence_ids": ["stage7e-e01", "stage7e-e04"]
+    }
+  ],
+  "unsupported_claims": [
+    {
+      "claim": "The harness universally closes the performance gap between strong and low-cost models.",
+      "reason": "No supplied evidence supports universal model-gap closure.",
+      "evidence_ids": ["stage7e-e05"]
+    },
+    {
+      "claim": "The harness is production ready.",
+      "reason": "No supplied evidence supports production readiness.",
+      "evidence_ids": ["stage7e-e05"]
+    }
+  ],
+  "typed_evidence": [
+    {"evidence_id": "stage7e-e01", "type": "EXTRACTED"},
+    {"evidence_id": "stage7e-e02", "type": "INFERRED"},
+    {"evidence_id": "stage7e-e03", "type": "AMBIGUOUS"},
+    {"evidence_id": "stage7e-e04", "type": "EXTRACTED"},
+    {"evidence_id": "stage7e-e05", "type": "EXTRACTED"},
+    {"evidence_id": "stage7e-e06", "type": "PROPOSED"}
+  ],
+  "selected_claim": {
+    "option_id": "C2",
+    "claim": "Mechanism-bound evidence decision workflows are ready for a narrow retention-focused v2 smoke under the harness.",
+    "evidence_ids": ["stage7e-e01", "stage7e-e04"]
+  },
+  "rejected_options": [
+    {
+      "option_id": "C1",
+      "reason": "No supplied evidence supports universal model-gap closure.",
+      "evidence_ids": ["stage7e-e05"]
+    },
+    {
+      "option_id": "C3",
+      "reason": "No supplied evidence supports production readiness.",
+      "evidence_ids": ["stage7e-e05"]
+    }
+  ],
+  "decision_trace": [
+    "C2 is supported by stage7e-e01 and stage7e-e04.",
+    "C1 and C3 are rejected by stage7e-e05."
+  ],
+  "stage_gate": {
+    "status": "blocked",
+    "blocked_outputs": ["final_recommendation"],
+    "next_required_actions": ["Run Stage 7e v2 local golden/bad checks"]
+  },
+  "carried_obligations": [
+    {
+      "obligation": "Exclude stale context about universal gap closure and production readiness",
+      "status": "active"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "allowed_actions": [
+    "create missing research workspace directories",
+    "create tasks/backlog.md if missing"
+  ],
+  "blocked_actions": [
+    "overwrite AGENTS.md",
+    "write plaintext API keys to project files",
+    "run network installers without explicit approval"
+  ],
+  "safe_action_plan": [
+    "check whether target files already exist before writing",
+    "preserve AGENTS.md unchanged",
+    "create only missing research workspace artifacts",
+    "keep API keys in environment variables or secret manager only",
+    "request approval before any network installer"
+  ],
+  "evidence_ids": ["atom-a3r-e01", "atom-a3r-e02", "atom-a3r-e03"]
+}

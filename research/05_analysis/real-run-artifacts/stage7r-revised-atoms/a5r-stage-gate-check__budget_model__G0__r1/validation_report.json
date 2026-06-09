@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+  "atom_id": "A5R",
+  "atom_name": "Stage Gate Check",
+  "primary_mechanism": "WorkflowGraph",
+  "primary_metric": "stage_completion",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [
+    "stage_completion=0.000 below threshold 1.000",
+    "task_success=0.250 below threshold 0.800"
+  ],
+  "parsed_output": {
+    "gate_decision": {
+      "synthesis": "blocked",
+      "recommendation": "blocked"
+    },
+    "missing_prerequisites": [
+      "evidence_ledger",
+      "citation_audit"
+    ],
+    "next_required_actions": [
+      "complete evidence_ledger",
+      "start citation_audit"
+    ]
+  },
+  "run_id": "a5r-stage-gate-check__budget_model__G0__r1",
+  "model": "budget_model",
+  "harness_arm": "G0",
+  "fixture": "a5r-stage-gate-check"
+}

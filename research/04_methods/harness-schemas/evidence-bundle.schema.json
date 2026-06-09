@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://petfish.local/schemas/evidence-bundle.schema.json",
+  "title": "EvidenceBundle",
+  "type": "object",
+  "required": [
+    "evidence_bundle_id",
+    "task_id",
+    "items"
+  ],
+  "properties": {
+    "evidence_bundle_id": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_id",
+          "evidence_id",
+          "evidence_type",
+          "claim"
+        ],
+        "properties": {
+          "source_id": {
+            "type": "string"
+          },
+          "evidence_id": {
+            "type": "string"
+          },
+          "evidence_type": {
+            "type": "string",
+            "enum": [
+              "EXTRACTED",
+              "INFERRED",
+              "AMBIGUOUS",
+              "PROPOSED"
+            ]
+          },
+          "claim": {
+            "type": "string"
+          },
+          "freshness": {
+            "type": "string"
+          },
+          "authority": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
+

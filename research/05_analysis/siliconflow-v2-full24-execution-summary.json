@@ -1,0 +1,20 @@
+{
+  "execute": true,
+  "confirm_cost": true,
+  "status": "failed",
+  "manifest": "research/05_analysis/real-run-artifacts/siliconflow-v2-full24-manifest-with-prompts.json",
+  "config": "research/04_methods/provider-config.siliconflow-reviewed.json",
+  "steps": [
+    {
+      "name": "preflight",
+      "return_code": 0,
+      "output": "research\\05_analysis\\siliconflow-v2-full24-execution-preflight.md"
+    },
+    {
+      "name": "adapter",
+      "return_code": 1,
+      "output": "research\\05_analysis\\siliconflow-v2-full24-execution-adapter.json"
+    }
+  ],
+  "decision": "Adapter failed; postprocess was not run."
+}

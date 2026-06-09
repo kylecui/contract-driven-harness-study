@@ -1,0 +1,31 @@
+{
+  "evidence_bundle_id": "ev_structured_extraction_001",
+  "task_id": "structured_extraction_001",
+  "items": [
+    {
+      "source_id": "fixture-proposal-excerpt",
+      "evidence_id": "fixture-e01",
+      "evidence_type": "EXTRACTED",
+      "claim": "Project title: Topic-Aware Compaction.",
+      "freshness": "snapshot",
+      "authority": "local_fixture"
+    },
+    {
+      "source_id": "fixture-proposal-excerpt",
+      "evidence_id": "fixture-e02",
+      "evidence_type": "EXTRACTED",
+      "claim": "Target venue: COLM 2026.",
+      "freshness": "snapshot",
+      "authority": "local_fixture"
+    },
+    {
+      "source_id": "fixture-proposal-excerpt",
+      "evidence_id": "fixture-e03",
+      "evidence_type": "EXTRACTED",
+      "claim": "Primary metric: token savings.",
+      "freshness": "snapshot",
+      "authority": "local_fixture"
+    }
+  ]
+}
+

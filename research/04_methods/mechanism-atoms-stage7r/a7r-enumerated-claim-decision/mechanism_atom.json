@@ -1,0 +1,28 @@
+{
+  "atom_version": "0.2.0-stage7r",
+  "atom_id": "A7R",
+  "atom_name": "Enumerated Claim Decision",
+  "primary_mechanism": "TraceLog",
+  "supporting_mechanisms": ["EvidenceBundle", "OutputContract"],
+  "capability_under_test": "Select one enumerated contribution claim using explicit evidence and decision rules.",
+  "non_goals": ["Do not invent new contribution claims.", "Do not optimize rhetorical framing."],
+  "input_contract": {
+    "required_inputs": ["input.md", "task_spec.json", "output_contract.json", "evidence_bundle.json"],
+    "fixed_snapshot": true,
+    "forbidden_assumptions": ["Do not claim universal gap closure.", "Do not claim prose-style improvement."]
+  },
+  "output_contract_id": "out_stage7r_a7r_enumerated_claim_decision_001",
+  "pass_criteria": [
+    {"metric": "trace_completeness", "threshold": 1.0, "required": true},
+    {"metric": "task_success", "threshold": 0.85, "required": true}
+  ],
+  "known_failure_modes": ["Ambiguous decision label", "Universal claim overreach", "Unmeasured outcome selected"],
+  "composition_interface": {
+    "input_from_previous": ["candidate_claim_options", "evidence_bundle"],
+    "output_to_next": ["selected_option_id", "rejected_option_ids", "decision_trace"],
+    "state_dependencies": [],
+    "evidence_dependencies": ["evidence_bundle"],
+    "failure_signal": "enumerated-claim-decision_failed",
+    "repair_policy": "select_supported_option_id_and_record_rejections"
+  }
+}

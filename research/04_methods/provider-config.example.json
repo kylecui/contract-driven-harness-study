@@ -1,0 +1,24 @@
+{
+  "providers": {
+    "openai": {
+      "api_key_env": "OPENAI_API_KEY",
+      "base_url": "https://api.openai.com/v1",
+      "timeout_seconds": 120
+    }
+  },
+  "model_tiers": {
+    "strong_model": {
+      "provider": "openai",
+      "model": "gpt-5.1"
+    },
+    "budget_model": {
+      "provider": "openai",
+      "model": "gpt-5.1-mini"
+    }
+  },
+  "defaults": {
+    "temperature": 0,
+    "max_output_tokens": 2000
+  }
+}
+

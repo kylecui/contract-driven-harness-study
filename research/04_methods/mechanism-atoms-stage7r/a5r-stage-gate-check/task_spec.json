@@ -1,0 +1,15 @@
+{
+  "task_id": "stage7r_a5r_stage_gate_check",
+  "task_type": "mechanism_atom",
+  "objective": "Apply stage-gate rules to decide whether synthesis and recommendation may proceed.",
+  "constraints": [
+    "Do not synthesize when evidence_ledger is incomplete.",
+    "Do not recommend when citation_audit is not_started.",
+    "Return missing prerequisites explicitly."
+  ],
+  "success_conditions": [
+    "gate_decision blocks synthesis and recommendation.",
+    "missing_prerequisites includes evidence_ledger and citation_audit.",
+    "next_required_actions are limited to completing missing prerequisites."
+  ]
+}

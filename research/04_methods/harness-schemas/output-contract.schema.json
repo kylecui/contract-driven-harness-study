@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://petfish.local/schemas/output-contract.schema.json",
+  "title": "OutputContract",
+  "type": "object",
+  "required": [
+    "output_contract_id",
+    "format",
+    "required_sections",
+    "citation_policy"
+  ],
+  "properties": {
+    "output_contract_id": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string",
+      "enum": [
+        "markdown_report",
+        "json",
+        "patch",
+        "checklist",
+        "table"
+      ]
+    },
+    "required_sections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "citation_policy": {
+      "type": "string",
+      "enum": [
+        "none",
+        "important_claims",
+        "every_claim"
+      ]
+    },
+    "style_profile": {
+      "type": "string"
+    },
+    "tool_trace_required": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}
+

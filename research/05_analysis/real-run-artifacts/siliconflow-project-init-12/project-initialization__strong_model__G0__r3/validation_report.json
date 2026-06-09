@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Project initialization output evaluated against fixture expectations.",
+  "findings": [],
+  "run_id": "project-initialization__strong_model__G0__r3",
+  "fixture": "project-initialization",
+  "model": "strong_model",
+  "harness_arm": "G0"
+}

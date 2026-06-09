@@ -1,0 +1,15 @@
+
+
+{
+  "grounded_claims": [
+    "G9 improved structured extraction contract adherence.",
+    "Research workflow G0 had citation grounding failures."
+  ],
+  "unsupported_claims": [
+    "production readiness"
+  ],
+  "evidence_ids": [
+    "atom-a2r-e01",
+    "atom-a2r-e02"
+  ]
+}

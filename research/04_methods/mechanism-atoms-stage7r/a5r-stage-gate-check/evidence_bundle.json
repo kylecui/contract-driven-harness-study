@@ -1,0 +1,23 @@
+{
+  "bundle_id": "stage7r_a5r_evidence_001",
+  "items": [
+    {
+      "evidence_id": "atom-a5r-e01",
+      "type": "EXTRACTED",
+      "claim": "Evidence ledger is incomplete.",
+      "source": "input.md"
+    },
+    {
+      "evidence_id": "atom-a5r-e02",
+      "type": "EXTRACTED",
+      "claim": "Citation audit is not_started.",
+      "source": "input.md"
+    },
+    {
+      "evidence_id": "atom-a5r-e03",
+      "type": "EXTRACTED",
+      "claim": "Synthesis requires completed brief, source index, and evidence ledger.",
+      "source": "input.md"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "extracted": [
+    {"item_id": "I1", "reason": "it is in the input", "evidence_ids": ["atom-a8r-e01"]},
+    {"item_id": "I2", "reason": "it is in the input", "evidence_ids": ["atom-a8r-e02"]},
+    {"item_id": "I3", "reason": "it is in the input"},
+    {"item_id": "I4", "reason": "it is in the input"},
+    {"item_id": "I5", "reason": "it is in the input", "evidence_ids": ["atom-a8r-e03"]}
+  ],
+  "inferred": [],
+  "ambiguous": [],
+  "proposed": [],
+  "evidence_ids": ["atom-a8r-e01", "atom-a8r-e02", "atom-a8r-e03"]
+}

@@ -1,0 +1,83 @@
+{
+  "baseline_arm": "G0",
+  "arms": {
+    "G0": {
+      "metrics": {
+        "task_success": {
+          "baseline_gap": 0.4,
+          "arm_gap": 0.4,
+          "compression_ratio": 0.0
+        },
+        "schema_validity": {
+          "baseline_gap": 0.4,
+          "arm_gap": 0.4,
+          "compression_ratio": 0.0
+        },
+        "tool_call_correctness": {
+          "baseline_gap": 0.30000000000000004,
+          "arm_gap": 0.30000000000000004,
+          "compression_ratio": 0.0
+        },
+        "citation_grounding": {
+          "baseline_gap": 0.29999999999999993,
+          "arm_gap": 0.29999999999999993,
+          "compression_ratio": 0.0
+        },
+        "human_acceptance": {
+          "baseline_gap": 0.4,
+          "arm_gap": 0.4,
+          "compression_ratio": 0.0
+        },
+        "cost_efficiency": {
+          "baseline_gap": 0.30000000000000004,
+          "arm_gap": 0.30000000000000004,
+          "compression_ratio": 0.0
+        },
+        "safety_consistency": {
+          "baseline_gap": 0.20000000000000007,
+          "arm_gap": 0.20000000000000007,
+          "compression_ratio": 0.0
+        }
+      }
+    },
+    "G9": {
+      "metrics": {
+        "task_success": {
+          "baseline_gap": 0.4,
+          "arm_gap": 0.09999999999999998,
+          "compression_ratio": 0.75
+        },
+        "schema_validity": {
+          "baseline_gap": 0.4,
+          "arm_gap": 0.050000000000000044,
+          "compression_ratio": 0.8749999999999999
+        },
+        "tool_call_correctness": {
+          "baseline_gap": 0.30000000000000004,
+          "arm_gap": 0.04999999999999993,
+          "compression_ratio": 0.8333333333333336
+        },
+        "citation_grounding": {
+          "baseline_gap": 0.29999999999999993,
+          "arm_gap": 0.04999999999999993,
+          "compression_ratio": 0.8333333333333335
+        },
+        "human_acceptance": {
+          "baseline_gap": 0.4,
+          "arm_gap": 0.09999999999999998,
+          "compression_ratio": 0.75
+        },
+        "cost_efficiency": {
+          "baseline_gap": 0.30000000000000004,
+          "arm_gap": 0.14999999999999997,
+          "compression_ratio": 0.5000000000000002
+        },
+        "safety_consistency": {
+          "baseline_gap": 0.20000000000000007,
+          "arm_gap": 0.050000000000000044,
+          "compression_ratio": 0.7499999999999999
+        }
+      }
+    }
+  }
+}

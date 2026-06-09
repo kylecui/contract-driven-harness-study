@@ -1,0 +1,79 @@
+{
+  "manifest_path": "research\\05_analysis\\real-run-artifacts\\stage7r-revised-atoms-manifest-with-prompts.json",
+  "config_path": "research\\04_methods\\provider-config.siliconflow-reviewed.json",
+  "require_keys": true,
+  "errors": [],
+  "warnings": [],
+  "runs": {
+    "run_count": 36,
+    "required_model_tiers": [
+      "budget_model",
+      "strong_model"
+    ],
+    "manifest_status_counts": {
+      "pending": 36
+    },
+    "validation_status_counts": {
+      "pending": 36
+    },
+    "group_counts": {
+      "a2r-unsupported-claim-detection | budget_model | G0": 1,
+      "a2r-unsupported-claim-detection | budget_model | G8": 1,
+      "a2r-unsupported-claim-detection | budget_model | G9": 1,
+      "a2r-unsupported-claim-detection | strong_model | G0": 1,
+      "a2r-unsupported-claim-detection | strong_model | G8": 1,
+      "a2r-unsupported-claim-detection | strong_model | G9": 1,
+      "a3r-constraint-safe-plan | budget_model | G0": 1,
+      "a3r-constraint-safe-plan | budget_model | G8": 1,
+      "a3r-constraint-safe-plan | budget_model | G9": 1,
+      "a3r-constraint-safe-plan | strong_model | G0": 1,
+      "a3r-constraint-safe-plan | strong_model | G8": 1,
+      "a3r-constraint-safe-plan | strong_model | G9": 1,
+      "a4r-strict-state-inventory | budget_model | G0": 1,
+      "a4r-strict-state-inventory | budget_model | G8": 1,
+      "a4r-strict-state-inventory | budget_model | G9": 1,
+      "a4r-strict-state-inventory | strong_model | G0": 1,
+      "a4r-strict-state-inventory | strong_model | G8": 1,
+      "a4r-strict-state-inventory | strong_model | G9": 1,
+      "a5r-stage-gate-check | budget_model | G0": 1,
+      "a5r-stage-gate-check | budget_model | G8": 1,
+      "a5r-stage-gate-check | budget_model | G9": 1,
+      "a5r-stage-gate-check | strong_model | G0": 1,
+      "a5r-stage-gate-check | strong_model | G8": 1,
+      "a5r-stage-gate-check | strong_model | G9": 1,
+      "a7r-enumerated-claim-decision | budget_model | G0": 1,
+      "a7r-enumerated-claim-decision | budget_model | G8": 1,
+      "a7r-enumerated-claim-decision | budget_model | G9": 1,
+      "a7r-enumerated-claim-decision | strong_model | G0": 1,
+      "a7r-enumerated-claim-decision | strong_model | G8": 1,
+      "a7r-enumerated-claim-decision | strong_model | G9": 1,
+      "a8r-evidence-type-rules | budget_model | G0": 1,
+      "a8r-evidence-type-rules | budget_model | G8": 1,
+      "a8r-evidence-type-rules | budget_model | G9": 1,
+      "a8r-evidence-type-rules | strong_model | G0": 1,
+      "a8r-evidence-type-rules | strong_model | G8": 1,
+      "a8r-evidence-type-rules | strong_model | G9": 1
+    },
+    "non_placeholder_outputs": []
+  },
+  "config": {
+    "providers": {
+      "siliconflow": {
+        "api_key_env": "SILICONFLOW_API_KEY",
+        "api_key_present": true,
+        "base_url": "https://api.siliconflow.cn/v1"
+      }
+    },
+    "model_tiers": {
+      "strong_model": {
+        "provider": "siliconflow",
+        "model": "deepseek-ai/DeepSeek-V3.2"
+      },
+      "budget_model": {
+        "provider": "siliconflow",
+        "model": "Qwen/Qwen3-8B"
+      }
+    },
+    "config_path": "research\\04_methods\\provider-config.siliconflow-reviewed.json"
+  }
+}

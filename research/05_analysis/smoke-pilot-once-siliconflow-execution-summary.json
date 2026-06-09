@@ -1,0 +1,25 @@
+{
+  "execute": true,
+  "confirm_cost": true,
+  "status": "complete",
+  "manifest": "research/05_analysis/real-run-artifacts/first-slice-smoke-manifest.json",
+  "config": "research/04_methods/provider-config.siliconflow-reviewed.json",
+  "steps": [
+    {
+      "name": "preflight",
+      "return_code": 0,
+      "output": "research\\05_analysis\\smoke-pilot-once-siliconflow-execution-preflight.md"
+    },
+    {
+      "name": "adapter",
+      "return_code": 0,
+      "output": "research\\05_analysis\\smoke-pilot-once-siliconflow-execution-adapter.json"
+    },
+    {
+      "name": "postprocess",
+      "return_code": 0,
+      "output": "research\\05_analysis\\smoke-pilot-once-siliconflow-execution-postprocess-summary.md"
+    }
+  ],
+  "decision": "Execution workflow completed; inspect postprocess outputs before updating evidence."
+}

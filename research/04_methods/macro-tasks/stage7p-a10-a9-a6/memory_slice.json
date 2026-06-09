@@ -1,0 +1,21 @@
+{
+  "memory_slice_id": "mem_stage7p_a10_a9_a6_001",
+  "task_id": "task_stage7p_a10_a9_a6_001",
+  "active_topic_id": "stage7p_partial_composition",
+  "mode": "task",
+  "must_load": [
+    "Current roadmap says Stage 2 is next.",
+    "Existing files: AGENTS.md and research/CONTEXT.md.",
+    "Missing file: research/06_outputs/README.md.",
+    "Protected file: AGENTS.md.",
+    "Original output: {\"title\":\"Contract-Driven Harness\"}."
+  ],
+  "may_load": [
+    "Partial composition is allowed only for A10 -> A9 -> A6."
+  ],
+  "must_not_load": [
+    "Old plan says run another broad workflow slice.",
+    "Any claim that full project initialization or full research workflow has been validated."
+  ],
+  "token_budget": 1800
+}

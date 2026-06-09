@@ -1,0 +1,26 @@
+{
+  "output_contract_id": "out_stage7p_v2_a10_a9_a6_001",
+  "format": "json",
+  "required_sections": [
+    "bounded_context",
+    "carried_obligations",
+    "safe_action_plan",
+    "validator_repair",
+    "composition_trace",
+    "boundary"
+  ],
+  "required_nested_fields": {
+    "bounded_context": [
+      "used_context",
+      "excluded_context"
+    ],
+    "carried_obligations": [
+      "from_atom",
+      "obligation",
+      "status"
+    ]
+  },
+  "citation_policy": "important_claims",
+  "style_profile": "minimal_json",
+  "tool_trace_required": true
+}

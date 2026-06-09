@@ -1,0 +1,334 @@
+{
+  "baseline_arm": "G0",
+  "strong_model": "strong_model",
+  "weak_model": "budget_model",
+  "arms": {
+    "G0": {
+      "metrics": {
+        "task_success": {
+          "baseline_gap": 0.166,
+          "arm_gap": 0.166,
+          "compression_ratio": 0.0,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 0.166
+        },
+        "schema_validity": {
+          "baseline_gap": 0.16699999999999998,
+          "arm_gap": 0.16699999999999998,
+          "compression_ratio": 0.0,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 0.16699999999999998
+        },
+        "tool_call_correctness": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 0.0
+        },
+        "citation_grounding": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 0.0
+        },
+        "human_acceptance": {
+          "baseline_gap": 0.16599999999999998,
+          "arm_gap": 0.16599999999999998,
+          "compression_ratio": 0.0,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 0.16599999999999998
+        },
+        "cost_efficiency": {
+          "baseline_gap": 0.166,
+          "arm_gap": 0.166,
+          "compression_ratio": 0.0,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 0.166
+        },
+        "safety_consistency": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 0.0
+        },
+        "constraint_consistency": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 0.0
+        },
+        "state_accuracy": {
+          "baseline_gap": 1.0,
+          "arm_gap": 1.0,
+          "compression_ratio": 0.0,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 1.0
+        },
+        "evidence_type_accuracy": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 0.0
+        },
+        "stage_completion": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 0.0
+        },
+        "repair_success": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 0.0
+        },
+        "trace_completeness": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 0.0
+        },
+        "context_relevance": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 0.0
+        },
+        "atom_primary_metric": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 0.0
+        }
+      }
+    },
+    "G8": {
+      "metrics": {
+        "task_success": {
+          "baseline_gap": 0.166,
+          "arm_gap": 0.0,
+          "compression_ratio": 1.0,
+          "weak_model_enablement_lift": 0.667,
+          "harnessed_weak_vs_strong_baseline": 0.833
+        },
+        "schema_validity": {
+          "baseline_gap": 0.16699999999999998,
+          "arm_gap": 0.0,
+          "compression_ratio": 1.0,
+          "weak_model_enablement_lift": 0.5,
+          "harnessed_weak_vs_strong_baseline": 0.667
+        },
+        "tool_call_correctness": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 0.0
+        },
+        "citation_grounding": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 0.0
+        },
+        "human_acceptance": {
+          "baseline_gap": 0.16599999999999998,
+          "arm_gap": 0.0,
+          "compression_ratio": 1.0,
+          "weak_model_enablement_lift": 0.5840000000000001,
+          "harnessed_weak_vs_strong_baseline": 0.75
+        },
+        "cost_efficiency": {
+          "baseline_gap": 0.166,
+          "arm_gap": 0.0,
+          "compression_ratio": 1.0,
+          "weak_model_enablement_lift": 0.667,
+          "harnessed_weak_vs_strong_baseline": 0.833
+        },
+        "safety_consistency": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 1.0,
+          "harnessed_weak_vs_strong_baseline": 1.0
+        },
+        "constraint_consistency": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 1.0,
+          "harnessed_weak_vs_strong_baseline": 1.0
+        },
+        "state_accuracy": {
+          "baseline_gap": 1.0,
+          "arm_gap": 0.0,
+          "compression_ratio": 1.0,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 1.0
+        },
+        "evidence_type_accuracy": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 0.0
+        },
+        "stage_completion": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 1.0,
+          "harnessed_weak_vs_strong_baseline": 1.0
+        },
+        "repair_success": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 1.0,
+          "harnessed_weak_vs_strong_baseline": 1.0
+        },
+        "trace_completeness": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 1.0,
+          "harnessed_weak_vs_strong_baseline": 1.0
+        },
+        "context_relevance": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 1.0,
+          "harnessed_weak_vs_strong_baseline": 1.0
+        },
+        "atom_primary_metric": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 1.0,
+          "harnessed_weak_vs_strong_baseline": 1.0
+        }
+      }
+    },
+    "G9": {
+      "metrics": {
+        "task_success": {
+          "baseline_gap": 0.166,
+          "arm_gap": 0.0,
+          "compression_ratio": 1.0,
+          "weak_model_enablement_lift": 0.667,
+          "harnessed_weak_vs_strong_baseline": 0.833
+        },
+        "schema_validity": {
+          "baseline_gap": 0.16699999999999998,
+          "arm_gap": 0.0,
+          "compression_ratio": 1.0,
+          "weak_model_enablement_lift": 0.5,
+          "harnessed_weak_vs_strong_baseline": 0.667
+        },
+        "tool_call_correctness": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 0.0
+        },
+        "citation_grounding": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 0.0
+        },
+        "human_acceptance": {
+          "baseline_gap": 0.16599999999999998,
+          "arm_gap": 0.0,
+          "compression_ratio": 1.0,
+          "weak_model_enablement_lift": 0.5840000000000001,
+          "harnessed_weak_vs_strong_baseline": 0.75
+        },
+        "cost_efficiency": {
+          "baseline_gap": 0.166,
+          "arm_gap": 0.0,
+          "compression_ratio": 1.0,
+          "weak_model_enablement_lift": 0.667,
+          "harnessed_weak_vs_strong_baseline": 0.833
+        },
+        "safety_consistency": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 1.0,
+          "harnessed_weak_vs_strong_baseline": 1.0
+        },
+        "constraint_consistency": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 1.0,
+          "harnessed_weak_vs_strong_baseline": 1.0
+        },
+        "state_accuracy": {
+          "baseline_gap": 1.0,
+          "arm_gap": 0.0,
+          "compression_ratio": 1.0,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 1.0
+        },
+        "evidence_type_accuracy": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 0.0,
+          "harnessed_weak_vs_strong_baseline": 0.0
+        },
+        "stage_completion": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 1.0,
+          "harnessed_weak_vs_strong_baseline": 1.0
+        },
+        "repair_success": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 1.0,
+          "harnessed_weak_vs_strong_baseline": 1.0
+        },
+        "trace_completeness": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 1.0,
+          "harnessed_weak_vs_strong_baseline": 1.0
+        },
+        "context_relevance": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 1.0,
+          "harnessed_weak_vs_strong_baseline": 1.0
+        },
+        "atom_primary_metric": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null,
+          "weak_model_enablement_lift": 1.0,
+          "harnessed_weak_vs_strong_baseline": 1.0
+        }
+      }
+    }
+  }
+}

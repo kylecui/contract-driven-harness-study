@@ -1,0 +1,132 @@
+\begin{thebibliography}{10}
+
+\bibitem{P2_EXT_AGENTSPEC}
+Soufiane Amini et~al.
+\newblock Open agent specification (agent spec): A unified representation for
+  ai agents, 2025.
+\newblock arXiv v4 as of 2025-11-07.
+
+\bibitem{P2_EXT_ANTHROPIC}
+{Anthropic}.
+\newblock Building effective agents.
+\newblock
+  \url{https://www.anthropic.com/engineering/building-effective-agents}.
+\newblock Accessed 2026-06-09.
+
+\bibitem{P2_EXT_LLAMAFIREWALL}
+Sahana Chennabasappa, Cyrus Nikolaidis, Daniel Song, David Molnar, Stephanie
+  Ding, Shengye Wan, Spencer Whitman, Lauren Deason, Nicholas Doucette, Abraham
+  Montilla, Alekhya Gampa, Beto de~Paola, Dominik Gabi, James Crnkovich,
+  Jean-Christophe Testud, Kat He, Rashnil Chaturvedi, Wu~Zhou, and Joshua Saxe.
+\newblock Llamafirewall: An open source guardrail system for building secure ai
+  agents, 2025.
+\newblock arXiv v1 as of 2025-05-06.
+
+\bibitem{P2_LOCAL_ARTIFACTS}
+{Contract-Driven Harness Study}.
+\newblock Local experiment artifacts and evidence ledger.
+\newblock Local reproducibility package under research/, 2026.
+\newblock Includes source index, evidence ledger, stage reports, metrics files,
+  event logs, macro fixtures, and paper drafts.
+
+\bibitem{P2_EXT_OUTLINES}
+{dottxt-ai}.
+\newblock Outlines documentation.
+\newblock \url{https://dottxt-ai.github.io/outlines/latest/}.
+\newblock Accessed 2026-06-09.
+
+\bibitem{P2_EXT_GUARDRAILS}
+{Guardrails AI}.
+\newblock Validators documentation.
+\newblock \url{https://guardrailsai.com/docs/concepts/validators/}.
+\newblock Accessed 2026-06-09.
+
+\bibitem{P2_EXT_DSPY}
+Omar Khattab et~al.
+\newblock {DSPy}: Compiling declarative language model calls into
+  self-improving pipelines, 2023.
+
+\bibitem{P2_EXT_LANGGRAPH}
+{LangChain}.
+\newblock Langgraph documentation.
+\newblock \url{https://docs.langchain.com/oss/python/langgraph}.
+\newblock Accessed 2026-06-09.
+
+\bibitem{P2_EXT_SIC}
+Alexander~W. Lee, Justin Chan, Michael Fu, Nicolas Kim, Akshay Mehta, Deepti
+  Raghavan, and Ugur Cetintemel.
+\newblock Semantic integrity constraints: Declarative guardrails for
+  ai-augmented data processing systems, 2025.
+\newblock arXiv v3 as of 2025-08-07; also PVLDB 18(11):4073--4080, 2025.
+
+\bibitem{P2_EXT_LETTA}
+{Letta}.
+\newblock Agents overview documentation.
+\newblock \url{https://docs.letta.com/guides/agents/overview/}.
+\newblock Accessed 2026-06-09.
+
+\bibitem{P2_EXT_RAG}
+Patrick Lewis et~al.
+\newblock Retrieval-augmented generation for knowledge-intensive {NLP} tasks,
+  2020.
+
+\bibitem{P2_EXT_AUTOGEN}
+{Microsoft}.
+\newblock Autogen documentation.
+\newblock \url{https://microsoft.github.io/autogen/}.
+\newblock Accessed 2026-06-09.
+
+\bibitem{P2_EXT_SEMANTIC_KERNEL}
+{Microsoft}.
+\newblock Semantic kernel documentation.
+\newblock \url{https://learn.microsoft.com/en-us/semantic-kernel/}.
+\newblock Accessed 2026-06-09.
+
+\bibitem{P2_EXT_OPENAI_STRUCTURED_OUTPUTS}
+{OpenAI}.
+\newblock Structured outputs guide.
+\newblock \url{https://platform.openai.com/docs/guides/structured-outputs}.
+\newblock Accessed 2026-06-09.
+
+\bibitem{P2_EXT_MEMGPT}
+Charles Packer et~al.
+\newblock {MemGPT}: Towards {LLM}s as operating systems, 2023.
+
+\bibitem{P2_EXT_GORILLA}
+Shishir~G. Patil et~al.
+\newblock Gorilla: Large language model connected with massive {API}s, 2023.
+
+\bibitem{P2_EXT_TOOLFORMER}
+Timo Schick et~al.
+\newblock Toolformer: Language models can teach themselves to use tools, 2023.
+
+\bibitem{P2_EXT_SILICONFLOW_CHAT}
+{SiliconFlow}.
+\newblock Chat completions and model documentation.
+\newblock
+  \url{https://docs.siliconflow.cn/cn/api-reference/chat-completions/chat-completions}.
+\newblock Accessed 2026-06-09; model list also consulted at
+  https://docs.siliconflow.cn/cn/userguide/models.
+
+\bibitem{P2_EXT_AGENTSPEX}
+Pengcheng Wang et~al.
+\newblock {AgentSPEX}: An agent specification and execution language, 2026.
+
+\bibitem{P2_EXT_AGENTPROOF}
+Melwin Xavier, Vaisakh M~A, Melveena Jolly, and Midhun Xavier.
+\newblock Agentproof: Static verification of agent workflow graphs, 2026.
+\newblock Submitted 2026-03-20.
+
+\bibitem{P2_EXT_REACT}
+Shunyu Yao et~al.
+\newblock {ReAct}: Synergizing reasoning and acting in language models, 2022.
+
+\bibitem{P2_EXT_OAGENTS}
+He~Zhu, Tianrui Qin, King Zhu, Heyuan Huang, Yeyi Guan, Jinxiang Xia, Yi~Yao,
+  Hanhao Li, Ningning Wang, Pai Liu, Tianhao Peng, Xin Gui, Xiaowan Li, Yuhui
+  Liu, Yuchen~Eleanor Jiang, Jun Wang, Changwang Zhang, Xiangru Tang, Ge~Zhang,
+  Jian Yang, Minghao Liu, Xitong Gao, Jiaheng Liu, and Wangchunshu Zhou.
+\newblock {OAgents}: An empirical study of building effective agents, 2025.
+\newblock arXiv v2 as of 2025-06-23.
+
+\end{thebibliography}

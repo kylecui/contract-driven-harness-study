@@ -1,0 +1,27 @@
+{
+  "task_id": "stage7e_evidence_bound_decision",
+  "task_type": "stage7e_evidence_bound_macro",
+  "objective": "Compose admitted mechanisms into one bounded evidence decision packet without using stale context or overclaiming.",
+  "composition_chain": ["A4R", "A2R1", "A8R", "A7R1", "A5R"],
+  "constraints": [
+    "Use only supplied workspace snapshot and evidence items.",
+    "Do not infer Git branch, CI status, or network/API approval.",
+    "Exclude the stale context from the decision.",
+    "Bind every grounded claim to claim-level evidence IDs.",
+    "Classify evidence into EXTRACTED, INFERRED, AMBIGUOUS, or PROPOSED.",
+    "Select exactly one candidate claim.",
+    "Reject overbroad or unsupported claims with evidence-linked reasons.",
+    "Block final recommendation until Stage 7e local gate and smoke are complete.",
+    "Carry forward negative obligations."
+  ],
+  "success_conditions": [
+    "State inventory separates known and unknown state.",
+    "Grounded claims have claim-level evidence IDs.",
+    "Production readiness and universal gap closure are not grounded.",
+    "Evidence typing includes EXTRACTED, INFERRED, AMBIGUOUS, and PROPOSED where appropriate.",
+    "Selected claim is C2.",
+    "Rejected options include C1 and C3 with evidence IDs.",
+    "Stage gate blocks final recommendation.",
+    "Carried obligations preserve stale-context exclusion and unsupported-production-readiness exclusion."
+  ]
+}

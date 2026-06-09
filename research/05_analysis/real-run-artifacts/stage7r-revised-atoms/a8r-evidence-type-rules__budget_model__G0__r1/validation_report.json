@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+  "atom_id": "A8R",
+  "atom_name": "Evidence Type Rules",
+  "primary_mechanism": "EvidenceBundle",
+  "primary_metric": "citation_grounding",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [
+    "evidence_type_accuracy=0.000 below threshold 1.000",
+    "task_success=0.000 below threshold 0.800"
+  ],
+  "parsed_output": {
+    "I1": "EXTRACTED",
+    "I2": "INFERRED",
+    "I3": "PROPOSED",
+    "I4": "PROPOSED",
+    "I5": "AMBIGUOUS"
+  },
+  "run_id": "a8r-evidence-type-rules__budget_model__G0__r1",
+  "model": "budget_model",
+  "harness_arm": "G0",
+  "fixture": "a8r-evidence-type-rules"
+}

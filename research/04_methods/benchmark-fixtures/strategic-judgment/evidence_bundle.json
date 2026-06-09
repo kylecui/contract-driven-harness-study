@@ -1,0 +1,23 @@
+{
+  "evidence_bundle_id": "ev_strategic_judgment_001",
+  "task_id": "strategic_judgment_001",
+  "items": [
+    {
+      "source_id": "fixture-strategy-notes",
+      "evidence_id": "fixture-sj-e01",
+      "evidence_type": "EXTRACTED",
+      "claim": "Topic-Aware Compaction has existing A/B data and scripts.",
+      "freshness": "snapshot",
+      "authority": "local_fixture"
+    },
+    {
+      "source_id": "fixture-strategy-notes",
+      "evidence_id": "fixture-sj-e02",
+      "evidence_type": "EXTRACTED",
+      "claim": "Contract-Driven Agent Harness Engineering has broader conceptual scope but lacks benchmark results.",
+      "freshness": "snapshot",
+      "authority": "local_fixture"
+    }
+  ]
+}
+

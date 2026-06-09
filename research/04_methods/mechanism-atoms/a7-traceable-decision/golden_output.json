@@ -1,0 +1,15 @@
+{
+  "decision": "weak-model enablement",
+  "criteria_used": [
+    "baseline gap n/a",
+    "budget model improves"
+  ],
+  "evidence_ids": [
+    "atom-a7-e01"
+  ],
+  "trace": [
+    "checked baseline gap",
+    "checked budget lift",
+    "selected bounded claim"
+  ]
+}

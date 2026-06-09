@@ -1,0 +1,58 @@
+{
+  "atom_version": "0.1.0",
+  "atom_id": "A5",
+  "atom_name": "Stage-Gated Synthesis",
+  "primary_mechanism": "WorkflowGraph",
+  "supporting_mechanisms": [
+    "EvidenceBundle",
+    "OutputContract",
+    "TraceLog"
+  ],
+  "capability_under_test": "Follow a required brief -> evidence -> synthesis -> recommendation stage order.",
+  "non_goals": [
+    "Do not evaluate general prose quality.",
+    "Do not evaluate broad end-to-end workflow success."
+  ],
+  "input_contract": {
+    "required_inputs": [
+      "input.md",
+      "task_spec.json",
+      "output_contract.json"
+    ],
+    "fixed_snapshot": true,
+    "forbidden_assumptions": [
+      "Do not use live web state.",
+      "Do not assume files, evidence, or constraints absent from the fixture."
+    ]
+  },
+  "output_contract_id": "out_mechanism_a5_stage_gated_synthesis_001",
+  "pass_criteria": [
+    {
+      "metric": "stage_completion",
+      "threshold": 1.0,
+      "required": true
+    },
+    {
+      "metric": "task_success",
+      "threshold": 0.8,
+      "required": true
+    }
+  ],
+  "known_failure_modes": [
+    "Stage skipping"
+  ],
+  "composition_interface": {
+    "input_from_previous": [
+      "fixed_snapshot"
+    ],
+    "output_to_next": [
+      "staged_synthesis"
+    ],
+    "state_dependencies": [],
+    "evidence_dependencies": [
+      "evidence_bundle"
+    ],
+    "failure_signal": "stage-gated-synthesis_failed",
+    "repair_policy": "stop_and_report"
+  }
+}

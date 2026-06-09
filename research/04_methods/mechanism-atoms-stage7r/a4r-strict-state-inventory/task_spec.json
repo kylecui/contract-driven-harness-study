@@ -1,0 +1,15 @@
+{
+  "task_id": "stage7r_a4r_strict_state_inventory",
+  "task_type": "mechanism_atom",
+  "objective": "Inventory known and unknown workspace state without inference.",
+  "constraints": [
+    "Use only the supplied fixed snapshot.",
+    "Mark unstated values as unknown.",
+    "Do not infer CI status, Git branch, or network approval."
+  ],
+  "success_conditions": [
+    "Known state contains only supplied facts.",
+    "Unknown state includes Git branch, CI status, and network approval.",
+    "Forbidden inferences are explicit."
+  ]
+}

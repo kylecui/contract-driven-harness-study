@@ -1,0 +1,44 @@
+{
+  "status": "complete",
+  "passed": true,
+  "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+  "atom_id": "A4R",
+  "atom_name": "Strict State Inventory",
+  "primary_mechanism": "MemorySlice",
+  "primary_metric": "state_accuracy",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [],
+  "parsed_output": {
+    "known_state": {
+      "files_present": [
+        "AGENTS.md",
+        "tasks/backlog.md",
+        "research/05_analysis/stage7p-v2-a10-a9-a6-evaluation.md"
+      ],
+      "task_status": {
+        "Stage7p v2": "complete",
+        "Stage7r": "pending"
+      }
+    },
+    "unknown_state": {
+      "git_branch": "unknown",
+      "ci_status": "unknown",
+      "network_execution_approval": "unknown"
+    },
+    "forbidden_inferences": [
+      "Cannot infer CI status from task completion status",
+      "Cannot infer Git branch from file presence or task status",
+      "Cannot infer network execution approval from any available evidence"
+    ],
+    "evidence_ids": [
+      "atom-a4r-e01",
+      "atom-a4r-e02",
+      "atom-a4r-e03"
+    ]
+  },
+  "run_id": "a4r-strict-state-inventory__strong_model__G9__r1",
+  "model": "strong_model",
+  "harness_arm": "G9",
+  "fixture": "a4r-strict-state-inventory"
+}

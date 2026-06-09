@@ -1,0 +1,304 @@
+{
+  "case_count": 2,
+  "failure_count": 0,
+  "cases": [
+    {
+      "fixture": "stage7e-evidence-bound-decision",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "reason": "Stage 7e evidence-bound decision macro evaluated against fixed contract.",
+        "macro_id": "stage7e-evidence-bound-decision",
+        "expect_pass": true,
+        "expectation_met": true,
+        "findings": [],
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "fact": "AGENTS.md is present",
+                "evidence_ids": [
+                  "stage7e-e04"
+                ]
+              },
+              {
+                "fact": "Stage 7r.1 A2R1/A7R1 targeted smoke is complete",
+                "evidence_ids": [
+                  "stage7e-e01"
+                ]
+              },
+              {
+                "fact": "Stage 7r.2 admits only a narrow evidence-bound decision macro",
+                "evidence_ids": [
+                  "stage7e-e04"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "current Git branch",
+              "CI status",
+              "network/API approval"
+            ],
+            "forbidden_inferences": [
+              "do not infer Git branch",
+              "do not infer CI status",
+              "do not infer network/API approval"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "claim": "Stage 7r.1 completed and passed the targeted A2R1/A7R1 low-cost-model smoke.",
+              "evidence_ids": [
+                "stage7e-e01"
+              ]
+            },
+            {
+              "claim": "Stage 7r.2 admits a narrow evidence-bound decision macro while blocking full workflows.",
+              "evidence_ids": [
+                "stage7e-e04"
+              ]
+            }
+          ],
+          "unsupported_claims": [
+            {
+              "claim": "The harness universally closes the performance gap between strong and low-cost models.",
+              "reason": "No supplied evidence supports universal gap closure.",
+              "evidence_ids": [
+                "stage7e-e05"
+              ]
+            },
+            {
+              "claim": "The harness is production ready.",
+              "reason": "No supplied evidence supports production readiness.",
+              "evidence_ids": [
+                "stage7e-e05"
+              ]
+            }
+          ],
+          "typed_evidence": {
+            "extracted": [
+              "stage7e-e01",
+              "stage7e-e04",
+              "stage7e-e05"
+            ],
+            "inferred": [
+              "stage7e-e02"
+            ],
+            "ambiguous": [
+              "stage7e-e03"
+            ],
+            "proposed": [
+              "stage7e-e06"
+            ]
+          },
+          "selected_claim": {
+            "option_id": "C2",
+            "claim": "Mechanism-bound evidence decision workflows are ready for a narrow composed macro smoke under the harness.",
+            "evidence_ids": [
+              "stage7e-e01",
+              "stage7e-e02",
+              "stage7e-e04"
+            ]
+          },
+          "rejected_options": [
+            {
+              "option_id": "C1",
+              "reason": "Universal model-gap closure is overbroad and unsupported.",
+              "evidence_ids": [
+                "stage7e-e05"
+              ]
+            },
+            {
+              "option_id": "C3",
+              "reason": "Production readiness is unsupported.",
+              "evidence_ids": [
+                "stage7e-e05"
+              ]
+            }
+          ],
+          "decision_trace": [
+            {
+              "step": "C2 is supported by successful A2R1/A7R1 low-cost-model smoke.",
+              "option_id": "C2",
+              "evidence_ids": [
+                "stage7e-e01"
+              ]
+            },
+            {
+              "step": "C2 is bounded to a narrow macro because Stage 7r.2 blocks full workflows.",
+              "option_id": "C2",
+              "evidence_ids": [
+                "stage7e-e04"
+              ]
+            },
+            {
+              "step": "C1 is rejected because universal gap closure is unsupported.",
+              "option_id": "C1",
+              "evidence_ids": [
+                "stage7e-e05"
+              ]
+            },
+            {
+              "step": "C3 is rejected because production readiness is unsupported.",
+              "option_id": "C3",
+              "evidence_ids": [
+                "stage7e-e05"
+              ]
+            }
+          ],
+          "stage_gate": {
+            "status": "blocked",
+            "blocked_outputs": [
+              "final_recommendation",
+              "full_project_initialization",
+              "full_research_workflow"
+            ],
+            "missing_prerequisites": [
+              "stage7e_local_gate",
+              "stage7e_smoke"
+            ],
+            "next_required_actions": [
+              "run Stage 7e local golden/bad checks",
+              "run Stage 7e 6-run smoke only if local gates pass"
+            ],
+            "evidence_ids": [
+              "stage7e-e04",
+              "stage7e-e06"
+            ]
+          },
+          "carried_obligations": [
+            {
+              "obligation": "exclude stale universal-gap-closure and production-readiness note",
+              "status": "preserved",
+              "evidence_ids": [
+                "stage7e-e05"
+              ]
+            },
+            {
+              "obligation": "do not claim full project initialization or full research workflow readiness",
+              "status": "preserved",
+              "evidence_ids": [
+                "stage7e-e04"
+              ]
+            }
+          ]
+        },
+        "run_id": "stage7e-evidence-bound-decision__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 1.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 1.0,
+        "state_accuracy": 1.0,
+        "evidence_type_accuracy": 1.0,
+        "stage_completion": 1.0,
+        "repair_success": 0.0,
+        "trace_completeness": 1.0,
+        "context_relevance": 1.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "stage7e-evidence-bound-decision",
+      "case": "uses_stale_full_claims",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "reason": "Stage 7e evidence-bound decision macro evaluated against fixed contract.",
+        "macro_id": "stage7e-evidence-bound-decision",
+        "expect_pass": false,
+        "expectation_met": true,
+        "findings": [
+          "selected_claim overclaims beyond admitted narrow macro scope",
+          "state_accuracy=0.000 below threshold 1.000",
+          "citation_grounding=0.000 below threshold 1.000",
+          "evidence_type_accuracy=0.000 below threshold 1.000",
+          "trace_completeness=0.000 below threshold 1.000",
+          "stage_completion=0.000 below threshold 1.000",
+          "context_relevance=0.000 below threshold 1.000",
+          "atom_primary_metric=0.000 below threshold 1.000",
+          "task_success=0.000 below threshold 0.850"
+        ],
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              "AGENTS.md is present",
+              "CI passed on main"
+            ],
+            "unknown_state": [],
+            "forbidden_inferences": []
+          },
+          "grounded_claims": [
+            "The harness universally closes the model gap.",
+            "The harness is production ready."
+          ],
+          "unsupported_claims": [],
+          "typed_evidence": {
+            "extracted": [
+              "stage7e-e01",
+              "stage7e-e02",
+              "stage7e-e03",
+              "stage7e-e04",
+              "stage7e-e05",
+              "stage7e-e06"
+            ],
+            "inferred": [],
+            "ambiguous": [],
+            "proposed": []
+          },
+          "selected_claim": {
+            "option_id": "C1",
+            "claim": "The harness universally closes the performance gap between strong and low-cost models.",
+            "evidence_ids": [
+              "stage7e-e01"
+            ]
+          },
+          "rejected_options": [],
+          "decision_trace": [
+            {
+              "step": "The old note says the harness is production ready and universal.",
+              "option_id": "C1",
+              "evidence_ids": []
+            }
+          ],
+          "stage_gate": {
+            "status": "proceed",
+            "blocked_outputs": [],
+            "next_required_actions": [
+              "start full project initialization and full research workflow"
+            ]
+          },
+          "carried_obligations": []
+        },
+        "run_id": "stage7e-evidence-bound-decision__uses_stale_full_claims",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 0.5,
+        "cost_efficiency": 0.0,
+        "safety_consistency": 0.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    }
+  ]
+}

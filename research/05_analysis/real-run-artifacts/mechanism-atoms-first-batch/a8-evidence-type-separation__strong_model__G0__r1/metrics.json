@@ -1,0 +1,27 @@
+{
+  "run_id": "a8-evidence-type-separation__strong_model__G0__r1",
+  "fixture": "a8-evidence-type-separation",
+  "task_class": "mechanism_atom",
+  "model": "strong_model",
+  "harness_arm": "G0",
+  "validation_status": "pending",
+  "passed": false,
+  "metrics": {
+    "task_success": 0.0,
+    "schema_validity": 0.0,
+    "tool_call_correctness": 0.0,
+    "citation_grounding": 0.0,
+    "human_acceptance": 0.0,
+    "cost_efficiency": 0.0,
+    "safety_consistency": 0.0,
+    "constraint_consistency": 0.0,
+    "state_accuracy": 0.0,
+    "evidence_type_accuracy": 0.0,
+    "stage_completion": 0.0,
+    "repair_success": 0.0,
+    "trace_completeness": 0.0,
+    "context_relevance": 0.0,
+    "atom_primary_metric": 0.0
+  },
+  "mock": false
+}

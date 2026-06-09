@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "passed": true,
+  "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+  "atom_id": "A2R1",
+  "atom_name": "Claim-Level Evidence Binding",
+  "primary_mechanism": "EvidenceBundle",
+  "primary_metric": "citation_grounding",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [],
+  "parsed_output": {
+    "grounded_claims": [
+      {
+        "claim": "G9 improved structured extraction contract adherence.",
+        "evidence_ids": [
+          "atom-a2r1-e01"
+        ]
+      },
+      {
+        "claim": "Research workflow G0 had citation grounding failures.",
+        "evidence_ids": [
+          "atom-a2r1-e02"
+        ]
+      }
+    ],
+    "unsupported_claims": [
+      {
+        "claim": "The harness is production ready.",
+        "reason": "No supporting evidence found for production readiness."
+      }
+    ],
+    "evidence_ids": [
+      "atom-a2r1-e01",
+      "atom-a2r1-e02"
+    ]
+  },
+  "run_id": "a2r1-claim-level-evidence-binding__budget_model__G8__r2",
+  "model": "budget_model",
+  "harness_arm": "G8",
+  "fixture": "a2r1-claim-level-evidence-binding"
+}

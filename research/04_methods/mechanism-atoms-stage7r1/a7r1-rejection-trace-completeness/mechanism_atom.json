@@ -1,0 +1,28 @@
+{
+  "atom_version": "0.2.1-stage7r1",
+  "atom_id": "A7R1",
+  "atom_name": "Rejection Trace Completeness",
+  "primary_mechanism": "TraceLog",
+  "supporting_mechanisms": ["EvidenceBundle", "OutputContract"],
+  "capability_under_test": "Select one enumerated claim and provide evidence-linked trace coverage for the selected option and every rejected option.",
+  "non_goals": ["Do not invent new contribution claims.", "Do not optimize rhetorical framing."],
+  "input_contract": {
+    "required_inputs": ["input.md", "task_spec.json", "output_contract.json", "evidence_bundle.json"],
+    "fixed_snapshot": true,
+    "forbidden_assumptions": ["Do not claim universal gap closure.", "Do not claim prose-style improvement.", "Do not reject an option without evidence."]
+  },
+  "output_contract_id": "out_stage7r1_a7r1_rejection_trace_completeness_001",
+  "pass_criteria": [
+    {"metric": "trace_completeness", "threshold": 1.0, "required": true},
+    {"metric": "task_success", "threshold": 0.85, "required": true}
+  ],
+  "known_failure_modes": ["Missing rejected-option evidence", "Missing C3 rejection trace", "Universal claim overreach"],
+  "composition_interface": {
+    "input_from_previous": ["candidate_claim_options", "evidence_bundle"],
+    "output_to_next": ["selected_option_id", "rejected_options", "decision_trace"],
+    "state_dependencies": [],
+    "evidence_dependencies": ["evidence_bundle"],
+    "failure_signal": "rejection-trace-completeness_failed",
+    "repair_policy": "add_evidence_linked_trace_step_for_each_rejected_option"
+  }
+}

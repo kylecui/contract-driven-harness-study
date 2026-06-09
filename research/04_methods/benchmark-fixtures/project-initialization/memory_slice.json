@@ -1,0 +1,18 @@
+{
+  "memory_slice_id": "mem_project_initialization_001",
+  "task_id": "project_initialization_001",
+  "active_topic_id": "topic_project_initialization",
+  "mode": "task",
+  "must_load": [
+    "existing_file_inventory",
+    "no_overwrite_policy"
+  ],
+  "may_load": [
+    "installed_pack_registry"
+  ],
+  "must_not_load": [
+    "unrelated_git_history"
+  ],
+  "token_budget": 6000
+}
+

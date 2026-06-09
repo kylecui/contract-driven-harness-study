@@ -1,0 +1,67 @@
+{
+  "fixtures_dir": "research\\04_methods\\mechanism-atoms",
+  "models": [
+    "strong_model",
+    "budget_model"
+  ],
+  "harness_arms": [
+    "G0",
+    "G8",
+    "G9"
+  ],
+  "fixtures": [
+    "a6-validator-repair"
+  ],
+  "repetitions": 1,
+  "run_count": 6,
+  "runs": [
+    {
+      "run_id": "a6-validator-repair__strong_model__G0__r1",
+      "fixture": "a6-validator-repair",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a6-validator-repair__strong_model__G8__r1",
+      "fixture": "a6-validator-repair",
+      "model": "strong_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a6-validator-repair__strong_model__G9__r1",
+      "fixture": "a6-validator-repair",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a6-validator-repair__budget_model__G0__r1",
+      "fixture": "a6-validator-repair",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a6-validator-repair__budget_model__G8__r1",
+      "fixture": "a6-validator-repair",
+      "model": "budget_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a6-validator-repair__budget_model__G9__r1",
+      "fixture": "a6-validator-repair",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    }
+  ]
+}

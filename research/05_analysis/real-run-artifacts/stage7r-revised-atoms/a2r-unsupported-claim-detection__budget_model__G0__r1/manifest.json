@@ -1,0 +1,16 @@
+{
+  "run_id": "a2r-unsupported-claim-detection__budget_model__G0__r1",
+  "fixture": "a2r-unsupported-claim-detection",
+  "task_type": "mechanism_atom",
+  "model": "budget_model",
+  "harness_arm": "G0",
+  "status": "pending",
+  "paths": {
+    "output": "research\\05_analysis\\real-run-artifacts\\stage7r-revised-atoms\\a2r-unsupported-claim-detection__budget_model__G0__r1\\output.md",
+    "tool_trace": "research\\05_analysis\\real-run-artifacts\\stage7r-revised-atoms\\a2r-unsupported-claim-detection__budget_model__G0__r1\\tool_trace.jsonl",
+    "validation_report": "research\\05_analysis\\real-run-artifacts\\stage7r-revised-atoms\\a2r-unsupported-claim-detection__budget_model__G0__r1\\validation_report.json",
+    "metrics": "research\\05_analysis\\real-run-artifacts\\stage7r-revised-atoms\\a2r-unsupported-claim-detection__budget_model__G0__r1\\metrics.json",
+    "prompt": "research\\05_analysis\\real-run-artifacts\\stage7r-revised-atoms\\a2r-unsupported-claim-detection__budget_model__G0__r1\\prompt.md",
+    "adapter_request": "research\\05_analysis\\real-run-artifacts\\stage7r-revised-atoms\\a2r-unsupported-claim-detection__budget_model__G0__r1\\adapter_request.json"
+  }
+}

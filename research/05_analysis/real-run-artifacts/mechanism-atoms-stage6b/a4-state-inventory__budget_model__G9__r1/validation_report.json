@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "passed": true,
+  "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+  "atom_id": "A4",
+  "atom_name": "State Inventory",
+  "primary_mechanism": "MemorySlice",
+  "primary_metric": "state_accuracy",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [],
+  "parsed_output": {
+    "existing_files": [
+      "AGENTS.md",
+      "research/CONTEXT.md"
+    ],
+    "missing_files": [
+      "research/06_outputs/README.md"
+    ],
+    "protected_files": [
+      "AGENTS.md"
+    ],
+    "unknown_state": []
+  },
+  "run_id": "a4-state-inventory__budget_model__G9__r1",
+  "model": "budget_model",
+  "harness_arm": "G9",
+  "fixture": "a4-state-inventory"
+}

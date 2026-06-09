@@ -1,0 +1,28 @@
+{
+  "atom_version": "0.2.0-stage7r",
+  "atom_id": "A4R",
+  "atom_name": "Strict State Inventory",
+  "primary_mechanism": "MemorySlice",
+  "supporting_mechanisms": ["OutputContract"],
+  "capability_under_test": "Separate known workspace state from unknown state and prevent inferred or invented state claims.",
+  "non_goals": ["Do not evaluate task execution.", "Do not evaluate prose completeness."],
+  "input_contract": {
+    "required_inputs": ["input.md", "task_spec.json", "output_contract.json", "memory_slice.json", "evidence_bundle.json"],
+    "fixed_snapshot": true,
+    "forbidden_assumptions": ["Do not infer Git branch.", "Do not infer CI status.", "Do not infer network approval."]
+  },
+  "output_contract_id": "out_stage7r_a4r_strict_state_inventory_001",
+  "pass_criteria": [
+    {"metric": "state_accuracy", "threshold": 0.85, "required": true},
+    {"metric": "task_success", "threshold": 0.8, "required": true}
+  ],
+  "known_failure_modes": ["Invented state", "Unknown state omitted", "CI status inferred"],
+  "composition_interface": {
+    "input_from_previous": ["workspace_snapshot"],
+    "output_to_next": ["known_state", "unknown_state", "forbidden_inferences"],
+    "state_dependencies": ["memory_slice"],
+    "evidence_dependencies": ["evidence_bundle"],
+    "failure_signal": "strict-state-inventory_failed",
+    "repair_policy": "move_unproven_claims_to_unknown_state"
+  }
+}

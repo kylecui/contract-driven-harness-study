@@ -1,0 +1,12 @@
+{
+  "output_contract_id": "out_mechanism_a10_bounded_context_recall_001",
+  "format": "json",
+  "required_sections": [
+    "answer",
+    "used_context",
+    "excluded_context"
+  ],
+  "citation_policy": "important_claims",
+  "style_profile": "minimal_json",
+  "tool_trace_required": false
+}

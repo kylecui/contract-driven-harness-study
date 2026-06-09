@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+  "atom_id": "A2",
+  "atom_name": "Evidence Grounding",
+  "primary_mechanism": "EvidenceBundle",
+  "primary_metric": "citation_grounding",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [
+    "task_success=0.750 below threshold 0.800"
+  ],
+  "parsed_output": {
+    "grounded_claims": [
+      {
+        "claim": "Primary evidence for Evidence Grounding.",
+        "evidence_id": "atom-a2-e01"
+      },
+      {
+        "claim": "Supporting evidence for Unsupported claim.",
+        "evidence_id": "atom-a2-e02"
+      }
+    ],
+    "unsupported_claims": [],
+    "evidence_ids": [
+      "atom-a2-e01",
+      "atom-a2-e02"
+    ]
+  },
+  "run_id": "a2-evidence-grounding__strong_model__G9__r1",
+  "model": "strong_model",
+  "harness_arm": "G9",
+  "fixture": "a2-evidence-grounding"
+}

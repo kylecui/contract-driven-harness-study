@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Output is not valid JSON.",
+  "findings": [
+    "Expected JSON-compatible output for mechanism atom evaluation."
+  ],
+  "expect_pass": null,
+  "fixture": "a2r-unsupported-claim-detection",
+  "model": "strong_model",
+  "harness_arm": "G0"
+}

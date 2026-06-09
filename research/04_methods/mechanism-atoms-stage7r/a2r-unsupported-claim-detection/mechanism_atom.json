@@ -1,0 +1,28 @@
+{
+  "atom_version": "0.2.0-stage7r",
+  "atom_id": "A2R",
+  "atom_name": "Unsupported Claim Detection",
+  "primary_mechanism": "EvidenceBundle",
+  "supporting_mechanisms": ["OutputContract"],
+  "capability_under_test": "Bind supported claims to evidence IDs and explicitly reject an unsupported tempting claim.",
+  "non_goals": ["Do not evaluate broad research synthesis.", "Do not evaluate prose quality."],
+  "input_contract": {
+    "required_inputs": ["input.md", "task_spec.json", "output_contract.json", "evidence_bundle.json"],
+    "fixed_snapshot": true,
+    "forbidden_assumptions": ["Do not infer production readiness without supplied evidence."]
+  },
+  "output_contract_id": "out_stage7r_a2r_unsupported_claim_detection_001",
+  "pass_criteria": [
+    {"metric": "citation_grounding", "threshold": 1.0, "required": true},
+    {"metric": "task_success", "threshold": 0.8, "required": true}
+  ],
+  "known_failure_modes": ["Unsupported claim acceptance"],
+  "composition_interface": {
+    "input_from_previous": ["fixed_evidence_bundle"],
+    "output_to_next": ["grounded_claim_table", "unsupported_claims"],
+    "state_dependencies": [],
+    "evidence_dependencies": ["evidence_bundle"],
+    "failure_signal": "unsupported-claim-detection_failed",
+    "repair_policy": "stop_and_report"
+  }
+}

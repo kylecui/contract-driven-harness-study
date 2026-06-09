@@ -1,0 +1,10 @@
+{
+  "run_id": "a8-evidence-type-separation__strong_model__G2__r1",
+  "provider": "manual_or_future_adapter",
+  "model_tier": "strong_model",
+  "harness_arm": "G2",
+  "prompt_path": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__strong_model__G2__r1\\prompt.md",
+  "temperature": 0,
+  "tools_enabled": false,
+  "expects_validation": true
+}

@@ -1,0 +1,22 @@
+{
+  "evidence_bundle_id": "ev_mechanism_a9_no_overwrite_action_plan_001",
+  "task_id": "mechanism_a9_no_overwrite_action_plan_001",
+  "items": [
+    {
+      "source_id": "a9-fixture",
+      "evidence_id": "atom-a9-e01",
+      "evidence_type": "EXTRACTED",
+      "claim": "Primary evidence for No-Overwrite Action Plan.",
+      "freshness": "local_snapshot",
+      "authority": "fixture"
+    },
+    {
+      "source_id": "a9-fixture",
+      "evidence_id": "atom-a9-e02",
+      "evidence_type": "INFERRED",
+      "claim": "Supporting evidence for Unsafe overwrite proposal.",
+      "freshness": "local_snapshot",
+      "authority": "fixture"
+    }
+  ]
+}

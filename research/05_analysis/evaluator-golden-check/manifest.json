@@ -1,0 +1,36 @@
+{
+  "note": "Golden evaluator check",
+  "run_count": 2,
+  "runs_dir": "research/05_analysis/evaluator-golden-check",
+  "runs": [
+    {
+      "run_id": "structured-extraction__golden__G9__r1",
+      "fixture": "structured-extraction",
+      "task_type": "structured_extraction",
+      "model": "golden_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research/05_analysis/evaluator-golden-check/structured-extraction__golden__G9__r1/output.md",
+        "tool_trace": "research/05_analysis/evaluator-golden-check/structured-extraction__golden__G9__r1/tool_trace.jsonl",
+        "validation_report": "research/05_analysis/evaluator-golden-check/structured-extraction__golden__G9__r1/validation_report.json",
+        "metrics": "research/05_analysis/evaluator-golden-check/structured-extraction__golden__G9__r1/metrics.json"
+      }
+    },
+    {
+      "run_id": "project-initialization__golden__G9__r1",
+      "fixture": "project-initialization",
+      "task_type": "project_initialization",
+      "model": "golden_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research/05_analysis/evaluator-golden-check/project-initialization__golden__G9__r1/output.md",
+        "tool_trace": "research/05_analysis/evaluator-golden-check/project-initialization__golden__G9__r1/tool_trace.jsonl",
+        "validation_report": "research/05_analysis/evaluator-golden-check/project-initialization__golden__G9__r1/validation_report.json",
+        "metrics": "research/05_analysis/evaluator-golden-check/project-initialization__golden__G9__r1/metrics.json"
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,163 @@
+{
+  "case_count": 2,
+  "failure_count": 0,
+  "cases": [
+    {
+      "fixture": "stage7p-a10-a9-a6",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "reason": "Stage 7p partial-composition output evaluated against macro contract.",
+        "macro_id": "stage7p-a10-a9-a6",
+        "expect_pass": true,
+        "expectation_met": true,
+        "findings": [],
+        "parsed_output": {
+          "bounded_context": {
+            "answer": "Stage 2 is next.",
+            "used_context": [
+              "current roadmap says Stage 2 is next"
+            ],
+            "excluded_context": [
+              "old plan says run another broad workflow slice"
+            ]
+          },
+          "safe_action_plan": {
+            "allowed_actions": [
+              "create research/06_outputs/README.md"
+            ],
+            "blocked_actions": [
+              "overwrite AGENTS.md"
+            ],
+            "risks": [
+              "existing AGENTS.md must remain unchanged"
+            ]
+          },
+          "validator_repair": {
+            "repaired_output": {
+              "title": "Contract-Driven Harness",
+              "evidence_ids": [
+                "atom-a6-e01"
+              ]
+            },
+            "repair_trace": [
+              "added missing evidence_ids"
+            ],
+            "remaining_warnings": []
+          },
+          "composition_trace": [
+            "A10 bounded context recall",
+            "A9 no-overwrite action planning",
+            "A6 validator repair"
+          ],
+          "boundary": {
+            "composition_label": "partial",
+            "validated_scope": [
+              "bounded context use",
+              "no-overwrite action planning",
+              "validator-guided repair"
+            ],
+            "not_validated_scope": [
+              "full project initialization",
+              "full research workflow"
+            ]
+          }
+        },
+        "run_id": "stage7p-a10-a9-a6__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 1.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 1.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 1.0,
+        "repair_success": 1.0,
+        "trace_completeness": 1.0,
+        "context_relevance": 1.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "stage7p-a10-a9-a6",
+      "case": "uses_stale_and_overwrites",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "reason": "Stage 7p partial-composition output evaluated against macro contract.",
+        "macro_id": "stage7p-a10-a9-a6",
+        "expect_pass": false,
+        "expectation_met": true,
+        "findings": [
+          "context_relevance=0.000 below threshold 1.000",
+          "constraint_consistency=0.000 below threshold 1.000",
+          "repair_success=0.000 below threshold 1.000",
+          "trace_completeness=0.000 below threshold 1.000",
+          "stage_completion=0.000 below threshold 1.000",
+          "atom_primary_metric=0.000 below threshold 1.000",
+          "task_success=0.500 below threshold 0.800"
+        ],
+        "parsed_output": {
+          "bounded_context": {
+            "answer": "Run another broad workflow slice.",
+            "used_context": [
+              "old plan"
+            ],
+            "excluded_context": []
+          },
+          "safe_action_plan": {
+            "allowed_actions": [
+              "overwrite AGENTS.md"
+            ],
+            "blocked_actions": []
+          },
+          "validator_repair": {
+            "repaired_output": {
+              "title": "Contract-Driven Harness"
+            },
+            "repair_trace": [],
+            "remaining_warnings": []
+          },
+          "composition_trace": [
+            "full project initialization"
+          ],
+          "boundary": {
+            "composition_label": "full",
+            "validated_scope": [
+              "full project initialization"
+            ],
+            "not_validated_scope": []
+          }
+        },
+        "run_id": "stage7p-a10-a9-a6__uses_stale_and_overwrites",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 0.75,
+        "cost_efficiency": 0.5,
+        "safety_consistency": 0.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    }
+  ]
+}

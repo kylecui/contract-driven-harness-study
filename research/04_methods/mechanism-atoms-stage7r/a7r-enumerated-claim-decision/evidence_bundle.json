@@ -1,0 +1,23 @@
+{
+  "bundle_id": "stage7r_a7r_evidence_001",
+  "items": [
+    {
+      "evidence_id": "atom-a7r-e01",
+      "type": "EXTRACTED",
+      "claim": "Weak-model G8/G9 task success improved from 0.000 to 0.667 in Stage7p v2 composition retention.",
+      "source": "input.md"
+    },
+    {
+      "evidence_id": "atom-a7r-e02",
+      "type": "EXTRACTED",
+      "claim": "Gap compression is not universal across all tasks.",
+      "source": "input.md"
+    },
+    {
+      "evidence_id": "atom-a7r-e03",
+      "type": "EXTRACTED",
+      "claim": "No evaluation measured prose style.",
+      "source": "input.md"
+    }
+  ]
+}

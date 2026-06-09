@@ -1,0 +1,19 @@
+{
+  "memory_slice_id": "mem_research_workflow_001",
+  "task_id": "research_workflow_001",
+  "active_topic_id": "topic_research_workflow",
+  "mode": "topic_and_task",
+  "must_load": [
+    "research_question",
+    "evidence_bundle",
+    "source_index"
+  ],
+  "may_load": [
+    "prior_synthesis_notes"
+  ],
+  "must_not_load": [
+    "unverified_external_claims"
+  ],
+  "token_budget": 8000
+}
+

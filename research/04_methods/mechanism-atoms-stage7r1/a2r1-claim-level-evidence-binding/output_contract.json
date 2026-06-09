@@ -1,0 +1,13 @@
+{
+  "output_contract_id": "out_stage7r1_a2r1_claim_level_evidence_binding_001",
+  "format": "json",
+  "required_sections": ["grounded_claims", "unsupported_claims", "evidence_ids"],
+  "citation_policy": "claim_level_required",
+  "style_profile": "minimal_json",
+  "tool_trace_required": false,
+  "schema_notes": {
+    "grounded_claims_item": {"claim": "string", "evidence_ids": ["evidence_id"]},
+    "unsupported_claims_item": {"claim": "string", "reason": "string"},
+    "bare_strings_allowed_in_grounded_claims": false
+  }
+}

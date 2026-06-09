@@ -1,0 +1,17 @@
+{
+  "execute": true,
+  "processed": 1,
+  "results": [
+    {
+      "run_id": "a7r1-rejection-trace-completeness__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage7r1-a2r-a7r-targeted\\a7r1-rejection-trace-completeness__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage7r1-a2r-a7r-targeted\\a7r1-rejection-trace-completeness__budget_model__G9__r2\\output.md",
+      "elapsed_ms": 103015
+    }
+  ]
+}

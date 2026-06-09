@@ -1,0 +1,14 @@
+{
+  "slice_id": "stage7r_a5r_memory_001",
+  "must_load": [
+    "research_brief is complete",
+    "source_index is complete",
+    "evidence_ledger is incomplete",
+    "citation_audit is not_started"
+  ],
+  "must_not_load": [
+    "permission to synthesize",
+    "permission to issue final recommendation"
+  ],
+  "staleness_policy": "fixed_snapshot"
+}

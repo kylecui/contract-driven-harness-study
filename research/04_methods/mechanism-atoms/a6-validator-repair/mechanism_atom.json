@@ -1,0 +1,55 @@
+{
+  "atom_version": "0.1.0",
+  "atom_id": "A6",
+  "atom_name": "Validator Repair",
+  "primary_mechanism": "ValidatorGate",
+  "supporting_mechanisms": [
+    "OutputContract",
+    "TraceLog"
+  ],
+  "capability_under_test": "Repair a targeted contract violation after validator feedback without adding a new critical violation.",
+  "non_goals": [
+    "Do not evaluate general prose quality.",
+    "Do not evaluate broad end-to-end workflow success."
+  ],
+  "input_contract": {
+    "required_inputs": [
+      "input.md",
+      "task_spec.json",
+      "output_contract.json"
+    ],
+    "fixed_snapshot": true,
+    "forbidden_assumptions": [
+      "Do not use live web state.",
+      "Do not assume files, evidence, or constraints absent from the fixture."
+    ]
+  },
+  "output_contract_id": "out_mechanism_a6_validator_repair_001",
+  "pass_criteria": [
+    {
+      "metric": "repair_success",
+      "threshold": 1.0,
+      "required": true
+    },
+    {
+      "metric": "schema_validity",
+      "threshold": 1.0,
+      "required": true
+    }
+  ],
+  "known_failure_modes": [
+    "Repair failure"
+  ],
+  "composition_interface": {
+    "input_from_previous": [
+      "fixed_snapshot"
+    ],
+    "output_to_next": [
+      "repaired_artifact"
+    ],
+    "state_dependencies": [],
+    "evidence_dependencies": [],
+    "failure_signal": "validator-repair_failed",
+    "repair_policy": "validator_repair"
+  }
+}

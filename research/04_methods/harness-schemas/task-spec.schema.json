@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://petfish.local/schemas/task-spec.schema.json",
+  "title": "TaskSpec",
+  "type": "object",
+  "required": [
+    "task_spec_version",
+    "task_id",
+    "task_type",
+    "intent",
+    "constraints",
+    "required_skills",
+    "allowed_tools",
+    "output_contract_id"
+  ],
+  "properties": {
+    "task_spec_version": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "task_type": {
+      "type": "string",
+      "enum": [
+        "structured_extraction",
+        "project_initialization",
+        "skill_validation",
+        "research_workflow",
+        "mechanism_atom",
+        "code_repair",
+        "architecture_review",
+        "strategic_judgment"
+      ]
+    },
+    "intent": {
+      "type": "object",
+      "required": [
+        "goal",
+        "language"
+      ],
+      "properties": {
+        "goal": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        },
+        "freshness": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "required_skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "allowed_tools": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "risk_profile": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "memory_slice_id": {
+      "type": "string"
+    },
+    "evidence_bundle_id": {
+      "type": "string"
+    },
+    "output_contract_id": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

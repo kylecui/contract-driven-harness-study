@@ -1,0 +1,10 @@
+{
+  "status": "pending",
+  "passed": false,
+  "reason": "Output is still pending.",
+  "findings": [],
+  "run_id": "a4-state-inventory__budget_model__G0__r1",
+  "fixture": "a4-state-inventory",
+  "model": "budget_model",
+  "harness_arm": "G0"
+}

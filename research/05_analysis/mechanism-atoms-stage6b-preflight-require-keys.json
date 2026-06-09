@@ -1,0 +1,85 @@
+{
+  "manifest_path": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-stage6b-manifest-with-prompts.json",
+  "config_path": "research\\04_methods\\provider-config.siliconflow-reviewed.json",
+  "require_keys": true,
+  "errors": [],
+  "warnings": [],
+  "runs": {
+    "run_count": 42,
+    "required_model_tiers": [
+      "budget_model",
+      "strong_model"
+    ],
+    "manifest_status_counts": {
+      "pending": 42
+    },
+    "validation_status_counts": {
+      "pending": 42
+    },
+    "group_counts": {
+      "a10-bounded-context-recall | budget_model | G0": 1,
+      "a10-bounded-context-recall | budget_model | G8": 1,
+      "a10-bounded-context-recall | budget_model | G9": 1,
+      "a10-bounded-context-recall | strong_model | G0": 1,
+      "a10-bounded-context-recall | strong_model | G8": 1,
+      "a10-bounded-context-recall | strong_model | G9": 1,
+      "a2-evidence-grounding | budget_model | G0": 1,
+      "a2-evidence-grounding | budget_model | G8": 1,
+      "a2-evidence-grounding | budget_model | G9": 1,
+      "a2-evidence-grounding | strong_model | G0": 1,
+      "a2-evidence-grounding | strong_model | G8": 1,
+      "a2-evidence-grounding | strong_model | G9": 1,
+      "a4-state-inventory | budget_model | G0": 1,
+      "a4-state-inventory | budget_model | G8": 1,
+      "a4-state-inventory | budget_model | G9": 1,
+      "a4-state-inventory | strong_model | G0": 1,
+      "a4-state-inventory | strong_model | G8": 1,
+      "a4-state-inventory | strong_model | G9": 1,
+      "a5-stage-gated-synthesis | budget_model | G0": 1,
+      "a5-stage-gated-synthesis | budget_model | G8": 1,
+      "a5-stage-gated-synthesis | budget_model | G9": 1,
+      "a5-stage-gated-synthesis | strong_model | G0": 1,
+      "a5-stage-gated-synthesis | strong_model | G8": 1,
+      "a5-stage-gated-synthesis | strong_model | G9": 1,
+      "a6-validator-repair | budget_model | G0": 1,
+      "a6-validator-repair | budget_model | G8": 1,
+      "a6-validator-repair | budget_model | G9": 1,
+      "a6-validator-repair | strong_model | G0": 1,
+      "a6-validator-repair | strong_model | G8": 1,
+      "a6-validator-repair | strong_model | G9": 1,
+      "a7-traceable-decision | budget_model | G0": 1,
+      "a7-traceable-decision | budget_model | G8": 1,
+      "a7-traceable-decision | budget_model | G9": 1,
+      "a7-traceable-decision | strong_model | G0": 1,
+      "a7-traceable-decision | strong_model | G8": 1,
+      "a7-traceable-decision | strong_model | G9": 1,
+      "a9-no-overwrite-action-plan | budget_model | G0": 1,
+      "a9-no-overwrite-action-plan | budget_model | G8": 1,
+      "a9-no-overwrite-action-plan | budget_model | G9": 1,
+      "a9-no-overwrite-action-plan | strong_model | G0": 1,
+      "a9-no-overwrite-action-plan | strong_model | G8": 1,
+      "a9-no-overwrite-action-plan | strong_model | G9": 1
+    },
+    "non_placeholder_outputs": []
+  },
+  "config": {
+    "providers": {
+      "siliconflow": {
+        "api_key_env": "SILICONFLOW_API_KEY",
+        "api_key_present": true,
+        "base_url": "https://api.siliconflow.cn/v1"
+      }
+    },
+    "model_tiers": {
+      "strong_model": {
+        "provider": "siliconflow",
+        "model": "deepseek-ai/DeepSeek-V3.2"
+      },
+      "budget_model": {
+        "provider": "siliconflow",
+        "model": "Qwen/Qwen3-8B"
+      }
+    },
+    "config_path": "research\\04_methods\\provider-config.siliconflow-reviewed.json"
+  }
+}

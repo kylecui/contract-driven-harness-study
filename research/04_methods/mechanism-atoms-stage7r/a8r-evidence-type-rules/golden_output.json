@@ -1,0 +1,16 @@
+{
+  "extracted": [
+    {"item_id": "I1", "reason": "directly observed artifact result", "evidence_ids": ["atom-a8r-e01"]}
+  ],
+  "inferred": [
+    {"item_id": "I2", "reason": "derived by comparing weak-model G0 and G8/G9 outcomes", "evidence_ids": ["atom-a8r-e02"]}
+  ],
+  "ambiguous": [
+    {"item_id": "I5", "reason": "notes conflict on whether gap compression is universal or conditional", "evidence_ids": ["atom-a8r-e03"]}
+  ],
+  "proposed": [
+    {"item_id": "I3", "reason": "redesign requirement is a next action"},
+    {"item_id": "I4", "reason": "running smoke is a proposed next action"}
+  ],
+  "evidence_ids": ["atom-a8r-e01", "atom-a8r-e02", "atom-a8r-e03"]
+}

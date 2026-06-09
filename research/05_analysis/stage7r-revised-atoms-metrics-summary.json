@@ -1,0 +1,829 @@
+{
+  "run_count": 36,
+  "complete_count": 35,
+  "pending_count": 1,
+  "groups": {
+    "by_model_arm": [
+      {
+        "key": [
+          "budget_model",
+          "G0"
+        ],
+        "runs": 6,
+        "complete": 6,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.228,
+        "avg_atom_primary_completed": 0.167
+      },
+      {
+        "key": [
+          "budget_model",
+          "G8"
+        ],
+        "runs": 6,
+        "complete": 5,
+        "pending": 1,
+        "passed": 3,
+        "pass_rate_completed": 0.6,
+        "avg_task_success_completed": 0.8,
+        "avg_atom_primary_completed": 0.6
+      },
+      {
+        "key": [
+          "budget_model",
+          "G9"
+        ],
+        "runs": 6,
+        "complete": 6,
+        "pending": 0,
+        "passed": 4,
+        "pass_rate_completed": 0.667,
+        "avg_task_success_completed": 0.833,
+        "avg_atom_primary_completed": 0.667
+      },
+      {
+        "key": [
+          "strong_model",
+          "G0"
+        ],
+        "runs": 6,
+        "complete": 6,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.0,
+        "avg_atom_primary_completed": 0.0
+      },
+      {
+        "key": [
+          "strong_model",
+          "G8"
+        ],
+        "runs": 6,
+        "complete": 6,
+        "pending": 0,
+        "passed": 6,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "strong_model",
+          "G9"
+        ],
+        "runs": 6,
+        "complete": 6,
+        "pending": 0,
+        "passed": 6,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      }
+    ],
+    "by_fixture_model_arm": [
+      {
+        "key": [
+          "a2r-unsupported-claim-detection",
+          "budget_model",
+          "G0"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.167,
+        "avg_atom_primary_completed": 0.0
+      },
+      {
+        "key": [
+          "a2r-unsupported-claim-detection",
+          "budget_model",
+          "G8"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.5,
+        "avg_atom_primary_completed": 0.0
+      },
+      {
+        "key": [
+          "a2r-unsupported-claim-detection",
+          "budget_model",
+          "G9"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.5,
+        "avg_atom_primary_completed": 0.0
+      },
+      {
+        "key": [
+          "a2r-unsupported-claim-detection",
+          "strong_model",
+          "G0"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.0,
+        "avg_atom_primary_completed": 0.0
+      },
+      {
+        "key": [
+          "a2r-unsupported-claim-detection",
+          "strong_model",
+          "G8"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a2r-unsupported-claim-detection",
+          "strong_model",
+          "G9"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a3r-constraint-safe-plan",
+          "budget_model",
+          "G0"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.75,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a3r-constraint-safe-plan",
+          "budget_model",
+          "G8"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a3r-constraint-safe-plan",
+          "budget_model",
+          "G9"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a3r-constraint-safe-plan",
+          "strong_model",
+          "G0"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.0,
+        "avg_atom_primary_completed": 0.0
+      },
+      {
+        "key": [
+          "a3r-constraint-safe-plan",
+          "strong_model",
+          "G8"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a3r-constraint-safe-plan",
+          "strong_model",
+          "G9"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a4r-strict-state-inventory",
+          "budget_model",
+          "G0"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.0,
+        "avg_atom_primary_completed": 0.0
+      },
+      {
+        "key": [
+          "a4r-strict-state-inventory",
+          "budget_model",
+          "G8"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a4r-strict-state-inventory",
+          "budget_model",
+          "G9"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a4r-strict-state-inventory",
+          "strong_model",
+          "G0"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.0,
+        "avg_atom_primary_completed": 0.0
+      },
+      {
+        "key": [
+          "a4r-strict-state-inventory",
+          "strong_model",
+          "G8"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a4r-strict-state-inventory",
+          "strong_model",
+          "G9"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a5r-stage-gate-check",
+          "budget_model",
+          "G0"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.25,
+        "avg_atom_primary_completed": 0.0
+      },
+      {
+        "key": [
+          "a5r-stage-gate-check",
+          "budget_model",
+          "G8"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a5r-stage-gate-check",
+          "budget_model",
+          "G9"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a5r-stage-gate-check",
+          "strong_model",
+          "G0"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.0,
+        "avg_atom_primary_completed": 0.0
+      },
+      {
+        "key": [
+          "a5r-stage-gate-check",
+          "strong_model",
+          "G8"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a5r-stage-gate-check",
+          "strong_model",
+          "G9"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a7r-enumerated-claim-decision",
+          "budget_model",
+          "G0"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.2,
+        "avg_atom_primary_completed": 0.0
+      },
+      {
+        "key": [
+          "a7r-enumerated-claim-decision",
+          "budget_model",
+          "G8"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.5,
+        "avg_atom_primary_completed": 0.0
+      },
+      {
+        "key": [
+          "a7r-enumerated-claim-decision",
+          "budget_model",
+          "G9"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.5,
+        "avg_atom_primary_completed": 0.0
+      },
+      {
+        "key": [
+          "a7r-enumerated-claim-decision",
+          "strong_model",
+          "G0"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.0,
+        "avg_atom_primary_completed": 0.0
+      },
+      {
+        "key": [
+          "a7r-enumerated-claim-decision",
+          "strong_model",
+          "G8"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a7r-enumerated-claim-decision",
+          "strong_model",
+          "G9"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a8r-evidence-type-rules",
+          "budget_model",
+          "G0"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.0,
+        "avg_atom_primary_completed": 0.0
+      },
+      {
+        "key": [
+          "a8r-evidence-type-rules",
+          "budget_model",
+          "G8"
+        ],
+        "runs": 1,
+        "complete": 0,
+        "pending": 1,
+        "passed": 0,
+        "pass_rate_completed": null,
+        "avg_task_success_completed": null,
+        "avg_atom_primary_completed": null
+      },
+      {
+        "key": [
+          "a8r-evidence-type-rules",
+          "budget_model",
+          "G9"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a8r-evidence-type-rules",
+          "strong_model",
+          "G0"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.0,
+        "avg_atom_primary_completed": 0.0
+      },
+      {
+        "key": [
+          "a8r-evidence-type-rules",
+          "strong_model",
+          "G8"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a8r-evidence-type-rules",
+          "strong_model",
+          "G9"
+        ],
+        "runs": 1,
+        "complete": 1,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      }
+    ],
+    "by_fixture_arm": [
+      {
+        "key": [
+          "a2r-unsupported-claim-detection",
+          "G0"
+        ],
+        "runs": 2,
+        "complete": 2,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.084,
+        "avg_atom_primary_completed": 0.0
+      },
+      {
+        "key": [
+          "a2r-unsupported-claim-detection",
+          "G8"
+        ],
+        "runs": 2,
+        "complete": 2,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 0.5,
+        "avg_task_success_completed": 0.75,
+        "avg_atom_primary_completed": 0.5
+      },
+      {
+        "key": [
+          "a2r-unsupported-claim-detection",
+          "G9"
+        ],
+        "runs": 2,
+        "complete": 2,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 0.5,
+        "avg_task_success_completed": 0.75,
+        "avg_atom_primary_completed": 0.5
+      },
+      {
+        "key": [
+          "a3r-constraint-safe-plan",
+          "G0"
+        ],
+        "runs": 2,
+        "complete": 2,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.375,
+        "avg_atom_primary_completed": 0.5
+      },
+      {
+        "key": [
+          "a3r-constraint-safe-plan",
+          "G8"
+        ],
+        "runs": 2,
+        "complete": 2,
+        "pending": 0,
+        "passed": 2,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a3r-constraint-safe-plan",
+          "G9"
+        ],
+        "runs": 2,
+        "complete": 2,
+        "pending": 0,
+        "passed": 2,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a4r-strict-state-inventory",
+          "G0"
+        ],
+        "runs": 2,
+        "complete": 2,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.0,
+        "avg_atom_primary_completed": 0.0
+      },
+      {
+        "key": [
+          "a4r-strict-state-inventory",
+          "G8"
+        ],
+        "runs": 2,
+        "complete": 2,
+        "pending": 0,
+        "passed": 2,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a4r-strict-state-inventory",
+          "G9"
+        ],
+        "runs": 2,
+        "complete": 2,
+        "pending": 0,
+        "passed": 2,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a5r-stage-gate-check",
+          "G0"
+        ],
+        "runs": 2,
+        "complete": 2,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.125,
+        "avg_atom_primary_completed": 0.0
+      },
+      {
+        "key": [
+          "a5r-stage-gate-check",
+          "G8"
+        ],
+        "runs": 2,
+        "complete": 2,
+        "pending": 0,
+        "passed": 2,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a5r-stage-gate-check",
+          "G9"
+        ],
+        "runs": 2,
+        "complete": 2,
+        "pending": 0,
+        "passed": 2,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a7r-enumerated-claim-decision",
+          "G0"
+        ],
+        "runs": 2,
+        "complete": 2,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.1,
+        "avg_atom_primary_completed": 0.0
+      },
+      {
+        "key": [
+          "a7r-enumerated-claim-decision",
+          "G8"
+        ],
+        "runs": 2,
+        "complete": 2,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 0.5,
+        "avg_task_success_completed": 0.75,
+        "avg_atom_primary_completed": 0.5
+      },
+      {
+        "key": [
+          "a7r-enumerated-claim-decision",
+          "G9"
+        ],
+        "runs": 2,
+        "complete": 2,
+        "pending": 0,
+        "passed": 1,
+        "pass_rate_completed": 0.5,
+        "avg_task_success_completed": 0.75,
+        "avg_atom_primary_completed": 0.5
+      },
+      {
+        "key": [
+          "a8r-evidence-type-rules",
+          "G0"
+        ],
+        "runs": 2,
+        "complete": 2,
+        "pending": 0,
+        "passed": 0,
+        "pass_rate_completed": 0.0,
+        "avg_task_success_completed": 0.0,
+        "avg_atom_primary_completed": 0.0
+      },
+      {
+        "key": [
+          "a8r-evidence-type-rules",
+          "G8"
+        ],
+        "runs": 2,
+        "complete": 1,
+        "pending": 1,
+        "passed": 1,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      },
+      {
+        "key": [
+          "a8r-evidence-type-rules",
+          "G9"
+        ],
+        "runs": 2,
+        "complete": 2,
+        "pending": 0,
+        "passed": 2,
+        "pass_rate_completed": 1.0,
+        "avg_task_success_completed": 1.0,
+        "avg_atom_primary_completed": 1.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "stage7r1_a7r1_rejection_trace_completeness",
+  "task_type": "mechanism_atom",
+  "objective": "Select exactly one enumerated claim option and provide complete evidence-linked trace coverage.",
+  "constraints": [
+    "Return selected_option_id as one of C1, C2, C3.",
+    "Use rejected_options, not a bare rejected_option_ids list.",
+    "Every rejected option must include evidence_ids.",
+    "decision_trace must include C2 support, C1 rejection, and C3 rejection."
+  ],
+  "success_conditions": [
+    "selected_option_id is C2.",
+    "C1 and C3 are rejected with evidence IDs.",
+    "decision_trace cites atom-a7r1-e01, atom-a7r1-e02, and atom-a7r1-e03."
+  ]
+}

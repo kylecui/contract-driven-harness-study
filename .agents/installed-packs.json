@@ -1,0 +1,111 @@
+{
+  "packs": {
+    "petfish-companion-skill": {
+      "installed_at": "2026-06-06T04:41:33.556408+00:00",
+      "version": "1.1.0",
+      "skills": [
+        "fish-brain",
+        "fish-market"
+      ],
+      "commands": [],
+      "agents": [],
+      "skill_count": 2,
+      "command_count": 1,
+      "agent_count": 0,
+      "description": "PEtFiSh Brain (鱼伴) — Sensing, routing, registry query, and marketplace search"
+    },
+    "petfish-style-skill": {
+      "installed_at": "2026-06-06T07:42:10.090937+00:00",
+      "version": "4.0.1",
+      "skills": [
+        "fish-style"
+      ],
+      "commands": [],
+      "agents": [],
+      "skill_count": 1,
+      "command_count": 0,
+      "agent_count": 0,
+      "description": "工程写作风格改写 — 去AI味、说人话、AI腔检测与改写、中英文紧凑混排"
+    },
+    "doc-reader-skill": {
+      "installed_at": "2026-06-06T07:43:15.561003+00:00",
+      "version": "1.0.0",
+      "skills": [
+        "doc-reader"
+      ],
+      "commands": [],
+      "agents": [],
+      "skill_count": 1,
+      "command_count": 0,
+      "agent_count": 0,
+      "description": "统一文档读取 — PDF/DOCX/XLSX/HTML/PPTX/EPUB转Markdown，基于markitdown"
+    },
+    "research-skill-pack": {
+      "installed_at": "2026-06-06T08:32:40.024107+00:00",
+      "version": "1.0.0",
+      "skills": [
+        "research-router",
+        "research-brief-framer",
+        "research-source-discovery",
+        "research-literature-access",
+        "research-note-capture",
+        "research-insight-log",
+        "research-evidence-ledger",
+        "research-synthesis",
+        "research-report-writer",
+        "research-quality-reviewer",
+        "research-citation-auditor",
+        "scientific-literature-review",
+        "scientific-gap-finder",
+        "scientific-methodology-designer",
+        "scientific-experiment-planner",
+        "scientific-paper-writer",
+        "scientific-review-rebuttal",
+        "product-user-research",
+        "product-competitor-analysis",
+        "product-opportunity-mapper",
+        "product-validation-planner",
+        "product-decision-brief",
+        "planning-environment-scanner",
+        "planning-stakeholder-analyst",
+        "planning-scenario-planner",
+        "planning-policy-researcher",
+        "planning-technology-assessor",
+        "planning-roadmap-developer",
+        "learning-goal-framer",
+        "learning-prerequisite-mapper",
+        "learning-resource-discovery",
+        "learning-path-designer",
+        "learning-practice-planner",
+        "learning-progress-reviewer",
+        "decision-brief-framer",
+        "decision-criteria-builder",
+        "option-comparison-matrix",
+        "decision-recommendation",
+        "risk-research-brief",
+        "vendor-source-diligence",
+        "security-risk-review",
+        "compliance-check",
+        "tco-operational-risk",
+        "adoption-recommendation",
+        "experience-brief-framer",
+        "venue-destination-research",
+        "schedule-itinerary-planner",
+        "participant-experience-designer",
+        "logistics-risk-planner",
+        "event-runbook-writer",
+        "travel-adapter",
+        "conference-adapter",
+        "training-event-adapter",
+        "content-selection-adapter"
+      ],
+      "commands": [],
+      "agents": [],
+      "skill_count": 54,
+      "command_count": 0,
+      "agent_count": 0,
+      "description": "Research workbench skill pack covering scientific, product, planning, learning, decision, risk-procurement, and experience-event research workflows with traceable evidence chains."
+    }
+  },
+  "version": "2.0"
+}

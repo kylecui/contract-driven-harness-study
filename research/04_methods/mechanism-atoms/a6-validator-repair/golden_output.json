@@ -1,0 +1,12 @@
+{
+  "repaired_output": {
+    "title": "Contract-Driven Harness",
+    "evidence_ids": [
+      "atom-a6-e01"
+    ]
+  },
+  "repair_trace": [
+    "added missing evidence_ids"
+  ],
+  "remaining_warnings": []
+}

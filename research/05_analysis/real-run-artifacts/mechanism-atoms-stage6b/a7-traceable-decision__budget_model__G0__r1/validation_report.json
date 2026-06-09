@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+  "atom_id": "A7",
+  "atom_name": "Traceable Decision",
+  "primary_mechanism": "TraceLog",
+  "primary_metric": "trace_completeness",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [
+    "task_success=0.250 below threshold 0.800"
+  ],
+  "parsed_output": {
+    "claim_level": "composition-boundary framing",
+    "trace": [
+      {
+        "criteria": "baseline_gap_status",
+        "value": "n/a",
+        "rationale": "The evidence explicitly states the baseline gap is unavailable, indicating no prior gap to address."
+      },
+      {
+        "criteria": "budget_model_impact",
+        "value": "strong_improvement",
+        "rationale": "The budget model's strong improvement suggests a significant enhancement in the mechanism's effectiveness."
+      },
+      {
+        "criteria": "mechanism_selection",
+        "value": "composition-boundary framing",
+        "rationale": "This mechanism directly relates to structuring model components, which is critical when baseline gaps are absent and improvements are needed."
+      }
+    ]
+  },
+  "run_id": "a7-traceable-decision__budget_model__G0__r1",
+  "model": "budget_model",
+  "harness_arm": "G0",
+  "fixture": "a7-traceable-decision"
+}

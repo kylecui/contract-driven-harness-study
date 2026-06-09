@@ -1,0 +1,15 @@
+{
+  "output_contract_id": "out_strategic_judgment_001",
+  "format": "markdown_report",
+  "required_sections": [
+    "recommendation",
+    "assumptions",
+    "rationale",
+    "risks",
+    "fallback"
+  ],
+  "citation_policy": "important_claims",
+  "style_profile": "concise_decision_brief",
+  "tool_trace_required": false
+}
+

@@ -1,0 +1,83 @@
+{
+  "baseline_arm": "G0",
+  "arms": {
+    "G0": {
+      "metrics": {
+        "task_success": {
+          "baseline_gap": 0.1,
+          "arm_gap": 0.1,
+          "compression_ratio": 0.0
+        },
+        "schema_validity": {
+          "baseline_gap": 0.16649999999999998,
+          "arm_gap": 0.16649999999999998,
+          "compression_ratio": 0.0
+        },
+        "tool_call_correctness": {
+          "baseline_gap": 0.5,
+          "arm_gap": 0.5,
+          "compression_ratio": 0.0
+        },
+        "citation_grounding": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null
+        },
+        "human_acceptance": {
+          "baseline_gap": 0.13349999999999998,
+          "arm_gap": 0.13349999999999998,
+          "compression_ratio": 0.0
+        },
+        "cost_efficiency": {
+          "baseline_gap": 0.1,
+          "arm_gap": 0.1,
+          "compression_ratio": 0.0
+        },
+        "safety_consistency": {
+          "baseline_gap": 0.5,
+          "arm_gap": 0.5,
+          "compression_ratio": 0.0
+        }
+      }
+    },
+    "G9": {
+      "metrics": {
+        "task_success": {
+          "baseline_gap": 0.1,
+          "arm_gap": 0.0,
+          "compression_ratio": 1.0
+        },
+        "schema_validity": {
+          "baseline_gap": 0.16649999999999998,
+          "arm_gap": 0.0,
+          "compression_ratio": 1.0
+        },
+        "tool_call_correctness": {
+          "baseline_gap": 0.5,
+          "arm_gap": 0.0,
+          "compression_ratio": 1.0
+        },
+        "citation_grounding": {
+          "baseline_gap": 0.0,
+          "arm_gap": 0.0,
+          "compression_ratio": null
+        },
+        "human_acceptance": {
+          "baseline_gap": 0.13349999999999998,
+          "arm_gap": 0.0,
+          "compression_ratio": 1.0
+        },
+        "cost_efficiency": {
+          "baseline_gap": 0.1,
+          "arm_gap": 0.0,
+          "compression_ratio": 1.0
+        },
+        "safety_consistency": {
+          "baseline_gap": 0.5,
+          "arm_gap": 0.0,
+          "compression_ratio": 1.0
+        }
+      }
+    }
+  }
+}

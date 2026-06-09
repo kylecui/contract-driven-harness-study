@@ -1,0 +1,10 @@
+{
+  "status": "pending",
+  "passed": false,
+  "reason": "Output is still pending.",
+  "findings": [],
+  "run_id": "a6-validator-repair__strong_model__G9__r1",
+  "fixture": "a6-validator-repair",
+  "model": "strong_model",
+  "harness_arm": "G9"
+}

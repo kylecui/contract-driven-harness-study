@@ -1,0 +1,114 @@
+{
+  "fixtures_dir": "research\\04_methods\\benchmark-fixtures",
+  "models": [
+    "strong_model",
+    "budget_model"
+  ],
+  "harness_arms": [
+    "G0",
+    "G9"
+  ],
+  "fixtures": [
+    "research-workflow"
+  ],
+  "repetitions": 3,
+  "run_count": 12,
+  "runs": [
+    {
+      "run_id": "research-workflow__strong_model__G0__r1",
+      "fixture": "research-workflow",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "research-workflow__strong_model__G0__r2",
+      "fixture": "research-workflow",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "research-workflow__strong_model__G0__r3",
+      "fixture": "research-workflow",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 3,
+      "status": "planned"
+    },
+    {
+      "run_id": "research-workflow__strong_model__G9__r1",
+      "fixture": "research-workflow",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "research-workflow__strong_model__G9__r2",
+      "fixture": "research-workflow",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "research-workflow__strong_model__G9__r3",
+      "fixture": "research-workflow",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    },
+    {
+      "run_id": "research-workflow__budget_model__G0__r1",
+      "fixture": "research-workflow",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "research-workflow__budget_model__G0__r2",
+      "fixture": "research-workflow",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "research-workflow__budget_model__G0__r3",
+      "fixture": "research-workflow",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 3,
+      "status": "planned"
+    },
+    {
+      "run_id": "research-workflow__budget_model__G9__r1",
+      "fixture": "research-workflow",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "research-workflow__budget_model__G9__r2",
+      "fixture": "research-workflow",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "research-workflow__budget_model__G9__r3",
+      "fixture": "research-workflow",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    }
+  ]
+}

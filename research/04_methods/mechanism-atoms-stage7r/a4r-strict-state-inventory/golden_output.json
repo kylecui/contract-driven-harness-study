@@ -1,0 +1,18 @@
+{
+  "known_state": [
+    {"fact": "AGENTS.md is present", "evidence_ids": ["atom-a4r-e01"]},
+    {"fact": "Stage7p v2 is complete and Stage7r is pending", "evidence_ids": ["atom-a4r-e02"]},
+    {"fact": "research/05_analysis/stage7p-v2-a10-a9-a6-evaluation.md exists", "evidence_ids": ["atom-a4r-e03"]}
+  ],
+  "unknown_state": [
+    "current Git branch",
+    "CI status",
+    "network execution approval"
+  ],
+  "forbidden_inferences": [
+    "do not infer CI passed",
+    "do not infer a Git branch name",
+    "do not infer approval for network execution"
+  ],
+  "evidence_ids": ["atom-a4r-e01", "atom-a4r-e02", "atom-a4r-e03"]
+}

@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "passed": true,
+  "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+  "atom_id": "A4R",
+  "atom_name": "Strict State Inventory",
+  "primary_mechanism": "MemorySlice",
+  "primary_metric": "state_accuracy",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [],
+  "parsed_output": {
+    "known_state": [
+      "AGENTS.md is present",
+      "Stage7p v2 is complete and Stage7r is pending",
+      "Stage7p v2 evaluation file exists"
+    ],
+    "unknown_state": [
+      "current Git branch",
+      "CI status",
+      "network execution approval"
+    ],
+    "forbidden_inferences": [
+      "current Git branch",
+      "CI status",
+      "network execution approval"
+    ],
+    "evidence_ids": [
+      "atom-a4r-e01",
+      "atom-a4r-e02",
+      "atom-a4r-e03"
+    ]
+  },
+  "run_id": "a4r-strict-state-inventory__budget_model__G9__r1",
+  "model": "budget_model",
+  "harness_arm": "G9",
+  "fixture": "a4r-strict-state-inventory"
+}

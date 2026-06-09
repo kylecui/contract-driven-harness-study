@@ -1,0 +1,19 @@
+{
+  "run_id": "research-workflow__strong_model__G0__r3",
+  "fixture": "research-workflow",
+  "task_class": "research_workflow",
+  "model": "strong_model",
+  "harness_arm": "G0",
+  "validation_status": "complete",
+  "passed": false,
+  "metrics": {
+    "task_success": 0.0,
+    "schema_validity": 0.4,
+    "tool_call_correctness": 1.0,
+    "citation_grounding": 0.0,
+    "human_acceptance": 0.3,
+    "cost_efficiency": 0.2,
+    "safety_consistency": 0.5
+  },
+  "mock": false
+}

@@ -1,0 +1,22 @@
+{
+  "evidence_bundle_id": "ev_mechanism_a10_bounded_context_recall_001",
+  "task_id": "mechanism_a10_bounded_context_recall_001",
+  "items": [
+    {
+      "source_id": "a10-fixture",
+      "evidence_id": "atom-a10-e01",
+      "evidence_type": "EXTRACTED",
+      "claim": "Primary evidence for Bounded Context Recall.",
+      "freshness": "local_snapshot",
+      "authority": "fixture"
+    },
+    {
+      "source_id": "a10-fixture",
+      "evidence_id": "atom-a10-e02",
+      "evidence_type": "INFERRED",
+      "claim": "Supporting evidence for Irrelevant or stale context use.",
+      "freshness": "local_snapshot",
+      "authority": "fixture"
+    }
+  ]
+}

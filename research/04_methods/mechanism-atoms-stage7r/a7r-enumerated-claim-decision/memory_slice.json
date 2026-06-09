@@ -1,0 +1,13 @@
+{
+  "slice_id": "stage7r_a7r_memory_001",
+  "must_load": [
+    "C1 is universal gap closure",
+    "C2 is weak-model enablement on mechanism-bound tasks",
+    "C3 is prose style improvement"
+  ],
+  "must_not_load": [
+    "unlisted contribution claims",
+    "unmeasured style outcomes"
+  ],
+  "staleness_policy": "fixed_snapshot"
+}

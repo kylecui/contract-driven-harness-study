@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+  "atom_id": "A8",
+  "atom_name": "Evidence-Type Separation",
+  "primary_mechanism": "EvidenceBundle",
+  "primary_metric": "citation_grounding",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [
+    "evidence_type_accuracy=0.000 below threshold 1.000",
+    "citation_grounding=0.000 below threshold 0.800"
+  ],
+  "parsed_output": {
+    "classification": {
+      "directly_measured_result": "Evidence type: direct_measurement",
+      "inference_from_multiple_slices": "Evidence type: inferred_conclusion",
+      "unresolved_risk": "Evidence type: unresolved_risk",
+      "recommended_next_action": "Evidence type: recommendation"
+    },
+    "note": "All classifications strictly adhere to the task input description and prevent recommendations from being misrepresented as extracted facts."
+  },
+  "run_id": "a8-evidence-type-separation__budget_model__G0__r1",
+  "model": "budget_model",
+  "harness_arm": "G0",
+  "fixture": "a8-evidence-type-separation"
+}

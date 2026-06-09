@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "passed": true,
+  "reason": "Research workflow output evaluated against evidence-backed synthesis expectations.",
+  "findings": [
+    "Extracted evidence and inference are not clearly separated."
+  ],
+  "run_id": "research-workflow__budget_model__G9__r2",
+  "fixture": "research-workflow",
+  "model": "budget_model",
+  "harness_arm": "G9"
+}

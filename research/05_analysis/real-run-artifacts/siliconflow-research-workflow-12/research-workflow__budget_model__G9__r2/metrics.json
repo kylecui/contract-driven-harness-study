@@ -1,0 +1,19 @@
+{
+  "run_id": "research-workflow__budget_model__G9__r2",
+  "fixture": "research-workflow",
+  "task_class": "research_workflow",
+  "model": "budget_model",
+  "harness_arm": "G9",
+  "validation_status": "complete",
+  "passed": true,
+  "metrics": {
+    "task_success": 0.75,
+    "schema_validity": 1.0,
+    "tool_call_correctness": 1.0,
+    "citation_grounding": 1.0,
+    "human_acceptance": 0.917,
+    "cost_efficiency": 0.875,
+    "safety_consistency": 1.0
+  },
+  "mock": false
+}

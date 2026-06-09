@@ -1,0 +1,14 @@
+{
+  "allowed_actions": [
+    "create research/06_outputs/README.md"
+  ],
+  "blocked_actions": [
+    "overwrite AGENTS.md"
+  ],
+  "risks": [
+    "existing AGENTS.md must remain unchanged"
+  ],
+  "next_steps": [
+    "ask before changing protected files"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "memory_slice_id": "mem_mechanism_a1_schema_bound_extraction_001",
+  "task_id": "mechanism_a1_schema_bound_extraction_001",
+  "active_topic_id": "mechanism_atom_a1",
+  "mode": "task",
+  "must_load": [
+    "Planning note: Proposal NEXT is Contract-Driven Harness. Target venue ACL Findings. Primary metric weak-model enablement lift. Evidence IDs: atom-a1-e01, atom-a1-e02. Ignore HOLD proposal Topic-Aware Compaction."
+  ],
+  "may_load": [
+    "Composition role: Shared."
+  ],
+  "must_not_load": [
+    "Old broad workflow plans that bypass mechanism atoms."
+  ],
+  "token_budget": 1200
+}

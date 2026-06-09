@@ -1,0 +1,22 @@
+{
+  "manifest": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-stage6b-manifest-with-prompts.json",
+  "atoms_dir": "research\\04_methods\\mechanism-atoms",
+  "baseline_arm": "G0",
+  "strong_model": "strong_model",
+  "weak_model": "budget_model",
+  "completed_run_count": 42,
+  "warning_count": 0,
+  "warnings": [],
+  "metrics_computed": true,
+  "decision": "completed runs are sufficient for mechanism-atom metrics",
+  "outputs": {
+    "evaluated_runs_json": "research\\05_analysis\\mechanism-atoms-stage6c-recomputed-postprocess-evaluated-runs.json",
+    "evaluation_md": "research\\05_analysis\\mechanism-atoms-stage6c-recomputed-postprocess-evaluation.md",
+    "collected_runs_json": "research\\05_analysis\\mechanism-atoms-stage6c-recomputed-postprocess-collected-runs.json",
+    "collected_runs_md": "research\\05_analysis\\mechanism-atoms-stage6c-recomputed-postprocess-collected-runs.md",
+    "metrics_json": "research\\05_analysis\\mechanism-atoms-stage6c-recomputed-postprocess-metrics.json",
+    "metrics_md": "research\\05_analysis\\mechanism-atoms-stage6c-recomputed-postprocess-metrics.md",
+    "summary_json": "research\\05_analysis\\mechanism-atoms-stage6c-recomputed-postprocess-summary.json",
+    "summary_md": "research\\05_analysis\\mechanism-atoms-stage6c-recomputed-postprocess-summary.md"
+  }
+}

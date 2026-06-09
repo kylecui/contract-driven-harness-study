@@ -1,0 +1,10 @@
+{
+  "status": "pending",
+  "passed": false,
+  "reason": "Output is still pending.",
+  "findings": [],
+  "run_id": "structured-extraction__strong_model__G9__r2",
+  "fixture": "structured-extraction",
+  "model": "strong_model",
+  "harness_arm": "G9"
+}

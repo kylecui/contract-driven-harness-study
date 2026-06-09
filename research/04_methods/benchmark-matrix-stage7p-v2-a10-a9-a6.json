@@ -1,0 +1,67 @@
+{
+  "fixtures_dir": "research\\04_methods\\macro-tasks",
+  "models": [
+    "strong_model",
+    "budget_model"
+  ],
+  "harness_arms": [
+    "G0",
+    "G8",
+    "G9"
+  ],
+  "fixtures": [
+    "stage7p-v2-a10-a9-a6"
+  ],
+  "repetitions": 1,
+  "run_count": 6,
+  "runs": [
+    {
+      "run_id": "stage7p-v2-a10-a9-a6__strong_model__G0__r1",
+      "fixture": "stage7p-v2-a10-a9-a6",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7p-v2-a10-a9-a6__strong_model__G8__r1",
+      "fixture": "stage7p-v2-a10-a9-a6",
+      "model": "strong_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7p-v2-a10-a9-a6__strong_model__G9__r1",
+      "fixture": "stage7p-v2-a10-a9-a6",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7p-v2-a10-a9-a6__budget_model__G0__r1",
+      "fixture": "stage7p-v2-a10-a9-a6",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7p-v2-a10-a9-a6__budget_model__G8__r1",
+      "fixture": "stage7p-v2-a10-a9-a6",
+      "model": "budget_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7p-v2-a10-a9-a6__budget_model__G9__r1",
+      "fixture": "stage7p-v2-a10-a9-a6",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    }
+  ]
+}

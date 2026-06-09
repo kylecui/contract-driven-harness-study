@@ -1,0 +1,30 @@
+{
+  "evidence_bundle_id": "ev_mechanism_a8_evidence_type_separation_001",
+  "task_id": "mechanism_a8_evidence_type_separation_001",
+  "items": [
+    {
+      "source_id": "a8-fixture",
+      "evidence_id": "atom-a8-e01",
+      "evidence_type": "EXTRACTED",
+      "claim": "Primary evidence for Evidence-Type Separation.",
+      "freshness": "local_snapshot",
+      "authority": "fixture"
+    },
+    {
+      "source_id": "a8-fixture",
+      "evidence_id": "atom-a8-e02",
+      "evidence_type": "INFERRED",
+      "claim": "Supporting evidence for Type leakage.",
+      "freshness": "local_snapshot",
+      "authority": "fixture"
+    },
+    {
+      "source_id": "a8-fixture",
+      "evidence_id": "atom-a8-e03",
+      "evidence_type": "AMBIGUOUS",
+      "claim": "Composition scalability remains unproven.",
+      "freshness": "local_snapshot",
+      "authority": "fixture"
+    }
+  ]
+}

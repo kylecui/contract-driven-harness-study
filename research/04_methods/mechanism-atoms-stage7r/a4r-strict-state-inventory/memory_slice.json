@@ -1,0 +1,15 @@
+{
+  "slice_id": "stage7r_a4r_memory_001",
+  "must_load": [
+    "AGENTS.md is present",
+    "Stage7p v2 is complete",
+    "Stage7r is pending",
+    "Stage7p v2 evaluation file exists"
+  ],
+  "must_not_load": [
+    "current Git branch",
+    "CI status",
+    "network execution approval"
+  ],
+  "staleness_policy": "fixed_snapshot"
+}

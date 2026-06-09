@@ -1,0 +1,66 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Stage 7p partial-composition output evaluated against macro contract.",
+  "macro_id": "stage7p-a10-a9-a6",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [
+    "schema_validity=0.500 below threshold 1.000",
+    "context_relevance=0.000 below threshold 1.000",
+    "constraint_consistency=0.000 below threshold 1.000",
+    "repair_success=0.000 below threshold 1.000",
+    "trace_completeness=0.000 below threshold 1.000",
+    "stage_completion=0.000 below threshold 1.000",
+    "atom_primary_metric=0.000 below threshold 1.000",
+    "task_success=0.333 below threshold 0.800"
+  ],
+  "parsed_output": {
+    "composition_type": "partial_composition",
+    "bounded_context": {
+      "included_context": {
+        "current_roadmap": "Stage 2 is next"
+      },
+      "excluded_context": {
+        "old_broad_workflow_plan": "broad-workflow plan"
+      }
+    },
+    "action_plan": {
+      "planned_actions": [
+        {
+          "file": "research/06_outputs/README.md",
+          "action": "create",
+          "reason": "Missing file identified in project snapshot"
+        }
+      ],
+      "protected_files": [
+        "AGENTS.md",
+        "research/CONTEXT.md"
+      ]
+    },
+    "validator_repair": {
+      "original_output": {
+        "title": "Contract-Driven Harness"
+      },
+      "repaired_output": {
+        "title": "Contract-Driven Harness",
+        "evidence_ids": [
+          "atom-a6-e01"
+        ]
+      }
+    },
+    "carried_obligations": [
+      {
+        "obligation": "exclude old broad workflow plan",
+        "status": "preserved",
+        "reason": "A10 obligation requires exclusion of stale context"
+      }
+    ],
+    "new_mechanism": "cross_step_obligation_retention",
+    "label": "partial_composition"
+  },
+  "run_id": "stage7p-v2-a10-a9-a6__budget_model__G0__r1",
+  "model": "budget_model",
+  "harness_arm": "G0",
+  "fixture": "stage7p-v2-a10-a9-a6"
+}

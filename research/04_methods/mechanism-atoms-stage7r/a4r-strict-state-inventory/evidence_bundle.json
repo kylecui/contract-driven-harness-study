@@ -1,0 +1,23 @@
+{
+  "bundle_id": "stage7r_a4r_evidence_001",
+  "items": [
+    {
+      "evidence_id": "atom-a4r-e01",
+      "type": "EXTRACTED",
+      "claim": "AGENTS.md is present.",
+      "source": "input.md"
+    },
+    {
+      "evidence_id": "atom-a4r-e02",
+      "type": "EXTRACTED",
+      "claim": "Stage7p v2 is complete and Stage7r is pending.",
+      "source": "input.md"
+    },
+    {
+      "evidence_id": "atom-a4r-e03",
+      "type": "EXTRACTED",
+      "claim": "The Stage7p v2 evaluation file exists.",
+      "source": "input.md"
+    }
+  ]
+}

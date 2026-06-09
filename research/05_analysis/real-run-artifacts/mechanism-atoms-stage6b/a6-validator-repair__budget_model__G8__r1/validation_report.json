@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+  "atom_id": "A6",
+  "atom_name": "Validator Repair",
+  "primary_mechanism": "ValidatorGate",
+  "primary_metric": "repair_success",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [
+    "repair_success=0.000 below threshold 1.000"
+  ],
+  "parsed_output": {
+    "repaired_output": {
+      "evidence_ids": [
+        "atom-a6-e01"
+      ],
+      "other_valid_fields": {
+        "composition_role": "Shared"
+      }
+    },
+    "repair_trace": [
+      {
+        "action": "add_evidence_ids",
+        "reason": "Validator reported missing evidence_ids field. Added evidence_ids using atom-a6-e01 as per EvidenceBundle.",
+        "citation": "atom-a6-e01"
+      }
+    ],
+    "remaining_warnings": []
+  },
+  "run_id": "a6-validator-repair__budget_model__G8__r1",
+  "model": "budget_model",
+  "harness_arm": "G8",
+  "fixture": "a6-validator-repair"
+}

@@ -1,0 +1,20 @@
+{
+  "task_spec_id": "task_stage7p_a10_a9_a6_001",
+  "task_type": "stage7p_partial_macro",
+  "objective": "Compose A10 bounded context recall, A9 no-overwrite action planning, and A6 validator repair into one narrow macro task.",
+  "goal": "Return a JSON object that uses current context, excludes stale context, plans only safe no-overwrite actions, and repairs the validator-reported output.",
+  "language": "en",
+  "freshness": "local_snapshot",
+  "constraints": [
+    "Do not use the old broad-workflow plan as the next action.",
+    "Do not overwrite AGENTS.md.",
+    "Create only missing unprotected files.",
+    "Keep existing valid fields unchanged during repair.",
+    "Label the result as partial composition, not full project-initialization or full research-workflow validation."
+  ],
+  "composition_atoms": [
+    "A10",
+    "A9",
+    "A6"
+  ]
+}

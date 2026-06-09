@@ -1,0 +1,107 @@
+{
+  "status": "complete",
+  "passed": true,
+  "reason": "Stage 7p partial-composition output evaluated against macro contract.",
+  "macro_id": "stage7p-a10-a9-a6",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [],
+  "parsed_output": {
+    "bounded_context": {
+      "current_roadmap": "Stage 2 is next",
+      "excluded_context": [
+        "Old plan says run another broad workflow slice"
+      ],
+      "active_topic": "stage7p_partial_composition",
+      "composition_atoms": [
+        "A10",
+        "A9",
+        "A6"
+      ],
+      "citation": {
+        "important_claim": "Current roadmap says Stage 2 is next",
+        "evidence_id": "mem_stage7p_a10_a9_a6_001"
+      }
+    },
+    "safe_action_plan": {
+      "existing_files": [
+        "AGENTS.md",
+        "research/CONTEXT.md"
+      ],
+      "missing_file": "research/06_outputs/README.md",
+      "protected_file": "AGENTS.md",
+      "planned_actions": [
+        {
+          "action": "Create missing file",
+          "file": "research/06_outputs/README.md",
+          "type": "create_only",
+          "overwrite": false,
+          "reason": "File is missing and unprotected"
+        }
+      ],
+      "constraints_respected": [
+        "No overwrite of AGENTS.md",
+        "Only create missing unprotected files",
+        "No use of old broad-workflow plan as next action"
+      ]
+    },
+    "validator_repair": {
+      "original_output": {
+        "title": "Contract-Driven Harness"
+      },
+      "validator_feedback": "Add missing evidence_ids using atom-a6-e01 and keep all existing valid fields unchanged",
+      "repaired_output": {
+        "title": "Contract-Driven Harness",
+        "evidence_ids": [
+          "atom-a6-e01"
+        ]
+      },
+      "repair_notes": "Added evidence_ids field with atom-a6-e01 while preserving original title field unchanged",
+      "citation": {
+        "important_claim": "Primary evidence for Validator Repair",
+        "evidence_id": "atom-a6-e01"
+      }
+    },
+    "composition_trace": {
+      "atoms_applied": [
+        "A10",
+        "A9",
+        "A6"
+      ],
+      "application_order": "sequential",
+      "steps": [
+        {
+          "atom": "A10",
+          "action": "Bounded context recall",
+          "result": "Selected current roadmap (Stage 2 next), excluded stale context"
+        },
+        {
+          "atom": "A9",
+          "action": "No-overwrite action planning",
+          "result": "Planned creation of research/06_outputs/README.md without overwriting AGENTS.md"
+        },
+        {
+          "atom": "A6",
+          "action": "Validator repair",
+          "result": "Repaired output by adding evidence_ids while keeping title unchanged"
+        }
+      ],
+      "composition_type": "partial_macro",
+      "label": "partial composition, not full project-initialization or full research-workflow validation"
+    },
+    "boundary": {
+      "memory_usage": "Respected must-load/must-not-load boundaries",
+      "token_budget_respected": true,
+      "scope": "Narrow macro task combining A10, A9, A6 only",
+      "limitations": "Does not constitute full project initialization or full research workflow validation"
+    },
+    "tool_trace": {
+      "tools_used": [],
+      "reason": "No external tools required for this composition task"
+    }
+  },
+  "run_id": "stage7p-a10-a9-a6__strong_model__G9__r1",
+  "model": "strong_model",
+  "harness_arm": "G9",
+  "fixture": "stage7p-a10-a9-a6"
+}

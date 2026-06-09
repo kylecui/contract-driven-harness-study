@@ -1,0 +1,17 @@
+{
+  "run_id": "structured-extraction__strong_model__G0__r3",
+  "fixture": "structured-extraction",
+  "task_class": "structured_extraction",
+  "model": "strong_model",
+  "harness_arm": "G0",
+  "metrics": {
+    "task_success": 0.0,
+    "schema_validity": 0.0,
+    "tool_call_correctness": 0.0,
+    "citation_grounding": 0.0,
+    "human_acceptance": 0.0,
+    "cost_efficiency": 0.0,
+    "safety_consistency": 0.0
+  },
+  "mock": false
+}

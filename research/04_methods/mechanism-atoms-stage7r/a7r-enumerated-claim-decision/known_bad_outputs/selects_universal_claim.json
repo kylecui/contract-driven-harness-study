@@ -1,0 +1,12 @@
+{
+  "selected_option_id": "C1",
+  "selected_claim": "Harness universally closes the performance gap between strong and weak models.",
+  "rejected_option_ids": [
+    {"option_id": "C2", "reason": "too narrow"},
+    {"option_id": "C3", "reason": "less important"}
+  ],
+  "decision_trace": [
+    {"step": "Gap compression happened, therefore the universal claim is acceptable", "evidence_ids": ["atom-a7r-e02"]}
+  ],
+  "evidence_ids": ["atom-a7r-e02"]
+}

@@ -1,0 +1,41 @@
+{
+  "bundle_id": "stage7e_evidence_bundle_001",
+  "items": [
+    {
+      "evidence_id": "stage7e-e01",
+      "type": "EXTRACTED",
+      "claim": "Stage 7r.1 completed 8/8 targeted smoke runs and passed 8/8 under low-cost-model G8/G9.",
+      "source": "research/05_analysis/stage-reports/stage-7r1-a2r-a7r-targeted-smoke-summary.md"
+    },
+    {
+      "evidence_id": "stage7e-e02",
+      "type": "INFERRED",
+      "claim": "Stage 7r.1 supports the mechanism-first repair hypothesis for A2R/A7R low-cost-model failures.",
+      "source": "research/03_evidence/evidence-ledger.jsonl#P2-E60"
+    },
+    {
+      "evidence_id": "stage7e-e03",
+      "type": "AMBIGUOUS",
+      "claim": "A8R has mixed execution evidence because low-cost G8 timed out while low-cost G9 and strong G8/G9 passed.",
+      "source": "research/05_analysis/stage-reports/stage-7r-revised-atoms-summary.md"
+    },
+    {
+      "evidence_id": "stage7e-e04",
+      "type": "EXTRACTED",
+      "claim": "Stage 7r.2 admits a narrow evidence-bound decision macro and blocks full project initialization and full research workflow composition.",
+      "source": "research/05_analysis/stage-reports/stage-7r2-composition-readiness-gate.md"
+    },
+    {
+      "evidence_id": "stage7e-e05",
+      "type": "EXTRACTED",
+      "claim": "No supplied evidence supports production readiness or universal model-gap closure.",
+      "source": "input.md"
+    },
+    {
+      "evidence_id": "stage7e-e06",
+      "type": "PROPOSED",
+      "claim": "Run Stage 7e local golden/bad checks before any Stage 7e SiliconFlow smoke.",
+      "source": "research/05_analysis/stage-reports/stage-7r2-composition-readiness-gate.md"
+    }
+  ]
+}

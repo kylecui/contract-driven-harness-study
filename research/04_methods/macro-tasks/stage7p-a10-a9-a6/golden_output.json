@@ -1,0 +1,51 @@
+{
+  "bounded_context": {
+    "answer": "Stage 2 is next.",
+    "used_context": [
+      "current roadmap says Stage 2 is next"
+    ],
+    "excluded_context": [
+      "old plan says run another broad workflow slice"
+    ]
+  },
+  "safe_action_plan": {
+    "allowed_actions": [
+      "create research/06_outputs/README.md"
+    ],
+    "blocked_actions": [
+      "overwrite AGENTS.md"
+    ],
+    "risks": [
+      "existing AGENTS.md must remain unchanged"
+    ]
+  },
+  "validator_repair": {
+    "repaired_output": {
+      "title": "Contract-Driven Harness",
+      "evidence_ids": [
+        "atom-a6-e01"
+      ]
+    },
+    "repair_trace": [
+      "added missing evidence_ids"
+    ],
+    "remaining_warnings": []
+  },
+  "composition_trace": [
+    "A10 bounded context recall",
+    "A9 no-overwrite action planning",
+    "A6 validator repair"
+  ],
+  "boundary": {
+    "composition_label": "partial",
+    "validated_scope": [
+      "bounded context use",
+      "no-overwrite action planning",
+      "validator-guided repair"
+    ],
+    "not_validated_scope": [
+      "full project initialization",
+      "full research workflow"
+    ]
+  }
+}

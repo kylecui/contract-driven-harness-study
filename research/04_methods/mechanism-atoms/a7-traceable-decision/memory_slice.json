@@ -1,0 +1,16 @@
+{
+  "memory_slice_id": "mem_mechanism_a7_traceable_decision_001",
+  "task_id": "mechanism_a7_traceable_decision_001",
+  "active_topic_id": "mechanism_atom_a7",
+  "mode": "task",
+  "must_load": [
+    "Options: gap compression, weak-model enablement, composition-boundary framing. Evidence says baseline gap is n/a but budget model improves strongly."
+  ],
+  "may_load": [
+    "Composition role: Shared."
+  ],
+  "must_not_load": [
+    "Old broad workflow plans that bypass mechanism atoms."
+  ],
+  "token_budget": 1200
+}

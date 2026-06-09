@@ -1,0 +1,16 @@
+{
+  "memory_slice_id": "mem_mechanism_a5_stage_gated_synthesis_001",
+  "task_id": "mechanism_a5_stage_gated_synthesis_001",
+  "active_topic_id": "mechanism_atom_a5",
+  "mode": "task",
+  "must_load": [
+    "Use the supplied evidence to decide whether two proposal tracks should remain separate. Output stage status for brief, evidence, synthesis, recommendation, and risks."
+  ],
+  "may_load": [
+    "Composition role: Research."
+  ],
+  "must_not_load": [
+    "Old broad workflow plans that bypass mechanism atoms."
+  ],
+  "token_budget": 1200
+}

@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+  "atom_id": "A5",
+  "atom_name": "Stage-Gated Synthesis",
+  "primary_mechanism": "WorkflowGraph",
+  "primary_metric": "stage_completion",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [
+    "stage_completion=0.000 below threshold 1.000",
+    "task_success=0.000 below threshold 0.800"
+  ],
+  "parsed_output": {
+    "stage_status": {
+      "brief": "not_applicable",
+      "evidence": "missing",
+      "synthesis": "incomplete",
+      "recommendation": "not_provided",
+      "risks": "insufficient_data"
+    },
+    "rationale": "The task input does not include any evidence or data about the proposal tracks, making it impossible to evaluate their separation status. Without the evidence_bundle_id content, no analysis can be performed, and all stages remain unaddressed."
+  },
+  "run_id": "a5-stage-gated-synthesis__budget_model__G0__r1",
+  "model": "budget_model",
+  "harness_arm": "G0",
+  "fixture": "a5-stage-gated-synthesis"
+}

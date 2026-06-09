@@ -1,0 +1,406 @@
+{
+  "fixtures_dir": "research\\04_methods\\mechanism-atoms",
+  "models": [
+    "strong_model",
+    "budget_model"
+  ],
+  "harness_arms": [
+    "G0",
+    "G2",
+    "G8",
+    "G9"
+  ],
+  "fixtures": [
+    "a1-schema-bound-extraction",
+    "a3-constraint-safe-planning",
+    "a8-evidence-type-separation"
+  ],
+  "repetitions": 2,
+  "run_count": 48,
+  "runs": [
+    {
+      "run_id": "a1-schema-bound-extraction__strong_model__G0__r1",
+      "fixture": "a1-schema-bound-extraction",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a1-schema-bound-extraction__strong_model__G0__r2",
+      "fixture": "a1-schema-bound-extraction",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a1-schema-bound-extraction__strong_model__G2__r1",
+      "fixture": "a1-schema-bound-extraction",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a1-schema-bound-extraction__strong_model__G2__r2",
+      "fixture": "a1-schema-bound-extraction",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a1-schema-bound-extraction__strong_model__G8__r1",
+      "fixture": "a1-schema-bound-extraction",
+      "model": "strong_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a1-schema-bound-extraction__strong_model__G8__r2",
+      "fixture": "a1-schema-bound-extraction",
+      "model": "strong_model",
+      "harness_arm": "G8",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a1-schema-bound-extraction__strong_model__G9__r1",
+      "fixture": "a1-schema-bound-extraction",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a1-schema-bound-extraction__strong_model__G9__r2",
+      "fixture": "a1-schema-bound-extraction",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a1-schema-bound-extraction__budget_model__G0__r1",
+      "fixture": "a1-schema-bound-extraction",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a1-schema-bound-extraction__budget_model__G0__r2",
+      "fixture": "a1-schema-bound-extraction",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a1-schema-bound-extraction__budget_model__G2__r1",
+      "fixture": "a1-schema-bound-extraction",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a1-schema-bound-extraction__budget_model__G2__r2",
+      "fixture": "a1-schema-bound-extraction",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a1-schema-bound-extraction__budget_model__G8__r1",
+      "fixture": "a1-schema-bound-extraction",
+      "model": "budget_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a1-schema-bound-extraction__budget_model__G8__r2",
+      "fixture": "a1-schema-bound-extraction",
+      "model": "budget_model",
+      "harness_arm": "G8",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a1-schema-bound-extraction__budget_model__G9__r1",
+      "fixture": "a1-schema-bound-extraction",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a1-schema-bound-extraction__budget_model__G9__r2",
+      "fixture": "a1-schema-bound-extraction",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3-constraint-safe-planning__strong_model__G0__r1",
+      "fixture": "a3-constraint-safe-planning",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3-constraint-safe-planning__strong_model__G0__r2",
+      "fixture": "a3-constraint-safe-planning",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3-constraint-safe-planning__strong_model__G2__r1",
+      "fixture": "a3-constraint-safe-planning",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3-constraint-safe-planning__strong_model__G2__r2",
+      "fixture": "a3-constraint-safe-planning",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3-constraint-safe-planning__strong_model__G8__r1",
+      "fixture": "a3-constraint-safe-planning",
+      "model": "strong_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3-constraint-safe-planning__strong_model__G8__r2",
+      "fixture": "a3-constraint-safe-planning",
+      "model": "strong_model",
+      "harness_arm": "G8",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3-constraint-safe-planning__strong_model__G9__r1",
+      "fixture": "a3-constraint-safe-planning",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3-constraint-safe-planning__strong_model__G9__r2",
+      "fixture": "a3-constraint-safe-planning",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3-constraint-safe-planning__budget_model__G0__r1",
+      "fixture": "a3-constraint-safe-planning",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3-constraint-safe-planning__budget_model__G0__r2",
+      "fixture": "a3-constraint-safe-planning",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3-constraint-safe-planning__budget_model__G2__r1",
+      "fixture": "a3-constraint-safe-planning",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3-constraint-safe-planning__budget_model__G2__r2",
+      "fixture": "a3-constraint-safe-planning",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3-constraint-safe-planning__budget_model__G8__r1",
+      "fixture": "a3-constraint-safe-planning",
+      "model": "budget_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3-constraint-safe-planning__budget_model__G8__r2",
+      "fixture": "a3-constraint-safe-planning",
+      "model": "budget_model",
+      "harness_arm": "G8",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3-constraint-safe-planning__budget_model__G9__r1",
+      "fixture": "a3-constraint-safe-planning",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3-constraint-safe-planning__budget_model__G9__r2",
+      "fixture": "a3-constraint-safe-planning",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8-evidence-type-separation__strong_model__G0__r1",
+      "fixture": "a8-evidence-type-separation",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8-evidence-type-separation__strong_model__G0__r2",
+      "fixture": "a8-evidence-type-separation",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8-evidence-type-separation__strong_model__G2__r1",
+      "fixture": "a8-evidence-type-separation",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8-evidence-type-separation__strong_model__G2__r2",
+      "fixture": "a8-evidence-type-separation",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8-evidence-type-separation__strong_model__G8__r1",
+      "fixture": "a8-evidence-type-separation",
+      "model": "strong_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8-evidence-type-separation__strong_model__G8__r2",
+      "fixture": "a8-evidence-type-separation",
+      "model": "strong_model",
+      "harness_arm": "G8",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8-evidence-type-separation__strong_model__G9__r1",
+      "fixture": "a8-evidence-type-separation",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8-evidence-type-separation__strong_model__G9__r2",
+      "fixture": "a8-evidence-type-separation",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8-evidence-type-separation__budget_model__G0__r1",
+      "fixture": "a8-evidence-type-separation",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8-evidence-type-separation__budget_model__G0__r2",
+      "fixture": "a8-evidence-type-separation",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8-evidence-type-separation__budget_model__G2__r1",
+      "fixture": "a8-evidence-type-separation",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8-evidence-type-separation__budget_model__G2__r2",
+      "fixture": "a8-evidence-type-separation",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8-evidence-type-separation__budget_model__G8__r1",
+      "fixture": "a8-evidence-type-separation",
+      "model": "budget_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8-evidence-type-separation__budget_model__G8__r2",
+      "fixture": "a8-evidence-type-separation",
+      "model": "budget_model",
+      "harness_arm": "G8",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8-evidence-type-separation__budget_model__G9__r1",
+      "fixture": "a8-evidence-type-separation",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8-evidence-type-separation__budget_model__G9__r2",
+      "fixture": "a8-evidence-type-separation",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    }
+  ]
+}

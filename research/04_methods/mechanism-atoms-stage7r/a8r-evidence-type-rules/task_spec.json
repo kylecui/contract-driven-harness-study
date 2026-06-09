@@ -1,0 +1,16 @@
+{
+  "task_id": "stage7r_a8r_evidence_type_rules",
+  "task_type": "mechanism_atom",
+  "objective": "Classify each item into exactly one evidence type using the supplied rules.",
+  "constraints": [
+    "Use only EXTRACTED, INFERRED, AMBIGUOUS, PROPOSED.",
+    "Classify each item exactly once.",
+    "Do not resolve ambiguous items as facts."
+  ],
+  "success_conditions": [
+    "I1 is EXTRACTED.",
+    "I2 is INFERRED.",
+    "I3 and I4 are PROPOSED.",
+    "I5 is AMBIGUOUS."
+  ]
+}

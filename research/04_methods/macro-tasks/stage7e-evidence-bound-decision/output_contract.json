@@ -1,0 +1,27 @@
+{
+  "output_contract_id": "out_stage7e_evidence_bound_decision_001",
+  "format": "json",
+  "required_sections": [
+    "state_inventory",
+    "grounded_claims",
+    "unsupported_claims",
+    "typed_evidence",
+    "selected_claim",
+    "rejected_options",
+    "decision_trace",
+    "stage_gate",
+    "carried_obligations"
+  ],
+  "required_nested_fields": {
+    "state_inventory": ["known_state", "unknown_state", "forbidden_inferences"],
+    "grounded_claims": ["claim", "evidence_ids"],
+    "unsupported_claims": ["claim", "reason"],
+    "selected_claim": ["option_id", "claim", "evidence_ids"],
+    "rejected_options": ["option_id", "reason", "evidence_ids"],
+    "stage_gate": ["status", "blocked_outputs", "next_required_actions"],
+    "carried_obligations": ["obligation", "status"]
+  },
+  "citation_policy": "claim_level_and_decision_trace",
+  "style_profile": "minimal_json",
+  "tool_trace_required": false
+}

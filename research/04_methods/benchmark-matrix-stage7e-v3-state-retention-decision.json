@@ -1,0 +1,49 @@
+{
+  "fixtures_dir": "research\\04_methods\\macro-tasks",
+  "models": [
+    "budget_model"
+  ],
+  "harness_arms": [
+    "G8",
+    "G9"
+  ],
+  "fixtures": [
+    "stage7e-v3-state-retention-decision"
+  ],
+  "repetitions": 2,
+  "run_count": 4,
+  "runs": [
+    {
+      "run_id": "stage7e-v3-state-retention-decision__budget_model__G8__r1",
+      "fixture": "stage7e-v3-state-retention-decision",
+      "model": "budget_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7e-v3-state-retention-decision__budget_model__G8__r2",
+      "fixture": "stage7e-v3-state-retention-decision",
+      "model": "budget_model",
+      "harness_arm": "G8",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7e-v3-state-retention-decision__budget_model__G9__r1",
+      "fixture": "stage7e-v3-state-retention-decision",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7e-v3-state-retention-decision__budget_model__G9__r2",
+      "fixture": "stage7e-v3-state-retention-decision",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    }
+  ]
+}

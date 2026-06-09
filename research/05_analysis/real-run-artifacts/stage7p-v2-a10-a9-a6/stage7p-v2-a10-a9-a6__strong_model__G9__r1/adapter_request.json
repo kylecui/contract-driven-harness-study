@@ -1,0 +1,10 @@
+{
+  "run_id": "stage7p-v2-a10-a9-a6__strong_model__G9__r1",
+  "provider": "manual_or_future_adapter",
+  "model_tier": "strong_model",
+  "harness_arm": "G9",
+  "prompt_path": "research\\05_analysis\\real-run-artifacts\\stage7p-v2-a10-a9-a6\\stage7p-v2-a10-a9-a6__strong_model__G9__r1\\prompt.md",
+  "temperature": 0,
+  "tools_enabled": true,
+  "expects_validation": true
+}

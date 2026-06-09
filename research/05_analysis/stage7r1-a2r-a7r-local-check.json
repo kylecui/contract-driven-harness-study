@@ -1,0 +1,281 @@
+{
+  "case_count": 4,
+  "failure_count": 0,
+  "cases": [
+    {
+      "fixture": "a2r1-claim-level-evidence-binding",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A2R1",
+        "atom_name": "Claim-Level Evidence Binding",
+        "primary_mechanism": "EvidenceBundle",
+        "primary_metric": "citation_grounding",
+        "expect_pass": true,
+        "expectation_met": true,
+        "findings": [],
+        "parsed_output": {
+          "grounded_claims": [
+            {
+              "claim": "G9 improved structured extraction contract adherence.",
+              "evidence_ids": [
+                "atom-a2r1-e01"
+              ]
+            },
+            {
+              "claim": "Research workflow G0 had citation grounding failures.",
+              "evidence_ids": [
+                "atom-a2r1-e02"
+              ]
+            }
+          ],
+          "unsupported_claims": [
+            {
+              "claim": "The harness is production ready.",
+              "reason": "No supplied evidence ID supports production readiness."
+            }
+          ],
+          "evidence_ids": [
+            "atom-a2r1-e01",
+            "atom-a2r1-e02"
+          ]
+        },
+        "run_id": "a2r1-claim-level-evidence-binding__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 1.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "a2r1-claim-level-evidence-binding",
+      "case": "global_evidence_only",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A2R1",
+        "atom_name": "Claim-Level Evidence Binding",
+        "primary_mechanism": "EvidenceBundle",
+        "primary_metric": "citation_grounding",
+        "expect_pass": false,
+        "expectation_met": true,
+        "findings": [
+          "citation_grounding=0.000 below threshold 1.000",
+          "task_success=0.500 below threshold 0.800"
+        ],
+        "parsed_output": {
+          "grounded_claims": [
+            "G9 improved structured extraction contract adherence.",
+            "Research workflow G0 had citation grounding failures."
+          ],
+          "unsupported_claims": [
+            "production readiness"
+          ],
+          "evidence_ids": [
+            "atom-a2r1-e01",
+            "atom-a2r1-e02"
+          ]
+        },
+        "run_id": "a2r1-claim-level-evidence-binding__global_evidence_only",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 0.75,
+        "cost_efficiency": 0.5,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "a7r1-rejection-trace-completeness",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A7R1",
+        "atom_name": "Rejection Trace Completeness",
+        "primary_mechanism": "TraceLog",
+        "primary_metric": "trace_completeness",
+        "expect_pass": true,
+        "expectation_met": true,
+        "findings": [],
+        "parsed_output": {
+          "selected_option_id": "C2",
+          "selected_claim": "Harness improves absolute contract adherence and enables weak models on mechanism-bound tasks.",
+          "rejected_options": [
+            {
+              "option_id": "C1",
+              "reason": "Universal gap closure is not supported.",
+              "evidence_ids": [
+                "atom-a7r1-e02"
+              ]
+            },
+            {
+              "option_id": "C3",
+              "reason": "Prose style was not measured.",
+              "evidence_ids": [
+                "atom-a7r1-e03"
+              ]
+            }
+          ],
+          "decision_trace": [
+            {
+              "step": "C2 is supported by weak-model task success improvement on mechanism-bound tasks.",
+              "option_id": "C2",
+              "evidence_ids": [
+                "atom-a7r1-e01"
+              ]
+            },
+            {
+              "step": "C1 is rejected because gap compression is not universal.",
+              "option_id": "C1",
+              "evidence_ids": [
+                "atom-a7r1-e02"
+              ]
+            },
+            {
+              "step": "C3 is rejected because prose style was not measured.",
+              "option_id": "C3",
+              "evidence_ids": [
+                "atom-a7r1-e03"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "atom-a7r1-e01",
+            "atom-a7r1-e02",
+            "atom-a7r1-e03"
+          ]
+        },
+        "run_id": "a7r1-rejection-trace-completeness__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 1.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 1.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "a7r1-rejection-trace-completeness",
+      "case": "missing_c3_trace",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A7R1",
+        "atom_name": "Rejection Trace Completeness",
+        "primary_mechanism": "TraceLog",
+        "primary_metric": "trace_completeness",
+        "expect_pass": false,
+        "expectation_met": true,
+        "findings": [
+          "trace_completeness=0.000 below threshold 1.000",
+          "task_success=0.500 below threshold 0.850"
+        ],
+        "parsed_output": {
+          "selected_option_id": "C2",
+          "selected_claim": "Harness improves absolute contract adherence and enables weak models on mechanism-bound tasks.",
+          "rejected_options": [
+            {
+              "option_id": "C1",
+              "reason": "Universal gap closure is not supported.",
+              "evidence_ids": [
+                "atom-a7r1-e02"
+              ]
+            },
+            {
+              "option_id": "C3",
+              "reason": "Prose style was not measured.",
+              "evidence_ids": []
+            }
+          ],
+          "decision_trace": [
+            {
+              "step": "C2 is supported by weak-model task success improvement.",
+              "option_id": "C2",
+              "evidence_ids": [
+                "atom-a7r1-e01"
+              ]
+            },
+            {
+              "step": "C1 is rejected because gap compression is not universal.",
+              "option_id": "C1",
+              "evidence_ids": [
+                "atom-a7r1-e02"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "atom-a7r1-e01",
+            "atom-a7r1-e02"
+          ]
+        },
+        "run_id": "a7r1-rejection-trace-completeness__missing_c3_trace",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.667,
+        "human_acceptance": 0.75,
+        "cost_efficiency": 0.5,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    }
+  ]
+}

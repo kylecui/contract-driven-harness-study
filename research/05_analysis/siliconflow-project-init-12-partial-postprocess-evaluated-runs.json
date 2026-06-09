@@ -1,0 +1,232 @@
+{
+  "runs": [
+    {
+      "run_id": "project-initialization__strong_model__G0__r1",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "validation_status": "complete",
+      "passed": false,
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 0.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.8,
+        "human_acceptance": 0.667,
+        "cost_efficiency": 0.5,
+        "safety_consistency": 1.0
+      },
+      "mock": false
+    },
+    {
+      "run_id": "project-initialization__strong_model__G0__r2",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "validation_status": "complete",
+      "passed": false,
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 0.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.8,
+        "human_acceptance": 0.667,
+        "cost_efficiency": 0.5,
+        "safety_consistency": 1.0
+      },
+      "mock": false
+    },
+    {
+      "run_id": "project-initialization__strong_model__G0__r3",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "validation_status": "complete",
+      "passed": false,
+      "metrics": {
+        "task_success": 0.667,
+        "schema_validity": 0.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.8,
+        "human_acceptance": 0.356,
+        "cost_efficiency": 0.333,
+        "safety_consistency": 0.4
+      },
+      "mock": false
+    },
+    {
+      "run_id": "project-initialization__strong_model__G9__r1",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "validation_status": "complete",
+      "passed": false,
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 0.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.8,
+        "human_acceptance": 0.667,
+        "cost_efficiency": 0.5,
+        "safety_consistency": 1.0
+      },
+      "mock": false
+    },
+    {
+      "run_id": "project-initialization__strong_model__G9__r2",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "validation_status": "complete",
+      "passed": false,
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 0.25,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.8,
+        "human_acceptance": 0.75,
+        "cost_efficiency": 0.625,
+        "safety_consistency": 1.0
+      },
+      "mock": false
+    },
+    {
+      "run_id": "project-initialization__strong_model__G9__r3",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "validation_status": "complete",
+      "passed": false,
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 0.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.8,
+        "human_acceptance": 0.667,
+        "cost_efficiency": 0.5,
+        "safety_consistency": 1.0
+      },
+      "mock": false
+    },
+    {
+      "run_id": "project-initialization__budget_model__G0__r1",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "validation_status": "complete",
+      "passed": false,
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 0.25,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.8,
+        "human_acceptance": 0.75,
+        "cost_efficiency": 0.625,
+        "safety_consistency": 1.0
+      },
+      "mock": false
+    },
+    {
+      "run_id": "project-initialization__budget_model__G0__r2",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "validation_status": "complete",
+      "passed": false,
+      "metrics": {
+        "task_success": 0.667,
+        "schema_validity": 0.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.8,
+        "human_acceptance": 0.356,
+        "cost_efficiency": 0.333,
+        "safety_consistency": 0.4
+      },
+      "mock": false
+    },
+    {
+      "run_id": "project-initialization__budget_model__G0__r3",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "validation_status": "complete",
+      "passed": false,
+      "metrics": {
+        "task_success": 0.667,
+        "schema_validity": 0.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.8,
+        "human_acceptance": 0.356,
+        "cost_efficiency": 0.333,
+        "safety_consistency": 0.4
+      },
+      "mock": false
+    },
+    {
+      "run_id": "project-initialization__budget_model__G9__r1",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "validation_status": "complete",
+      "passed": false,
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 0.25,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.8,
+        "human_acceptance": 0.75,
+        "cost_efficiency": 0.625,
+        "safety_consistency": 1.0
+      },
+      "mock": false
+    },
+    {
+      "run_id": "project-initialization__budget_model__G9__r2",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "validation_status": "complete",
+      "passed": false,
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 0.25,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.8,
+        "human_acceptance": 0.75,
+        "cost_efficiency": 0.625,
+        "safety_consistency": 1.0
+      },
+      "mock": false
+    },
+    {
+      "run_id": "project-initialization__budget_model__G9__r3",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "validation_status": "complete",
+      "passed": false,
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 0.25,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.8,
+        "human_acceptance": 0.75,
+        "cost_efficiency": 0.625,
+        "safety_consistency": 1.0
+      },
+      "mock": false
+    }
+  ]
+}

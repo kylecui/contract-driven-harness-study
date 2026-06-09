@@ -1,0 +1,44 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+  "atom_id": "A8",
+  "atom_name": "Evidence-Type Separation",
+  "primary_mechanism": "EvidenceBundle",
+  "primary_metric": "citation_grounding",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [
+    "citation_grounding=0.000 below threshold 0.800"
+  ],
+  "parsed_output": {
+    "extracted": [
+      {
+        "claim": "The temperature was recorded as 25°C at 10:00 AM.",
+        "citation": "ev_mechanism_a8_evidence_type_separation_001#slice_001"
+      }
+    ],
+    "inferred": [
+      {
+        "claim": "The system is likely experiencing a cooling efficiency issue based on the temperature readings and historical data.",
+        "citation": "ev_mechanism_a8_evidence_type_separation_001#slice_002, ev_mechanism_a8_evidence_type_separation_001#slice_003"
+      }
+    ],
+    "ambiguous": [
+      {
+        "claim": "There is uncertainty regarding the exact cause of the temperature fluctuation.",
+        "citation": "ev_mechanism_a8_evidence_type_separation_001#slice_004"
+      }
+    ],
+    "proposed": [
+      {
+        "claim": "Recommend reviewing the cooling system components for potential malfunctions.",
+        "citation": "ev_mechanism_a8_evidence_type_separation_001#slice_005"
+      }
+    ]
+  },
+  "run_id": "a8-evidence-type-separation__budget_model__G2__r1",
+  "model": "budget_model",
+  "harness_arm": "G2",
+  "fixture": "a8-evidence-type-separation"
+}

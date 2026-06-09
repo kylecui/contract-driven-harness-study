@@ -1,0 +1,14 @@
+{
+  "output_contract_id": "out_project_initialization_001",
+  "format": "checklist",
+  "required_sections": [
+    "created_files",
+    "skipped_files",
+    "risks",
+    "next_steps"
+  ],
+  "citation_policy": "important_claims",
+  "style_profile": "concise_engineering",
+  "tool_trace_required": true
+}
+

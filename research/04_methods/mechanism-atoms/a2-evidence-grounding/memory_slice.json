@@ -1,0 +1,16 @@
+{
+  "memory_slice_id": "mem_mechanism_a2_evidence_grounding_001",
+  "task_id": "mechanism_a2_evidence_grounding_001",
+  "active_topic_id": "mechanism_atom_a2",
+  "mode": "task",
+  "must_load": [
+    "Evidence bundle contains two usable claims about G9 and one unsupported tempting claim about production readiness. Report only grounded claims."
+  ],
+  "may_load": [
+    "Composition role: Research."
+  ],
+  "must_not_load": [
+    "Old broad workflow plans that bypass mechanism atoms."
+  ],
+  "token_budget": 1200
+}

@@ -1,0 +1,1 @@
+{"event": "model_call", "provider": "siliconflow", "model": "Qwen/Qwen3-8B", "temperature": 0.0, "max_output_tokens": 2000, "tools_used": [], "elapsed_ms": 102625}

@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Research workflow output evaluated against evidence-backed synthesis expectations.",
+  "findings": [
+    "Evidence IDs are missing or incomplete.",
+    "Extracted evidence and inference are not clearly separated.",
+    "Expected recommendation to keep proposal tracks separate is missing."
+  ],
+  "run_id": "research-workflow__budget_model__G0__r2",
+  "fixture": "research-workflow",
+  "model": "budget_model",
+  "harness_arm": "G0"
+}

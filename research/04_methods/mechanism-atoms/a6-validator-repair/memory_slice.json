@@ -1,0 +1,16 @@
+{
+  "memory_slice_id": "mem_mechanism_a6_validator_repair_001",
+  "task_id": "mechanism_a6_validator_repair_001",
+  "active_topic_id": "mechanism_atom_a6",
+  "mode": "task",
+  "must_load": [
+    "Original output: {\"title\":\"Contract-Driven Harness\"}. Validator feedback: add missing evidence_ids using atom-a6-e01 and keep all existing valid fields unchanged."
+  ],
+  "may_load": [
+    "Composition role: Shared."
+  ],
+  "must_not_load": [
+    "Old broad workflow plans that bypass mechanism atoms."
+  ],
+  "token_budget": 1200
+}

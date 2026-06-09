@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+  "atom_id": "A7R",
+  "atom_name": "Enumerated Claim Decision",
+  "primary_mechanism": "TraceLog",
+  "primary_metric": "trace_completeness",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [
+    "trace_completeness=0.000 below threshold 1.000",
+    "task_success=0.500 below threshold 0.850"
+  ],
+  "parsed_output": {
+    "selected_option_id": "C2",
+    "selected_claim": "Harness improves absolute contract adherence and enables weak models on mechanism-bound tasks.",
+    "rejected_option_ids": [
+      "C1",
+      "C3"
+    ],
+    "decision_trace": [
+      {
+        "evidence_id": "atom-a7r-e01",
+        "step": "Evidence e01 directly supports C2 by showing weak-model success improvement in G8/G9 tasks, which aligns with 'mechanism-bound tasks' in the claim."
+      },
+      {
+        "evidence_id": "atom-a7r-e02",
+        "step": "Evidence e02 invalidates C1's universal gap closure claim, as gap compression is not observed across all tasks."
+      }
+    ],
+    "evidence_ids": [
+      "atom-a7r-e01",
+      "atom-a7r-e02",
+      "atom-a7r-e03"
+    ]
+  },
+  "run_id": "a7r-enumerated-claim-decision__budget_model__G9__r1",
+  "model": "budget_model",
+  "harness_arm": "G9",
+  "fixture": "a7r-enumerated-claim-decision"
+}

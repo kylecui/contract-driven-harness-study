@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "passed": true,
+  "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+  "atom_id": "A9",
+  "atom_name": "No-Overwrite Action Plan",
+  "primary_mechanism": "TaskSpec",
+  "primary_metric": "constraint_consistency",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [],
+  "parsed_output": {
+    "create": [
+      "README.md",
+      "research/04_methods/new.md"
+    ],
+    "blocked": [
+      "AGENTS.md (overwrite)"
+    ],
+    "skip": [],
+    "ask-first": []
+  },
+  "run_id": "a9-no-overwrite-action-plan__budget_model__G0__r1",
+  "model": "budget_model",
+  "harness_arm": "G0",
+  "fixture": "a9-no-overwrite-action-plan"
+}

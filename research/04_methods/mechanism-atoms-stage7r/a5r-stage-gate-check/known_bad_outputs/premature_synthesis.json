@@ -1,0 +1,13 @@
+{
+  "stage_status": {
+    "research_brief": "complete",
+    "source_index": "complete",
+    "evidence_ledger": "complete",
+    "citation_audit": "complete"
+  },
+  "gate_decision": "proceed",
+  "missing_prerequisites": [],
+  "blocked_outputs": [],
+  "next_required_actions": ["write synthesis and final recommendation"],
+  "evidence_ids": ["atom-a5r-e01", "atom-a5r-e02"]
+}

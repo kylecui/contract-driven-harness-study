@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "passed": true,
+  "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+  "atom_id": "A10",
+  "atom_name": "Bounded Context Recall",
+  "primary_mechanism": "MemorySlice",
+  "primary_metric": "state_accuracy",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [],
+  "parsed_output": {
+    "answer": "Stage 2 is next.",
+    "used_context": [
+      "Must-load: current roadmap says Stage 2 is next."
+    ],
+    "excluded_context": [
+      "Old plan that says run another broad workflow slice."
+    ]
+  },
+  "run_id": "a10-bounded-context-recall__strong_model__G8__r1",
+  "model": "strong_model",
+  "harness_arm": "G8",
+  "fixture": "a10-bounded-context-recall"
+}

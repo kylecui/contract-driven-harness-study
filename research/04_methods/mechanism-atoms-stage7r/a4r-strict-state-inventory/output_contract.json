@@ -1,0 +1,8 @@
+{
+  "output_contract_id": "out_stage7r_a4r_strict_state_inventory_001",
+  "format": "json",
+  "required_sections": ["known_state", "unknown_state", "forbidden_inferences", "evidence_ids"],
+  "citation_policy": "known_state_only",
+  "style_profile": "minimal_json",
+  "tool_trace_required": false
+}

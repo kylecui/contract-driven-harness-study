@@ -1,0 +1,26 @@
+{
+  "execute": true,
+  "processed": 2,
+  "results": [
+    {
+      "run_id": "a8-evidence-type-separation__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G9__r1\\output.md"
+    },
+    {
+      "run_id": "a8-evidence-type-separation__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-pilot48\\a8-evidence-type-separation__budget_model__G9__r2\\output.md"
+    }
+  ]
+}

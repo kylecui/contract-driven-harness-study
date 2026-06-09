@@ -1,0 +1,15 @@
+{
+  "output_contract_id": "out_research_workflow_001",
+  "format": "markdown_report",
+  "required_sections": [
+    "brief",
+    "evidence_summary",
+    "synthesis",
+    "risks",
+    "next_steps"
+  ],
+  "citation_policy": "important_claims",
+  "style_profile": "rigorous_research",
+  "tool_trace_required": true
+}
+

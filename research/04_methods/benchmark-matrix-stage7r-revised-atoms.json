@@ -1,0 +1,312 @@
+{
+  "fixtures_dir": "research\\04_methods\\mechanism-atoms-stage7r",
+  "models": [
+    "strong_model",
+    "budget_model"
+  ],
+  "harness_arms": [
+    "G0",
+    "G8",
+    "G9"
+  ],
+  "fixtures": [
+    "a2r-unsupported-claim-detection",
+    "a3r-constraint-safe-plan",
+    "a4r-strict-state-inventory",
+    "a5r-stage-gate-check",
+    "a7r-enumerated-claim-decision",
+    "a8r-evidence-type-rules"
+  ],
+  "repetitions": 1,
+  "run_count": 36,
+  "runs": [
+    {
+      "run_id": "a2r-unsupported-claim-detection__strong_model__G0__r1",
+      "fixture": "a2r-unsupported-claim-detection",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a2r-unsupported-claim-detection__strong_model__G8__r1",
+      "fixture": "a2r-unsupported-claim-detection",
+      "model": "strong_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a2r-unsupported-claim-detection__strong_model__G9__r1",
+      "fixture": "a2r-unsupported-claim-detection",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a2r-unsupported-claim-detection__budget_model__G0__r1",
+      "fixture": "a2r-unsupported-claim-detection",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a2r-unsupported-claim-detection__budget_model__G8__r1",
+      "fixture": "a2r-unsupported-claim-detection",
+      "model": "budget_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a2r-unsupported-claim-detection__budget_model__G9__r1",
+      "fixture": "a2r-unsupported-claim-detection",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3r-constraint-safe-plan__strong_model__G0__r1",
+      "fixture": "a3r-constraint-safe-plan",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3r-constraint-safe-plan__strong_model__G8__r1",
+      "fixture": "a3r-constraint-safe-plan",
+      "model": "strong_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3r-constraint-safe-plan__strong_model__G9__r1",
+      "fixture": "a3r-constraint-safe-plan",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3r-constraint-safe-plan__budget_model__G0__r1",
+      "fixture": "a3r-constraint-safe-plan",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3r-constraint-safe-plan__budget_model__G8__r1",
+      "fixture": "a3r-constraint-safe-plan",
+      "model": "budget_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a3r-constraint-safe-plan__budget_model__G9__r1",
+      "fixture": "a3r-constraint-safe-plan",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a4r-strict-state-inventory__strong_model__G0__r1",
+      "fixture": "a4r-strict-state-inventory",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a4r-strict-state-inventory__strong_model__G8__r1",
+      "fixture": "a4r-strict-state-inventory",
+      "model": "strong_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a4r-strict-state-inventory__strong_model__G9__r1",
+      "fixture": "a4r-strict-state-inventory",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a4r-strict-state-inventory__budget_model__G0__r1",
+      "fixture": "a4r-strict-state-inventory",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a4r-strict-state-inventory__budget_model__G8__r1",
+      "fixture": "a4r-strict-state-inventory",
+      "model": "budget_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a4r-strict-state-inventory__budget_model__G9__r1",
+      "fixture": "a4r-strict-state-inventory",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a5r-stage-gate-check__strong_model__G0__r1",
+      "fixture": "a5r-stage-gate-check",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a5r-stage-gate-check__strong_model__G8__r1",
+      "fixture": "a5r-stage-gate-check",
+      "model": "strong_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a5r-stage-gate-check__strong_model__G9__r1",
+      "fixture": "a5r-stage-gate-check",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a5r-stage-gate-check__budget_model__G0__r1",
+      "fixture": "a5r-stage-gate-check",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a5r-stage-gate-check__budget_model__G8__r1",
+      "fixture": "a5r-stage-gate-check",
+      "model": "budget_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a5r-stage-gate-check__budget_model__G9__r1",
+      "fixture": "a5r-stage-gate-check",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a7r-enumerated-claim-decision__strong_model__G0__r1",
+      "fixture": "a7r-enumerated-claim-decision",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a7r-enumerated-claim-decision__strong_model__G8__r1",
+      "fixture": "a7r-enumerated-claim-decision",
+      "model": "strong_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a7r-enumerated-claim-decision__strong_model__G9__r1",
+      "fixture": "a7r-enumerated-claim-decision",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a7r-enumerated-claim-decision__budget_model__G0__r1",
+      "fixture": "a7r-enumerated-claim-decision",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a7r-enumerated-claim-decision__budget_model__G8__r1",
+      "fixture": "a7r-enumerated-claim-decision",
+      "model": "budget_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a7r-enumerated-claim-decision__budget_model__G9__r1",
+      "fixture": "a7r-enumerated-claim-decision",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8r-evidence-type-rules__strong_model__G0__r1",
+      "fixture": "a8r-evidence-type-rules",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8r-evidence-type-rules__strong_model__G8__r1",
+      "fixture": "a8r-evidence-type-rules",
+      "model": "strong_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8r-evidence-type-rules__strong_model__G9__r1",
+      "fixture": "a8r-evidence-type-rules",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8r-evidence-type-rules__budget_model__G0__r1",
+      "fixture": "a8r-evidence-type-rules",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8r-evidence-type-rules__budget_model__G8__r1",
+      "fixture": "a8r-evidence-type-rules",
+      "model": "budget_model",
+      "harness_arm": "G8",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "a8r-evidence-type-rules__budget_model__G9__r1",
+      "fixture": "a8r-evidence-type-rules",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    }
+  ]
+}

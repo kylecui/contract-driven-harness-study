@@ -1,0 +1,33 @@
+{
+  "extracted": [
+    {
+      "claim": "24 structured-extraction runs completed.",
+      "evidence_ids": [
+        "atom-a8-e01"
+      ]
+    }
+  ],
+  "inferred": [
+    {
+      "claim": "Gap compression is task-dependent.",
+      "evidence_ids": [
+        "atom-a8-e01",
+        "atom-a8-e02"
+      ]
+    }
+  ],
+  "ambiguous": [
+    {
+      "claim": "Composition scalability remains unproven.",
+      "evidence_ids": [
+        "atom-a8-e03"
+      ]
+    }
+  ],
+  "proposed": [
+    {
+      "claim": "Run mechanism atoms before broad workflows.",
+      "evidence_ids": []
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "evidence_bundle_id": "ev_mechanism_a1_schema_bound_extraction_001",
+  "task_id": "mechanism_a1_schema_bound_extraction_001",
+  "items": [
+    {
+      "source_id": "a1-fixture",
+      "evidence_id": "atom-a1-e01",
+      "evidence_type": "EXTRACTED",
+      "claim": "Primary evidence for Schema-Bound Extraction.",
+      "freshness": "local_snapshot",
+      "authority": "fixture"
+    },
+    {
+      "source_id": "a1-fixture",
+      "evidence_id": "atom-a1-e02",
+      "evidence_type": "INFERRED",
+      "claim": "Supporting evidence for Missing required structure.",
+      "freshness": "local_snapshot",
+      "authority": "fixture"
+    }
+  ]
+}

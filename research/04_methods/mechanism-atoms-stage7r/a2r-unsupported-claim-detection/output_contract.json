@@ -1,0 +1,8 @@
+{
+  "output_contract_id": "out_stage7r_a2r_unsupported_claim_detection_001",
+  "format": "json",
+  "required_sections": ["grounded_claims", "unsupported_claims", "evidence_ids"],
+  "citation_policy": "every_claim",
+  "style_profile": "minimal_json",
+  "tool_trace_required": false
+}

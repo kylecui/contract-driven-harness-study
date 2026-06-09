@@ -1,0 +1,23 @@
+{
+  "bundle_id": "stage7r_a8r_evidence_001",
+  "items": [
+    {
+      "evidence_id": "atom-a8r-e01",
+      "type": "EXTRACTED",
+      "claim": "I1 is a directly observed adapter completion result.",
+      "source": "input.md"
+    },
+    {
+      "evidence_id": "atom-a8r-e02",
+      "type": "EXTRACTED",
+      "claim": "I2 is derived from comparing G0 and G8/G9 outcomes.",
+      "source": "input.md"
+    },
+    {
+      "evidence_id": "atom-a8r-e03",
+      "type": "EXTRACTED",
+      "claim": "I5 contains conflicting notes about gap compression.",
+      "source": "input.md"
+    }
+  ]
+}

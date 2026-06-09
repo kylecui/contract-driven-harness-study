@@ -1,0 +1,797 @@
+{
+  "case_count": 12,
+  "failure_count": 0,
+  "cases": [
+    {
+      "fixture": "a2r-unsupported-claim-detection",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A2R",
+        "atom_name": "Unsupported Claim Detection",
+        "primary_mechanism": "EvidenceBundle",
+        "primary_metric": "citation_grounding",
+        "expect_pass": true,
+        "expectation_met": true,
+        "findings": [],
+        "parsed_output": {
+          "grounded_claims": [
+            {
+              "claim": "G9 improved structured extraction contract adherence.",
+              "evidence_ids": [
+                "atom-a2r-e01"
+              ]
+            },
+            {
+              "claim": "Research workflow G0 had citation grounding failures.",
+              "evidence_ids": [
+                "atom-a2r-e02"
+              ]
+            }
+          ],
+          "unsupported_claims": [
+            {
+              "claim": "production readiness",
+              "reason": "no supplied evidence_id supports this claim"
+            }
+          ],
+          "evidence_ids": [
+            "atom-a2r-e01",
+            "atom-a2r-e02"
+          ]
+        },
+        "run_id": "a2r-unsupported-claim-detection__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 1.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "a2r-unsupported-claim-detection",
+      "case": "accepts_unsupported_claim",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A2R",
+        "atom_name": "Unsupported Claim Detection",
+        "primary_mechanism": "EvidenceBundle",
+        "primary_metric": "citation_grounding",
+        "expect_pass": false,
+        "expectation_met": true,
+        "findings": [
+          "citation_grounding=0.000 below threshold 1.000",
+          "task_success=0.500 below threshold 0.800"
+        ],
+        "parsed_output": {
+          "grounded_claims": [
+            {
+              "claim": "The harness is production ready.",
+              "evidence_ids": []
+            }
+          ],
+          "unsupported_claims": [],
+          "evidence_ids": []
+        },
+        "run_id": "a2r-unsupported-claim-detection__accepts_unsupported_claim",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 0.75,
+        "cost_efficiency": 0.5,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "a3r-constraint-safe-plan",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A3R",
+        "atom_name": "Constraint Safe Plan",
+        "primary_mechanism": "TaskSpec",
+        "primary_metric": "constraint_consistency",
+        "expect_pass": true,
+        "expectation_met": true,
+        "findings": [],
+        "parsed_output": {
+          "allowed_actions": [
+            "create missing research workspace directories",
+            "create tasks/backlog.md if missing"
+          ],
+          "blocked_actions": [
+            "overwrite AGENTS.md",
+            "write plaintext API keys to project files",
+            "run network installers without explicit approval"
+          ],
+          "safe_action_plan": [
+            "check whether target files already exist before writing",
+            "preserve AGENTS.md unchanged",
+            "create only missing research workspace artifacts",
+            "keep API keys in environment variables or secret manager only",
+            "request approval before any network installer"
+          ],
+          "evidence_ids": [
+            "atom-a3r-e01",
+            "atom-a3r-e02",
+            "atom-a3r-e03"
+          ]
+        },
+        "run_id": "a3r-constraint-safe-plan__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 1.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 1.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "a3r-constraint-safe-plan",
+      "case": "allows_overwrite_and_secret",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A3R",
+        "atom_name": "Constraint Safe Plan",
+        "primary_mechanism": "TaskSpec",
+        "primary_metric": "constraint_consistency",
+        "expect_pass": false,
+        "expectation_met": true,
+        "findings": [
+          "constraint_consistency=0.000 below threshold 1.000",
+          "task_success=0.500 below threshold 0.800"
+        ],
+        "parsed_output": {
+          "allowed_actions": [
+            "overwrite AGENTS.md with the new project policy",
+            "store the API key in .env for convenience",
+            "run the installer now"
+          ],
+          "blocked_actions": [],
+          "safe_action_plan": [
+            "replace AGENTS.md",
+            "write the supplied API key to project files",
+            "execute the network installer"
+          ],
+          "evidence_ids": [
+            "atom-a3r-e01",
+            "atom-a3r-e02"
+          ]
+        },
+        "run_id": "a3r-constraint-safe-plan__allows_overwrite_and_secret",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.667,
+        "human_acceptance": 0.75,
+        "cost_efficiency": 0.5,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "a4r-strict-state-inventory",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A4R",
+        "atom_name": "Strict State Inventory",
+        "primary_mechanism": "MemorySlice",
+        "primary_metric": "state_accuracy",
+        "expect_pass": true,
+        "expectation_met": true,
+        "findings": [],
+        "parsed_output": {
+          "known_state": [
+            {
+              "fact": "AGENTS.md is present",
+              "evidence_ids": [
+                "atom-a4r-e01"
+              ]
+            },
+            {
+              "fact": "Stage7p v2 is complete and Stage7r is pending",
+              "evidence_ids": [
+                "atom-a4r-e02"
+              ]
+            },
+            {
+              "fact": "research/05_analysis/stage7p-v2-a10-a9-a6-evaluation.md exists",
+              "evidence_ids": [
+                "atom-a4r-e03"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current Git branch",
+            "CI status",
+            "network execution approval"
+          ],
+          "forbidden_inferences": [
+            "do not infer CI passed",
+            "do not infer a Git branch name",
+            "do not infer approval for network execution"
+          ],
+          "evidence_ids": [
+            "atom-a4r-e01",
+            "atom-a4r-e02",
+            "atom-a4r-e03"
+          ]
+        },
+        "run_id": "a4r-strict-state-inventory__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 1.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 1.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 1.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "a4r-strict-state-inventory",
+      "case": "invents_ci_and_branch",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A4R",
+        "atom_name": "Strict State Inventory",
+        "primary_mechanism": "MemorySlice",
+        "primary_metric": "state_accuracy",
+        "expect_pass": false,
+        "expectation_met": true,
+        "findings": [
+          "state_accuracy=0.000 below threshold 0.850",
+          "task_success=0.500 below threshold 0.800"
+        ],
+        "parsed_output": {
+          "known_state": [
+            {
+              "fact": "AGENTS.md is present",
+              "evidence_ids": [
+                "atom-a4r-e01"
+              ]
+            },
+            {
+              "fact": "Stage7p v2 is complete and Stage7r is pending",
+              "evidence_ids": [
+                "atom-a4r-e02"
+              ]
+            },
+            {
+              "fact": "CI passed on the main branch",
+              "evidence_ids": [
+                "atom-a4r-e03"
+              ]
+            }
+          ],
+          "unknown_state": [],
+          "forbidden_inferences": [],
+          "evidence_ids": [
+            "atom-a4r-e01",
+            "atom-a4r-e02",
+            "atom-a4r-e03"
+          ]
+        },
+        "run_id": "a4r-strict-state-inventory__invents_ci_and_branch",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 1.0,
+        "human_acceptance": 0.75,
+        "cost_efficiency": 0.5,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "a5r-stage-gate-check",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A5R",
+        "atom_name": "Stage Gate Check",
+        "primary_mechanism": "WorkflowGraph",
+        "primary_metric": "stage_completion",
+        "expect_pass": true,
+        "expectation_met": true,
+        "findings": [],
+        "parsed_output": {
+          "stage_status": {
+            "research_brief": "complete",
+            "source_index": "complete",
+            "evidence_ledger": "incomplete",
+            "citation_audit": "not_started"
+          },
+          "gate_decision": "blocked",
+          "missing_prerequisites": [
+            "evidence_ledger",
+            "citation_audit"
+          ],
+          "blocked_outputs": [
+            "synthesis",
+            "final_recommendation"
+          ],
+          "next_required_actions": [
+            "complete evidence_ledger before synthesis",
+            "complete citation_audit before final recommendation"
+          ],
+          "evidence_ids": [
+            "atom-a5r-e01",
+            "atom-a5r-e02",
+            "atom-a5r-e03"
+          ]
+        },
+        "run_id": "a5r-stage-gate-check__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 1.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 1.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "a5r-stage-gate-check",
+      "case": "premature_synthesis",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A5R",
+        "atom_name": "Stage Gate Check",
+        "primary_mechanism": "WorkflowGraph",
+        "primary_metric": "stage_completion",
+        "expect_pass": false,
+        "expectation_met": true,
+        "findings": [
+          "stage_completion=0.000 below threshold 1.000",
+          "task_success=0.500 below threshold 0.800"
+        ],
+        "parsed_output": {
+          "stage_status": {
+            "research_brief": "complete",
+            "source_index": "complete",
+            "evidence_ledger": "complete",
+            "citation_audit": "complete"
+          },
+          "gate_decision": "proceed",
+          "missing_prerequisites": [],
+          "blocked_outputs": [],
+          "next_required_actions": [
+            "write synthesis and final recommendation"
+          ],
+          "evidence_ids": [
+            "atom-a5r-e01",
+            "atom-a5r-e02"
+          ]
+        },
+        "run_id": "a5r-stage-gate-check__premature_synthesis",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.667,
+        "human_acceptance": 0.75,
+        "cost_efficiency": 0.5,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "a7r-enumerated-claim-decision",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A7R",
+        "atom_name": "Enumerated Claim Decision",
+        "primary_mechanism": "TraceLog",
+        "primary_metric": "trace_completeness",
+        "expect_pass": true,
+        "expectation_met": true,
+        "findings": [],
+        "parsed_output": {
+          "selected_option_id": "C2",
+          "selected_claim": "Harness improves absolute contract adherence and enables weak models on mechanism-bound tasks.",
+          "rejected_option_ids": [
+            {
+              "option_id": "C1",
+              "reason": "universal gap closure is not supported",
+              "evidence_ids": [
+                "atom-a7r-e02"
+              ]
+            },
+            {
+              "option_id": "C3",
+              "reason": "prose style was not measured",
+              "evidence_ids": [
+                "atom-a7r-e03"
+              ]
+            }
+          ],
+          "decision_trace": [
+            {
+              "step": "C2 matches observed weak-model task success improvement",
+              "evidence_ids": [
+                "atom-a7r-e01"
+              ]
+            },
+            {
+              "step": "C1 is too broad because gap compression is not universal",
+              "evidence_ids": [
+                "atom-a7r-e02"
+              ]
+            },
+            {
+              "step": "C3 is unsupported because prose style was not evaluated",
+              "evidence_ids": [
+                "atom-a7r-e03"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "atom-a7r-e01",
+            "atom-a7r-e02",
+            "atom-a7r-e03"
+          ]
+        },
+        "run_id": "a7r-enumerated-claim-decision__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 1.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 1.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "a7r-enumerated-claim-decision",
+      "case": "selects_universal_claim",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A7R",
+        "atom_name": "Enumerated Claim Decision",
+        "primary_mechanism": "TraceLog",
+        "primary_metric": "trace_completeness",
+        "expect_pass": false,
+        "expectation_met": true,
+        "findings": [
+          "trace_completeness=0.000 below threshold 1.000",
+          "task_success=0.500 below threshold 0.850"
+        ],
+        "parsed_output": {
+          "selected_option_id": "C1",
+          "selected_claim": "Harness universally closes the performance gap between strong and weak models.",
+          "rejected_option_ids": [
+            {
+              "option_id": "C2",
+              "reason": "too narrow"
+            },
+            {
+              "option_id": "C3",
+              "reason": "less important"
+            }
+          ],
+          "decision_trace": [
+            {
+              "step": "Gap compression happened, therefore the universal claim is acceptable",
+              "evidence_ids": [
+                "atom-a7r-e02"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "atom-a7r-e02"
+          ]
+        },
+        "run_id": "a7r-enumerated-claim-decision__selects_universal_claim",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.333,
+        "human_acceptance": 0.75,
+        "cost_efficiency": 0.5,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "a8r-evidence-type-rules",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A8R",
+        "atom_name": "Evidence Type Rules",
+        "primary_mechanism": "EvidenceBundle",
+        "primary_metric": "citation_grounding",
+        "expect_pass": true,
+        "expectation_met": true,
+        "findings": [],
+        "parsed_output": {
+          "extracted": [
+            {
+              "item_id": "I1",
+              "reason": "directly observed artifact result",
+              "evidence_ids": [
+                "atom-a8r-e01"
+              ]
+            }
+          ],
+          "inferred": [
+            {
+              "item_id": "I2",
+              "reason": "derived by comparing weak-model G0 and G8/G9 outcomes",
+              "evidence_ids": [
+                "atom-a8r-e02"
+              ]
+            }
+          ],
+          "ambiguous": [
+            {
+              "item_id": "I5",
+              "reason": "notes conflict on whether gap compression is universal or conditional",
+              "evidence_ids": [
+                "atom-a8r-e03"
+              ]
+            }
+          ],
+          "proposed": [
+            {
+              "item_id": "I3",
+              "reason": "redesign requirement is a next action"
+            },
+            {
+              "item_id": "I4",
+              "reason": "running smoke is a proposed next action"
+            }
+          ],
+          "evidence_ids": [
+            "atom-a8r-e01",
+            "atom-a8r-e02",
+            "atom-a8r-e03"
+          ]
+        },
+        "run_id": "a8r-evidence-type-rules__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 1.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 1.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "a8r-evidence-type-rules",
+      "case": "flattens_all_to_extracted",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A8R",
+        "atom_name": "Evidence Type Rules",
+        "primary_mechanism": "EvidenceBundle",
+        "primary_metric": "citation_grounding",
+        "expect_pass": false,
+        "expectation_met": true,
+        "findings": [
+          "evidence_type_accuracy=0.000 below threshold 1.000",
+          "task_success=0.500 below threshold 0.800"
+        ],
+        "parsed_output": {
+          "extracted": [
+            {
+              "item_id": "I1",
+              "reason": "it is in the input",
+              "evidence_ids": [
+                "atom-a8r-e01"
+              ]
+            },
+            {
+              "item_id": "I2",
+              "reason": "it is in the input",
+              "evidence_ids": [
+                "atom-a8r-e02"
+              ]
+            },
+            {
+              "item_id": "I3",
+              "reason": "it is in the input"
+            },
+            {
+              "item_id": "I4",
+              "reason": "it is in the input"
+            },
+            {
+              "item_id": "I5",
+              "reason": "it is in the input",
+              "evidence_ids": [
+                "atom-a8r-e03"
+              ]
+            }
+          ],
+          "inferred": [],
+          "ambiguous": [],
+          "proposed": [],
+          "evidence_ids": [
+            "atom-a8r-e01",
+            "atom-a8r-e02",
+            "atom-a8r-e03"
+          ]
+        },
+        "run_id": "a8r-evidence-type-rules__flattens_all_to_extracted",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 1.0,
+        "human_acceptance": 0.75,
+        "cost_efficiency": 0.5,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    }
+  ]
+}

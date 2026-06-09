@@ -1,0 +1,56 @@
+{
+  "atom_version": "0.1.0",
+  "atom_id": "A10",
+  "atom_name": "Bounded Context Recall",
+  "primary_mechanism": "MemorySlice",
+  "supporting_mechanisms": [
+    "OutputContract"
+  ],
+  "capability_under_test": "Use only must-load and may-load context while excluding must-not-load context.",
+  "non_goals": [
+    "Do not evaluate general prose quality.",
+    "Do not evaluate broad end-to-end workflow success."
+  ],
+  "input_contract": {
+    "required_inputs": [
+      "input.md",
+      "task_spec.json",
+      "output_contract.json"
+    ],
+    "fixed_snapshot": true,
+    "forbidden_assumptions": [
+      "Do not use live web state.",
+      "Do not assume files, evidence, or constraints absent from the fixture."
+    ]
+  },
+  "output_contract_id": "out_mechanism_a10_bounded_context_recall_001",
+  "pass_criteria": [
+    {
+      "metric": "context_relevance",
+      "threshold": 1.0,
+      "required": true
+    },
+    {
+      "metric": "task_success",
+      "threshold": 0.8,
+      "required": true
+    }
+  ],
+  "known_failure_modes": [
+    "Irrelevant or stale context use"
+  ],
+  "composition_interface": {
+    "input_from_previous": [
+      "fixed_snapshot"
+    ],
+    "output_to_next": [
+      "bounded_context_answer"
+    ],
+    "state_dependencies": [
+      "memory_slice"
+    ],
+    "evidence_dependencies": [],
+    "failure_signal": "bounded-context-recall_failed",
+    "repair_policy": "stop_and_report"
+  }
+}

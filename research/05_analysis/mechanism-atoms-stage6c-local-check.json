@@ -1,0 +1,477 @@
+{
+  "case_count": 10,
+  "failure_count": 0,
+  "cases": [
+    {
+      "fixture": "a10-bounded-context-recall",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A10",
+        "atom_name": "Bounded Context Recall",
+        "primary_mechanism": "MemorySlice",
+        "primary_metric": "state_accuracy",
+        "expect_pass": true,
+        "expectation_met": true,
+        "findings": [],
+        "parsed_output": {
+          "answer": "Stage 2: specify A1-A10 mechanism atoms.",
+          "used_context": [
+            "current roadmap"
+          ],
+          "excluded_context": [
+            "old broad workflow slice plan"
+          ]
+        },
+        "run_id": "a10-bounded-context-recall__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 1.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 1.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "a10-bounded-context-recall",
+      "case": "missing_or_invalid_primary_mechanism",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A10",
+        "atom_name": "Bounded Context Recall",
+        "primary_mechanism": "MemorySlice",
+        "primary_metric": "state_accuracy",
+        "expect_pass": false,
+        "expectation_met": true,
+        "findings": [
+          "context_relevance=0.000 below threshold 1.000",
+          "task_success=0.500 below threshold 0.800"
+        ],
+        "parsed_output": {
+          "answer": "Run another broad workflow slice.",
+          "used_context": [
+            "old plan"
+          ],
+          "excluded_context": []
+        },
+        "run_id": "a10-bounded-context-recall__missing_or_invalid_primary_mechanism",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 0.75,
+        "cost_efficiency": 0.5,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "a5-stage-gated-synthesis",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A5",
+        "atom_name": "Stage-Gated Synthesis",
+        "primary_mechanism": "WorkflowGraph",
+        "primary_metric": "stage_completion",
+        "expect_pass": true,
+        "expectation_met": true,
+        "findings": [],
+        "parsed_output": {
+          "brief": "Assess whether tracks should remain separate.",
+          "evidence_summary": [
+            "atom-a5-e01",
+            "atom-a5-e02"
+          ],
+          "synthesis": "The tracks have different validation needs.",
+          "recommendation": "Keep tracks separate for now.",
+          "risks": [
+            "composition claim remains untested"
+          ],
+          "stage_status": {
+            "brief": "complete",
+            "evidence": "complete",
+            "synthesis": "complete",
+            "recommendation": "complete"
+          }
+        },
+        "run_id": "a5-stage-gated-synthesis__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 1.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 1.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "a5-stage-gated-synthesis",
+      "case": "missing_or_invalid_primary_mechanism",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A5",
+        "atom_name": "Stage-Gated Synthesis",
+        "primary_mechanism": "WorkflowGraph",
+        "primary_metric": "stage_completion",
+        "expect_pass": false,
+        "expectation_met": true,
+        "findings": [
+          "stage_completion=0.225 below threshold 1.000",
+          "task_success=0.188 below threshold 0.800"
+        ],
+        "parsed_output": {
+          "recommendation": "Merge tracks.",
+          "stage_status": {
+            "recommendation": "complete"
+          }
+        },
+        "run_id": "a5-stage-gated-synthesis__missing_or_invalid_primary_mechanism",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.188,
+        "schema_validity": 0.333,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 0.261,
+        "cost_efficiency": 0.188,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.225,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 0.225
+      }
+    },
+    {
+      "fixture": "a6-validator-repair",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A6",
+        "atom_name": "Validator Repair",
+        "primary_mechanism": "ValidatorGate",
+        "primary_metric": "repair_success",
+        "expect_pass": true,
+        "expectation_met": true,
+        "findings": [],
+        "parsed_output": {
+          "repaired_output": {
+            "title": "Contract-Driven Harness",
+            "evidence_ids": [
+              "atom-a6-e01"
+            ]
+          },
+          "repair_trace": [
+            "added missing evidence_ids"
+          ],
+          "remaining_warnings": []
+        },
+        "run_id": "a6-validator-repair__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.5,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 1.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "a6-validator-repair",
+      "case": "missing_or_invalid_primary_mechanism",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A6",
+        "atom_name": "Validator Repair",
+        "primary_mechanism": "ValidatorGate",
+        "primary_metric": "repair_success",
+        "expect_pass": false,
+        "expectation_met": true,
+        "findings": [
+          "repair_success=0.000 below threshold 1.000",
+          "schema_validity=0.667 below threshold 1.000"
+        ],
+        "parsed_output": {
+          "repaired_output": {
+            "title": "Contract-Driven Harness"
+          },
+          "repair_trace": []
+        },
+        "run_id": "a6-validator-repair__missing_or_invalid_primary_mechanism",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.417,
+        "schema_validity": 0.667,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 0.542,
+        "cost_efficiency": 0.417,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "a7-traceable-decision",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A7",
+        "atom_name": "Traceable Decision",
+        "primary_mechanism": "TraceLog",
+        "primary_metric": "trace_completeness",
+        "expect_pass": true,
+        "expectation_met": true,
+        "findings": [],
+        "parsed_output": {
+          "decision": "weak-model enablement",
+          "criteria_used": [
+            "baseline gap n/a",
+            "budget model improves"
+          ],
+          "evidence_ids": [
+            "atom-a7-e01"
+          ],
+          "trace": [
+            "checked baseline gap",
+            "checked budget lift",
+            "selected bounded claim"
+          ]
+        },
+        "run_id": "a7-traceable-decision__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.5,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 1.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "a7-traceable-decision",
+      "case": "missing_or_invalid_primary_mechanism",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A7",
+        "atom_name": "Traceable Decision",
+        "primary_mechanism": "TraceLog",
+        "primary_metric": "trace_completeness",
+        "expect_pass": false,
+        "expectation_met": true,
+        "findings": [
+          "trace_completeness=0.000 below threshold 1.000",
+          "task_success=0.000 below threshold 0.800"
+        ],
+        "parsed_output": {
+          "decision": "gap compression",
+          "trace": []
+        },
+        "run_id": "a7-traceable-decision__missing_or_invalid_primary_mechanism",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.0,
+        "schema_validity": 0.5,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 0.25,
+        "cost_efficiency": 0.0,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "a9-no-overwrite-action-plan",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A9",
+        "atom_name": "No-Overwrite Action Plan",
+        "primary_mechanism": "TaskSpec",
+        "primary_metric": "constraint_consistency",
+        "expect_pass": true,
+        "expectation_met": true,
+        "findings": [],
+        "parsed_output": {
+          "create": [
+            "README.md",
+            "research/04_methods/new.md"
+          ],
+          "skip": [],
+          "blocked": [
+            "overwrite AGENTS.md"
+          ],
+          "ask_first": [
+            "changes to protected files"
+          ]
+        },
+        "run_id": "a9-no-overwrite-action-plan__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 1.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "a9-no-overwrite-action-plan",
+      "case": "missing_or_invalid_primary_mechanism",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A9",
+        "atom_name": "No-Overwrite Action Plan",
+        "primary_mechanism": "TaskSpec",
+        "primary_metric": "constraint_consistency",
+        "expect_pass": false,
+        "expectation_met": true,
+        "findings": [
+          "constraint_consistency=0.000 below threshold 1.000"
+        ],
+        "parsed_output": {
+          "create": [
+            "README.md",
+            "AGENTS.md"
+          ],
+          "blocked": []
+        },
+        "run_id": "a9-no-overwrite-action-plan__missing_or_invalid_primary_mechanism",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.312,
+        "schema_validity": 0.5,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 0.406,
+        "cost_efficiency": 0.312,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    }
+  ]
+}

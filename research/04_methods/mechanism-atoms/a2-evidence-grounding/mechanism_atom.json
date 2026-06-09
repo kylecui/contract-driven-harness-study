@@ -1,0 +1,56 @@
+{
+  "atom_version": "0.1.0",
+  "atom_id": "A2",
+  "atom_name": "Evidence Grounding",
+  "primary_mechanism": "EvidenceBundle",
+  "supporting_mechanisms": [
+    "OutputContract"
+  ],
+  "capability_under_test": "Bind every reportable claim to supplied evidence IDs and mark unsupported claims as unresolved.",
+  "non_goals": [
+    "Do not evaluate general prose quality.",
+    "Do not evaluate broad end-to-end workflow success."
+  ],
+  "input_contract": {
+    "required_inputs": [
+      "input.md",
+      "task_spec.json",
+      "output_contract.json"
+    ],
+    "fixed_snapshot": true,
+    "forbidden_assumptions": [
+      "Do not use live web state.",
+      "Do not assume files, evidence, or constraints absent from the fixture."
+    ]
+  },
+  "output_contract_id": "out_mechanism_a2_evidence_grounding_001",
+  "pass_criteria": [
+    {
+      "metric": "citation_grounding",
+      "threshold": 1.0,
+      "required": true
+    },
+    {
+      "metric": "task_success",
+      "threshold": 0.8,
+      "required": true
+    }
+  ],
+  "known_failure_modes": [
+    "Unsupported claim"
+  ],
+  "composition_interface": {
+    "input_from_previous": [
+      "fixed_snapshot"
+    ],
+    "output_to_next": [
+      "grounded_claim_table"
+    ],
+    "state_dependencies": [],
+    "evidence_dependencies": [
+      "evidence_bundle"
+    ],
+    "failure_signal": "evidence-grounding_failed",
+    "repair_policy": "stop_and_report"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "stage7r_a7r_enumerated_claim_decision",
+  "task_type": "mechanism_atom",
+  "objective": "Select exactly one enumerated claim option using explicit evidence and rules.",
+  "constraints": [
+    "Return selected_option_id as one of C1, C2, C3.",
+    "Reject unsupported or overbroad options.",
+    "Include a decision_trace with at least two evidence-linked steps."
+  ],
+  "success_conditions": [
+    "selected_option_id is C2.",
+    "C1 and C3 are rejected with reasons.",
+    "Decision trace cites supplied evidence IDs."
+  ]
+}

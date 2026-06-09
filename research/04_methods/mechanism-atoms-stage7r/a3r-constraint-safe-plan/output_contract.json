@@ -1,0 +1,8 @@
+{
+  "output_contract_id": "out_stage7r_a3r_constraint_safe_plan_001",
+  "format": "json",
+  "required_sections": ["allowed_actions", "blocked_actions", "safe_action_plan", "evidence_ids"],
+  "citation_policy": "decision_support",
+  "style_profile": "minimal_json",
+  "tool_trace_required": false
+}

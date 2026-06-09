@@ -1,0 +1,22 @@
+{
+  "evidence_bundle_id": "ev_mechanism_a4_state_inventory_001",
+  "task_id": "mechanism_a4_state_inventory_001",
+  "items": [
+    {
+      "source_id": "a4-fixture",
+      "evidence_id": "atom-a4-e01",
+      "evidence_type": "EXTRACTED",
+      "claim": "Primary evidence for State Inventory.",
+      "freshness": "local_snapshot",
+      "authority": "fixture"
+    },
+    {
+      "source_id": "a4-fixture",
+      "evidence_id": "atom-a4-e02",
+      "evidence_type": "INFERRED",
+      "claim": "Supporting evidence for State hallucination.",
+      "freshness": "local_snapshot",
+      "authority": "fixture"
+    }
+  ]
+}

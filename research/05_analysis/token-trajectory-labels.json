@@ -1,0 +1,1872 @@
+{
+  "source": "proposal\\01-Topic-Aware-Compaction\\data\\experiment-2-fishtrial-ab\\ab_test_results.json",
+  "model": "github-copilot/claude-sonnet-4",
+  "timestamp": "2026-05-11T07:14:44+0800",
+  "baseline": {
+    "variant": "baseline",
+    "session_id": "ses_1ec1c0c67ffedFkOcb7x0kjHp2",
+    "api_calls": 140,
+    "compactions": 2,
+    "wall_time_s": 2938.2,
+    "peak_context_window": 151285,
+    "avg_effective_ctx": 81127.24,
+    "label_counts": {
+      "large_tool_or_state_rebuild": 17,
+      "normal_progress": 107,
+      "large_generation": 9,
+      "compaction_or_context_reset": 3,
+      "short_control_step": 4
+    },
+    "labels": [
+      {
+        "call_index": 1,
+        "label": "large_tool_or_state_rebuild",
+        "input": 30336,
+        "output": 925,
+        "cache_read": 0,
+        "effective_ctx": 30336
+      },
+      {
+        "call_index": 2,
+        "label": "normal_progress",
+        "input": 4951,
+        "output": 111,
+        "cache_read": 30333,
+        "effective_ctx": 35284
+      },
+      {
+        "call_index": 3,
+        "label": "normal_progress",
+        "input": 798,
+        "output": 336,
+        "cache_read": 35283,
+        "effective_ctx": 36081
+      },
+      {
+        "call_index": 4,
+        "label": "normal_progress",
+        "input": 1143,
+        "output": 1320,
+        "cache_read": 36080,
+        "effective_ctx": 37223
+      },
+      {
+        "call_index": 5,
+        "label": "normal_progress",
+        "input": 1407,
+        "output": 828,
+        "cache_read": 37222,
+        "effective_ctx": 38629
+      },
+      {
+        "call_index": 6,
+        "label": "normal_progress",
+        "input": 1928,
+        "output": 139,
+        "cache_read": 38626,
+        "effective_ctx": 40554
+      },
+      {
+        "call_index": 7,
+        "label": "normal_progress",
+        "input": 847,
+        "output": 177,
+        "cache_read": 40398,
+        "effective_ctx": 41245
+      },
+      {
+        "call_index": 8,
+        "label": "normal_progress",
+        "input": 757,
+        "output": 14,
+        "cache_read": 41244,
+        "effective_ctx": 42001
+      },
+      {
+        "call_index": 9,
+        "label": "normal_progress",
+        "input": 132,
+        "output": 932,
+        "cache_read": 42000,
+        "effective_ctx": 42132
+      },
+      {
+        "call_index": 10,
+        "label": "large_tool_or_state_rebuild",
+        "input": 10830,
+        "output": 141,
+        "cache_read": 42129,
+        "effective_ctx": 52959
+      },
+      {
+        "call_index": 11,
+        "label": "large_generation",
+        "input": 870,
+        "output": 4066,
+        "cache_read": 52799,
+        "effective_ctx": 53669
+      },
+      {
+        "call_index": 12,
+        "label": "normal_progress",
+        "input": 4158,
+        "output": 608,
+        "cache_read": 53668,
+        "effective_ctx": 57826
+      },
+      {
+        "call_index": 13,
+        "label": "large_generation",
+        "input": 6384,
+        "output": 4153,
+        "cache_read": 57823,
+        "effective_ctx": 64207
+      },
+      {
+        "call_index": 14,
+        "label": "normal_progress",
+        "input": 4305,
+        "output": 303,
+        "cache_read": 64206,
+        "effective_ctx": 68511
+      },
+      {
+        "call_index": 15,
+        "label": "normal_progress",
+        "input": 5151,
+        "output": 49,
+        "cache_read": 64206,
+        "effective_ctx": 69357
+      },
+      {
+        "call_index": 16,
+        "label": "normal_progress",
+        "input": 260,
+        "output": 681,
+        "cache_read": 69204,
+        "effective_ctx": 69464
+      },
+      {
+        "call_index": 17,
+        "label": "normal_progress",
+        "input": 5830,
+        "output": 126,
+        "cache_read": 69461,
+        "effective_ctx": 75291
+      },
+      {
+        "call_index": 18,
+        "label": "large_generation",
+        "input": 195,
+        "output": 6059,
+        "cache_read": 75290,
+        "effective_ctx": 75485
+      },
+      {
+        "call_index": 19,
+        "label": "normal_progress",
+        "input": 6152,
+        "output": 375,
+        "cache_read": 75484,
+        "effective_ctx": 81636
+      },
+      {
+        "call_index": 20,
+        "label": "large_tool_or_state_rebuild",
+        "input": 8030,
+        "output": 3633,
+        "cache_read": 81633,
+        "effective_ctx": 89663
+      },
+      {
+        "call_index": 21,
+        "label": "normal_progress",
+        "input": 3702,
+        "output": 369,
+        "cache_read": 89662,
+        "effective_ctx": 93364
+      },
+      {
+        "call_index": 22,
+        "label": "large_tool_or_state_rebuild",
+        "input": 9876,
+        "output": 8494,
+        "cache_read": 93361,
+        "effective_ctx": 103237
+      },
+      {
+        "call_index": 23,
+        "label": "large_tool_or_state_rebuild",
+        "input": 8561,
+        "output": 331,
+        "cache_read": 103236,
+        "effective_ctx": 111797
+      },
+      {
+        "call_index": 24,
+        "label": "large_generation",
+        "input": 5592,
+        "output": 10425,
+        "cache_read": 111794,
+        "effective_ctx": 117386
+      },
+      {
+        "call_index": 25,
+        "label": "large_tool_or_state_rebuild",
+        "input": 10502,
+        "output": 376,
+        "cache_read": 117385,
+        "effective_ctx": 127887
+      },
+      {
+        "call_index": 26,
+        "label": "large_tool_or_state_rebuild",
+        "input": 9324,
+        "output": 8177,
+        "cache_read": 127884,
+        "effective_ctx": 137208
+      },
+      {
+        "call_index": 27,
+        "label": "large_tool_or_state_rebuild",
+        "input": 8282,
+        "output": 216,
+        "cache_read": 137207,
+        "effective_ctx": 145489
+      },
+      {
+        "call_index": 28,
+        "label": "large_generation",
+        "input": 5799,
+        "output": 5063,
+        "cache_read": 145486,
+        "effective_ctx": 151285
+      },
+      {
+        "call_index": 29,
+        "label": "compaction_or_context_reset",
+        "input": 127619,
+        "output": 2918,
+        "cache_read": 0,
+        "effective_ctx": 127619
+      },
+      {
+        "call_index": 30,
+        "label": "normal_progress",
+        "input": 3274,
+        "output": 215,
+        "cache_read": 29801,
+        "effective_ctx": 33075
+      },
+      {
+        "call_index": 31,
+        "label": "normal_progress",
+        "input": 288,
+        "output": 331,
+        "cache_read": 33072,
+        "effective_ctx": 33360
+      },
+      {
+        "call_index": 32,
+        "label": "normal_progress",
+        "input": 525,
+        "output": 259,
+        "cache_read": 33357,
+        "effective_ctx": 33882
+      },
+      {
+        "call_index": 33,
+        "label": "normal_progress",
+        "input": 442,
+        "output": 47,
+        "cache_read": 33881,
+        "effective_ctx": 34323
+      },
+      {
+        "call_index": 34,
+        "label": "normal_progress",
+        "input": 122,
+        "output": 409,
+        "cache_read": 34322,
+        "effective_ctx": 34444
+      },
+      {
+        "call_index": 35,
+        "label": "normal_progress",
+        "input": 640,
+        "output": 696,
+        "cache_read": 34441,
+        "effective_ctx": 35081
+      },
+      {
+        "call_index": 36,
+        "label": "normal_progress",
+        "input": 1681,
+        "output": 283,
+        "cache_read": 35080,
+        "effective_ctx": 36761
+      },
+      {
+        "call_index": 37,
+        "label": "normal_progress",
+        "input": 495,
+        "output": 83,
+        "cache_read": 36760,
+        "effective_ctx": 37255
+      },
+      {
+        "call_index": 38,
+        "label": "short_control_step",
+        "input": 132,
+        "output": 79,
+        "cache_read": 37254,
+        "effective_ctx": 37386
+      },
+      {
+        "call_index": 39,
+        "label": "normal_progress",
+        "input": 198,
+        "output": 145,
+        "cache_read": 37385,
+        "effective_ctx": 37583
+      },
+      {
+        "call_index": 40,
+        "label": "normal_progress",
+        "input": 326,
+        "output": 217,
+        "cache_read": 37582,
+        "effective_ctx": 37908
+      },
+      {
+        "call_index": 41,
+        "label": "normal_progress",
+        "input": 525,
+        "output": 473,
+        "cache_read": 37907,
+        "effective_ctx": 38432
+      },
+      {
+        "call_index": 42,
+        "label": "large_tool_or_state_rebuild",
+        "input": 15771,
+        "output": 562,
+        "cache_read": 38431,
+        "effective_ctx": 54202
+      },
+      {
+        "call_index": 43,
+        "label": "large_tool_or_state_rebuild",
+        "input": 8556,
+        "output": 138,
+        "cache_read": 54201,
+        "effective_ctx": 62757
+      },
+      {
+        "call_index": 44,
+        "label": "normal_progress",
+        "input": 239,
+        "output": 162,
+        "cache_read": 62756,
+        "effective_ctx": 62995
+      },
+      {
+        "call_index": 45,
+        "label": "normal_progress",
+        "input": 416,
+        "output": 331,
+        "cache_read": 62994,
+        "effective_ctx": 63410
+      },
+      {
+        "call_index": 46,
+        "label": "normal_progress",
+        "input": 6382,
+        "output": 202,
+        "cache_read": 63409,
+        "effective_ctx": 69791
+      },
+      {
+        "call_index": 47,
+        "label": "normal_progress",
+        "input": 527,
+        "output": 219,
+        "cache_read": 69790,
+        "effective_ctx": 70317
+      },
+      {
+        "call_index": 48,
+        "label": "normal_progress",
+        "input": 456,
+        "output": 758,
+        "cache_read": 70316,
+        "effective_ctx": 70772
+      },
+      {
+        "call_index": 49,
+        "label": "normal_progress",
+        "input": 844,
+        "output": 234,
+        "cache_read": 70771,
+        "effective_ctx": 71615
+      },
+      {
+        "call_index": 50,
+        "label": "normal_progress",
+        "input": 5529,
+        "output": 403,
+        "cache_read": 71612,
+        "effective_ctx": 77141
+      },
+      {
+        "call_index": 51,
+        "label": "normal_progress",
+        "input": 751,
+        "output": 862,
+        "cache_read": 77140,
+        "effective_ctx": 77891
+      },
+      {
+        "call_index": 52,
+        "label": "normal_progress",
+        "input": 1488,
+        "output": 152,
+        "cache_read": 77888,
+        "effective_ctx": 79376
+      },
+      {
+        "call_index": 53,
+        "label": "normal_progress",
+        "input": 179,
+        "output": 164,
+        "cache_read": 79375,
+        "effective_ctx": 79554
+      },
+      {
+        "call_index": 54,
+        "label": "normal_progress",
+        "input": 191,
+        "output": 116,
+        "cache_read": 79553,
+        "effective_ctx": 79744
+      },
+      {
+        "call_index": 55,
+        "label": "normal_progress",
+        "input": 143,
+        "output": 101,
+        "cache_read": 79743,
+        "effective_ctx": 79886
+      },
+      {
+        "call_index": 56,
+        "label": "normal_progress",
+        "input": 580,
+        "output": 132,
+        "cache_read": 79885,
+        "effective_ctx": 80465
+      },
+      {
+        "call_index": 57,
+        "label": "normal_progress",
+        "input": 206,
+        "output": 203,
+        "cache_read": 80464,
+        "effective_ctx": 80670
+      },
+      {
+        "call_index": 58,
+        "label": "normal_progress",
+        "input": 1062,
+        "output": 68,
+        "cache_read": 80669,
+        "effective_ctx": 81731
+      },
+      {
+        "call_index": 59,
+        "label": "normal_progress",
+        "input": 141,
+        "output": 152,
+        "cache_read": 81730,
+        "effective_ctx": 81871
+      },
+      {
+        "call_index": 60,
+        "label": "normal_progress",
+        "input": 1013,
+        "output": 184,
+        "cache_read": 81868,
+        "effective_ctx": 82881
+      },
+      {
+        "call_index": 61,
+        "label": "normal_progress",
+        "input": 897,
+        "output": 83,
+        "cache_read": 82880,
+        "effective_ctx": 83777
+      },
+      {
+        "call_index": 62,
+        "label": "normal_progress",
+        "input": 157,
+        "output": 153,
+        "cache_read": 83776,
+        "effective_ctx": 83933
+      },
+      {
+        "call_index": 63,
+        "label": "normal_progress",
+        "input": 2495,
+        "output": 151,
+        "cache_read": 83932,
+        "effective_ctx": 86427
+      },
+      {
+        "call_index": 64,
+        "label": "large_tool_or_state_rebuild",
+        "input": 8157,
+        "output": 194,
+        "cache_read": 86426,
+        "effective_ctx": 94583
+      },
+      {
+        "call_index": 65,
+        "label": "normal_progress",
+        "input": 448,
+        "output": 234,
+        "cache_read": 94582,
+        "effective_ctx": 95030
+      },
+      {
+        "call_index": 66,
+        "label": "normal_progress",
+        "input": 472,
+        "output": 2576,
+        "cache_read": 95029,
+        "effective_ctx": 95501
+      },
+      {
+        "call_index": 67,
+        "label": "compaction_or_context_reset",
+        "input": 98815,
+        "output": 239,
+        "cache_read": 0,
+        "effective_ctx": 98815
+      },
+      {
+        "call_index": 68,
+        "label": "normal_progress",
+        "input": 6727,
+        "output": 193,
+        "cache_read": 98814,
+        "effective_ctx": 105541
+      },
+      {
+        "call_index": 69,
+        "label": "normal_progress",
+        "input": 6898,
+        "output": 180,
+        "cache_read": 105540,
+        "effective_ctx": 112438
+      },
+      {
+        "call_index": 70,
+        "label": "large_generation",
+        "input": 2140,
+        "output": 6164,
+        "cache_read": 112437,
+        "effective_ctx": 114577
+      },
+      {
+        "call_index": 71,
+        "label": "large_tool_or_state_rebuild",
+        "input": 9331,
+        "output": 500,
+        "cache_read": 114576,
+        "effective_ctx": 123907
+      },
+      {
+        "call_index": 72,
+        "label": "normal_progress",
+        "input": 1730,
+        "output": 177,
+        "cache_read": 123723,
+        "effective_ctx": 125453
+      },
+      {
+        "call_index": 73,
+        "label": "normal_progress",
+        "input": 785,
+        "output": 155,
+        "cache_read": 125452,
+        "effective_ctx": 126237
+      },
+      {
+        "call_index": 74,
+        "label": "normal_progress",
+        "input": 1339,
+        "output": 138,
+        "cache_read": 126236,
+        "effective_ctx": 127575
+      },
+      {
+        "call_index": 75,
+        "label": "normal_progress",
+        "input": 209,
+        "output": 152,
+        "cache_read": 127574,
+        "effective_ctx": 127783
+      },
+      {
+        "call_index": 76,
+        "label": "large_generation",
+        "input": 357,
+        "output": 5061,
+        "cache_read": 127782,
+        "effective_ctx": 128139
+      },
+      {
+        "call_index": 77,
+        "label": "large_tool_or_state_rebuild",
+        "input": 9102,
+        "output": 372,
+        "cache_read": 128138,
+        "effective_ctx": 137240
+      },
+      {
+        "call_index": 78,
+        "label": "normal_progress",
+        "input": 554,
+        "output": 332,
+        "cache_read": 137239,
+        "effective_ctx": 137793
+      },
+      {
+        "call_index": 79,
+        "label": "normal_progress",
+        "input": 348,
+        "output": 382,
+        "cache_read": 137792,
+        "effective_ctx": 138140
+      },
+      {
+        "call_index": 80,
+        "label": "normal_progress",
+        "input": 398,
+        "output": 431,
+        "cache_read": 138139,
+        "effective_ctx": 138537
+      },
+      {
+        "call_index": 81,
+        "label": "normal_progress",
+        "input": 447,
+        "output": 173,
+        "cache_read": 138536,
+        "effective_ctx": 138983
+      },
+      {
+        "call_index": 82,
+        "label": "normal_progress",
+        "input": 353,
+        "output": 215,
+        "cache_read": 138982,
+        "effective_ctx": 139335
+      },
+      {
+        "call_index": 83,
+        "label": "normal_progress",
+        "input": 476,
+        "output": 419,
+        "cache_read": 139334,
+        "effective_ctx": 139810
+      },
+      {
+        "call_index": 84,
+        "label": "normal_progress",
+        "input": 482,
+        "output": 547,
+        "cache_read": 139809,
+        "effective_ctx": 140291
+      },
+      {
+        "call_index": 85,
+        "label": "normal_progress",
+        "input": 2794,
+        "output": 295,
+        "cache_read": 140288,
+        "effective_ctx": 143082
+      },
+      {
+        "call_index": 86,
+        "label": "normal_progress",
+        "input": 2924,
+        "output": 99,
+        "cache_read": 143081,
+        "effective_ctx": 146005
+      },
+      {
+        "call_index": 87,
+        "label": "normal_progress",
+        "input": 383,
+        "output": 189,
+        "cache_read": 146004,
+        "effective_ctx": 146387
+      },
+      {
+        "call_index": 88,
+        "label": "normal_progress",
+        "input": 355,
+        "output": 1780,
+        "cache_read": 146386,
+        "effective_ctx": 146741
+      },
+      {
+        "call_index": 89,
+        "label": "compaction_or_context_reset",
+        "input": 122255,
+        "output": 3564,
+        "cache_read": 0,
+        "effective_ctx": 122255
+      },
+      {
+        "call_index": 90,
+        "label": "normal_progress",
+        "input": 3920,
+        "output": 349,
+        "cache_read": 29801,
+        "effective_ctx": 33721
+      },
+      {
+        "call_index": 91,
+        "label": "normal_progress",
+        "input": 3737,
+        "output": 140,
+        "cache_read": 33718,
+        "effective_ctx": 37455
+      },
+      {
+        "call_index": 92,
+        "label": "large_generation",
+        "input": 265,
+        "output": 4759,
+        "cache_read": 37454,
+        "effective_ctx": 37719
+      },
+      {
+        "call_index": 93,
+        "label": "large_tool_or_state_rebuild",
+        "input": 8746,
+        "output": 513,
+        "cache_read": 37718,
+        "effective_ctx": 46464
+      },
+      {
+        "call_index": 94,
+        "label": "normal_progress",
+        "input": 644,
+        "output": 147,
+        "cache_read": 46463,
+        "effective_ctx": 47107
+      },
+      {
+        "call_index": 95,
+        "label": "normal_progress",
+        "input": 247,
+        "output": 166,
+        "cache_read": 46991,
+        "effective_ctx": 47238
+      },
+      {
+        "call_index": 96,
+        "label": "normal_progress",
+        "input": 182,
+        "output": 414,
+        "cache_read": 47237,
+        "effective_ctx": 47419
+      },
+      {
+        "call_index": 97,
+        "label": "normal_progress",
+        "input": 430,
+        "output": 173,
+        "cache_read": 47418,
+        "effective_ctx": 47848
+      },
+      {
+        "call_index": 98,
+        "label": "normal_progress",
+        "input": 478,
+        "output": 159,
+        "cache_read": 47847,
+        "effective_ctx": 48325
+      },
+      {
+        "call_index": 99,
+        "label": "normal_progress",
+        "input": 390,
+        "output": 213,
+        "cache_read": 48324,
+        "effective_ctx": 48714
+      },
+      {
+        "call_index": 100,
+        "label": "normal_progress",
+        "input": 229,
+        "output": 112,
+        "cache_read": 48713,
+        "effective_ctx": 48942
+      },
+      {
+        "call_index": 101,
+        "label": "normal_progress",
+        "input": 252,
+        "output": 152,
+        "cache_read": 48941,
+        "effective_ctx": 49193
+      },
+      {
+        "call_index": 102,
+        "label": "normal_progress",
+        "input": 279,
+        "output": 262,
+        "cache_read": 49192,
+        "effective_ctx": 49471
+      },
+      {
+        "call_index": 103,
+        "label": "normal_progress",
+        "input": 342,
+        "output": 606,
+        "cache_read": 49470,
+        "effective_ctx": 49812
+      },
+      {
+        "call_index": 104,
+        "label": "normal_progress",
+        "input": 798,
+        "output": 396,
+        "cache_read": 49809,
+        "effective_ctx": 50607
+      },
+      {
+        "call_index": 105,
+        "label": "normal_progress",
+        "input": 588,
+        "output": 145,
+        "cache_read": 50606,
+        "effective_ctx": 51194
+      },
+      {
+        "call_index": 106,
+        "label": "normal_progress",
+        "input": 343,
+        "output": 258,
+        "cache_read": 51193,
+        "effective_ctx": 51536
+      },
+      {
+        "call_index": 107,
+        "label": "normal_progress",
+        "input": 3764,
+        "output": 108,
+        "cache_read": 51535,
+        "effective_ctx": 55299
+      },
+      {
+        "call_index": 108,
+        "label": "normal_progress",
+        "input": 1219,
+        "output": 137,
+        "cache_read": 55298,
+        "effective_ctx": 56517
+      },
+      {
+        "call_index": 109,
+        "label": "normal_progress",
+        "input": 964,
+        "output": 123,
+        "cache_read": 56516,
+        "effective_ctx": 57480
+      },
+      {
+        "call_index": 110,
+        "label": "normal_progress",
+        "input": 845,
+        "output": 221,
+        "cache_read": 57479,
+        "effective_ctx": 58324
+      },
+      {
+        "call_index": 111,
+        "label": "short_control_step",
+        "input": 305,
+        "output": 26,
+        "cache_read": 58323,
+        "effective_ctx": 58628
+      },
+      {
+        "call_index": 112,
+        "label": "normal_progress",
+        "input": 63,
+        "output": 1469,
+        "cache_read": 58627,
+        "effective_ctx": 58690
+      },
+      {
+        "call_index": 113,
+        "label": "normal_progress",
+        "input": 1599,
+        "output": 308,
+        "cache_read": 58687,
+        "effective_ctx": 60286
+      },
+      {
+        "call_index": 114,
+        "label": "normal_progress",
+        "input": 509,
+        "output": 265,
+        "cache_read": 60283,
+        "effective_ctx": 60792
+      },
+      {
+        "call_index": 115,
+        "label": "normal_progress",
+        "input": 461,
+        "output": 245,
+        "cache_read": 60791,
+        "effective_ctx": 61252
+      },
+      {
+        "call_index": 116,
+        "label": "normal_progress",
+        "input": 424,
+        "output": 269,
+        "cache_read": 61251,
+        "effective_ctx": 61675
+      },
+      {
+        "call_index": 117,
+        "label": "normal_progress",
+        "input": 7294,
+        "output": 99,
+        "cache_read": 61674,
+        "effective_ctx": 68968
+      },
+      {
+        "call_index": 118,
+        "label": "short_control_step",
+        "input": 168,
+        "output": 62,
+        "cache_read": 68967,
+        "effective_ctx": 69135
+      },
+      {
+        "call_index": 119,
+        "label": "short_control_step",
+        "input": 130,
+        "output": 59,
+        "cache_read": 69134,
+        "effective_ctx": 69264
+      },
+      {
+        "call_index": 120,
+        "label": "normal_progress",
+        "input": 121,
+        "output": 3437,
+        "cache_read": 69263,
+        "effective_ctx": 69384
+      },
+      {
+        "call_index": 121,
+        "label": "normal_progress",
+        "input": 3724,
+        "output": 161,
+        "cache_read": 69383,
+        "effective_ctx": 73107
+      },
+      {
+        "call_index": 122,
+        "label": "large_tool_or_state_rebuild",
+        "input": 14071,
+        "output": 167,
+        "cache_read": 69383,
+        "effective_ctx": 83454
+      },
+      {
+        "call_index": 123,
+        "label": "normal_progress",
+        "input": 367,
+        "output": 121,
+        "cache_read": 83453,
+        "effective_ctx": 83820
+      },
+      {
+        "call_index": 124,
+        "label": "normal_progress",
+        "input": 148,
+        "output": 640,
+        "cache_read": 83819,
+        "effective_ctx": 83967
+      },
+      {
+        "call_index": 125,
+        "label": "normal_progress",
+        "input": 2115,
+        "output": 2194,
+        "cache_read": 83966,
+        "effective_ctx": 86081
+      },
+      {
+        "call_index": 126,
+        "label": "normal_progress",
+        "input": 6663,
+        "output": 195,
+        "cache_read": 86080,
+        "effective_ctx": 92743
+      },
+      {
+        "call_index": 127,
+        "label": "large_generation",
+        "input": 374,
+        "output": 5876,
+        "cache_read": 92742,
+        "effective_ctx": 93116
+      },
+      {
+        "call_index": 128,
+        "label": "large_tool_or_state_rebuild",
+        "input": 9444,
+        "output": 248,
+        "cache_read": 93115,
+        "effective_ctx": 102559
+      },
+      {
+        "call_index": 129,
+        "label": "normal_progress",
+        "input": 264,
+        "output": 299,
+        "cache_read": 102558,
+        "effective_ctx": 102822
+      },
+      {
+        "call_index": 130,
+        "label": "normal_progress",
+        "input": 462,
+        "output": 182,
+        "cache_read": 102821,
+        "effective_ctx": 103283
+      },
+      {
+        "call_index": 131,
+        "label": "normal_progress",
+        "input": 357,
+        "output": 816,
+        "cache_read": 103282,
+        "effective_ctx": 103639
+      },
+      {
+        "call_index": 132,
+        "label": "normal_progress",
+        "input": 943,
+        "output": 376,
+        "cache_read": 103638,
+        "effective_ctx": 104581
+      },
+      {
+        "call_index": 133,
+        "label": "normal_progress",
+        "input": 1545,
+        "output": 464,
+        "cache_read": 104578,
+        "effective_ctx": 106123
+      },
+      {
+        "call_index": 134,
+        "label": "normal_progress",
+        "input": 4799,
+        "output": 495,
+        "cache_read": 106122,
+        "effective_ctx": 110921
+      },
+      {
+        "call_index": 135,
+        "label": "normal_progress",
+        "input": 4481,
+        "output": 356,
+        "cache_read": 110920,
+        "effective_ctx": 115401
+      },
+      {
+        "call_index": 136,
+        "label": "large_tool_or_state_rebuild",
+        "input": 11131,
+        "output": 4552,
+        "cache_read": 115400,
+        "effective_ctx": 126531
+      },
+      {
+        "call_index": 137,
+        "label": "normal_progress",
+        "input": 4671,
+        "output": 86,
+        "cache_read": 126530,
+        "effective_ctx": 131201
+      },
+      {
+        "call_index": 138,
+        "label": "normal_progress",
+        "input": 725,
+        "output": 735,
+        "cache_read": 131198,
+        "effective_ctx": 131923
+      },
+      {
+        "call_index": 139,
+        "label": "normal_progress",
+        "input": 760,
+        "output": 1001,
+        "cache_read": 131922,
+        "effective_ctx": 132682
+      },
+      {
+        "call_index": 140,
+        "label": "normal_progress",
+        "input": 1023,
+        "output": 1012,
+        "cache_read": 132679,
+        "effective_ctx": 133702
+      }
+    ]
+  },
+  "plugin": {
+    "variant": "plugin",
+    "session_id": "ses_1ebef373effep40l3j3QyKBx7q",
+    "api_calls": 89,
+    "compactions": 2,
+    "wall_time_s": 1780.9,
+    "peak_context_window": 148017,
+    "avg_effective_ctx": 66366.03,
+    "label_counts": {
+      "large_tool_or_state_rebuild": 11,
+      "normal_progress": 66,
+      "large_generation": 10,
+      "compaction_or_context_reset": 2
+    },
+    "labels": [
+      {
+        "call_index": 1,
+        "label": "large_tool_or_state_rebuild",
+        "input": 30336,
+        "output": 345,
+        "cache_read": 0,
+        "effective_ctx": 30336
+      },
+      {
+        "call_index": 2,
+        "label": "normal_progress",
+        "input": 533,
+        "output": 221,
+        "cache_read": 30333,
+        "effective_ctx": 30866
+      },
+      {
+        "call_index": 3,
+        "label": "normal_progress",
+        "input": 1941,
+        "output": 115,
+        "cache_read": 30865,
+        "effective_ctx": 32806
+      },
+      {
+        "call_index": 4,
+        "label": "normal_progress",
+        "input": 431,
+        "output": 944,
+        "cache_read": 32805,
+        "effective_ctx": 33236
+      },
+      {
+        "call_index": 5,
+        "label": "normal_progress",
+        "input": 1031,
+        "output": 331,
+        "cache_read": 33235,
+        "effective_ctx": 34266
+      },
+      {
+        "call_index": 6,
+        "label": "normal_progress",
+        "input": 525,
+        "output": 212,
+        "cache_read": 34263,
+        "effective_ctx": 34788
+      },
+      {
+        "call_index": 7,
+        "label": "normal_progress",
+        "input": 298,
+        "output": 148,
+        "cache_read": 34787,
+        "effective_ctx": 35085
+      },
+      {
+        "call_index": 8,
+        "label": "normal_progress",
+        "input": 3103,
+        "output": 2956,
+        "cache_read": 35084,
+        "effective_ctx": 38187
+      },
+      {
+        "call_index": 9,
+        "label": "normal_progress",
+        "input": 3116,
+        "output": 45,
+        "cache_read": 38186,
+        "effective_ctx": 41302
+      },
+      {
+        "call_index": 10,
+        "label": "normal_progress",
+        "input": 3248,
+        "output": 411,
+        "cache_read": 38186,
+        "effective_ctx": 41434
+      },
+      {
+        "call_index": 11,
+        "label": "large_generation",
+        "input": 7207,
+        "output": 3779,
+        "cache_read": 41431,
+        "effective_ctx": 48638
+      },
+      {
+        "call_index": 12,
+        "label": "large_generation",
+        "input": 3871,
+        "output": 3711,
+        "cache_read": 48637,
+        "effective_ctx": 52508
+      },
+      {
+        "call_index": 13,
+        "label": "normal_progress",
+        "input": 3801,
+        "output": 270,
+        "cache_read": 52505,
+        "effective_ctx": 56306
+      },
+      {
+        "call_index": 14,
+        "label": "normal_progress",
+        "input": 357,
+        "output": 152,
+        "cache_read": 56303,
+        "effective_ctx": 56660
+      },
+      {
+        "call_index": 15,
+        "label": "large_generation",
+        "input": 2274,
+        "output": 4832,
+        "cache_read": 56659,
+        "effective_ctx": 58933
+      },
+      {
+        "call_index": 16,
+        "label": "normal_progress",
+        "input": 4925,
+        "output": 229,
+        "cache_read": 58932,
+        "effective_ctx": 63857
+      },
+      {
+        "call_index": 17,
+        "label": "normal_progress",
+        "input": 6792,
+        "output": 2856,
+        "cache_read": 63854,
+        "effective_ctx": 70646
+      },
+      {
+        "call_index": 18,
+        "label": "normal_progress",
+        "input": 2989,
+        "output": 26,
+        "cache_read": 70645,
+        "effective_ctx": 73634
+      },
+      {
+        "call_index": 19,
+        "label": "normal_progress",
+        "input": 3052,
+        "output": 121,
+        "cache_read": 70645,
+        "effective_ctx": 73697
+      },
+      {
+        "call_index": 20,
+        "label": "large_generation",
+        "input": 3082,
+        "output": 7735,
+        "cache_read": 73694,
+        "effective_ctx": 76776
+      },
+      {
+        "call_index": 21,
+        "label": "normal_progress",
+        "input": 7802,
+        "output": 232,
+        "cache_read": 76775,
+        "effective_ctx": 84577
+      },
+      {
+        "call_index": 22,
+        "label": "large_generation",
+        "input": 4978,
+        "output": 9092,
+        "cache_read": 84574,
+        "effective_ctx": 89552
+      },
+      {
+        "call_index": 23,
+        "label": "large_tool_or_state_rebuild",
+        "input": 9169,
+        "output": 150,
+        "cache_read": 89551,
+        "effective_ctx": 98720
+      },
+      {
+        "call_index": 24,
+        "label": "large_generation",
+        "input": 2720,
+        "output": 6581,
+        "cache_read": 98717,
+        "effective_ctx": 101437
+      },
+      {
+        "call_index": 25,
+        "label": "large_generation",
+        "input": 6686,
+        "output": 3882,
+        "cache_read": 101436,
+        "effective_ctx": 108122
+      },
+      {
+        "call_index": 26,
+        "label": "normal_progress",
+        "input": 3958,
+        "output": 119,
+        "cache_read": 108119,
+        "effective_ctx": 112077
+      },
+      {
+        "call_index": 27,
+        "label": "large_generation",
+        "input": 371,
+        "output": 11337,
+        "cache_read": 112074,
+        "effective_ctx": 112445
+      },
+      {
+        "call_index": 28,
+        "label": "large_tool_or_state_rebuild",
+        "input": 11412,
+        "output": 239,
+        "cache_read": 112444,
+        "effective_ctx": 123856
+      },
+      {
+        "call_index": 29,
+        "label": "large_generation",
+        "input": 5445,
+        "output": 12592,
+        "cache_read": 123853,
+        "effective_ctx": 129298
+      },
+      {
+        "call_index": 30,
+        "label": "large_tool_or_state_rebuild",
+        "input": 12678,
+        "output": 212,
+        "cache_read": 129297,
+        "effective_ctx": 141975
+      },
+      {
+        "call_index": 31,
+        "label": "large_generation",
+        "input": 2850,
+        "output": 7552,
+        "cache_read": 141972,
+        "effective_ctx": 144822
+      },
+      {
+        "call_index": 32,
+        "label": "compaction_or_context_reset",
+        "input": 122899,
+        "output": 2962,
+        "cache_read": 0,
+        "effective_ctx": 122899
+      },
+      {
+        "call_index": 33,
+        "label": "normal_progress",
+        "input": 3318,
+        "output": 206,
+        "cache_read": 29801,
+        "effective_ctx": 33119
+      },
+      {
+        "call_index": 34,
+        "label": "normal_progress",
+        "input": 555,
+        "output": 357,
+        "cache_read": 33116,
+        "effective_ctx": 33671
+      },
+      {
+        "call_index": 35,
+        "label": "normal_progress",
+        "input": 540,
+        "output": 350,
+        "cache_read": 33668,
+        "effective_ctx": 34208
+      },
+      {
+        "call_index": 36,
+        "label": "normal_progress",
+        "input": 535,
+        "output": 277,
+        "cache_read": 34207,
+        "effective_ctx": 34742
+      },
+      {
+        "call_index": 37,
+        "label": "normal_progress",
+        "input": 469,
+        "output": 15,
+        "cache_read": 34741,
+        "effective_ctx": 35210
+      },
+      {
+        "call_index": 38,
+        "label": "normal_progress",
+        "input": 88,
+        "output": 374,
+        "cache_read": 35209,
+        "effective_ctx": 35297
+      },
+      {
+        "call_index": 39,
+        "label": "normal_progress",
+        "input": 555,
+        "output": 273,
+        "cache_read": 35294,
+        "effective_ctx": 35849
+      },
+      {
+        "call_index": 40,
+        "label": "normal_progress",
+        "input": 462,
+        "output": 14,
+        "cache_read": 35848,
+        "effective_ctx": 36310
+      },
+      {
+        "call_index": 41,
+        "label": "normal_progress",
+        "input": 165,
+        "output": 433,
+        "cache_read": 36309,
+        "effective_ctx": 36474
+      },
+      {
+        "call_index": 42,
+        "label": "normal_progress",
+        "input": 619,
+        "output": 352,
+        "cache_read": 36471,
+        "effective_ctx": 37090
+      },
+      {
+        "call_index": 43,
+        "label": "normal_progress",
+        "input": 543,
+        "output": 83,
+        "cache_read": 37089,
+        "effective_ctx": 37632
+      },
+      {
+        "call_index": 44,
+        "label": "normal_progress",
+        "input": 2194,
+        "output": 118,
+        "cache_read": 37631,
+        "effective_ctx": 39825
+      },
+      {
+        "call_index": 45,
+        "label": "normal_progress",
+        "input": 3258,
+        "output": 109,
+        "cache_read": 39824,
+        "effective_ctx": 43082
+      },
+      {
+        "call_index": 46,
+        "label": "normal_progress",
+        "input": 856,
+        "output": 89,
+        "cache_read": 43081,
+        "effective_ctx": 43937
+      },
+      {
+        "call_index": 47,
+        "label": "normal_progress",
+        "input": 1099,
+        "output": 233,
+        "cache_read": 43936,
+        "effective_ctx": 45035
+      },
+      {
+        "call_index": 48,
+        "label": "normal_progress",
+        "input": 1736,
+        "output": 140,
+        "cache_read": 45034,
+        "effective_ctx": 46770
+      },
+      {
+        "call_index": 49,
+        "label": "normal_progress",
+        "input": 809,
+        "output": 89,
+        "cache_read": 46769,
+        "effective_ctx": 47578
+      },
+      {
+        "call_index": 50,
+        "label": "normal_progress",
+        "input": 5406,
+        "output": 135,
+        "cache_read": 47577,
+        "effective_ctx": 52983
+      },
+      {
+        "call_index": 51,
+        "label": "normal_progress",
+        "input": 304,
+        "output": 356,
+        "cache_read": 52982,
+        "effective_ctx": 53286
+      },
+      {
+        "call_index": 52,
+        "label": "normal_progress",
+        "input": 510,
+        "output": 61,
+        "cache_read": 53285,
+        "effective_ctx": 53795
+      },
+      {
+        "call_index": 53,
+        "label": "normal_progress",
+        "input": 6109,
+        "output": 84,
+        "cache_read": 53285,
+        "effective_ctx": 59394
+      },
+      {
+        "call_index": 54,
+        "label": "normal_progress",
+        "input": 147,
+        "output": 267,
+        "cache_read": 59393,
+        "effective_ctx": 59540
+      },
+      {
+        "call_index": 55,
+        "label": "normal_progress",
+        "input": 4188,
+        "output": 202,
+        "cache_read": 59537,
+        "effective_ctx": 63725
+      },
+      {
+        "call_index": 56,
+        "label": "normal_progress",
+        "input": 1763,
+        "output": 127,
+        "cache_read": 63724,
+        "effective_ctx": 65487
+      },
+      {
+        "call_index": 57,
+        "label": "normal_progress",
+        "input": 252,
+        "output": 87,
+        "cache_read": 65486,
+        "effective_ctx": 65738
+      },
+      {
+        "call_index": 58,
+        "label": "normal_progress",
+        "input": 186,
+        "output": 314,
+        "cache_read": 65737,
+        "effective_ctx": 65923
+      },
+      {
+        "call_index": 59,
+        "label": "large_tool_or_state_rebuild",
+        "input": 9396,
+        "output": 416,
+        "cache_read": 65922,
+        "effective_ctx": 75318
+      },
+      {
+        "call_index": 60,
+        "label": "normal_progress",
+        "input": 496,
+        "output": 195,
+        "cache_read": 75317,
+        "effective_ctx": 75813
+      },
+      {
+        "call_index": 61,
+        "label": "normal_progress",
+        "input": 449,
+        "output": 198,
+        "cache_read": 75810,
+        "effective_ctx": 76259
+      },
+      {
+        "call_index": 62,
+        "label": "large_tool_or_state_rebuild",
+        "input": 8536,
+        "output": 196,
+        "cache_read": 76258,
+        "effective_ctx": 84794
+      },
+      {
+        "call_index": 63,
+        "label": "normal_progress",
+        "input": 366,
+        "output": 127,
+        "cache_read": 84793,
+        "effective_ctx": 85159
+      },
+      {
+        "call_index": 64,
+        "label": "large_tool_or_state_rebuild",
+        "input": 8193,
+        "output": 320,
+        "cache_read": 85003,
+        "effective_ctx": 93196
+      },
+      {
+        "call_index": 65,
+        "label": "normal_progress",
+        "input": 3720,
+        "output": 431,
+        "cache_read": 93195,
+        "effective_ctx": 96915
+      },
+      {
+        "call_index": 66,
+        "label": "normal_progress",
+        "input": 468,
+        "output": 125,
+        "cache_read": 96914,
+        "effective_ctx": 97382
+      },
+      {
+        "call_index": 67,
+        "label": "normal_progress",
+        "input": 5506,
+        "output": 96,
+        "cache_read": 97379,
+        "effective_ctx": 102885
+      },
+      {
+        "call_index": 68,
+        "label": "normal_progress",
+        "input": 5476,
+        "output": 281,
+        "cache_read": 102884,
+        "effective_ctx": 108360
+      },
+      {
+        "call_index": 69,
+        "label": "large_tool_or_state_rebuild",
+        "input": 19719,
+        "output": 180,
+        "cache_read": 108359,
+        "effective_ctx": 128078
+      },
+      {
+        "call_index": 70,
+        "label": "normal_progress",
+        "input": 2167,
+        "output": 1531,
+        "cache_read": 128077,
+        "effective_ctx": 130244
+      },
+      {
+        "call_index": 71,
+        "label": "normal_progress",
+        "input": 1686,
+        "output": 61,
+        "cache_read": 130243,
+        "effective_ctx": 131929
+      },
+      {
+        "call_index": 72,
+        "label": "large_tool_or_state_rebuild",
+        "input": 17774,
+        "output": 145,
+        "cache_read": 130243,
+        "effective_ctx": 148017
+      },
+      {
+        "call_index": 73,
+        "label": "compaction_or_context_reset",
+        "input": 118687,
+        "output": 2747,
+        "cache_read": 0,
+        "effective_ctx": 118687
+      },
+      {
+        "call_index": 74,
+        "label": "normal_progress",
+        "input": 3425,
+        "output": 348,
+        "cache_read": 29801,
+        "effective_ctx": 33226
+      },
+      {
+        "call_index": 75,
+        "label": "normal_progress",
+        "input": 3838,
+        "output": 305,
+        "cache_read": 29801,
+        "effective_ctx": 33639
+      },
+      {
+        "call_index": 76,
+        "label": "normal_progress",
+        "input": 491,
+        "output": 227,
+        "cache_read": 33636,
+        "effective_ctx": 34127
+      },
+      {
+        "call_index": 77,
+        "label": "normal_progress",
+        "input": 407,
+        "output": 235,
+        "cache_read": 34126,
+        "effective_ctx": 34533
+      },
+      {
+        "call_index": 78,
+        "label": "normal_progress",
+        "input": 427,
+        "output": 352,
+        "cache_read": 34532,
+        "effective_ctx": 34959
+      },
+      {
+        "call_index": 79,
+        "label": "large_tool_or_state_rebuild",
+        "input": 9671,
+        "output": 228,
+        "cache_read": 34958,
+        "effective_ctx": 44629
+      },
+      {
+        "call_index": 80,
+        "label": "normal_progress",
+        "input": 937,
+        "output": 164,
+        "cache_read": 44628,
+        "effective_ctx": 45565
+      },
+      {
+        "call_index": 81,
+        "label": "normal_progress",
+        "input": 407,
+        "output": 2557,
+        "cache_read": 45564,
+        "effective_ctx": 45971
+      },
+      {
+        "call_index": 82,
+        "label": "normal_progress",
+        "input": 2684,
+        "output": 220,
+        "cache_read": 45970,
+        "effective_ctx": 48654
+      },
+      {
+        "call_index": 83,
+        "label": "normal_progress",
+        "input": 1332,
+        "output": 956,
+        "cache_read": 48651,
+        "effective_ctx": 49983
+      },
+      {
+        "call_index": 84,
+        "label": "large_tool_or_state_rebuild",
+        "input": 33308,
+        "output": 151,
+        "cache_read": 29801,
+        "effective_ctx": 63109
+      },
+      {
+        "call_index": 85,
+        "label": "normal_progress",
+        "input": 629,
+        "output": 3150,
+        "cache_read": 63108,
+        "effective_ctx": 63737
+      },
+      {
+        "call_index": 86,
+        "label": "normal_progress",
+        "input": 3269,
+        "output": 86,
+        "cache_read": 63736,
+        "effective_ctx": 67005
+      },
+      {
+        "call_index": 87,
+        "label": "normal_progress",
+        "input": 663,
+        "output": 571,
+        "cache_read": 67002,
+        "effective_ctx": 67665
+      },
+      {
+        "call_index": 88,
+        "label": "normal_progress",
+        "input": 596,
+        "output": 761,
+        "cache_read": 67664,
+        "effective_ctx": 68260
+      },
+      {
+        "call_index": 89,
+        "label": "normal_progress",
+        "input": 781,
+        "output": 578,
+        "cache_read": 68257,
+        "effective_ctx": 69038
+      }
+    ]
+  }
+}

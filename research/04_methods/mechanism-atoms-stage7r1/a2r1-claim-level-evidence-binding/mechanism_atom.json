@@ -1,0 +1,28 @@
+{
+  "atom_version": "0.2.1-stage7r1",
+  "atom_id": "A2R1",
+  "atom_name": "Claim-Level Evidence Binding",
+  "primary_mechanism": "EvidenceBundle",
+  "supporting_mechanisms": ["OutputContract"],
+  "capability_under_test": "Bind every grounded claim to its own evidence IDs and explicitly reject unsupported claims.",
+  "non_goals": ["Do not evaluate broad research synthesis.", "Do not evaluate prose quality."],
+  "input_contract": {
+    "required_inputs": ["input.md", "task_spec.json", "output_contract.json", "evidence_bundle.json"],
+    "fixed_snapshot": true,
+    "forbidden_assumptions": ["Do not infer production readiness without supplied evidence.", "Do not use a global evidence list as a substitute for claim-level evidence binding."]
+  },
+  "output_contract_id": "out_stage7r1_a2r1_claim_level_evidence_binding_001",
+  "pass_criteria": [
+    {"metric": "citation_grounding", "threshold": 1.0, "required": true},
+    {"metric": "task_success", "threshold": 0.8, "required": true}
+  ],
+  "known_failure_modes": ["Global-only evidence list", "Unsupported claim acceptance", "Bare grounded claim strings"],
+  "composition_interface": {
+    "input_from_previous": ["fixed_evidence_bundle"],
+    "output_to_next": ["grounded_claim_table", "unsupported_claims"],
+    "state_dependencies": [],
+    "evidence_dependencies": ["evidence_bundle"],
+    "failure_signal": "claim-level-evidence-binding_failed",
+    "repair_policy": "convert_each_grounded_claim_to_claim_evidence_object"
+  }
+}

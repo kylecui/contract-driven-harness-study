@@ -1,0 +1,49 @@
+{
+  "manifest_path": "research\\05_analysis\\real-run-artifacts\\first-slice-smoke-manifest.json",
+  "config_path": "research\\04_methods\\provider-config.openai-reviewed.json",
+  "require_keys": false,
+  "errors": [],
+  "warnings": [
+    "environment variable not set: OPENAI_API_KEY"
+  ],
+  "runs": {
+    "run_count": 4,
+    "required_model_tiers": [
+      "budget_model",
+      "strong_model"
+    ],
+    "manifest_status_counts": {
+      "pending": 4
+    },
+    "validation_status_counts": {
+      "pending": 4
+    },
+    "group_counts": {
+      "structured-extraction | budget_model | G0": 1,
+      "structured-extraction | budget_model | G9": 1,
+      "structured-extraction | strong_model | G0": 1,
+      "structured-extraction | strong_model | G9": 1
+    },
+    "non_placeholder_outputs": []
+  },
+  "config": {
+    "providers": {
+      "openai": {
+        "api_key_env": "OPENAI_API_KEY",
+        "api_key_present": false,
+        "base_url": "https://api.openai.com/v1"
+      }
+    },
+    "model_tiers": {
+      "strong_model": {
+        "provider": "openai",
+        "model": "gpt-5.1"
+      },
+      "budget_model": {
+        "provider": "openai",
+        "model": "gpt-5-mini"
+      }
+    },
+    "config_path": "research\\04_methods\\provider-config.openai-reviewed.json"
+  }
+}

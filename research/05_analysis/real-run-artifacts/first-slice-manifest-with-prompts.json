@@ -1,0 +1,391 @@
+{
+  "note": "Prepared artifact directories for real model-backed benchmark runs.",
+  "run_count": 24,
+  "runs_dir": "research\\05_analysis\\real-run-artifacts\\first-slice",
+  "runs": [
+    {
+      "run_id": "structured-extraction__strong_model__G0__r1",
+      "fixture": "structured-extraction",
+      "task_type": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G0__r1\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G0__r1\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G0__r1\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G0__r1\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G0__r1\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G0__r1\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G0__r2",
+      "fixture": "structured-extraction",
+      "task_type": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G0__r2\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G0__r2\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G0__r2\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G0__r2\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G0__r2\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G0__r2\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G0__r3",
+      "fixture": "structured-extraction",
+      "task_type": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G0__r3\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G0__r3\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G0__r3\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G0__r3\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G0__r3\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G0__r3\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G9__r1",
+      "fixture": "structured-extraction",
+      "task_type": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G9__r1\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G9__r1\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G9__r1\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G9__r1\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G9__r1\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G9__r1\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G9__r2",
+      "fixture": "structured-extraction",
+      "task_type": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G9__r2\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G9__r2\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G9__r2\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G9__r2\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G9__r2\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G9__r2\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G9__r3",
+      "fixture": "structured-extraction",
+      "task_type": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G9__r3\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G9__r3\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G9__r3\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G9__r3\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G9__r3\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__strong_model__G9__r3\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G0__r1",
+      "fixture": "structured-extraction",
+      "task_type": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G0__r1\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G0__r1\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G0__r1\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G0__r1\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G0__r1\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G0__r1\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G0__r2",
+      "fixture": "structured-extraction",
+      "task_type": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G0__r2\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G0__r2\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G0__r2\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G0__r2\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G0__r2\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G0__r2\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G0__r3",
+      "fixture": "structured-extraction",
+      "task_type": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G0__r3\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G0__r3\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G0__r3\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G0__r3\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G0__r3\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G0__r3\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G9__r1",
+      "fixture": "structured-extraction",
+      "task_type": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G9__r1\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G9__r1\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G9__r1\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G9__r1\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G9__r1\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G9__r1\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G9__r2",
+      "fixture": "structured-extraction",
+      "task_type": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G9__r2\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G9__r2\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G9__r2\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G9__r2\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G9__r2\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G9__r2\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G9__r3",
+      "fixture": "structured-extraction",
+      "task_type": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G9__r3\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G9__r3\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G9__r3\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G9__r3\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G9__r3\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\structured-extraction__budget_model__G9__r3\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "project-initialization__strong_model__G0__r1",
+      "fixture": "project-initialization",
+      "task_type": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G0__r1\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G0__r1\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G0__r1\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G0__r1\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G0__r1\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G0__r1\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "project-initialization__strong_model__G0__r2",
+      "fixture": "project-initialization",
+      "task_type": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G0__r2\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G0__r2\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G0__r2\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G0__r2\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G0__r2\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G0__r2\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "project-initialization__strong_model__G0__r3",
+      "fixture": "project-initialization",
+      "task_type": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G0__r3\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G0__r3\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G0__r3\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G0__r3\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G0__r3\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G0__r3\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "project-initialization__strong_model__G9__r1",
+      "fixture": "project-initialization",
+      "task_type": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G9__r1\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G9__r1\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G9__r1\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G9__r1\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G9__r1\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G9__r1\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "project-initialization__strong_model__G9__r2",
+      "fixture": "project-initialization",
+      "task_type": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G9__r2\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G9__r2\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G9__r2\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G9__r2\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G9__r2\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G9__r2\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "project-initialization__strong_model__G9__r3",
+      "fixture": "project-initialization",
+      "task_type": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G9__r3\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G9__r3\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G9__r3\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G9__r3\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G9__r3\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__strong_model__G9__r3\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "project-initialization__budget_model__G0__r1",
+      "fixture": "project-initialization",
+      "task_type": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G0__r1\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G0__r1\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G0__r1\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G0__r1\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G0__r1\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G0__r1\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "project-initialization__budget_model__G0__r2",
+      "fixture": "project-initialization",
+      "task_type": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G0__r2\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G0__r2\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G0__r2\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G0__r2\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G0__r2\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G0__r2\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "project-initialization__budget_model__G0__r3",
+      "fixture": "project-initialization",
+      "task_type": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G0__r3\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G0__r3\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G0__r3\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G0__r3\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G0__r3\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G0__r3\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "project-initialization__budget_model__G9__r1",
+      "fixture": "project-initialization",
+      "task_type": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G9__r1\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G9__r1\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G9__r1\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G9__r1\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G9__r1\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G9__r1\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "project-initialization__budget_model__G9__r2",
+      "fixture": "project-initialization",
+      "task_type": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G9__r2\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G9__r2\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G9__r2\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G9__r2\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G9__r2\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G9__r2\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "project-initialization__budget_model__G9__r3",
+      "fixture": "project-initialization",
+      "task_type": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G9__r3\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G9__r3\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G9__r3\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G9__r3\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G9__r3\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\first-slice\\project-initialization__budget_model__G9__r3\\adapter_request.json"
+      }
+    }
+  ]
+}

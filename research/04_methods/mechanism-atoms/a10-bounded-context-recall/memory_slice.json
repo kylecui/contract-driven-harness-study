@@ -1,0 +1,16 @@
+{
+  "memory_slice_id": "mem_mechanism_a10_bounded_context_recall_001",
+  "task_id": "mechanism_a10_bounded_context_recall_001",
+  "active_topic_id": "mechanism_atom_a10",
+  "mode": "task",
+  "must_load": [
+    "Must-load: current roadmap says Stage 2 is next. Must-not-load: old plan says run another broad workflow slice. Answer what work comes next."
+  ],
+  "may_load": [
+    "Composition role: Shared."
+  ],
+  "must_not_load": [
+    "Old broad workflow plans that bypass mechanism atoms."
+  ],
+  "token_budget": 1200
+}

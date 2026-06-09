@@ -1,0 +1,24 @@
+{
+  "task_spec_id": "task_stage7p_v2_a10_a9_a6_001",
+  "task_type": "stage7p_v2_partial_macro",
+  "objective": "Compose A10 bounded context recall, A9 no-overwrite action planning, and A6 validator repair while preserving cross-step obligations.",
+  "goal": "Return a JSON object that uses current context, explicitly excludes stale context, carries the exclusion obligation forward, plans only safe no-overwrite actions, and repairs the validator-reported output.",
+  "language": "en",
+  "freshness": "local_snapshot",
+  "constraints": [
+    "Do not use the old broad-workflow plan as the next action.",
+    "bounded_context.excluded_context must explicitly list the old broad-workflow plan.",
+    "carried_obligations must include the A10 obligation to exclude the old broad-workflow plan and mark it preserved.",
+    "Do not overwrite AGENTS.md.",
+    "Create only missing unprotected files.",
+    "Keep existing valid fields unchanged during repair.",
+    "Label the result as partial composition, not full project-initialization or full research-workflow validation."
+  ],
+  "composition_atoms": [
+    "A10",
+    "A9",
+    "A6"
+  ],
+  "ablation_against": "stage7p-a10-a9-a6",
+  "new_mechanism": "cross_step_obligation_retention"
+}

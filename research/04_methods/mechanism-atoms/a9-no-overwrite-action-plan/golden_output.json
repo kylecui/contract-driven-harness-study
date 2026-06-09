@@ -1,0 +1,13 @@
+{
+  "create": [
+    "README.md",
+    "research/04_methods/new.md"
+  ],
+  "skip": [],
+  "blocked": [
+    "overwrite AGENTS.md"
+  ],
+  "ask_first": [
+    "changes to protected files"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "memory_slice_id": "mem_strategic_judgment_001",
+  "task_id": "strategic_judgment_001",
+  "active_topic_id": "topic_strategic_judgment",
+  "mode": "task",
+  "must_load": [
+    "proposal_status_summary"
+  ],
+  "may_load": [
+    "publishing_preferences"
+  ],
+  "must_not_load": [
+    "unrelated_product_strategy"
+  ],
+  "token_budget": 4000
+}
+

@@ -1,0 +1,16 @@
+{
+  "task_id": "stage7r1_a2r1_claim_level_evidence_binding",
+  "task_type": "mechanism_atom",
+  "objective": "Classify candidate claims and bind every grounded claim to its own evidence IDs.",
+  "constraints": [
+    "Every grounded_claims item must be an object, not a string.",
+    "Every grounded_claims item must contain non-empty evidence_ids.",
+    "Unsupported production readiness must not appear in grounded_claims.",
+    "A global evidence_ids field may be present but cannot replace claim-level evidence binding."
+  ],
+  "success_conditions": [
+    "Two supported claims are grounded with claim-level evidence IDs.",
+    "Production readiness is listed as unsupported.",
+    "No bare strings appear in grounded_claims."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "brief": "Assess whether tracks should remain separate.",
+  "evidence_summary": [
+    "atom-a5-e01",
+    "atom-a5-e02"
+  ],
+  "synthesis": "The tracks have different validation needs.",
+  "recommendation": "Keep tracks separate for now.",
+  "risks": [
+    "composition claim remains untested"
+  ],
+  "stage_status": {
+    "brief": "complete",
+    "evidence": "complete",
+    "synthesis": "complete",
+    "recommendation": "complete"
+  }
+}

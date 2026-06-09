@@ -1,0 +1,32 @@
+{
+  "bounded_context": {
+    "answer": "Run another broad workflow slice.",
+    "used_context": [
+      "old plan"
+    ],
+    "excluded_context": []
+  },
+  "safe_action_plan": {
+    "allowed_actions": [
+      "overwrite AGENTS.md"
+    ],
+    "blocked_actions": []
+  },
+  "validator_repair": {
+    "repaired_output": {
+      "title": "Contract-Driven Harness"
+    },
+    "repair_trace": [],
+    "remaining_warnings": []
+  },
+  "composition_trace": [
+    "full project initialization"
+  ],
+  "boundary": {
+    "composition_label": "full",
+    "validated_scope": [
+      "full project initialization"
+    ],
+    "not_validated_scope": []
+  }
+}

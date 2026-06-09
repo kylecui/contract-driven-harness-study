@@ -1,0 +1,25 @@
+{
+  "execute": false,
+  "confirm_cost": false,
+  "status": "complete",
+  "manifest": "research/05_analysis/real-run-artifacts/first-slice-smoke-manifest.json",
+  "config": "research/04_methods/provider-config.siliconflow-reviewed.json",
+  "steps": [
+    {
+      "name": "preflight",
+      "return_code": 0,
+      "output": "research\\05_analysis\\smoke-pilot-once-siliconflow-dry-run-preflight.md"
+    },
+    {
+      "name": "adapter",
+      "return_code": 0,
+      "output": "research\\05_analysis\\smoke-pilot-once-siliconflow-dry-run-adapter.json"
+    },
+    {
+      "name": "postprocess",
+      "return_code": 0,
+      "output": "research\\05_analysis\\smoke-pilot-once-siliconflow-dry-run-postprocess-summary.md"
+    }
+  ],
+  "decision": "Dry-run workflow completed without provider calls."
+}

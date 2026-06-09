@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "passed": true,
+  "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+  "atom_id": "A8",
+  "atom_name": "Evidence-Type Separation",
+  "primary_mechanism": "EvidenceBundle",
+  "primary_metric": "citation_grounding",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [],
+  "parsed_output": {
+    "extracted": [
+      {
+        "claim": "Primary evidence for Evidence-Type Separation.",
+        "citation": "atom-a8-e01"
+      }
+    ],
+    "inferred": [
+      {
+        "claim": "Supporting evidence for Type leakage.",
+        "citation": "atom-a8-e02"
+      }
+    ],
+    "ambiguous": [
+      {
+        "claim": "Composition scalability remains unproven.",
+        "citation": "atom-a8-e03"
+      }
+    ],
+    "proposed": []
+  },
+  "run_id": "a8-evidence-type-separation__strong_model__G8__r2",
+  "model": "strong_model",
+  "harness_arm": "G8",
+  "fixture": "a8-evidence-type-separation"
+}

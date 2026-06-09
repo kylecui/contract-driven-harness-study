@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Structured extraction evaluated against fixture expectations.",
+  "findings": [],
+  "parsed_output": {
+    "project_title": "Topic-Aware Compaction",
+    "target_venue": "COLM 2026",
+    "primary_metric": "token savings",
+    "backup_venue": null
+  },
+  "run_id": "structured-extraction__budget_model__G0__r2",
+  "fixture": "structured-extraction",
+  "model": "budget_model",
+  "harness_arm": "G0"
+}

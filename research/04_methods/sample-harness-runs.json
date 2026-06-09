@@ -1,0 +1,65 @@
+{
+  "runs": [
+    {
+      "task_id": "structured_extraction_001",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "metrics": {
+        "task_success": 1,
+        "schema_validity": 0.8,
+        "tool_call_correctness": 0.8,
+        "citation_grounding": 0.7,
+        "human_acceptance": 0.9,
+        "cost_efficiency": 0.5,
+        "safety_consistency": 0.8
+      }
+    },
+    {
+      "task_id": "structured_extraction_001",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "metrics": {
+        "task_success": 0.6,
+        "schema_validity": 0.4,
+        "tool_call_correctness": 0.5,
+        "citation_grounding": 0.4,
+        "human_acceptance": 0.5,
+        "cost_efficiency": 0.8,
+        "safety_consistency": 0.6
+      }
+    },
+    {
+      "task_id": "structured_extraction_001",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "metrics": {
+        "task_success": 1,
+        "schema_validity": 1,
+        "tool_call_correctness": 0.95,
+        "citation_grounding": 0.95,
+        "human_acceptance": 0.95,
+        "cost_efficiency": 0.45,
+        "safety_consistency": 1
+      }
+    },
+    {
+      "task_id": "structured_extraction_001",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "metrics": {
+        "task_success": 0.9,
+        "schema_validity": 0.95,
+        "tool_call_correctness": 0.9,
+        "citation_grounding": 0.9,
+        "human_acceptance": 0.85,
+        "cost_efficiency": 0.6,
+        "safety_consistency": 0.95
+      }
+    }
+  ]
+}
+

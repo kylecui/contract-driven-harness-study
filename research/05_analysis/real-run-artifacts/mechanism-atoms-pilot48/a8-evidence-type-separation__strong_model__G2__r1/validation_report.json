@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+  "atom_id": "A8",
+  "atom_name": "Evidence-Type Separation",
+  "primary_mechanism": "EvidenceBundle",
+  "primary_metric": "citation_grounding",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [
+    "citation_grounding=0.000 below threshold 0.800"
+  ],
+  "parsed_output": {
+    "extracted": [
+      {
+        "claim": "The patient's blood pressure was 150/95 mmHg.",
+        "evidence_type": "direct_measurement",
+        "citation": "ev_mechanism_a8_evidence_type_separation_001#direct_measurement"
+      }
+    ],
+    "inferred": [
+      {
+        "claim": "The patient has stage 1 hypertension.",
+        "evidence_type": "inference",
+        "citation": "ev_mechanism_a8_evidence_type_separation_001#inference"
+      }
+    ],
+    "ambiguous": [
+      {
+        "claim": "There is a potential risk of medication non-adherence.",
+        "evidence_type": "unresolved_risk",
+        "citation": "ev_mechanism_a8_evidence_type_separation_001#unresolved_risk"
+      }
+    ],
+    "proposed": [
+      {
+        "claim": "Consider starting a low-dose thiazide diuretic.",
+        "evidence_type": "recommended_action",
+        "citation": "ev_mechanism_a8_evidence_type_separation_001#recommended_action"
+      }
+    ]
+  },
+  "run_id": "a8-evidence-type-separation__strong_model__G2__r1",
+  "model": "strong_model",
+  "harness_arm": "G2",
+  "fixture": "a8-evidence-type-separation"
+}

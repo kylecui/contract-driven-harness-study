@@ -1,0 +1,10 @@
+{
+  "run_id": "a8r-evidence-type-rules__budget_model__G8__r1",
+  "provider": "manual_or_future_adapter",
+  "model_tier": "budget_model",
+  "harness_arm": "G8",
+  "prompt_path": "research\\05_analysis\\real-run-artifacts\\stage7r-revised-atoms\\a8r-evidence-type-rules__budget_model__G8__r1\\prompt.md",
+  "temperature": 0,
+  "tools_enabled": false,
+  "expects_validation": true
+}

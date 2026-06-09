@@ -1,0 +1,16 @@
+{
+  "run_id": "a3-constraint-safe-planning__budget_model__G8__r1",
+  "fixture": "a3-constraint-safe-planning",
+  "task_type": "mechanism_atom",
+  "model": "budget_model",
+  "harness_arm": "G8",
+  "status": "pending",
+  "paths": {
+    "output": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-first-batch\\a3-constraint-safe-planning__budget_model__G8__r1\\output.md",
+    "tool_trace": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-first-batch\\a3-constraint-safe-planning__budget_model__G8__r1\\tool_trace.jsonl",
+    "validation_report": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-first-batch\\a3-constraint-safe-planning__budget_model__G8__r1\\validation_report.json",
+    "metrics": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-first-batch\\a3-constraint-safe-planning__budget_model__G8__r1\\metrics.json",
+    "prompt": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-first-batch\\a3-constraint-safe-planning__budget_model__G8__r1\\prompt.md",
+    "adapter_request": "research\\05_analysis\\real-run-artifacts\\mechanism-atoms-first-batch\\a3-constraint-safe-planning__budget_model__G8__r1\\adapter_request.json"
+  }
+}

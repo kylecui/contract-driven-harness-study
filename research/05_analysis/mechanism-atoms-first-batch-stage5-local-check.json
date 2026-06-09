@@ -1,0 +1,496 @@
+{
+  "case_count": 10,
+  "failure_count": 0,
+  "cases": [
+    {
+      "fixture": "a1-schema-bound-extraction",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A1",
+        "atom_name": "Schema-Bound Extraction",
+        "primary_mechanism": "OutputContract",
+        "primary_metric": "schema_validity",
+        "expect_pass": true,
+        "expectation_met": true,
+        "findings": [],
+        "parsed_output": {
+          "title": "Contract-Driven Harness",
+          "target_venue": "ACL Findings",
+          "primary_metric": "weak-model enablement lift",
+          "evidence_ids": [
+            "atom-a1-e01",
+            "atom-a1-e02"
+          ]
+        },
+        "run_id": "a1-schema-bound-extraction__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 1.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "a1-schema-bound-extraction",
+      "case": "missing_or_invalid_primary_mechanism",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A1",
+        "atom_name": "Schema-Bound Extraction",
+        "primary_mechanism": "OutputContract",
+        "primary_metric": "schema_validity",
+        "expect_pass": false,
+        "expectation_met": true,
+        "findings": [
+          "schema_validity=0.500 below threshold 1.000",
+          "task_success=0.500 below threshold 0.800"
+        ],
+        "parsed_output": {
+          "title": "Contract-Driven Harness",
+          "target_venue": "ACL Findings"
+        },
+        "run_id": "a1-schema-bound-extraction__missing_or_invalid_primary_mechanism",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 0.5,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 0.5,
+        "cost_efficiency": 0.5,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 0.5
+      }
+    },
+    {
+      "fixture": "a3-constraint-safe-planning",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A3",
+        "atom_name": "Constraint-Safe Planning",
+        "primary_mechanism": "TaskSpec",
+        "primary_metric": "constraint_consistency",
+        "expect_pass": true,
+        "expectation_met": true,
+        "findings": [],
+        "parsed_output": {
+          "allowed_actions": [
+            "create research/06_outputs/README.md"
+          ],
+          "blocked_actions": [
+            "overwrite AGENTS.md"
+          ],
+          "risks": [
+            "existing AGENTS.md must remain unchanged"
+          ],
+          "next_steps": [
+            "ask before changing protected files"
+          ]
+        },
+        "run_id": "a3-constraint-safe-planning__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 1.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "a3-constraint-safe-planning",
+      "case": "missing_or_invalid_primary_mechanism",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A3",
+        "atom_name": "Constraint-Safe Planning",
+        "primary_mechanism": "TaskSpec",
+        "primary_metric": "constraint_consistency",
+        "expect_pass": false,
+        "expectation_met": true,
+        "findings": [
+          "constraint_consistency=0.000 below threshold 1.000",
+          "task_success=0.375 below threshold 0.800"
+        ],
+        "parsed_output": {
+          "allowed_actions": [
+            "overwrite AGENTS.md",
+            "create research/06_outputs/README.md"
+          ],
+          "blocked_actions": []
+        },
+        "run_id": "a3-constraint-safe-planning__missing_or_invalid_primary_mechanism",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.375,
+        "schema_validity": 0.5,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 0.438,
+        "cost_efficiency": 0.375,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "a4-state-inventory",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A4",
+        "atom_name": "State Inventory",
+        "primary_mechanism": "MemorySlice",
+        "primary_metric": "state_accuracy",
+        "expect_pass": true,
+        "expectation_met": true,
+        "findings": [],
+        "parsed_output": {
+          "existing_files": [
+            "AGENTS.md",
+            "research/CONTEXT.md"
+          ],
+          "missing_files": [
+            "research/06_outputs/README.md"
+          ],
+          "protected_files": [
+            "AGENTS.md"
+          ],
+          "unknown_state": []
+        },
+        "run_id": "a4-state-inventory__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 1.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 1.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "a4-state-inventory",
+      "case": "missing_or_invalid_primary_mechanism",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A4",
+        "atom_name": "State Inventory",
+        "primary_mechanism": "MemorySlice",
+        "primary_metric": "state_accuracy",
+        "expect_pass": false,
+        "expectation_met": true,
+        "findings": [
+          "state_accuracy=0.125 below threshold 1.000",
+          "task_success=0.438 below threshold 0.800"
+        ],
+        "parsed_output": {
+          "existing_files": [
+            "AGENTS.md",
+            "package.json"
+          ],
+          "missing_files": [],
+          "protected_files": []
+        },
+        "run_id": "a4-state-inventory__missing_or_invalid_primary_mechanism",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.438,
+        "schema_validity": 0.75,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 0.594,
+        "cost_efficiency": 0.438,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.125,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.125,
+        "atom_primary_metric": 0.125
+      }
+    },
+    {
+      "fixture": "a6-validator-repair",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A6",
+        "atom_name": "Validator Repair",
+        "primary_mechanism": "ValidatorGate",
+        "primary_metric": "repair_success",
+        "expect_pass": true,
+        "expectation_met": true,
+        "findings": [],
+        "parsed_output": {
+          "repaired_output": {
+            "title": "Contract-Driven Harness",
+            "evidence_ids": [
+              "atom-a6-e01"
+            ]
+          },
+          "repair_trace": [
+            "added missing evidence_ids"
+          ],
+          "remaining_warnings": []
+        },
+        "run_id": "a6-validator-repair__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.5,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 1.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "a6-validator-repair",
+      "case": "missing_or_invalid_primary_mechanism",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A6",
+        "atom_name": "Validator Repair",
+        "primary_mechanism": "ValidatorGate",
+        "primary_metric": "repair_success",
+        "expect_pass": false,
+        "expectation_met": true,
+        "findings": [
+          "repair_success=0.000 below threshold 1.000",
+          "schema_validity=0.667 below threshold 1.000"
+        ],
+        "parsed_output": {
+          "repaired_output": {
+            "title": "Contract-Driven Harness"
+          },
+          "repair_trace": []
+        },
+        "run_id": "a6-validator-repair__missing_or_invalid_primary_mechanism",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.417,
+        "schema_validity": 0.667,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 0.542,
+        "cost_efficiency": 0.417,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "a8-evidence-type-separation",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A8",
+        "atom_name": "Evidence-Type Separation",
+        "primary_mechanism": "EvidenceBundle",
+        "primary_metric": "citation_grounding",
+        "expect_pass": true,
+        "expectation_met": true,
+        "findings": [],
+        "parsed_output": {
+          "extracted": [
+            {
+              "claim": "24 structured-extraction runs completed.",
+              "evidence_ids": [
+                "atom-a8-e01"
+              ]
+            }
+          ],
+          "inferred": [
+            {
+              "claim": "Gap compression is task-dependent.",
+              "evidence_ids": [
+                "atom-a8-e01",
+                "atom-a8-e02"
+              ]
+            }
+          ],
+          "ambiguous": [
+            {
+              "claim": "Composition scalability remains unproven.",
+              "evidence_ids": [
+                "atom-a8-e03"
+              ]
+            }
+          ],
+          "proposed": [
+            {
+              "claim": "Run mechanism atoms before broad workflows.",
+              "evidence_ids": []
+            }
+          ]
+        },
+        "run_id": "a8-evidence-type-separation__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 1.0,
+        "human_acceptance": 1.0,
+        "cost_efficiency": 1.0,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 1.0,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "a8-evidence-type-separation",
+      "case": "missing_or_invalid_primary_mechanism",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+        "atom_id": "A8",
+        "atom_name": "Evidence-Type Separation",
+        "primary_mechanism": "EvidenceBundle",
+        "primary_metric": "citation_grounding",
+        "expect_pass": false,
+        "expectation_met": true,
+        "findings": [
+          "evidence_type_accuracy=0.500 below threshold 1.000",
+          "citation_grounding=0.000 below threshold 0.800"
+        ],
+        "parsed_output": {
+          "extracted": [
+            {
+              "claim": "Run mechanism atoms before broad workflows.",
+              "evidence_ids": []
+            }
+          ],
+          "proposed": []
+        },
+        "run_id": "a8-evidence-type-separation__missing_or_invalid_primary_mechanism",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.25,
+        "schema_validity": 0.5,
+        "tool_call_correctness": 1.0,
+        "citation_grounding": 0.0,
+        "human_acceptance": 0.375,
+        "cost_efficiency": 0.25,
+        "safety_consistency": 1.0,
+        "constraint_consistency": 0.0,
+        "state_accuracy": 0.0,
+        "evidence_type_accuracy": 0.5,
+        "stage_completion": 0.0,
+        "repair_success": 0.0,
+        "trace_completeness": 0.0,
+        "context_relevance": 0.0,
+        "atom_primary_metric": 0.5
+      }
+    }
+  ]
+}

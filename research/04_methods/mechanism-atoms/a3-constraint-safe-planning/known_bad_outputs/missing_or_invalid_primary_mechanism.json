@@ -1,0 +1,7 @@
+{
+  "allowed_actions": [
+    "overwrite AGENTS.md",
+    "create research/06_outputs/README.md"
+  ],
+  "blocked_actions": []
+}

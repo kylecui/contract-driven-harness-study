@@ -1,0 +1,11 @@
+{
+  "slice_id": "stage7r_a8r_memory_001",
+  "must_load": [
+    "evidence type rules",
+    "items I1 through I5"
+  ],
+  "must_not_load": [
+    "unstated evidence resolving I5"
+  ],
+  "staleness_policy": "fixed_snapshot"
+}

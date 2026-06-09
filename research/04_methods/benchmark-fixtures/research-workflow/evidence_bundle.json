@@ -1,0 +1,31 @@
+{
+  "evidence_bundle_id": "ev_research_workflow_001",
+  "task_id": "research_workflow_001",
+  "items": [
+    {
+      "source_id": "fixture-research-notes",
+      "evidence_id": "fixture-rw-e01",
+      "evidence_type": "EXTRACTED",
+      "claim": "The proposed topic-aware compaction paper currently has a single-model A/B result.",
+      "freshness": "snapshot",
+      "authority": "local_fixture"
+    },
+    {
+      "source_id": "fixture-research-notes",
+      "evidence_id": "fixture-rw-e02",
+      "evidence_type": "EXTRACTED",
+      "claim": "The proposed harness engineering paper requires cross-model benchmark evidence.",
+      "freshness": "snapshot",
+      "authority": "local_fixture"
+    },
+    {
+      "source_id": "fixture-research-notes",
+      "evidence_id": "fixture-rw-e03",
+      "evidence_type": "INFERRED",
+      "claim": "The two papers should remain separate until the compaction work has stronger ablation evidence.",
+      "freshness": "snapshot",
+      "authority": "local_fixture"
+    }
+  ]
+}
+

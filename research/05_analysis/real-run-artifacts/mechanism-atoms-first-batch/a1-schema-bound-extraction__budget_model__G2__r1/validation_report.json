@@ -1,0 +1,10 @@
+{
+  "status": "pending",
+  "passed": false,
+  "reason": "Output is still pending.",
+  "findings": [],
+  "run_id": "a1-schema-bound-extraction__budget_model__G2__r1",
+  "fixture": "a1-schema-bound-extraction",
+  "model": "budget_model",
+  "harness_arm": "G2"
+}

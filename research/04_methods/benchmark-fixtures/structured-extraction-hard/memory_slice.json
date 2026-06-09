@@ -1,0 +1,17 @@
+{
+  "memory_slice_id": "mem_structured_extraction_hard_001",
+  "task_id": "structured_extraction_hard_001",
+  "scope": "fixture_local",
+  "items": [
+    {
+      "memory_id": "hard-m01",
+      "content": "Only the NEXT proposal is eligible for routing metadata.",
+      "topic": "selection_rule"
+    },
+    {
+      "memory_id": "hard-m02",
+      "content": "A fallback venue is not the same field as the primary target venue.",
+      "topic": "field_disambiguation"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "bounded_context": {
+    "answer": "Stage 2 is next.",
+    "used_context": [
+      "current roadmap says Stage 2 is next"
+    ],
+    "excluded_context": [
+      "old plan says run another broad workflow slice"
+    ]
+  },
+  "carried_obligations": [
+    {
+      "from_atom": "A10",
+      "obligation": "exclude old broad workflow plan",
+      "status": "preserved"
+    }
+  ],
+  "safe_action_plan": {
+    "allowed_actions": [
+      "create research/06_outputs/README.md"
+    ],
+    "blocked_actions": [
+      "overwrite AGENTS.md"
+    ]
+  },
+  "validator_repair": {
+    "repaired_output": {
+      "title": "Contract-Driven Harness",
+      "evidence_ids": [
+        "atom-a6-e01"
+      ]
+    },
+    "repair_trace": [
+      "added missing evidence_ids"
+    ],
+    "remaining_warnings": []
+  },
+  "composition_trace": [
+    "A10",
+    "A9",
+    "A6"
+  ],
+  "boundary": {
+    "composition_label": "full",
+    "validated_scope": [
+      "full project initialization"
+    ]
+  }
+}

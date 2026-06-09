@@ -1,0 +1,103 @@
+{
+  "note": "Prepared artifact directories for real model-backed benchmark runs.",
+  "run_count": 6,
+  "runs_dir": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6",
+  "runs": [
+    {
+      "run_id": "stage7p-a10-a9-a6__strong_model__G0__r1",
+      "fixture": "stage7p-a10-a9-a6",
+      "task_type": "stage7p_partial_macro",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__strong_model__G0__r1\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__strong_model__G0__r1\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__strong_model__G0__r1\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__strong_model__G0__r1\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__strong_model__G0__r1\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__strong_model__G0__r1\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "stage7p-a10-a9-a6__strong_model__G8__r1",
+      "fixture": "stage7p-a10-a9-a6",
+      "task_type": "stage7p_partial_macro",
+      "model": "strong_model",
+      "harness_arm": "G8",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__strong_model__G8__r1\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__strong_model__G8__r1\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__strong_model__G8__r1\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__strong_model__G8__r1\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__strong_model__G8__r1\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__strong_model__G8__r1\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "stage7p-a10-a9-a6__strong_model__G9__r1",
+      "fixture": "stage7p-a10-a9-a6",
+      "task_type": "stage7p_partial_macro",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__strong_model__G9__r1\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__strong_model__G9__r1\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__strong_model__G9__r1\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__strong_model__G9__r1\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__strong_model__G9__r1\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__strong_model__G9__r1\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "stage7p-a10-a9-a6__budget_model__G0__r1",
+      "fixture": "stage7p-a10-a9-a6",
+      "task_type": "stage7p_partial_macro",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__budget_model__G0__r1\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__budget_model__G0__r1\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__budget_model__G0__r1\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__budget_model__G0__r1\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__budget_model__G0__r1\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__budget_model__G0__r1\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "stage7p-a10-a9-a6__budget_model__G8__r1",
+      "fixture": "stage7p-a10-a9-a6",
+      "task_type": "stage7p_partial_macro",
+      "model": "budget_model",
+      "harness_arm": "G8",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__budget_model__G8__r1\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__budget_model__G8__r1\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__budget_model__G8__r1\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__budget_model__G8__r1\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__budget_model__G8__r1\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__budget_model__G8__r1\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "stage7p-a10-a9-a6__budget_model__G9__r1",
+      "fixture": "stage7p-a10-a9-a6",
+      "task_type": "stage7p_partial_macro",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__budget_model__G9__r1\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__budget_model__G9__r1\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__budget_model__G9__r1\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__budget_model__G9__r1\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__budget_model__G9__r1\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\stage7p-a10-a9-a6\\stage7p-a10-a9-a6__budget_model__G9__r1\\adapter_request.json"
+      }
+    }
+  ]
+}

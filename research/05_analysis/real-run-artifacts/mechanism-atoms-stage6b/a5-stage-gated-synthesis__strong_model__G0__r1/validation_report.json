@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Output is not valid JSON.",
+  "findings": [
+    "Expected JSON-compatible output for mechanism atom evaluation."
+  ],
+  "expect_pass": null,
+  "fixture": "a5-stage-gated-synthesis",
+  "model": "strong_model",
+  "harness_arm": "G0"
+}

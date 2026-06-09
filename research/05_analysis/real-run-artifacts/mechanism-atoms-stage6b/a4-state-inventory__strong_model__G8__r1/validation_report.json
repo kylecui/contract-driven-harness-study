@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+  "atom_id": "A4",
+  "atom_name": "State Inventory",
+  "primary_mechanism": "MemorySlice",
+  "primary_metric": "state_accuracy",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [
+    "state_accuracy=0.750 below threshold 1.000"
+  ],
+  "parsed_output": {
+    "existing_files": [
+      "AGENTS.md",
+      "research/CONTEXT.md"
+    ],
+    "missing_files": [
+      "research/06_outputs/README.md"
+    ],
+    "protected_files": [
+      "AGENTS.md"
+    ],
+    "unknown_state": "All other files and directories in the project are unknown. No inference has been made about their existence, content, or state beyond the explicitly provided snapshot."
+  },
+  "run_id": "a4-state-inventory__strong_model__G8__r1",
+  "model": "strong_model",
+  "harness_arm": "G8",
+  "fixture": "a4-state-inventory"
+}

@@ -1,0 +1,10 @@
+{
+  "known_state": [
+    {"fact": "AGENTS.md is present", "evidence_ids": ["atom-a4r-e01"]},
+    {"fact": "Stage7p v2 is complete and Stage7r is pending", "evidence_ids": ["atom-a4r-e02"]},
+    {"fact": "CI passed on the main branch", "evidence_ids": ["atom-a4r-e03"]}
+  ],
+  "unknown_state": [],
+  "forbidden_inferences": [],
+  "evidence_ids": ["atom-a4r-e01", "atom-a4r-e02", "atom-a4r-e03"]
+}

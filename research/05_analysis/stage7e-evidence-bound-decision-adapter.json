@@ -1,0 +1,72 @@
+{
+  "execute": true,
+  "processed": 6,
+  "results": [
+    {
+      "run_id": "stage7e-evidence-bound-decision__strong_model__G0__r1",
+      "model_tier": "strong_model",
+      "provider": "siliconflow",
+      "model": "deepseek-ai/DeepSeek-V3.2",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage7e-evidence-bound-decision\\stage7e-evidence-bound-decision__strong_model__G0__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage7e-evidence-bound-decision\\stage7e-evidence-bound-decision__strong_model__G0__r1\\output.md",
+      "elapsed_ms": 24547
+    },
+    {
+      "run_id": "stage7e-evidence-bound-decision__strong_model__G8__r1",
+      "model_tier": "strong_model",
+      "provider": "siliconflow",
+      "model": "deepseek-ai/DeepSeek-V3.2",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage7e-evidence-bound-decision\\stage7e-evidence-bound-decision__strong_model__G8__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage7e-evidence-bound-decision\\stage7e-evidence-bound-decision__strong_model__G8__r1\\output.md",
+      "elapsed_ms": 61282
+    },
+    {
+      "run_id": "stage7e-evidence-bound-decision__strong_model__G9__r1",
+      "model_tier": "strong_model",
+      "provider": "siliconflow",
+      "model": "deepseek-ai/DeepSeek-V3.2",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage7e-evidence-bound-decision\\stage7e-evidence-bound-decision__strong_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage7e-evidence-bound-decision\\stage7e-evidence-bound-decision__strong_model__G9__r1\\output.md",
+      "elapsed_ms": 60063
+    },
+    {
+      "run_id": "stage7e-evidence-bound-decision__budget_model__G0__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage7e-evidence-bound-decision\\stage7e-evidence-bound-decision__budget_model__G0__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage7e-evidence-bound-decision\\stage7e-evidence-bound-decision__budget_model__G0__r1\\output.md",
+      "elapsed_ms": 69281
+    },
+    {
+      "run_id": "stage7e-evidence-bound-decision__budget_model__G8__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage7e-evidence-bound-decision\\stage7e-evidence-bound-decision__budget_model__G8__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage7e-evidence-bound-decision\\stage7e-evidence-bound-decision__budget_model__G8__r1\\output.md",
+      "elapsed_ms": 94484
+    },
+    {
+      "run_id": "stage7e-evidence-bound-decision__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage7e-evidence-bound-decision\\stage7e-evidence-bound-decision__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage7e-evidence-bound-decision\\stage7e-evidence-bound-decision__budget_model__G9__r1\\output.md",
+      "elapsed_ms": 102625
+    }
+  ]
+}

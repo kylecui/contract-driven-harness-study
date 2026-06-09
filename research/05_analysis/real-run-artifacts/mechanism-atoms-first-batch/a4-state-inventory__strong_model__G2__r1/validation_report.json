@@ -1,0 +1,10 @@
+{
+  "status": "pending",
+  "passed": false,
+  "reason": "Output is still pending.",
+  "findings": [],
+  "run_id": "a4-state-inventory__strong_model__G2__r1",
+  "fixture": "a4-state-inventory",
+  "model": "strong_model",
+  "harness_arm": "G2"
+}

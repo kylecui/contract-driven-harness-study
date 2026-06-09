@@ -1,0 +1,18 @@
+{
+  "memory_slice_id": "mem_structured_extraction_001",
+  "task_id": "structured_extraction_001",
+  "active_topic_id": "topic_structured_extraction",
+  "mode": "task",
+  "must_load": [
+    "task_spec",
+    "evidence_bundle",
+    "output_contract"
+  ],
+  "may_load": [],
+  "must_not_load": [
+    "unrelated_project_notes",
+    "prior_user_preferences"
+  ],
+  "token_budget": 4000
+}
+

@@ -1,0 +1,39 @@
+{
+  "status": "complete",
+  "passed": true,
+  "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+  "atom_id": "A2R",
+  "atom_name": "Unsupported Claim Detection",
+  "primary_mechanism": "EvidenceBundle",
+  "primary_metric": "citation_grounding",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [],
+  "parsed_output": {
+    "grounded_claims": [
+      {
+        "claim": "G9 improved structured extraction contract adherence.",
+        "evidence_ids": [
+          "atom-a2r-e01"
+        ]
+      },
+      {
+        "claim": "Research workflow G0 had citation grounding failures.",
+        "evidence_ids": [
+          "atom-a2r-e02"
+        ]
+      }
+    ],
+    "unsupported_claims": [
+      "Production readiness"
+    ],
+    "evidence_ids": [
+      "atom-a2r-e01",
+      "atom-a2r-e02"
+    ]
+  },
+  "run_id": "a2r-unsupported-claim-detection__strong_model__G8__r1",
+  "model": "strong_model",
+  "harness_arm": "G8",
+  "fixture": "a2r-unsupported-claim-detection"
+}

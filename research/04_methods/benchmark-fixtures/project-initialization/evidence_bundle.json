@@ -1,0 +1,23 @@
+{
+  "evidence_bundle_id": "ev_project_initialization_001",
+  "task_id": "project_initialization_001",
+  "items": [
+    {
+      "source_id": "fixture-file-inventory",
+      "evidence_id": "fixture-pi-e01",
+      "evidence_type": "EXTRACTED",
+      "claim": "Existing files include AGENTS.md.",
+      "freshness": "snapshot",
+      "authority": "local_fixture"
+    },
+    {
+      "source_id": "fixture-file-inventory",
+      "evidence_id": "fixture-pi-e02",
+      "evidence_type": "EXTRACTED",
+      "claim": "The project profile is academic research.",
+      "freshness": "snapshot",
+      "authority": "local_fixture"
+    }
+  ]
+}
+

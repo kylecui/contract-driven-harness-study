@@ -1,0 +1,137 @@
+{
+  "status": "complete",
+  "passed": true,
+  "reason": "Stage 7e evidence-bound decision macro evaluated against fixed contract.",
+  "macro_id": "stage7e-evidence-bound-decision",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [],
+  "parsed_output": {
+    "state_inventory": {
+      "known_state": [
+        "Stage 7r.1 targeted smoke completed 8/8 and passed 8/8",
+        "Stage 7r.2 admits only a narrow evidence-bound decision macro",
+        "full project initialization remains blocked",
+        "full research workflow remains blocked"
+      ],
+      "unknown_state": [
+        "Current Git branch",
+        "CI status",
+        "Network/API approval for a new run"
+      ],
+      "forbidden_inferences": [
+        "old universal gap-closure note",
+        "old production-readiness note"
+      ]
+    },
+    "grounded_claims": [
+      {
+        "claim": "Mechanism-bound evidence decision workflows are ready for a narrow composed macro smoke under the harness",
+        "evidence_ids": [
+          "stage7e-e01",
+          "stage7e-e02",
+          "stage7e-e04"
+        ]
+      }
+    ],
+    "unsupported_claims": [
+      {
+        "claim": "The harness universally closes the performance gap between strong and low-cost models",
+        "reason": "No supplied evidence supports production readiness or universal model-gap closure (stage7e-e05). A8R low-cost G8 timed out while other variants passed (stage7e-e03)."
+      },
+      {
+        "claim": "The harness is production ready",
+        "reason": "No supplied evidence supports production readiness or universal model-gap closure (stage7e-e05)."
+      }
+    ],
+    "typed_evidence": [
+      {
+        "evidence_id": "stage7e-e01",
+        "type": "EXTRACTED",
+        "claim": "Stage 7r.1 completed an 8-run SiliconFlow targeted smoke for A2R1 and A7R1 using Qwen/Qwen3-8B under G8/G9; final evaluation collected 8/8 completed and 8/8 passed runs with task_success=1.000 and atom_primary_metric=1.000 for every run."
+      },
+      {
+        "evidence_id": "stage7e-e02",
+        "type": "INFERRED",
+        "claim": "Stage 7r.1 supports the mechanism-first repair hypothesis for low-cost-model failures on A2R claim grounding and A7R decision trace completeness."
+      },
+      {
+        "evidence_id": "stage7e-e03",
+        "type": "AMBIGUOUS",
+        "claim": "Stage 7r had one unresolved A8R low-cost G8 provider timeout, while A8R low-cost G9 and strong G8/G9 completed and passed."
+      },
+      {
+        "evidence_id": "stage7e-e04",
+        "type": "EXTRACTED",
+        "claim": "Stage 7r.2 admits a narrow evidence-bound decision macro and continues to block full project initialization and full research workflow composition."
+      },
+      {
+        "evidence_id": "stage7e-e05",
+        "type": "EXTRACTED",
+        "claim": "No supplied evidence supports production readiness or universal model-gap closure."
+      },
+      {
+        "evidence_id": "stage7e-e06",
+        "type": "PROPOSED",
+        "claim": "Run Stage 7e local golden/bad checks before any Stage 7e SiliconFlow smoke."
+      }
+    ],
+    "selected_claim": {
+      "option_id": "C2",
+      "claim": "Mechanism-bound evidence decision workflows are ready for a narrow composed macro smoke under the harness",
+      "evidence_ids": [
+        "stage7e-e01",
+        "stage7e-e02",
+        "stage7e-e04"
+      ]
+    },
+    "rejected_options": [
+      {
+        "option_id": "C1",
+        "reason": "No supplied evidence supports production readiness or universal model-gap closure (stage7e-e05). A8R low-cost G8 timed out while other variants passed (stage7e-e03).",
+        "evidence_ids": [
+          "stage7e-e03",
+          "stage7e-e05"
+        ]
+      },
+      {
+        "option_id": "C3",
+        "reason": "No supplied evidence supports production readiness or universal model-gap closure (stage7e-e05).",
+        "evidence_ids": [
+          "stage7e-e05"
+        ]
+      }
+    ],
+    "decision_trace": [
+      "Stage 7r.1 smoke results (stage7e-e01) confirm 8/8 success for A2R1/A7R1 under G8/G9, supporting mechanism-bound workflows.",
+      "Stage 7r.2 composition gate (stage7e-e04) explicitly admits a narrow evidence-bound macro and blocks full initialization.",
+      "C1's universal gap closure claim conflicts with e05's explicit exclusion of production readiness evidence and e03's mixed A8R results.",
+      "C3's production readiness claim is directly contradicted by e05's assertion of no supporting evidence.",
+      "C2 aligns with e01's smoke success, e02's repair hypothesis, and e04's composition readiness, meeting all constraints."
+    ],
+    "stage_gate": {
+      "status": "blocked",
+      "blocked_outputs": [
+        "final_recommendation"
+      ],
+      "next_required_actions": [
+        "Stage 7e local gate",
+        "Stage 7e smoke"
+      ]
+    },
+    "carried_obligations": [
+      {
+        "obligation": "Exclude stale context about universal gap closure and production readiness",
+        "status": "active"
+      },
+      {
+        "obligation": "Prevent unsupported production readiness claims",
+        "status": "active"
+      }
+    ]
+  },
+  "run_id": "stage7e-evidence-bound-decision__budget_model__G8__r1",
+  "model": "budget_model",
+  "harness_arm": "G8",
+  "fixture": "stage7e-evidence-bound-decision"
+}

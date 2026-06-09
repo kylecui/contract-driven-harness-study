@@ -1,0 +1,22 @@
+{
+  "evidence_bundle_id": "ev_mechanism_a5_stage_gated_synthesis_001",
+  "task_id": "mechanism_a5_stage_gated_synthesis_001",
+  "items": [
+    {
+      "source_id": "a5-fixture",
+      "evidence_id": "atom-a5-e01",
+      "evidence_type": "EXTRACTED",
+      "claim": "Primary evidence for Stage-Gated Synthesis.",
+      "freshness": "local_snapshot",
+      "authority": "fixture"
+    },
+    {
+      "source_id": "a5-fixture",
+      "evidence_id": "atom-a5-e02",
+      "evidence_type": "INFERRED",
+      "claim": "Supporting evidence for Stage skipping.",
+      "freshness": "local_snapshot",
+      "authority": "fixture"
+    }
+  ]
+}

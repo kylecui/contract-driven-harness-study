@@ -1,0 +1,28 @@
+{
+  "atom_version": "0.2.0-stage7r",
+  "atom_id": "A8R",
+  "atom_name": "Evidence Type Rules",
+  "primary_mechanism": "EvidenceBundle",
+  "supporting_mechanisms": ["OutputContract"],
+  "capability_under_test": "Apply explicit evidence-type rules to classify extracted, inferred, ambiguous, and proposed items.",
+  "non_goals": ["Do not evaluate citation formatting.", "Do not synthesize a report."],
+  "input_contract": {
+    "required_inputs": ["input.md", "task_spec.json", "output_contract.json", "evidence_bundle.json"],
+    "fixed_snapshot": true,
+    "forbidden_assumptions": ["Do not convert recommendations into facts.", "Do not resolve contradictory notes without evidence."]
+  },
+  "output_contract_id": "out_stage7r_a8r_evidence_type_rules_001",
+  "pass_criteria": [
+    {"metric": "evidence_type_accuracy", "threshold": 1.0, "required": true},
+    {"metric": "task_success", "threshold": 0.8, "required": true}
+  ],
+  "known_failure_modes": ["Recommendation labeled extracted", "Inference labeled extracted", "Ambiguity forced into fact"],
+  "composition_interface": {
+    "input_from_previous": ["raw_evidence_items"],
+    "output_to_next": ["typed_evidence_items", "ambiguous_items", "proposed_actions"],
+    "state_dependencies": [],
+    "evidence_dependencies": ["evidence_bundle"],
+    "failure_signal": "evidence-type-rules_failed",
+    "repair_policy": "reclassify_by_rule_and_preserve_uncertainty"
+  }
+}

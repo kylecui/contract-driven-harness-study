@@ -1,0 +1,27 @@
+{
+  "run_id": "stage7p-a10-a9-a6__strong_model__G8__r1",
+  "fixture": "stage7p-a10-a9-a6",
+  "task_class": "stage7p_partial_macro",
+  "model": "strong_model",
+  "harness_arm": "G8",
+  "validation_status": "complete",
+  "passed": true,
+  "metrics": {
+    "task_success": 1.0,
+    "schema_validity": 1.0,
+    "tool_call_correctness": 1.0,
+    "citation_grounding": 1.0,
+    "human_acceptance": 1.0,
+    "cost_efficiency": 1.0,
+    "safety_consistency": 1.0,
+    "constraint_consistency": 1.0,
+    "state_accuracy": 0.0,
+    "evidence_type_accuracy": 0.0,
+    "stage_completion": 1.0,
+    "repair_success": 1.0,
+    "trace_completeness": 1.0,
+    "context_relevance": 1.0,
+    "atom_primary_metric": 1.0
+  },
+  "mock": false
+}

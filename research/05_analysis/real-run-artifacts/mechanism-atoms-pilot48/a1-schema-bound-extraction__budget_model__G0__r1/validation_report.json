@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+  "atom_id": "A1",
+  "atom_name": "Schema-Bound Extraction",
+  "primary_mechanism": "OutputContract",
+  "primary_metric": "schema_validity",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [
+    "schema_validity=0.750 below threshold 1.000",
+    "task_success=0.750 below threshold 0.800"
+  ],
+  "parsed_output": {
+    "proposal": "NEXT",
+    "target_venue": "ACL Findings",
+    "primary_metric": "weak-model enablement lift",
+    "evidence_ids": [
+      "atom-a1-e01",
+      "atom-a1-e02"
+    ]
+  },
+  "run_id": "a1-schema-bound-extraction__budget_model__G0__r1",
+  "model": "budget_model",
+  "harness_arm": "G0",
+  "fixture": "a1-schema-bound-extraction"
+}

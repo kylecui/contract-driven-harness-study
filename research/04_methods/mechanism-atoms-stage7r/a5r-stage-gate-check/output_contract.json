@@ -1,0 +1,8 @@
+{
+  "output_contract_id": "out_stage7r_a5r_stage_gate_check_001",
+  "format": "json",
+  "required_sections": ["stage_status", "gate_decision", "missing_prerequisites", "blocked_outputs", "next_required_actions", "evidence_ids"],
+  "citation_policy": "gate_decision_support",
+  "style_profile": "minimal_json",
+  "tool_trace_required": false
+}

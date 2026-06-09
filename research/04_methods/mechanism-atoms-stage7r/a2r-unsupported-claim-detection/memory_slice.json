@@ -1,0 +1,13 @@
+{
+  "memory_slice_id": "mem_stage7r_a2r_unsupported_claim_detection_001",
+  "task_id": "stage7r_a2r_unsupported_claim_detection_001",
+  "active_topic_id": "stage7r_a2r",
+  "mode": "task",
+  "must_load": [
+    "Two claims are supported by evidence IDs.",
+    "Production readiness is a tempting unsupported claim and must be rejected."
+  ],
+  "may_load": ["Composition role: research evidence ledger."],
+  "must_not_load": ["Any external evidence about production readiness."],
+  "token_budget": 1200
+}

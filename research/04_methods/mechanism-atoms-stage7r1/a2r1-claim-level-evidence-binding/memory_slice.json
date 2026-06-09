@@ -1,0 +1,13 @@
+{
+  "slice_id": "stage7r1_a2r1_memory_001",
+  "must_load": [
+    "claim-level evidence binding is required",
+    "global evidence list is insufficient",
+    "production readiness has no supporting evidence"
+  ],
+  "must_not_load": [
+    "production readiness evidence",
+    "global-only citation policy"
+  ],
+  "staleness_policy": "fixed_snapshot"
+}

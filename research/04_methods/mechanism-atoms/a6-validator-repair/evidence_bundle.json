@@ -1,0 +1,22 @@
+{
+  "evidence_bundle_id": "ev_mechanism_a6_validator_repair_001",
+  "task_id": "mechanism_a6_validator_repair_001",
+  "items": [
+    {
+      "source_id": "a6-fixture",
+      "evidence_id": "atom-a6-e01",
+      "evidence_type": "EXTRACTED",
+      "claim": "Primary evidence for Validator Repair.",
+      "freshness": "local_snapshot",
+      "authority": "fixture"
+    },
+    {
+      "source_id": "a6-fixture",
+      "evidence_id": "atom-a6-e02",
+      "evidence_type": "INFERRED",
+      "claim": "Supporting evidence for Repair failure.",
+      "freshness": "local_snapshot",
+      "authority": "fixture"
+    }
+  ]
+}

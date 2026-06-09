@@ -1,0 +1,23 @@
+{
+  "task_spec_version": "0.1.0",
+  "task_id": "structured_extraction_hard_001",
+  "task_type": "structured_extraction_hard",
+  "intent": {
+    "goal": "Extract routing metadata for the active proposal from noisy planning notes with decoys.",
+    "language": "en",
+    "freshness": "local_snapshot"
+  },
+  "constraints": [
+    "Select only the proposal marked NEXT.",
+    "Do not use HOLD proposals or external comparators as the active candidate.",
+    "Distinguish primary venue from fallback venue.",
+    "Return only fields supported by the evidence bundle.",
+    "Mark absent fields as null."
+  ],
+  "required_skills": [],
+  "allowed_tools": [],
+  "risk_profile": "medium",
+  "memory_slice_id": "mem_structured_extraction_hard_001",
+  "evidence_bundle_id": "ev_structured_extraction_hard_001",
+  "output_contract_id": "out_structured_extraction_hard_001"
+}

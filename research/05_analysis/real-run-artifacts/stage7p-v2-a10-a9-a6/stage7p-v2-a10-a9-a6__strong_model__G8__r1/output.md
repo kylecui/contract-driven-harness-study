@@ -1,0 +1,74 @@
+```json
+{
+  "bounded_context": {
+    "used_context": [
+      "Current roadmap says Stage 2 is next",
+      "Existing files: AGENTS.md and research/CONTEXT.md",
+      "Missing file: research/06_outputs/README.md",
+      "Protected file: AGENTS.md",
+      "Original output: {\"title\":\"Contract-Driven Harness\"}",
+      "Carry-forward obligation: A10 must exclude old broad workflow plan"
+    ],
+    "excluded_context": [
+      "Old plan says run another broad workflow slice",
+      "Old broad-workflow plan"
+    ]
+  },
+  "carried_obligations": [
+    {
+      "from_atom": "A10",
+      "obligation": "Exclude old broad workflow plan from context and planning",
+      "status": "preserved"
+    }
+  ],
+  "safe_action_plan": {
+    "actions": [
+      {
+        "action": "create_file",
+        "path": "research/06_outputs/README.md",
+        "content": "# Outputs Directory\n\nThis directory contains final outputs and deliverables from the research workflow.",
+        "reason": "Missing unprotected file identified in snapshot",
+        "safety_check": "File does not exist and path is not protected"
+      }
+    ],
+    "constraints_respected": [
+      "No overwrite of AGENTS.md (protected)",
+      "Only create missing unprotected files",
+      "No use of old broad-workflow plan as next action"
+    ]
+  },
+  "validator_repair": {
+    "original_output": {
+      "title": "Contract-Driven Harness"
+    },
+    "repaired_output": {
+      "title": "Contract-Driven Harness",
+      "evidence_ids": ["atom-a6-e01"]
+    },
+    "repair_actions": [
+      {
+        "action": "add_field",
+        "field": "evidence_ids",
+        "value": ["atom-a6-e01"],
+        "reason": "Validator feedback: add missing evidence_ids using atom-a6-e01",
+        "preserved_fields": ["title"]
+      }
+    ],
+    "validation_source": "atom-a6-e01 from evidence bundle"
+  },
+  "composition_trace": {
+    "atoms_executed": ["A10", "A9", "A6"],
+    "execution_order": "A10 (bounded context recall) → A9 (no-overwrite action planning) → A6 (validator repair)",
+    "obligation_flow": "A10 obligation carried through A9 and preserved in A6 output",
+    "composition_type": "partial_composition",
+    "boundary_assertion": "This is a partial composition of three atoms only, not full project-initialization or full research-workflow validation"
+  },
+  "boundary": {
+    "scope": "stage7p_v2_partial_macro",
+    "included_atoms": ["A10", "A9", "A6"],
+    "excluded_atoms": ["All other atoms not in composition_atoms list"],
+    "mechanism_tested": "cross_step_obligation_retention",
+    "validation_level": "partial_composition_only"
+  }
+}
+```

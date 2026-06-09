@@ -1,0 +1,51 @@
+{
+  "manifest_path": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24-manifest-with-prompts.json",
+  "config_path": "research\\04_methods\\provider-config.siliconflow-reviewed.json",
+  "require_keys": false,
+  "errors": [],
+  "warnings": [],
+  "runs": {
+    "run_count": 24,
+    "required_model_tiers": [
+      "budget_model",
+      "strong_model"
+    ],
+    "manifest_status_counts": {
+      "pending": 24
+    },
+    "validation_status_counts": {
+      "pending": 24
+    },
+    "group_counts": {
+      "structured-extraction | budget_model | G0": 3,
+      "structured-extraction | budget_model | G9": 3,
+      "structured-extraction | strong_model | G0": 3,
+      "structured-extraction | strong_model | G9": 3,
+      "structured-extraction-hard | budget_model | G0": 3,
+      "structured-extraction-hard | budget_model | G9": 3,
+      "structured-extraction-hard | strong_model | G0": 3,
+      "structured-extraction-hard | strong_model | G9": 3
+    },
+    "non_placeholder_outputs": []
+  },
+  "config": {
+    "providers": {
+      "siliconflow": {
+        "api_key_env": "SILICONFLOW_API_KEY",
+        "api_key_present": true,
+        "base_url": "https://api.siliconflow.cn/v1"
+      }
+    },
+    "model_tiers": {
+      "strong_model": {
+        "provider": "siliconflow",
+        "model": "deepseek-ai/DeepSeek-V3.2"
+      },
+      "budget_model": {
+        "provider": "siliconflow",
+        "model": "Qwen/Qwen3-8B"
+      }
+    },
+    "config_path": "research\\04_methods\\provider-config.siliconflow-reviewed.json"
+  }
+}

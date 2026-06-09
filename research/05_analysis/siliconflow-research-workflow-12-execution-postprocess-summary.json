@@ -1,0 +1,18 @@
+{
+  "manifest": "research/05_analysis/real-run-artifacts/siliconflow-research-workflow-12-manifest-with-prompts.json",
+  "baseline_arm": "G0",
+  "completed_run_count": 12,
+  "warning_count": 0,
+  "warnings": [],
+  "metrics_computed": true,
+  "decision": "completed runs are sufficient for gap-compression metrics",
+  "outputs": {
+    "evaluated_runs_json": "research\\05_analysis\\siliconflow-research-workflow-12-execution-postprocess-evaluated-runs.json",
+    "evaluation_md": "research\\05_analysis\\siliconflow-research-workflow-12-execution-postprocess-evaluation.md",
+    "collected_runs_json": "research\\05_analysis\\siliconflow-research-workflow-12-execution-postprocess-collected-runs.json",
+    "collected_runs_md": "research\\05_analysis\\siliconflow-research-workflow-12-execution-postprocess-collected-runs.md",
+    "metrics_json": "research\\05_analysis\\siliconflow-research-workflow-12-execution-postprocess-metrics.json",
+    "metrics_md": "research\\05_analysis\\siliconflow-research-workflow-12-execution-postprocess-metrics.md",
+    "summary_md": "research\\05_analysis\\siliconflow-research-workflow-12-execution-postprocess-summary.md"
+  }
+}

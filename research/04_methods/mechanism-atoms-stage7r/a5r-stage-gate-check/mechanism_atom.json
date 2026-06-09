@@ -1,0 +1,28 @@
+{
+  "atom_version": "0.2.0-stage7r",
+  "atom_id": "A5R",
+  "atom_name": "Stage Gate Check",
+  "primary_mechanism": "WorkflowGraph",
+  "supporting_mechanisms": ["OutputContract", "EvidenceBundle"],
+  "capability_under_test": "Apply deterministic stage-gate rules and block synthesis/recommendation when prerequisite stages are incomplete.",
+  "non_goals": ["Do not perform research synthesis.", "Do not rank model outputs."],
+  "input_contract": {
+    "required_inputs": ["input.md", "task_spec.json", "output_contract.json", "evidence_bundle.json"],
+    "fixed_snapshot": true,
+    "forbidden_assumptions": ["Do not mark evidence ledger complete.", "Do not permit recommendation before citation audit."]
+  },
+  "output_contract_id": "out_stage7r_a5r_stage_gate_check_001",
+  "pass_criteria": [
+    {"metric": "stage_completion", "threshold": 1.0, "required": true},
+    {"metric": "task_success", "threshold": 0.8, "required": true}
+  ],
+  "known_failure_modes": ["Premature synthesis", "Premature recommendation", "Incomplete prerequisite ignored"],
+  "composition_interface": {
+    "input_from_previous": ["stage_status"],
+    "output_to_next": ["gate_decision", "blocked_outputs", "next_required_actions"],
+    "state_dependencies": ["workflow_stage_status"],
+    "evidence_dependencies": ["evidence_bundle"],
+    "failure_signal": "stage-gate-check_failed",
+    "repair_policy": "block_downstream_stage_and_report_missing_prerequisites"
+  }
+}

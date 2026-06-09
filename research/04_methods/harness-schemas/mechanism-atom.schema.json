@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://petfish.local/schemas/mechanism-atom.schema.json",
+  "title": "MechanismAtom",
+  "type": "object",
+  "required": [
+    "atom_version",
+    "atom_id",
+    "atom_name",
+    "primary_mechanism",
+    "supporting_mechanisms",
+    "capability_under_test",
+    "non_goals",
+    "input_contract",
+    "output_contract_id",
+    "pass_criteria",
+    "known_failure_modes",
+    "composition_interface"
+  ],
+  "properties": {
+    "atom_version": {
+      "type": "string"
+    },
+    "atom_id": {
+      "type": "string"
+    },
+    "atom_name": {
+      "type": "string"
+    },
+    "primary_mechanism": {
+      "type": "string",
+      "enum": [
+        "OutputContract",
+        "EvidenceBundle",
+        "TaskSpec",
+        "MemorySlice",
+        "WorkflowGraph",
+        "ValidatorGate",
+        "TraceLog"
+      ]
+    },
+    "supporting_mechanisms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "OutputContract",
+          "EvidenceBundle",
+          "TaskSpec",
+          "MemorySlice",
+          "WorkflowGraph",
+          "ValidatorGate",
+          "TraceLog"
+        ]
+      }
+    },
+    "capability_under_test": {
+      "type": "string"
+    },
+    "non_goals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "input_contract": {
+      "type": "object",
+      "required": [
+        "required_inputs",
+        "fixed_snapshot",
+        "forbidden_assumptions"
+      ],
+      "properties": {
+        "required_inputs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "fixed_snapshot": {
+          "type": "boolean"
+        },
+        "forbidden_assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "output_contract_id": {
+      "type": "string"
+    },
+    "pass_criteria": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "metric",
+          "threshold",
+          "required"
+        ],
+        "properties": {
+          "metric": {
+            "type": "string"
+          },
+          "threshold": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "required": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "known_failure_modes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "composition_interface": {
+      "type": "object",
+      "required": [
+        "input_from_previous",
+        "output_to_next",
+        "state_dependencies",
+        "evidence_dependencies",
+        "failure_signal",
+        "repair_policy"
+      ],
+      "properties": {
+        "input_from_previous": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "output_to_next": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "state_dependencies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidence_dependencies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "failure_signal": {
+          "type": "string"
+        },
+        "repair_policy": {
+          "type": "string",
+          "enum": [
+            "none",
+            "single_retry",
+            "validator_repair",
+            "stop_and_report"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

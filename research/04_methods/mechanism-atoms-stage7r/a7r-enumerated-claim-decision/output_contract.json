@@ -1,0 +1,8 @@
+{
+  "output_contract_id": "out_stage7r_a7r_enumerated_claim_decision_001",
+  "format": "json",
+  "required_sections": ["selected_option_id", "selected_claim", "rejected_option_ids", "decision_trace", "evidence_ids"],
+  "citation_policy": "decision_support",
+  "style_profile": "minimal_json",
+  "tool_trace_required": false
+}

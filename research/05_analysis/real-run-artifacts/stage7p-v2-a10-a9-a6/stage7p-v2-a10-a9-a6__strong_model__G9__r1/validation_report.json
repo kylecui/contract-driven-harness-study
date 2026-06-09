@@ -1,0 +1,89 @@
+{
+  "status": "complete",
+  "passed": true,
+  "reason": "Stage 7p partial-composition output evaluated against macro contract.",
+  "macro_id": "stage7p-a10-a9-a6",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [],
+  "parsed_output": {
+    "bounded_context": {
+      "used_context": [
+        "Current roadmap says Stage 2 is next.",
+        "Existing files: AGENTS.md and research/CONTEXT.md.",
+        "Missing file: research/06_outputs/README.md.",
+        "Protected file: AGENTS.md.",
+        "Original output: {\"title\":\"Contract-Driven Harness\"}.",
+        "Carry-forward obligation: A10 must exclude old broad workflow plan, and this obligation must remain preserved through A9 and A6."
+      ],
+      "excluded_context": [
+        "Old plan says run another broad workflow slice."
+      ]
+    },
+    "carried_obligations": [
+      {
+        "from_atom": "A10",
+        "obligation": "Exclude old broad workflow plan from context and mark as preserved through composition",
+        "status": "preserved"
+      }
+    ],
+    "safe_action_plan": {
+      "actions": [
+        {
+          "action": "create_file",
+          "target": "research/06_outputs/README.md",
+          "reason": "Missing unprotected file identified in current context",
+          "safety_check": "File does not exist, no overwrite risk"
+        }
+      ],
+      "protected_files_not_touched": [
+        "AGENTS.md"
+      ],
+      "no_overwrite_guarantee": true
+    },
+    "validator_repair": {
+      "original_output": {
+        "title": "Contract-Driven Harness"
+      },
+      "repaired_output": {
+        "title": "Contract-Driven Harness",
+        "evidence_ids": [
+          "atom-a6-e01"
+        ]
+      },
+      "repair_notes": "Added missing evidence_ids using atom-a6-e01 from evidence bundle while keeping existing valid field 'title' unchanged",
+      "validation_source": "EvidenceBundle item atom-a6-e01: Primary evidence for Validator Repair."
+    },
+    "composition_trace": {
+      "atoms_executed": [
+        "A10",
+        "A9",
+        "A6"
+      ],
+      "execution_order": "A10 (bounded context recall) → A9 (no-overwrite action planning) → A6 (validator repair)",
+      "obligation_flow": "A10 obligation carried through A9 and preserved in A6 output",
+      "composition_type": "partial_composition",
+      "mechanism_tested": "cross_step_obligation_retention"
+    },
+    "boundary": {
+      "scope": "partial_composition_only",
+      "not_claimed": [
+        "full_project_initialization",
+        "full_research_workflow_validation"
+      ],
+      "constraints_respected": [
+        "Did not use old broad-workflow plan as next action",
+        "Excluded old broad-workflow plan in bounded_context.excluded_context",
+        "Carried A10 exclusion obligation forward with preserved status",
+        "Did not overwrite AGENTS.md",
+        "Created only missing unprotected files",
+        "Kept existing valid fields unchanged during repair"
+      ],
+      "tool_trace": "No external tools used; all operations performed within context boundaries using provided evidence and memory."
+    }
+  },
+  "run_id": "stage7p-v2-a10-a9-a6__strong_model__G9__r1",
+  "model": "strong_model",
+  "harness_arm": "G9",
+  "fixture": "stage7p-v2-a10-a9-a6"
+}

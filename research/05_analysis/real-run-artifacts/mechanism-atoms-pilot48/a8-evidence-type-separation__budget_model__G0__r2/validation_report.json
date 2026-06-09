@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Mechanism atom output evaluated against atom contract and golden output.",
+  "atom_id": "A8",
+  "atom_name": "Evidence-Type Separation",
+  "primary_mechanism": "EvidenceBundle",
+  "primary_metric": "citation_grounding",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [
+    "evidence_type_accuracy=0.000 below threshold 1.000",
+    "citation_grounding=0.000 below threshold 0.800"
+  ],
+  "parsed_output": {
+    "evidence_classification": {
+      "direct_measurement": "The patient's blood pressure was recorded as 130/85 mmHg during the latest check-up.",
+      "inference": "Based on the patient's history of hypertension and recent lab results, there is a likelihood of developing stage 2 hypertension.",
+      "unresolved_risk": "The patient's elevated cholesterol levels remain unaddressed, posing a potential risk for cardiovascular events.",
+      "recommended_action": "Schedule a follow-up appointment with a cardiologist to monitor blood pressure and discuss cholesterol management strategies."
+    },
+    "recommendations": {
+      "next_steps": [
+        "Review the patient's medication adherence to hypertension treatment.",
+        "Investigate further testing for cholesterol levels to confirm risk status."
+      ]
+    }
+  },
+  "run_id": "a8-evidence-type-separation__budget_model__G0__r2",
+  "model": "budget_model",
+  "harness_arm": "G0",
+  "fixture": "a8-evidence-type-separation"
+}

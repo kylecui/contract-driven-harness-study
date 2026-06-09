@@ -1,0 +1,246 @@
+{
+  "execute": true,
+  "processed": 24,
+  "results": [
+    {
+      "run_id": "structured-extraction__strong_model__G0__r1",
+      "model_tier": "strong_model",
+      "provider": "siliconflow",
+      "model": "deepseek-ai/DeepSeek-V3.2",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__strong_model__G0__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__strong_model__G0__r1\\output.md"
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G0__r2",
+      "model_tier": "strong_model",
+      "provider": "siliconflow",
+      "model": "deepseek-ai/DeepSeek-V3.2",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__strong_model__G0__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__strong_model__G0__r2\\output.md"
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G0__r3",
+      "model_tier": "strong_model",
+      "provider": "siliconflow",
+      "model": "deepseek-ai/DeepSeek-V3.2",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__strong_model__G0__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__strong_model__G0__r3\\output.md"
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G9__r1",
+      "model_tier": "strong_model",
+      "provider": "siliconflow",
+      "model": "deepseek-ai/DeepSeek-V3.2",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__strong_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__strong_model__G9__r1\\output.md"
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G9__r2",
+      "model_tier": "strong_model",
+      "provider": "siliconflow",
+      "model": "deepseek-ai/DeepSeek-V3.2",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__strong_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__strong_model__G9__r2\\output.md"
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G9__r3",
+      "model_tier": "strong_model",
+      "provider": "siliconflow",
+      "model": "deepseek-ai/DeepSeek-V3.2",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__strong_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__strong_model__G9__r3\\output.md"
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G0__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__budget_model__G0__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__budget_model__G0__r1\\output.md"
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G0__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__budget_model__G0__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__budget_model__G0__r2\\output.md"
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G0__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__budget_model__G0__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__budget_model__G0__r3\\output.md"
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__budget_model__G9__r1\\output.md"
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__budget_model__G9__r2\\output.md"
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction__budget_model__G9__r3\\output.md"
+    },
+    {
+      "run_id": "structured-extraction-hard__strong_model__G0__r1",
+      "model_tier": "strong_model",
+      "provider": "siliconflow",
+      "model": "deepseek-ai/DeepSeek-V3.2",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__strong_model__G0__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__strong_model__G0__r1\\output.md"
+    },
+    {
+      "run_id": "structured-extraction-hard__strong_model__G0__r2",
+      "model_tier": "strong_model",
+      "provider": "siliconflow",
+      "model": "deepseek-ai/DeepSeek-V3.2",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__strong_model__G0__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__strong_model__G0__r2\\output.md"
+    },
+    {
+      "run_id": "structured-extraction-hard__strong_model__G0__r3",
+      "model_tier": "strong_model",
+      "provider": "siliconflow",
+      "model": "deepseek-ai/DeepSeek-V3.2",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__strong_model__G0__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__strong_model__G0__r3\\output.md"
+    },
+    {
+      "run_id": "structured-extraction-hard__strong_model__G9__r1",
+      "model_tier": "strong_model",
+      "provider": "siliconflow",
+      "model": "deepseek-ai/DeepSeek-V3.2",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__strong_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__strong_model__G9__r1\\output.md"
+    },
+    {
+      "run_id": "structured-extraction-hard__strong_model__G9__r2",
+      "model_tier": "strong_model",
+      "provider": "siliconflow",
+      "model": "deepseek-ai/DeepSeek-V3.2",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__strong_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__strong_model__G9__r2\\output.md"
+    },
+    {
+      "run_id": "structured-extraction-hard__strong_model__G9__r3",
+      "model_tier": "strong_model",
+      "provider": "siliconflow",
+      "model": "deepseek-ai/DeepSeek-V3.2",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__strong_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__strong_model__G9__r3\\output.md"
+    },
+    {
+      "run_id": "structured-extraction-hard__budget_model__G0__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "failed",
+      "error": "The read operation timed out",
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__budget_model__G0__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__budget_model__G0__r1\\output.md"
+    },
+    {
+      "run_id": "structured-extraction-hard__budget_model__G0__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__budget_model__G0__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__budget_model__G0__r2\\output.md"
+    },
+    {
+      "run_id": "structured-extraction-hard__budget_model__G0__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__budget_model__G0__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__budget_model__G0__r3\\output.md"
+    },
+    {
+      "run_id": "structured-extraction-hard__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__budget_model__G9__r1\\output.md"
+    },
+    {
+      "run_id": "structured-extraction-hard__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__budget_model__G9__r2\\output.md"
+    },
+    {
+      "run_id": "structured-extraction-hard__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\siliconflow-v2-full24\\structured-extraction-hard__budget_model__G9__r3\\output.md"
+    }
+  ]
+}

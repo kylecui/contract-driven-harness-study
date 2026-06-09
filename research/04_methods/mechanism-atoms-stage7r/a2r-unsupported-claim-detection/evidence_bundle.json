@@ -1,0 +1,22 @@
+{
+  "evidence_bundle_id": "ev_stage7r_a2r_unsupported_claim_detection_001",
+  "task_id": "stage7r_a2r_unsupported_claim_detection_001",
+  "items": [
+    {
+      "source_id": "stage7r-a2r-fixture",
+      "evidence_id": "atom-a2r-e01",
+      "evidence_type": "EXTRACTED",
+      "claim": "G9 improved structured extraction contract adherence.",
+      "freshness": "local_snapshot",
+      "authority": "fixture"
+    },
+    {
+      "source_id": "stage7r-a2r-fixture",
+      "evidence_id": "atom-a2r-e02",
+      "evidence_type": "INFERRED",
+      "claim": "Research workflow G0 had citation grounding failures.",
+      "freshness": "local_snapshot",
+      "authority": "fixture"
+    }
+  ]
+}

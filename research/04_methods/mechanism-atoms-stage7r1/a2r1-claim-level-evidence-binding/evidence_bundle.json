@@ -1,0 +1,17 @@
+{
+  "bundle_id": "stage7r1_a2r1_evidence_001",
+  "items": [
+    {
+      "evidence_id": "atom-a2r1-e01",
+      "type": "EXTRACTED",
+      "claim": "G9 improved structured extraction contract adherence.",
+      "source": "stage7r input"
+    },
+    {
+      "evidence_id": "atom-a2r1-e02",
+      "type": "EXTRACTED",
+      "claim": "Research workflow G0 had citation grounding failures.",
+      "source": "stage7r input"
+    }
+  ]
+}

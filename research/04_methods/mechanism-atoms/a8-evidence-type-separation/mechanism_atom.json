@@ -1,0 +1,57 @@
+{
+  "atom_version": "0.1.0",
+  "atom_id": "A8",
+  "atom_name": "Evidence-Type Separation",
+  "primary_mechanism": "EvidenceBundle",
+  "supporting_mechanisms": [
+    "OutputContract",
+    "WorkflowGraph"
+  ],
+  "capability_under_test": "Separate extracted evidence, inference, ambiguity, and proposed recommendations.",
+  "non_goals": [
+    "Do not evaluate general prose quality.",
+    "Do not evaluate broad end-to-end workflow success."
+  ],
+  "input_contract": {
+    "required_inputs": [
+      "input.md",
+      "task_spec.json",
+      "output_contract.json"
+    ],
+    "fixed_snapshot": true,
+    "forbidden_assumptions": [
+      "Do not use live web state.",
+      "Do not assume files, evidence, or constraints absent from the fixture."
+    ]
+  },
+  "output_contract_id": "out_mechanism_a8_evidence_type_separation_001",
+  "pass_criteria": [
+    {
+      "metric": "evidence_type_accuracy",
+      "threshold": 1.0,
+      "required": true
+    },
+    {
+      "metric": "citation_grounding",
+      "threshold": 0.8,
+      "required": true
+    }
+  ],
+  "known_failure_modes": [
+    "Type leakage"
+  ],
+  "composition_interface": {
+    "input_from_previous": [
+      "fixed_snapshot"
+    ],
+    "output_to_next": [
+      "typed_claim_map"
+    ],
+    "state_dependencies": [],
+    "evidence_dependencies": [
+      "evidence_bundle"
+    ],
+    "failure_signal": "evidence-type-separation_failed",
+    "repair_policy": "stop_and_report"
+  }
+}

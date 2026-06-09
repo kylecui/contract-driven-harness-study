@@ -1,0 +1,94 @@
+# Backlog
+
+## To Do
+
+- [x] Define the research question and scope in `research/CONTEXT.md`.
+- [x] Create the initial source discovery plan in `research/01_sources/source-index.md`.
+- [x] Set up an evidence ledger in `research/03_evidence/evidence-ledger.jsonl`.
+- [x] Produce separate briefs for the two proposal tracks.
+- [x] Produce separate synthesis notes and a combined report.
+- [x] Add a quality review with evidence gaps.
+- [x] Draft the topic-aware compaction ablation protocol.
+- [x] Draft the contract-driven harness benchmark protocol.
+- [x] Add minimal TaskSpec / MemorySlice / EvidenceBundle / OutputContract schemas.
+- [x] Implement a trajectory-labeling script for topic-aware compaction sessions.
+- [x] Add a raw OpenCode session export helper for future trajectory labeling.
+- [x] Implement a minimal benchmark metric helper for contract-driven harness experiments.
+- [x] Add benchmark fixtures for high, medium, and low constraint task classes.
+- [x] Add a fixture consistency validator.
+- [x] Add a benchmark matrix generator.
+- [x] Run benchmark packet dry-run and update the evidence ledger.
+- [x] Run mock benchmark pilot and update the evidence ledger.
+- [x] Define the real model adapter interface and first 24-run slice.
+- [x] Generate and compile the first 24-run real benchmark slice.
+- [x] Prepare artifact directories for the first 24-run real benchmark slice.
+- [x] Add first-slice artifact evaluator.
+- [x] Validate first-slice artifact evaluator with golden outputs.
+- [x] Export first-slice model prompts and adapter request payloads.
+- [x] Build first-slice adapter execution queue.
+- [x] Add provider config validation and OpenAI-compatible adapter dry-run.
+- [x] Add evaluated-run metrics collector.
+- [x] Add real-model pilot preflight gate.
+- [x] Add real-model pilot postprocess pipeline and runbook.
+- [x] Add four-run smoke manifest for lower-cost pilot rehearsal.
+- [x] Add reviewed OpenAI smoke config and require-key preflight report.
+- [x] Add guarded one-command smoke pilot workflow wrapper.
+- [x] Add reviewed SiliconFlow smoke config and dry-run workflow report.
+- [x] Run the first model-backed ablation or benchmark pilot and update the evidence ledger.
+- [x] Decide whether to run the full 24-run SiliconFlow slice or revise the smoke fixture to create a nonzero baseline gap.
+- [x] Run the full 24-run SiliconFlow v2 structured-extraction slice and update the evidence ledger.
+- [x] Decide whether to extend the benchmark to a second task class.
+- [x] Run the SiliconFlow project-initialization slice and update the evidence ledger.
+- [x] Decide whether to add a research-workflow/tool-heavy task class or start drafting the methodology paper.
+- [x] Run the SiliconFlow research-workflow slice and update the evidence ledger.
+- [x] Add claim-boundary memo for absolute harness benefit vs gap compression.
+- [x] Add mechanism-first evaluation plan for decomposing broad skills/workflows.
+- [x] Define mechanism atoms before composing coarse workflow tasks.
+- [x] Add mechanism-atom coverage framework for systematic atom design.
+- [x] Add strict 8-stage mechanism-atom execution roadmap.
+- [x] Stage 1: freeze mechanism-atom framework and evidence references.
+- [x] Stage 2: specify A1-A10 mechanism atoms with contracts, bad outputs, and composition interfaces.
+- [x] Stage 3: build first-batch atom fixtures for A1, A3, A4, A8, and A6.
+- [x] Stage 4: add atom evaluator metrics, weak-model enablement, and harnessed-weak-vs-unconstrained-strong metrics.
+- [x] Stage 5: run local golden and known-bad validation with dry-run manifests.
+- [x] Stage 6: run first 48-run or 64-run mechanism-atom pilot.
+- [x] Stage 6b: run composition-critical atom pilot for atoms required by project/research workflow composition.
+- [x] Stage 6c: remediate composition-critical atom evaluator/fixture issues and rerun affected atoms.
+- [x] Stage 6d: resolve remaining true composition blockers or explicitly define a partial-composition gate.
+- [x] Stage 7p: compose passing atoms A10 -> A9 -> A6 into a narrow partial macro task.
+- [x] Stage 7p v2: run composition-retention ablation for A10 -> A9 -> A6.
+- [x] Stage 7r: redesign A2/A3/A5/A7 and strengthen A4/A8 before reconsidering broader composition.
+- [x] Stage 7r-local: run local regression for revised atoms.
+- [ ] Stage 7r-smoke: run small real-model smoke for revised atoms if local gates pass. Partial status: 35/36 real outputs completed; one A8R low-cost G8 run remains pending after repeated SiliconFlow read timeout, including a final controlled retry with longer provider timeout and smaller output limit.
+- [x] Stage 7r-logfix: add incremental per-run adapter execution logging before the next real-model slice.
+- [x] Stage 7r.1: tighten A2R and A7R output contracts for low-cost-model evidence binding and trace completeness.
+- [x] Stage 7r.1-local: run local golden/bad regression for revised A2R/A7R contracts.
+- [x] Stage 7r.1-smoke: run targeted low-cost-model G8/G9 smoke for revised A2R/A7R before macro composition.
+- [x] Stage 7r.2-gate: update composition-readiness gate using Stage 7r.1 results and decide the next narrow macro candidate.
+- [x] Stage 7e: build narrow evidence-bound decision macro fixture from A4R -> A2R1 -> A8R -> A7R1 -> A5R.
+- [x] Stage 7e-local: run local golden/bad regression for the evidence-bound decision macro.
+- [x] Stage 7e-smoke: run 6-run SiliconFlow smoke for the evidence-bound decision macro if local gates pass.
+- [x] Stage 7e v2: target the low-cost-model G9 stage-gate and decision-trace retention miss before any broader macro expansion.
+- [x] Stage 7e v3: add strict state-inventory retention for Git branch, CI status, and network/API approval unknowns before broader macro expansion.
+- [x] Stage 7e v4: add known-state provenance retention for Stage 7r.1/7r.2/7e-v2 evidence before broader macro expansion.
+- [x] Update claim-boundary memo and methodology outline with Stage 7e v1-v4 evidence.
+- [x] Stage 7-next: choose one bounded next macro using Stage 7e v4 as the admitted macro baseline. Full project initialization and full research workflow remain blocked until the next macro passes local gates and a targeted real-model slice.
+- [x] Stage 7-next-local: build the evidence-bound method-plan update macro fixture and pass local golden/bad regression.
+- [x] Stage 7-next-smoke: run a targeted low-cost-model G8/G9 smoke for the method-plan update macro if API execution is approved.
+- [x] Stage 8: draft the contract-driven harness methodology paper methods section from the updated outline before any broader workflow slice.
+- [x] Stage 8-claim-map: draft the claim-evaluation map to constrain contribution and result claims.
+- [x] Start drafting the contract-driven harness methodology paper.
+- [x] Draft related work for contract-driven harness methodology paper.
+- [x] Draft results section from task slices, mechanism atoms, Stage 7e, and Stage 7-next evidence.
+- [x] Draft discussion and limitations section for contract-driven harness methodology paper.
+- [x] Assemble the full contract-driven harness paper draft from front matter, methods, related work, results, and discussion.
+- [x] Run citation/evidence audit on the full contract-driven harness paper draft.
+- [x] Convert evidence/source mappings into internal inline citations and bibliography entries.
+- [x] Add venue-neutral citation metadata with access dates and local artifact locators.
+- [x] Create venue-neutral BibTeX draft and citation-conversion plan.
+- [x] Normalize placeholder BibTeX author entries and run a structural bibliography check.
+- [x] Create compact results appendix for venue-neutral paper review.
+- [x] Select arXiv-style working paper as the next citation style and convert internal citations accordingly.
+- [x] Convert arXiv-style Markdown draft to arXiv-compatible source format.
+- [x] Compile arXiv source package in an environment with LaTeX installed and run automated PDF/source-package checks.
+- [ ] Run human PDF layout review and decide whether Appendix C should remain in the main PDF or move to supplementary material.

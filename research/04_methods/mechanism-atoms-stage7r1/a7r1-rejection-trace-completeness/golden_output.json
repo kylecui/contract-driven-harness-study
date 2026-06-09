@@ -1,0 +1,34 @@
+{
+  "selected_option_id": "C2",
+  "selected_claim": "Harness improves absolute contract adherence and enables weak models on mechanism-bound tasks.",
+  "rejected_options": [
+    {
+      "option_id": "C1",
+      "reason": "Universal gap closure is not supported.",
+      "evidence_ids": ["atom-a7r1-e02"]
+    },
+    {
+      "option_id": "C3",
+      "reason": "Prose style was not measured.",
+      "evidence_ids": ["atom-a7r1-e03"]
+    }
+  ],
+  "decision_trace": [
+    {
+      "step": "C2 is supported by weak-model task success improvement on mechanism-bound tasks.",
+      "option_id": "C2",
+      "evidence_ids": ["atom-a7r1-e01"]
+    },
+    {
+      "step": "C1 is rejected because gap compression is not universal.",
+      "option_id": "C1",
+      "evidence_ids": ["atom-a7r1-e02"]
+    },
+    {
+      "step": "C3 is rejected because prose style was not measured.",
+      "option_id": "C3",
+      "evidence_ids": ["atom-a7r1-e03"]
+    }
+  ],
+  "evidence_ids": ["atom-a7r1-e01", "atom-a7r1-e02", "atom-a7r1-e03"]
+}

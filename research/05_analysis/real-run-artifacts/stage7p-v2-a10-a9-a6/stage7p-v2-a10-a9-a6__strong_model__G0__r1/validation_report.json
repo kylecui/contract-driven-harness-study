@@ -1,0 +1,54 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Stage 7p partial-composition output evaluated against macro contract.",
+  "macro_id": "stage7p-a10-a9-a6",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [
+    "schema_validity=0.333 below threshold 1.000",
+    "context_relevance=0.000 below threshold 1.000",
+    "constraint_consistency=0.000 below threshold 1.000",
+    "repair_success=0.000 below threshold 1.000",
+    "trace_completeness=0.000 below threshold 1.000",
+    "stage_completion=0.000 below threshold 1.000",
+    "atom_primary_metric=0.000 below threshold 1.000",
+    "task_success=0.167 below threshold 0.800",
+    "state_accuracy=0.000 below threshold 1.000"
+  ],
+  "parsed_output": {
+    "partial_composition": true,
+    "bounded_context": {
+      "must_load": [
+        "current roadmap says Stage 2 is next"
+      ],
+      "excluded_context": [
+        "old plan says run another broad workflow slice"
+      ]
+    },
+    "carried_obligations": [
+      {
+        "source": "A10",
+        "obligation": "exclude old broad workflow plan",
+        "preserved": true
+      }
+    ],
+    "safe_plan": [
+      {
+        "action": "create",
+        "target": "research/06_outputs/README.md",
+        "reason": "missing unprotected file"
+      }
+    ],
+    "repaired_output": {
+      "title": "Contract-Driven Harness",
+      "evidence_ids": [
+        "atom-a6-e01"
+      ]
+    }
+  },
+  "run_id": "stage7p-v2-a10-a9-a6__strong_model__G0__r1",
+  "model": "strong_model",
+  "harness_arm": "G0",
+  "fixture": "stage7p-v2-a10-a9-a6"
+}

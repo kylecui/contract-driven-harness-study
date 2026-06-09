@@ -1,0 +1,16 @@
+{
+  "memory_slice_id": "mem_mechanism_a4_state_inventory_001",
+  "task_id": "mechanism_a4_state_inventory_001",
+  "active_topic_id": "mechanism_atom_a4",
+  "mode": "task",
+  "must_load": [
+    "Snapshot: existing files are AGENTS.md and research/CONTEXT.md. Missing file is research/06_outputs/README.md. Protected file is AGENTS.md. Do not infer other files."
+  ],
+  "may_load": [
+    "Composition role: Project."
+  ],
+  "must_not_load": [
+    "Old broad workflow plans that bypass mechanism atoms."
+  ],
+  "token_budget": 1200
+}

@@ -1,0 +1,46 @@
+{
+  "evidence_bundle_id": "ev_structured_extraction_hard_001",
+  "task_id": "structured_extraction_hard_001",
+  "items": [
+    {
+      "source_id": "hard-routing-notes",
+      "evidence_id": "hard-e01",
+      "evidence_type": "EXTRACTED",
+      "claim": "Topic-Aware Compaction is marked HOLD with target venue COLM 2026 and primary metric token savings.",
+      "freshness": "snapshot",
+      "authority": "local_fixture"
+    },
+    {
+      "source_id": "hard-routing-notes",
+      "evidence_id": "hard-e02",
+      "evidence_type": "EXTRACTED",
+      "claim": "Contract-Driven Agent Harness Engineering is marked NEXT with primary venue ACL 2026 Findings and primary metric cross-model gap compression.",
+      "freshness": "snapshot",
+      "authority": "local_fixture"
+    },
+    {
+      "source_id": "hard-routing-notes",
+      "evidence_id": "hard-e03",
+      "evidence_type": "EXTRACTED",
+      "claim": "If the benchmark evidence remains partial, Contract-Driven Agent Harness Engineering should use COLM systems workshop as fallback venue.",
+      "freshness": "snapshot",
+      "authority": "local_fixture"
+    },
+    {
+      "source_id": "hard-routing-notes",
+      "evidence_id": "hard-e04",
+      "evidence_type": "EXTRACTED",
+      "claim": "The immediate blocker for Contract-Driven Agent Harness Engineering is proving a nonzero baseline model gap before running the full benchmark.",
+      "freshness": "snapshot",
+      "authority": "local_fixture"
+    },
+    {
+      "source_id": "hard-routing-notes",
+      "evidence_id": "hard-e05",
+      "evidence_type": "EXTRACTED",
+      "claim": "LLMLingua is a comparator family, not a proposal to route.",
+      "freshness": "snapshot",
+      "authority": "local_fixture"
+    }
+  ]
+}

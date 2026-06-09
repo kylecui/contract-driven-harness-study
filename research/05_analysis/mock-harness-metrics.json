@@ -1,0 +1,161 @@
+{
+  "baseline_arm": "G0",
+  "arms": {
+    "G0": {
+      "metrics": {
+        "task_success": {
+          "baseline_gap": 0.31999999999999995,
+          "arm_gap": 0.31999999999999995,
+          "compression_ratio": 0.0
+        },
+        "schema_validity": {
+          "baseline_gap": 0.34575,
+          "arm_gap": 0.34575,
+          "compression_ratio": 0.0
+        },
+        "tool_call_correctness": {
+          "baseline_gap": 0.29425,
+          "arm_gap": 0.29425,
+          "compression_ratio": 0.0
+        },
+        "citation_grounding": {
+          "baseline_gap": 0.28174999999999994,
+          "arm_gap": 0.28174999999999994,
+          "compression_ratio": 0.0
+        },
+        "human_acceptance": {
+          "baseline_gap": 0.30399999999999994,
+          "arm_gap": 0.30399999999999994,
+          "compression_ratio": 0.0
+        },
+        "cost_efficiency": {
+          "baseline_gap": 0.23024999999999995,
+          "arm_gap": 0.23024999999999995,
+          "compression_ratio": 0.0
+        },
+        "safety_consistency": {
+          "baseline_gap": 0.33299999999999996,
+          "arm_gap": 0.33299999999999996,
+          "compression_ratio": 0.0
+        }
+      }
+    },
+    "G2": {
+      "metrics": {
+        "task_success": {
+          "baseline_gap": 0.31999999999999995,
+          "arm_gap": 0.24975000000000003,
+          "compression_ratio": 0.21953124999999984
+        },
+        "schema_validity": {
+          "baseline_gap": 0.34575,
+          "arm_gap": 0.26975000000000005,
+          "compression_ratio": 0.2198120028922631
+        },
+        "tool_call_correctness": {
+          "baseline_gap": 0.29425,
+          "arm_gap": 0.2292499999999999,
+          "compression_ratio": 0.22090059473237078
+        },
+        "citation_grounding": {
+          "baseline_gap": 0.28174999999999994,
+          "arm_gap": 0.21975000000000006,
+          "compression_ratio": 0.22005323868677873
+        },
+        "human_acceptance": {
+          "baseline_gap": 0.30399999999999994,
+          "arm_gap": 0.237,
+          "compression_ratio": 0.2203947368421051
+        },
+        "cost_efficiency": {
+          "baseline_gap": 0.23024999999999995,
+          "arm_gap": 0.18,
+          "compression_ratio": 0.21824104234527675
+        },
+        "safety_consistency": {
+          "baseline_gap": 0.33299999999999996,
+          "arm_gap": 0.25949999999999995,
+          "compression_ratio": 0.2207207207207208
+        }
+      }
+    },
+    "G6": {
+      "metrics": {
+        "task_success": {
+          "baseline_gap": 0.31999999999999995,
+          "arm_gap": 0.1665000000000001,
+          "compression_ratio": 0.4796874999999996
+        },
+        "schema_validity": {
+          "baseline_gap": 0.34575,
+          "arm_gap": 0.17274999999999996,
+          "compression_ratio": 0.5003615328994939
+        },
+        "tool_call_correctness": {
+          "baseline_gap": 0.29425,
+          "arm_gap": 0.15349999999999997,
+          "compression_ratio": 0.47833474936278686
+        },
+        "citation_grounding": {
+          "baseline_gap": 0.28174999999999994,
+          "arm_gap": 0.14675000000000005,
+          "compression_ratio": 0.4791481810115348
+        },
+        "human_acceptance": {
+          "baseline_gap": 0.30399999999999994,
+          "arm_gap": 0.15800000000000003,
+          "compression_ratio": 0.4802631578947366
+        },
+        "cost_efficiency": {
+          "baseline_gap": 0.23024999999999995,
+          "arm_gap": 0.11975000000000002,
+          "compression_ratio": 0.4799131378935937
+        },
+        "safety_consistency": {
+          "baseline_gap": 0.33299999999999996,
+          "arm_gap": 0.17049999999999998,
+          "compression_ratio": 0.4879879879879879
+        }
+      }
+    },
+    "G9": {
+      "metrics": {
+        "task_success": {
+          "baseline_gap": 0.31999999999999995,
+          "arm_gap": 0.10250000000000004,
+          "compression_ratio": 0.6796874999999998
+        },
+        "schema_validity": {
+          "baseline_gap": 0.34575,
+          "arm_gap": 0.08725000000000005,
+          "compression_ratio": 0.7476500361532898
+        },
+        "tool_call_correctness": {
+          "baseline_gap": 0.29425,
+          "arm_gap": 0.09999999999999998,
+          "compression_ratio": 0.6601529311809686
+        },
+        "citation_grounding": {
+          "baseline_gap": 0.28174999999999994,
+          "arm_gap": 0.09575,
+          "compression_ratio": 0.6601597160603372
+        },
+        "human_acceptance": {
+          "baseline_gap": 0.30399999999999994,
+          "arm_gap": 0.10350000000000004,
+          "compression_ratio": 0.6595394736842104
+        },
+        "cost_efficiency": {
+          "baseline_gap": 0.23024999999999995,
+          "arm_gap": 0.07799999999999996,
+          "compression_ratio": 0.6612377850162867
+        },
+        "safety_consistency": {
+          "baseline_gap": 0.33299999999999996,
+          "arm_gap": 0.09249999999999992,
+          "compression_ratio": 0.7222222222222224
+        }
+      }
+    }
+  }
+}

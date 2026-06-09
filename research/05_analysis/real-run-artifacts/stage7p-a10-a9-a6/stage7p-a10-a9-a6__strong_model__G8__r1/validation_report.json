@@ -1,0 +1,99 @@
+{
+  "status": "complete",
+  "passed": true,
+  "reason": "Stage 7p partial-composition output evaluated against macro contract.",
+  "macro_id": "stage7p-a10-a9-a6",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [],
+  "parsed_output": {
+    "bounded_context": {
+      "current_roadmap": "Stage 2 is next",
+      "existing_files": [
+        "AGENTS.md",
+        "research/CONTEXT.md"
+      ],
+      "missing_files": [
+        "research/06_outputs/README.md"
+      ],
+      "protected_files": [
+        "AGENTS.md"
+      ],
+      "excluded_context": [
+        "Old plan to run another broad workflow slice"
+      ],
+      "citation": "MemorySlice must_load and must_not_load provide current vs. stale context boundaries"
+    },
+    "safe_action_plan": {
+      "actions": [
+        {
+          "action": "create_file",
+          "path": "research/06_outputs/README.md",
+          "content": "# Outputs Directory\n\nThis directory contains research outputs and findings from Stage 2.",
+          "safety_check": "File is missing and unprotected; AGENTS.md remains unchanged"
+        }
+      ],
+      "constraints_respected": [
+        "No overwrite of AGENTS.md",
+        "Only missing unprotected files created",
+        "No use of old broad-workflow plan as next action"
+      ],
+      "citation": "Task Input specifies missing file research/06_outputs/README.md and protected file AGENTS.md"
+    },
+    "validator_repair": {
+      "original_output": {
+        "title": "Contract-Driven Harness"
+      },
+      "repaired_output": {
+        "title": "Contract-Driven Harness",
+        "evidence_ids": [
+          "atom-a6-e01"
+        ]
+      },
+      "repair_actions": [
+        "Added missing evidence_ids field using atom-a6-e01 from EvidenceBundle",
+        "Kept existing valid field 'title' unchanged"
+      ],
+      "citation": "EvidenceBundle provides atom-a6-e01; Task Input requires adding evidence_ids while preserving valid fields"
+    },
+    "composition_trace": [
+      {
+        "atom": "A10",
+        "operation": "bounded_context_recall",
+        "input": "MemorySlice must_load/must_not_load",
+        "output": "Filtered context excluding stale plans"
+      },
+      {
+        "atom": "A9",
+        "operation": "no_overwrite_action_planning",
+        "input": "Bounded context + project snapshot",
+        "output": "Safe action to create missing research/06_outputs/README.md"
+      },
+      {
+        "atom": "A6",
+        "operation": "validator_repair",
+        "input": "Original output + EvidenceBundle atom-a6-e01",
+        "output": "Repaired output with evidence_ids added"
+      }
+    ],
+    "boundary": {
+      "composition_scope": "partial",
+      "atoms_composed": [
+        "A10",
+        "A9",
+        "A6"
+      ],
+      "not_in_scope": [
+        "Full project initialization",
+        "Full research-workflow validation",
+        "Broad workflow execution"
+      ],
+      "label": "partial_composition_stage7p_a10_a9_a6",
+      "citation": "TaskSpec constraints require labeling as partial composition only"
+    }
+  },
+  "run_id": "stage7p-a10-a9-a6__strong_model__G8__r1",
+  "model": "strong_model",
+  "harness_arm": "G8",
+  "fixture": "stage7p-a10-a9-a6"
+}

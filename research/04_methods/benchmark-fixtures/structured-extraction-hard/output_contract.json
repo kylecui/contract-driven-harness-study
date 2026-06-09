@@ -1,0 +1,15 @@
+{
+  "output_contract_id": "out_structured_extraction_hard_001",
+  "format": "json",
+  "required_sections": [
+    "title",
+    "target_venue",
+    "fallback_venue",
+    "primary_metric",
+    "blocker",
+    "evidence_ids"
+  ],
+  "citation_policy": "every_claim",
+  "style_profile": "minimal_json",
+  "tool_trace_required": false
+}

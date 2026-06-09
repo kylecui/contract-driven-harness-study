@@ -1,0 +1,14 @@
+{
+  "evidence_bundle_id": "ev_stage7p_a10_a9_a6_001",
+  "task_id": "task_stage7p_a10_a9_a6_001",
+  "items": [
+    {
+      "source_id": "stage7p-fixture",
+      "evidence_id": "atom-a6-e01",
+      "evidence_type": "EXTRACTED",
+      "claim": "Primary evidence for Validator Repair.",
+      "freshness": "local_snapshot",
+      "authority": "fixture"
+    }
+  ]
+}

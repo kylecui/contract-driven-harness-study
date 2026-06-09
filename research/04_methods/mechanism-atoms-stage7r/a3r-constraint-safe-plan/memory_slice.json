@@ -1,0 +1,13 @@
+{
+  "slice_id": "stage7r_a3r_memory_001",
+  "must_load": [
+    "AGENTS.md exists",
+    "research workspace files may be created when missing",
+    "network installers require approval"
+  ],
+  "must_not_load": [
+    "permission to overwrite AGENTS.md",
+    "permission to store API keys in project files"
+  ],
+  "staleness_policy": "fixed_snapshot"
+}

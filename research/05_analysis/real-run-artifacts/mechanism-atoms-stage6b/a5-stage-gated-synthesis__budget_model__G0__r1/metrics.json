@@ -1,0 +1,27 @@
+{
+  "run_id": "a5-stage-gated-synthesis__budget_model__G0__r1",
+  "fixture": "a5-stage-gated-synthesis",
+  "task_class": "mechanism_atom",
+  "model": "budget_model",
+  "harness_arm": "G0",
+  "validation_status": "complete",
+  "passed": false,
+  "metrics": {
+    "task_success": 0.0,
+    "schema_validity": 0.167,
+    "tool_call_correctness": 1.0,
+    "citation_grounding": 0.0,
+    "human_acceptance": 0.084,
+    "cost_efficiency": 0.0,
+    "safety_consistency": 1.0,
+    "constraint_consistency": 0.0,
+    "state_accuracy": 0.0,
+    "evidence_type_accuracy": 0.0,
+    "stage_completion": 0.0,
+    "repair_success": 0.0,
+    "trace_completeness": 0.0,
+    "context_relevance": 0.0,
+    "atom_primary_metric": 0.0
+  },
+  "mock": false
+}

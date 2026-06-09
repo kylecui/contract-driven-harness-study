@@ -1,0 +1,4325 @@
+{
+  "note": "Synthetic mock benchmark output for pipeline validation only.",
+  "runs": [
+    {
+      "run_id": "project-initialization__strong_model__G0__r1",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.81,
+        "schema_validity": 0.854,
+        "tool_call_correctness": 0.726,
+        "citation_grounding": 0.714,
+        "human_acceptance": 0.77,
+        "cost_efficiency": 0.566,
+        "safety_consistency": 0.842
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__strong_model__G0__r2",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.81,
+        "schema_validity": 0.854,
+        "tool_call_correctness": 0.726,
+        "citation_grounding": 0.714,
+        "human_acceptance": 0.77,
+        "cost_efficiency": 0.566,
+        "safety_consistency": 0.842
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__strong_model__G0__r3",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.81,
+        "schema_validity": 0.854,
+        "tool_call_correctness": 0.726,
+        "citation_grounding": 0.714,
+        "human_acceptance": 0.77,
+        "cost_efficiency": 0.566,
+        "safety_consistency": 0.842
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__strong_model__G0__r4",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.81,
+        "schema_validity": 0.854,
+        "tool_call_correctness": 0.726,
+        "citation_grounding": 0.714,
+        "human_acceptance": 0.77,
+        "cost_efficiency": 0.566,
+        "safety_consistency": 0.842
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__strong_model__G0__r5",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.81,
+        "schema_validity": 0.854,
+        "tool_call_correctness": 0.726,
+        "citation_grounding": 0.714,
+        "human_acceptance": 0.77,
+        "cost_efficiency": 0.566,
+        "safety_consistency": 0.842
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__strong_model__G2__r1",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.872,
+        "schema_validity": 0.921,
+        "tool_call_correctness": 0.783,
+        "citation_grounding": 0.769,
+        "human_acceptance": 0.829,
+        "cost_efficiency": 0.611,
+        "safety_consistency": 0.907
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__strong_model__G2__r2",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.872,
+        "schema_validity": 0.921,
+        "tool_call_correctness": 0.783,
+        "citation_grounding": 0.769,
+        "human_acceptance": 0.829,
+        "cost_efficiency": 0.611,
+        "safety_consistency": 0.907
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__strong_model__G2__r3",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.872,
+        "schema_validity": 0.921,
+        "tool_call_correctness": 0.783,
+        "citation_grounding": 0.769,
+        "human_acceptance": 0.829,
+        "cost_efficiency": 0.611,
+        "safety_consistency": 0.907
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__strong_model__G2__r4",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.872,
+        "schema_validity": 0.921,
+        "tool_call_correctness": 0.783,
+        "citation_grounding": 0.769,
+        "human_acceptance": 0.829,
+        "cost_efficiency": 0.611,
+        "safety_consistency": 0.907
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__strong_model__G2__r5",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.872,
+        "schema_validity": 0.921,
+        "tool_call_correctness": 0.783,
+        "citation_grounding": 0.769,
+        "human_acceptance": 0.829,
+        "cost_efficiency": 0.611,
+        "safety_consistency": 0.907
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__strong_model__G6__r1",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.928,
+        "schema_validity": 0.981,
+        "tool_call_correctness": 0.835,
+        "citation_grounding": 0.818,
+        "human_acceptance": 0.882,
+        "cost_efficiency": 0.651,
+        "safety_consistency": 0.965
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__strong_model__G6__r2",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.928,
+        "schema_validity": 0.981,
+        "tool_call_correctness": 0.835,
+        "citation_grounding": 0.818,
+        "human_acceptance": 0.882,
+        "cost_efficiency": 0.651,
+        "safety_consistency": 0.965
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__strong_model__G6__r3",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.928,
+        "schema_validity": 0.981,
+        "tool_call_correctness": 0.835,
+        "citation_grounding": 0.818,
+        "human_acceptance": 0.882,
+        "cost_efficiency": 0.651,
+        "safety_consistency": 0.965
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__strong_model__G6__r4",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.928,
+        "schema_validity": 0.981,
+        "tool_call_correctness": 0.835,
+        "citation_grounding": 0.818,
+        "human_acceptance": 0.882,
+        "cost_efficiency": 0.651,
+        "safety_consistency": 0.965
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__strong_model__G6__r5",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.928,
+        "schema_validity": 0.981,
+        "tool_call_correctness": 0.835,
+        "citation_grounding": 0.818,
+        "human_acceptance": 0.882,
+        "cost_efficiency": 0.651,
+        "safety_consistency": 0.965
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__strong_model__G9__r1",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.977,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 0.88,
+        "citation_grounding": 0.861,
+        "human_acceptance": 0.929,
+        "cost_efficiency": 0.686,
+        "safety_consistency": 1.0
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__strong_model__G9__r2",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.977,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 0.88,
+        "citation_grounding": 0.861,
+        "human_acceptance": 0.929,
+        "cost_efficiency": 0.686,
+        "safety_consistency": 1.0
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__strong_model__G9__r3",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.977,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 0.88,
+        "citation_grounding": 0.861,
+        "human_acceptance": 0.929,
+        "cost_efficiency": 0.686,
+        "safety_consistency": 1.0
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__strong_model__G9__r4",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.977,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 0.88,
+        "citation_grounding": 0.861,
+        "human_acceptance": 0.929,
+        "cost_efficiency": 0.686,
+        "safety_consistency": 1.0
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__strong_model__G9__r5",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.977,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 0.88,
+        "citation_grounding": 0.861,
+        "human_acceptance": 0.929,
+        "cost_efficiency": 0.686,
+        "safety_consistency": 1.0
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__mid_model__G0__r1",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "mid_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.65,
+        "schema_validity": 0.681,
+        "tool_call_correctness": 0.579,
+        "citation_grounding": 0.573,
+        "human_acceptance": 0.618,
+        "cost_efficiency": 0.451,
+        "safety_consistency": 0.676
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__mid_model__G0__r2",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "mid_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.65,
+        "schema_validity": 0.681,
+        "tool_call_correctness": 0.579,
+        "citation_grounding": 0.573,
+        "human_acceptance": 0.618,
+        "cost_efficiency": 0.451,
+        "safety_consistency": 0.676
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__mid_model__G0__r3",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "mid_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.65,
+        "schema_validity": 0.681,
+        "tool_call_correctness": 0.579,
+        "citation_grounding": 0.573,
+        "human_acceptance": 0.618,
+        "cost_efficiency": 0.451,
+        "safety_consistency": 0.676
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__mid_model__G0__r4",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "mid_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.65,
+        "schema_validity": 0.681,
+        "tool_call_correctness": 0.579,
+        "citation_grounding": 0.573,
+        "human_acceptance": 0.618,
+        "cost_efficiency": 0.451,
+        "safety_consistency": 0.676
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__mid_model__G0__r5",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "mid_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.65,
+        "schema_validity": 0.681,
+        "tool_call_correctness": 0.579,
+        "citation_grounding": 0.573,
+        "human_acceptance": 0.618,
+        "cost_efficiency": 0.451,
+        "safety_consistency": 0.676
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__mid_model__G2__r1",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "mid_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.747,
+        "schema_validity": 0.786,
+        "tool_call_correctness": 0.668,
+        "citation_grounding": 0.659,
+        "human_acceptance": 0.711,
+        "cost_efficiency": 0.521,
+        "safety_consistency": 0.777
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__mid_model__G2__r2",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "mid_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.747,
+        "schema_validity": 0.786,
+        "tool_call_correctness": 0.668,
+        "citation_grounding": 0.659,
+        "human_acceptance": 0.711,
+        "cost_efficiency": 0.521,
+        "safety_consistency": 0.777
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__mid_model__G2__r3",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "mid_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.747,
+        "schema_validity": 0.786,
+        "tool_call_correctness": 0.668,
+        "citation_grounding": 0.659,
+        "human_acceptance": 0.711,
+        "cost_efficiency": 0.521,
+        "safety_consistency": 0.777
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__mid_model__G2__r4",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "mid_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.747,
+        "schema_validity": 0.786,
+        "tool_call_correctness": 0.668,
+        "citation_grounding": 0.659,
+        "human_acceptance": 0.711,
+        "cost_efficiency": 0.521,
+        "safety_consistency": 0.777
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__mid_model__G2__r5",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "mid_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.747,
+        "schema_validity": 0.786,
+        "tool_call_correctness": 0.668,
+        "citation_grounding": 0.659,
+        "human_acceptance": 0.711,
+        "cost_efficiency": 0.521,
+        "safety_consistency": 0.777
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__mid_model__G6__r1",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "mid_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.845,
+        "schema_validity": 0.892,
+        "tool_call_correctness": 0.758,
+        "citation_grounding": 0.745,
+        "human_acceptance": 0.803,
+        "cost_efficiency": 0.591,
+        "safety_consistency": 0.878
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__mid_model__G6__r2",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "mid_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.845,
+        "schema_validity": 0.892,
+        "tool_call_correctness": 0.758,
+        "citation_grounding": 0.745,
+        "human_acceptance": 0.803,
+        "cost_efficiency": 0.591,
+        "safety_consistency": 0.878
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__mid_model__G6__r3",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "mid_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.845,
+        "schema_validity": 0.892,
+        "tool_call_correctness": 0.758,
+        "citation_grounding": 0.745,
+        "human_acceptance": 0.803,
+        "cost_efficiency": 0.591,
+        "safety_consistency": 0.878
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__mid_model__G6__r4",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "mid_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.845,
+        "schema_validity": 0.892,
+        "tool_call_correctness": 0.758,
+        "citation_grounding": 0.745,
+        "human_acceptance": 0.803,
+        "cost_efficiency": 0.591,
+        "safety_consistency": 0.878
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__mid_model__G6__r5",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "mid_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.845,
+        "schema_validity": 0.892,
+        "tool_call_correctness": 0.758,
+        "citation_grounding": 0.745,
+        "human_acceptance": 0.803,
+        "cost_efficiency": 0.591,
+        "safety_consistency": 0.878
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__mid_model__G9__r1",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "mid_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.923,
+        "schema_validity": 0.976,
+        "tool_call_correctness": 0.83,
+        "citation_grounding": 0.813,
+        "human_acceptance": 0.877,
+        "cost_efficiency": 0.647,
+        "safety_consistency": 0.959
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__mid_model__G9__r2",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "mid_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.923,
+        "schema_validity": 0.976,
+        "tool_call_correctness": 0.83,
+        "citation_grounding": 0.813,
+        "human_acceptance": 0.877,
+        "cost_efficiency": 0.647,
+        "safety_consistency": 0.959
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__mid_model__G9__r3",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "mid_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.923,
+        "schema_validity": 0.976,
+        "tool_call_correctness": 0.83,
+        "citation_grounding": 0.813,
+        "human_acceptance": 0.877,
+        "cost_efficiency": 0.647,
+        "safety_consistency": 0.959
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__mid_model__G9__r4",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "mid_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.923,
+        "schema_validity": 0.976,
+        "tool_call_correctness": 0.83,
+        "citation_grounding": 0.813,
+        "human_acceptance": 0.877,
+        "cost_efficiency": 0.647,
+        "safety_consistency": 0.959
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__mid_model__G9__r5",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "mid_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.923,
+        "schema_validity": 0.976,
+        "tool_call_correctness": 0.83,
+        "citation_grounding": 0.813,
+        "human_acceptance": 0.877,
+        "cost_efficiency": 0.647,
+        "safety_consistency": 0.959
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__budget_model__G0__r1",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.49,
+        "schema_validity": 0.508,
+        "tool_call_correctness": 0.432,
+        "citation_grounding": 0.432,
+        "human_acceptance": 0.466,
+        "cost_efficiency": 0.336,
+        "safety_consistency": 0.509
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__budget_model__G0__r2",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.49,
+        "schema_validity": 0.508,
+        "tool_call_correctness": 0.432,
+        "citation_grounding": 0.432,
+        "human_acceptance": 0.466,
+        "cost_efficiency": 0.336,
+        "safety_consistency": 0.509
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__budget_model__G0__r3",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.49,
+        "schema_validity": 0.508,
+        "tool_call_correctness": 0.432,
+        "citation_grounding": 0.432,
+        "human_acceptance": 0.466,
+        "cost_efficiency": 0.336,
+        "safety_consistency": 0.509
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__budget_model__G0__r4",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.49,
+        "schema_validity": 0.508,
+        "tool_call_correctness": 0.432,
+        "citation_grounding": 0.432,
+        "human_acceptance": 0.466,
+        "cost_efficiency": 0.336,
+        "safety_consistency": 0.509
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__budget_model__G0__r5",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.49,
+        "schema_validity": 0.508,
+        "tool_call_correctness": 0.432,
+        "citation_grounding": 0.432,
+        "human_acceptance": 0.466,
+        "cost_efficiency": 0.336,
+        "safety_consistency": 0.509
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__budget_model__G2__r1",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.623,
+        "schema_validity": 0.652,
+        "tool_call_correctness": 0.554,
+        "citation_grounding": 0.549,
+        "human_acceptance": 0.592,
+        "cost_efficiency": 0.431,
+        "safety_consistency": 0.647
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__budget_model__G2__r2",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.623,
+        "schema_validity": 0.652,
+        "tool_call_correctness": 0.554,
+        "citation_grounding": 0.549,
+        "human_acceptance": 0.592,
+        "cost_efficiency": 0.431,
+        "safety_consistency": 0.647
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__budget_model__G2__r3",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.623,
+        "schema_validity": 0.652,
+        "tool_call_correctness": 0.554,
+        "citation_grounding": 0.549,
+        "human_acceptance": 0.592,
+        "cost_efficiency": 0.431,
+        "safety_consistency": 0.647
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__budget_model__G2__r4",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.623,
+        "schema_validity": 0.652,
+        "tool_call_correctness": 0.554,
+        "citation_grounding": 0.549,
+        "human_acceptance": 0.592,
+        "cost_efficiency": 0.431,
+        "safety_consistency": 0.647
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__budget_model__G2__r5",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.623,
+        "schema_validity": 0.652,
+        "tool_call_correctness": 0.554,
+        "citation_grounding": 0.549,
+        "human_acceptance": 0.592,
+        "cost_efficiency": 0.431,
+        "safety_consistency": 0.647
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__budget_model__G6__r1",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.762,
+        "schema_validity": 0.802,
+        "tool_call_correctness": 0.681,
+        "citation_grounding": 0.671,
+        "human_acceptance": 0.724,
+        "cost_efficiency": 0.531,
+        "safety_consistency": 0.792
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__budget_model__G6__r2",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.762,
+        "schema_validity": 0.802,
+        "tool_call_correctness": 0.681,
+        "citation_grounding": 0.671,
+        "human_acceptance": 0.724,
+        "cost_efficiency": 0.531,
+        "safety_consistency": 0.792
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__budget_model__G6__r3",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.762,
+        "schema_validity": 0.802,
+        "tool_call_correctness": 0.681,
+        "citation_grounding": 0.671,
+        "human_acceptance": 0.724,
+        "cost_efficiency": 0.531,
+        "safety_consistency": 0.792
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__budget_model__G6__r4",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.762,
+        "schema_validity": 0.802,
+        "tool_call_correctness": 0.681,
+        "citation_grounding": 0.671,
+        "human_acceptance": 0.724,
+        "cost_efficiency": 0.531,
+        "safety_consistency": 0.792
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__budget_model__G6__r5",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.762,
+        "schema_validity": 0.802,
+        "tool_call_correctness": 0.681,
+        "citation_grounding": 0.671,
+        "human_acceptance": 0.724,
+        "cost_efficiency": 0.531,
+        "safety_consistency": 0.792
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__budget_model__G9__r1",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.868,
+        "schema_validity": 0.917,
+        "tool_call_correctness": 0.78,
+        "citation_grounding": 0.765,
+        "human_acceptance": 0.825,
+        "cost_efficiency": 0.608,
+        "safety_consistency": 0.903
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__budget_model__G9__r2",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.868,
+        "schema_validity": 0.917,
+        "tool_call_correctness": 0.78,
+        "citation_grounding": 0.765,
+        "human_acceptance": 0.825,
+        "cost_efficiency": 0.608,
+        "safety_consistency": 0.903
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__budget_model__G9__r3",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.868,
+        "schema_validity": 0.917,
+        "tool_call_correctness": 0.78,
+        "citation_grounding": 0.765,
+        "human_acceptance": 0.825,
+        "cost_efficiency": 0.608,
+        "safety_consistency": 0.903
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__budget_model__G9__r4",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.868,
+        "schema_validity": 0.917,
+        "tool_call_correctness": 0.78,
+        "citation_grounding": 0.765,
+        "human_acceptance": 0.825,
+        "cost_efficiency": 0.608,
+        "safety_consistency": 0.903
+      },
+      "mock": true
+    },
+    {
+      "run_id": "project-initialization__budget_model__G9__r5",
+      "fixture": "project-initialization",
+      "task_class": "project_initialization",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.868,
+        "schema_validity": 0.917,
+        "tool_call_correctness": 0.78,
+        "citation_grounding": 0.765,
+        "human_acceptance": 0.825,
+        "cost_efficiency": 0.608,
+        "safety_consistency": 0.903
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__strong_model__G0__r1",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.73,
+        "schema_validity": 0.768,
+        "tool_call_correctness": 0.652,
+        "citation_grounding": 0.644,
+        "human_acceptance": 0.694,
+        "cost_efficiency": 0.508,
+        "safety_consistency": 0.759
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__strong_model__G0__r2",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.73,
+        "schema_validity": 0.768,
+        "tool_call_correctness": 0.652,
+        "citation_grounding": 0.644,
+        "human_acceptance": 0.694,
+        "cost_efficiency": 0.508,
+        "safety_consistency": 0.759
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__strong_model__G0__r3",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.73,
+        "schema_validity": 0.768,
+        "tool_call_correctness": 0.652,
+        "citation_grounding": 0.644,
+        "human_acceptance": 0.694,
+        "cost_efficiency": 0.508,
+        "safety_consistency": 0.759
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__strong_model__G0__r4",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.73,
+        "schema_validity": 0.768,
+        "tool_call_correctness": 0.652,
+        "citation_grounding": 0.644,
+        "human_acceptance": 0.694,
+        "cost_efficiency": 0.508,
+        "safety_consistency": 0.759
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__strong_model__G0__r5",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.73,
+        "schema_validity": 0.768,
+        "tool_call_correctness": 0.652,
+        "citation_grounding": 0.644,
+        "human_acceptance": 0.694,
+        "cost_efficiency": 0.508,
+        "safety_consistency": 0.759
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__strong_model__G2__r1",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.775,
+        "schema_validity": 0.816,
+        "tool_call_correctness": 0.693,
+        "citation_grounding": 0.683,
+        "human_acceptance": 0.736,
+        "cost_efficiency": 0.541,
+        "safety_consistency": 0.805
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__strong_model__G2__r2",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.775,
+        "schema_validity": 0.816,
+        "tool_call_correctness": 0.693,
+        "citation_grounding": 0.683,
+        "human_acceptance": 0.736,
+        "cost_efficiency": 0.541,
+        "safety_consistency": 0.805
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__strong_model__G2__r3",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.775,
+        "schema_validity": 0.816,
+        "tool_call_correctness": 0.693,
+        "citation_grounding": 0.683,
+        "human_acceptance": 0.736,
+        "cost_efficiency": 0.541,
+        "safety_consistency": 0.805
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__strong_model__G2__r4",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.775,
+        "schema_validity": 0.816,
+        "tool_call_correctness": 0.693,
+        "citation_grounding": 0.683,
+        "human_acceptance": 0.736,
+        "cost_efficiency": 0.541,
+        "safety_consistency": 0.805
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__strong_model__G2__r5",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.775,
+        "schema_validity": 0.816,
+        "tool_call_correctness": 0.693,
+        "citation_grounding": 0.683,
+        "human_acceptance": 0.736,
+        "cost_efficiency": 0.541,
+        "safety_consistency": 0.805
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__strong_model__G6__r1",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.813,
+        "schema_validity": 0.857,
+        "tool_call_correctness": 0.729,
+        "citation_grounding": 0.716,
+        "human_acceptance": 0.773,
+        "cost_efficiency": 0.568,
+        "safety_consistency": 0.845
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__strong_model__G6__r2",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.813,
+        "schema_validity": 0.857,
+        "tool_call_correctness": 0.729,
+        "citation_grounding": 0.716,
+        "human_acceptance": 0.773,
+        "cost_efficiency": 0.568,
+        "safety_consistency": 0.845
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__strong_model__G6__r3",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.813,
+        "schema_validity": 0.857,
+        "tool_call_correctness": 0.729,
+        "citation_grounding": 0.716,
+        "human_acceptance": 0.773,
+        "cost_efficiency": 0.568,
+        "safety_consistency": 0.845
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__strong_model__G6__r4",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.813,
+        "schema_validity": 0.857,
+        "tool_call_correctness": 0.729,
+        "citation_grounding": 0.716,
+        "human_acceptance": 0.773,
+        "cost_efficiency": 0.568,
+        "safety_consistency": 0.845
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__strong_model__G6__r5",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.813,
+        "schema_validity": 0.857,
+        "tool_call_correctness": 0.729,
+        "citation_grounding": 0.716,
+        "human_acceptance": 0.773,
+        "cost_efficiency": 0.568,
+        "safety_consistency": 0.845
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__strong_model__G9__r1",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.848,
+        "schema_validity": 0.895,
+        "tool_call_correctness": 0.761,
+        "citation_grounding": 0.747,
+        "human_acceptance": 0.806,
+        "cost_efficiency": 0.593,
+        "safety_consistency": 0.881
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__strong_model__G9__r2",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.848,
+        "schema_validity": 0.895,
+        "tool_call_correctness": 0.761,
+        "citation_grounding": 0.747,
+        "human_acceptance": 0.806,
+        "cost_efficiency": 0.593,
+        "safety_consistency": 0.881
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__strong_model__G9__r3",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.848,
+        "schema_validity": 0.895,
+        "tool_call_correctness": 0.761,
+        "citation_grounding": 0.747,
+        "human_acceptance": 0.806,
+        "cost_efficiency": 0.593,
+        "safety_consistency": 0.881
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__strong_model__G9__r4",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.848,
+        "schema_validity": 0.895,
+        "tool_call_correctness": 0.761,
+        "citation_grounding": 0.747,
+        "human_acceptance": 0.806,
+        "cost_efficiency": 0.593,
+        "safety_consistency": 0.881
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__strong_model__G9__r5",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.848,
+        "schema_validity": 0.895,
+        "tool_call_correctness": 0.761,
+        "citation_grounding": 0.747,
+        "human_acceptance": 0.806,
+        "cost_efficiency": 0.593,
+        "safety_consistency": 0.881
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__mid_model__G0__r1",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "mid_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.57,
+        "schema_validity": 0.595,
+        "tool_call_correctness": 0.505,
+        "citation_grounding": 0.503,
+        "human_acceptance": 0.542,
+        "cost_efficiency": 0.393,
+        "safety_consistency": 0.592
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__mid_model__G0__r2",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "mid_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.57,
+        "schema_validity": 0.595,
+        "tool_call_correctness": 0.505,
+        "citation_grounding": 0.503,
+        "human_acceptance": 0.542,
+        "cost_efficiency": 0.393,
+        "safety_consistency": 0.592
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__mid_model__G0__r3",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "mid_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.57,
+        "schema_validity": 0.595,
+        "tool_call_correctness": 0.505,
+        "citation_grounding": 0.503,
+        "human_acceptance": 0.542,
+        "cost_efficiency": 0.393,
+        "safety_consistency": 0.592
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__mid_model__G0__r4",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "mid_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.57,
+        "schema_validity": 0.595,
+        "tool_call_correctness": 0.505,
+        "citation_grounding": 0.503,
+        "human_acceptance": 0.542,
+        "cost_efficiency": 0.393,
+        "safety_consistency": 0.592
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__mid_model__G0__r5",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "mid_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.57,
+        "schema_validity": 0.595,
+        "tool_call_correctness": 0.505,
+        "citation_grounding": 0.503,
+        "human_acceptance": 0.542,
+        "cost_efficiency": 0.393,
+        "safety_consistency": 0.592
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__mid_model__G2__r1",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "mid_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.65,
+        "schema_validity": 0.681,
+        "tool_call_correctness": 0.579,
+        "citation_grounding": 0.573,
+        "human_acceptance": 0.618,
+        "cost_efficiency": 0.451,
+        "safety_consistency": 0.675
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__mid_model__G2__r2",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "mid_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.65,
+        "schema_validity": 0.681,
+        "tool_call_correctness": 0.579,
+        "citation_grounding": 0.573,
+        "human_acceptance": 0.618,
+        "cost_efficiency": 0.451,
+        "safety_consistency": 0.675
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__mid_model__G2__r3",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "mid_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.65,
+        "schema_validity": 0.681,
+        "tool_call_correctness": 0.579,
+        "citation_grounding": 0.573,
+        "human_acceptance": 0.618,
+        "cost_efficiency": 0.451,
+        "safety_consistency": 0.675
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__mid_model__G2__r4",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "mid_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.65,
+        "schema_validity": 0.681,
+        "tool_call_correctness": 0.579,
+        "citation_grounding": 0.573,
+        "human_acceptance": 0.618,
+        "cost_efficiency": 0.451,
+        "safety_consistency": 0.675
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__mid_model__G2__r5",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "mid_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.65,
+        "schema_validity": 0.681,
+        "tool_call_correctness": 0.579,
+        "citation_grounding": 0.573,
+        "human_acceptance": 0.618,
+        "cost_efficiency": 0.451,
+        "safety_consistency": 0.675
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__mid_model__G6__r1",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "mid_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.73,
+        "schema_validity": 0.767,
+        "tool_call_correctness": 0.652,
+        "citation_grounding": 0.643,
+        "human_acceptance": 0.694,
+        "cost_efficiency": 0.508,
+        "safety_consistency": 0.758
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__mid_model__G6__r2",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "mid_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.73,
+        "schema_validity": 0.767,
+        "tool_call_correctness": 0.652,
+        "citation_grounding": 0.643,
+        "human_acceptance": 0.694,
+        "cost_efficiency": 0.508,
+        "safety_consistency": 0.758
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__mid_model__G6__r3",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "mid_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.73,
+        "schema_validity": 0.767,
+        "tool_call_correctness": 0.652,
+        "citation_grounding": 0.643,
+        "human_acceptance": 0.694,
+        "cost_efficiency": 0.508,
+        "safety_consistency": 0.758
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__mid_model__G6__r4",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "mid_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.73,
+        "schema_validity": 0.767,
+        "tool_call_correctness": 0.652,
+        "citation_grounding": 0.643,
+        "human_acceptance": 0.694,
+        "cost_efficiency": 0.508,
+        "safety_consistency": 0.758
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__mid_model__G6__r5",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "mid_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.73,
+        "schema_validity": 0.767,
+        "tool_call_correctness": 0.652,
+        "citation_grounding": 0.643,
+        "human_acceptance": 0.694,
+        "cost_efficiency": 0.508,
+        "safety_consistency": 0.758
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__mid_model__G9__r1",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "mid_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.793,
+        "schema_validity": 0.836,
+        "tool_call_correctness": 0.711,
+        "citation_grounding": 0.699,
+        "human_acceptance": 0.754,
+        "cost_efficiency": 0.554,
+        "safety_consistency": 0.825
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__mid_model__G9__r2",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "mid_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.793,
+        "schema_validity": 0.836,
+        "tool_call_correctness": 0.711,
+        "citation_grounding": 0.699,
+        "human_acceptance": 0.754,
+        "cost_efficiency": 0.554,
+        "safety_consistency": 0.825
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__mid_model__G9__r3",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "mid_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.793,
+        "schema_validity": 0.836,
+        "tool_call_correctness": 0.711,
+        "citation_grounding": 0.699,
+        "human_acceptance": 0.754,
+        "cost_efficiency": 0.554,
+        "safety_consistency": 0.825
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__mid_model__G9__r4",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "mid_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.793,
+        "schema_validity": 0.836,
+        "tool_call_correctness": 0.711,
+        "citation_grounding": 0.699,
+        "human_acceptance": 0.754,
+        "cost_efficiency": 0.554,
+        "safety_consistency": 0.825
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__mid_model__G9__r5",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "mid_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.793,
+        "schema_validity": 0.836,
+        "tool_call_correctness": 0.711,
+        "citation_grounding": 0.699,
+        "human_acceptance": 0.754,
+        "cost_efficiency": 0.554,
+        "safety_consistency": 0.825
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__budget_model__G0__r1",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.41,
+        "schema_validity": 0.422,
+        "tool_call_correctness": 0.358,
+        "citation_grounding": 0.362,
+        "human_acceptance": 0.39,
+        "cost_efficiency": 0.278,
+        "safety_consistency": 0.426
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__budget_model__G0__r2",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.41,
+        "schema_validity": 0.422,
+        "tool_call_correctness": 0.358,
+        "citation_grounding": 0.362,
+        "human_acceptance": 0.39,
+        "cost_efficiency": 0.278,
+        "safety_consistency": 0.426
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__budget_model__G0__r3",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.41,
+        "schema_validity": 0.422,
+        "tool_call_correctness": 0.358,
+        "citation_grounding": 0.362,
+        "human_acceptance": 0.39,
+        "cost_efficiency": 0.278,
+        "safety_consistency": 0.426
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__budget_model__G0__r4",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.41,
+        "schema_validity": 0.422,
+        "tool_call_correctness": 0.358,
+        "citation_grounding": 0.362,
+        "human_acceptance": 0.39,
+        "cost_efficiency": 0.278,
+        "safety_consistency": 0.426
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__budget_model__G0__r5",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.41,
+        "schema_validity": 0.422,
+        "tool_call_correctness": 0.358,
+        "citation_grounding": 0.362,
+        "human_acceptance": 0.39,
+        "cost_efficiency": 0.278,
+        "safety_consistency": 0.426
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__budget_model__G2__r1",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.525,
+        "schema_validity": 0.546,
+        "tool_call_correctness": 0.464,
+        "citation_grounding": 0.463,
+        "human_acceptance": 0.499,
+        "cost_efficiency": 0.361,
+        "safety_consistency": 0.546
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__budget_model__G2__r2",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.525,
+        "schema_validity": 0.546,
+        "tool_call_correctness": 0.464,
+        "citation_grounding": 0.463,
+        "human_acceptance": 0.499,
+        "cost_efficiency": 0.361,
+        "safety_consistency": 0.546
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__budget_model__G2__r3",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.525,
+        "schema_validity": 0.546,
+        "tool_call_correctness": 0.464,
+        "citation_grounding": 0.463,
+        "human_acceptance": 0.499,
+        "cost_efficiency": 0.361,
+        "safety_consistency": 0.546
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__budget_model__G2__r4",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.525,
+        "schema_validity": 0.546,
+        "tool_call_correctness": 0.464,
+        "citation_grounding": 0.463,
+        "human_acceptance": 0.499,
+        "cost_efficiency": 0.361,
+        "safety_consistency": 0.546
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__budget_model__G2__r5",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.525,
+        "schema_validity": 0.546,
+        "tool_call_correctness": 0.464,
+        "citation_grounding": 0.463,
+        "human_acceptance": 0.499,
+        "cost_efficiency": 0.361,
+        "safety_consistency": 0.546
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__budget_model__G6__r1",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.646,
+        "schema_validity": 0.677,
+        "tool_call_correctness": 0.575,
+        "citation_grounding": 0.57,
+        "human_acceptance": 0.615,
+        "cost_efficiency": 0.448,
+        "safety_consistency": 0.672
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__budget_model__G6__r2",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.646,
+        "schema_validity": 0.677,
+        "tool_call_correctness": 0.575,
+        "citation_grounding": 0.57,
+        "human_acceptance": 0.615,
+        "cost_efficiency": 0.448,
+        "safety_consistency": 0.672
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__budget_model__G6__r3",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.646,
+        "schema_validity": 0.677,
+        "tool_call_correctness": 0.575,
+        "citation_grounding": 0.57,
+        "human_acceptance": 0.615,
+        "cost_efficiency": 0.448,
+        "safety_consistency": 0.672
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__budget_model__G6__r4",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.646,
+        "schema_validity": 0.677,
+        "tool_call_correctness": 0.575,
+        "citation_grounding": 0.57,
+        "human_acceptance": 0.615,
+        "cost_efficiency": 0.448,
+        "safety_consistency": 0.672
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__budget_model__G6__r5",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.646,
+        "schema_validity": 0.677,
+        "tool_call_correctness": 0.575,
+        "citation_grounding": 0.57,
+        "human_acceptance": 0.615,
+        "cost_efficiency": 0.448,
+        "safety_consistency": 0.672
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__budget_model__G9__r1",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.739,
+        "schema_validity": 0.777,
+        "tool_call_correctness": 0.661,
+        "citation_grounding": 0.652,
+        "human_acceptance": 0.703,
+        "cost_efficiency": 0.515,
+        "safety_consistency": 0.768
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__budget_model__G9__r2",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.739,
+        "schema_validity": 0.777,
+        "tool_call_correctness": 0.661,
+        "citation_grounding": 0.652,
+        "human_acceptance": 0.703,
+        "cost_efficiency": 0.515,
+        "safety_consistency": 0.768
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__budget_model__G9__r3",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.739,
+        "schema_validity": 0.777,
+        "tool_call_correctness": 0.661,
+        "citation_grounding": 0.652,
+        "human_acceptance": 0.703,
+        "cost_efficiency": 0.515,
+        "safety_consistency": 0.768
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__budget_model__G9__r4",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.739,
+        "schema_validity": 0.777,
+        "tool_call_correctness": 0.661,
+        "citation_grounding": 0.652,
+        "human_acceptance": 0.703,
+        "cost_efficiency": 0.515,
+        "safety_consistency": 0.768
+      },
+      "mock": true
+    },
+    {
+      "run_id": "research-workflow__budget_model__G9__r5",
+      "fixture": "research-workflow",
+      "task_class": "research_workflow",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.739,
+        "schema_validity": 0.777,
+        "tool_call_correctness": 0.661,
+        "citation_grounding": 0.652,
+        "human_acceptance": 0.703,
+        "cost_efficiency": 0.515,
+        "safety_consistency": 0.768
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__strong_model__G0__r1",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.63,
+        "schema_validity": 0.66,
+        "tool_call_correctness": 0.56,
+        "citation_grounding": 0.556,
+        "human_acceptance": 0.599,
+        "cost_efficiency": 0.436,
+        "safety_consistency": 0.655
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__strong_model__G0__r2",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.63,
+        "schema_validity": 0.66,
+        "tool_call_correctness": 0.56,
+        "citation_grounding": 0.556,
+        "human_acceptance": 0.599,
+        "cost_efficiency": 0.436,
+        "safety_consistency": 0.655
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__strong_model__G0__r3",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.63,
+        "schema_validity": 0.66,
+        "tool_call_correctness": 0.56,
+        "citation_grounding": 0.556,
+        "human_acceptance": 0.599,
+        "cost_efficiency": 0.436,
+        "safety_consistency": 0.655
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__strong_model__G0__r4",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.63,
+        "schema_validity": 0.66,
+        "tool_call_correctness": 0.56,
+        "citation_grounding": 0.556,
+        "human_acceptance": 0.599,
+        "cost_efficiency": 0.436,
+        "safety_consistency": 0.655
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__strong_model__G0__r5",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.63,
+        "schema_validity": 0.66,
+        "tool_call_correctness": 0.56,
+        "citation_grounding": 0.556,
+        "human_acceptance": 0.599,
+        "cost_efficiency": 0.436,
+        "safety_consistency": 0.655
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__strong_model__G2__r1",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.653,
+        "schema_validity": 0.684,
+        "tool_call_correctness": 0.581,
+        "citation_grounding": 0.575,
+        "human_acceptance": 0.62,
+        "cost_efficiency": 0.453,
+        "safety_consistency": 0.678
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__strong_model__G2__r2",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.653,
+        "schema_validity": 0.684,
+        "tool_call_correctness": 0.581,
+        "citation_grounding": 0.575,
+        "human_acceptance": 0.62,
+        "cost_efficiency": 0.453,
+        "safety_consistency": 0.678
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__strong_model__G2__r3",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.653,
+        "schema_validity": 0.684,
+        "tool_call_correctness": 0.581,
+        "citation_grounding": 0.575,
+        "human_acceptance": 0.62,
+        "cost_efficiency": 0.453,
+        "safety_consistency": 0.678
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__strong_model__G2__r4",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.653,
+        "schema_validity": 0.684,
+        "tool_call_correctness": 0.581,
+        "citation_grounding": 0.575,
+        "human_acceptance": 0.62,
+        "cost_efficiency": 0.453,
+        "safety_consistency": 0.678
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__strong_model__G2__r5",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.653,
+        "schema_validity": 0.684,
+        "tool_call_correctness": 0.581,
+        "citation_grounding": 0.575,
+        "human_acceptance": 0.62,
+        "cost_efficiency": 0.453,
+        "safety_consistency": 0.678
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__strong_model__G6__r1",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "strong_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.669,
+        "schema_validity": 0.702,
+        "tool_call_correctness": 0.596,
+        "citation_grounding": 0.59,
+        "human_acceptance": 0.636,
+        "cost_efficiency": 0.464,
+        "safety_consistency": 0.695
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__strong_model__G6__r2",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "strong_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.669,
+        "schema_validity": 0.702,
+        "tool_call_correctness": 0.596,
+        "citation_grounding": 0.59,
+        "human_acceptance": 0.636,
+        "cost_efficiency": 0.464,
+        "safety_consistency": 0.695
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__strong_model__G6__r3",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "strong_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.669,
+        "schema_validity": 0.702,
+        "tool_call_correctness": 0.596,
+        "citation_grounding": 0.59,
+        "human_acceptance": 0.636,
+        "cost_efficiency": 0.464,
+        "safety_consistency": 0.695
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__strong_model__G6__r4",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "strong_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.669,
+        "schema_validity": 0.702,
+        "tool_call_correctness": 0.596,
+        "citation_grounding": 0.59,
+        "human_acceptance": 0.636,
+        "cost_efficiency": 0.464,
+        "safety_consistency": 0.695
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__strong_model__G6__r5",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "strong_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.669,
+        "schema_validity": 0.702,
+        "tool_call_correctness": 0.596,
+        "citation_grounding": 0.59,
+        "human_acceptance": 0.636,
+        "cost_efficiency": 0.464,
+        "safety_consistency": 0.695
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__strong_model__G9__r1",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.686,
+        "schema_validity": 0.72,
+        "tool_call_correctness": 0.612,
+        "citation_grounding": 0.605,
+        "human_acceptance": 0.652,
+        "cost_efficiency": 0.477,
+        "safety_consistency": 0.713
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__strong_model__G9__r2",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.686,
+        "schema_validity": 0.72,
+        "tool_call_correctness": 0.612,
+        "citation_grounding": 0.605,
+        "human_acceptance": 0.652,
+        "cost_efficiency": 0.477,
+        "safety_consistency": 0.713
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__strong_model__G9__r3",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.686,
+        "schema_validity": 0.72,
+        "tool_call_correctness": 0.612,
+        "citation_grounding": 0.605,
+        "human_acceptance": 0.652,
+        "cost_efficiency": 0.477,
+        "safety_consistency": 0.713
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__strong_model__G9__r4",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.686,
+        "schema_validity": 0.72,
+        "tool_call_correctness": 0.612,
+        "citation_grounding": 0.605,
+        "human_acceptance": 0.652,
+        "cost_efficiency": 0.477,
+        "safety_consistency": 0.713
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__strong_model__G9__r5",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.686,
+        "schema_validity": 0.72,
+        "tool_call_correctness": 0.612,
+        "citation_grounding": 0.605,
+        "human_acceptance": 0.652,
+        "cost_efficiency": 0.477,
+        "safety_consistency": 0.713
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__mid_model__G0__r1",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "mid_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.47,
+        "schema_validity": 0.487,
+        "tool_call_correctness": 0.413,
+        "citation_grounding": 0.415,
+        "human_acceptance": 0.447,
+        "cost_efficiency": 0.321,
+        "safety_consistency": 0.488
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__mid_model__G0__r2",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "mid_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.47,
+        "schema_validity": 0.487,
+        "tool_call_correctness": 0.413,
+        "citation_grounding": 0.415,
+        "human_acceptance": 0.447,
+        "cost_efficiency": 0.321,
+        "safety_consistency": 0.488
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__mid_model__G0__r3",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "mid_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.47,
+        "schema_validity": 0.487,
+        "tool_call_correctness": 0.413,
+        "citation_grounding": 0.415,
+        "human_acceptance": 0.447,
+        "cost_efficiency": 0.321,
+        "safety_consistency": 0.488
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__mid_model__G0__r4",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "mid_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.47,
+        "schema_validity": 0.487,
+        "tool_call_correctness": 0.413,
+        "citation_grounding": 0.415,
+        "human_acceptance": 0.447,
+        "cost_efficiency": 0.321,
+        "safety_consistency": 0.488
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__mid_model__G0__r5",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "mid_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.47,
+        "schema_validity": 0.487,
+        "tool_call_correctness": 0.413,
+        "citation_grounding": 0.415,
+        "human_acceptance": 0.447,
+        "cost_efficiency": 0.321,
+        "safety_consistency": 0.488
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__mid_model__G2__r1",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "mid_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.528,
+        "schema_validity": 0.549,
+        "tool_call_correctness": 0.466,
+        "citation_grounding": 0.466,
+        "human_acceptance": 0.502,
+        "cost_efficiency": 0.363,
+        "safety_consistency": 0.549
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__mid_model__G2__r2",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "mid_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.528,
+        "schema_validity": 0.549,
+        "tool_call_correctness": 0.466,
+        "citation_grounding": 0.466,
+        "human_acceptance": 0.502,
+        "cost_efficiency": 0.363,
+        "safety_consistency": 0.549
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__mid_model__G2__r3",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "mid_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.528,
+        "schema_validity": 0.549,
+        "tool_call_correctness": 0.466,
+        "citation_grounding": 0.466,
+        "human_acceptance": 0.502,
+        "cost_efficiency": 0.363,
+        "safety_consistency": 0.549
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__mid_model__G2__r4",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "mid_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.528,
+        "schema_validity": 0.549,
+        "tool_call_correctness": 0.466,
+        "citation_grounding": 0.466,
+        "human_acceptance": 0.502,
+        "cost_efficiency": 0.363,
+        "safety_consistency": 0.549
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__mid_model__G2__r5",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "mid_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.528,
+        "schema_validity": 0.549,
+        "tool_call_correctness": 0.466,
+        "citation_grounding": 0.466,
+        "human_acceptance": 0.502,
+        "cost_efficiency": 0.363,
+        "safety_consistency": 0.549
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__mid_model__G6__r1",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "mid_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.586,
+        "schema_validity": 0.612,
+        "tool_call_correctness": 0.52,
+        "citation_grounding": 0.517,
+        "human_acceptance": 0.557,
+        "cost_efficiency": 0.404,
+        "safety_consistency": 0.609
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__mid_model__G6__r2",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "mid_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.586,
+        "schema_validity": 0.612,
+        "tool_call_correctness": 0.52,
+        "citation_grounding": 0.517,
+        "human_acceptance": 0.557,
+        "cost_efficiency": 0.404,
+        "safety_consistency": 0.609
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__mid_model__G6__r3",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "mid_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.586,
+        "schema_validity": 0.612,
+        "tool_call_correctness": 0.52,
+        "citation_grounding": 0.517,
+        "human_acceptance": 0.557,
+        "cost_efficiency": 0.404,
+        "safety_consistency": 0.609
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__mid_model__G6__r4",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "mid_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.586,
+        "schema_validity": 0.612,
+        "tool_call_correctness": 0.52,
+        "citation_grounding": 0.517,
+        "human_acceptance": 0.557,
+        "cost_efficiency": 0.404,
+        "safety_consistency": 0.609
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__mid_model__G6__r5",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "mid_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.586,
+        "schema_validity": 0.612,
+        "tool_call_correctness": 0.52,
+        "citation_grounding": 0.517,
+        "human_acceptance": 0.557,
+        "cost_efficiency": 0.404,
+        "safety_consistency": 0.609
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__mid_model__G9__r1",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "mid_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.632,
+        "schema_validity": 0.662,
+        "tool_call_correctness": 0.562,
+        "citation_grounding": 0.557,
+        "human_acceptance": 0.601,
+        "cost_efficiency": 0.438,
+        "safety_consistency": 0.657
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__mid_model__G9__r2",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "mid_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.632,
+        "schema_validity": 0.662,
+        "tool_call_correctness": 0.562,
+        "citation_grounding": 0.557,
+        "human_acceptance": 0.601,
+        "cost_efficiency": 0.438,
+        "safety_consistency": 0.657
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__mid_model__G9__r3",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "mid_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.632,
+        "schema_validity": 0.662,
+        "tool_call_correctness": 0.562,
+        "citation_grounding": 0.557,
+        "human_acceptance": 0.601,
+        "cost_efficiency": 0.438,
+        "safety_consistency": 0.657
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__mid_model__G9__r4",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "mid_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.632,
+        "schema_validity": 0.662,
+        "tool_call_correctness": 0.562,
+        "citation_grounding": 0.557,
+        "human_acceptance": 0.601,
+        "cost_efficiency": 0.438,
+        "safety_consistency": 0.657
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__mid_model__G9__r5",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "mid_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.632,
+        "schema_validity": 0.662,
+        "tool_call_correctness": 0.562,
+        "citation_grounding": 0.557,
+        "human_acceptance": 0.601,
+        "cost_efficiency": 0.438,
+        "safety_consistency": 0.657
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__budget_model__G0__r1",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.31,
+        "schema_validity": 0.314,
+        "tool_call_correctness": 0.266,
+        "citation_grounding": 0.274,
+        "human_acceptance": 0.295,
+        "cost_efficiency": 0.206,
+        "safety_consistency": 0.322
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__budget_model__G0__r2",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.31,
+        "schema_validity": 0.314,
+        "tool_call_correctness": 0.266,
+        "citation_grounding": 0.274,
+        "human_acceptance": 0.295,
+        "cost_efficiency": 0.206,
+        "safety_consistency": 0.322
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__budget_model__G0__r3",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.31,
+        "schema_validity": 0.314,
+        "tool_call_correctness": 0.266,
+        "citation_grounding": 0.274,
+        "human_acceptance": 0.295,
+        "cost_efficiency": 0.206,
+        "safety_consistency": 0.322
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__budget_model__G0__r4",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.31,
+        "schema_validity": 0.314,
+        "tool_call_correctness": 0.266,
+        "citation_grounding": 0.274,
+        "human_acceptance": 0.295,
+        "cost_efficiency": 0.206,
+        "safety_consistency": 0.322
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__budget_model__G0__r5",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.31,
+        "schema_validity": 0.314,
+        "tool_call_correctness": 0.266,
+        "citation_grounding": 0.274,
+        "human_acceptance": 0.295,
+        "cost_efficiency": 0.206,
+        "safety_consistency": 0.322
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__budget_model__G2__r1",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.403,
+        "schema_validity": 0.414,
+        "tool_call_correctness": 0.352,
+        "citation_grounding": 0.356,
+        "human_acceptance": 0.383,
+        "cost_efficiency": 0.273,
+        "safety_consistency": 0.419
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__budget_model__G2__r2",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.403,
+        "schema_validity": 0.414,
+        "tool_call_correctness": 0.352,
+        "citation_grounding": 0.356,
+        "human_acceptance": 0.383,
+        "cost_efficiency": 0.273,
+        "safety_consistency": 0.419
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__budget_model__G2__r3",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.403,
+        "schema_validity": 0.414,
+        "tool_call_correctness": 0.352,
+        "citation_grounding": 0.356,
+        "human_acceptance": 0.383,
+        "cost_efficiency": 0.273,
+        "safety_consistency": 0.419
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__budget_model__G2__r4",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.403,
+        "schema_validity": 0.414,
+        "tool_call_correctness": 0.352,
+        "citation_grounding": 0.356,
+        "human_acceptance": 0.383,
+        "cost_efficiency": 0.273,
+        "safety_consistency": 0.419
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__budget_model__G2__r5",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.403,
+        "schema_validity": 0.414,
+        "tool_call_correctness": 0.352,
+        "citation_grounding": 0.356,
+        "human_acceptance": 0.383,
+        "cost_efficiency": 0.273,
+        "safety_consistency": 0.419
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__budget_model__G6__r1",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "budget_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.502,
+        "schema_validity": 0.522,
+        "tool_call_correctness": 0.443,
+        "citation_grounding": 0.443,
+        "human_acceptance": 0.478,
+        "cost_efficiency": 0.345,
+        "safety_consistency": 0.522
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__budget_model__G6__r2",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "budget_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.502,
+        "schema_validity": 0.522,
+        "tool_call_correctness": 0.443,
+        "citation_grounding": 0.443,
+        "human_acceptance": 0.478,
+        "cost_efficiency": 0.345,
+        "safety_consistency": 0.522
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__budget_model__G6__r3",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "budget_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.502,
+        "schema_validity": 0.522,
+        "tool_call_correctness": 0.443,
+        "citation_grounding": 0.443,
+        "human_acceptance": 0.478,
+        "cost_efficiency": 0.345,
+        "safety_consistency": 0.522
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__budget_model__G6__r4",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "budget_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.502,
+        "schema_validity": 0.522,
+        "tool_call_correctness": 0.443,
+        "citation_grounding": 0.443,
+        "human_acceptance": 0.478,
+        "cost_efficiency": 0.345,
+        "safety_consistency": 0.522
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__budget_model__G6__r5",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "budget_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.502,
+        "schema_validity": 0.522,
+        "tool_call_correctness": 0.443,
+        "citation_grounding": 0.443,
+        "human_acceptance": 0.478,
+        "cost_efficiency": 0.345,
+        "safety_consistency": 0.522
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__budget_model__G9__r1",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.577,
+        "schema_validity": 0.603,
+        "tool_call_correctness": 0.512,
+        "citation_grounding": 0.509,
+        "human_acceptance": 0.549,
+        "cost_efficiency": 0.399,
+        "safety_consistency": 0.6
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__budget_model__G9__r2",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.577,
+        "schema_validity": 0.603,
+        "tool_call_correctness": 0.512,
+        "citation_grounding": 0.509,
+        "human_acceptance": 0.549,
+        "cost_efficiency": 0.399,
+        "safety_consistency": 0.6
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__budget_model__G9__r3",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.577,
+        "schema_validity": 0.603,
+        "tool_call_correctness": 0.512,
+        "citation_grounding": 0.509,
+        "human_acceptance": 0.549,
+        "cost_efficiency": 0.399,
+        "safety_consistency": 0.6
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__budget_model__G9__r4",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.577,
+        "schema_validity": 0.603,
+        "tool_call_correctness": 0.512,
+        "citation_grounding": 0.509,
+        "human_acceptance": 0.549,
+        "cost_efficiency": 0.399,
+        "safety_consistency": 0.6
+      },
+      "mock": true
+    },
+    {
+      "run_id": "strategic-judgment__budget_model__G9__r5",
+      "fixture": "strategic-judgment",
+      "task_class": "strategic_judgment",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.577,
+        "schema_validity": 0.603,
+        "tool_call_correctness": 0.512,
+        "citation_grounding": 0.509,
+        "human_acceptance": 0.549,
+        "cost_efficiency": 0.399,
+        "safety_consistency": 0.6
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G0__r1",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.84,
+        "schema_validity": 0.886,
+        "tool_call_correctness": 0.754,
+        "citation_grounding": 0.74,
+        "human_acceptance": 0.798,
+        "cost_efficiency": 0.588,
+        "safety_consistency": 0.873
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G0__r2",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.84,
+        "schema_validity": 0.886,
+        "tool_call_correctness": 0.754,
+        "citation_grounding": 0.74,
+        "human_acceptance": 0.798,
+        "cost_efficiency": 0.588,
+        "safety_consistency": 0.873
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G0__r3",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.84,
+        "schema_validity": 0.886,
+        "tool_call_correctness": 0.754,
+        "citation_grounding": 0.74,
+        "human_acceptance": 0.798,
+        "cost_efficiency": 0.588,
+        "safety_consistency": 0.873
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G0__r4",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.84,
+        "schema_validity": 0.886,
+        "tool_call_correctness": 0.754,
+        "citation_grounding": 0.74,
+        "human_acceptance": 0.798,
+        "cost_efficiency": 0.588,
+        "safety_consistency": 0.873
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G0__r5",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.84,
+        "schema_validity": 0.886,
+        "tool_call_correctness": 0.754,
+        "citation_grounding": 0.74,
+        "human_acceptance": 0.798,
+        "cost_efficiency": 0.588,
+        "safety_consistency": 0.873
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G2__r1",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.909,
+        "schema_validity": 0.961,
+        "tool_call_correctness": 0.817,
+        "citation_grounding": 0.801,
+        "human_acceptance": 0.864,
+        "cost_efficiency": 0.637,
+        "safety_consistency": 0.945
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G2__r2",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.909,
+        "schema_validity": 0.961,
+        "tool_call_correctness": 0.817,
+        "citation_grounding": 0.801,
+        "human_acceptance": 0.864,
+        "cost_efficiency": 0.637,
+        "safety_consistency": 0.945
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G2__r3",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.909,
+        "schema_validity": 0.961,
+        "tool_call_correctness": 0.817,
+        "citation_grounding": 0.801,
+        "human_acceptance": 0.864,
+        "cost_efficiency": 0.637,
+        "safety_consistency": 0.945
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G2__r4",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.909,
+        "schema_validity": 0.961,
+        "tool_call_correctness": 0.817,
+        "citation_grounding": 0.801,
+        "human_acceptance": 0.864,
+        "cost_efficiency": 0.637,
+        "safety_consistency": 0.945
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G2__r5",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.909,
+        "schema_validity": 0.961,
+        "tool_call_correctness": 0.817,
+        "citation_grounding": 0.801,
+        "human_acceptance": 0.864,
+        "cost_efficiency": 0.637,
+        "safety_consistency": 0.945
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G6__r1",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.971,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 0.874,
+        "citation_grounding": 0.856,
+        "human_acceptance": 0.923,
+        "cost_efficiency": 0.682,
+        "safety_consistency": 1.0
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G6__r2",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.971,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 0.874,
+        "citation_grounding": 0.856,
+        "human_acceptance": 0.923,
+        "cost_efficiency": 0.682,
+        "safety_consistency": 1.0
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G6__r3",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.971,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 0.874,
+        "citation_grounding": 0.856,
+        "human_acceptance": 0.923,
+        "cost_efficiency": 0.682,
+        "safety_consistency": 1.0
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G6__r4",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.971,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 0.874,
+        "citation_grounding": 0.856,
+        "human_acceptance": 0.923,
+        "cost_efficiency": 0.682,
+        "safety_consistency": 1.0
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G6__r5",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.971,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 0.874,
+        "citation_grounding": 0.856,
+        "human_acceptance": 0.923,
+        "cost_efficiency": 0.682,
+        "safety_consistency": 1.0
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G9__r1",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 0.924,
+        "citation_grounding": 0.904,
+        "human_acceptance": 0.975,
+        "cost_efficiency": 0.721,
+        "safety_consistency": 1.0
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G9__r2",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 0.924,
+        "citation_grounding": 0.904,
+        "human_acceptance": 0.975,
+        "cost_efficiency": 0.721,
+        "safety_consistency": 1.0
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G9__r3",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 0.924,
+        "citation_grounding": 0.904,
+        "human_acceptance": 0.975,
+        "cost_efficiency": 0.721,
+        "safety_consistency": 1.0
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G9__r4",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 0.924,
+        "citation_grounding": 0.904,
+        "human_acceptance": 0.975,
+        "cost_efficiency": 0.721,
+        "safety_consistency": 1.0
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__strong_model__G9__r5",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "strong_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 0.924,
+        "citation_grounding": 0.904,
+        "human_acceptance": 0.975,
+        "cost_efficiency": 0.721,
+        "safety_consistency": 1.0
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__mid_model__G0__r1",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "mid_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.68,
+        "schema_validity": 0.714,
+        "tool_call_correctness": 0.606,
+        "citation_grounding": 0.6,
+        "human_acceptance": 0.646,
+        "cost_efficiency": 0.472,
+        "safety_consistency": 0.707
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__mid_model__G0__r2",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "mid_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.68,
+        "schema_validity": 0.714,
+        "tool_call_correctness": 0.606,
+        "citation_grounding": 0.6,
+        "human_acceptance": 0.646,
+        "cost_efficiency": 0.472,
+        "safety_consistency": 0.707
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__mid_model__G0__r3",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "mid_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.68,
+        "schema_validity": 0.714,
+        "tool_call_correctness": 0.606,
+        "citation_grounding": 0.6,
+        "human_acceptance": 0.646,
+        "cost_efficiency": 0.472,
+        "safety_consistency": 0.707
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__mid_model__G0__r4",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "mid_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.68,
+        "schema_validity": 0.714,
+        "tool_call_correctness": 0.606,
+        "citation_grounding": 0.6,
+        "human_acceptance": 0.646,
+        "cost_efficiency": 0.472,
+        "safety_consistency": 0.707
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__mid_model__G0__r5",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "mid_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.68,
+        "schema_validity": 0.714,
+        "tool_call_correctness": 0.606,
+        "citation_grounding": 0.6,
+        "human_acceptance": 0.646,
+        "cost_efficiency": 0.472,
+        "safety_consistency": 0.707
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__mid_model__G2__r1",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "mid_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.784,
+        "schema_validity": 0.826,
+        "tool_call_correctness": 0.702,
+        "citation_grounding": 0.691,
+        "human_acceptance": 0.745,
+        "cost_efficiency": 0.547,
+        "safety_consistency": 0.815
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__mid_model__G2__r2",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "mid_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.784,
+        "schema_validity": 0.826,
+        "tool_call_correctness": 0.702,
+        "citation_grounding": 0.691,
+        "human_acceptance": 0.745,
+        "cost_efficiency": 0.547,
+        "safety_consistency": 0.815
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__mid_model__G2__r3",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "mid_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.784,
+        "schema_validity": 0.826,
+        "tool_call_correctness": 0.702,
+        "citation_grounding": 0.691,
+        "human_acceptance": 0.745,
+        "cost_efficiency": 0.547,
+        "safety_consistency": 0.815
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__mid_model__G2__r4",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "mid_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.784,
+        "schema_validity": 0.826,
+        "tool_call_correctness": 0.702,
+        "citation_grounding": 0.691,
+        "human_acceptance": 0.745,
+        "cost_efficiency": 0.547,
+        "safety_consistency": 0.815
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__mid_model__G2__r5",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "mid_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.784,
+        "schema_validity": 0.826,
+        "tool_call_correctness": 0.702,
+        "citation_grounding": 0.691,
+        "human_acceptance": 0.745,
+        "cost_efficiency": 0.547,
+        "safety_consistency": 0.815
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__mid_model__G6__r1",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "mid_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.888,
+        "schema_validity": 0.938,
+        "tool_call_correctness": 0.798,
+        "citation_grounding": 0.783,
+        "human_acceptance": 0.844,
+        "cost_efficiency": 0.622,
+        "safety_consistency": 0.923
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__mid_model__G6__r2",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "mid_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.888,
+        "schema_validity": 0.938,
+        "tool_call_correctness": 0.798,
+        "citation_grounding": 0.783,
+        "human_acceptance": 0.844,
+        "cost_efficiency": 0.622,
+        "safety_consistency": 0.923
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__mid_model__G6__r3",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "mid_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.888,
+        "schema_validity": 0.938,
+        "tool_call_correctness": 0.798,
+        "citation_grounding": 0.783,
+        "human_acceptance": 0.844,
+        "cost_efficiency": 0.622,
+        "safety_consistency": 0.923
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__mid_model__G6__r4",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "mid_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.888,
+        "schema_validity": 0.938,
+        "tool_call_correctness": 0.798,
+        "citation_grounding": 0.783,
+        "human_acceptance": 0.844,
+        "cost_efficiency": 0.622,
+        "safety_consistency": 0.923
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__mid_model__G6__r5",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "mid_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.888,
+        "schema_validity": 0.938,
+        "tool_call_correctness": 0.798,
+        "citation_grounding": 0.783,
+        "human_acceptance": 0.844,
+        "cost_efficiency": 0.622,
+        "safety_consistency": 0.923
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__mid_model__G9__r1",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "mid_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.971,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 0.874,
+        "citation_grounding": 0.856,
+        "human_acceptance": 0.923,
+        "cost_efficiency": 0.682,
+        "safety_consistency": 1.0
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__mid_model__G9__r2",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "mid_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.971,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 0.874,
+        "citation_grounding": 0.856,
+        "human_acceptance": 0.923,
+        "cost_efficiency": 0.682,
+        "safety_consistency": 1.0
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__mid_model__G9__r3",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "mid_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.971,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 0.874,
+        "citation_grounding": 0.856,
+        "human_acceptance": 0.923,
+        "cost_efficiency": 0.682,
+        "safety_consistency": 1.0
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__mid_model__G9__r4",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "mid_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.971,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 0.874,
+        "citation_grounding": 0.856,
+        "human_acceptance": 0.923,
+        "cost_efficiency": 0.682,
+        "safety_consistency": 1.0
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__mid_model__G9__r5",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "mid_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.971,
+        "schema_validity": 1.0,
+        "tool_call_correctness": 0.874,
+        "citation_grounding": 0.856,
+        "human_acceptance": 0.923,
+        "cost_efficiency": 0.682,
+        "safety_consistency": 1.0
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G0__r1",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.52,
+        "schema_validity": 0.541,
+        "tool_call_correctness": 0.459,
+        "citation_grounding": 0.459,
+        "human_acceptance": 0.494,
+        "cost_efficiency": 0.357,
+        "safety_consistency": 0.54
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G0__r2",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.52,
+        "schema_validity": 0.541,
+        "tool_call_correctness": 0.459,
+        "citation_grounding": 0.459,
+        "human_acceptance": 0.494,
+        "cost_efficiency": 0.357,
+        "safety_consistency": 0.54
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G0__r3",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.52,
+        "schema_validity": 0.541,
+        "tool_call_correctness": 0.459,
+        "citation_grounding": 0.459,
+        "human_acceptance": 0.494,
+        "cost_efficiency": 0.357,
+        "safety_consistency": 0.54
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G0__r4",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.52,
+        "schema_validity": 0.541,
+        "tool_call_correctness": 0.459,
+        "citation_grounding": 0.459,
+        "human_acceptance": 0.494,
+        "cost_efficiency": 0.357,
+        "safety_consistency": 0.54
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G0__r5",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G0",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.52,
+        "schema_validity": 0.541,
+        "tool_call_correctness": 0.459,
+        "citation_grounding": 0.459,
+        "human_acceptance": 0.494,
+        "cost_efficiency": 0.357,
+        "safety_consistency": 0.54
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G2__r1",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.659,
+        "schema_validity": 0.691,
+        "tool_call_correctness": 0.587,
+        "citation_grounding": 0.581,
+        "human_acceptance": 0.627,
+        "cost_efficiency": 0.457,
+        "safety_consistency": 0.685
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G2__r2",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.659,
+        "schema_validity": 0.691,
+        "tool_call_correctness": 0.587,
+        "citation_grounding": 0.581,
+        "human_acceptance": 0.627,
+        "cost_efficiency": 0.457,
+        "safety_consistency": 0.685
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G2__r3",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.659,
+        "schema_validity": 0.691,
+        "tool_call_correctness": 0.587,
+        "citation_grounding": 0.581,
+        "human_acceptance": 0.627,
+        "cost_efficiency": 0.457,
+        "safety_consistency": 0.685
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G2__r4",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.659,
+        "schema_validity": 0.691,
+        "tool_call_correctness": 0.587,
+        "citation_grounding": 0.581,
+        "human_acceptance": 0.627,
+        "cost_efficiency": 0.457,
+        "safety_consistency": 0.685
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G2__r5",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G2",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.659,
+        "schema_validity": 0.691,
+        "tool_call_correctness": 0.587,
+        "citation_grounding": 0.581,
+        "human_acceptance": 0.627,
+        "cost_efficiency": 0.457,
+        "safety_consistency": 0.685
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G6__r1",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.805,
+        "schema_validity": 0.848,
+        "tool_call_correctness": 0.721,
+        "citation_grounding": 0.709,
+        "human_acceptance": 0.765,
+        "cost_efficiency": 0.562,
+        "safety_consistency": 0.837
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G6__r2",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.805,
+        "schema_validity": 0.848,
+        "tool_call_correctness": 0.721,
+        "citation_grounding": 0.709,
+        "human_acceptance": 0.765,
+        "cost_efficiency": 0.562,
+        "safety_consistency": 0.837
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G6__r3",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.805,
+        "schema_validity": 0.848,
+        "tool_call_correctness": 0.721,
+        "citation_grounding": 0.709,
+        "human_acceptance": 0.765,
+        "cost_efficiency": 0.562,
+        "safety_consistency": 0.837
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G6__r4",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.805,
+        "schema_validity": 0.848,
+        "tool_call_correctness": 0.721,
+        "citation_grounding": 0.709,
+        "human_acceptance": 0.765,
+        "cost_efficiency": 0.562,
+        "safety_consistency": 0.837
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G6__r5",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G6",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.805,
+        "schema_validity": 0.848,
+        "tool_call_correctness": 0.721,
+        "citation_grounding": 0.709,
+        "human_acceptance": 0.765,
+        "cost_efficiency": 0.562,
+        "safety_consistency": 0.837
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G9__r1",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.917,
+        "schema_validity": 0.969,
+        "tool_call_correctness": 0.824,
+        "citation_grounding": 0.808,
+        "human_acceptance": 0.871,
+        "cost_efficiency": 0.643,
+        "safety_consistency": 0.953
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G9__r2",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.917,
+        "schema_validity": 0.969,
+        "tool_call_correctness": 0.824,
+        "citation_grounding": 0.808,
+        "human_acceptance": 0.871,
+        "cost_efficiency": 0.643,
+        "safety_consistency": 0.953
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G9__r3",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.917,
+        "schema_validity": 0.969,
+        "tool_call_correctness": 0.824,
+        "citation_grounding": 0.808,
+        "human_acceptance": 0.871,
+        "cost_efficiency": 0.643,
+        "safety_consistency": 0.953
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G9__r4",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.917,
+        "schema_validity": 0.969,
+        "tool_call_correctness": 0.824,
+        "citation_grounding": 0.808,
+        "human_acceptance": 0.871,
+        "cost_efficiency": 0.643,
+        "safety_consistency": 0.953
+      },
+      "mock": true
+    },
+    {
+      "run_id": "structured-extraction__budget_model__G9__r5",
+      "fixture": "structured-extraction",
+      "task_class": "structured_extraction",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "metrics": {
+        "task_success": 0.917,
+        "schema_validity": 0.969,
+        "tool_call_correctness": 0.824,
+        "citation_grounding": 0.808,
+        "human_acceptance": 0.871,
+        "cost_efficiency": 0.643,
+        "safety_consistency": 0.953
+      },
+      "mock": true
+    }
+  ]
+}

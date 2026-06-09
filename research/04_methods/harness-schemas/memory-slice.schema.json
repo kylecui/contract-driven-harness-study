@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://petfish.local/schemas/memory-slice.schema.json",
+  "title": "MemorySlice",
+  "type": "object",
+  "required": [
+    "memory_slice_id",
+    "task_id",
+    "mode",
+    "must_load",
+    "may_load",
+    "must_not_load"
+  ],
+  "properties": {
+    "memory_slice_id": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "active_topic_id": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "none",
+        "topic",
+        "task",
+        "topic_and_task"
+      ]
+    },
+    "must_load": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "may_load": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "must_not_load": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "token_budget": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "additionalProperties": false
+}
+

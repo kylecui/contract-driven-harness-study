@@ -1,0 +1,23 @@
+{
+  "bundle_id": "stage7r_a3r_evidence_001",
+  "items": [
+    {
+      "evidence_id": "atom-a3r-e01",
+      "type": "EXTRACTED",
+      "claim": "AGENTS.md already exists and must be preserved.",
+      "source": "input.md"
+    },
+    {
+      "evidence_id": "atom-a3r-e02",
+      "type": "EXTRACTED",
+      "claim": "The agent may create missing research workspace directories and backlog files.",
+      "source": "input.md"
+    },
+    {
+      "evidence_id": "atom-a3r-e03",
+      "type": "EXTRACTED",
+      "claim": "Network installers require explicit user approval.",
+      "source": "input.md"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "status": "complete",
+  "passed": false,
+  "reason": "Stage 7e evidence-bound decision macro evaluated against fixed contract.",
+  "macro_id": "stage7e-evidence-bound-decision",
+  "expect_pass": null,
+  "expectation_met": true,
+  "findings": [
+    "schema_validity=0.111 below threshold 1.000",
+    "state_accuracy=0.000 below threshold 1.000",
+    "citation_grounding=0.000 below threshold 1.000",
+    "evidence_type_accuracy=0.000 below threshold 1.000",
+    "trace_completeness=0.000 below threshold 1.000",
+    "stage_completion=0.000 below threshold 1.000",
+    "context_relevance=0.000 below threshold 1.000",
+    "atom_primary_metric=0.000 below threshold 1.000",
+    "task_success=0.016 below threshold 0.850"
+  ],
+  "parsed_output": {
+    "selected_claim": "C2",
+    "evidence_binding": {
+      "C2": [
+        {
+          "evidence_id": "stage7e-e01",
+          "evidence_type": "EXTRACTED",
+          "relevance": "Stage 7r.1 smoke tests for A2R1/A7R1 were fully completed and passed, validating mechanism-bound workflows."
+        },
+        {
+          "evidence_id": "stage7e-e02",
+          "evidence_type": "INFERRED",
+          "relevance": "Mechanism-first repair hypothesis is supported by A2R claim grounding and A7R decision trace completeness observed in Stage 7r.1."
+        },
+        {
+          "evidence_id": "stage7e-e04",
+          "evidence_type": "EXTRACTED",
+          "relevance": "Stage 7r.2 composition gate explicitly admits a narrow evidence-bound decision macro and blocks full initialization."
+        }
+      ]
+    },
+    "rejected_claims": {
+      "C1": [
+        {
+          "evidence_id": "stage7e-e03",
+          "evidence_type": "AMBIGUOUS",
+          "reason": "A8R low-cost G8 provider timeout remains unresolved, contradicting claims of universal gap closure."
+        },
+        {
+          "evidence_id": "stage7e-e05",
+          "evidence_type": "EXTRACTED",
+          "reason": "No evidence exists to support production readiness or universal model-gap closure."
+        }
+      ],
+      "C3": [
+        {
+          "evidence_id": "stage7e-e05",
+          "evidence_type": "EXTRACTED",
+          "reason": "Explicit absence of evidence for production readiness."
+        }
+      ]
+    },
+    "stage_status": {
+      "final_recommendation": "blocked",
+      "carried_obligations": [
+        "Stale context exclusion",
+        "Unsupported production readiness exclusion"
+      ]
+    }
+  },
+  "run_id": "stage7e-evidence-bound-decision__budget_model__G0__r1",
+  "model": "budget_model",
+  "harness_arm": "G0",
+  "fixture": "stage7e-evidence-bound-decision"
+}

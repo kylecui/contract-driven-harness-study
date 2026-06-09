@@ -1,0 +1,55 @@
+{
+  "atom_version": "0.1.0",
+  "atom_id": "A7",
+  "atom_name": "Traceable Decision",
+  "primary_mechanism": "TraceLog",
+  "supporting_mechanisms": [
+    "TaskSpec",
+    "WorkflowGraph"
+  ],
+  "capability_under_test": "Expose decision inputs, rule applications, and final choice in an auditable trace.",
+  "non_goals": [
+    "Do not evaluate general prose quality.",
+    "Do not evaluate broad end-to-end workflow success."
+  ],
+  "input_contract": {
+    "required_inputs": [
+      "input.md",
+      "task_spec.json",
+      "output_contract.json"
+    ],
+    "fixed_snapshot": true,
+    "forbidden_assumptions": [
+      "Do not use live web state.",
+      "Do not assume files, evidence, or constraints absent from the fixture."
+    ]
+  },
+  "output_contract_id": "out_mechanism_a7_traceable_decision_001",
+  "pass_criteria": [
+    {
+      "metric": "trace_completeness",
+      "threshold": 1.0,
+      "required": true
+    },
+    {
+      "metric": "task_success",
+      "threshold": 0.8,
+      "required": true
+    }
+  ],
+  "known_failure_modes": [
+    "Non-observable reasoning"
+  ],
+  "composition_interface": {
+    "input_from_previous": [
+      "fixed_snapshot"
+    ],
+    "output_to_next": [
+      "decision_record"
+    ],
+    "state_dependencies": [],
+    "evidence_dependencies": [],
+    "failure_signal": "traceable-decision_failed",
+    "repair_policy": "stop_and_report"
+  }
+}
