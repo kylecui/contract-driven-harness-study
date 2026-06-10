@@ -92,3 +92,10 @@
 - [x] Convert arXiv-style Markdown draft to arXiv-compatible source format.
 - [x] Compile arXiv source package in an environment with LaTeX installed and run automated PDF/source-package checks.
 - [ ] Run human PDF layout review and decide whether Appendix C should remain in the main PDF or move to supplementary material.
+- [x] Intake external 2026-06-10 review and convert accepted recommendations into a v2 revision plan.
+- [x] Apply first v2 paper revision pass: sharpen bounded claims, add related-work comparison, formalize admission criteria, add result-boundary summary, clarify PEtFiSh scope, and update public artifact wording.
+- [x] Regenerate arXiv LaTeX/PDF from the v2 draft and rerun compile/layout checks.
+- [x] Run public artifact safety scan after v2 revision.
+- [ ] Prepare G9 object ablation suite: schema-only, evidence-only, trace-only, gate-only, and full contract.
+- [ ] Prepare Stage 7e/Stage 7-next fixture perturbation suite.
+- [ ] Design controlled state-mutating macro before any full workflow expansion.
