@@ -100,6 +100,7 @@
 - [x] V3.1 minimum revision: compress Table 3, add metric explanation table, add closest-prior-work paragraph, reduce repeated targeted-smoke wording, regenerate PDF, and rerun compile checks.
 - [x] Record v3 deferred but still required publication work in `research/05_analysis/contract-driven-harness-paper-v3-deferred-work-register.md`.
 - [ ] Deferred citation-format standardization before any release-ready arXiv/venue package.
+- [x] Create explicit citation pass plan with acceptance criteria before release-ready arXiv/venue packaging.
 - [ ] Deferred formal Figure 1 conversion for the experiment map before final venue/arXiv layout.
 - [ ] Deferred Appendix C placement/table redesign decision during human PDF layout review.
 - [ ] Prepare G9 object ablation suite: schema-only, evidence-only, trace-only, gate-only, and full contract.

@@ -26,3 +26,5 @@ The v3.1 revision may proceed without the deferred items only if it completes:
 ## Readability Rule
 
 Any future paper revision plan must check this register before declaring the paper release-ready. Deferred work can be closed only by either completing the expected output or writing an explicit decision note explaining why it is no longer needed.
+
+The citation-format work has a concrete execution plan in `research/05_analysis/contract-driven-harness-citation-pass-plan.md`.

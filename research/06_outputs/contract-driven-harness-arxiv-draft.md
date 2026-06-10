@@ -211,6 +211,8 @@ Table 2 gives a compact reading guide for the core metrics. Detailed thresholds,
 | `atom_primary_metric` | The atom-specific dominant obligation is satisfied | atom evaluator |
 | `task_success` | The declared task contract passes | composite evaluator |
 
+These metrics evaluate contract adherence rather than open-ended output quality or human preference.
+
 Gap compression is computed only where a nonzero G0 baseline gap exists. If G0 baselines collapse for both models, or if the low-cost model improves more than the strong model and reopens the absolute gap in the opposite direction, the result is reported as mixed, undefined, or negative rather than forced into a compression claim.
 
 Weak-model enablement is reported when the low-cost model reaches a pass threshold under a harness condition after failing or underperforming under weaker conditions.
@@ -428,6 +430,8 @@ A reviewer can audit the claims in four steps:
 4. Re-run the deterministic local gate for the corresponding fixture when a fixture/evaluator pair is provided.
 
 For example, the Stage 7e v4 claim starts from P2-E68, P2-E69, and P2-E70. A reviewer should then inspect the Stage 7e v4 report, macro fixture, validator output, provider event log, and metrics file before treating the claim as supported.
+
+When available, stage reports include the exact command or script path used to regenerate local evaluator outputs. The repository README and method scripts provide the current entry points for local gate reruns and artifact inspection.
 
 The core traceability files are:
 

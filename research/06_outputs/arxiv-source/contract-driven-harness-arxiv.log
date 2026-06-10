@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.9)  10 JUN 2026 19:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.9)  10 JUN 2026 20:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -397,90 +397,6 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 {C:/Users/崔崟/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/崔
 崟/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
 [2]
-Underfull \hbox (badness 7631) in paragraph at lines 83--83
-[]|\T1/lmr/m/n/10 execution graph and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
-[]|\T1/lmr/m/n/10 steps, tools, per-sis-
- []
-
-
-Underfull \hbox (badness 5726) in paragraph at lines 83--83
-\T1/lmr/m/n/10 tence, hu-man check-
- []
-
-
-Underfull \hbox (badness 4792) in paragraph at lines 84--85
-\T1/lmr/m/n/10 ga-tions such as ev-i-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
-[]|\T1/lmr/m/n/10 known-bad-driven
- []
-
-
-Underfull \hbox (badness 6032) in paragraph at lines 85--86
-\T1/lmr/m/n/10 re-pair loops tied to
- []
-
-
-Underfull \hbox (badness 7613) in paragraph at lines 86--86
-[]|\T1/lmr/m/n/10 Declarative LM pro-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-[]|\T1/lmr/m/n/10 modules, sig-na-tures,
- []
-
-
-Underfull \hbox (badness 3128) in paragraph at lines 87--87
-[]|\T1/lmr/m/n/10 portability and in-ter-
- []
-
-
-Underfull \hbox (badness 4859) in paragraph at lines 87--87
-[]|\T1/lmr/m/n/10 workflow, state, and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
-[]|\T1/lmr/m/n/10 evidence-bound ad-
- []
-
-
-Underfull \hbox (badness 4467) in paragraph at lines 88--88
-[]|\T1/lmr/m/n/10 Retrieval, tools, and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-[]|\T1/lmr/m/n/10 bounded mem-
- []
-
-
-Underfull \hbox (badness 1448) in paragraph at lines 88--89
-\T1/lmr/m/n/10 ory/evidence con-tracts
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--89
-[]|\T1/lmr/m/n/10 constraints, static
- []
-
-
-Underfull \hbox (badness 6268) in paragraph at lines 89--89
-\T1/lmr/m/n/10 checks, run-time fire-
- []
-
-
-Underfull \hbox (badness 5245) in paragraph at lines 89--90
-\T1/lmr/m/n/10 her-ence with ex-plicit
- []
-
 ignored error: Infinite glue shrinkage found in box being split [3] [4]
 [5]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
@@ -495,7 +411,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 184.
 
-ignored error: Infinite glue shrinkage found in box being split [6]
+[6]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 203.
  [7]
@@ -514,797 +430,64 @@ ion$\T1/lmr/m/n/10.95 , $\T1/lmtt/m/n/10.95 trace _ completeness$\T1/lmr/m/n/10
 .95 , $\T1/lmtt/m/n/10.95 context _
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 263--263
-[]|\T1/lmr/m/n/10 Required fields and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
-[]|\T1/lmr/m/n/10 deterministic
- []
-
-
-Underfull \hbox (badness 2932) in paragraph at lines 265--265
-[]|\T1/lmr/m/n/10 Known and un-known
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 265--266
-[]|\T1/lmr/m/n/10 fixture-specific state
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 266--266
-[]|$\T1/lmtt/m/n/10 evidence _ type _
- []
-
-
-Underfull \hbox (badness 5637) in paragraph at lines 267--267
-[]|\T1/lmr/m/n/10 Required stage gates
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 268--268
-\T1/lmr/m/n/10 re-jec-tion traces are
- []
-
-
-Underfull \hbox (badness 3009) in paragraph at lines 269--269
-[]|\T1/lmr/m/n/10 Required or ex-cluded
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
-[]|\T1/lmr/m/n/10 context-obligation
- []
-
-
-Underfull \hbox (badness 1521) in paragraph at lines 299--299
-[]|\T1/lmr/m/n/10 Absolute con-tract ad-
- []
-
-
-Underfull \hbox (badness 7344) in paragraph at lines 299--299
-[]|\T1/lmr/m/n/10 broad slices, mech-a-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 301--301
-[]|\T1/lmr/m/n/10 Weak-model en-able-
- []
-
-
-Underfull \hbox (badness 3861) in paragraph at lines 301--301
-[]|\T1/lmr/m/n/10 Stage 6, Stage 7r.1,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
-[]|\T1/lmr/m/n/10 bounded contract-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 321--321
-[]|\T1/lmr/m/n/10 schema/tool
- []
-
-
-Underfull \hbox (badness 6332) in paragraph at lines 321--321
-\T1/lmr/m/n/10 gaps -> G9
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 321--322
-[]|\T1/lmr/m/n/10 conditional
- []
-
-
-Underfull \hbox (badness 3690) in paragraph at lines 321--322
-\T1/lmr/m/n/10 gap com-pres-
- []
-
-
-Underfull \hbox (badness 4403) in paragraph at lines 322--322
-[]|\T1/lmr/m/n/10 mixed met-ric
- []
-
-
-Underfull \hbox (badness 1997) in paragraph at lines 322--322
-\T1/lmr/m/n/10 move-ment ->
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 322--323
-[]|\T1/lmr/m/n/10 no uni-ver-sal
- []
-
-
-Overfull \hbox (10.19638pt too wide) in paragraph at lines 323--323
-[]|\T1/lmr/m/n/10 mixed/undefined| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 323--324
-[]|\T1/lmr/m/n/10 absolute ad-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
-[]|\T1/lmr/m/n/10 mechanism
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
-\T1/lmr/m/n/10 fail-ures ->
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
-\T1/lmr/m/n/10 atom con-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 324--325
-[]|\T1/lmr/m/n/10 weak-model
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 325--325
-[]|\T1/lmr/m/n/10 stale-context
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 325--326
-[]|\T1/lmr/m/n/10 composition
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
-[]|\T1/lmr/m/n/10 trace and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
-\T1/lmr/m/n/10 state gaps
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
-\T1/lmr/m/n/10 -> ex-plicit
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
-[]|\T1/lmr/m/n/10 targeted
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--327
-[]|\T1/lmr/m/n/10 fixed macro
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 327--327
-[]|\T1/lmr/m/n/10 neighboring
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 327--327
-\T1/lmr/m/n/10 trans-fer -
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 327--327
-\T1/lmr/m/n/10 > reused
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 327--327
-[]|\T1/lmr/m/n/10 targeted
- []
-
-
-Underfull \hbox (badness 1496) in paragraph at lines 327--328
-[]|\T1/lmr/m/n/10 narrow trans-
+[8] [9]
+Overfull \hbox (0.79927pt too wide) in paragraph at lines 325--325
+[]|\T1/lmr/m/n/10 mixed/undefined|  
  []
 
 [10]
-Overfull \hbox (13.1386pt too wide) in paragraph at lines 355--355
+Overfull \hbox (13.1386pt too wide) in paragraph at lines 357--357
 []\T1/lmtt/m/n/10.95 A10 bounded context recall -> A9 no-overwrite action plann
 ing -> A6 validator repair 
  []
 
 [11]
-Overfull \hbox (17.73038pt too wide) in paragraph at lines 388--389
+Overfull \hbox (17.73038pt too wide) in paragraph at lines 390--391
 []\T1/lmr/m/n/10.95 The lo-cal gate passed with 2/2 ex-pec-ta-tions met: the go
 lden out-put passed with task_success=1.000
  []
 
 
-Overfull \hbox (0.39539pt too wide) in paragraph at lines 396--397
+Overfull \hbox (0.39539pt too wide) in paragraph at lines 398--399
 \T1/lmr/m/n/10.95 same slice passed with task_success=1.000, atom_primary_metri
 c=1.000, schema_validity=1.000,
  []
 
 
-Overfull \hbox (63.87698pt too wide) in paragraph at lines 396--397
+Overfull \hbox (63.87698pt too wide) in paragraph at lines 398--399
 \T1/lmr/m/n/10.95 ci-ta-tion_grounding=1.000, state_accuracy=1.000, ev-i-dence_
 type_accuracy=1.000, trace_completeness=1.000,
  []
 
 [12] [13] [14]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
-75.
+77.
 
 (C:\Users\崔崟\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 496--496
-[]|\T1/lmr/m/n/10 Contract-driven har-
- []
-
-
-Underfull \hbox (badness 2057) in paragraph at lines 496--497
-\T1/lmr/m/n/10 a production-readiness
- []
-
-
-Underfull \hbox (badness 3780) in paragraph at lines 497--498
-[]|\T1/lmr/m/n/10 Atom pass does not
- []
-
-
-Underfull \hbox (badness 1902) in paragraph at lines 498--498
-[]|\T1/lmr/m/n/10 Conditional gap com-
- []
-
-
-Underfull \hbox (badness 5431) in paragraph at lines 498--498
-[]|\T1/lmr/m/n/10 Structured ex-trac-tion,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 498--498
-\T1/lmr/m/n/10 project ini-tial-iza-tion,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 498--499
-[]|\T1/lmr/m/n/10 Compression only
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 499--500
-[]|\T1/lmr/m/n/10 Fixed evidence-bound
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 500--500
-[]|\T1/lmr/m/n/10 Bounded weak-model
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 500--501
-[]|\T1/lmr/m/n/10 Fixed-input, no-tool,
- []
-
-[15{C:/Users/崔崟/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc
-}]
-Underfull \hbox (badness 4492) in paragraph at lines 518--518
-[]|\T1/lmr/m/n/10 Contract-rich har-ness-
- []
-
-
-Underfull \hbox (badness 1648) in paragraph at lines 518--518
-\T1/lmr/m/n/10 ing im-proves ab-so-lute
- []
-
-
-Underfull \hbox (badness 2443) in paragraph at lines 518--518
-[]|\T1/lmr/m/n/10 P2-E28, P2-E30, P2-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
-[]|\T1/lmr/m/n/10 P2-SILICONFLOW-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
-\T1/lmr/m/n/10 V2-FULL24, P2-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
-\T1/lmr/m/n/10 SILICONFLOW-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
-\T1/lmr/m/n/10 PROJECT-INIT-12,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
-\T1/lmr/m/n/10 P2-SILICONFLOW-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
-\T1/lmr/m/n/10 RESEARCH-
- []
-
-
-Underfull \hbox (badness 1635) in paragraph at lines 518--518
-\T1/lmr/m/n/10 WORKFLOW-12, P2-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
-\T1/lmr/m/n/10 CLAIM-BOUNDARY-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 519--519
-[]|\T1/lmr/m/n/10 Structured ex-trac-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 519--519
-\T1/lmr/m/n/10 gap-compression task
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 519--519
-[]|\T1/lmr/m/n/10 P2-SILICONFLOW-
- []
-
-
-Underfull \hbox (badness 6252) in paragraph at lines 519--520
-[]|\T1/lmr/m/n/10 Supported for tested
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 520--520
-[]|\T1/lmr/m/n/10 Project ini-tial-iza-tion
- []
-
-
-Underfull \hbox (badness 2443) in paragraph at lines 520--520
-[]|\T1/lmr/m/n/10 P2-E30, P2-E32, P2-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 520--520
-[]|\T1/lmr/m/n/10 P2-SILICONFLOW-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 520--520
-\T1/lmr/m/n/10 PROJECT-INIT-12,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 520--520
-\T1/lmr/m/n/10 P2-SILICONFLOW-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 520--520
-\T1/lmr/m/n/10 RESEARCH-
- []
-
-
-Underfull \hbox (badness 1635) in paragraph at lines 520--520
-\T1/lmr/m/n/10 WORKFLOW-12, P2-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 520--520
-\T1/lmr/m/n/10 CLAIM-BOUNDARY-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 520--521
-[]|\T1/lmr/m/n/10 Supported; use
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 520--521
-\T1/lmr/m/n/10 mixed/undefined
- []
-
-
-Underfull \hbox (badness 2443) in paragraph at lines 521--521
-[]|\T1/lmr/m/n/10 P2-E35, P2-E36, P2-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 521--521
-[]|\T1/lmr/m/n/10 P2-MECHANISM-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 521--521
-\T1/lmr/m/n/10 ATOM-DEFINITION,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 521--521
-\T1/lmr/m/n/10 P2-MECHANISM-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 521--521
-\T1/lmr/m/n/10 ATOM-COVERAGE,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 521--521
-\T1/lmr/m/n/10 P2-STAGE7R-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 521--521
-\T1/lmr/m/n/10 REVISED-ATOMS,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 521--521
-\T1/lmr/m/n/10 P2-STAGE7R1-A2R-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 522--522
-\T1/lmr/m/n/10 au-to-mat-i-cally im-ply
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 522--522
-\T1/lmr/m/n/10 macro com-po-si-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 522--522
-[]|\T1/lmr/m/n/10 P2-STAGE7P-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 522--522
-\T1/lmr/m/n/10 PARTIAL-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 523--523
-[]|\T1/lmr/m/n/10 P2-STAGE7P-V2-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 523--523
-\T1/lmr/m/n/10 COMPOSITION-
- []
-
-
-Underfull \hbox (badness 2828) in paragraph at lines 523--524
-[]|\T1/lmr/m/n/10 Supported for A10 -
- []
-
-
-Underfull \hbox (badness 1715) in paragraph at lines 523--524
-\T1/lmr/m/n/10 > A9 -> A6 par-tial
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
-\T1/lmr/m/n/10 cost-model A2R/A7R
- []
-
-
-Underfull \hbox (badness 2443) in paragraph at lines 524--524
-[]|\T1/lmr/m/n/10 P2-E57, P2-E58, P2-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
-[]|\T1/lmr/m/n/10 P2-STAGE7R1-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
-\T1/lmr/m/n/10 A2R-A7R-PREP,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
-\T1/lmr/m/n/10 P2-STAGE7R1-A2R-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 525--525
-\T1/lmr/m/n/10 strates a repair-loop
- []
-
-
-Underfull \hbox (badness 6078) in paragraph at lines 525--525
-\T1/lmr/m/n/10 pro-to-col for a fixed
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 525--525
-\T1/lmr/m/n/10 evidence-decision
- []
-
-
-Underfull \hbox (badness 2443) in paragraph at lines 525--525
-[]|\T1/lmr/m/n/10 P2-E62, P2-E64, P2-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 525--525
-[]|\T1/lmr/m/n/10 P2-STAGE7E-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 525--525
-\T1/lmr/m/n/10 EVIDENCE-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 525--525
-\T1/lmr/m/n/10 DECISION, P2-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 525--525
-\T1/lmr/m/n/10 STAGE7E-V2-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 525--525
-\T1/lmr/m/n/10 RETENTION,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 525--525
-\T1/lmr/m/n/10 P2-STAGE7E-V3-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 525--525
-\T1/lmr/m/n/10 STATE-RETENTION,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 525--525
-\T1/lmr/m/n/10 P2-STAGE7E-V4-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 525--525
-\T1/lmr/m/n/10 KNOWN-STATE-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 525--525
-\T1/lmr/m/n/10 PROVENANCE, P2-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 525--525
-\T1/lmr/m/n/10 CLAIM-BOUNDARY-
- []
-
-
-Underfull \hbox (badness 1259) in paragraph at lines 525--526
-[]|\T1/lmr/m/n/10 Supported with fixed-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
-\T1/lmr/m/n/10 input/no-tool bound-
- []
-
-
-Underfull \hbox (badness 1194) in paragraph at lines 526--526
-[]|\T1/lmr/m/n/10 Stage 7-next trans-fers
- []
-
-
-Underfull \hbox (badness 6675) in paragraph at lines 526--526
-\T1/lmr/m/n/10 Stage 7e v4 obli-ga-
- []
-
-
-Underfull \hbox (badness 2443) in paragraph at lines 526--526
-[]|\T1/lmr/m/n/10 P2-E72, P2-E74, P2-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 526--526
-[]|\T1/lmr/m/n/10 P2-STAGE7-NEXT-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 526--526
-\T1/lmr/m/n/10 METHOD-PLAN-
- []
-
-
-Underfull \hbox (badness 2608) in paragraph at lines 526--526
-\T1/lmr/m/n/10 LOCAL, P2-STAGE7-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 526--526
-\T1/lmr/m/n/10 NEXT-METHOD-
- []
-
-
-Underfull \hbox (badness 4765) in paragraph at lines 526--527
-[]|\T1/lmr/m/n/10 Supported as nar-row
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 527--527
-[]|\T1/lmr/m/n/10 Full project ini-tial-
- []
-
-
-Underfull \hbox (badness 6268) in paragraph at lines 527--527
-\T1/lmr/m/n/10 iza-tion, full re-search
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 527--527
-\T1/lmr/m/n/10 work-flow, pro-duc-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 527--527
-\T1/lmr/m/n/10 model equiv-a-lence
- []
-
-
-Underfull \hbox (badness 2443) in paragraph at lines 527--527
-[]|\T1/lmr/m/n/10 P2-E33, P2-E63, P2-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 527--527
-[]|\T1/lmr/m/n/10 P2-CLAIM-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 527--527
-\T1/lmr/m/n/10 BOUNDARY-MEMO,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 527--527
-\T1/lmr/m/n/10 P2-STAGE7E-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 527--527
-\T1/lmr/m/n/10 EVIDENCE-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 527--527
-\T1/lmr/m/n/10 DECISION, P2-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 527--527
-\T1/lmr/m/n/10 STAGE7E-V4-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 527--527
-\T1/lmr/m/n/10 KNOWN-STATE-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 527--527
-\T1/lmr/m/n/10 PROVENANCE,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 527--527
-\T1/lmr/m/n/10 P2-STAGE7-NEXT-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 527--527
-\T1/lmr/m/n/10 METHOD-PLAN-
- []
-
-
-Underfull \hbox (badness 3108) in paragraph at lines 527--528
-[]|\T1/lmr/m/n/10 Supported as ex-plicit
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 528--528
-\T1/lmr/m/n/10 tra-tion, declar-a-tive
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 528--528
-\T1/lmr/m/n/10 pro-grams, struc-tured
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 528--528
-\T1/lmr/m/n/10 mem-ory, ver-i-fi-ca-tion,
- []
-
-
-Underfull \hbox (badness 2443) in paragraph at lines 528--528
-[]|\T1/lmr/m/n/10 P2-E05, P2-E06, P2-
- []
-
-
-Underfull \hbox (badness 2443) in paragraph at lines 528--528
-\T1/lmr/m/n/10 P2-E83, P2-E84, P2-
- []
-
-
-Underfull \hbox (badness 2443) in paragraph at lines 528--528
-\T1/lmr/m/n/10 P2-E88, P2-E89, P2-
- []
-
-
-Underfull \hbox (badness 2443) in paragraph at lines 528--528
-\T1/lmr/m/n/10 P2-E93, P2-E94, P2-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 528--528
-[]|\T1/lmr/m/n/10 External source
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 528--528
-\T1/lmr/m/n/10 IDs listed in
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 528--529
-[]|\T1/lmr/m/n/10 Supported as back-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 528--529
-\T1/lmr/m/n/10 ground; con-vert to
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 528--529
-\T1/lmr/m/n/10 publication-style ci-ta-
- []
-
+ignored error: Infinite glue shrinkage found in box being split [15{C:/Users/�
+�崟/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
 ignored error: Infinite glue shrinkage found in box being split [16] [17]
-Overfull \hbox (30.78763pt too wide) in paragraph at lines 562--563
+Overfull \hbox (30.78763pt too wide) in paragraph at lines 566--567
 []\T1/lmr/m/n/10.95 External ref-er-ences are pre-pared in $\T1/lmtt/m/n/10.95 
 research / 06 _ outputs / contract-[]driven-[]harness-[]references .
  []
 
 
-Overfull \hbox (149.44252pt too wide) in paragraph at lines 566--567
+Overfull \hbox (149.44252pt too wide) in paragraph at lines 570--571
 \T1/lmr/m/n/10.95 The Bib-TeX bib-li-og-ra-phy for this work-ing draft is main-
 tained in $\T1/lmtt/m/n/10.95 research / 06 _ outputs / contract-[]driven-[]har
 ness-[]references .
  []
 
-(contract-driven-harness-arxiv.bbl [18]
+(contract-driven-harness-arxiv.bbl
 Underfull \hbox (badness 3646) in paragraph at lines 10--15
 []\T1/lmr/m/n/10.95 Anthropic.  Build-ing ef-fec-tive agents.  []$\T1/lmtt/m/n/
 10.95 https : / / www . anthropic . com / engineering /
  []
 
-
+[18]
 Underfull \hbox (badness 1983) in paragraph at lines 50--54
 []\T1/lmr/m/n/10.95 LangChain.  Lang-graph doc-u-men-ta-tion.  []$\T1/lmtt/m/n/
 10.95 https : / / docs . langchain . com / oss / python /
@@ -1340,7 +523,7 @@ hanged.
 Here is how much of TeX's memory you used:
  9433 strings out of 467871
  149828 string characters out of 5417893
- 578155 words of memory out of 5000000
+ 575156 words of memory out of 5000000
  38046 multiletter control sequences out of 15000+600000
  679193 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1352,7 +535,7 @@ pfb><C:/Users/崔崟/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.
 pfb><C:/Users/崔崟/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.
 pfb><C:/Users/崔崟/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10
 .pfb>
-Output written on contract-driven-harness-arxiv.pdf (20 pages, 270104 bytes).
+Output written on contract-driven-harness-arxiv.pdf (20 pages, 269508 bytes).
 PDF statistics:
  397 PDF objects out of 1000 (max. 8388607)
  116 named destinations out of 1000 (max. 500000)

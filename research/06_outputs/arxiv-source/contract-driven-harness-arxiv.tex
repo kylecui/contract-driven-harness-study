@@ -71,7 +71,7 @@ The distinction is summarized in Table 1.
 
 {\small
 \setlength{\tabcolsep}{3pt}
-\begin{longtable}{p{0.220\linewidth}p{0.220\linewidth}p{0.220\linewidth}p{0.220\linewidth}}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}}
 \toprule
 Work family & Main focus & What it externalizes & What this paper adds \\
 \midrule
@@ -172,7 +172,7 @@ We define a contract-driven harness as a set of explicit control objects around 
 
 {\small
 \setlength{\tabcolsep}{3pt}
-\begin{longtable}{p{0.450\linewidth}p{0.450\linewidth}}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.450\linewidth}>{\raggedright\arraybackslash}p{0.450\linewidth}}
 \toprule
 Object & Role \\
 \midrule
@@ -251,7 +251,7 @@ Table 2 gives a compact reading guide for the core metrics. Detailed thresholds,
 
 {\small
 \setlength{\tabcolsep}{3pt}
-\begin{longtable}{p{0.220\linewidth}p{0.220\linewidth}p{0.220\linewidth}}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.430\linewidth}>{\raggedright\arraybackslash}p{0.270\linewidth}}
 \toprule
 Metric & What it checks & Evaluator type \\
 \midrule
@@ -273,6 +273,8 @@ Metric & What it checks & Evaluator type \\
 \end{longtable}
 }
 
+These metrics evaluate contract adherence rather than open-ended output quality or human preference.
+
 Gap compression is computed only where a nonzero G0 baseline gap exists. If G0 baselines collapse for both models, or if the low-cost model improves more than the strong model and reopens the absolute gap in the opposite direction, the result is reported as mixed, undefined, or negative rather than forced into a compression claim.
 
 Weak-model enablement is reported when the low-cost model reaches a pass threshold under a harness condition after failing or underperforming under weaker conditions.
@@ -287,7 +289,7 @@ Table 3 summarizes the main claim boundary.
 
 {\small
 \setlength{\tabcolsep}{3pt}
-\begin{longtable}{p{0.220\linewidth}p{0.220\linewidth}p{0.220\linewidth}}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}}
 \toprule
 Claim & Evidence & Boundary \\
 \midrule
@@ -309,7 +311,7 @@ Table 4 summarizes the main empirical layers and the claim each layer permits.
 
 {\small
 \setlength{\tabcolsep}{3pt}
-\begin{longtable}{p{0.135\linewidth}p{0.135\linewidth}p{0.135\linewidth}p{0.135\linewidth}p{0.135\linewidth}p{0.135\linewidth}}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.105\linewidth}>{\raggedright\arraybackslash}p{0.125\linewidth}>{\raggedright\arraybackslash}p{0.065\linewidth}>{\raggedright\arraybackslash}p{0.305\linewidth}>{\raggedright\arraybackslash}p{0.155\linewidth}>{\raggedright\arraybackslash}p{0.165\linewidth}}
 \toprule
 Layer & Stage & Runs & Failure -> Repair & Outcome & Allowed claim \\
 \midrule
@@ -484,7 +486,7 @@ This paper should not claim:
 
 {\small
 \setlength{\tabcolsep}{3pt}
-\begin{longtable}{p{0.220\linewidth}p{0.220\linewidth}p{0.220\linewidth}}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}}
 \toprule
 Contribution & Evaluation support & Boundary \\
 \midrule
@@ -506,7 +508,7 @@ Bounded weak-model enablement & Stage 7e v4 and Stage 7-next & Fixed-input, no-t
 
 {\small
 \setlength{\tabcolsep}{3pt}
-\begin{longtable}{p{0.220\linewidth}p{0.220\linewidth}p{0.220\linewidth}p{0.220\linewidth}}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}}
 \toprule
 Paper claim & Evidence IDs & Source IDs & Status \\
 \midrule
@@ -546,6 +548,8 @@ A reviewer can audit the claims in four steps:
 \end{enumerate}
 
 For example, the Stage 7e v4 claim starts from P2-E68, P2-E69, and P2-E70. A reviewer should then inspect the Stage 7e v4 report, macro fixture, validator output, provider event log, and metrics file before treating the claim as supported.
+
+When available, stage reports include the exact command or script path used to regenerate local evaluator outputs. The repository README and method scripts provide the current entry points for local gate reruns and artifact inspection.
 
 The core traceability files are:
 

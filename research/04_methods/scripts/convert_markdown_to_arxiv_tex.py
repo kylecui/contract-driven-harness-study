@@ -65,15 +65,31 @@ def convert_table(lines: list[str]) -> str:
     header = split_table_row(lines[0])
     rows = [split_table_row(line) for line in lines[2:]]
     col_count = len(header)
-    if col_count <= 2:
-        width = 0.45
-    elif col_count <= 4:
-        width = 0.22
-    elif col_count <= 6:
-        width = 0.135
-    else:
-        width = 0.125
-    spec = (f"p{{{width:.3f}\\linewidth}}" * col_count).replace(".000", "")
+    widths_by_header = {
+        ("Layer", "Stage", "Runs", "Failure -> Repair", "Outcome", "Allowed claim"): [
+            0.105,
+            0.125,
+            0.065,
+            0.305,
+            0.155,
+            0.165,
+        ],
+        ("Metric", "What it checks", "Evaluator type"): [0.22, 0.43, 0.27],
+    }
+    widths = widths_by_header.get(tuple(header))
+    if widths is None:
+        if col_count <= 2:
+            widths = [0.45] * col_count
+        elif col_count <= 4:
+            widths = [0.22] * col_count
+        elif col_count <= 6:
+            widths = [0.135] * col_count
+        else:
+            widths = [0.125] * col_count
+    spec = "".join(
+        rf">{{\raggedright\arraybackslash}}p{{{width:.3f}\linewidth}}"
+        for width in widths
+    ).replace(".000", "")
     out = [r"{\small", r"\setlength{\tabcolsep}{3pt}", r"\begin{longtable}{" + spec + "}", r"\toprule"]
     out.append(" & ".join(escape_latex(c) for c in header) + r" \\")
     out.extend([r"\midrule", r"\endfirsthead", r"\toprule"])
@@ -321,7 +337,10 @@ def main() -> None:
         "- `contract-driven-harness-arxiv.tex`\n"
         "- `contract-driven-harness-references.bib`\n\n"
         "Compile with a standard LaTeX + BibTeX workflow, for example `pdflatex`, "
-        "`bibtex`, `pdflatex`, `pdflatex`.\n",
+        "`bibtex`, `pdflatex`, `pdflatex`.\n\n"
+        "The current source package corresponds to paper v3.1. See "
+        "`research/07_reviews/contract-driven-harness-arxiv-v3-1-compile-check.md` "
+        "for the latest PDF size, page count, warning summary, and remaining layout gates.\n",
         encoding="utf-8",
     )
 
