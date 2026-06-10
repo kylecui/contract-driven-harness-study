@@ -65,8 +65,16 @@ def convert_table(lines: list[str]) -> str:
     header = split_table_row(lines[0])
     rows = [split_table_row(line) for line in lines[2:]]
     col_count = len(header)
-    spec = "p{0.22\\linewidth}" + "p{0.22\\linewidth}" * max(0, col_count - 1)
-    out = [r"\begin{longtable}{" + spec + "}", r"\toprule"]
+    if col_count <= 2:
+        width = 0.45
+    elif col_count <= 4:
+        width = 0.22
+    elif col_count <= 6:
+        width = 0.135
+    else:
+        width = 0.125
+    spec = (f"p{{{width:.3f}\\linewidth}}" * col_count).replace(".000", "")
+    out = [r"{\small", r"\setlength{\tabcolsep}{3pt}", r"\begin{longtable}{" + spec + "}", r"\toprule"]
     out.append(" & ".join(escape_latex(c) for c in header) + r" \\")
     out.extend([r"\midrule", r"\endfirsthead", r"\toprule"])
     out.append(" & ".join(escape_latex(c) for c in header) + r" \\")
@@ -74,7 +82,7 @@ def convert_table(lines: list[str]) -> str:
     for row in rows:
         padded = row + [""] * (col_count - len(row))
         out.append(" & ".join(escape_latex(c) for c in padded[:col_count]) + r" \\")
-    out.extend([r"\bottomrule", r"\end{longtable}"])
+    out.extend([r"\bottomrule", r"\end{longtable}", r"}"])
     return "\n".join(out)
 
 
@@ -276,8 +284,10 @@ def main() -> None:
 
     tex = rf"""\documentclass[11pt]{{article}}
 \usepackage[margin=1in]{{geometry}}
+\usepackage{{cmap}}
 \usepackage[T1]{{fontenc}}
 \usepackage[utf8]{{inputenc}}
+\usepackage{{lmodern}}
 \usepackage{{booktabs}}
 \usepackage{{longtable}}
 \usepackage{{array}}
@@ -288,7 +298,7 @@ def main() -> None:
 
 \title{{{escape_latex(title)}}}
 \author{{Contract-Driven Harness Study}}
-\date{{June 9, 2026}}
+\date{{June 10, 2026}}
 
 \begin{{document}}
 \maketitle
@@ -311,8 +321,7 @@ def main() -> None:
         "- `contract-driven-harness-arxiv.tex`\n"
         "- `contract-driven-harness-references.bib`\n\n"
         "Compile with a standard LaTeX + BibTeX workflow, for example `pdflatex`, "
-        "`bibtex`, `pdflatex`, `pdflatex`. Local compilation was not performed if "
-        "a LaTeX engine is unavailable in the workspace.\n",
+        "`bibtex`, `pdflatex`, `pdflatex`.\n",
         encoding="utf-8",
     )
 

@@ -32,7 +32,9 @@ The paper must not claim:
 | Results | Add compact claim/evidence/boundary summary in the main Results section. | Applied in v2 draft pass |
 | Discussion | State that PEtFiSh is the implementation context, not the claim. | Applied in v2 draft pass |
 | Artifact package | Update reproducibility package wording for public repository availability. | Applied in v2 draft pass |
-| Layout | Recompile PDF and review longtable/appendix warnings after revision. | Pending |
+| Layout | Recompile PDF and review longtable/appendix warnings after revision. | v3 compiled; v3.1 table/layout pass pending |
+| V3.1 minimum revision | Compress Table 3, add metric explanation table, add closest-prior-work paragraph, reduce repeated targeted-smoke wording, and regenerate PDF. | Completed in v3.1 |
+| Deferred work register | Preserve citation-format standardization, formal figure conversion, Appendix C placement, and future experiment expansion with explicit resume triggers. | `research/05_analysis/contract-driven-harness-paper-v3-deferred-work-register.md` |
 
 ## Next Experiment Queue
 

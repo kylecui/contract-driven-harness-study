@@ -9,11 +9,9 @@ AI agent reliability is often framed as a property of the underlying language mo
 
 We do not claim that harnessing makes low-cost models generally equivalent to strong models. We show that, for fixed evidence-bound contract-critical tasks, explicit obligations can turn several low-cost-model failures into observable, repairable, and regression-testable engineering objects.
 
-Across structured extraction, project initialization, research workflow, mechanism-atom, and admitted-macro experiments, harnessing improves absolute contract adherence and can compress model gaps when baseline gaps are nonzero and the task is highly constrained. However, gap compression is not universal. The more stable empirical result is weak-model enablement on bounded, contract-critical operations.
+Across structured extraction, project initialization, research workflow, mechanism-atom, and admitted-macro experiments, harnessing improves absolute contract adherence and can compress model gaps when baseline gaps are nonzero and the task is highly constrained. However, gap compression is not universal. In Stage 7e and Stage 7-next, repaired contract obligations let the low-cost model pass targeted smoke runs on fixed evidence-bound macros.
 
-In a Stage 7e repair loop, successive explicit contracts repaired low-cost-model failures in decision trace retention, stage-gate retention, unknown-state preservation, and known-state provenance, culminating in 4/4 low-cost-model passes on a fixed evidence-bound decision macro. A neighboring Stage 7-next method-plan macro reused these obligations and also passed 4/4 low-cost-model runs. These results support a mechanism-first methodology for agent harness evaluation: broad workflows should be decomposed into testable mechanisms, locally validated against golden and known-bad cases, and admitted to macro composition only when their obligations are explicit.
-
-The current evidence does not establish production readiness or full open-ended workflow reliability. It supports a narrower claim: contract-driven harnesses can raise the usable floor of low-cost models for bounded productivity operations whose obligations can be stated, tested, and repaired.
+These results support a mechanism-first methodology for agent harness evaluation: decompose broad workflows into testable mechanisms, admit only mechanisms with golden/known-bad/local-gate support, and expand macro scope only when carried obligations are explicit. The evidence supports bounded weak-model enablement, not production readiness or open-ended workflow reliability.
 
 ## 1. Introduction
 
@@ -29,9 +27,9 @@ The initial thesis of this project was model capability gap compression: a stabl
 
 We therefore moved from workflow-first evaluation to mechanism-first evaluation. A mechanism atom is a fixed-input, deterministic, contract-bound operation with one primary mechanism, one dominant failure mode, a golden output, a known-bad output, and a composition interface. Mechanism atoms let us ask smaller questions: Does an explicit evidence bundle improve claim grounding? Does a memory slice prevent state hallucination? Does a stage gate prevent premature recommendation? Does a trace requirement make rejected options auditable? Passing atoms do not prove that a whole workflow is solved, but they make workflow composition interpretable.
 
-The strongest evidence in this study comes from the repair loop created after broad workflow tests exposed unstable behavior. In Stage 7e, we composed a narrow evidence-bound decision macro from state inventory, evidence grounding, evidence typing, traceable decision, and stage-gated synthesis mechanisms. The first version showed that a low-cost model could pass under one harness arm but still lose decision-trace and stage-gate obligations under another. Rather than broadening the benchmark, we isolated the miss and revised the contract. Stage 7e v2 repaired trace and gate retention, but exposed unknown-state omissions. Stage 7e v3 repaired unknown-state retention, but exposed known-state provenance compression. Stage 7e v4 made known-state provenance explicit and reached 4/4 low-cost-model passes after retry.
+The strongest evidence in this study comes from the repair loop created after broad workflow tests exposed unstable behavior. In Stage 7e, we composed a narrow evidence-bound decision macro from state inventory, evidence grounding, evidence typing, traceable decision, and stage-gated synthesis mechanisms. The first version showed that a low-cost model could pass under one harness arm but still lose decision-trace and stage-gate obligations under another. Rather than broadening the benchmark, we isolated the miss and revised the contract. Stage 7e v2 repaired trace and gate retention, but exposed unknown-state omissions. Stage 7e v3 repaired unknown-state retention, but exposed known-state provenance compression. Stage 7e v4 made known-state provenance explicit and passed 4/4 targeted smoke runs after retry.
 
-We then tested whether this was merely a one-fixture patch. Stage 7-next reused the Stage 7e v4 obligations in a neighboring evidence-bound method-plan update macro, adding one new stressor: the output had to select the next admitted macro, list admission criteria, preserve local and real-model gates, and declare non-claims. The low-cost model passed 4/4 SiliconFlow runs under G8/G9, with all runs scoring 1.000 on task success and the strict primary macro metric. This does not establish open-ended workflow reliability. It does show that a repaired obligation set can transfer to a closely related bounded macro.
+We then tested whether this was merely a one-fixture patch. Stage 7-next reused the Stage 7e v4 obligations in a neighboring evidence-bound method-plan update macro, adding one new stressor: the output had to select the next admitted macro, list admission criteria, preserve local and real-model gates, and declare non-claims. The low-cost model passed 4/4 targeted smoke runs under G8/G9, with all runs scoring 1.000 on task success and the strict primary macro metric. This does not establish open-ended workflow reliability. It does show that a repaired obligation set can transfer to a closely related bounded macro.
 
 These findings motivate a narrower and stronger claim than the original gap-compression thesis. Contract-driven harnesses do not make weak models generally equivalent to strong models, and they do not guarantee gap compression. They can, however, raise the usable floor of low-cost models on bounded, contract-critical operations. More importantly, they turn some failures into engineering objects: a missing obligation can be named, added to the contract, captured as a known-bad case, checked locally, rerun against a model, and carried into the evidence ledger and claim boundary.
 
@@ -43,7 +41,7 @@ This paper makes five contributions:
 2. We propose mechanism atoms as the unit of harness evaluation.
 3. We report a multi-stage empirical evaluation across task slices, mechanism atoms, and admitted macros.
 4. We introduce a repair-loop protocol for harness development.
-5. We provide bounded evidence that low-cost models can become reliable on fixed, contract-critical macros.
+5. We provide bounded evidence that low-cost models can reach pass-level contract adherence on fixed, evidence-bound, contract-critical macros.
 
 ## 2. Related Work
 
@@ -95,7 +93,11 @@ Agent evaluation and safety work highlights the fragility of agent claims. OAgen
 
 Capability ecosystems such as MCP servers, agent skills, registries, pack systems, and PEtFiSh-style skill markets represent another route toward harness engineering. They externalize reusable procedures, tool access, installation state, platform routing, quality gates, and capability discovery. In PEtFiSh specifically, packs, skills, MCP servers, installers, trigger evaluators, quality gates, and context plugins make the system a useful experimental setting for studying harness design as an engineering object. Local PEtFiSh-specific evidence is preserved in Appendix C and the reproducibility package.
 
+PEtFiSh is the implementation context, not the transferable claim. The claim concerns a contract stack and repair-loop protocol: task specs, bounded memory, evidence bundles, output contracts, workflow gates, trace logs, validators, known-bad cases, and claim-boundary updates.
+
 The gap this paper addresses is mechanism-level evaluation: which explicit obligations actually let a low-cost model complete bounded contract-critical operations, and how should a harness be repaired when those obligations fail?
+
+The closest prior lines are declarative LM programs, guardrail or validator systems, and agent specification languages. They externalize structure, interfaces, or runtime checks. Our contribution is narrower but different: we treat each missing reliability obligation as an empirical repair target, require golden and known-bad fixtures before admission, and restrict macro claims to obligations that survive composition. The unit of evaluation is therefore not the workflow graph or the schema alone, but the obligation that must remain auditable across the harness.
 
 ## 3. Methods
 
@@ -108,6 +110,27 @@ This study evaluates whether explicit agent harness contracts can make productiv
 3. admitted macros, which compose only mechanisms that have passed local gates and targeted model checks.
 
 This design is intentionally conservative. Broad workflow results can motivate failure analysis, but they do not by themselves justify claims about a general harness methodology. A workflow can enter the main claim only when its component mechanisms, local evaluators, known-bad cases, and cross-step obligations are explicit.
+
+The experimental path therefore moves from broad failures toward admitted composition rather than from one benchmark score to a larger benchmark score:
+
+```text
+Task slices
+  |- structured extraction
+  |- project initialization
+  `- research workflow
+        -> failure analysis
+Mechanism atoms
+  |- Stage 6
+  |- Stage 7r
+  `- Stage 7r.1
+        -> admission gate
+Admitted macros
+  |- Stage 7p / 7p v2
+  |- Stage 7e v1-v4
+  `- Stage 7-next
+```
+
+This map is the method in miniature: broad tasks expose unstable behavior, mechanism atoms isolate the obligation, local gates reject known-bad outputs, and only then can a macro carry the obligation forward.
 
 ### 3.2 Harness Model
 
@@ -124,6 +147,8 @@ We define a contract-driven harness as a set of explicit control objects around 
 | `ValidatorGate` | Deterministic local checks that distinguish passing outputs from known-bad outputs. |
 
 The key methodological assumption is that reliability should be moved from implicit model judgment into explicit, inspectable contracts whenever a task can be bounded. The harness is evaluated as a reliability-engineering layer, not as a claim that low-cost models become generally equivalent to strong models.
+
+The object of study is not an improved prompt. It is the lifecycle by which a missing obligation becomes a contract field, a known-bad fixture, a deterministic gate, and an admitted macro requirement.
 
 ### 3.3 Harness Arms And Models
 
@@ -166,11 +191,25 @@ The main methodological contribution is the repair-loop protocol:
 6. execute a targeted real-model slice;
 7. update the evidence ledger, claim boundary, and backlog before expanding scope.
 
-Stage 7e illustrates this protocol. Stage 7e v1 found a low-cost-model G9 failure in stage-gate and decision-trace retention. Stage 7e v2 repaired trace/gate retention but exposed unknown-state omissions. Stage 7e v3 repaired unknown-state retention but exposed known-state provenance compression. Stage 7e v4 made known-state provenance explicit and reached 4/4 low-cost-model passes after retry. Stage 7-next then reused those obligations in a method-plan update macro and passed 4/4 low-cost-model runs without provider errors.
+Stage 7e illustrates this protocol. Stage 7e v1 found a low-cost-model G9 failure in stage-gate and decision-trace retention. Stage 7e v2 repaired trace/gate retention but exposed unknown-state omissions. Stage 7e v3 repaired unknown-state retention but exposed known-state provenance compression. Stage 7e v4 made known-state provenance explicit and passed 4/4 targeted smoke runs after retry. Stage 7-next then reused those obligations in a method-plan update macro and passed 4/4 targeted smoke runs without provider errors.
 
 ### 3.7 Metrics And Claim Rules
 
 Each evaluated run emits metrics including `task_success`, `schema_validity`, `citation_grounding`, `state_accuracy`, `evidence_type_accuracy`, `stage_completion`, `trace_completeness`, `context_relevance`, and `atom_primary_metric`.
+
+Table 2 gives a compact reading guide for the core metrics. Detailed thresholds, fixture-specific checks, and evaluator outputs are provided in the reproducibility package.
+
+| Metric | What it checks | Evaluator type |
+|---|---|---|
+| `schema_validity` | Required fields and types are present | deterministic schema/field check |
+| `citation_grounding` | Claims carry admissible evidence IDs | deterministic evidence-ID check |
+| `state_accuracy` | Known and unknown state are preserved | fixture-specific state check |
+| `evidence_type_accuracy` | Evidence type labels remain correct | evidence-type check |
+| `stage_completion` | Required stage gates are preserved | stage-gate check |
+| `trace_completeness` | Required decision and rejection traces are present | structured trace check |
+| `context_relevance` | Required or excluded context obligations are respected | context-obligation check |
+| `atom_primary_metric` | The atom-specific dominant obligation is satisfied | atom evaluator |
+| `task_success` | The declared task contract passes | composite evaluator |
 
 Gap compression is computed only where a nonzero G0 baseline gap exists. If G0 baselines collapse for both models, or if the low-cost model improves more than the strong model and reopens the absolute gap in the opposite direction, the result is reported as mixed, undefined, or negative rather than forced into a compression claim.
 
@@ -182,7 +221,7 @@ Weak-model enablement is reported when the low-cost model reaches a pass thresho
 
 The results support a bounded version of the original hypothesis. Contract-rich harnessing improves absolute contract adherence across several productivity-task settings, and it can compress cross-model gaps in highly constrained tasks. However, gap compression is not universal. The stronger and more stable result is weak-model enablement on bounded, contract-critical operations: when task obligations are made explicit and evaluated deterministically, the low-cost model can reach pass-level behavior on tasks where weaker harnessing or broader prompts were unstable.
 
-Table 2 summarizes the main claim boundary.
+Table 3 summarizes the main claim boundary.
 
 | Claim | Evidence | Boundary |
 |---|---|---|
@@ -191,6 +230,18 @@ Table 2 summarizes the main claim boundary.
 | Weak-model enablement | Stage 6, Stage 7r.1, Stage 7e v4, Stage 7-next | bounded contract-critical operations |
 | Full workflow reliability | not supported | remains a non-claim |
 | Production readiness | not supported | remains a non-claim |
+
+Table 4 summarizes the main empirical layers and the claim each layer permits.
+
+| Layer | Stage | Runs | Failure -> Repair | Outcome | Allowed claim |
+|---|---:|---:|---|---|---|
+| Task slice | structured extraction | 24 | schema/tool gaps -> G9 packet | key gaps to 0 | conditional gap compression |
+| Task slice | project init | 12 | mixed metric movement -> G9 | mixed | no universal compression |
+| Task slice | research workflow | 12 | zero or mixed baseline gaps -> G9 | mixed/undefined | absolute adherence only |
+| Atom | Stage 6 | 48 | mechanism failures -> atom contracts | low-cost lift | weak-model enablement |
+| Macro | Stage 7p/v2 | 12 | stale-context loss -> carried obligations | repaired in v2 | composition retention |
+| Macro | Stage 7e | 6 + repairs | trace and state gaps -> explicit obligations | targeted smoke passed | fixed macro only |
+| Macro | Stage 7-next | 4 | neighboring transfer -> reused obligations | targeted smoke passed | narrow transfer |
 
 ### 4.2 Task Slices: Strong Absolute Lift, Conditional Gap Compression
 
@@ -236,11 +287,11 @@ This supports the mechanism-first repair hypothesis: low-cost-model failures on 
 
 Stage 7e composed a narrow evidence-bound decision macro from state inventory, evidence grounding, evidence-type separation, traceable decision, and stage-gated synthesis mechanisms. The first Stage 7e smoke completed 6/6 runs. Strong_model G8/G9 and low-cost-model G8 passed with task_success=1.000 and atom_primary_metric=1.000. G0 failed for both model tiers. Low-cost-model G9 partially failed with task_success=0.714 because it missed complete decision-trace and stage-gate retention.
 
-Stage 7e v2 added explicit retention requirements for decision_trace, stage_gate, and carried_obligations. The targeted low-cost-model G8/G9 smoke completed 4/4 runs, and all 4/4 achieved trace_completeness=1.000 and stage_completion=1.000. However, only 1/4 runs fully passed because the remaining runs omitted Git branch, CI status, or network/API approval unknowns from state_inventory.
+Stage 7e v2 added explicit retention requirements for decision_trace, stage_gate, and carried_obligations. The targeted low-cost-model G8/G9 smoke completed 4/4 targeted smoke runs, and all four targeted runs achieved trace_completeness=1.000 and stage_completion=1.000. However, only 1/4 runs fully passed because the remaining runs omitted Git branch, CI status, or network/API approval unknowns from state_inventory.
 
-Stage 7e v3 targeted unknown-state retention. The low-cost-model smoke completed 4/4 runs. All 4/4 preserved the required Git/CI/network unknown-state fields and forbidden-inference fields. Full strict macro pass improved to 3/4. The remaining failure was narrower: one G8 run compressed known-state provenance into generic labels.
+Stage 7e v3 targeted unknown-state retention. The four-run targeted smoke preserved all required Git/CI/network unknown-state fields and forbidden-inference fields. Full strict macro pass improved to 3/4. The remaining failure was narrower: one G8 run compressed known-state provenance into generic labels.
 
-Stage 7e v4 made known-state provenance explicit. It required `state_inventory.known_state[]` entries with `state_id`, `fact`, and `evidence_ids`. After retrying one provider timeout and one truncated-output retry, the final evaluation completed 4/4 runs, and all 4/4 passed with task_success=1.000 and atom_primary_metric=1.000. State accuracy, citation grounding, evidence type accuracy, trace completeness, and stage completion all reached 1.000.
+Stage 7e v4 made known-state provenance explicit. It required `state_inventory.known_state[]` entries with `state_id`, `fact`, and `evidence_ids`. After retrying one provider timeout and one truncated-output retry, all four targeted runs passed with task_success=1.000 and atom_primary_metric=1.000. State accuracy, citation grounding, evidence type accuracy, trace completeness, and stage completion all reached 1.000.
 
 This sequence is the clearest evidence for the repair-loop protocol. The low-cost model did not become generally stronger. The harness made the missing obligations explicit, then verified that the model could satisfy them under a fixed macro contract.
 
@@ -256,7 +307,7 @@ The real smoke used the low-cost model only:
 Qwen/Qwen3-8B x G8/G9 x 2 repetitions = 4 runs
 ```
 
-All 4/4 runs executed without provider errors, timeout, or truncated-output retry. All 4/4 runs passed with task_success=1.000, atom_primary_metric=1.000, schema_validity=1.000, citation_grounding=1.000, state_accuracy=1.000, evidence_type_accuracy=1.000, trace_completeness=1.000, stage_completion=1.000, and context_relevance=1.000.
+All four targeted runs executed without provider errors, timeout, or truncated-output retry. The same slice passed with task_success=1.000, atom_primary_metric=1.000, schema_validity=1.000, citation_grounding=1.000, state_accuracy=1.000, evidence_type_accuracy=1.000, trace_completeness=1.000, stage_completion=1.000, and context_relevance=1.000.
 
 This supports a narrow transfer claim: the Stage 7e v4 obligations can be reused to make the low-cost model complete a closely related fixed method-plan macro with one new explicit stressor.
 
@@ -298,11 +349,13 @@ Full workflows introduce additional problems that the current macros do not test
 
 The evaluation pipeline relies on deterministic evaluators, golden outputs, and known-bad outputs. This is a strength because it makes pass/fail decisions auditable and regression-testable. It also prevents the benchmark from becoming a subjective preference test. But deterministic evaluation narrows what can be claimed. The metrics capture contract adherence, not prose quality, human usefulness, creative insight, or open-ended judgment.
 
-The evaluator itself is also an engineering artifact and can overfit. A known-bad suite only covers the failure modes that were anticipated or observed. A harness can therefore pass the current deterministic gate while still failing under semantically equivalent field variants, evidence perturbations, or new tool-state conditions. The next evaluation layer should include perturbation suites before broader workflow claims.
+The evaluator itself is also an engineering artifact and can overfit. A known-bad suite only covers the failure modes that were anticipated or observed. A harness can therefore pass the current deterministic gate while still failing under semantically equivalent field variants, evidence perturbations, or new tool-state conditions. The next evaluation layer should include perturbation suites before broader workflow claims, including field-name perturbations, evidence-order perturbations, semantically equivalent unknown-state variants, distractor evidence, and tool-state changes.
 
-Several later experiments are targeted smoke tests with small run counts. Stage 7e v4 used four low-cost-model runs after retry. Stage 7-next used four low-cost-model runs. These are acceptable for mechanism repair but not for population-level performance estimation.
+Several later experiments are targeted smoke tests with small run counts. Stage 7e v4 used four targeted smoke runs after retry. Stage 7-next used four targeted smoke runs. These are acceptable for mechanism repair but not for population-level performance estimation.
 
-Provider behavior also affected experiments. Some SiliconFlow runs timed out, and Stage 7e v4 required retrying one timed-out run and one truncated-output retry before completion. Stage 7-next did not require retry and completed 4/4 cleanly. Runtime deviations should be reported as validity threats rather than hidden.
+Provider behavior also affected experiments. Some SiliconFlow runs timed out, and Stage 7e v4 required retrying one timed-out run and one truncated-output retry before completion. Stage 7-next did not require retry and completed 4/4 targeted smoke runs cleanly. Runtime deviations should be reported as validity threats rather than hidden.
+
+The present evidence uses SiliconFlow-backed runs and should be replicated across providers and model families before making provider-independent claims. This paper therefore does not make a provider-independent reliability claim.
 
 ### 5.6 PEtFiSh Specificity And Harness Cost
 
@@ -314,7 +367,7 @@ Contract-driven harnessing also adds overhead. It requires fixture design, schem
 
 ### 5.7 Future Work
 
-The next empirical step is not to claim full project initialization or full research workflow readiness. It is to build the next admitted macro only after identifying the required mechanisms and cross-step obligations. Promising directions include citation-bound synthesis, state-mutating project macros, live research workflow slices, cross-provider replication, and perturbation suites.
+The next empirical step is not to claim full project initialization or full research workflow readiness. It is to build the next admitted macro only after identifying the required mechanisms and cross-step obligations. Promising directions include citation-bound synthesis, state-mutating project macros, live research workflow slices, cross-provider replication, and perturbation suites for field names, evidence order, unknown-state variants, distractor evidence, and tool-state changes.
 
 ## 6. Conclusion
 
@@ -366,6 +419,15 @@ This paper should not claim:
 This draft is supported by a public reproducibility package in the project repository and by local artifacts under `research/` \cite{P2_LOCAL_ARTIFACTS}. The package includes the source index, evidence ledger, mechanism-atom definitions, macro fixtures, prompt manifests, provider event logs, model-output artifacts, deterministic evaluator outputs, metric summaries, stage reports, citation audit reports, and citation metadata.
 
 Repository: `https://github.com/kylecui/contract-driven-harness-study`.
+
+A reviewer can audit the claims in four steps:
+
+1. Read Appendix C to map each paper claim to evidence IDs.
+2. Open `research/03_evidence/evidence-ledger.jsonl` and locate those evidence IDs.
+3. Inspect the referenced stage report, metric summary, fixture, validator output, provider event log, and model-output artifact.
+4. Re-run the deterministic local gate for the corresponding fixture when a fixture/evaluator pair is provided.
+
+For example, the Stage 7e v4 claim starts from P2-E68, P2-E69, and P2-E70. A reviewer should then inspect the Stage 7e v4 report, macro fixture, validator output, provider event log, and metrics file before treating the claim as supported.
 
 The core traceability files are:
 

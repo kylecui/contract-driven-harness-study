@@ -96,6 +96,12 @@
 - [x] Apply first v2 paper revision pass: sharpen bounded claims, add related-work comparison, formalize admission criteria, add result-boundary summary, clarify PEtFiSh scope, and update public artifact wording.
 - [x] Regenerate arXiv LaTeX/PDF from the v2 draft and rerun compile/layout checks.
 - [x] Run public artifact safety scan after v2 revision.
+- [x] Generate v3 PDF with compressed abstract, experiment map, main result table, reviewer audit path, font/text-extraction improvements, and provider-independent non-claim wording.
+- [x] V3.1 minimum revision: compress Table 3, add metric explanation table, add closest-prior-work paragraph, reduce repeated targeted-smoke wording, regenerate PDF, and rerun compile checks.
+- [x] Record v3 deferred but still required publication work in `research/05_analysis/contract-driven-harness-paper-v3-deferred-work-register.md`.
+- [ ] Deferred citation-format standardization before any release-ready arXiv/venue package.
+- [ ] Deferred formal Figure 1 conversion for the experiment map before final venue/arXiv layout.
+- [ ] Deferred Appendix C placement/table redesign decision during human PDF layout review.
 - [ ] Prepare G9 object ablation suite: schema-only, evidence-only, trace-only, gate-only, and full contract.
 - [ ] Prepare Stage 7e/Stage 7-next fixture perturbation suite.
 - [ ] Design controlled state-mutating macro before any full workflow expansion.
