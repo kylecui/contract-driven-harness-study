@@ -21,39 +21,39 @@
 
 \begin{abstract}
 
-AI agent reliability is often framed as a property of the underlying language model: stronger models are expected to plan better, follow constraints more reliably, and recover from ambiguous context more effectively. This framing is incomplete for productivity tasks that can be bounded by explicit inputs, evidence, state, workflow stages, and output contracts. We study contract-driven harness engineering: a reliability layer that externalizes task obligations into task specifications, bounded memory slices, evidence bundles, output contracts, validation gates, and trace requirements.
+Many agent failures in productivity tasks are treated as model failures. In bounded tasks, part of the failure is more concrete. The model was not given an inspectable obligation to preserve evidence, state, stage gates, or output fields. We study contract-driven harness engineering: a reliability layer that represents those obligations as task specifications, bounded memory slices, evidence bundles, output contracts, validation gates, and trace requirements.
 
-We do not claim that harnessing makes low-cost models generally equivalent to strong models. We show that, for fixed evidence-bound contract-critical tasks, explicit obligations can turn several low-cost-model failures into observable, repairable, and regression-testable engineering objects.
+The study is deliberately narrow. It does not test whether harnessing makes low-cost models generally equivalent to strong models. It asks whether explicit obligations can turn selected low-cost-model failures into observable, repairable, and regression-testable engineering objects.
 
-Across structured extraction, project initialization, research workflow, mechanism-atom, and admitted-macro experiments, harnessing improves absolute contract adherence and can compress model gaps when baseline gaps are nonzero and the task is highly constrained. However, gap compression is not universal. In Stage 7e and Stage 7-next, repaired contract obligations let the low-cost model pass targeted smoke runs on fixed evidence-bound macros.
+Across structured extraction, project initialization, research workflow, mechanism-atom, and admitted-macro experiments, harnessing improves absolute contract adherence. It can also compress model gaps when baseline gaps are nonzero and the task is highly constrained. Gap compression is not universal. In Stage 7e and Stage 7-next, repaired contract obligations let the low-cost model pass targeted smoke runs on fixed evidence-bound macros.
 
-These results support a mechanism-first methodology for agent harness evaluation: decompose broad workflows into testable mechanisms, admit only mechanisms with golden/known-bad/local-gate support, and expand macro scope only when carried obligations are explicit. The evidence supports bounded weak-model enablement, not production readiness or open-ended workflow reliability.
+The method that follows is mechanism-first: decompose broad workflows into testable mechanisms, admit only mechanisms with golden/known-bad/local-gate support, and expand macro scope only when carried obligations are explicit. The evidence supports bounded weak-model enablement. It does not support production readiness or open-ended workflow reliability.
 
 \end{abstract}
 
 \section{Introduction}
 
-AI agent systems are increasingly asked to perform productivity work: initialize projects, extract structured information, synthesize evidence, prepare plans, update documents, and coordinate multi-step workflows. In these settings, reliability is often treated as a direct consequence of model capability. If an agent fails to preserve constraints, cite evidence, follow stages, or avoid stale context, the usual explanation is that the underlying model is not strong enough.
+Agent systems are now used for ordinary productivity work: initializing projects, extracting structured information, synthesizing evidence, preparing plans, updating documents, and coordinating multi-step workflows. In these settings, reliability is often attributed directly to model capability. If an agent loses a constraint, cites no evidence, skips a stage, or reuses stale context, the common explanation is that the underlying model is not strong enough.
 
-That explanation is partly true, but incomplete. Many productivity tasks are not open-ended intelligence tests. They contain obligations that can be stated explicitly: which evidence may be used, which state is known or unknown, which actions are blocked, which fields must be present, which claims require citations, and which stage gate prevents a final recommendation. When these obligations remain implicit, the model must infer and retain them through free generation. When they are externalized into contracts, some of the burden shifts from model intelligence to system design.
+That explanation is sometimes correct, but it misses a system-design problem. Many productivity tasks contain obligations that can be stated before generation starts: which evidence may be used, which state is known or unknown, which actions are blocked, which fields must be present, which claims require citations, and which stage gate prevents a final recommendation. If those obligations stay implicit, the model must infer and retain them while generating. If they are represented as contracts, part of the reliability burden moves from the model into the surrounding system.
 
-This paper studies that shift. We call the approach contract-driven harness engineering: the use of explicit task specifications, bounded memory, evidence bundles, output contracts, workflow gates, validators, and trace requirements to constrain agent behavior. The central question is not whether low-cost models are generally equivalent to strong models. They are not. The question is which parts of agent reliability can be made less dependent on unconstrained model behavior by turning task obligations into inspectable and testable control objects.
+We call this approach contract-driven harness engineering. It uses task specifications, bounded memory, evidence bundles, output contracts, workflow gates, validators, and trace requirements to constrain agent behavior. Low-cost models are not generally equivalent to strong models. The useful question is smaller: which parts of agent reliability become less dependent on unconstrained generation once task obligations are made inspectable?
 
-The paper separates three problems that are often collapsed in agent evaluation. Model capability is the underlying model's ability to reason, follow instructions, and recover from ambiguity. Harness specification is the system's ability to state task obligations, admissible evidence, known and unknown state, output structure, and blocked actions. Workflow composition is the ability to preserve those obligations across multiple steps, tools, and state transitions. Our evidence is strongest for harness specification and bounded composition, not for open-ended workflow autonomy.
+The study separates three problems that are often collapsed in agent evaluation. Model capability is the model's ability to reason, follow instructions, and recover from ambiguity. Harness specification is the system's ability to state task obligations, admissible evidence, known and unknown state, output structure, and blocked actions. Workflow composition is the ability to preserve those obligations across steps, tools, and state transitions. The current evidence covers harness specification and bounded composition. It does not cover open-ended workflow autonomy.
 
-The initial thesis of this project was model capability gap compression: a stable harness may reduce the performance gap between strong and low-cost models. Our results support this thesis only under specific conditions. In highly structured extraction tasks, stronger harnessing compressed measured nonzero baseline gaps. In broader project-initialization and research-workflow slices, harnessing improved absolute contract adherence but produced mixed or undefined gap movement. These broader slices revealed a methodological problem: a workflow-level task can hide many mechanisms at once, making it difficult to know whether a result reflects schema following, state retention, evidence grounding, stage discipline, trace completeness, or some interaction among them.
+The project began with a gap-compression hypothesis: a stable harness may reduce the measured gap between strong and low-cost models. The results support that hypothesis only under specific conditions. In highly structured extraction tasks, stronger harnessing compressed measured nonzero baseline gaps. In broader project-initialization and research-workflow slices, harnessing improved absolute contract adherence but produced mixed or undefined gap movement. Those broader slices exposed a measurement problem. A workflow-level task can hide several mechanisms at once: schema following, state retention, evidence grounding, stage discipline, and trace completeness.
 
-We therefore moved from workflow-first evaluation to mechanism-first evaluation. A mechanism atom is a fixed-input, deterministic, contract-bound operation with one primary mechanism, one dominant failure mode, a golden output, a known-bad output, and a composition interface. Mechanism atoms let us ask smaller questions: Does an explicit evidence bundle improve claim grounding? Does a memory slice prevent state hallucination? Does a stage gate prevent premature recommendation? Does a trace requirement make rejected options auditable? Passing atoms do not prove that a whole workflow is solved, but they make workflow composition interpretable.
+We therefore moved from workflow-first evaluation to mechanism-first evaluation. A mechanism atom is a fixed-input, deterministic, contract-bound operation with one primary mechanism, one dominant failure mode, a golden output, a known-bad output, and a composition interface. This gives us smaller questions. Does an explicit evidence bundle improve claim grounding? Does a memory slice prevent state hallucination? Does a stage gate prevent premature recommendation? Does a trace requirement make rejected options auditable? Passing atoms do not prove that a whole workflow is solved, but they make later composition easier to interpret.
 
-The strongest evidence in this study comes from the repair loop created after broad workflow tests exposed unstable behavior. In Stage 7e, we composed a narrow evidence-bound decision macro from state inventory, evidence grounding, evidence typing, traceable decision, and stage-gated synthesis mechanisms. The first version showed that a low-cost model could pass under one harness arm but still lose decision-trace and stage-gate obligations under another. Rather than broadening the benchmark, we isolated the miss and revised the contract. Stage 7e v2 repaired trace and gate retention, but exposed unknown-state omissions. Stage 7e v3 repaired unknown-state retention, but exposed known-state provenance compression. Stage 7e v4 made known-state provenance explicit and passed 4/4 targeted smoke runs after retry.
+The strongest evidence in this study comes from the repair loop created after broad workflow tests exposed unstable behavior. In Stage 7e, we composed a narrow evidence-bound decision macro from state inventory, evidence grounding, evidence typing, traceable decision, and stage-gated synthesis mechanisms. The first version showed that a low-cost model could pass under one harness arm but still lose decision-trace and stage-gate obligations under another. We isolated the miss and revised the contract. Stage 7e v2 repaired trace and gate retention, but exposed unknown-state omissions. Stage 7e v3 repaired unknown-state retention, but exposed known-state provenance compression. Stage 7e v4 made known-state provenance explicit and passed 4/4 targeted smoke runs after retry.
 
-We then tested whether this was merely a one-fixture patch. Stage 7-next reused the Stage 7e v4 obligations in a neighboring evidence-bound method-plan update macro, adding one new stressor: the output had to select the next admitted macro, list admission criteria, preserve local and real-model gates, and declare non-claims. The low-cost model passed 4/4 targeted smoke runs under G8/G9, with all runs scoring 1.000 on task success and the strict primary macro metric. This does not establish open-ended workflow reliability. It does show that a repaired obligation set can transfer to a closely related bounded macro.
+We then checked whether this was only a one-fixture patch. Stage 7-next reused the Stage 7e v4 obligations in a neighboring evidence-bound method-plan update macro. The output had to select the next admitted macro, list admission criteria, preserve local and real-model gates, and declare non-claims. The low-cost model passed 4/4 targeted smoke runs under G8/G9, with all runs scoring 1.000 on task success and the strict primary macro metric. This is narrow evidence, but it shows that a repaired obligation set can transfer to a closely related bounded macro.
 
-These findings motivate a narrower and stronger claim than the original gap-compression thesis. Contract-driven harnesses do not make weak models generally equivalent to strong models, and they do not guarantee gap compression. They can, however, raise the usable floor of low-cost models on bounded, contract-critical operations. More importantly, they turn some failures into engineering objects: a missing obligation can be named, added to the contract, captured as a known-bad case, checked locally, rerun against a model, and carried into the evidence ledger and claim boundary.
+The resulting claim is narrower than the original gap-compression thesis. Contract-driven harnesses do not make weak models generally equivalent to strong models, and they do not guarantee gap compression. They can raise the usable floor of low-cost models on bounded, contract-critical operations. They also make some failures easier to repair: a missing obligation can be named, added to the contract, captured as a known-bad case, checked locally, rerun against a model, and carried into the evidence ledger and claim boundary.
 
 \subsection{Contributions}
 
-This paper makes five contributions:
+The paper makes five contributions:
 
 \begin{enumerate}
 \item We define contract-driven harness engineering as an explicit reliability layer for agent tasks.
@@ -65,7 +65,7 @@ This paper makes five contributions:
 
 \section{Related Work}
 
-This work sits between agent orchestration, declarative LM programming, structured output constraints, retrieval and tool augmentation, memory systems, safety verification, and skill or capability ecosystems. The relevant prior work is not a single line of papers. It is a convergence across systems that move reliability obligations out of a model's implicit free-form generation and into explicit runtime, specification, tool, memory, validation, and evaluation layers.
+The relevant prior work spans agent orchestration, declarative LM programming, structured output constraints, retrieval and tool augmentation, memory systems, safety verification, and skill ecosystems. These lines of work share a practical move. They take obligations that would otherwise sit inside free-form model generation and place them in runtime, specification, tool, memory, validation, or evaluation layers.
 
 The distinction is summarized in Table 1.
 
@@ -93,9 +93,9 @@ Safety and verification & policy compliance and assurance & constraints, static 
 
 \subsection{Agent Workflows And Orchestration}
 
-Recent agent engineering guidance distinguishes between fully autonomous agents and workflows whose control paths are explicitly defined. Anthropic's discussion of effective agents is important for this distinction: workflows are appropriate when tasks can be decomposed into predictable steps, while agents are reserved for cases that require open-ended model autonomy. LangGraph, AutoGen, Semantic Kernel, and related orchestration frameworks make a similar engineering move by exposing execution state, graph structure, persistence, human-in-the-loop intervention, tool calls, and observability as system concerns rather than leaving them solely inside a prompt. \cite{P2_EXT_ANTHROPIC,P2_EXT_LANGGRAPH,P2_EXT_AUTOGEN,P2_EXT_SEMANTIC_KERNEL}
+Recent agent engineering guidance distinguishes between fully autonomous agents and workflows whose control paths are explicitly defined. Anthropic's discussion of effective agents is useful here: workflows fit tasks that can be decomposed into predictable steps, while agents fit cases that require open-ended model autonomy. LangGraph, AutoGen, Semantic Kernel, and related orchestration frameworks make a similar engineering move. They expose execution state, graph structure, persistence, human-in-the-loop intervention, tool calls, and observability as system concerns rather than leaving them solely inside a prompt. \cite{P2_EXT_ANTHROPIC,P2_EXT_LANGGRAPH,P2_EXT_AUTOGEN,P2_EXT_SEMANTIC_KERNEL}
 
-These systems solve an important class of production problems: they make execution durable, inspectable, and easier to integrate with tools and humans. However, orchestration frameworks alone do not answer the evaluation question addressed in this paper. A workflow graph can still contain under-specified obligations. It can route steps correctly while losing evidence provenance, collapsing unknown state, skipping stage gates, or producing an ungrounded final recommendation.
+These systems make execution durable, inspectable, and easier to integrate with tools and humans. That does not settle the evaluation problem in this study. A workflow graph can route steps correctly while still losing evidence provenance, collapsing unknown state, skipping stage gates, or producing an ungrounded final recommendation.
 
 Contract-driven harness engineering overlaps with workflow orchestration but treats the graph as only one layer. The unit of interest is the obligation that must survive the graph: state inventory, evidence binding, evidence type separation, trace completeness, stage-gate retention, excluded-context preservation, and repairability.
 
@@ -103,21 +103,21 @@ Contract-driven harness engineering overlaps with workflow orchestration but tre
 
 Declarative LM programming systems, especially DSPy, argue that language model behavior should be represented as programs with signatures, modules, metrics, and optimizers rather than as hand-written prompts. Agent specification work such as AgentSPEX and AgentSpec pushes in a related direction for agent systems: workflows, state, steps, and interfaces should be declared in portable and inspectable forms. \cite{P2_EXT_DSPY,P2_EXT_AGENTSPEX,P2_EXT_AGENTSPEC}
 
-This line of work is close to the method proposed here. Both assume that some reliability gains come from making task structure explicit. The difference is the evaluation target. Declarative systems often emphasize program optimization, portability, or agent specification. This paper emphasizes mechanism-first empirical repair: define one contract-critical mechanism, create golden and known-bad outputs, run deterministic local gates, execute small real-model slices, and update the claim boundary before composing broader workflows.
+This line of work is close to our method. Both assume that some reliability gains come from making task structure explicit. The difference is the evaluation target. Declarative systems often emphasize program optimization, portability, or agent specification. Here, the unit is a contract-critical obligation. We define it, create golden and known-bad outputs, run deterministic local gates, execute small real-model slices, and update the claim boundary before composing broader workflows.
 
 \subsection{Structured Outputs, Guardrails, And Validators}
 
 Structured output systems and guardrail frameworks externalize output form. OpenAI structured output mechanisms, Outlines-style constrained generation, and Guardrails validators reduce the burden of asking a model to follow a format. They make schema adherence and selected validation checks part of the system layer. \cite{P2_EXT_OPENAI_STRUCTURED_OUTPUTS,P2_EXT_OUTLINES,P2_EXT_GUARDRAILS}
 
-These mechanisms are necessary but insufficient for the problem studied here. Schema validity can guarantee that an output has the expected shape, but it cannot by itself guarantee that a claim is supported, that unknown state remains unknown, that excluded context is not reused, or that a recommendation is blocked when a stage gate is incomplete. The harness studied here therefore treats validators as one component in a larger contract stack. The output contract includes fields, but also semantic obligations: required evidence IDs, evidence type separation, rejected-option traces, explicit blocked outputs, and non-claims.
+These mechanisms are necessary but insufficient for the problem studied here. Schema validity can guarantee that an output has the expected shape. By itself, it cannot guarantee that a claim is supported, that unknown state remains unknown, that excluded context is not reused, or that a recommendation is blocked when a stage gate is incomplete. The harness studied here treats validators as one component in a larger contract stack. The output contract includes fields, but also semantic obligations: required evidence IDs, evidence type separation, rejected-option traces, explicit blocked outputs, and non-claims.
 
 \subsection{Retrieval, Tools, Memory, And Externalized Capability}
 
 RAG, ReAct, Toolformer, Gorilla, and tool/API-focused agent work show that models can become more capable when knowledge and action are externalized. Retrieval can provide updated evidence and provenance. Tool-use frameworks can turn external actions into typed calls. API benchmarks show that tool descriptions and retrieval can materially improve call generation compared with unaided model behavior. \cite{P2_EXT_RAG,P2_EXT_REACT,P2_EXT_TOOLFORMER,P2_EXT_GORILLA}
 
-Memory-oriented systems such as MemGPT and Letta show that agents can use hierarchical, archival, or stateful memory to extend beyond a single context window. They also expose a reliability problem that is central to this paper: memory is not automatically beneficial. A system must decide what to store, when to summarize, how to retrieve, how to scope memory, and how to prevent stale or irrelevant context from contaminating a new task. \cite{P2_EXT_MEMGPT,P2_EXT_LETTA}
+Memory-oriented systems such as MemGPT and Letta show that agents can use hierarchical, archival, or stateful memory to extend beyond a single context window. They also expose a reliability problem for this study: memory is not automatically beneficial. A system must decide what to store, when to summarize, how to retrieve, how to scope memory, and how to prevent stale or irrelevant context from contaminating a new task. \cite{P2_EXT_MEMGPT,P2_EXT_LETTA}
 
-This paper does not primarily study live retrieval, live tool execution, or long-term memory. Most admitted mechanism atoms and macros are fixed-input, no-tool tasks. That design is deliberate. It isolates whether the model can honor explicit contracts before adding live tools, changing corpora, or runtime side effects.
+This study does not primarily test live retrieval, live tool execution, or long-term memory. Most admitted mechanism atoms and macros are fixed-input, no-tool tasks. That choice isolates whether the model can honor explicit contracts before live tools, changing corpora, or runtime side effects are added.
 
 \subsection{Evaluation, Safety, Verification, And Skill Ecosystems}
 
@@ -127,15 +127,15 @@ Capability ecosystems such as MCP servers, agent skills, registries, pack system
 
 PEtFiSh is the implementation context, not the transferable claim. The claim concerns a contract stack and repair-loop protocol: task specs, bounded memory, evidence bundles, output contracts, workflow gates, trace logs, validators, known-bad cases, and claim-boundary updates.
 
-The gap this paper addresses is mechanism-level evaluation: which explicit obligations actually let a low-cost model complete bounded contract-critical operations, and how should a harness be repaired when those obligations fail?
+The remaining gap is mechanism-level evaluation: which explicit obligations let a low-cost model complete bounded contract-critical operations, and how should a harness be repaired when those obligations fail?
 
-The closest prior lines are declarative LM programs, guardrail or validator systems, and agent specification languages. They externalize structure, interfaces, or runtime checks. Our contribution is narrower but different: we treat each missing reliability obligation as an empirical repair target, require golden and known-bad fixtures before admission, and restrict macro claims to obligations that survive composition. The unit of evaluation is therefore not the workflow graph or the schema alone, but the obligation that must remain auditable across the harness.
+The closest prior lines are declarative LM programs, guardrail or validator systems, and agent specification languages. They externalize structure, interfaces, or runtime checks. Our contribution is narrower. We treat each missing reliability obligation as an empirical repair target, require golden and known-bad fixtures before admission, and restrict macro claims to obligations that survive composition. The unit of evaluation is the obligation that must remain auditable across the harness, not the workflow graph or the schema alone.
 
 \section{Methods}
 
 \subsection{Study Design}
 
-This study evaluates whether explicit agent harness contracts can make productivity tasks less dependent on unconstrained model behavior. We do not treat agent workflow as a primitive benchmark unit. Instead, we evaluate harness mechanisms in three levels:
+This study evaluates whether explicit agent harness contracts can make productivity tasks less dependent on unconstrained model behavior. Agent workflow is not treated as a primitive benchmark unit. We evaluate harness mechanisms in three levels:
 
 \begin{enumerate}
 \item task slices, which compare broad task classes across harness strengths;
@@ -164,7 +164,7 @@ Admitted macros
   `- Stage 7-next
 \end{verbatim}
 
-This map is the method in miniature: broad tasks expose unstable behavior, mechanism atoms isolate the obligation, local gates reject known-bad outputs, and only then can a macro carry the obligation forward.
+This map is the method in miniature. Broad tasks expose unstable behavior, mechanism atoms isolate the obligation, local gates reject known-bad outputs, and only then can a macro carry the obligation forward.
 
 \subsection{Harness Model}
 
@@ -192,7 +192,7 @@ Object & Role \\
 \end{longtable}
 }
 
-The key methodological assumption is that reliability should be moved from implicit model judgment into explicit, inspectable contracts whenever a task can be bounded. The harness is evaluated as a reliability-engineering layer, not as a claim that low-cost models become generally equivalent to strong models.
+The working assumption is simple: when a task can be bounded, reliability should move from implicit model judgment into explicit, inspectable contracts. The harness is evaluated as a reliability-engineering layer, not as a claim that low-cost models become generally equivalent to strong models.
 
 The object of study is not an improved prompt. It is the lifecycle by which a missing obligation becomes a contract field, a known-bad fixture, a deterministic gate, and an admitted macro requirement.
 
@@ -283,7 +283,7 @@ Weak-model enablement is reported when the low-cost model reaches a pass thresho
 
 \subsection{Overview}
 
-The results support a bounded version of the original hypothesis. Contract-rich harnessing improves absolute contract adherence across several productivity-task settings, and it can compress cross-model gaps in highly constrained tasks. However, gap compression is not universal. The stronger and more stable result is weak-model enablement on bounded, contract-critical operations: when task obligations are made explicit and evaluated deterministically, the low-cost model can reach pass-level behavior on tasks where weaker harnessing or broader prompts were unstable.
+The results support a bounded version of the original hypothesis. Contract-rich harnessing improves absolute contract adherence across several productivity-task settings. It can also compress cross-model gaps in highly constrained tasks. Gap compression is not universal. The more stable result is weak-model enablement on bounded, contract-critical operations: when task obligations are explicit and evaluated deterministically, the low-cost model can reach pass-level behavior on tasks where weaker harnessing or broader prompts were unstable.
 
 Table 3 summarizes the main claim boundary.
 
@@ -333,9 +333,9 @@ Macro & Stage 7-next & 4 & neighboring transfer -> reused obligations & targeted
 
 \subsection{Task Slices: Strong Absolute Lift, Conditional Gap Compression}
 
-The structured-extraction v2 slice is the clearest positive gap-compression result. Under G0, nonzero baseline gaps existed on task success, schema validity, tool-call correctness, human acceptance, cost efficiency, and safety consistency. Under G9, all measured nonzero gaps compressed to 0.000, producing compression ratios of 1.000 on those metrics. Citation grounding had a baseline gap of 0.000 and is therefore reported as n/a rather than as compression.
+The structured-extraction v2 slice gives the clearest positive gap-compression result. Under G0, nonzero baseline gaps appeared on task success, schema validity, tool-call correctness, human acceptance, cost efficiency, and safety consistency. Under G9, all measured nonzero gaps compressed to 0.000, producing compression ratios of 1.000 on those metrics. Citation grounding had a baseline gap of 0.000 and is therefore reported as n/a rather than as compression.
 
-The project-initialization slice shows why gap compression cannot be the universal claim. G9 compressed the task-success gap from 0.111 to 0.000 and the safety-consistency gap from 0.200 to 0.000. However, schema validity moved from a baseline gap of 0.250 to an arm gap of 0.583, yielding a negative compression ratio of -1.333. Human acceptance and cost efficiency also showed negative compression ratios.
+The project-initialization slice shows why gap compression cannot be the universal claim. G9 compressed the task-success gap from 0.111 to 0.000 and the safety-consistency gap from 0.200 to 0.000. Schema validity moved in the opposite direction, from a baseline gap of 0.250 to an arm gap of 0.583, yielding a negative compression ratio of -1.333. Human acceptance and cost efficiency also showed negative compression ratios.
 
 The research-workflow slice further weakens a universal gap-compression story. Several G0 baseline gaps were already 0.000, making compression undefined. G9 compressed schema-validity gap from 0.067 to 0.000, but task-success gap became 0.083 from a 0.000 baseline and human-acceptance/cost-efficiency gap movement was slightly negative.
 
@@ -403,25 +403,25 @@ This supports a narrow transfer claim: the Stage 7e v4 obligations can be reused
 
 \subsection{What The Results Mean}
 
-The main finding is not that harnesses make low-cost models equivalent to strong models. The evidence does not support that claim. The main finding is that some agent reliability requirements can be moved out of the model and into explicit contracts. When task state, admissible evidence, output shape, stage gates, trace requirements, and carried obligations are represented as inspectable objects, low-cost models can satisfy bounded tasks that were unstable under weaker or broader prompts.
+The main finding is that some reliability requirements can be moved out of the model and into explicit contracts. When task state, admissible evidence, output shape, stage gates, trace requirements, and carried obligations are inspectable objects, low-cost models can satisfy bounded tasks that were unstable under weaker or broader prompts.
 
-This changes how we should interpret agent reliability. A model failure is often treated as a limit of model intelligence. Sometimes it is. But in our experiments, several failures were more precisely described as missing contract obligations. The low-cost model did not preserve decision-trace retention until the trace was made structurally required. It did not preserve unknown state until unknown state was enumerated. It compressed known-state provenance until provenance-bearing state objects were required. It failed partial macro composition until cross-step carried obligations were made explicit.
+This changes how we interpret several failures in the experiments. The low-cost model did not preserve decision-trace retention until the trace was made structurally required. It did not preserve unknown state until unknown state was enumerated. It compressed known-state provenance until provenance-bearing state objects were required. It failed partial macro composition until cross-step carried obligations were made explicit. These are not just weaker answers. They are missing obligations that can be named and tested.
 
 \subsection{Gap Compression Is Conditional}
 
-The original research motivation was model capability gap compression. The results support that idea in structured settings but not as a universal law. Structured extraction produced the clearest compression result because the input, output, and correctness criteria are highly constrained. Project initialization and research workflow produced a more complicated pattern: harnessing improved absolute contract adherence, but gap movement was mixed, undefined, or negative depending on the metric.
+The original research motivation was model capability gap compression. The results support that idea in structured settings, but not as a general law. Structured extraction produced the clearest compression result because the input, output, and correctness criteria are highly constrained. Project initialization and research workflow produced a more complicated pattern: harnessing improved absolute contract adherence, but gap movement was mixed, undefined, or negative depending on the metric.
 
-This does not weaken the paper if it is framed correctly. It means gap compression is an empirical outcome of a specific task, metric, baseline gap, and harness arm. It should not be the universal thesis. The more stable claim is weak-model enablement: whether the low-cost model reaches a usable contract-adherence threshold under explicit harnessing.
+The implication is simple: gap compression is an observed outcome, not the thesis. It depends on the task, metric, baseline gap, and harness arm. The more useful question is whether the low-cost model reaches a declared contract-adherence threshold under explicit harnessing.
 
 \subsection{Why Negative Results Matter}
 
-Several negative or partial results are central to the argument. Stage 7p v1 showed that passing atoms do not automatically compose. Stage 7r showed that redesigned atoms could improve low-cost-model performance without fully repairing all contract-critical behavior. Stage 7e v2 and v3 also matter because they were not fully successful. They exposed the missing obligations that made Stage 7e v4 meaningful.
+Several negative or partial results carry real information. Stage 7p v1 showed that passing atoms do not automatically compose. Stage 7r showed that redesigned atoms could improve low-cost-model performance without fully repairing all contract-critical behavior. Stage 7e v2 and v3 exposed the missing obligations that made Stage 7e v4 meaningful.
 
-In short, the negative results are not noise. They are evidence for the mechanism-first methodology.
+The negative results are therefore part of the method, not noise around it.
 
 \subsection{Bounded Macros Are Not Full Workflows}
 
-The strongest macro results, Stage 7e v4 and Stage 7-next, are fixed-input, no-tool, deterministic tasks. They do not involve live source discovery, file mutation, external tool execution, or changing workspace state. This is a major boundary.
+Stage 7e v4 and Stage 7-next are fixed-input, no-tool, deterministic tasks. They do not involve live source discovery, file mutation, external tool execution, or changing workspace state. That boundary matters for how the results should be read.
 
 The result should be stated carefully:
 
@@ -435,13 +435,13 @@ It should not be stated as:
 Low-cost models can reliably run full project initialization or full research workflows.
 \end{quote}
 
-Full workflows introduce additional problems that the current macros do not test: tool selection, permission handling, filesystem mutation, live source volatility, partial failure recovery, long-horizon memory, user clarification, and multi-step state updates. The current work provides a method for approaching those workflows, not evidence that they are already solved.
+Full workflows introduce problems that the current macros do not test: tool selection, permission handling, filesystem mutation, live source volatility, partial failure recovery, long-horizon memory, user clarification, and multi-step state updates. The current work provides a method for approaching those workflows, not evidence that they are already solved.
 
 \subsection{Deterministic Evaluation, Sample Size, And Runtime Effects}
 
-The evaluation pipeline relies on deterministic evaluators, golden outputs, and known-bad outputs. This is a strength because it makes pass/fail decisions auditable and regression-testable. It also prevents the benchmark from becoming a subjective preference test. But deterministic evaluation narrows what can be claimed. The metrics capture contract adherence, not prose quality, human usefulness, creative insight, or open-ended judgment.
+The evaluation pipeline relies on deterministic evaluators, golden outputs, and known-bad outputs. This makes pass/fail decisions auditable and regression-testable. It also keeps the benchmark away from subjective preference scoring. The tradeoff is narrower validity: the metrics capture contract adherence, not prose quality, human usefulness, creative insight, or open-ended judgment.
 
-The evaluator itself is also an engineering artifact and can overfit. A known-bad suite only covers the failure modes that were anticipated or observed. A harness can therefore pass the current deterministic gate while still failing under semantically equivalent field variants, evidence perturbations, or new tool-state conditions. The next evaluation layer should include perturbation suites before broader workflow claims, including field-name perturbations, evidence-order perturbations, semantically equivalent unknown-state variants, distractor evidence, and tool-state changes.
+The evaluator itself can also overfit. A known-bad suite covers only the failure modes that were anticipated or observed. A harness can pass the current deterministic gate and still fail under semantically equivalent field variants, evidence perturbations, or new tool-state conditions. The next evaluation layer should include perturbation suites before broader workflow claims, including field-name perturbations, evidence-order perturbations, semantically equivalent unknown-state variants, distractor evidence, and tool-state changes.
 
 Several later experiments are targeted smoke tests with small run counts. Stage 7e v4 used four targeted smoke runs after retry. Stage 7-next used four targeted smoke runs. These are acceptable for mechanism repair but not for population-level performance estimation.
 
@@ -451,23 +451,23 @@ The present evidence uses SiliconFlow-backed runs and should be replicated acros
 
 \subsection{PEtFiSh Specificity And Harness Cost}
 
-The fixtures and workflows are grounded in the PEtFiSh project context. This raises external-validity concerns: the exact skills, packs, evidence ledgers, and backlog structures may not generalize to all agent systems. The mitigation is to frame PEtFiSh as the implementation context, not the whole construct. The generic constructs are task specs, bounded memory, evidence bundles, output contracts, workflow gates, trace logs, validators, known-bad cases, and repair loops.
+The fixtures and workflows are grounded in the PEtFiSh project context. The exact skills, packs, evidence ledgers, and backlog structures may not generalize to all agent systems. For this reason, PEtFiSh should be read as the implementation context. The transferable constructs are task specs, bounded memory, evidence bundles, output contracts, workflow gates, trace logs, validators, known-bad cases, and repair loops.
 
-PEtFiSh is therefore not the claim. PEtFiSh is the implementation context in which the claim is made observable. The transferable object is the contract stack and the repair-loop protocol, not the specific pack catalog, skill names, or project directory conventions.
+The claim is about the contract stack and the repair-loop protocol, not the specific pack catalog, skill names, or project directory conventions.
 
 Contract-driven harnessing also adds overhead. It requires fixture design, schemas, evidence bundles, evaluators, local gates, manifests, event logs, and postprocessing. For simple tasks, this overhead may exceed the benefit. There is also a risk of over-constraint: strong models may become more stable but less flexible under strict contracts.
 
 \subsection{Future Work}
 
-The next empirical step is not to claim full project initialization or full research workflow readiness. It is to build the next admitted macro only after identifying the required mechanisms and cross-step obligations. Promising directions include citation-bound synthesis, state-mutating project macros, live research workflow slices, cross-provider replication, and perturbation suites for field names, evidence order, unknown-state variants, distractor evidence, and tool-state changes.
+The next empirical step is to build the next admitted macro only after identifying the required mechanisms and cross-step obligations. Promising directions include citation-bound synthesis, state-mutating project macros, live research workflow slices, cross-provider replication, and perturbation suites for field names, evidence order, unknown-state variants, distractor evidence, and tool-state changes.
 
 \section{Conclusion}
 
-Contract-driven harness engineering can make some low-cost-model failures observable, repairable, and regression-testable by externalizing reliability obligations into explicit contracts. This is not a claim that model quality no longer matters. It is a claim that for bounded productivity tasks, part of agent reliability can be engineered outside the model.
+Contract-driven harness engineering makes some low-cost-model failures observable, repairable, and regression-testable by moving reliability obligations into explicit contracts. Model quality still matters. The point is narrower: for bounded productivity tasks, part of agent reliability can be engineered outside the model.
 
-The strongest supported claim is weak-model enablement on bounded contract-critical operations. Gap compression remains important but conditional. It is strongest in structured extraction and present on some contract metrics in mechanism and partial macro tests. It is mixed or undefined in broader project-initialization and research-workflow slices.
+The supported claim is weak-model enablement on bounded contract-critical operations. Gap compression remains conditional. It is clearest in structured extraction and present on some contract metrics in mechanism and partial macro tests. It is mixed or undefined in broader project-initialization and research-workflow slices.
 
-The practical value of the method is the repair loop. A harness failure can be turned into a named obligation, a contract revision, a known-bad fixture, a local regression gate, a targeted real-model smoke test, and an updated claim boundary. That loop is the central engineering contribution of this work.
+The practical value is the repair loop. A harness failure can be turned into a named obligation, a contract revision, a known-bad fixture, a local regression gate, a targeted real-model smoke test, and an updated claim boundary.
 
 \section{Appendix A. Current Non-Claims}
 
