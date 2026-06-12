@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.9)  11 JUN 2026 13:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.9)  12 JUN 2026 15:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -409,11 +409,11 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 184.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 184.
- [6]
+
+ignored error: Infinite glue shrinkage found in box being split [6]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 203.
-
-[7]
+ [7]
 Overfull \hbox (7.54184pt too wide) in paragraph at lines 248--249
 \T1/lmr/m/n/10.95 Each eval-u-ated run emits met-rics in-clud-ing $\T1/lmtt/m/n
 /10.95 task _ success$\T1/lmr/m/n/10.95 , $\T1/lmtt/m/n/10.95 schema _ validity
@@ -429,18 +429,19 @@ ion$\T1/lmr/m/n/10.95 , $\T1/lmtt/m/n/10.95 trace _ completeness$\T1/lmr/m/n/10
 .95 , $\T1/lmtt/m/n/10.95 context _
  []
 
-ignored error: Infinite glue shrinkage found in box being split [8]
+[8]
+ignored error: Infinite glue shrinkage found in box being split [9]
 Overfull \hbox (0.79927pt too wide) in paragraph at lines 325--325
 []|\T1/lmr/m/n/10 mixed/undefined|  
  []
 
-ignored error: Infinite glue shrinkage found in box being split [9]
+[10]
 Overfull \hbox (13.1386pt too wide) in paragraph at lines 357--357
 []\T1/lmtt/m/n/10.95 A10 bounded context recall -> A9 no-overwrite action plann
 ing -> A6 validator repair 
  []
 
-[10] [11]
+[11]
 Overfull \hbox (17.73038pt too wide) in paragraph at lines 390--391
 []\T1/lmr/m/n/10.95 The lo-cal gate passed with 2/2 ex-pec-ta-tions met: the go
 lden out-put passed with task_success=1.000
@@ -458,21 +459,21 @@ Overfull \hbox (63.87698pt too wide) in paragraph at lines 398--399
 type_accuracy=1.000, trace_completeness=1.000,
  []
 
-[12] [13]
+[12] [13] [14]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
 77.
- (C:\Users\崔崟\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+
+(C:\Users\崔崟\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [14{C:/Users/崔崟/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.e
+) [15{C:/Users/崔崟/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.e
 nc}]
-ignored error: Infinite glue shrinkage found in box being split [15]
-ignored error: Infinite glue shrinkage found in box being split [16]
+ignored error: Infinite glue shrinkage found in box being split [16] [17]
 Overfull \hbox (30.78763pt too wide) in paragraph at lines 566--567
 []\T1/lmr/m/n/10.95 External ref-er-ences are pre-pared in $\T1/lmtt/m/n/10.95 
 research / 06 _ outputs / contract-[]driven-[]harness-[]references .
  []
 
-[17]
+
 Overfull \hbox (149.44252pt too wide) in paragraph at lines 570--571
 \T1/lmr/m/n/10.95 The Bib-TeX bib-li-og-ra-phy for this work-ing draft is main-
 tained in $\T1/lmtt/m/n/10.95 research / 06 _ outputs / contract-[]driven-[]har
@@ -485,7 +486,7 @@ Underfull \hbox (badness 3646) in paragraph at lines 10--15
 10.95 https : / / www . anthropic . com / engineering /
  []
 
-
+[18]
 Underfull \hbox (badness 1983) in paragraph at lines 50--54
 []\T1/lmr/m/n/10.95 LangChain.  Lang-graph doc-u-men-ta-tion.  []$\T1/lmtt/m/n/
 10.95 https : / / docs . langchain . com / oss / python /
@@ -497,7 +498,7 @@ Underfull \hbox (badness 2126) in paragraph at lines 63--67
 /10.95 https : / / docs . letta . com / guides / agents /
  []
 
-[18]
+
 Underfull \hbox (badness 2050) in paragraph at lines 80--84
 []\T1/lmr/m/n/10.95 Microsoft.  Se-man-tic ker-nel doc-u-men-ta-tion.  []$\T1/l
 mtt/m/n/10.95 https : / / learn . microsoft . com / en-[]us /
@@ -509,7 +510,7 @@ Underfull \hbox (badness 2573) in paragraph at lines 86--90
  https : / / platform . openai . com / docs / guides /
  []
 
-) [19] (contract-driven-harness-arxiv.aux)
+[19]) [20] (contract-driven-harness-arxiv.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -519,13 +520,13 @@ hanged.
 (rerunfilecheck)             Checksum: 57B0E5683126C48FED7E7C365608EA06;8094.
  ) 
 Here is how much of TeX's memory you used:
- 9432 strings out of 467871
- 149821 string characters out of 5417893
- 577156 words of memory out of 5000000
+ 9433 strings out of 467871
+ 149828 string characters out of 5417893
+ 578156 words of memory out of 5000000
  38046 multiletter control sequences out of 15000+600000
  679193 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,837b,638s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,79p,837b,613s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/崔崟/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.p
 fb><C:/Users/崔崟/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.
 pfb><C:/Users/崔崟/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.
@@ -533,9 +534,9 @@ pfb><C:/Users/崔崟/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.
 pfb><C:/Users/崔崟/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.
 pfb><C:/Users/崔崟/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10
 .pfb>
-Output written on contract-driven-harness-arxiv.pdf (19 pages, 267637 bytes).
+Output written on contract-driven-harness-arxiv.pdf (20 pages, 268210 bytes).
 PDF statistics:
- 393 PDF objects out of 1000 (max. 8388607)
- 115 named destinations out of 1000 (max. 500000)
+ 397 PDF objects out of 1000 (max. 8388607)
+ 116 named destinations out of 1000 (max. 500000)
  325 words of extra memory for PDF output out of 10000 (max. 10000000)
 
