@@ -4,13 +4,13 @@ Target package: `research/06_outputs/arxiv-source/`
 
 Main source: `research/06_outputs/arxiv-source/contract-driven-harness-arxiv.tex`
 
-Reader PDF: `research/06_outputs/contract-driven-harness-paper-v3.1.1.pdf`
+Reader PDF: `research/06_outputs/contract-driven-harness-paper-v3.1.1-frozen.pdf`
 
 Check date: 2026-06-12
 
 ## Result
 
-**PASS for v3.1.1 LaTeX + BibTeX compilation.**
+**PASS for final frozen-body v3.1.1 LaTeX + BibTeX compilation.**
 
 The v3.1.1 package compiles to a 20-page PDF using MiKTeX 25.12 with the standard sequence:
 
@@ -28,6 +28,9 @@ The v3.1.1 package compiles to a 20-page PDF using MiKTeX 25.12 with the standar
 - Added the nonzero-baseline condition to the Results overview gap-compression claim.
 - Reframed the Related Work contribution as operationally different rather than merely narrower.
 - Kept the existing Conclusion without adding another defensive non-claim sentence.
+- Smoothed the Abstract opening by joining the bounded-failure explanation.
+- Replaced `gives` with `provides` in the structured-extraction result.
+- Formally froze the v3.1.1 body after these two final wording changes.
 
 No model runs, metrics, empirical claims, or citation keys changed.
 
@@ -36,7 +39,7 @@ No model runs, metrics, empirical claims, or citation keys changed.
 | Check | Result |
 |---|---|
 | PDF generated | PASS |
-| PDF size | 268210 bytes |
+| PDF size | 268216 bytes |
 | PDF page count | 20 |
 | LaTeX fatal errors | 0 |
 | LaTeX errors | 0 |

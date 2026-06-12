@@ -5,7 +5,7 @@ arXiv-style working draft derived from the evidence-traceable full draft. Extern
 
 ## Abstract
 
-Many agent failures in productivity tasks are treated as model failures. In bounded tasks, part of the failure is more concrete. The model was not given an inspectable obligation to preserve evidence, state, stage gates, or output fields. We study contract-driven harness engineering: a reliability layer that represents those obligations as task specifications, bounded memory slices, evidence bundles, output contracts, validation gates, and trace requirements.
+Many agent failures in productivity tasks are treated as model failures. In bounded tasks, some of those failures are more concrete: the model was not given an inspectable obligation to preserve evidence, state, stage gates, or output fields. We study contract-driven harness engineering: a reliability layer that represents those obligations as task specifications, bounded memory slices, evidence bundles, output contracts, validation gates, and trace requirements.
 
 The study is deliberately narrow. It does not test whether harnessing makes low-cost models generally equivalent to strong models. It asks whether explicit obligations can turn failures observed in low-cost-model runs into inspectable, repairable, and regression-testable engineering objects.
 
@@ -247,7 +247,7 @@ Table 4 summarizes the main empirical layers and the claim each layer permits.
 
 ### 4.2 Task Slices: Strong Absolute Lift, Conditional Gap Compression
 
-The structured-extraction v2 slice gives the clearest positive gap-compression result. Under G0, nonzero baseline gaps appeared on task success, schema validity, tool-call correctness, human acceptance, cost efficiency, and safety consistency. Under G9, all measured nonzero gaps compressed to 0.000, producing compression ratios of 1.000 on those metrics. Citation grounding had a baseline gap of 0.000 and is therefore reported as n/a rather than as compression.
+The structured-extraction v2 slice provides the clearest positive gap-compression result. Under G0, nonzero baseline gaps appeared on task success, schema validity, tool-call correctness, human acceptance, cost efficiency, and safety consistency. Under G9, all measured nonzero gaps compressed to 0.000, producing compression ratios of 1.000 on those metrics. Citation grounding had a baseline gap of 0.000 and is therefore reported as n/a rather than as compression.
 
 The project-initialization slice shows why gap compression cannot be the universal claim. G9 compressed the task-success gap from 0.111 to 0.000 and the safety-consistency gap from 0.200 to 0.000. Schema validity moved in the opposite direction, from a baseline gap of 0.250 to an arm gap of 0.583, yielding a negative compression ratio of -1.333. Human acceptance and cost efficiency also showed negative compression ratios.
 
