@@ -1,0 +1,11 @@
+{
+  "suite_id": "stage_b_v3_hierarchical_shape_repair_smoke",
+  "fixture_count": 1,
+  "fixtures": [
+    "stage7-next-method-plan-update-v3--canonical-shape-repair"
+  ],
+  "mechanism_atom": "hierarchical_output_shape_preservation",
+  "single_changed_factor": "literal_json_output_skeleton",
+  "historical_baseline": "stage_b_v2_canonical_0_of_3",
+  "pooling_policy": "must_not_pool_with_stage_b_v2"
+}

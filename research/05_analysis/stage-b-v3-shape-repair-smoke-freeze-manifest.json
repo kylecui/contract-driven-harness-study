@@ -1,0 +1,289 @@
+{
+  "protocol_id": "stage_b_v3_hierarchical_shape_repair_smoke",
+  "prepared_date": "2026-06-13",
+  "base_commit": "0e4b7c1",
+  "hash_algorithm": "sha256",
+  "file_count": 56,
+  "files": [
+    {
+      "path": "research/04_methods/benchmark-matrix-stage-b-v3-shape-repair-smoke.json",
+      "bytes": 1208,
+      "sha256": "828c6e4e77ad3fbd304078f51df9f868b4b50ea0071624bb38a0259892bd97f3"
+    },
+    {
+      "path": "research/04_methods/macro-shape-repair-v3/stage7-next-method-plan-update-v3--canonical-shape-repair/evidence_bundle.json",
+      "bytes": 2679,
+      "sha256": "4d9ddcdd5f6dcdf174b9db5653c518cfba3864364b5643f85bea67b248e39112"
+    },
+    {
+      "path": "research/04_methods/macro-shape-repair-v3/stage7-next-method-plan-update-v3--canonical-shape-repair/golden_output.json",
+      "bytes": 7612,
+      "sha256": "22a81c801146827c136c35485dbbac9d95ea1fb0c6a1e09de02bd919aaae4b85"
+    },
+    {
+      "path": "research/04_methods/macro-shape-repair-v3/stage7-next-method-plan-update-v3--canonical-shape-repair/input.md",
+      "bytes": 7007,
+      "sha256": "22d0fc63295793aadee77c3c615967c9cb02ce3999095b492a20ba78ad650721"
+    },
+    {
+      "path": "research/04_methods/macro-shape-repair-v3/stage7-next-method-plan-update-v3--canonical-shape-repair/known_bad_outputs/expanded_typed_evidence_objects.json",
+      "bytes": 8007,
+      "sha256": "73d38e4bbfc5311f034b7b55225ae812f245ffdd5907045adb13be313c2bc8ab"
+    },
+    {
+      "path": "research/04_methods/macro-shape-repair-v3/stage7-next-method-plan-update-v3--canonical-shape-repair/known_bad_outputs/flattened_state_inventory.json",
+      "bytes": 7503,
+      "sha256": "726d1816fd0c9cca327ddc3b5afcb92354136d4158b0477d36e2c42f1861eb9f"
+    },
+    {
+      "path": "research/04_methods/macro-shape-repair-v3/stage7-next-method-plan-update-v3--canonical-shape-repair/known_bad_outputs/incomplete_selected_claim_support.json",
+      "bytes": 7587,
+      "sha256": "05b304ab7ecded9c4a8a7ea9fa812d998d6cb86319e70a2c8fa21998e201b588"
+    },
+    {
+      "path": "research/04_methods/macro-shape-repair-v3/stage7-next-method-plan-update-v3--canonical-shape-repair/known_bad_outputs/missing_required_known_state_evidence.json",
+      "bytes": 7574,
+      "sha256": "445dea6cabe596018a386a0b3f7930b73056f29cc3aea4ae7388defd44aae07c"
+    },
+    {
+      "path": "research/04_methods/macro-shape-repair-v3/stage7-next-method-plan-update-v3--canonical-shape-repair/known_bad_outputs/missing_required_nested_field.json",
+      "bytes": 7551,
+      "sha256": "c9645146681a2173376ed8b95081252e3c971358740dfa24f2f2a98b5a175a22"
+    },
+    {
+      "path": "research/04_methods/macro-shape-repair-v3/stage7-next-method-plan-update-v3--canonical-shape-repair/known_bad_outputs/omitted_nested_state_fields.json",
+      "bytes": 7249,
+      "sha256": "9ac9fdc01c7ac4872f99061807a99ec5b2551ba34a6c5d5e3f735898e2f457b8"
+    },
+    {
+      "path": "research/04_methods/macro-shape-repair-v3/stage7-next-method-plan-update-v3--canonical-shape-repair/known_bad_outputs/open_vocabulary_status.json",
+      "bytes": 7612,
+      "sha256": "4d4705e0b07c06752fc898656bad919178beeaad52959ce53be03f04c01473df"
+    },
+    {
+      "path": "research/04_methods/macro-shape-repair-v3/stage7-next-method-plan-update-v3--canonical-shape-repair/known_bad_outputs/root_promoted_state_fields.json",
+      "bytes": 7588,
+      "sha256": "9be3cea03167c833acc4a4deb5f0d4fa388118302d03e1102e9b797760b2bca2"
+    },
+    {
+      "path": "research/04_methods/macro-shape-repair-v3/stage7-next-method-plan-update-v3--canonical-shape-repair/known_bad_outputs/undeclared_source_references.json",
+      "bytes": 7727,
+      "sha256": "7be4fd4fdea5bf1ee9b5184506cf57a1554a4d1ef2f0ded860b257c5c4cb7cbc"
+    },
+    {
+      "path": "research/04_methods/macro-shape-repair-v3/stage7-next-method-plan-update-v3--canonical-shape-repair/memory_slice.json",
+      "bytes": 753,
+      "sha256": "5649c1e320bc75cec540844398c3688a1fa1d5cde70e402d780497827355b457"
+    },
+    {
+      "path": "research/04_methods/macro-shape-repair-v3/stage7-next-method-plan-update-v3--canonical-shape-repair/model_output_contract.json",
+      "bytes": 12010,
+      "sha256": "5db3b843d3da14d2357e02bfb72aa27dd1d5a6662e01eab097c923b3266f377d"
+    },
+    {
+      "path": "research/04_methods/macro-shape-repair-v3/stage7-next-method-plan-update-v3--canonical-shape-repair/output_contract.json",
+      "bytes": 7696,
+      "sha256": "44e1573517feb34e717f5a7b16e2b454ce8abb7b57857e7c4387af3e667f917d"
+    },
+    {
+      "path": "research/04_methods/macro-shape-repair-v3/stage7-next-method-plan-update-v3--canonical-shape-repair/perturbation.json",
+      "bytes": 1193,
+      "sha256": "42a961eb24ed78e80f5f944338aa87e74f555c4078a5db9ef7d25deeaec8cb04"
+    },
+    {
+      "path": "research/04_methods/macro-shape-repair-v3/stage7-next-method-plan-update-v3--canonical-shape-repair/task_spec.json",
+      "bytes": 3530,
+      "sha256": "e71b55152081135543111c333de8703a02afdc5c19c92723a9dfa6744969df4c"
+    },
+    {
+      "path": "research/04_methods/macro-shape-repair-v3/suite.json",
+      "bytes": 411,
+      "sha256": "d70dc8c2dae56a33416ac19127f678048b85ffc676d870c4e0890fc0b604dd28"
+    },
+    {
+      "path": "research/04_methods/provider-config.siliconflow-stage-b-v3-shape-smoke.json",
+      "bytes": 500,
+      "sha256": "184d48e2fbc3ec2b16ebccff4b46105047d6269032d27aa311fea3bf3c30cac6"
+    },
+    {
+      "path": "research/04_methods/scripts/build_stage_b_v3_shape_repair_smoke.py",
+      "bytes": 11698,
+      "sha256": "ee2498ba3f9803336589407a11e9b26d84529729552618278ba2a6004374ba07"
+    },
+    {
+      "path": "research/04_methods/scripts/compile_benchmark_packets.py",
+      "bytes": 6566,
+      "sha256": "878c0349bbc76f3f4bf45ce472a2e2181d6e955ace1fce48466fa9244bdd3daf"
+    },
+    {
+      "path": "research/04_methods/scripts/evaluate_stage7e_macro_artifacts.py",
+      "bytes": 29437,
+      "sha256": "c15a8f1aadb1c6bcbe66ecc8daba14dd401309f4a569d5a5c097b336987b2505"
+    },
+    {
+      "path": "research/04_methods/scripts/export_model_prompts.py",
+      "bytes": 5725,
+      "sha256": "8c7827b5b0ec0752150253ad5e9e143998981ad34f66e68ea7222066780d44c1"
+    },
+    {
+      "path": "research/04_methods/scripts/generate_benchmark_matrix.py",
+      "bytes": 2324,
+      "sha256": "e075afdfb9e056bb5441f22453380c8db662b14b9c57de7eb37ed8aa6e5e5ed6"
+    },
+    {
+      "path": "research/04_methods/scripts/preflight_real_model_pilot.py",
+      "bytes": 11849,
+      "sha256": "fcb841f729722364a3d52f617985ba529a48553527b5fdbe8c607eec9a9bcafb"
+    },
+    {
+      "path": "research/04_methods/scripts/prepare_real_run_artifacts.py",
+      "bytes": 3377,
+      "sha256": "be4ba178e068acdc7e2941817d7e3087303c40ba1dd6588c47ba63ad76b36873"
+    },
+    {
+      "path": "research/04_methods/scripts/run_openai_adapter.py",
+      "bytes": 12794,
+      "sha256": "fd14e6fbc934fedaeb1829eeb5cb2146a329e38c2a9b4472fdfc4514f9be9a08"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke-manifest-with-prompts.json",
+      "bytes": 4848,
+      "sha256": "4303438fcf87099b9e812336c1c7b4caf6086bf8c2bceeaa6c7567da63235d8b"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke/stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r1/adapter_request.json",
+      "bytes": 463,
+      "sha256": "b7c02f21de7b6ff218b8becb75f5d4837bab7cc29c200ed1b0bc5bbcd150d542"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke/stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r1/manifest.json",
+      "bytes": 1478,
+      "sha256": "1f1bf500b5d7576817070709689ec98a8b1d712a04200b49ce91b2d403b52880"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke/stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke/stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke/stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r1/prompt.md",
+      "bytes": 27024,
+      "sha256": "47caa6410b0a880ed6f5d45481c2d58e796c90685a4d933dbe37733ec4396e4c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke/stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke/stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke/stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2/adapter_request.json",
+      "bytes": 463,
+      "sha256": "b744b79ef054fcf6faeb67cabf9514268ea721d21417d1a17cfa77109c3d4fe2"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke/stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2/manifest.json",
+      "bytes": 1478,
+      "sha256": "b4d44fb839835304e5e5da1278fbc71ba6518f57b2af4c41919894ba9a82ee5a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke/stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke/stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke/stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2/prompt.md",
+      "bytes": 27024,
+      "sha256": "3717ecd606fe54deb6ebe17cfcde3641b75649a4f9473e54e263047d930e7e53"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke/stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke/stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke/stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3/adapter_request.json",
+      "bytes": 463,
+      "sha256": "73ca142ba8658c6e69e8cb1d14af848364ec9e09fa54c76c4d965842986f70fb"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke/stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3/manifest.json",
+      "bytes": 1478,
+      "sha256": "9581e792a55f800611d65fc0e490f6fcbad8fda3933ee43cbbf037cb442922c0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke/stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke/stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke/stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3/prompt.md",
+      "bytes": 27024,
+      "sha256": "7915f31c2469a3ec51cf152517888165fd91721bae7514e1f231cc6fc5fbd7a6"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke/stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke/stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v3-shape-repair-local-gate.json",
+      "bytes": 110968,
+      "sha256": "d7ef1a5aca22af4b8f73f0d4492db9131143e9e8f3e95e964f247cfb334327f9"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v3-shape-repair-smoke-adapter-dry-run.json",
+      "bytes": 2746,
+      "sha256": "66b056d9a5c30dc6fa9acc551e9a0084dbe12efc711d12d8a44b936c07320a75"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v3-shape-repair-smoke-packets.jsonl",
+      "bytes": 66609,
+      "sha256": "beb4192ff1181e36596a780abd564e2849b9c0e004da34877917cb91dcb303ef"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v3-shape-repair-smoke-preflight.json",
+      "bytes": 1234,
+      "sha256": "2f9b911a4767f75542a7c659f05b61b320b09257f57f1efc3713a431757f984c"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v3-shape-repair-smoke-preregistration.md",
+      "bytes": 3242,
+      "sha256": "cdec5e5c7b0888a6a5f019173b43ac4ae755a6671e00ac256e3851a092eae584"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v3-v2-regression-gate.json",
+      "bytes": 720216,
+      "sha256": "ddc8fe941fcc5747bb737ed4afc8f996324b41afe31e048fecbb571e19fe3eb3"
+    }
+  ]
+}

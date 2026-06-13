@@ -1,0 +1,40 @@
+{
+  "fixtures_dir": "research\\04_methods\\macro-shape-repair-v3",
+  "models": [
+    "budget_model"
+  ],
+  "harness_arms": [
+    "G9"
+  ],
+  "fixtures": [
+    "stage7-next-method-plan-update-v3--canonical-shape-repair"
+  ],
+  "repetitions": 3,
+  "run_count": 3,
+  "runs": [
+    {
+      "run_id": "stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r1",
+      "fixture": "stage7-next-method-plan-update-v3--canonical-shape-repair",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2",
+      "fixture": "stage7-next-method-plan-update-v3--canonical-shape-repair",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3",
+      "fixture": "stage7-next-method-plan-update-v3--canonical-shape-repair",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    }
+  ]
+}
