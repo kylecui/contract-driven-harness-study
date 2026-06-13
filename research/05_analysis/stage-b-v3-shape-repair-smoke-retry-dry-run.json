@@ -1,0 +1,40 @@
+{
+  "execute": false,
+  "processed": 2,
+  "results": [
+    {
+      "run_id": "stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2__retry1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-shape-repair-smoke-retries\\stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2__retry1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-shape-repair-smoke-retries\\stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2__retry1\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2",
+        "attempt": 2,
+        "retry_of_run_id": "stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2"
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3__retry1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-shape-repair-smoke-retries\\stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3__retry1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-shape-repair-smoke-retries\\stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3__retry1\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3",
+        "attempt": 2,
+        "retry_of_run_id": "stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3"
+      },
+      "provider_metadata": null
+    }
+  ]
+}

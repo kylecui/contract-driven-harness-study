@@ -1,0 +1,13 @@
+{
+  "run_id": "stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3__retry1",
+  "provider": "manual_or_future_adapter",
+  "model_tier": "budget_model",
+  "harness_arm": "G9",
+  "prompt_path": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-shape-repair-smoke-retries\\stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3__retry1\\prompt.md",
+  "temperature": 0,
+  "tools_enabled": true,
+  "expects_validation": true,
+  "lineage_id": "stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3",
+  "attempt": 2,
+  "retry_of_run_id": "stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3"
+}

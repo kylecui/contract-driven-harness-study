@@ -1,0 +1,51 @@
+{
+  "note": "Retry manifest preserving original failed attempt lineage.",
+  "run_count": 2,
+  "runs_dir": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-shape-repair-smoke-retries",
+  "source_manifest": "research/05_analysis/real-run-artifacts/stage-b-v3-shape-repair-smoke-manifest-with-prompts.json",
+  "attempt": 2,
+  "runs": [
+    {
+      "run_id": "stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2__retry1",
+      "fixture": "stage7-next-method-plan-update-v3--canonical-shape-repair",
+      "task_type": "stage7_next_evidence_bound_macro",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-shape-repair-smoke-retries\\stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2__retry1\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-shape-repair-smoke-retries\\stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2__retry1\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-shape-repair-smoke-retries\\stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2__retry1\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-shape-repair-smoke-retries\\stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2__retry1\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-shape-repair-smoke-retries\\stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2__retry1\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-shape-repair-smoke-retries\\stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2__retry1\\adapter_request.json"
+      },
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2",
+        "attempt": 2,
+        "retry_of_run_id": "stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2"
+      }
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3__retry1",
+      "fixture": "stage7-next-method-plan-update-v3--canonical-shape-repair",
+      "task_type": "stage7_next_evidence_bound_macro",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-shape-repair-smoke-retries\\stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3__retry1\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-shape-repair-smoke-retries\\stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3__retry1\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-shape-repair-smoke-retries\\stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3__retry1\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-shape-repair-smoke-retries\\stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3__retry1\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-shape-repair-smoke-retries\\stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3__retry1\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-shape-repair-smoke-retries\\stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3__retry1\\adapter_request.json"
+      },
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3",
+        "attempt": 2,
+        "retry_of_run_id": "stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3"
+      }
+    }
+  ]
+}
