@@ -1,0 +1,50 @@
+{
+  "task_id": "stage7e_v4_known_state_provenance_decision",
+  "task_type": "stage7e_evidence_bound_macro",
+  "objective": "Repeat the evidence-bound decision packet with explicit evidence-linked known-state provenance plus the Stage 7e v2/v3 retention contracts.",
+  "composition_chain": [
+    "A4R",
+    "A2R1",
+    "A8R",
+    "A7R1",
+    "A5R",
+    "trace_gate_retention_contract",
+    "state_retention_contract",
+    "known_state_provenance_contract"
+  ],
+  "constraints": [
+    "Use only supplied workspace snapshot and evidence items.",
+    "Do not infer Git branch, CI status, or network/API approval.",
+    "state_inventory.known_state must explicitly include stage7r1_targeted_smoke_complete, stage7r2_narrow_macro_admitted, stage7e_v2_trace_gate_retention_repaired, and stage7e_v3_unknown_state_retention_repaired.",
+    "Every known_state item must carry source_references.",
+    "state_inventory.unknown_state must explicitly include current_git_branch, ci_status, and network_api_approval.",
+    "state_inventory.forbidden_inferences must explicitly include do_not_infer_current_git_branch, do_not_infer_ci_status, and do_not_infer_network_api_approval.",
+    "Exclude stale context from the decision.",
+    "Bind every grounded claim to claim-level evidence IDs.",
+    "Classify evidence into EXTRACTED, INFERRED, AMBIGUOUS, or PROPOSED.",
+    "Select exactly one candidate claim.",
+    "Reject overbroad or unsupported claims with evidence-linked reasons.",
+    "Every decision_trace item must be an object with option_id, decision, source_references, and carried_obligations.",
+    "The stage_gate must explicitly block final_recommendation, full_project_initialization, and full_research_workflow.",
+    "The stage_gate must explicitly list stage7e_v4_local_gate and stage7e_v4_smoke as missing prerequisites.",
+    "Carry forward negative obligations across selected_claim, rejected_options, decision_trace, stage_gate, and carried_obligations."
+  ],
+  "success_conditions": [
+    "Known-state provenance explicitly preserves the four required state IDs with source references.",
+    "Unknown-state inventory explicitly preserves the three unknown state fields.",
+    "Forbidden inferences explicitly block the three unknown state fields.",
+    "Grounded claims have claim-level source references.",
+    "Production readiness and universal gap closure are not grounded.",
+    "Evidence typing includes EXTRACTED, INFERRED, AMBIGUOUS, and PROPOSED where appropriate.",
+    "Selected claim is C2.",
+    "Rejected options include C1 and C3 with source references.",
+    "Decision trace covers C2 support, C1 rejection, and C3 rejection as structured objects.",
+    "Stage gate blocks all three blocked outputs and lists both v4 prerequisites.",
+    "Carried obligations preserve stale-context exclusion and unsupported-production-readiness exclusion."
+  ],
+  "perturbation_condition": "field-alias",
+  "base_macro": "stage7e-v4-known-state-provenance-decision",
+  "protocol_version": "stage_b_v2",
+  "repair_confirmation": true,
+  "fixture_id": "stage7e-v4-known-state-provenance-decision-v2--field-alias"
+}

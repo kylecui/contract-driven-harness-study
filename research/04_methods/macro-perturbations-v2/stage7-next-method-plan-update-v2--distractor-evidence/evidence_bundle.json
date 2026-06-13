@@ -1,0 +1,60 @@
+{
+  "bundle_id": "stage7_next_method_plan_update_evidence_bundle_001",
+  "items": [
+    {
+      "evidence_id": "stage7next-e01",
+      "type": "EXTRACTED",
+      "claim": "Stage 7e v4 completed a targeted low-cost-model G8/G9 smoke with 4/4 completed and passed runs after retrying one provider timeout.",
+      "source": "research/05_analysis/stage-reports/stage-7e-v4-known-state-provenance-summary.md"
+    },
+    {
+      "evidence_id": "stage7next-e02",
+      "type": "INFERRED",
+      "claim": "Stage 7e v1-v4 supports a mechanism-first repair loop for fixed evidence-decision macros, not broad workflow readiness.",
+      "source": "research/03_evidence/evidence-ledger.jsonl#P2-E69"
+    },
+    {
+      "evidence_id": "stage7next-e03",
+      "type": "AMBIGUOUS",
+      "claim": "Provider execution stability remains a practical uncertainty because Stage 7e v4 required a timeout retry and one truncated retry before success.",
+      "source": "research/05_analysis/stage7e-v4-known-state-provenance-decision-evaluation-final-v2.md"
+    },
+    {
+      "evidence_id": "stage7next-e04",
+      "type": "EXTRACTED",
+      "claim": "The claim-boundary memo was updated to separate task-slice claims, mechanism-composition claims, and unsupported claims.",
+      "source": "research/05_analysis/contract-driven-claim-boundary-memo.md"
+    },
+    {
+      "evidence_id": "stage7next-e05",
+      "type": "EXTRACTED",
+      "claim": "No supplied evidence supports production readiness, universal model-gap closure, or immediate full workflow expansion.",
+      "source": "research/05_analysis/contract-driven-claim-boundary-memo.md"
+    },
+    {
+      "evidence_id": "stage7next-e06",
+      "type": "PROPOSED",
+      "claim": "The next bounded macro should be an evidence-bound method-plan update that reuses Stage 7e v4 obligations before any real-model execution.",
+      "source": "research/05_analysis/contract-driven-methodology-outline.md"
+    },
+    {
+      "evidence_id": "stage7next-e07",
+      "type": "EXTRACTED",
+      "claim": "The methodology outline defines next macro admission criteria: reuse Stage 7e v4 obligations, add at most one new stressor, run local golden/bad gates first, and declare non-claims.",
+      "source": "research/05_analysis/contract-driven-methodology-outline.md"
+    },
+    {
+      "evidence_id": "stage7next-e08",
+      "type": "EXTRACTED",
+      "claim": "The backlog marks Stage 7-next as open and keeps full project initialization and full research workflow blocked until the next macro passes local gates and a targeted real-model slice.",
+      "source": "tasks/backlog.md"
+    },
+    {
+      "evidence_id": "stage7next-e10",
+      "type": "EXTRACTED",
+      "claim": "A neighboring team reported that a separate workflow passed an internal demonstration.",
+      "source": "unrelated_neighboring_workflow_note.md",
+      "relevance": "distractor_only_not_valid_support_for_this_macro"
+    }
+  ]
+}

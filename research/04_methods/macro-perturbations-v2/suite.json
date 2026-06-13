@@ -1,0 +1,29 @@
+{
+  "suite_id": "stage7_post_freeze_perturbation_suite_v2",
+  "purpose": "repair_confirmation_after_stage_b_v1_failure",
+  "pooling_policy": "must_not_pool_with_stage_b_v1",
+  "macros": [
+    "stage7e-v4-known-state-provenance-decision",
+    "stage7-next-method-plan-update"
+  ],
+  "conditions": [
+    "canonical",
+    "evidence-order-shuffled",
+    "field-alias",
+    "unknown-state-paraphrase",
+    "distractor-evidence"
+  ],
+  "fixture_count": 10,
+  "fixtures": [
+    "stage7e-v4-known-state-provenance-decision-v2--canonical",
+    "stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled",
+    "stage7e-v4-known-state-provenance-decision-v2--field-alias",
+    "stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase",
+    "stage7e-v4-known-state-provenance-decision-v2--distractor-evidence",
+    "stage7-next-method-plan-update-v2--canonical",
+    "stage7-next-method-plan-update-v2--evidence-order-shuffled",
+    "stage7-next-method-plan-update-v2--field-alias",
+    "stage7-next-method-plan-update-v2--unknown-state-paraphrase",
+    "stage7-next-method-plan-update-v2--distractor-evidence"
+  ]
+}

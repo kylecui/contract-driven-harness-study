@@ -1,0 +1,30 @@
+{
+  "base_macro": "stage7-next-method-plan-update",
+  "condition": "unknown-state-paraphrase",
+  "representation_preserving": true,
+  "known_bad_expectations": {
+    "missing_paraphrased_unknown_state": [
+      "state_accuracy"
+    ],
+    "canonical_unknown_state_fallback": [
+      "schema_validity"
+    ],
+    "incomplete_selected_claim_support": [
+      "trace_completeness"
+    ],
+    "expanded_typed_evidence_objects": [
+      "schema_validity"
+    ],
+    "open_vocabulary_status": [
+      "schema_validity"
+    ],
+    "missing_required_nested_field": [
+      "schema_validity"
+    ],
+    "hybrid_unknown_state_surface": [
+      "schema_validity"
+    ]
+  },
+  "suite_version": "stage_b_v2",
+  "repair_confirmation": true
+}

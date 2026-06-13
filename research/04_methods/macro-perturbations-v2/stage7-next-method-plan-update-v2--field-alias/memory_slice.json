@@ -1,0 +1,22 @@
+{
+  "slice_id": "stage7_next_method_plan_update_memory_001",
+  "must_load": [
+    "Stage 7e v4 low-cost-model G8/G9 passed 4/4 after retry",
+    "claim-boundary memo has been updated",
+    "methodology outline has been created",
+    "Stage 7-next is open in the backlog",
+    "full project initialization remains blocked",
+    "full research workflow remains blocked",
+    "current Git branch is unknown",
+    "CI status is unknown",
+    "network/API approval is unknown"
+  ],
+  "must_not_load": [
+    "old universal gap-closure note",
+    "old production-readiness note",
+    "current Git branch value",
+    "CI status value",
+    "network/API approval value"
+  ],
+  "staleness_policy": "fixed_snapshot_with_explicit_exclusion"
+}

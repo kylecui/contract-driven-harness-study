@@ -1,0 +1,24 @@
+{
+  "providers": {
+    "siliconflow": {
+      "api_key_env": "SILICONFLOW_API_KEY",
+      "base_url": "https://api.siliconflow.cn/v1",
+      "timeout_seconds": 420
+    }
+  },
+  "model_tiers": {
+    "strong_model": {
+      "provider": "siliconflow",
+      "model": "deepseek-ai/DeepSeek-V3.2"
+    },
+    "budget_model": {
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B"
+    }
+  },
+  "defaults": {
+    "temperature": 0,
+    "max_output_tokens": 3000,
+    "enable_thinking": false
+  }
+}

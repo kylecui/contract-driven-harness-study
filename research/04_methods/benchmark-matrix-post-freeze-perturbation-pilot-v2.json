@@ -1,0 +1,265 @@
+{
+  "fixtures_dir": "research\\04_methods\\macro-perturbations-v2",
+  "models": [
+    "budget_model"
+  ],
+  "harness_arms": [
+    "G9"
+  ],
+  "fixtures": [
+    "stage7-next-method-plan-update-v2--canonical",
+    "stage7-next-method-plan-update-v2--distractor-evidence",
+    "stage7-next-method-plan-update-v2--evidence-order-shuffled",
+    "stage7-next-method-plan-update-v2--field-alias",
+    "stage7-next-method-plan-update-v2--unknown-state-paraphrase",
+    "stage7e-v4-known-state-provenance-decision-v2--canonical",
+    "stage7e-v4-known-state-provenance-decision-v2--distractor-evidence",
+    "stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled",
+    "stage7e-v4-known-state-provenance-decision-v2--field-alias",
+    "stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase"
+  ],
+  "repetitions": 3,
+  "run_count": 30,
+  "runs": [
+    {
+      "run_id": "stage7-next-method-plan-update-v2--canonical__budget_model__G9__r1",
+      "fixture": "stage7-next-method-plan-update-v2--canonical",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v2--canonical__budget_model__G9__r2",
+      "fixture": "stage7-next-method-plan-update-v2--canonical",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v2--canonical__budget_model__G9__r3",
+      "fixture": "stage7-next-method-plan-update-v2--canonical",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r1",
+      "fixture": "stage7-next-method-plan-update-v2--distractor-evidence",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r2",
+      "fixture": "stage7-next-method-plan-update-v2--distractor-evidence",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r3",
+      "fixture": "stage7-next-method-plan-update-v2--distractor-evidence",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r1",
+      "fixture": "stage7-next-method-plan-update-v2--evidence-order-shuffled",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r2",
+      "fixture": "stage7-next-method-plan-update-v2--evidence-order-shuffled",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r3",
+      "fixture": "stage7-next-method-plan-update-v2--evidence-order-shuffled",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r1",
+      "fixture": "stage7-next-method-plan-update-v2--field-alias",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r2",
+      "fixture": "stage7-next-method-plan-update-v2--field-alias",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r3",
+      "fixture": "stage7-next-method-plan-update-v2--field-alias",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r1",
+      "fixture": "stage7-next-method-plan-update-v2--unknown-state-paraphrase",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r2",
+      "fixture": "stage7-next-method-plan-update-v2--unknown-state-paraphrase",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r3",
+      "fixture": "stage7-next-method-plan-update-v2--unknown-state-paraphrase",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r1",
+      "fixture": "stage7e-v4-known-state-provenance-decision-v2--canonical",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r2",
+      "fixture": "stage7e-v4-known-state-provenance-decision-v2--canonical",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r3",
+      "fixture": "stage7e-v4-known-state-provenance-decision-v2--canonical",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r1",
+      "fixture": "stage7e-v4-known-state-provenance-decision-v2--distractor-evidence",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r2",
+      "fixture": "stage7e-v4-known-state-provenance-decision-v2--distractor-evidence",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r3",
+      "fixture": "stage7e-v4-known-state-provenance-decision-v2--distractor-evidence",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r1",
+      "fixture": "stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r2",
+      "fixture": "stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r3",
+      "fixture": "stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r1",
+      "fixture": "stage7e-v4-known-state-provenance-decision-v2--field-alias",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r2",
+      "fixture": "stage7e-v4-known-state-provenance-decision-v2--field-alias",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r3",
+      "fixture": "stage7e-v4-known-state-provenance-decision-v2--field-alias",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r1",
+      "fixture": "stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r2",
+      "fixture": "stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r3",
+      "fixture": "stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    }
+  ]
+}

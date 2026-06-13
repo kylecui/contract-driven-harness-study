@@ -1,0 +1,66 @@
+{
+  "bundle_id": "stage7e_v4_known_state_provenance_evidence_bundle_001",
+  "items": [
+    {
+      "evidence_id": "stage7e-e01",
+      "type": "EXTRACTED",
+      "claim": "Stage 7r.1 completed 8/8 targeted smoke runs and passed 8/8 under low-cost-model G8/G9.",
+      "source": "research/05_analysis/stage-reports/stage-7r1-a2r-a7r-targeted-smoke-summary.md"
+    },
+    {
+      "evidence_id": "stage7e-e02",
+      "type": "INFERRED",
+      "claim": "Stage 7r.1 supports the mechanism-first repair hypothesis for A2R/A7R low-cost-model failures.",
+      "source": "research/03_evidence/evidence-ledger.jsonl#P2-E60"
+    },
+    {
+      "evidence_id": "stage7e-e03",
+      "type": "AMBIGUOUS",
+      "claim": "A8R has mixed execution evidence because low-cost G8 timed out while low-cost G9 and strong G8/G9 passed.",
+      "source": "research/05_analysis/stage-reports/stage-7r-revised-atoms-summary.md"
+    },
+    {
+      "evidence_id": "stage7e-e04",
+      "type": "EXTRACTED",
+      "claim": "Stage 7r.2 admits a narrow evidence-bound decision macro and blocks full project initialization and full research workflow composition.",
+      "source": "research/05_analysis/stage-reports/stage-7r2-composition-readiness-gate.md"
+    },
+    {
+      "evidence_id": "stage7e-e05",
+      "type": "EXTRACTED",
+      "claim": "No supplied evidence supports production readiness or universal model-gap closure.",
+      "source": "input.md"
+    },
+    {
+      "evidence_id": "stage7e-e06",
+      "type": "PROPOSED",
+      "claim": "Run Stage 7e v4 local golden/bad checks and then a targeted low-cost-model smoke before broader macro expansion.",
+      "source": "research/05_analysis/stage-reports/stage-7e-v3-state-retention-decision-summary.md"
+    },
+    {
+      "evidence_id": "stage7e-e07",
+      "type": "EXTRACTED",
+      "claim": "Stage 7e v2 repaired trace and stage-gate retention in 4/4 low-cost-model runs.",
+      "source": "research/05_analysis/stage-reports/stage-7e-v2-retention-decision-summary.md"
+    },
+    {
+      "evidence_id": "stage7e-e08",
+      "type": "EXTRACTED",
+      "claim": "Stage 7e v3 repaired Git/CI/network unknown-state retention in 4/4 low-cost-model runs and passed full strict macro evaluation in 3/4 runs.",
+      "source": "research/05_analysis/stage-reports/stage-7e-v3-state-retention-decision-summary.md"
+    },
+    {
+      "evidence_id": "stage7e-e09",
+      "type": "EXTRACTED",
+      "claim": "Stage 7e v3 still had one G8 run fail because it compressed known-state provenance into generic labels rather than preserving explicit Stage 7r.1/Stage 7r.2 evidence-linked state.",
+      "source": "research/05_analysis/stage-reports/stage-7e-v3-state-retention-decision-summary.md"
+    },
+    {
+      "evidence_id": "stage7e-e10",
+      "type": "EXTRACTED",
+      "claim": "A neighboring team reported that a separate workflow passed an internal demonstration.",
+      "source": "unrelated_neighboring_workflow_note.md",
+      "relevance": "distractor_only_not_valid_support_for_this_macro"
+    }
+  ]
+}

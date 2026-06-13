@@ -1,0 +1,253 @@
+{
+  "output_contract_id": "out_stage7e_v4_known_state_provenance_decision_001_stage_b_v2",
+  "format": "json",
+  "retention_contract_required": true,
+  "state_retention_contract_required": true,
+  "known_state_retention_contract_required": true,
+  "required_sections": [
+    "state_inventory",
+    "grounded_claims",
+    "unsupported_claims",
+    "typed_evidence",
+    "selected_claim",
+    "rejected_options",
+    "decision_trace",
+    "stage_gate",
+    "carried_obligations"
+  ],
+  "required_nested_fields": {
+    "state_inventory": [
+      "known_state",
+      "unknown_state",
+      "forbidden_inferences"
+    ],
+    "grounded_claims": [
+      "claim",
+      "evidence_ids"
+    ],
+    "unsupported_claims": [
+      "claim",
+      "reason"
+    ],
+    "selected_claim": [
+      "option_id",
+      "claim",
+      "evidence_ids"
+    ],
+    "rejected_options": [
+      "option_id",
+      "reason",
+      "evidence_ids"
+    ],
+    "decision_trace": [
+      "option_id",
+      "decision",
+      "evidence_ids",
+      "carried_obligations"
+    ],
+    "stage_gate": [
+      "status",
+      "blocked_outputs",
+      "missing_prerequisites",
+      "next_required_actions"
+    ],
+    "carried_obligations": [
+      "obligation",
+      "status",
+      "evidence_ids"
+    ]
+  },
+  "known_state_retention_rules": {
+    "known_state_must_include": [
+      "stage7r1_targeted_smoke_complete",
+      "stage7r2_narrow_macro_admitted",
+      "stage7e_v2_trace_gate_retention_repaired",
+      "stage7e_v3_unknown_state_retention_repaired"
+    ],
+    "known_state_evidence_ids_must_include": [
+      "stage7e-e01",
+      "stage7e-e04",
+      "stage7e-e07",
+      "stage7e-e08"
+    ]
+  },
+  "state_retention_rules": {
+    "unknown_state_must_include": [
+      "current_git_branch",
+      "ci_status",
+      "network_api_approval"
+    ],
+    "forbidden_inferences_must_include": [
+      "do_not_infer_current_git_branch",
+      "do_not_infer_ci_status",
+      "do_not_infer_network_api_approval"
+    ]
+  },
+  "claim_grounding_rules": {
+    "selected_claim_support_any": [
+      [
+        "stage7e-e01",
+        "stage7e-e04",
+        "stage7e-e07",
+        "stage7e-e08",
+        "stage7e-e09"
+      ]
+    ],
+    "trace_evidence_required_any": [
+      [
+        "stage7e-e01",
+        "stage7e-e04",
+        "stage7e-e05"
+      ],
+      [
+        "stage7e-e04",
+        "stage7e-e05",
+        "stage7e-e07",
+        "stage7e-e08"
+      ],
+      [
+        "stage7e-e05",
+        "stage7e-e06",
+        "stage7e-e08",
+        "stage7e-e09"
+      ]
+    ],
+    "grounded_claim_support_any": [
+      [
+        "stage7e-e01",
+        "stage7e-e04",
+        "stage7e-e07",
+        "stage7e-e08"
+      ],
+      [
+        "stage7e-e01",
+        "stage7e-e04",
+        "stage7e-e08",
+        "stage7e-e09"
+      ],
+      [
+        "stage7e-e04",
+        "stage7e-e07",
+        "stage7e-e08"
+      ],
+      [
+        "stage7e-e06",
+        "stage7e-e08",
+        "stage7e-e09"
+      ]
+    ]
+  },
+  "retention_rules": {
+    "decision_trace_required_options": [
+      "C2",
+      "C1",
+      "C3"
+    ],
+    "stage_gate_blocked_outputs": [
+      "final_recommendation",
+      "full_project_initialization",
+      "full_research_workflow"
+    ],
+    "stage_gate_missing_prerequisites": [
+      "stage7e_v4_local_gate",
+      "stage7e_v4_smoke"
+    ],
+    "must_carry_obligations": [
+      "exclude stale universal-gap-closure and production-readiness note",
+      "do not claim production readiness",
+      "do not claim universal model-gap closure",
+      "do not claim full project initialization or full research workflow readiness"
+    ]
+  },
+  "citation_policy": "claim_level_and_decision_trace",
+  "style_profile": "minimal_json",
+  "tool_trace_required": false,
+  "perturbation_condition": "evidence-order-shuffled",
+  "protocol_version": "stage_b_v2",
+  "output_template": {
+    "state_inventory": {
+      "known_state": "array of {state_id, fact, evidence_ids}",
+      "unknown_state": "array of exact declared labels",
+      "forbidden_inferences": "array of exact declared labels"
+    },
+    "grounded_claims": "array of {claim, evidence_ids}",
+    "unsupported_claims": "array of {claim, reason, evidence_ids}",
+    "typed_evidence": {
+      "extracted": "array of evidence ID strings",
+      "inferred": "array of evidence ID strings",
+      "ambiguous": "array of evidence ID strings",
+      "proposed": "array of evidence ID strings"
+    },
+    "selected_claim": "object {option_id, claim, evidence_ids}",
+    "rejected_options": "exactly 2 objects {option_id, reason, evidence_ids}",
+    "decision_trace": "exactly 3 objects {option_id, decision, step, evidence_ids, carried_obligations}",
+    "stage_gate": "object {status, blocked_outputs, missing_prerequisites, next_required_actions, evidence_ids}",
+    "carried_obligations": "exactly 4 objects {obligation, status='preserved', evidence_ids}"
+  },
+  "output_shape_rules": {
+    "typed_evidence_id_lists_only": true,
+    "enforce_required_nested_fields": true,
+    "required_nested_fields": {
+      "state_inventory": [
+        "known_state",
+        "unknown_state",
+        "forbidden_inferences"
+      ],
+      "grounded_claims": [
+        "claim",
+        "evidence_ids"
+      ],
+      "unsupported_claims": [
+        "claim",
+        "reason"
+      ],
+      "selected_claim": [
+        "option_id",
+        "claim",
+        "evidence_ids"
+      ],
+      "rejected_options": [
+        "option_id",
+        "reason",
+        "evidence_ids"
+      ],
+      "decision_trace": [
+        "option_id",
+        "decision",
+        "evidence_ids",
+        "carried_obligations"
+      ],
+      "stage_gate": [
+        "status",
+        "blocked_outputs",
+        "missing_prerequisites",
+        "next_required_actions"
+      ],
+      "carried_obligations": [
+        "obligation",
+        "status",
+        "evidence_ids"
+      ]
+    },
+    "exact_array_counts": {
+      "rejected_options": 2,
+      "decision_trace": 3,
+      "carried_obligations": 4
+    },
+    "carried_obligation_status_values": [
+      "preserved"
+    ]
+  },
+  "closed_vocabularies": {
+    "carried_obligations.status": [
+      "preserved"
+    ]
+  },
+  "compact_output_rules": [
+    "Return exactly one JSON object with no Markdown fence or prose.",
+    "Use evidence ID strings only inside typed_evidence buckets.",
+    "Use exactly the arrays and object shapes declared in output_template.",
+    "Use preserved as the only carried-obligation status.",
+    "Do not repeat EvidenceBundle claim text inside typed_evidence."
+  ]
+}

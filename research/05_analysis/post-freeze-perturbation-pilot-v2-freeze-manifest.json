@@ -1,0 +1,1884 @@
+{
+  "protocol_id": "stage_b_v2_repair_confirmation",
+  "prepared_date": "2026-06-13",
+  "base_commit": "40a43e6",
+  "hash_algorithm": "sha256",
+  "file_count": 375,
+  "files": [
+    {
+      "path": "research/04_methods/benchmark-matrix-post-freeze-perturbation-pilot-v2.json",
+      "bytes": 10123,
+      "sha256": "08afa6a143f0acb3f6ddd1744f9ba528aee0c105d823b84e1afdc07140276af7"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--canonical/evidence_bundle.json",
+      "bytes": 2679,
+      "sha256": "4d9ddcdd5f6dcdf174b9db5653c518cfba3864364b5643f85bea67b248e39112"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--canonical/golden_output.json",
+      "bytes": 7612,
+      "sha256": "22a81c801146827c136c35485dbbac9d95ea1fb0c6a1e09de02bd919aaae4b85"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--canonical/input.md",
+      "bytes": 6449,
+      "sha256": "2b0af59dcf234727ae9495a3cd1f801d2fa8a8b35ca4a42e47860e11deb6e193"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--canonical/known_bad_outputs/expanded_typed_evidence_objects.json",
+      "bytes": 8007,
+      "sha256": "73d38e4bbfc5311f034b7b55225ae812f245ffdd5907045adb13be313c2bc8ab"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--canonical/known_bad_outputs/incomplete_selected_claim_support.json",
+      "bytes": 7587,
+      "sha256": "05b304ab7ecded9c4a8a7ea9fa812d998d6cb86319e70a2c8fa21998e201b588"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--canonical/known_bad_outputs/missing_required_known_state_evidence.json",
+      "bytes": 7574,
+      "sha256": "445dea6cabe596018a386a0b3f7930b73056f29cc3aea4ae7388defd44aae07c"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--canonical/known_bad_outputs/missing_required_nested_field.json",
+      "bytes": 7551,
+      "sha256": "c9645146681a2173376ed8b95081252e3c971358740dfa24f2f2a98b5a175a22"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--canonical/known_bad_outputs/open_vocabulary_status.json",
+      "bytes": 7612,
+      "sha256": "4d4705e0b07c06752fc898656bad919178beeaad52959ce53be03f04c01473df"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--canonical/known_bad_outputs/undeclared_source_references.json",
+      "bytes": 7727,
+      "sha256": "7be4fd4fdea5bf1ee9b5184506cf57a1554a4d1ef2f0ded860b257c5c4cb7cbc"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--canonical/memory_slice.json",
+      "bytes": 753,
+      "sha256": "5649c1e320bc75cec540844398c3688a1fa1d5cde70e402d780497827355b457"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--canonical/model_output_contract.json",
+      "bytes": 7562,
+      "sha256": "7c20fc252c0644e45ee361ef28aa7763a46f75b39c3b801eedf99f3dcb03aa0a"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--canonical/output_contract.json",
+      "bytes": 7562,
+      "sha256": "7c20fc252c0644e45ee361ef28aa7763a46f75b39c3b801eedf99f3dcb03aa0a"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--canonical/perturbation.json",
+      "bytes": 699,
+      "sha256": "2a31527e97fb73e7a0d4c3d23f38d9918f158c046c8637e78e540dd652e2eaa9"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--canonical/task_spec.json",
+      "bytes": 3375,
+      "sha256": "7fb5981cb2a566e89fa462ed898ebb87233459d218778152690d3a9ea20baa3a"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--distractor-evidence/evidence_bundle.json",
+      "bytes": 2998,
+      "sha256": "253999e320a605ae7db167f747f15f950cc4343ccc498dfce4ba795072b459d7"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--distractor-evidence/golden_output.json",
+      "bytes": 7612,
+      "sha256": "22a81c801146827c136c35485dbbac9d95ea1fb0c6a1e09de02bd919aaae4b85"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--distractor-evidence/input.md",
+      "bytes": 6449,
+      "sha256": "2b0af59dcf234727ae9495a3cd1f801d2fa8a8b35ca4a42e47860e11deb6e193"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--distractor-evidence/known_bad_outputs/distractor_mixed_with_valid_support.json",
+      "bytes": 7637,
+      "sha256": "d42b9297b1b4dd6964bceac3896a70a2d34f0f18a19fabcee145d3f3dc3807d8"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--distractor-evidence/known_bad_outputs/distractor_used_as_primary_support.json",
+      "bytes": 7456,
+      "sha256": "e040a7eb852ae36f5865eeca7a8d79db64d1223000d7675a1b2cb8558dab9626"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--distractor-evidence/known_bad_outputs/expanded_typed_evidence_objects.json",
+      "bytes": 8007,
+      "sha256": "73d38e4bbfc5311f034b7b55225ae812f245ffdd5907045adb13be313c2bc8ab"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--distractor-evidence/known_bad_outputs/incomplete_selected_claim_support.json",
+      "bytes": 7587,
+      "sha256": "05b304ab7ecded9c4a8a7ea9fa812d998d6cb86319e70a2c8fa21998e201b588"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--distractor-evidence/known_bad_outputs/missing_required_nested_field.json",
+      "bytes": 7551,
+      "sha256": "c9645146681a2173376ed8b95081252e3c971358740dfa24f2f2a98b5a175a22"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--distractor-evidence/known_bad_outputs/open_vocabulary_status.json",
+      "bytes": 7612,
+      "sha256": "4d4705e0b07c06752fc898656bad919178beeaad52959ce53be03f04c01473df"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--distractor-evidence/memory_slice.json",
+      "bytes": 753,
+      "sha256": "5649c1e320bc75cec540844398c3688a1fa1d5cde70e402d780497827355b457"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--distractor-evidence/model_output_contract.json",
+      "bytes": 7639,
+      "sha256": "54505d53fbb44e6073cce2cdc881cd37ffa6a80dccb66c775ebfcc073807a69d"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--distractor-evidence/output_contract.json",
+      "bytes": 7639,
+      "sha256": "54505d53fbb44e6073cce2cdc881cd37ffa6a80dccb66c775ebfcc073807a69d"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--distractor-evidence/perturbation.json",
+      "bytes": 750,
+      "sha256": "cb19fc220de6152a67024eceedc1a81f0ec3f80d5a73dd8544c968221963b2f3"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--distractor-evidence/task_spec.json",
+      "bytes": 3395,
+      "sha256": "885fe46d96e82b1584ffe1bb62fdbeb6594507fc5c8217a5df0ba67369b154eb"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled/evidence_bundle.json",
+      "bytes": 2679,
+      "sha256": "91e1c9f01b268ff3bb62495e77f0c26782b68fd2c776166dea7453f39d4c52be"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled/golden_output.json",
+      "bytes": 7612,
+      "sha256": "22a81c801146827c136c35485dbbac9d95ea1fb0c6a1e09de02bd919aaae4b85"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled/input.md",
+      "bytes": 6449,
+      "sha256": "2b0af59dcf234727ae9495a3cd1f801d2fa8a8b35ca4a42e47860e11deb6e193"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled/known_bad_outputs/expanded_typed_evidence_objects.json",
+      "bytes": 8007,
+      "sha256": "73d38e4bbfc5311f034b7b55225ae812f245ffdd5907045adb13be313c2bc8ab"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled/known_bad_outputs/incomplete_selected_claim_support.json",
+      "bytes": 7587,
+      "sha256": "05b304ab7ecded9c4a8a7ea9fa812d998d6cb86319e70a2c8fa21998e201b588"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled/known_bad_outputs/missing_grounded_claim_evidence.json",
+      "bytes": 7551,
+      "sha256": "e84ff62e73f21055705fd7562a3b7954a431dfc7eb803f38cda4e86da981a75c"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled/known_bad_outputs/missing_required_nested_field.json",
+      "bytes": 7551,
+      "sha256": "c9645146681a2173376ed8b95081252e3c971358740dfa24f2f2a98b5a175a22"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled/known_bad_outputs/open_vocabulary_status.json",
+      "bytes": 7612,
+      "sha256": "4d4705e0b07c06752fc898656bad919178beeaad52959ce53be03f04c01473df"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled/memory_slice.json",
+      "bytes": 753,
+      "sha256": "5649c1e320bc75cec540844398c3688a1fa1d5cde70e402d780497827355b457"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled/model_output_contract.json",
+      "bytes": 7576,
+      "sha256": "0a28cf072b966947aca2c816de5d0645713c99091241ce78b5b1af436b87a5df"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled/output_contract.json",
+      "bytes": 7576,
+      "sha256": "0a28cf072b966947aca2c816de5d0645713c99091241ce78b5b1af436b87a5df"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled/perturbation.json",
+      "bytes": 611,
+      "sha256": "f68556b3a5a21e46ddd7d5f362ed1732a2a77bdcb8f0a2c37948939d0f0b3856"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled/task_spec.json",
+      "bytes": 3403,
+      "sha256": "2e769a9eec954cae7ca46e5cb9eb22f7e2add0115c4947678b1d8065acdea46f"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--field-alias/evidence_bundle.json",
+      "bytes": 2679,
+      "sha256": "4d9ddcdd5f6dcdf174b9db5653c518cfba3864364b5643f85bea67b248e39112"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--field-alias/golden_output.json",
+      "bytes": 7727,
+      "sha256": "7be4fd4fdea5bf1ee9b5184506cf57a1554a4d1ef2f0ded860b257c5c4cb7cbc"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--field-alias/input.md",
+      "bytes": 6464,
+      "sha256": "5b4ad48020d38ac9acb05b19286beec8b5e8d186787c44fdf4e971cfdb1e2baf"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--field-alias/known_bad_outputs/canonical_field_fallback.json",
+      "bytes": 7612,
+      "sha256": "22a81c801146827c136c35485dbbac9d95ea1fb0c6a1e09de02bd919aaae4b85"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--field-alias/known_bad_outputs/expanded_typed_evidence_objects.json",
+      "bytes": 8122,
+      "sha256": "7da29410ee62127677062369fcdf14c30aa73fe69e8e1b191bd2c9a0067d7d6a"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--field-alias/known_bad_outputs/incomplete_selected_claim_support.json",
+      "bytes": 7702,
+      "sha256": "3a20de727863b11591b8f4c875b1c608d1f742b7b6ba11a788f63574e6e04f34"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--field-alias/known_bad_outputs/missing_aliased_claim_evidence.json",
+      "bytes": 7666,
+      "sha256": "db929814e704afd63bd1bcd44cc3254bcac570604b9926ca18e4a0bc92baaf4d"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--field-alias/known_bad_outputs/missing_required_nested_field.json",
+      "bytes": 7661,
+      "sha256": "55dbb799f0dbecb49d6c4190fd1e79b091e71e0b426f5ea282405eda95e50c28"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--field-alias/known_bad_outputs/open_vocabulary_status.json",
+      "bytes": 7727,
+      "sha256": "2d31ed854a516cc3aad89665e988d19a3bcc9a47c24b4fc53358c1df4383e79d"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--field-alias/memory_slice.json",
+      "bytes": 753,
+      "sha256": "5649c1e320bc75cec540844398c3688a1fa1d5cde70e402d780497827355b457"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--field-alias/model_output_contract.json",
+      "bytes": 7801,
+      "sha256": "f0cd5631b75bdc0948b7c958f3629d43ab70edac1d72cb83310e716899cdd991"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--field-alias/output_contract.json",
+      "bytes": 7783,
+      "sha256": "81295c1402eb7e0048bd763ea878bd728d03971259489e762c95e81bf2e648f1"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--field-alias/perturbation.json",
+      "bytes": 666,
+      "sha256": "455b2a5245277e47a4e57d351edcce6928d4397fd38d831294e5bbd10609ead4"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--field-alias/task_spec.json",
+      "bytes": 3404,
+      "sha256": "d5f3d320b10101bc3bb5d542bdfa1a8bd160e74cd7559803761eb5f0711fb7c1"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase/evidence_bundle.json",
+      "bytes": 2679,
+      "sha256": "4d9ddcdd5f6dcdf174b9db5653c518cfba3864364b5643f85bea67b248e39112"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase/golden_output.json",
+      "bytes": 7704,
+      "sha256": "8e2e00c984ec2f85c1e6bf07f13e372fab2c6e690c72bfe489ddc1e4668a9fb9"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase/input.md",
+      "bytes": 6541,
+      "sha256": "131f6b4da552785325bd121b0f301e2bf997bd1742ae605f7dd2c61536ccb93c"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase/known_bad_outputs/canonical_unknown_state_fallback.json",
+      "bytes": 7612,
+      "sha256": "22a81c801146827c136c35485dbbac9d95ea1fb0c6a1e09de02bd919aaae4b85"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase/known_bad_outputs/expanded_typed_evidence_objects.json",
+      "bytes": 8099,
+      "sha256": "90190edf7904e8f94e9b69da8a3067ffd5064e7a2433fcd6d9d39dcade8b7ba8"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase/known_bad_outputs/hybrid_unknown_state_surface.json",
+      "bytes": 7704,
+      "sha256": "1335857a88c96eee92b602a9ccea16ef9cd89778b1203990b3a96ccf65ebaedf"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase/known_bad_outputs/incomplete_selected_claim_support.json",
+      "bytes": 7679,
+      "sha256": "98771d25481dc7c6c85239286136127e2739c4b4a31b250c5c15d596ac8e1dcf"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase/known_bad_outputs/missing_paraphrased_unknown_state.json",
+      "bytes": 7657,
+      "sha256": "0788afa1a8765ac51b0d48586c0468b9404a064e0fe4c094a65c981b96670c9a"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase/known_bad_outputs/missing_required_nested_field.json",
+      "bytes": 7643,
+      "sha256": "e74039b43f7463a185325c4aedd1b168ab0f5937823ddd288a186949651b3862"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase/known_bad_outputs/open_vocabulary_status.json",
+      "bytes": 7704,
+      "sha256": "b3deed5ec1b2664057ddfdac30b9a1803d3a79610779a56a18610a5ab2cce178"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase/memory_slice.json",
+      "bytes": 753,
+      "sha256": "5649c1e320bc75cec540844398c3688a1fa1d5cde70e402d780497827355b457"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase/model_output_contract.json",
+      "bytes": 8118,
+      "sha256": "b573c4a1e7d848280dcad3f726f9e1f301e95cbadf142a6717866aa2d7ca5380"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase/output_contract.json",
+      "bytes": 8581,
+      "sha256": "76e28a81011ec79c2ee3975b5c55a30fb260b7b618f027b502d1b080112acc13"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase/perturbation.json",
+      "bytes": 758,
+      "sha256": "11356740e23e2ac279d05077b09921e71d3ecda1fc3d66a77ba75dce9988d0be"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase/task_spec.json",
+      "bytes": 3497,
+      "sha256": "5ab7ff6bf45fe5fe4b51bece9b6bcf4fc9e50809a252de4b75b9008fb69e559f"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--canonical/evidence_bundle.json",
+      "bytes": 2786,
+      "sha256": "27d5f18ff30d8abb73cfcb07f8df6e7539ccc7ad25b2c61421670c95be6653cc"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--canonical/golden_output.json",
+      "bytes": 6214,
+      "sha256": "1f9679fbcf9a8860f1e0465544cd6f76efea1a850695017e389b78c3164f5a99"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--canonical/input.md",
+      "bytes": 6115,
+      "sha256": "806a6a116d77491eed5c821c869c024d37178db4b86a83058fe1f0bf39042344"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--canonical/known_bad_outputs/expanded_typed_evidence_objects.json",
+      "bytes": 6688,
+      "sha256": "818447bbb92500afac481a33ae8317e2da4d29ff05f53b5627b53c7a14ca352b"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--canonical/known_bad_outputs/incomplete_selected_claim_support.json",
+      "bytes": 6192,
+      "sha256": "dec10efab7f9742b9f464a7882bd3d13068074c21df1cd6a91513578101ecd60"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--canonical/known_bad_outputs/missing_required_known_state_evidence.json",
+      "bytes": 6179,
+      "sha256": "f79c4ec0853c7318f60dbf0c0a0d76a234c0dd2edc8f64918449b05c8f3f8564"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--canonical/known_bad_outputs/missing_required_nested_field.json",
+      "bytes": 6156,
+      "sha256": "d5605f3fb3d43c93a89d33feabf867609913c5fa6ab46ad4b41103c173f89fa4"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--canonical/known_bad_outputs/open_vocabulary_status.json",
+      "bytes": 6214,
+      "sha256": "4aaad7b6e8ff7a9cffab441d690274b457141f7476d8c196f5509b15f6c4e09a"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--canonical/known_bad_outputs/undeclared_source_references.json",
+      "bytes": 6314,
+      "sha256": "79a227f41e21f1f4d7fc47a33a3026b0049897f96476bf641d26f8e40fa366c0"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--canonical/memory_slice.json",
+      "bytes": 896,
+      "sha256": "7f1f4a6611230f31ff280c1c068ea3a75077eef688fd5f89885bc02ca3bc3186"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--canonical/model_output_contract.json",
+      "bytes": 6770,
+      "sha256": "fdfb153f9d057f69f8ca3529a2812a76f3ef2ae649311badab02906e3dc170db"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--canonical/output_contract.json",
+      "bytes": 6770,
+      "sha256": "fdfb153f9d057f69f8ca3529a2812a76f3ef2ae649311badab02906e3dc170db"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--canonical/perturbation.json",
+      "bytes": 711,
+      "sha256": "e269b528a38cbd63b499fac2fa5d75795108c371c440d1c81c63d3a8257c49cf"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--canonical/task_spec.json",
+      "bytes": 3144,
+      "sha256": "23c312adb511b4b4f72b84b35ad80eecd1562ea93fc465df24cc713a57bd554c"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence/evidence_bundle.json",
+      "bytes": 3102,
+      "sha256": "848769f2328971cdc0a817b6e688c4659a68cd788bcb83c19f8be8d30ae912db"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence/golden_output.json",
+      "bytes": 6214,
+      "sha256": "1f9679fbcf9a8860f1e0465544cd6f76efea1a850695017e389b78c3164f5a99"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence/input.md",
+      "bytes": 6115,
+      "sha256": "806a6a116d77491eed5c821c869c024d37178db4b86a83058fe1f0bf39042344"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence/known_bad_outputs/distractor_mixed_with_valid_support.json",
+      "bytes": 6236,
+      "sha256": "d19f9ef662187f704e73ff4eca3e3e362b43787bdce7d91e391232693451af63"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence/known_bad_outputs/distractor_used_as_primary_support.json",
+      "bytes": 6102,
+      "sha256": "950f19358b4804e1bd41dbd8076ecb24d17104aca6fab67d6a6716549d7e525f"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence/known_bad_outputs/expanded_typed_evidence_objects.json",
+      "bytes": 6688,
+      "sha256": "818447bbb92500afac481a33ae8317e2da4d29ff05f53b5627b53c7a14ca352b"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence/known_bad_outputs/incomplete_selected_claim_support.json",
+      "bytes": 6192,
+      "sha256": "dec10efab7f9742b9f464a7882bd3d13068074c21df1cd6a91513578101ecd60"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence/known_bad_outputs/missing_required_nested_field.json",
+      "bytes": 6156,
+      "sha256": "d5605f3fb3d43c93a89d33feabf867609913c5fa6ab46ad4b41103c173f89fa4"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence/known_bad_outputs/open_vocabulary_status.json",
+      "bytes": 6214,
+      "sha256": "4aaad7b6e8ff7a9cffab441d690274b457141f7476d8c196f5509b15f6c4e09a"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence/memory_slice.json",
+      "bytes": 896,
+      "sha256": "7f1f4a6611230f31ff280c1c068ea3a75077eef688fd5f89885bc02ca3bc3186"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence/model_output_contract.json",
+      "bytes": 6844,
+      "sha256": "04395b035e26f26af15984dbde04d38e22e621420247eceb43e0c36bf9e23c69"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence/output_contract.json",
+      "bytes": 6844,
+      "sha256": "04395b035e26f26af15984dbde04d38e22e621420247eceb43e0c36bf9e23c69"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence/perturbation.json",
+      "bytes": 762,
+      "sha256": "72a618e30a05815c57fe1a9c9557d2d1d36906e0668755bf8e8dae00ea905cbf"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence/task_spec.json",
+      "bytes": 3164,
+      "sha256": "659a2ac515fdd77af2475d9dcad4e09d02a04f0b6659594f1cffe2077b0a74d1"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled/evidence_bundle.json",
+      "bytes": 2786,
+      "sha256": "575b9aa4cb9df0c2c57d6e3b90001749a3785dd8b98054118fa30d7777e179f1"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled/golden_output.json",
+      "bytes": 6214,
+      "sha256": "1f9679fbcf9a8860f1e0465544cd6f76efea1a850695017e389b78c3164f5a99"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled/input.md",
+      "bytes": 6115,
+      "sha256": "806a6a116d77491eed5c821c869c024d37178db4b86a83058fe1f0bf39042344"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled/known_bad_outputs/expanded_typed_evidence_objects.json",
+      "bytes": 6688,
+      "sha256": "818447bbb92500afac481a33ae8317e2da4d29ff05f53b5627b53c7a14ca352b"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled/known_bad_outputs/incomplete_selected_claim_support.json",
+      "bytes": 6192,
+      "sha256": "dec10efab7f9742b9f464a7882bd3d13068074c21df1cd6a91513578101ecd60"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled/known_bad_outputs/missing_grounded_claim_evidence.json",
+      "bytes": 6183,
+      "sha256": "f4701684bc1c7aabf94c6a969525082b2bcc15f248cde20573bccb835810b83c"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled/known_bad_outputs/missing_required_nested_field.json",
+      "bytes": 6156,
+      "sha256": "d5605f3fb3d43c93a89d33feabf867609913c5fa6ab46ad4b41103c173f89fa4"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled/known_bad_outputs/open_vocabulary_status.json",
+      "bytes": 6214,
+      "sha256": "4aaad7b6e8ff7a9cffab441d690274b457141f7476d8c196f5509b15f6c4e09a"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled/memory_slice.json",
+      "bytes": 896,
+      "sha256": "7f1f4a6611230f31ff280c1c068ea3a75077eef688fd5f89885bc02ca3bc3186"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled/model_output_contract.json",
+      "bytes": 6784,
+      "sha256": "d259a4fdfcf52a91c6642e0d1bbf860c7246e1fd846fc3d08cfd53d7bc44d667"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled/output_contract.json",
+      "bytes": 6784,
+      "sha256": "d259a4fdfcf52a91c6642e0d1bbf860c7246e1fd846fc3d08cfd53d7bc44d667"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled/perturbation.json",
+      "bytes": 623,
+      "sha256": "4e47c44efa6f537377e577d8dbe145ea248ea83277920ce055c58fdfa93f22f7"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled/task_spec.json",
+      "bytes": 3172,
+      "sha256": "6df4bdc78d66a0956ef4483714bc396ca4d7499e28b5b16d3e0e30094d424b87"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias/evidence_bundle.json",
+      "bytes": 2786,
+      "sha256": "27d5f18ff30d8abb73cfcb07f8df6e7539ccc7ad25b2c61421670c95be6653cc"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias/golden_output.json",
+      "bytes": 6314,
+      "sha256": "79a227f41e21f1f4d7fc47a33a3026b0049897f96476bf641d26f8e40fa366c0"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias/input.md",
+      "bytes": 6130,
+      "sha256": "30b1e7000e1cacf9f4940b57ac3bb9b22abef46616d199aa4996343bcb34029c"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias/known_bad_outputs/canonical_field_fallback.json",
+      "bytes": 6214,
+      "sha256": "1f9679fbcf9a8860f1e0465544cd6f76efea1a850695017e389b78c3164f5a99"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias/known_bad_outputs/expanded_typed_evidence_objects.json",
+      "bytes": 6788,
+      "sha256": "0f56296efda4395cd59684147e9e854a07682299399af2c4fe7af5072899993d"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias/known_bad_outputs/incomplete_selected_claim_support.json",
+      "bytes": 6292,
+      "sha256": "25d60e8b40eee2007385f3d4c2674ad4e4475ec0c3251e339600694c211e447a"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias/known_bad_outputs/missing_aliased_claim_evidence.json",
+      "bytes": 6283,
+      "sha256": "6a0e506289b397302f5bee40395173ddf2513a80a7e84aabaf04ea1eb34d8cdd"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias/known_bad_outputs/missing_required_nested_field.json",
+      "bytes": 6251,
+      "sha256": "c0cf46fdf2747dfb688dac14b82b3c00d725f561ef9b3595fd349065a55d0789"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias/known_bad_outputs/open_vocabulary_status.json",
+      "bytes": 6314,
+      "sha256": "8449f776c5221280be88929e685c8e503dcb15fffb99fe0f707e2fb363882284"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias/memory_slice.json",
+      "bytes": 896,
+      "sha256": "7f1f4a6611230f31ff280c1c068ea3a75077eef688fd5f89885bc02ca3bc3186"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias/model_output_contract.json",
+      "bytes": 7004,
+      "sha256": "79cabd8a72cd41f7700af365bb597dfdf6cf3a6d74c74c805684e9594fc90cdf"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias/output_contract.json",
+      "bytes": 6986,
+      "sha256": "1d052572baf91bd0f70e6c2c2d5d790f9ae9546b623f2e1e22f7203ac31c9500"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias/perturbation.json",
+      "bytes": 678,
+      "sha256": "b7f24ee07daf0fcbfd3792a943ae7592e2c5f1d1c8fdce7b3a2c98980df7d83e"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias/task_spec.json",
+      "bytes": 3173,
+      "sha256": "6a55bc2858b18fd7cfb556a6eb59b0814324cb8258f96f27f7f0306724d9ef72"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase/evidence_bundle.json",
+      "bytes": 2786,
+      "sha256": "27d5f18ff30d8abb73cfcb07f8df6e7539ccc7ad25b2c61421670c95be6653cc"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase/golden_output.json",
+      "bytes": 6306,
+      "sha256": "89d85913752c183b5b5e2fc3726c766c14bc7cd091b8ffa97163a14adb03b661"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase/input.md",
+      "bytes": 6207,
+      "sha256": "e63b5bdb6d53c6ce6c67a9106015c5222d1657f52182bcbee51a871910442f05"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase/known_bad_outputs/canonical_unknown_state_fallback.json",
+      "bytes": 6214,
+      "sha256": "1f9679fbcf9a8860f1e0465544cd6f76efea1a850695017e389b78c3164f5a99"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase/known_bad_outputs/expanded_typed_evidence_objects.json",
+      "bytes": 6780,
+      "sha256": "4d163f931ed239e62604868febe7787e198361edbb62c63647362196e87bd0e8"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase/known_bad_outputs/hybrid_unknown_state_surface.json",
+      "bytes": 6306,
+      "sha256": "03c8195fadef06925b8c4bcdb9cfcacc3ca05916d26d81d271f65982e15ea54f"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase/known_bad_outputs/incomplete_selected_claim_support.json",
+      "bytes": 6284,
+      "sha256": "3efeecde00e86ed2cd59f7d0394a3e34cb145b9746790a274131e6e5e52667cc"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase/known_bad_outputs/missing_paraphrased_unknown_state.json",
+      "bytes": 6259,
+      "sha256": "ada5b52ecfef9a866fb1e4ab51b0f67b7e84b50f8533bf029bf0407284031cf8"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase/known_bad_outputs/missing_required_nested_field.json",
+      "bytes": 6248,
+      "sha256": "fb275b985b7ded9becaaae070c4ccaf13599721fd17df84c70bf286361f6a96d"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase/known_bad_outputs/open_vocabulary_status.json",
+      "bytes": 6306,
+      "sha256": "c2bb4ea21865d80e2a73a4e733084fa9861b47e2224f930608e9e1caac7e1d1b"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase/memory_slice.json",
+      "bytes": 896,
+      "sha256": "7f1f4a6611230f31ff280c1c068ea3a75077eef688fd5f89885bc02ca3bc3186"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase/model_output_contract.json",
+      "bytes": 7326,
+      "sha256": "bb5220d46d7ac83ee6ba063637f7b4e3608e5a79d8808cc738a2761d464e559c"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase/output_contract.json",
+      "bytes": 7789,
+      "sha256": "471d75a30873fa099132db7e1a4fcdc9ed38517c60269a412b105b197210bb36"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase/perturbation.json",
+      "bytes": 770,
+      "sha256": "dc5032bad929a004ca6a7afeb1610cbd51960679b5af268a8e38fd9a41526f27"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase/task_spec.json",
+      "bytes": 3266,
+      "sha256": "722999aeffe1a05134f960867cc2a2b7a933ed2fbe7d88b07949836f5c76ee49"
+    },
+    {
+      "path": "research/04_methods/macro-perturbations-v2/suite.json",
+      "bytes": 1163,
+      "sha256": "7465071b141d9c250d1505eb590a8febb1d967358be924c8bb1577dca5bd5bc8"
+    },
+    {
+      "path": "research/04_methods/provider-config.siliconflow-stage-b-v2.json",
+      "bytes": 500,
+      "sha256": "184d48e2fbc3ec2b16ebccff4b46105047d6269032d27aa311fea3bf3c30cac6"
+    },
+    {
+      "path": "research/04_methods/scripts/build_macro_perturbation_suite_v2.py",
+      "bytes": 11685,
+      "sha256": "d98925cd6488e6162dde5d8e80d19fde356437e69e6159caee11d3b48c92a983"
+    },
+    {
+      "path": "research/04_methods/scripts/build_protocol_freeze_manifest.py",
+      "bytes": 2036,
+      "sha256": "55d0e58907f29ab10b116ef82443d2f9bba433c2aa0c882da79e2ef82cb15699"
+    },
+    {
+      "path": "research/04_methods/scripts/compile_benchmark_packets.py",
+      "bytes": 6566,
+      "sha256": "878c0349bbc76f3f4bf45ce472a2e2181d6e955ace1fce48466fa9244bdd3daf"
+    },
+    {
+      "path": "research/04_methods/scripts/evaluate_stage7e_macro_artifacts.py",
+      "bytes": 29437,
+      "sha256": "c15a8f1aadb1c6bcbe66ecc8daba14dd401309f4a569d5a5c097b336987b2505"
+    },
+    {
+      "path": "research/04_methods/scripts/export_model_prompts.py",
+      "bytes": 5725,
+      "sha256": "8c7827b5b0ec0752150253ad5e9e143998981ad34f66e68ea7222066780d44c1"
+    },
+    {
+      "path": "research/04_methods/scripts/generate_benchmark_matrix.py",
+      "bytes": 2324,
+      "sha256": "e075afdfb9e056bb5441f22453380c8db662b14b9c57de7eb37ed8aa6e5e5ed6"
+    },
+    {
+      "path": "research/04_methods/scripts/preflight_real_model_pilot.py",
+      "bytes": 11849,
+      "sha256": "fcb841f729722364a3d52f617985ba529a48553527b5fdbe8c607eec9a9bcafb"
+    },
+    {
+      "path": "research/04_methods/scripts/prepare_real_run_artifacts.py",
+      "bytes": 3377,
+      "sha256": "be4ba178e068acdc7e2941817d7e3087303c40ba1dd6588c47ba63ad76b36873"
+    },
+    {
+      "path": "research/04_methods/scripts/run_openai_adapter.py",
+      "bytes": 12794,
+      "sha256": "fd14e6fbc934fedaeb1829eeb5cb2146a329e38c2a9b4472fdfc4514f9be9a08"
+    },
+    {
+      "path": "research/05_analysis/benchmark-post-freeze-perturbation-pilot-v2-packets.jsonl",
+      "bytes": 557886,
+      "sha256": "7099816a748960d5dd8e3ab2861fce4886f417c253e421c3cc46e6896e5d9502"
+    },
+    {
+      "path": "research/05_analysis/post-freeze-perturbation-pilot-v2-adapter-dry-run.json",
+      "bytes": 27269,
+      "sha256": "907fdeeff981695dbe6e904c24e398c4d119687c265a04ef89267def1c167334"
+    },
+    {
+      "path": "research/05_analysis/post-freeze-perturbation-pilot-v2-preflight.json",
+      "bytes": 2048,
+      "sha256": "cb641e76f4e190b1268d412159013c9af8192d5c2922e707a8ecae154c26bdcf"
+    },
+    {
+      "path": "research/05_analysis/post-freeze-perturbation-pilot-v2-preregistration.md",
+      "bytes": 6102,
+      "sha256": "9c519af660987f9a8137d871e64b679636d0fc19f42e2f89944563d6827fc1dd"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2-manifest-with-prompts.json",
+      "bytes": 47516,
+      "sha256": "7a3b118a5f5133fd5eab132a46195616ae8faed7155ad6dc8147a2051f3026b1"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--canonical__budget_model__G9__r1/adapter_request.json",
+      "bytes": 441,
+      "sha256": "cf1e5255ee9807a05ecc25f46ee427571130879597d3a517bd123e2750639e56"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--canonical__budget_model__G9__r1/manifest.json",
+      "bytes": 1398,
+      "sha256": "8b82fba9a71533155667f2d75e2f5412b001ced8b2feefdfbaac263d636b13b8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--canonical__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--canonical__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--canonical__budget_model__G9__r1/prompt.md",
+      "bytes": 21837,
+      "sha256": "b14c9651bc446581b23cbfc37e93d251b2feea0b95e3e95cf28e4d2b4db35bd1"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--canonical__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--canonical__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--canonical__budget_model__G9__r2/adapter_request.json",
+      "bytes": 441,
+      "sha256": "bec34356056960f4f753360d64788fb0ca3e62359b9fc2ae2577a85af521bc6e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--canonical__budget_model__G9__r2/manifest.json",
+      "bytes": 1398,
+      "sha256": "bcd348b1e82bb0833979845a299ddb43e5d6997733d0c229ed131e0f9c095cb5"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--canonical__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--canonical__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--canonical__budget_model__G9__r2/prompt.md",
+      "bytes": 21837,
+      "sha256": "e6d15b6aaf763e34b03a933320688f97b9c350e9be78426bb04713ff5b223e61"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--canonical__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--canonical__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--canonical__budget_model__G9__r3/adapter_request.json",
+      "bytes": 441,
+      "sha256": "68e1dc41e09beebb43eca78734f639e96be607397d0270f221b0d46645da1a47"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--canonical__budget_model__G9__r3/manifest.json",
+      "bytes": 1398,
+      "sha256": "f0a623a96cbca5f16ecb714e19e702cdcf9487c0d1c179b306babe29a003bdd7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--canonical__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--canonical__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--canonical__budget_model__G9__r3/prompt.md",
+      "bytes": 21837,
+      "sha256": "817e48882a0f70fe7bfa516bbddc12cf9b8b69cfa699daf6b79841d278757bef"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--canonical__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--canonical__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r1/adapter_request.json",
+      "bytes": 461,
+      "sha256": "dad5d9a7e1c26001e775179face633987b386a20c90dec8a04e4df0db6c5070e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r1/manifest.json",
+      "bytes": 1478,
+      "sha256": "521eb17df92a00318b8b98f77d6c4d3d5252352bdb640d00a91db950f70d94af"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r1/prompt.md",
+      "bytes": 22273,
+      "sha256": "39c43279ebd9c2d5256f457b5d22499e119dd005dfb129bbe254d47f1f220b9d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r2/adapter_request.json",
+      "bytes": 461,
+      "sha256": "eb86f6ee5e4202d1b51f802241e0a59429285cf482641cf763bd8e4a8f111940"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r2/manifest.json",
+      "bytes": 1478,
+      "sha256": "d144add52b529b25453aa5316f5b99a471066db0ce70c523620b4bc4b2b4b188"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r2/prompt.md",
+      "bytes": 22273,
+      "sha256": "1c4ebbcf8f7b006e879b75ce7eef8ee91a8b49564f63d7e923301fb60dbd27cb"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r3/adapter_request.json",
+      "bytes": 461,
+      "sha256": "1aae366e203068518b541d55c8a15f73f4d7a474ca915636eb3f7475c84f22f3"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r3/manifest.json",
+      "bytes": 1478,
+      "sha256": "812e12c5228a4543971d94fe7431924b008966bbecfdb25500a191683947a640"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r3/prompt.md",
+      "bytes": 22273,
+      "sha256": "99ecbac2ac1d5058a43229c5ed74f3654f53c5b17c97d679c289313afa92b7cd"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--distractor-evidence__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r1/adapter_request.json",
+      "bytes": 469,
+      "sha256": "332e2de1d6b4143383e9d063eb66b6c152b561986ce82da0a7fc20a5fd3f1d61"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r1/manifest.json",
+      "bytes": 1510,
+      "sha256": "1aa3237571fce73ec76793e9457eba9bd57f0209c206b82a1acdd5fe50f23933"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r1/prompt.md",
+      "bytes": 21907,
+      "sha256": "36cd0d2040de6e6e4b09af45ab02ec6fd6486cd876f8f30c29297c441c843927"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r2/adapter_request.json",
+      "bytes": 469,
+      "sha256": "a70e5adc4ca9a98cc6516800137a26d6df8887105baba5427dddc67879bb9ee5"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r2/manifest.json",
+      "bytes": 1510,
+      "sha256": "bbef950d225c9e9c488d616d527eeb395f5fa716d91a70da07c6d5d225d145a0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r2/prompt.md",
+      "bytes": 21907,
+      "sha256": "9abefdcb697a197846bc862c2bba62782ca2536723b75e66bae2947028fdaaab"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r3/adapter_request.json",
+      "bytes": 469,
+      "sha256": "c2ec0776696c3b8fdf37d00d37ec0a73846c47f677984313cc56fcfbf4fb991e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r3/manifest.json",
+      "bytes": 1510,
+      "sha256": "def0dc97ed48b658348dabbf53944010cb2b84b20fd66bbc2c9d5df9c62a9a0a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r3/prompt.md",
+      "bytes": 21907,
+      "sha256": "8794b65d7896362f05bcb73e40830eec55fd50bea222a47b882f240a919caa01"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r1/adapter_request.json",
+      "bytes": 445,
+      "sha256": "60caf5bab6e2d46bdfd8ef2dfbeada304d5e3c3f0f0f9ceaf2f36c4d68a61816"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r1/manifest.json",
+      "bytes": 1414,
+      "sha256": "21288172e05c77ec530042b16743078f86c7ff2f7ae9fd07ed6a9db2559fe8f3"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r1/prompt.md",
+      "bytes": 22124,
+      "sha256": "0346b9a2b7e064edf2a0eadd3075527b8f35ea516306180cd2778100338a832c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r2/adapter_request.json",
+      "bytes": 445,
+      "sha256": "15f8f20a242d27c8c5c13deea6e813beeb4fc52edeb763eb7aa0eb4c3ced9157"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r2/manifest.json",
+      "bytes": 1414,
+      "sha256": "82bb9c13a67e512c0ed4bcec8d413d0e94ce202a9d60ab508c76550e12242003"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r2/prompt.md",
+      "bytes": 22124,
+      "sha256": "bb03074ec6644117a8514f9d627f82d3f6a78659160d77139cc0fef81aa5e6a6"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r3/adapter_request.json",
+      "bytes": 445,
+      "sha256": "635c6764f3cc6562a73c0fb07a40f6fbd79c11387eb925da34b1de1958789355"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r3/manifest.json",
+      "bytes": 1414,
+      "sha256": "9ca2375dd8abf0951d450d2f1cadb60d0690494dc403cac9999e43958eabe5fa"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r3/prompt.md",
+      "bytes": 22124,
+      "sha256": "53a6d546fa86672788d9079ca6352e2abab24664bc6787ff658d156cbbac3111"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--field-alias__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r1/adapter_request.json",
+      "bytes": 471,
+      "sha256": "d359f2dd221e1e46618425932eda378f15bb06a6f1fdc8d3037fd0c4aae1c973"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r1/manifest.json",
+      "bytes": 1518,
+      "sha256": "5bd3af5657aa7d155128b934993b24c635cec50b35f8d415d559484f8fb78cd4"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r1/prompt.md",
+      "bytes": 22637,
+      "sha256": "a812d576450cfa461607316713360fc65cb50bfbe3e05881484c61dd202895a6"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r2/adapter_request.json",
+      "bytes": 471,
+      "sha256": "5637951e115ab77de22e7534a959b681fb2d30cbc5b3c5fcbf6d20042a12e3f9"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r2/manifest.json",
+      "bytes": 1518,
+      "sha256": "f903f4612ad40fb4a334d385029f90937182675450240c016c80693bdc72bca0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r2/prompt.md",
+      "bytes": 22637,
+      "sha256": "2f902b47e5f5d35a1b0f3205b5ef9a681111c1f3585adc1a67d263c5d000e012"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r3/adapter_request.json",
+      "bytes": 471,
+      "sha256": "279360de3a0e055363a4d81984aa26f26d9647d8d7f56c6c685e0767d353a5b7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r3/manifest.json",
+      "bytes": 1518,
+      "sha256": "eb83fe728793982dde57579f3299463a3ae6cd70fa51164e23382f9db1f5b3cc"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r3/prompt.md",
+      "bytes": 22637,
+      "sha256": "b24e6fdf7cf6f3ea0c458703542f801c1c9e0642430f9a8663a8877718dd1b73"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7-next-method-plan-update-v2--unknown-state-paraphrase__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r1/adapter_request.json",
+      "bytes": 465,
+      "sha256": "9b2064c375db92ca4d8b4c4a5b714fc9319d922141f7961bebf4c1603f6f098b"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r1/manifest.json",
+      "bytes": 1490,
+      "sha256": "00829b5614183ff938b95a4fc13a0e1fde2aa978c740330d28ec4902936b9399"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r1/prompt.md",
+      "bytes": 20716,
+      "sha256": "fabf61fa4e96af2c68c7516e9f16aa8de471f155bef43a3f88a5fcadae7f77ca"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r2/adapter_request.json",
+      "bytes": 465,
+      "sha256": "2d0255395608d01fb0bd1598664a66dcbbde5f2c097b535c0dba21a507ea363f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r2/manifest.json",
+      "bytes": 1490,
+      "sha256": "2e60a5df3706ebbbbb2ad77af637a774f41fcc3df800a1935fafd86a0dac07f4"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r2/prompt.md",
+      "bytes": 20716,
+      "sha256": "32ee521847472839f29b523ec35baa5b86b7ac86c767084cffa0976c6ed28a18"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r3/adapter_request.json",
+      "bytes": 465,
+      "sha256": "caffe65143ac832bf460f8828cdba9f72c0c95a6d42207be9cea552d8e833e37"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r3/manifest.json",
+      "bytes": 1490,
+      "sha256": "284b3a8a7afd2443150418c2cac1b7ad482bd65bbbba5ee298ac8f62491e632e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r3/prompt.md",
+      "bytes": 20716,
+      "sha256": "7ec1fa2919354485a281600bfa7a10fffa520489d986f2dc5b961db01cc7f9d0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--canonical__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r1/adapter_request.json",
+      "bytes": 485,
+      "sha256": "8d8f0a9a8332e12a1192702e1b10aa6943c81565163976f61c167ef3a0eb8340"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r1/manifest.json",
+      "bytes": 1570,
+      "sha256": "d3e3deb3028db2e70f94f29f44285d77fc3a56c549d71ef27ace6b8ad6272d08"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r1/prompt.md",
+      "bytes": 21146,
+      "sha256": "8b4e77024b0cb92cb1724b24892846013a775bfe03dade9db9f277dea31ee638"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r2/adapter_request.json",
+      "bytes": 485,
+      "sha256": "885d9d473f0fb0fe5c43b065592c171e90d7432ca60e415eac452ef3697a46e7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r2/manifest.json",
+      "bytes": 1570,
+      "sha256": "a70d6363ea4dd8563eef6f26afdfd6a20849188fab1439abec8dd4eabec95a2e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r2/prompt.md",
+      "bytes": 21146,
+      "sha256": "f76851acfd971c42a79868b249e0374c6a0e162375b484f57ea9a1b1fede3345"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r3/adapter_request.json",
+      "bytes": 485,
+      "sha256": "f4a9bc236411c53dc172ab6c08f6c2f8b09c77688f7d38c0876813798c2051d2"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r3/manifest.json",
+      "bytes": 1570,
+      "sha256": "db5a1ffaa0145ad093833d981f94ca50a431215ebbbf4d75de3214aea1f30630"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r3/prompt.md",
+      "bytes": 21146,
+      "sha256": "7f05798225dd734b1828ee36cfdf4e2efed226a3a18d129213c5a4306527e66b"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--distractor-evidence__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r1/adapter_request.json",
+      "bytes": 493,
+      "sha256": "fe63709cdb2e33c629a01eaf816c10bc823b4f14e88509879412368f30cc963b"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r1/manifest.json",
+      "bytes": 1602,
+      "sha256": "4d1a65459b0089af5f964153eebbcd0ac1621e38fe1b4c13fff562b7e03ac639"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r1/prompt.md",
+      "bytes": 20786,
+      "sha256": "395679c9e0d3391236c704f1bcf54fea409f6922465d494c5e024f77dbb0db5e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r2/adapter_request.json",
+      "bytes": 493,
+      "sha256": "7a9996cbaada6838a7f1a775c12100850e5820629ee8f3a87c8309391060cd16"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r2/manifest.json",
+      "bytes": 1602,
+      "sha256": "00ac5e7cc3b6df74ea148879aa805a0b7bf9a26dc287745fb9ee104aecba2eea"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r2/prompt.md",
+      "bytes": 20786,
+      "sha256": "c916c07dd3ae9081abe35d34f9e34960ba18014138ea2aeb72501785f2555f55"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r3/adapter_request.json",
+      "bytes": 493,
+      "sha256": "ae6ecc8af0ec51cf430d205f0e69c8227df6093ada08513096a35ff416ddaa72"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r3/manifest.json",
+      "bytes": 1602,
+      "sha256": "350ca184eae57e234b8e0520218702638d92c51f7e092712a9a92f0e227ac9ae"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r3/prompt.md",
+      "bytes": 20786,
+      "sha256": "0dbc43b6342db560378bf387414be91075ae027bba3923e9ae0dd26c1d51897b"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--evidence-order-shuffled__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r1/adapter_request.json",
+      "bytes": 469,
+      "sha256": "c8754b53e0c204e2278e12fbf6967a23d986114f4124563d8bf05931b732e5db"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r1/manifest.json",
+      "bytes": 1506,
+      "sha256": "ac73787f69f10f3eff0fd56240b6538a3b193fea86129f547e4b34ac4a1b934b"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r1/prompt.md",
+      "bytes": 20998,
+      "sha256": "97712b4429b2c32ceb90e4d801cc456fe0ff329d279ba7ce9af0c1a7fa6b4a5f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r2/adapter_request.json",
+      "bytes": 469,
+      "sha256": "ea085b8449a5fddce3e3b93752b97382ab96dd063f7cff14f4043ba3360280aa"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r2/manifest.json",
+      "bytes": 1506,
+      "sha256": "46d8d1962d06ba74c7f8dde5bbdb6bd7eb4d38cfa3bf3a85512dcc45a3241697"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r2/prompt.md",
+      "bytes": 20998,
+      "sha256": "2263705ae41940fde9f308acdeeeb843e638987fee0cd09f9045099de40aa0e9"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r3/adapter_request.json",
+      "bytes": 469,
+      "sha256": "84c3bd18e80044695b69cd547ef503936fc81f6ad6d27d1b56e1d5a46c5c3789"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r3/manifest.json",
+      "bytes": 1506,
+      "sha256": "e751d70d4b483f78351dc389fa309ed0a0ed0123c17a192537d72e440b4b2964"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r3/prompt.md",
+      "bytes": 20998,
+      "sha256": "2b32280449dec9491eca441fedc03358d5685156d5416c412f864257115e0761"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--field-alias__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r1/adapter_request.json",
+      "bytes": 495,
+      "sha256": "ad8de0e347081595351d40b034463eef145b5239d3374359fbbc548f1e85c3e6"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r1/manifest.json",
+      "bytes": 1610,
+      "sha256": "690dc4de5522b85ae6f5482880cb18efc1ac7cd7a8661a64f38118c575d6be65"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r1/prompt.md",
+      "bytes": 21516,
+      "sha256": "c2e63a62fcd4bbf143fbed641921d1253b4bdd81cbf055ce955774fce846cae6"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r2/adapter_request.json",
+      "bytes": 495,
+      "sha256": "8d2c90de802f4f84ef24d9fd1564daca623d4803144ba6d322c44699b5398a2e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r2/manifest.json",
+      "bytes": 1610,
+      "sha256": "1a30af7b9d9e585259296564d6ecb8628f980ede7715f5029370741eed161c53"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r2/prompt.md",
+      "bytes": 21516,
+      "sha256": "1b6dae76bf2d6c128bde608f64184a7a6129319586ecd76f69f07a0235d7acc7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r3/adapter_request.json",
+      "bytes": 495,
+      "sha256": "2dc9a38406b3fa3a4fcd3db6608f215e0b6c7789b35fedc33e11cfc1123590bc"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r3/manifest.json",
+      "bytes": 1610,
+      "sha256": "419f8b4f53625f4adac09b4c77ab0f5d1ba054efe07cb250622445078f5149a2"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r3/prompt.md",
+      "bytes": 21516,
+      "sha256": "08b41ef34a6f60cc142263f2587e8fd696ccefb4aee79a84636553177e6f41df"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/post-freeze-perturbation-pilot-v2/stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v1-regression-local-gate.json",
+      "bytes": 285147,
+      "sha256": "9e93a245d4be42dc88fdc32f05df245104b239af7d5564b6ee3fec4a270aaa87"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v2-benchmark-and-ablation-plan.md",
+      "bytes": 2682,
+      "sha256": "48a18a0a35e19663ad917f7f7cdbaa242fd7bbbf4a068a2307223287da48c456"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v2-experiment-plan.md",
+      "bytes": 4475,
+      "sha256": "adfbc38c41afed1cf271383a6b77fa08dfebe0637741f0fc0cee585827afe39c"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v2-local-gate.json",
+      "bytes": 720216,
+      "sha256": "ddc8fe941fcc5747bb737ed4afc8f996324b41afe31e048fecbb571e19fe3eb3"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v2-preparation-summary.md",
+      "bytes": 3731,
+      "sha256": "535ae27d31466cad756eebfe4f36971f66b752bf83cc4777f7518e78c505d367"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v2-validity-threats.md",
+      "bytes": 2191,
+      "sha256": "2404cb8b8ae6bd67f7c31695b33882a2b633afb4ba5d9fe505f759a377bc5640"
+    },
+    {
+      "path": "research/07_reviews/stage-b-v2-preparation-ai-slop-review.md",
+      "bytes": 1088,
+      "sha256": "d9403edecde5a4c7641ca2856a85d9596cd97dc97b0136e009d21ebd0dbba751"
+    },
+    {
+      "path": "research/07_reviews/stage-b-v2-preparation-quality-review.md",
+      "bytes": 3144,
+      "sha256": "23e83b6d24cf9aa8c6150f9cc7d83fb3b78c5b2a7014da812de94d0ec1025eb8"
+    }
+  ]
+}

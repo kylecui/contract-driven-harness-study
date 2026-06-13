@@ -67,7 +67,12 @@ def compile_packet(run: dict[str, Any], fixtures_dir: Path) -> dict[str, Any]:
     task_spec = read_json(fixture_dir / "task_spec.json")
     memory_slice = read_json(fixture_dir / "memory_slice.json")
     evidence_bundle = read_json(fixture_dir / "evidence_bundle.json")
-    output_contract = read_json(fixture_dir / "output_contract.json")
+    model_contract_path = fixture_dir / "model_output_contract.json"
+    output_contract = read_json(
+        model_contract_path
+        if model_contract_path.exists()
+        else fixture_dir / "output_contract.json"
+    )
     user_input = read_text(fixture_dir / "input.md")
 
     arm = str(run["harness_arm"])

@@ -185,6 +185,62 @@ def has_evidence_combo(text: str, combos: list[list[str]]) -> bool:
     return any(all(has_evidence_ref(text, evidence_id) for evidence_id in combo) for combo in combos)
 
 
+def output_shape_ok(data: Any, rules: dict[str, Any]) -> bool:
+    if not rules:
+        return True
+    if not isinstance(data, dict):
+        return False
+
+    if rules.get("typed_evidence_id_lists_only"):
+        typed = data.get("typed_evidence")
+        if not isinstance(typed, dict) or not all(
+            isinstance(items, list)
+            and all(isinstance(item, str) and item.strip() for item in items)
+            for items in typed.values()
+        ):
+            return False
+
+    if rules.get("enforce_required_nested_fields"):
+        required_nested = rules.get("required_nested_fields", {})
+        for section, required_fields in required_nested.items():
+            value = data.get(section)
+            if isinstance(value, dict):
+                if not all(field in value for field in required_fields):
+                    return False
+            elif isinstance(value, list):
+                if not value or any(
+                    not isinstance(item, dict)
+                    or not all(field in item for field in required_fields)
+                    for item in value
+                ):
+                    return False
+            else:
+                return False
+
+    exact_counts = rules.get("exact_array_counts", {})
+    for field, expected_count in exact_counts.items():
+        value = data.get(field)
+        if not isinstance(value, list) or len(value) != int(expected_count):
+            return False
+
+    allowed_statuses = {
+        str(status).strip().lower()
+        for status in rules.get("carried_obligation_status_values", [])
+    }
+    if allowed_statuses:
+        carried = data.get("carried_obligations")
+        if not isinstance(carried, list) or not carried:
+            return False
+        if any(
+            not isinstance(item, dict)
+            or str(item.get("status", "")).strip().lower() not in allowed_statuses
+            for item in carried
+        ):
+            return False
+
+    return True
+
+
 def evaluate_payload(
     *,
     fixture_dir: Path,
@@ -224,6 +280,9 @@ def evaluate_payload(
     for required_value in output_contract.get("required_surface_values", []):
         if str(required_value).strip().lower() not in raw_values:
             surface_contract_ok = False
+    for forbidden_value in output_contract.get("forbidden_surface_values", []):
+        if str(forbidden_value).strip().lower() in raw_values:
+            surface_contract_ok = False
 
     try:
         data = canonicalize_declared_variants(
@@ -254,7 +313,9 @@ def evaluate_payload(
 
     metrics = zero_metrics()
     metrics["schema_validity"] = clamp(required_schema_score(required_sections, data))
-    if not surface_contract_ok:
+    if not surface_contract_ok or not output_shape_ok(
+        data, output_contract.get("output_shape_rules", {})
+    ):
         metrics["schema_validity"] = 0.0
     metrics["tool_call_correctness"] = 1.0
 
@@ -314,7 +375,10 @@ def evaluate_payload(
     no_bad_grounding = "production ready" not in grounded_text and "universally closes" not in grounded_text
     claim_grounding_rules = output_contract.get("claim_grounding_rules", {})
     selected_support_combos = claim_grounding_rules.get("selected_claim_support_any", [["stage7e-e01", "stage7e-e04"]])
-    has_claim_evidence = has_evidence_combo(grounded_text, selected_support_combos)
+    grounded_support_combos = claim_grounding_rules.get(
+        "grounded_claim_support_any", selected_support_combos
+    )
+    has_claim_evidence = has_evidence_combo(grounded_text, grounded_support_combos)
     metrics["citation_grounding"] = (
         1.0 if claim_level_bound and has_claim_evidence and rejects_universal and rejects_production and no_bad_grounding else 0.0
     )

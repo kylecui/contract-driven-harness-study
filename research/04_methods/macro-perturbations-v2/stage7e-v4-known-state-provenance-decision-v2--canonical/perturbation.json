@@ -1,0 +1,28 @@
+{
+  "base_macro": "stage7e-v4-known-state-provenance-decision",
+  "condition": "canonical",
+  "representation_preserving": true,
+  "known_bad_expectations": {
+    "missing_required_known_state_evidence": [
+      "state_accuracy"
+    ],
+    "undeclared_source_references": [
+      "state_accuracy",
+      "citation_grounding"
+    ],
+    "incomplete_selected_claim_support": [
+      "trace_completeness"
+    ],
+    "expanded_typed_evidence_objects": [
+      "schema_validity"
+    ],
+    "open_vocabulary_status": [
+      "schema_validity"
+    ],
+    "missing_required_nested_field": [
+      "schema_validity"
+    ]
+  },
+  "suite_version": "stage_b_v2",
+  "repair_confirmation": true
+}
