@@ -134,3 +134,25 @@ Admission requirement:
 1. Update the backlog so Stage 7e v4 is treated as the current admitted macro baseline.
 2. Choose one bounded next macro from the admission criteria above.
 3. Draft the paper's methods section from this outline before running any broader workflow slice.
+
+## Stage B v3 Method Update
+
+The full 30-run perturbation confirmation failed its preregistered gate. The
+repair loop should now split hierarchy preservation from exact content-slot
+preservation.
+
+Observed separation:
+
+- hierarchy and JSON validity: stable across 30/30 runs;
+- exact grounded evidence support: failed in 9/30 runs;
+- exact paraphrased forbidden-inference values: failed in 6/6 relevant runs;
+- full-contract cell gate: 6/10 cells passed.
+
+The next admission unit is not another broad macro revision. It is two smaller
+mechanism atoms:
+
+1. exact evidence-array immutability;
+2. exact closed-vocabulary value retention under a declared alias surface.
+
+Only locally passing atoms should enter a targeted real-model smoke. Stage C,
+Stage D, and broader workflow expansion remain blocked.

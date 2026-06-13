@@ -1,0 +1,1159 @@
+{
+  "protocol_id": "stage_b_v3_full_result_bundle",
+  "prepared_date": "2026-06-14",
+  "base_commit": "fa1ca39",
+  "hash_algorithm": "sha256",
+  "file_count": 230,
+  "files": [
+    {
+      "path": "research/03_evidence/evidence-ledger.jsonl",
+      "bytes": 79084,
+      "sha256": "0e32c39b42a072f830dfd1b380e8f803e1fa84875c36ef2e975e84249c763493"
+    },
+    {
+      "path": "research/05_analysis/contract-driven-claim-boundary-memo.md",
+      "bytes": 6151,
+      "sha256": "ef724f43cfedfc5408bd882210d7a739ee4f9630149fe0fe72f195f9a21fe32a"
+    },
+    {
+      "path": "research/05_analysis/contract-driven-methodology-outline.md",
+      "bytes": 7359,
+      "sha256": "dc8c731529048744cc4899e27c5e762401b8b0d6deba25555d1fde3c9efeeae0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full-manifest-with-prompts.json",
+      "bytes": 44258,
+      "sha256": "8f85806c2ed1a4ccdda05d16601974957d487b15e0ac5ddad1466c768087f6e4"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full-manifest.json",
+      "bytes": 33206,
+      "sha256": "058788bbe4fefbd3dc133db6a1ce9f82cb7440cc65bc2c19885e0abfbd43dbc8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--canonical__budget_model__G9__r1/adapter_request.json",
+      "bytes": 423,
+      "sha256": "947cb5ea5743cd85ed7697afec04f57769fef3a5ac0c53b13a8de523f2f9069e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--canonical__budget_model__G9__r1/manifest.json",
+      "bytes": 1290,
+      "sha256": "b7fa11db1b94894fd5ac671bd559a259f22e693987d1bee63fd2ed8f546d157c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--canonical__budget_model__G9__r1/metrics.json",
+      "bytes": 823,
+      "sha256": "cc9b04b7935c615640db889ff29ea95b7ca6518c33653b26417441b1e1275490"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--canonical__budget_model__G9__r1/output.md",
+      "bytes": 7851,
+      "sha256": "125f4846256f1743d7ea027dc0fe2cbf486a21ecf570ea98e5b1b2400bf1f77f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--canonical__budget_model__G9__r1/prompt.md",
+      "bytes": 29211,
+      "sha256": "42cf28f90b33c040b5c174d2c3f454c36d6a2a252ff4c337b37a27e4b86358ff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--canonical__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 747,
+      "sha256": "f3b21abdb3ae270d7ec6a8b0281c76f818174742a6755b8f00f139f2c8b647a4"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--canonical__budget_model__G9__r1/validation_report.json",
+      "bytes": 8949,
+      "sha256": "1a3a4d6f0b4c036ab7e83acaf646ef6372d8d36313d49c76f6675b1f8e953847"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--canonical__budget_model__G9__r2/adapter_request.json",
+      "bytes": 423,
+      "sha256": "2559ee1d7198c01e631b84adcbcdb07078f2eb547fef2701d6d7f0f3c4357d62"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--canonical__budget_model__G9__r2/manifest.json",
+      "bytes": 1290,
+      "sha256": "0892a42ddc49f84b5b14fba011bef16e76e481d3af4868b5347d6f3eab6033c0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--canonical__budget_model__G9__r2/metrics.json",
+      "bytes": 823,
+      "sha256": "693d779f0b1e933deff4b76b9f6e8860d04524ca6c41d7409d36b2e375e6c46e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--canonical__budget_model__G9__r2/output.md",
+      "bytes": 7831,
+      "sha256": "2f0f099ba8f3aa19ec5188595276ac244e4f8368841b0405eabcf389abd82831"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--canonical__budget_model__G9__r2/prompt.md",
+      "bytes": 29211,
+      "sha256": "01e0e74373c08d4450c277a66712e62e7b82087be7c47a6d7ac94e58fbb3ac31"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--canonical__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 747,
+      "sha256": "c2bb0677211f9627653c9517a149d18e3a43614bdbbf032092a8d4cf0ab42d24"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--canonical__budget_model__G9__r2/validation_report.json",
+      "bytes": 8931,
+      "sha256": "ea07ec5e20158d95ab7a547d7a5d04ca68e6505efae4188c6b2b69271b259182"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--canonical__budget_model__G9__r3/adapter_request.json",
+      "bytes": 423,
+      "sha256": "2ecd4c746e856e6354c90feac2c478aaf009954ab771536b57765f8cd3070a73"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--canonical__budget_model__G9__r3/manifest.json",
+      "bytes": 1290,
+      "sha256": "5e8944088e3478b9f1fd1fd6c251836131a2bd6946b0af11193e00a9ce8636fd"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--canonical__budget_model__G9__r3/metrics.json",
+      "bytes": 823,
+      "sha256": "4c166e0a3d67f009e364e89d447e9cc9329d874b5f20b800bccd98cd95d60b5f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--canonical__budget_model__G9__r3/output.md",
+      "bytes": 7987,
+      "sha256": "9e88f57fd5d7e8ca6d45abea5ac0b66617863e14ec93f662002995be028c30e6"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--canonical__budget_model__G9__r3/prompt.md",
+      "bytes": 29211,
+      "sha256": "b79fd8f80a7c10ec235cc1a805dfc04fcc7694e3ad8b3f459e64fc5fd171edb8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--canonical__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 747,
+      "sha256": "f5b70862abaeda080cd2abcdd33159890617e9b269eaf5bd717fb716b19792ce"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--canonical__budget_model__G9__r3/validation_report.json",
+      "bytes": 9085,
+      "sha256": "fdb12c026453b8b0f5afa9f79715b07db38a9d402d9cc812594d57497562ca1d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r1/adapter_request.json",
+      "bytes": 443,
+      "sha256": "f0944e78f9ad77697059a320c01e8cee748cc4da38c253a2960f67eb5bf56e5c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r1/manifest.json",
+      "bytes": 1370,
+      "sha256": "d73b9de0f889a20def55cf5287d33aa96cfcba87ab74ca503504448d3552ea93"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r1/metrics.json",
+      "bytes": 836,
+      "sha256": "56c49274655bdde44c992608cae4d9332c5cf8f207ab97722c67459665887e4d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r1/output.md",
+      "bytes": 8164,
+      "sha256": "aa39e40c5ef629880bae01b5086080f03eb7bdacd50b14aadd526e92173141e8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r1/prompt.md",
+      "bytes": 29647,
+      "sha256": "7c424f650849d4ceae5710d39c61ca30cd5fd41b08a1f691e79ef30e51769c46"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 757,
+      "sha256": "a2352108fd0ad1515080e72fa7e08093b65f41cb284f83d73837f8775a3790af"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r1/validation_report.json",
+      "bytes": 9183,
+      "sha256": "f2c9792e753af9de837a623aa8b7089e2be1d5e90122c7b32fdef31df5ea1616"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r2/adapter_request.json",
+      "bytes": 443,
+      "sha256": "357a9810f0838d765b89b60137ee9040c9ef4dd527e85af2e35143cd94ed4610"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r2/manifest.json",
+      "bytes": 1370,
+      "sha256": "6147a0db5d46492bbd676b18b34864e9a8a280cfc9600aafef4f5210b97eb52f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r2/metrics.json",
+      "bytes": 836,
+      "sha256": "fe32898b12551bdbd906c5bb9f697d0344fcb8a2195810b37e0517970fa1dbd5"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r2/output.md",
+      "bytes": 8164,
+      "sha256": "aa39e40c5ef629880bae01b5086080f03eb7bdacd50b14aadd526e92173141e8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r2/prompt.md",
+      "bytes": 29647,
+      "sha256": "40f06f065933aa2dd25e38eca62dfe7ec8eb315c435d8325edd9ae2105687a11"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 757,
+      "sha256": "41cc55f4b1ce270a6ee34ccae89123ce6bc79f8e8429f957bff780e2b72ce203"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r2/validation_report.json",
+      "bytes": 9183,
+      "sha256": "0aef0530ffe5c744e77f1a291b41c72b7275b9b632991c9ec90bcfe162e2589f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r3/adapter_request.json",
+      "bytes": 443,
+      "sha256": "e1ffdadebd0960b141a4fb8d9a9e9a638518be5186f82630ce6d02c75a3f2de3"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r3/manifest.json",
+      "bytes": 1370,
+      "sha256": "920398c230510def160b22e2038d5733a65d022b79d67ce66d14b792b260a113"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r3/metrics.json",
+      "bytes": 836,
+      "sha256": "695d3e1f26b0e0b5d39749f3d6877407ddca5557f9da02e7ab470a5b24ef149a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r3/output.md",
+      "bytes": 8164,
+      "sha256": "aa39e40c5ef629880bae01b5086080f03eb7bdacd50b14aadd526e92173141e8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r3/prompt.md",
+      "bytes": 29647,
+      "sha256": "aa716bc161b0af7b891aacc6b5d9007f15ec240f0753c1ab569014d3076b0fa3"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 757,
+      "sha256": "a2f362c4bbe38f40a743af68317a3c073727a13683af3870a10eae0f73180528"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r3/validation_report.json",
+      "bytes": 9183,
+      "sha256": "0294f992dfffd237c47d81eeda3893f0f4d1fe75c87d4f1ac4474eebcfc291a5"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r1/adapter_request.json",
+      "bytes": 451,
+      "sha256": "b37c5c91070353af31633bb63e6bbd33faeeb35e8ad41a6dabe006c20181ac4a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r1/manifest.json",
+      "bytes": 1402,
+      "sha256": "7111b3436f0b88aa7b3628167f0c81e10ce59f9b35e2216e2963c685a5eb131f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r1/metrics.json",
+      "bytes": 844,
+      "sha256": "cd37061211b17ef7b93f288813e5e5f782989ecf4818359d794e7ffefcba4090"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r1/output.md",
+      "bytes": 8164,
+      "sha256": "aa39e40c5ef629880bae01b5086080f03eb7bdacd50b14aadd526e92173141e8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r1/prompt.md",
+      "bytes": 29281,
+      "sha256": "9af127937c036fc3e76b4a8966060bfc26118f164ec1f5ecd97af4d404d8ff5b"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 761,
+      "sha256": "df5c3333cfcd406f6c1e1112d07995a96233e2a222f7d972898c2304c9514f9f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r1/validation_report.json",
+      "bytes": 9195,
+      "sha256": "a95a0f9e9e2c91fea5ef98c92ae1723c5815a2ab3828838adc8d080e3706c2dd"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r2/adapter_request.json",
+      "bytes": 451,
+      "sha256": "01ef8176963bb1b92878a4f83f0516e698711c35c110cc503bf961ad0e67645a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r2/manifest.json",
+      "bytes": 1402,
+      "sha256": "987350b758feff480bfec91ae98802544632b0b052ea47dcdb52fc2aef592ceb"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r2/metrics.json",
+      "bytes": 844,
+      "sha256": "1980b778797f1b413743f71e69533d316dff685825a47a024caa2c561d4fd7e7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r2/output.md",
+      "bytes": 8164,
+      "sha256": "aa39e40c5ef629880bae01b5086080f03eb7bdacd50b14aadd526e92173141e8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r2/prompt.md",
+      "bytes": 29281,
+      "sha256": "dffc5563b6c4b6792605891a041a69f39d8e5fc8bfa1bef70c250e496f8d6943"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 761,
+      "sha256": "c362077ee0fc6b49b59f109014288e00c16974dfd64d3eca0f5f1ef7e9065a91"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r2/validation_report.json",
+      "bytes": 9195,
+      "sha256": "69f4234ef71b27f6c0347a16ddc75f0188b1f56046850e6d433f41007bac7e56"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r3/adapter_request.json",
+      "bytes": 451,
+      "sha256": "1d399e721880cb48a42d3340d27e5f73f92a566fd933ab43d7d83be15a740b54"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r3/manifest.json",
+      "bytes": 1402,
+      "sha256": "a4131f1df659dfb67a68be90274e4010c6279ef7ecd30346152429956e85caf8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r3/metrics.json",
+      "bytes": 844,
+      "sha256": "7b413b198a3c153660811e998455057d6e1cbb4eb2613c3ea1417dea504596d5"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r3/output.md",
+      "bytes": 8124,
+      "sha256": "c9e8d82d6cf258252d98877da4fccd9c18fef308778e3951f0f72ae7b89ee4f4"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r3/prompt.md",
+      "bytes": 29281,
+      "sha256": "be1dc01b914ed5c17649d2569472828ac297fb45c7c9781a805269c1f6b75b1c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 761,
+      "sha256": "81dad3948b2d7ebb2d9d1cf3532df2a36cffaaad6345f06b8a6d28eeb36d924b"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r3/validation_report.json",
+      "bytes": 9155,
+      "sha256": "d3ad77521c8c15008845c85ecd6eaec2b31fce6024cbde066072a76ad16e1bfa"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r1/adapter_request.json",
+      "bytes": 427,
+      "sha256": "5e4a762141b4363416ac96e901f31fe3328cb5b28da8048d0a828ada38da4e91"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r1/manifest.json",
+      "bytes": 1306,
+      "sha256": "236435c1d1418c94f6c06886ffd3589433ffb1340f24534809541156385c317c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r1/metrics.json",
+      "bytes": 827,
+      "sha256": "c87e5f64ac3acb9ab8ccc7cd2c5f1675f4df81969683f9dfbb89631bba6fdc2e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r1/output.md",
+      "bytes": 8142,
+      "sha256": "dc99ea73fe4945c7d7d61f6343e255e67e0c9fa3dc19c782ab407837e330eb2b"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r1/prompt.md",
+      "bytes": 29573,
+      "sha256": "70b6ac31eef2e005a0208bed36e7c6798ce0ac47ea560faf7f872e466702ae94"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 749,
+      "sha256": "9225a748986aa7a37f280acf3e08874393a1bc3a4af9d3468ad2cec5fa73ce21"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r1/validation_report.json",
+      "bytes": 9131,
+      "sha256": "418e77704f7639d87aec35f1c9d9bc3d9811b8205d380ba9e2a4e77aaf8f5f1e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r2/adapter_request.json",
+      "bytes": 427,
+      "sha256": "9eecc13da4b1cde484d82039765848e9dd0d50c95cdcfc297d5f5dd743b3a79f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r2/manifest.json",
+      "bytes": 1306,
+      "sha256": "91ad4d931d28e9bd0edd2c996287fdf3d9a511026567f28f5c18b4418fa7674c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r2/metrics.json",
+      "bytes": 820,
+      "sha256": "556be4b97751e139c9ed80ab0f8371a97cdcee1830fedd01aa8d8a3e1535fc01"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r2/output.md",
+      "bytes": 8279,
+      "sha256": "4f5527016f05b03ee120097ee0071bfda2fda755e388a83f2a1295bc6925b64e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r2/prompt.md",
+      "bytes": 29573,
+      "sha256": "170fbbe299a2404deae2c0938f1fcf4e669c6a235cccd583b745f38e99650ae5"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 749,
+      "sha256": "1e8b7a1e0ef4c8d4146e02b331cfa89b8887513316fb3b559417dd693c8c1392"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r2/validation_report.json",
+      "bytes": 9159,
+      "sha256": "cccb3bab0c7ff504ff80bde12ef1ea0dc24faf9bfc1d731e6607afa296e9f3b8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r3/adapter_request.json",
+      "bytes": 427,
+      "sha256": "d86c8aff8c57d16db0d0536493aeca7d6c0e61b85bc7a3e2b1a77357e8319fba"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r3/manifest.json",
+      "bytes": 1306,
+      "sha256": "4075c951a03c0276fb59031516fbeb2c9d6930b4eee79741cfc94d84ff153036"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r3/metrics.json",
+      "bytes": 820,
+      "sha256": "98008e9afee890a61646baf8fca6171e7dad1a552796730262a941df96ad2b74"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r3/output.md",
+      "bytes": 8279,
+      "sha256": "4f5527016f05b03ee120097ee0071bfda2fda755e388a83f2a1295bc6925b64e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r3/prompt.md",
+      "bytes": 29573,
+      "sha256": "e6bb9d47936b6f40ac244e8e76c925c470a403c421261a1a83b57c5b3f5cf1de"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 749,
+      "sha256": "0d9081ede76a73e99e51324f1d6e749dcb1b31a4c304756043ba04eb06cc8fe2"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r3/validation_report.json",
+      "bytes": 9159,
+      "sha256": "b3832e2cb1fd1c470e2341ee9e2bd4b098b2a4a17c039c0fd3a0d8b842046b3a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r1/adapter_request.json",
+      "bytes": 453,
+      "sha256": "1a4dfb5782ae176179590b39c56f7ad7145694e1e90d8846715867029e9b9359"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r1/manifest.json",
+      "bytes": 1410,
+      "sha256": "2d7614e35337d582d48278d1012ebfce0a218cd4ffdce27bc088601eb5fd3cb0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r1/metrics.json",
+      "bytes": 853,
+      "sha256": "90baeef89aaee04e6c8b776eed964e23f3a4a81fdd0524544c7d73ae25d11391"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r1/output.md",
+      "bytes": 8154,
+      "sha256": "c433479e487b9b45c9dec837fb80bea530cb941275b57dd9aec01e0b36584956"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r1/prompt.md",
+      "bytes": 30103,
+      "sha256": "166ea206c611063e07ac1476921e6c8f9cf78b0365e77647cbd5dc4a4c30db6a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 762,
+      "sha256": "65cd103c92bb69b479973ec497195309d96c4434df427ddff04a572436c49891"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r1/validation_report.json",
+      "bytes": 9403,
+      "sha256": "e0691a1d9b9dc818313927cdb9a19ae8a89c17aa4f53c5afcc830fad61abd863"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r2/adapter_request.json",
+      "bytes": 453,
+      "sha256": "e0fc60ac9362dc098826974bc6f94e1670aaa7eaa41aea57f131c73ac8828707"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r2/manifest.json",
+      "bytes": 1410,
+      "sha256": "9bb2d52143c92418c2c9200f3a4b51efce49e877e71691a728c12dcb60a43b0f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r2/metrics.json",
+      "bytes": 853,
+      "sha256": "7d81fd6857d366b12b5eb31f8264260dc4320647c236718f132aee940a5785f1"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r2/output.md",
+      "bytes": 8154,
+      "sha256": "c433479e487b9b45c9dec837fb80bea530cb941275b57dd9aec01e0b36584956"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r2/prompt.md",
+      "bytes": 30103,
+      "sha256": "56e8ea9c3e566c23bbdc85a9a30b6912fe080ac9acb093ca9003968f1db2115e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 762,
+      "sha256": "8e316765dabb19c01ee7e9101810cc5b4c2dca31d8bd384cf7f39a14950d2ebb"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r2/validation_report.json",
+      "bytes": 9403,
+      "sha256": "86c9feb81042cc970ea2d17cbd84ea3a96c25fbf3a9ae3f9ec4585ff92150c0f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r3/adapter_request.json",
+      "bytes": 453,
+      "sha256": "1033bae3b9b3aaf035a1753e82857439ca93104537e426eea4959f41936ef830"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r3/manifest.json",
+      "bytes": 1410,
+      "sha256": "34e6e6f7b9e3e1abf95074a8f7b0615d66e056b550aed5be774fd72e4fc45871"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r3/metrics.json",
+      "bytes": 853,
+      "sha256": "a891327dfefb1a6636208d38d3e62ca43a0108dba073bc826be80e66bd971255"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r3/output.md",
+      "bytes": 8154,
+      "sha256": "c433479e487b9b45c9dec837fb80bea530cb941275b57dd9aec01e0b36584956"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r3/prompt.md",
+      "bytes": 30103,
+      "sha256": "9e381ffe161390372536130d76d821125dcbe161da1efa1dcce0c1a9d8940062"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 762,
+      "sha256": "e7f3f68c11378f5c3a2685f196bacdfb111c362132b9ed8746c776b204f328f1"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r3/validation_report.json",
+      "bytes": 9403,
+      "sha256": "db0cc57ba36554566fc5c50d9e6bcb8d03da674fe563211c7c5e4b98bc04cc4f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r1/adapter_request.json",
+      "bytes": 447,
+      "sha256": "3868281ebac74c90dd68c274cf09a70fe4cb42785ce81f386a19070c18369a22"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r1/manifest.json",
+      "bytes": 1382,
+      "sha256": "d9c4782955db4463c842b93802ea9eba7af807f82315eefc2074dc0d6a74357b"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r1/metrics.json",
+      "bytes": 836,
+      "sha256": "ef64e65d4c7b12a8736ed02796400e389dd6d6f25ba719a4a4e5f7d4511c4528"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r1/output.md",
+      "bytes": 6261,
+      "sha256": "cefb55b735b83a4147d2b81481c1a04fdb17526866f5ed47d40fd89d177598a1"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r1/prompt.md",
+      "bytes": 26899,
+      "sha256": "a9de50a32ae4a8e1b8ef6b5619a13c53bd6e15eeaa0a320cb6e0b18c6cb265d2"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 759,
+      "sha256": "3332296d90c8c30e03efdf617542ca1ba5a9a9d53b2feaeeede3961d25a3e57b"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r1/validation_report.json",
+      "bytes": 7224,
+      "sha256": "fec3e4a4acd2f02e70a946278cce0fd0dbd51e69a6bb9396afe25d8ff5883fc6"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r2/adapter_request.json",
+      "bytes": 447,
+      "sha256": "4410b6e2173dd9a3dfb0886a95a0362c46f9ce7ebf606f991e08ab14b96e8299"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r2/manifest.json",
+      "bytes": 1382,
+      "sha256": "d87a2220bf50cb06094d379f56d787b48d153a6484a3418e0b583a240424ab81"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r2/metrics.json",
+      "bytes": 843,
+      "sha256": "0d8be3b301dfcf546db93d6a8a65d713a5a8f8c2d3cbb1f632aa8dbf01202f73"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r2/output.md",
+      "bytes": 6244,
+      "sha256": "b9e5bc4e40332b9c9ed695876a49e378193b6661626e8d2152c75f86d6a08253"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r2/prompt.md",
+      "bytes": 26899,
+      "sha256": "5507056910b3a2cc82b4c5cbc8dc3e804a52ac0b003fd1a093401e6738863531"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 759,
+      "sha256": "baa390e5f3065e9776b4aac0099b6865591748337db5bd0801350e1453d65809"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r2/validation_report.json",
+      "bytes": 7320,
+      "sha256": "802d32b2697c11b2f1e6bf4f0338dc90e8563ae73f93866203d10e588d20eb72"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r3/adapter_request.json",
+      "bytes": 447,
+      "sha256": "92d4f2aa44ae193f9e4037fb64c21ef5f8769c281c4f184c2d81731b6fd6ff8c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r3/manifest.json",
+      "bytes": 1382,
+      "sha256": "d15a080656489ecd1f8be3026bafe0bf8840fda67f2d12e3ef4199f820850a11"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r3/metrics.json",
+      "bytes": 843,
+      "sha256": "680202cdf58f71b9061c00cc713076ece5434d307dae033dc260ced043c88f09"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r3/output.md",
+      "bytes": 6201,
+      "sha256": "50f38c08ffec4a21b2d571814ac6b4ab6692c42b84d0a8c2ba66c7f587910b34"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r3/prompt.md",
+      "bytes": 26899,
+      "sha256": "a06c67d733aede699d42445843ff09235d79b09c4ab079a89aba653c10b3601c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 759,
+      "sha256": "027185f5cc287faf04313f3c8f76700a9bb161306f1417e5190fb638aeb5755d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r3/validation_report.json",
+      "bytes": 7277,
+      "sha256": "53a92c674345545fccea4fc9c3d57a7c04ccdf89a5e9eb6d7099672638a91c79"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r1/adapter_request.json",
+      "bytes": 467,
+      "sha256": "61a4b8e502cd2ca88cf876448b423f325d7d85ddbf7713bd37a1a78d5712fd3e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r1/manifest.json",
+      "bytes": 1462,
+      "sha256": "9e7372901cae91875078d2d8eb34c1ae35c4f10779a4127010f8f48ab01873fb"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r1/metrics.json",
+      "bytes": 856,
+      "sha256": "9298d430de38bd5e9830401f1e14642b69aedc3eeff1640f3fdced18269bdf31"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r1/output.md",
+      "bytes": 6378,
+      "sha256": "c104c8e6d82e0101ce503bdc7dd3c4997c6aa9d0e1b9874bfd0fb2f47947be4a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r1/prompt.md",
+      "bytes": 27329,
+      "sha256": "7e2459db2d30145c8ba89c19c88c248d53756102a770f712e1a45aa5e8f2d9b9"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 769,
+      "sha256": "9cbf8cbbe978da75fb3f5c51a47479ebd9a4b2709d4637e6f04906c76ceb0977"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r1/validation_report.json",
+      "bytes": 7371,
+      "sha256": "8a9e6a8c4ae43276e2065b72895def113d0977fecad833e6274f96962710dc13"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r2/adapter_request.json",
+      "bytes": 467,
+      "sha256": "3922cb0e59db98b8e306ad2b5fb503bf0fda13032e85b9eeab85f96b64517077"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r2/manifest.json",
+      "bytes": 1462,
+      "sha256": "4d61c9d35bee3ac60a520bfca5cb296209f44b1b41b0ee45f5e21f49a6c11e2c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r2/metrics.json",
+      "bytes": 856,
+      "sha256": "2f982c4af8c6f10fe94e3ad09350cbed4af76272181af6a59126a1c6c8f5c68d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r2/output.md",
+      "bytes": 5939,
+      "sha256": "42eea02092205db074a0fcfc457726b648af0bf8bee4eaf771db822e47546cd4"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r2/prompt.md",
+      "bytes": 27329,
+      "sha256": "0722ad8e9ca8bbb6ef673565f6a11c537c2f0a1e0ae006684dcff1c8ad294f2f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 769,
+      "sha256": "33eb83697000d9518ef4c904e5ac295249fb07cac489e1b9f7b6ab736519a52e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r2/validation_report.json",
+      "bytes": 6926,
+      "sha256": "ed74ebc1622172503b9a5a21a52b94d75c84b022930a144e6de6f8ddbe263253"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r3/adapter_request.json",
+      "bytes": 467,
+      "sha256": "185621b0b3137d735bfddb5de503e1dfd58c17d9e116ce73ac04e1bffd15a87b"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r3/manifest.json",
+      "bytes": 1462,
+      "sha256": "7f815dd78b631daaeed91acea131f902b0e0b0fa1bbca9e481bb653125911e52"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r3/metrics.json",
+      "bytes": 856,
+      "sha256": "cdb89f53002cda7cd63c28269d25fa19f495af7212b61c7b506f11d35016436d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r3/output.md",
+      "bytes": 6049,
+      "sha256": "88ac7123af370fd9332a9ac49146745690910a0e2574d50853d34177b8cc0c1e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r3/prompt.md",
+      "bytes": 27329,
+      "sha256": "406641d319c1fb0392c41a4d12fd920a547bfed4b6147277b8d1f61baf82fe19"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 769,
+      "sha256": "d8b8e1102ce44ecd06bd3367d1a864288827c1b293f454545f10b3a6dda2a503"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r3/validation_report.json",
+      "bytes": 7036,
+      "sha256": "cddb7cda72642e76e3c99db31348a450abd54b4e30082e4f9b7aaa56df409fdf"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r1/adapter_request.json",
+      "bytes": 475,
+      "sha256": "6e919917c5d8333859bc6258e27225a333e8fd01b7347e54b06e09069e2ad2a4"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r1/manifest.json",
+      "bytes": 1494,
+      "sha256": "4025aaf422e7cd5b364e0284d729bfefaf0c4253132811ffeadea4783d9e5b61"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r1/metrics.json",
+      "bytes": 864,
+      "sha256": "da048ef410f442174b3948c3aa317548d95f152a2312f02bb884384a5e8e78d7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r1/output.md",
+      "bytes": 6343,
+      "sha256": "945c3f757807608919b5f65e814e210d78729ad077ef386a67887ef8e7d5c477"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r1/prompt.md",
+      "bytes": 26969,
+      "sha256": "c6ab36f46210975823e0db5572c57a9e42c14d5fcd5c30b357ae4ea52cd1ecaf"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 773,
+      "sha256": "0dd5e552b384f4106a025beaaf70cfe4ead149fb09a3b1f4bde48251e1fc2a85"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r1/validation_report.json",
+      "bytes": 7348,
+      "sha256": "b0eff3747c92b4db12f3a15eb1a1c3126e30e9c5c8a7661f9ef0a3a9c5a9db7a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r2/adapter_request.json",
+      "bytes": 475,
+      "sha256": "4ec1bc2a40f623a109e074ca2c90e1d745167b9181a00dd74a56daaa312878eb"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r2/manifest.json",
+      "bytes": 1494,
+      "sha256": "71c7258bf5394bfaf4cf7c65ad71c4d77ccfeaa7db1a49c2f25ff91357272062"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r2/metrics.json",
+      "bytes": 864,
+      "sha256": "cf00d0c46582e4b2b5a1de332399965a57bc19624b7f54f6e481d34df98a5bdf"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r2/output.md",
+      "bytes": 6200,
+      "sha256": "cb0f3aab9269e76dbe108b2763c8b33612d758eddcfe203e582a33e14cf086aa"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r2/prompt.md",
+      "bytes": 26969,
+      "sha256": "28bf6a062abc1515be29e246f984730a5a09f2715e66b7dbab9e3e928b630513"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 773,
+      "sha256": "0c50bf7ab74324c3b8c182b0390fe7e9d60cfe82a63928e2611876e8c81727e9"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r2/validation_report.json",
+      "bytes": 7205,
+      "sha256": "8e296cb7104201058b5637c279f447ebde78785dbb801d84d5a12f07350f8e7f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r3/adapter_request.json",
+      "bytes": 475,
+      "sha256": "0a5ea3d450a348ae8fc5dae50695c2a2221102ba0fcb8a7326a9a5bb3cb645c0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r3/manifest.json",
+      "bytes": 1494,
+      "sha256": "55553ade9a34c44d4239054173ed02436c57462897c08a6a2db4995d095ff891"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r3/metrics.json",
+      "bytes": 864,
+      "sha256": "8c874a6d0421e57d893a5a71c0dd6815fdb544e7ebb1359407e80dcad890ff20"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r3/output.md",
+      "bytes": 6036,
+      "sha256": "68fc3675eac4d60d03855499ffe89c5a7bed41a1bbd0c9c6606fed51028735e5"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r3/prompt.md",
+      "bytes": 26969,
+      "sha256": "097658971620f92c4d88fb5771aa8ccaab76fa16da083962253707904abfbed7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 773,
+      "sha256": "9a49052d7d9a4f592d70efe343be8f943bd594260d32df58547edeb664214b88"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r3/validation_report.json",
+      "bytes": 7037,
+      "sha256": "b1db3f0511e9090639aa69f63913fae29d6526f2a09a45f22e4191aa89e3fbc9"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r1/adapter_request.json",
+      "bytes": 451,
+      "sha256": "6cd3f6bce3fc82359369e0d7778cf949ed8da949f268dd72ba8c60e3f81d96d0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r1/manifest.json",
+      "bytes": 1398,
+      "sha256": "8b9f50ad0d3a422827d9cc79d056d0dfbd73ab8f4c545f769807bc8c2f6c7681"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r1/metrics.json",
+      "bytes": 840,
+      "sha256": "c22592fa6ba240e094b201e534dddf7ab443f74e4ff3ca8626fab22e657e1f22"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r1/output.md",
+      "bytes": 6039,
+      "sha256": "5dc5c3f8078f1b9323356d0cd0f333d9628a8c810e00677de2127acba78547e0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r1/prompt.md",
+      "bytes": 27246,
+      "sha256": "bf2d111b28e099cf5a9d5a6a8a9c178d37b22b2133386259193eb651f6f3d115"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 761,
+      "sha256": "29e171192f117eac67efbe1a59e6b80f531a82a2252f8b5b55dc0aa4580b987a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r1/validation_report.json",
+      "bytes": 6902,
+      "sha256": "04d61b0500e8b990e0ff95f43f480d696fef42e30968adf0dace1bb79c426da0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r2/adapter_request.json",
+      "bytes": 451,
+      "sha256": "e2cb77298dc1b5e183beef4494450611f8dc2aad55d3b39b73d27bfcdb24b17f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r2/manifest.json",
+      "bytes": 1398,
+      "sha256": "e7cc437dd5e41d58835140bceda0bfbbfa860b1ea0d112fea423bef68bcec9b8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r2/metrics.json",
+      "bytes": 840,
+      "sha256": "caeea14a06812c4339eabab16ce2b5353a922a1873292c953a8cfcdfff21c15a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r2/output.md",
+      "bytes": 6039,
+      "sha256": "5dc5c3f8078f1b9323356d0cd0f333d9628a8c810e00677de2127acba78547e0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r2/prompt.md",
+      "bytes": 27246,
+      "sha256": "146b9f7d15410e5986d1eff440beb4a17c07752df2733acf76b1c754ad3d43ec"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 761,
+      "sha256": "91480625044987f8bb2a52c64e6eceaff1cf12b3898bc571769c63abc9a06f9a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r2/validation_report.json",
+      "bytes": 6902,
+      "sha256": "9b3ae5c6e4645d4c99b4898ec85b155041436adcc239b5d0af25a6c7957ce2f2"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r3/adapter_request.json",
+      "bytes": 451,
+      "sha256": "332d78337afb9eb164ebd6d22fc5945a88ee9e89acf76a7f7fae9c113cadc583"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r3/manifest.json",
+      "bytes": 1398,
+      "sha256": "2a1c3406083c11e1210c6e91531b087c7b7202914cfc5c347a76df9ca8f9e9e4"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r3/metrics.json",
+      "bytes": 840,
+      "sha256": "218fc3e4074707f2560b3ae57b317ba953181bd4d48623364cf12068b1e722a2"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r3/output.md",
+      "bytes": 6039,
+      "sha256": "5dc5c3f8078f1b9323356d0cd0f333d9628a8c810e00677de2127acba78547e0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r3/prompt.md",
+      "bytes": 27246,
+      "sha256": "eb1ee7aff9e5072dd42f634a293983ca4bf8d908347c398efa736fd7ebb5c787"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 761,
+      "sha256": "b82a5e1a6f841ceb36d4f661943e482de0ac3f5dd1dbd53b0fcea8de3c75bca8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r3/validation_report.json",
+      "bytes": 6902,
+      "sha256": "d07737b03d3d97e9f0d349f94e07f7e51ba203aa08ba8bf35f641d21e1450f5d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r1/adapter_request.json",
+      "bytes": 477,
+      "sha256": "380e23d78a2c36392aec0cfcc675ccfb82eb709567cd514e799371dc2c54854f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r1/manifest.json",
+      "bytes": 1502,
+      "sha256": "821c1d13becfaada14ca2d5bec0fd16eb82799a82355530f5d460e14c27c4bd4"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r1/metrics.json",
+      "bytes": 873,
+      "sha256": "47d3a0f72baf99413e125ee2ba8fd09f207d250e537ccba6dfcef6b2fa2a9fd5"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r1/output.md",
+      "bytes": 6473,
+      "sha256": "ebd23874577be5766b81ba38535a2f5f2f0e8df7ec3ad453682ded439272daed"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r1/prompt.md",
+      "bytes": 27791,
+      "sha256": "a1589787a5f6ed5b7b069ca567548fa859f569ad98c9b72d7192382018affeb5"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 774,
+      "sha256": "e128f900c0f37c9eae6adc98f59f4fac61f0272300aa36b2d15b7ad857f61be2"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r1/validation_report.json",
+      "bytes": 7647,
+      "sha256": "a4be2cf7ba92f4b9bbeb1ce13b86231936fbe54b3fba151a2b56a2ca2ac2dcb9"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r2/adapter_request.json",
+      "bytes": 477,
+      "sha256": "09a05fbb0ae416cac0f7aad23789ff72dc96c0c859425fb3c106dd70b6f0514a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r2/manifest.json",
+      "bytes": 1502,
+      "sha256": "5872e395444a81e6e6dbdb7bc60edae3e42f609b1f9154c704058fa34d81f61d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r2/metrics.json",
+      "bytes": 873,
+      "sha256": "c3817f2e2dab9008dcf10ba3c58a723100e0dd2d108fe2d48003a3ad44a9e64c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r2/output.md",
+      "bytes": 6208,
+      "sha256": "52ec227d79b081fda742f05ca7e7900e1b2a436cce99cf475277d055d8720c0a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r2/prompt.md",
+      "bytes": 27791,
+      "sha256": "23ca1bb9031e7671516c93311e2b7403d3f69799fb77079ac6eaa438421bb2d5"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 774,
+      "sha256": "c610b9965d4b66a4d90b39e81b540cb82552f478615af99b26400282d05e1921"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r2/validation_report.json",
+      "bytes": 7372,
+      "sha256": "b4278a8f59ff1fa231195dfba7d4dc4c1d809f92b67256b15fed8b412704117a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r3/adapter_request.json",
+      "bytes": 477,
+      "sha256": "a06272774a2209e0cac026cbfc04c10bb2561c332d8551cc7f408ac15a6760e6"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r3/manifest.json",
+      "bytes": 1502,
+      "sha256": "ce26fc1001c20d7252e39170a12e3b62becd70946185c8007f1d24523c6a3d5d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r3/metrics.json",
+      "bytes": 873,
+      "sha256": "6d142aa5ed9597b8ef26dce49f59e08d468ecb72239bcfd4b9aeeefa2ea1bdf7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r3/output.md",
+      "bytes": 6544,
+      "sha256": "9dff1c3a032d56bef3d62542fcff85a1dd92c81529e31fdb456c5acdf1780b47"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r3/prompt.md",
+      "bytes": 27791,
+      "sha256": "78f084829e92c86a533015c67323428cec4856859a5814361d751ccaa68ff6fc"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 774,
+      "sha256": "a37882cd623c5919ac90a261f60d2d05b8213885a82df6063596fa486224ec06"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v3-full/stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r3/validation_report.json",
+      "bytes": 7718,
+      "sha256": "75391fb219f2a479ad977b38e7937b83bc99a216d33ca0378666ea19b9a614df"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v3-full-adapter-events.jsonl",
+      "bytes": 84951,
+      "sha256": "a5aae2d97018f3f644da7c5fb0380bbbaadcc0456241aed751875a6393dd14e6"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v3-full-collected-metrics.json",
+      "bytes": 28756,
+      "sha256": "da230097be960153797296c01a148342cc9bbb87a593520b1f6ae395785eee3e"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v3-full-collected-metrics.md",
+      "bytes": 6198,
+      "sha256": "bf5f91977163cf27c3ef81ca7a154f559e65c8a8a620b6c2db213a0bba531744"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v3-full-evaluation-runs.json",
+      "bytes": 28649,
+      "sha256": "5405493a1fab01539efc8c2bb9531d65d7d89c26cd9606678f97651b07598030"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v3-full-evaluation.md",
+      "bytes": 7231,
+      "sha256": "5ac73b98c9c0e8312bcbe557750203e65716c2b3082f58b557f7a98293351743"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v3-full-execution-preflight.json",
+      "bytes": 2040,
+      "sha256": "506775d62730c66db3a5fb1ddf3bf435f3cf18e84ad2f1aa38a8bdaa72f1c44f"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v3-full-execution-preflight.md",
+      "bytes": 1854,
+      "sha256": "8bbadaf98a7d5f660a6278a0790f9a72c08fc37d5806b1e0aef07b5f9dec4688"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v3-full-execution.json",
+      "bytes": 44368,
+      "sha256": "2664b3f5d0fd5619add51d84ca94fb72232b644dd0e4d031919c78fe53e5d4a2"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v3-full-failure-audit.md",
+      "bytes": 3301,
+      "sha256": "ad7fd7699de7dcaecc73b1b0ff18cc02e3891c5874334482b1d319bfb960a28c"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v3-full-freeze-manifest.json",
+      "bytes": 118345,
+      "sha256": "1ae274928dcc436cd6b1a90b9a4ebf7d4f9cbc9be37fb55f4bb17f4077dc601b"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v3-full-freeze-verification-before-execution.md",
+      "bytes": 574,
+      "sha256": "5da40224b262110845bcd9c9cff46e983f11cf10dceb896353d42f5b606d127d"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v3-full-post-execution-integrity.md",
+      "bytes": 598,
+      "sha256": "1586cad92be810403bdb1d26d177f8a6ddf7a3b80696645842782edc330280b8"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v3-full-result-summary.md",
+      "bytes": 4858,
+      "sha256": "938de48556e8c2a1a3368fdc01c730efeeb491e94db845d48213f9ba315b92d6"
+    },
+    {
+      "path": "research/07_reviews/stage-b-v3-full-result-quality-review.md",
+      "bytes": 2696,
+      "sha256": "b8239f249b4264d97e47dae55c8fa264cb8cb41a14291b9b0991625870643dd7"
+    },
+    {
+      "path": "tasks/backlog.md",
+      "bytes": 10160,
+      "sha256": "8219b389931b21751fa980abb2bcc40670a41c177b799d1762901f9b96bc5e50"
+    }
+  ]
+}

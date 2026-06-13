@@ -1,0 +1,1086 @@
+{
+  "execute": true,
+  "processed": 30,
+  "results": [
+    {
+      "run_id": "stage7-next-method-plan-update-v3--canonical__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--canonical__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--canonical__budget_model__G9__r1\\output.md",
+      "elapsed_ms": 17219,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--canonical__budget_model__G9__r1",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6937,
+          "completion_tokens": 1948,
+          "total_tokens": 8885,
+          "raw": {
+            "prompt_tokens": 6937,
+            "completion_tokens": 1948,
+            "total_tokens": 8885,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec3179e24c0cc4002da93cfc070e8",
+        "request_id": "ti_zhivioys6adcqw7fgd",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389565,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--canonical__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--canonical__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--canonical__budget_model__G9__r2\\output.md",
+      "elapsed_ms": 21953,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--canonical__budget_model__G9__r2",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6937,
+          "completion_tokens": 1944,
+          "total_tokens": 8881,
+          "raw": {
+            "prompt_tokens": 6937,
+            "completion_tokens": 1944,
+            "total_tokens": 8881,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec317e12a6973b2591a994bf75668",
+        "request_id": "ti_wdcgkajxr3lltf4vsj",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389582,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--canonical__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--canonical__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--canonical__budget_model__G9__r3\\output.md",
+      "elapsed_ms": 16281,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--canonical__budget_model__G9__r3",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6937,
+          "completion_tokens": 1970,
+          "total_tokens": 8907,
+          "raw": {
+            "prompt_tokens": 6937,
+            "completion_tokens": 1970,
+            "total_tokens": 8907,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31836e251703db0cff43b82e953",
+        "request_id": "ti_lxfed43vg1pjt3n3nl",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389604,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r1\\output.md",
+      "elapsed_ms": 18375,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r1",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 7054,
+          "completion_tokens": 2013,
+          "total_tokens": 9067,
+          "raw": {
+            "prompt_tokens": 7054,
+            "completion_tokens": 2013,
+            "total_tokens": 9067,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec318767e861fec2e0821ed5aa59d",
+        "request_id": "ti_b82ehmm6137cx66f7o",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389621,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r2\\output.md",
+      "elapsed_ms": 21672,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r2",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 7054,
+          "completion_tokens": 2013,
+          "total_tokens": 9067,
+          "raw": {
+            "prompt_tokens": 7054,
+            "completion_tokens": 2013,
+            "total_tokens": 9067,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec318be2ece70b41e65c3140d2099",
+        "request_id": "ti_5h7n9caryzulkx3wpj",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389639,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r3\\output.md",
+      "elapsed_ms": 22016,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r3",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 7054,
+          "completion_tokens": 2013,
+          "total_tokens": 9067,
+          "raw": {
+            "prompt_tokens": 7054,
+            "completion_tokens": 2013,
+            "total_tokens": 9067,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31912ea36264e1491eedc351d4d",
+        "request_id": "ti_3vsponslk63uf9te0i",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389661,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r1\\output.md",
+      "elapsed_ms": 18109,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r1",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6957,
+          "completion_tokens": 2013,
+          "total_tokens": 8970,
+          "raw": {
+            "prompt_tokens": 6957,
+            "completion_tokens": 2013,
+            "total_tokens": 8970,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec319690229340c0f6d9e8c40e35e",
+        "request_id": "ti_coj9jt3f2aax5pqfik",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389683,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r2\\output.md",
+      "elapsed_ms": 25625,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r2",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6957,
+          "completion_tokens": 2013,
+          "total_tokens": 8970,
+          "raw": {
+            "prompt_tokens": 6957,
+            "completion_tokens": 2013,
+            "total_tokens": 8970,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec319afb62ab53c66c519578a5c53",
+        "request_id": "ti_hfeq9cj2mb8fg0yu28",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389701,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r3\\output.md",
+      "elapsed_ms": 17344,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r3",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6957,
+          "completion_tokens": 2008,
+          "total_tokens": 8965,
+          "raw": {
+            "prompt_tokens": 6957,
+            "completion_tokens": 2008,
+            "total_tokens": 8965,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31a13dcb0d1dcf50fcbea77418a",
+        "request_id": "ti_daiq7w1zkcxj7cc7po",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389726,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r1\\output.md",
+      "elapsed_ms": 22735,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r1",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6937,
+          "completion_tokens": 1952,
+          "total_tokens": 8889,
+          "raw": {
+            "prompt_tokens": 6937,
+            "completion_tokens": 1952,
+            "total_tokens": 8889,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31a579d5b2dfcc8a604049370ff",
+        "request_id": "ti_6z1lhf1wa1qzd05d9p",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389744,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r2\\output.md",
+      "elapsed_ms": 28922,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r2",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6937,
+          "completion_tokens": 1990,
+          "total_tokens": 8927,
+          "raw": {
+            "prompt_tokens": 6937,
+            "completion_tokens": 1990,
+            "total_tokens": 8927,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31ab06b467971052891f3a44a21",
+        "request_id": "ti_aimgem44h9rrsimays",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389766,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r3\\output.md",
+      "elapsed_ms": 17703,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r3",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6937,
+          "completion_tokens": 1990,
+          "total_tokens": 8927,
+          "raw": {
+            "prompt_tokens": 6937,
+            "completion_tokens": 1990,
+            "total_tokens": 8927,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31b21c14f66ddb39a70b89bec18",
+        "request_id": "ti_en7n7e2snstblkbvgq",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389795,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r1\\output.md",
+      "elapsed_ms": 19922,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r1",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 7089,
+          "completion_tokens": 1998,
+          "total_tokens": 9087,
+          "raw": {
+            "prompt_tokens": 7089,
+            "completion_tokens": 1998,
+            "total_tokens": 9087,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31b66b08d63b370135c0f229b55",
+        "request_id": "ti_0zlebjq6dldq1o1zd3",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389813,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r2\\output.md",
+      "elapsed_ms": 25750,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r2",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 7089,
+          "completion_tokens": 1998,
+          "total_tokens": 9087,
+          "raw": {
+            "prompt_tokens": 7089,
+            "completion_tokens": 1998,
+            "total_tokens": 9087,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31bb47bc7b814fbbd0628045b40",
+        "request_id": "ti_02shmdm4373nlq77rs",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389833,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r3\\output.md",
+      "elapsed_ms": 24750,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r3",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 7089,
+          "completion_tokens": 1998,
+          "total_tokens": 9087,
+          "raw": {
+            "prompt_tokens": 7089,
+            "completion_tokens": 1998,
+            "total_tokens": 9087,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31c1915ca1ec12bcef6de8d89c4",
+        "request_id": "ti_wym78gcjxf9ohu7bu1",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389859,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r1\\output.md",
+      "elapsed_ms": 14937,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r1",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6752,
+          "completion_tokens": 1702,
+          "total_tokens": 8454,
+          "raw": {
+            "prompt_tokens": 6752,
+            "completion_tokens": 1702,
+            "total_tokens": 8454,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31c79cee98b51764eb85fd837fd",
+        "request_id": "ti_o13lcjcbn88d0r939e",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389884,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r2\\output.md",
+      "elapsed_ms": 20375,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r2",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6752,
+          "completion_tokens": 1688,
+          "total_tokens": 8440,
+          "raw": {
+            "prompt_tokens": 6752,
+            "completion_tokens": 1688,
+            "total_tokens": 8440,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31cb421227a10df46c8c32db2e2",
+        "request_id": "ti_bdjovilbjfegsccf1e",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389898,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r3\\output.md",
+      "elapsed_ms": 19641,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r3",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6752,
+          "completion_tokens": 1677,
+          "total_tokens": 8429,
+          "raw": {
+            "prompt_tokens": 6752,
+            "completion_tokens": 1677,
+            "total_tokens": 8429,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31d03c21e9385eb5cec172ef43f",
+        "request_id": "ti_94q4uch09ivbqwd5g5",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389919,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r1\\output.md",
+      "elapsed_ms": 23719,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r1",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6869,
+          "completion_tokens": 1704,
+          "total_tokens": 8573,
+          "raw": {
+            "prompt_tokens": 6869,
+            "completion_tokens": 1704,
+            "total_tokens": 8573,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31d5085f044d5d7178d62c7905d",
+        "request_id": "ti_pmo7svo72uh5z0aki7",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389938,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r2\\output.md",
+      "elapsed_ms": 16516,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r2",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6869,
+          "completion_tokens": 1627,
+          "total_tokens": 8496,
+          "raw": {
+            "prompt_tokens": 6869,
+            "completion_tokens": 1627,
+            "total_tokens": 8496,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31dad2cc7805396f5eb1e319d99",
+        "request_id": "ti_y0i7drm9dqn5rkn5ni",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389962,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r3\\output.md",
+      "elapsed_ms": 16969,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r3",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6869,
+          "completion_tokens": 1639,
+          "total_tokens": 8508,
+          "raw": {
+            "prompt_tokens": 6869,
+            "completion_tokens": 1639,
+            "total_tokens": 8508,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31dedcd264c0b9bc9cb12307d55",
+        "request_id": "ti_fq5oo3fwu6gsq0v7l3",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389979,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r1\\output.md",
+      "elapsed_ms": 16468,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r1",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6772,
+          "completion_tokens": 1697,
+          "total_tokens": 8469,
+          "raw": {
+            "prompt_tokens": 6772,
+            "completion_tokens": 1697,
+            "total_tokens": 8469,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31e301cbf1d2c6c447df6582b4b",
+        "request_id": "ti_br8f51iv2vxgoyy490",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781389996,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r2\\output.md",
+      "elapsed_ms": 17547,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r2",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6772,
+          "completion_tokens": 1674,
+          "total_tokens": 8446,
+          "raw": {
+            "prompt_tokens": 6772,
+            "completion_tokens": 1674,
+            "total_tokens": 8446,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31e70560d9e1a1c690526717ccb",
+        "request_id": "ti_ixtbcin18fa5p3kz03",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781390012,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r3\\output.md",
+      "elapsed_ms": 19250,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r3",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6772,
+          "completion_tokens": 1638,
+          "total_tokens": 8410,
+          "raw": {
+            "prompt_tokens": 6772,
+            "completion_tokens": 1638,
+            "total_tokens": 8410,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31eb4ecde3cfc3934d868158447",
+        "request_id": "ti_7horfjxslu3mpbvcab",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781390030,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r1\\output.md",
+      "elapsed_ms": 16687,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r1",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6755,
+          "completion_tokens": 1603,
+          "total_tokens": 8358,
+          "raw": {
+            "prompt_tokens": 6755,
+            "completion_tokens": 1603,
+            "total_tokens": 8358,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31f001b2f0015bf932cefa79307",
+        "request_id": "ti_8qlt96042iy1xk6kzn",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781390049,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r2\\output.md",
+      "elapsed_ms": 19891,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r2",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6755,
+          "completion_tokens": 1603,
+          "total_tokens": 8358,
+          "raw": {
+            "prompt_tokens": 6755,
+            "completion_tokens": 1603,
+            "total_tokens": 8358,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31f4173f552effac54cde6aed25",
+        "request_id": "ti_ojui2b32icvw6kpddz",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781390066,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r3\\output.md",
+      "elapsed_ms": 21968,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r3",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6755,
+          "completion_tokens": 1603,
+          "total_tokens": 8358,
+          "raw": {
+            "prompt_tokens": 6755,
+            "completion_tokens": 1603,
+            "total_tokens": 8358,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31f8f198b0734b831d3623ca385",
+        "request_id": "ti_9888a4j4l7h0bzdyep",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781390086,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r1\\output.md",
+      "elapsed_ms": 33704,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r1",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6904,
+          "completion_tokens": 1717,
+          "total_tokens": 8621,
+          "raw": {
+            "prompt_tokens": 6904,
+            "completion_tokens": 1717,
+            "total_tokens": 8621,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec31fe4de44ef124a90e53f8ed9ed",
+        "request_id": "ti_mk32exqs3b9k1as9e7",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781390108,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r2\\output.md",
+      "elapsed_ms": 24265,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r2",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6904,
+          "completion_tokens": 1680,
+          "total_tokens": 8584,
+          "raw": {
+            "prompt_tokens": 6904,
+            "completion_tokens": 1680,
+            "total_tokens": 8584,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec320687bf8b3b3e83489007d88cb",
+        "request_id": "ti_v2ypsk1zanpznmw2rc",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781390141,
+        "system_fingerprint": ""
+      }
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "executed",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r3\\output.md",
+      "elapsed_ms": 24047,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r3",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": {
+        "usage": {
+          "prompt_tokens": 6904,
+          "completion_tokens": 1752,
+          "total_tokens": 8656,
+          "raw": {
+            "prompt_tokens": 6904,
+            "completion_tokens": 1752,
+            "total_tokens": 8656,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          }
+        },
+        "response_id": "019ec320c766e2606f4cd2160281d33d",
+        "request_id": "ti_twykyqrnzx1k2svogi",
+        "response_model": "Qwen/Qwen3-8B",
+        "created": 1781390166,
+        "system_fingerprint": ""
+      }
+    }
+  ]
+}

@@ -104,5 +104,9 @@
 - [ ] Deferred formal Figure 1 conversion for the experiment map before final venue/arXiv layout.
 - [ ] Deferred Appendix C placement/table redesign decision during human PDF layout review.
 - [ ] Prepare G9 object ablation suite: schema-only, evidence-only, trace-only, gate-only, and full contract.
-- [ ] Prepare Stage 7e/Stage 7-next fixture perturbation suite.
+- [x] Prepare Stage 7e/Stage 7-next fixture perturbation suite.
+- [x] Execute the Stage B v3 30-run literal-skeleton perturbation slice and retain all raw attempts.
+- [x] Close Stage B v3 as a failed protocol: 18/30 runs and 6/10 cells passed; no provider retry was needed.
+- [ ] Stage B v4-local: isolate exact evidence-array immutability and exact paraphrased-value retention as separate mechanism atoms.
+- [ ] Stage B v4-smoke: run a small targeted low-cost-model smoke only after both local atom gates pass.
 - [ ] Design controlled state-mutating macro before any full workflow expansion.

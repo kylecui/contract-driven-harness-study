@@ -1,0 +1,43 @@
+# Collected Run Metrics
+
+- Completed metric payloads: 30
+- Warnings: 0
+
+## Runs
+
+| Run | Fixture | Model | Arm | Task Success | Schema | Grounding |
+|---|---|---|---|---:|---:|---:|
+| `stage7-next-method-plan-update-v3--canonical__budget_model__G9__r1` | `stage7-next-method-plan-update-v3--canonical` | `budget_model` | `G9` | 0.857 | 1.000 | 0.000 |
+| `stage7-next-method-plan-update-v3--canonical__budget_model__G9__r2` | `stage7-next-method-plan-update-v3--canonical` | `budget_model` | `G9` | 0.857 | 1.000 | 0.000 |
+| `stage7-next-method-plan-update-v3--canonical__budget_model__G9__r3` | `stage7-next-method-plan-update-v3--canonical` | `budget_model` | `G9` | 0.857 | 1.000 | 0.000 |
+| `stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r1` | `stage7-next-method-plan-update-v3--distractor-evidence` | `budget_model` | `G9` | 1.000 | 1.000 | 1.000 |
+| `stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r2` | `stage7-next-method-plan-update-v3--distractor-evidence` | `budget_model` | `G9` | 1.000 | 1.000 | 1.000 |
+| `stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r3` | `stage7-next-method-plan-update-v3--distractor-evidence` | `budget_model` | `G9` | 1.000 | 1.000 | 1.000 |
+| `stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r1` | `stage7-next-method-plan-update-v3--evidence-order-shuffled` | `budget_model` | `G9` | 1.000 | 1.000 | 1.000 |
+| `stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r2` | `stage7-next-method-plan-update-v3--evidence-order-shuffled` | `budget_model` | `G9` | 1.000 | 1.000 | 1.000 |
+| `stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r3` | `stage7-next-method-plan-update-v3--evidence-order-shuffled` | `budget_model` | `G9` | 1.000 | 1.000 | 1.000 |
+| `stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r1` | `stage7-next-method-plan-update-v3--field-alias` | `budget_model` | `G9` | 0.857 | 1.000 | 0.000 |
+| `stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r2` | `stage7-next-method-plan-update-v3--field-alias` | `budget_model` | `G9` | 1.000 | 1.000 | 1.000 |
+| `stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r3` | `stage7-next-method-plan-update-v3--field-alias` | `budget_model` | `G9` | 1.000 | 1.000 | 1.000 |
+| `stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r1` | `stage7-next-method-plan-update-v3--unknown-state-paraphrase` | `budget_model` | `G9` | 0.571 | 0.000 | 0.000 |
+| `stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r2` | `stage7-next-method-plan-update-v3--unknown-state-paraphrase` | `budget_model` | `G9` | 0.571 | 0.000 | 0.000 |
+| `stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r3` | `stage7-next-method-plan-update-v3--unknown-state-paraphrase` | `budget_model` | `G9` | 0.571 | 0.000 | 0.000 |
+| `stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r1` | `stage7e-v4-known-state-provenance-decision-v3--canonical` | `budget_model` | `G9` | 1.000 | 1.000 | 1.000 |
+| `stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r2` | `stage7e-v4-known-state-provenance-decision-v3--canonical` | `budget_model` | `G9` | 0.857 | 1.000 | 0.000 |
+| `stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r3` | `stage7e-v4-known-state-provenance-decision-v3--canonical` | `budget_model` | `G9` | 0.857 | 1.000 | 0.000 |
+| `stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r1` | `stage7e-v4-known-state-provenance-decision-v3--distractor-evidence` | `budget_model` | `G9` | 1.000 | 1.000 | 1.000 |
+| `stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r2` | `stage7e-v4-known-state-provenance-decision-v3--distractor-evidence` | `budget_model` | `G9` | 1.000 | 1.000 | 1.000 |
+| `stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r3` | `stage7e-v4-known-state-provenance-decision-v3--distractor-evidence` | `budget_model` | `G9` | 1.000 | 1.000 | 1.000 |
+| `stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r1` | `stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled` | `budget_model` | `G9` | 1.000 | 1.000 | 1.000 |
+| `stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r2` | `stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled` | `budget_model` | `G9` | 1.000 | 1.000 | 1.000 |
+| `stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r3` | `stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled` | `budget_model` | `G9` | 1.000 | 1.000 | 1.000 |
+| `stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r1` | `stage7e-v4-known-state-provenance-decision-v3--field-alias` | `budget_model` | `G9` | 1.000 | 1.000 | 1.000 |
+| `stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r2` | `stage7e-v4-known-state-provenance-decision-v3--field-alias` | `budget_model` | `G9` | 1.000 | 1.000 | 1.000 |
+| `stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r3` | `stage7e-v4-known-state-provenance-decision-v3--field-alias` | `budget_model` | `G9` | 1.000 | 1.000 | 1.000 |
+| `stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r1` | `stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase` | `budget_model` | `G9` | 0.714 | 0.000 | 1.000 |
+| `stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r2` | `stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase` | `budget_model` | `G9` | 0.714 | 0.000 | 1.000 |
+| `stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r3` | `stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase` | `budget_model` | `G9` | 0.714 | 0.000 | 1.000 |
+
+## Warnings
+
+- None

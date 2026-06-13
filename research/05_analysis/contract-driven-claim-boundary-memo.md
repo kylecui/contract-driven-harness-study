@@ -91,3 +91,22 @@ Every claim about weak-model enablement must name:
 - the task boundary that prevents overgeneralization.
 
 No sentence should say "the harness reduces model gaps" or "the harness enables weak models" without those boundaries.
+
+## Post-Freeze Stage B v3 Boundary Update
+
+The 2026-06-14 Stage B v3 full perturbation slice adds a negative boundary to
+the mechanism-composition claim.
+
+- The literal G9 skeleton preserved valid JSON and nested state hierarchy in
+  30/30 Qwen3-8B runs.
+- It passed 18/30 runs and 6/10 macro-condition cells.
+- Four cells failed the preregistered 2/3 threshold.
+- Failures were exact-slot misses: required evidence IDs were replaced in nine
+  runs, and required paraphrased closed-vocabulary labels were rewritten in six
+  runs.
+
+The evidence therefore supports hierarchy stabilization, not general exact-slot
+robustness. Stage 7e v4 remains a valid bounded repair case, but its earlier
+small smoke does not establish perturbation stability. Future writing must not
+describe literal skeletons as sufficient for reliable evidence-array or
+closed-vocabulary preservation.
