@@ -1,0 +1,10 @@
+{
+  "base_macro": "stage7e-v4-known-state-provenance-decision",
+  "condition": "evidence-order-shuffled",
+  "representation_preserving": true,
+  "known_bad_expectations": {
+    "missing_grounded_claim_evidence": [
+      "citation_grounding"
+    ]
+  }
+}

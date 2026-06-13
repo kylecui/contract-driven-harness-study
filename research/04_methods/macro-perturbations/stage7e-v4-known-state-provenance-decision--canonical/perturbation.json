@@ -1,0 +1,14 @@
+{
+  "base_macro": "stage7e-v4-known-state-provenance-decision",
+  "condition": "canonical",
+  "representation_preserving": true,
+  "known_bad_expectations": {
+    "missing_required_known_state_evidence": [
+      "state_accuracy"
+    ],
+    "undeclared_source_references": [
+      "state_accuracy",
+      "citation_grounding"
+    ]
+  }
+}

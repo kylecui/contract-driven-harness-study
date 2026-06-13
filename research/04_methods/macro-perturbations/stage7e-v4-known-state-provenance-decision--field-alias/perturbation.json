@@ -1,0 +1,13 @@
+{
+  "base_macro": "stage7e-v4-known-state-provenance-decision",
+  "condition": "field-alias",
+  "representation_preserving": true,
+  "known_bad_expectations": {
+    "missing_aliased_claim_evidence": [
+      "citation_grounding"
+    ],
+    "canonical_field_fallback": [
+      "schema_validity"
+    ]
+  }
+}

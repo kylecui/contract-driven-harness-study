@@ -79,6 +79,53 @@ def text_in(value: Any) -> str:
     return " ".join(flatten_values(value)).replace("_", " ")
 
 
+def collect_keys(value: Any) -> list[str]:
+    if isinstance(value, dict):
+        keys: list[str] = []
+        for key, item in value.items():
+            keys.append(str(key))
+            keys.extend(collect_keys(item))
+        return keys
+    if isinstance(value, list):
+        keys = []
+        for item in value:
+            keys.extend(collect_keys(item))
+        return keys
+    return []
+
+
+def canonicalize_declared_variants(
+    value: Any,
+    *,
+    field_aliases: dict[str, str],
+    value_aliases: dict[str, str],
+) -> Any:
+    if isinstance(value, dict):
+        normalized: dict[str, Any] = {}
+        for raw_key, item in value.items():
+            key = field_aliases.get(str(raw_key), str(raw_key))
+            if key in normalized:
+                raise ValueError(f"Field alias collision for {key}")
+            normalized[key] = canonicalize_declared_variants(
+                item,
+                field_aliases=field_aliases,
+                value_aliases=value_aliases,
+            )
+        return normalized
+    if isinstance(value, list):
+        return [
+            canonicalize_declared_variants(
+                item,
+                field_aliases=field_aliases,
+                value_aliases=value_aliases,
+            )
+            for item in value
+        ]
+    if isinstance(value, str):
+        return value_aliases.get(value.strip().lower(), value)
+    return value
+
+
 def compact_stage_tokens(text: str) -> str:
     return re.sub(r"\bstage\s+(\d+[a-z]?(?:\.\d+)?)\b", r"stage\1", text)
 
@@ -168,8 +215,47 @@ def evaluate_payload(
         }
         return report, zero_metrics()
 
+    raw_keys = collect_keys(data)
+    raw_values = flatten_values(data)
+    surface_contract_ok = True
+    for canonical, alias in output_contract.get("required_surface_aliases", {}).items():
+        if str(alias) not in raw_keys or str(canonical) in raw_keys:
+            surface_contract_ok = False
+    for required_value in output_contract.get("required_surface_values", []):
+        if str(required_value).strip().lower() not in raw_values:
+            surface_contract_ok = False
+
+    try:
+        data = canonicalize_declared_variants(
+            data,
+            field_aliases={
+                str(alias): str(canonical)
+                for alias, canonical in output_contract.get("field_aliases", {}).items()
+            },
+            value_aliases={
+                str(alias).strip().lower(): str(canonical)
+                for alias, canonical in output_contract.get("value_aliases", {}).items()
+            },
+        )
+    except ValueError as exc:
+        report = {
+            "status": "complete",
+            "passed": False,
+            "reason": str(exc),
+            "findings": [str(exc)],
+            "expect_pass": expect_pass,
+            "expectation_met": expect_pass is None or expect_pass is False,
+            "parsed_output": data,
+            "run_id": run_id,
+            "model": model,
+            "harness_arm": arm,
+        }
+        return report, zero_metrics()
+
     metrics = zero_metrics()
     metrics["schema_validity"] = clamp(required_schema_score(required_sections, data))
+    if not surface_contract_ok:
+        metrics["schema_validity"] = 0.0
     metrics["tool_call_correctness"] = 1.0
 
     full_text = text_in(data)
@@ -183,8 +269,23 @@ def evaluate_payload(
         known_state_rules = output_contract.get("known_state_retention_rules", {})
         expected_known = known_state_rules.get("known_state_must_include", [])
         expected_evidence = known_state_rules.get("known_state_evidence_ids_must_include", [])
-        knows_required = all(value.replace("_", " ").lower() in known_text for value in expected_known) and all(
-            evidence_id.lower() in known_text for evidence_id in expected_evidence
+        known_items = state.get("known_state", []) if isinstance(state, dict) else []
+        known_objects_ok = (
+            isinstance(known_items, list)
+            and len(known_items) >= len(expected_known)
+            and all(
+                isinstance(item, dict)
+                and item.get("state_id")
+                and item.get("fact")
+                and isinstance(item.get("evidence_ids"), list)
+                and item.get("evidence_ids")
+                for item in known_items
+            )
+        )
+        knows_required = (
+            known_objects_ok
+            and all(value.replace("_", " ").lower() in known_text for value in expected_known)
+            and all(evidence_id.lower() in known_text for evidence_id in expected_evidence)
         )
     unknown_or_forbidden_text = f"{unknown_text} {forbidden_text}"
     unknowns_required = has_all(unknown_or_forbidden_text, ["git branch", "ci status"]) and (
@@ -272,6 +373,14 @@ def evaluate_payload(
 
     trace = data.get("decision_trace", []) if isinstance(data, dict) else []
     trace_text = text_in(trace)
+    forbidden_support_ids = output_contract.get("forbidden_support_evidence_ids", [])
+    support_text = " ".join(
+        [known_text, grounded_text, selected_text, rejected_text, trace_text]
+    )
+    no_forbidden_support = not any(
+        has_evidence_ref(support_text, evidence_id)
+        for evidence_id in forbidden_support_ids
+    )
     trace_objects_ok = True
     if strict_retention:
         trace_objects_ok = (
@@ -297,8 +406,11 @@ def evaluate_payload(
         and trace_objects_ok
         and has_all(trace_text, ["c2", "c1", "c3"])
         and has_evidence_combo(trace_text, trace_evidence_combos)
+        and no_forbidden_support
     )
     metrics["trace_completeness"] = 1.0 if trace_ok else 0.0
+    if not no_forbidden_support:
+        metrics["citation_grounding"] = 0.0
 
     gate = data.get("stage_gate", {}) if isinstance(data, dict) else {}
     gate_text = compact_stage_tokens(text_in(gate))
@@ -451,6 +563,9 @@ def evaluate_local(fixtures_dir: Path, fixtures: list[str] | None, output_json: 
     cases: list[dict[str, Any]] = []
     failures = 0
     for fixture_dir in fixture_dirs:
+        perturbation_path = fixture_dir / "perturbation.json"
+        perturbation = load_json(perturbation_path) if perturbation_path.exists() else {}
+        expected_bad_metrics = perturbation.get("known_bad_expectations", {})
         golden_text = (fixture_dir / "golden_output.json").read_text(encoding="utf-8")
         report, metrics = evaluate_payload(
             fixture_dir=fixture_dir,
@@ -473,6 +588,15 @@ def evaluate_local(fixtures_dir: Path, fixtures: list[str] | None, output_json: 
                 arm="local",
                 expect_pass=False,
             )
+            required_zero_metrics = expected_bad_metrics.get(bad_path.stem, [])
+            missed_metrics = [
+                metric for metric in required_zero_metrics if metrics.get(metric) != 0.0
+            ]
+            if missed_metrics:
+                report["expectation_met"] = False
+                report["findings"].append(
+                    "Expected zero metrics were nonzero: " + ", ".join(missed_metrics)
+                )
             cases.append({"fixture": fixture_dir.name, "case": bad_path.stem, "report": report, "metrics": metrics})
             if not report["expectation_met"]:
                 failures += 1

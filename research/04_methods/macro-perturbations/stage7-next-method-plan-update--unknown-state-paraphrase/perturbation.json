@@ -1,0 +1,13 @@
+{
+  "base_macro": "stage7-next-method-plan-update",
+  "condition": "unknown-state-paraphrase",
+  "representation_preserving": true,
+  "known_bad_expectations": {
+    "missing_paraphrased_unknown_state": [
+      "state_accuracy"
+    ],
+    "canonical_unknown_state_fallback": [
+      "schema_validity"
+    ]
+  }
+}

@@ -17,16 +17,16 @@ Purpose: address the security/systems peer review without weakening experimental
 
 No paid model calls.
 
-Status: **IN PROGRESS**
+Status: **LOCAL GATES COMPLETE; PRICING SNAPSHOT AND PAID-RUN GO PENDING**
 
 Required changes:
 
 - [x] capture provider `usage` fields when available;
 - [x] record prompt tokens, completion tokens, total tokens, request identifiers, and retry lineage;
-- preserve prompt/output bytes and elapsed time;
+- [x] preserve prompt/output bytes and elapsed time;
 - [ ] add a dated provider-pricing snapshot outside the run results immediately before Stage B;
-- define variant-aware golden and known-bad fixtures;
-- verify that evaluators accept permitted aliases and still reject missing evidence obligations.
+- [x] define variant-aware golden and known-bad fixtures;
+- [x] verify that evaluators accept permitted aliases and still reject missing evidence obligations.
 
 Instrumentation check:
 
@@ -35,6 +35,15 @@ Instrumentation check:
 - the four-run SiliconFlow smoke manifest completes in dry-run mode;
 - no provider call was made;
 - see `research/07_reviews/contract-driven-harness-adapter-usage-instrumentation-check.md`.
+
+Perturbation gate:
+
+- 10 fixtures cover two macros and five conditions;
+- 10/10 golden cases pass;
+- 18/18 known-bad cases fail on their predeclared target metrics;
+- 4/4 original macro regression cases preserve prior behavior;
+- the 30-run Qwen3-8B + G9 queue passes preflight and adapter dry-run;
+- see `research/07_reviews/contract-driven-harness-post-freeze-stage-a-summary.md`.
 
 Gate:
 

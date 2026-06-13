@@ -233,6 +233,28 @@ python research/04_methods/scripts/preflight_real_model_pilot.py `
 
 Use `--require-keys` when checking a real execution environment.
 
+## `build_macro_perturbation_suite.py`
+
+Builds the two-macro, five-condition representation-perturbation suite used by
+the post-freeze Stage B pilot. The generated fixtures include golden outputs,
+predeclared known-bad outputs, field/value alias contracts, distractor-support
+rules, and condition metadata.
+
+```powershell
+python research/04_methods/scripts/build_macro_perturbation_suite.py `
+  --base-dir research/04_methods/macro-tasks `
+  --output-dir research/04_methods/macro-perturbations
+
+python research/04_methods/scripts/evaluate_stage7e_macro_artifacts.py `
+  --fixtures-dir research/04_methods/macro-perturbations `
+  --local-check `
+  --output-runs research/05_analysis/post-freeze-perturbation-local-gates.json `
+  --output-md research/05_analysis/post-freeze-perturbation-local-gates.md
+```
+
+The local check must pass before compiling or executing the paid perturbation
+pilot.
+
 ## `collect_run_metrics.py`
 
 Collects per-run `metrics.json` files into one runs payload for `harness_benchmark_metrics.py`.

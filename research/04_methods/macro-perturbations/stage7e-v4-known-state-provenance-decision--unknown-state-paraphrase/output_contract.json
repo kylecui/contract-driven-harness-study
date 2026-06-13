@@ -1,0 +1,173 @@
+{
+  "output_contract_id": "out_stage7e_v4_known_state_provenance_decision_001",
+  "format": "json",
+  "retention_contract_required": true,
+  "state_retention_contract_required": true,
+  "known_state_retention_contract_required": true,
+  "required_sections": [
+    "state_inventory",
+    "grounded_claims",
+    "unsupported_claims",
+    "typed_evidence",
+    "selected_claim",
+    "rejected_options",
+    "decision_trace",
+    "stage_gate",
+    "carried_obligations"
+  ],
+  "required_nested_fields": {
+    "state_inventory": [
+      "known_state",
+      "unknown_state",
+      "forbidden_inferences"
+    ],
+    "grounded_claims": [
+      "claim",
+      "evidence_ids"
+    ],
+    "unsupported_claims": [
+      "claim",
+      "reason"
+    ],
+    "selected_claim": [
+      "option_id",
+      "claim",
+      "evidence_ids"
+    ],
+    "rejected_options": [
+      "option_id",
+      "reason",
+      "evidence_ids"
+    ],
+    "decision_trace": [
+      "option_id",
+      "decision",
+      "evidence_ids",
+      "carried_obligations"
+    ],
+    "stage_gate": [
+      "status",
+      "blocked_outputs",
+      "missing_prerequisites",
+      "next_required_actions"
+    ],
+    "carried_obligations": [
+      "obligation",
+      "status",
+      "evidence_ids"
+    ]
+  },
+  "known_state_retention_rules": {
+    "known_state_must_include": [
+      "stage7r1_targeted_smoke_complete",
+      "stage7r2_narrow_macro_admitted",
+      "stage7e_v2_trace_gate_retention_repaired",
+      "stage7e_v3_unknown_state_retention_repaired"
+    ],
+    "known_state_evidence_ids_must_include": [
+      "stage7e-e01",
+      "stage7e-e04",
+      "stage7e-e07",
+      "stage7e-e08"
+    ]
+  },
+  "state_retention_rules": {
+    "unknown_state_must_include": [
+      "current_git_branch",
+      "ci_status",
+      "network_api_approval"
+    ],
+    "forbidden_inferences_must_include": [
+      "do_not_infer_current_git_branch",
+      "do_not_infer_ci_status",
+      "do_not_infer_network_api_approval"
+    ]
+  },
+  "claim_grounding_rules": {
+    "selected_claim_support_any": [
+      [
+        "stage7e-e01",
+        "stage7e-e04",
+        "stage7e-e07",
+        "stage7e-e08"
+      ],
+      [
+        "stage7e-e01",
+        "stage7e-e04",
+        "stage7e-e08",
+        "stage7e-e09"
+      ],
+      [
+        "stage7e-e04",
+        "stage7e-e07",
+        "stage7e-e08"
+      ],
+      [
+        "stage7e-e06",
+        "stage7e-e08",
+        "stage7e-e09"
+      ]
+    ],
+    "trace_evidence_required_any": [
+      [
+        "stage7e-e01",
+        "stage7e-e04",
+        "stage7e-e05"
+      ],
+      [
+        "stage7e-e04",
+        "stage7e-e05",
+        "stage7e-e07",
+        "stage7e-e08"
+      ],
+      [
+        "stage7e-e05",
+        "stage7e-e06",
+        "stage7e-e08",
+        "stage7e-e09"
+      ]
+    ]
+  },
+  "retention_rules": {
+    "decision_trace_required_options": [
+      "C2",
+      "C1",
+      "C3"
+    ],
+    "stage_gate_blocked_outputs": [
+      "final_recommendation",
+      "full_project_initialization",
+      "full_research_workflow"
+    ],
+    "stage_gate_missing_prerequisites": [
+      "stage7e_v4_local_gate",
+      "stage7e_v4_smoke"
+    ],
+    "must_carry_obligations": [
+      "exclude stale universal-gap-closure and production-readiness note",
+      "do not claim production readiness",
+      "do not claim universal model-gap closure",
+      "do not claim full project initialization or full research workflow readiness"
+    ]
+  },
+  "citation_policy": "claim_level_and_decision_trace",
+  "style_profile": "minimal_json",
+  "tool_trace_required": false,
+  "value_aliases": {
+    "branch_currently_checked_out": "current_git_branch",
+    "continuous_integration_result": "ci_status",
+    "permission_to_use_external_model_api": "network_api_approval",
+    "do_not_guess_branch_currently_checked_out": "do_not_infer_current_git_branch",
+    "do_not_guess_continuous_integration_result": "do_not_infer_ci_status",
+    "do_not_guess_permission_to_use_external_model_api": "do_not_infer_network_api_approval"
+  },
+  "required_surface_values": [
+    "branch_currently_checked_out",
+    "continuous_integration_result",
+    "permission_to_use_external_model_api",
+    "do_not_guess_branch_currently_checked_out",
+    "do_not_guess_continuous_integration_result",
+    "do_not_guess_permission_to_use_external_model_api"
+  ],
+  "perturbation_condition": "unknown-state-paraphrase"
+}

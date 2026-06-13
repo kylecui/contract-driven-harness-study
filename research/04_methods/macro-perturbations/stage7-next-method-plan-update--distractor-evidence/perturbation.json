@@ -1,0 +1,15 @@
+{
+  "base_macro": "stage7-next-method-plan-update",
+  "condition": "distractor-evidence",
+  "representation_preserving": true,
+  "known_bad_expectations": {
+    "distractor_used_as_primary_support": [
+      "citation_grounding",
+      "trace_completeness"
+    ],
+    "distractor_mixed_with_valid_support": [
+      "citation_grounding",
+      "trace_completeness"
+    ]
+  }
+}
