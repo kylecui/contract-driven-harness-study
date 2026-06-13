@@ -1,3 +1,27 @@
 {
-  "status": "pending"
+  "run_id": "stage7-next-method-plan-update-v2--evidence-order-shuffled__budget_model__G9__r1",
+  "fixture": "stage7-next-method-plan-update-v2--evidence-order-shuffled",
+  "task_class": "stage7_next_evidence_bound_macro",
+  "model": "budget_model",
+  "harness_arm": "G9",
+  "validation_status": "pending",
+  "passed": false,
+  "metrics": {
+    "task_success": 0.0,
+    "schema_validity": 0.0,
+    "tool_call_correctness": 0.0,
+    "citation_grounding": 0.0,
+    "human_acceptance": 0.0,
+    "cost_efficiency": 0.0,
+    "safety_consistency": 0.0,
+    "constraint_consistency": 0.0,
+    "state_accuracy": 0.0,
+    "evidence_type_accuracy": 0.0,
+    "stage_completion": 0.0,
+    "repair_success": 0.0,
+    "trace_completeness": 0.0,
+    "context_relevance": 0.0,
+    "atom_primary_metric": 0.0
+  },
+  "mock": false
 }

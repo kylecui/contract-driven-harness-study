@@ -1,3 +1,10 @@
 {
-  "status": "pending"
+  "status": "pending",
+  "passed": false,
+  "reason": "Output is still pending.",
+  "findings": [],
+  "run_id": "stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase__budget_model__G9__r2",
+  "fixture": "stage7e-v4-known-state-provenance-decision-v2--unknown-state-paraphrase",
+  "model": "budget_model",
+  "harness_arm": "G9"
 }

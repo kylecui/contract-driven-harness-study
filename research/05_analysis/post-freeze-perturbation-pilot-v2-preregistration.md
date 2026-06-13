@@ -2,7 +2,7 @@
 
 Prepared: 2026-06-13
 
-Status: prepared; no paid Stage B v2 calls made
+Status: executed and stopped early on 2026-06-13
 
 ## Purpose
 
@@ -157,3 +157,19 @@ packet-generation, preflight, dry-run, evaluation, and inspection entry points.
 - No general robustness claim beyond the declared fixtures.
 - No causal attribution to a single Stage B v2 repair.
 - No Stage C or Stage D admission before the Stage B v2 stop rule is evaluated.
+
+## Execution Outcome
+
+Execution began on 2026-06-13 and stopped after the first canonical cell.
+Three completed calls all failed the same required structural obligation, so
+the cell finished 0/3 and could not meet the preregistered 2/3 threshold.
+
+The adapter had started a fourth provider request when the early-stop decision
+was applied. That attempt has no completed response and remains recorded as an
+aborted in-flight attempt. The remaining 26 calls were never started.
+
+Stage B v2 therefore fails its admission rule. Its completed runs must not be
+pooled into a repaired successor protocol.
+
+Full analysis:
+`research/07_reviews/stage-b-v2-early-stop-summary.md`.

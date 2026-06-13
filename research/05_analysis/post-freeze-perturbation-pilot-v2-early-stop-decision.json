@@ -1,0 +1,29 @@
+{
+  "protocol_id": "stage_b_v2_repair_confirmation",
+  "decision": "stop",
+  "decision_time": "2026-06-13 16:55:03 +08:00",
+  "reason": "The first canonical macro-condition cell completed 0/3 passing runs and could not meet the preregistered 2/3 threshold.",
+  "completed_provider_responses": 3,
+  "completed_passes": 0,
+  "started_without_completed_response": 1,
+  "never_started": 26,
+  "provider_errors_in_completed_calls": 0,
+  "timeouts_in_completed_calls": 0,
+  "truncated_completed_outputs": 0,
+  "failed_cell": {
+    "fixture": "stage7-next-method-plan-update-v2--canonical",
+    "passes": 0,
+    "runs": 3,
+    "required_passes": 2
+  },
+  "repeated_failed_metrics": [
+    "schema_validity",
+    "state_accuracy",
+    "atom_primary_metric",
+    "task_success"
+  ],
+  "root_cause_classification": "model_output_shape_noncompliance",
+  "root_cause_summary": "The model flattened state_inventory.known_state into a top-level state_inventory array. Runs 1 and 2 moved unknown_state and forbidden_inferences to the root; run 3 omitted them.",
+  "next_protocol_requirement": "Test hierarchical output-shape preservation with a literal JSON skeleton in a separate canonical repair smoke before preparing another 30-run perturbation slice.",
+  "pooling_policy": "Do not pool Stage B v2 with any repaired successor."
+}
