@@ -41,6 +41,46 @@ def monotonic_ms() -> int:
     return int(time.monotonic() * 1000)
 
 
+def normalize_usage(usage: Any) -> dict[str, Any] | None:
+    if not isinstance(usage, dict):
+        return None
+    return {
+        "prompt_tokens": usage.get("prompt_tokens", usage.get("input_tokens")),
+        "completion_tokens": usage.get(
+            "completion_tokens", usage.get("output_tokens")
+        ),
+        "total_tokens": usage.get("total_tokens"),
+        "raw": usage,
+    }
+
+
+def parse_provider_response(
+    result: dict[str, Any], *, header_request_id: str | None = None
+) -> dict[str, Any]:
+    content = result["choices"][0]["message"]["content"]
+    if not isinstance(content, str):
+        raise TypeError("Provider response content must be a string")
+    return {
+        "content": content,
+        "usage": normalize_usage(result.get("usage")),
+        "response_id": result.get("id"),
+        "request_id": header_request_id,
+        "response_model": result.get("model"),
+        "created": result.get("created"),
+        "system_fingerprint": result.get("system_fingerprint"),
+    }
+
+
+def retry_lineage(
+    adapter_request: dict[str, Any], *, run_id: str
+) -> dict[str, Any]:
+    return {
+        "lineage_id": adapter_request.get("lineage_id", run_id),
+        "attempt": int(adapter_request.get("attempt", 1)),
+        "retry_of_run_id": adapter_request.get("retry_of_run_id"),
+    }
+
+
 def call_provider(
     *,
     provider: dict[str, Any],
@@ -48,7 +88,7 @@ def call_provider(
     prompt: str,
     temperature: float,
     max_output_tokens: int,
-) -> str:
+) -> dict[str, Any]:
     key_env = str(provider["api_key_env"])
     api_key = os.environ.get(key_env)
     if not api_key:
@@ -79,7 +119,8 @@ def call_provider(
     )
     with request.urlopen(req, timeout=timeout) as response:  # noqa: S310 - user-configured endpoint
         result = json.loads(response.read().decode("utf-8"))
-    return result["choices"][0]["message"]["content"]
+        header_request_id = response.headers.get("x-request-id")
+    return parse_provider_response(result, header_request_id=header_request_id)
 
 
 def run_adapter(
@@ -109,10 +150,12 @@ def run_adapter(
         mapping = config["model_tiers"][model_tier]
         provider = config["providers"][mapping["provider"]]
         model = mapping["model"]
+        lineage = retry_lineage(adapter_request, run_id=run["run_id"])
         run_started_ms = monotonic_ms()
 
         status = "dry_run"
         error = None
+        provider_metadata = None
         append_jsonl(
             event_log_path,
             {
@@ -127,6 +170,7 @@ def run_adapter(
                 "harness_arm": run.get("harness_arm"),
                 "prompt": str(prompt_path),
                 "output": str(output_path),
+                "retry_lineage": lineage,
                 "monotonic_ms": run_started_ms,
             },
         )
@@ -144,16 +188,23 @@ def run_adapter(
                         "temperature": temperature,
                         "max_output_tokens": max_output_tokens,
                         "prompt_bytes": len(prompt.encode("utf-8")),
+                        "retry_lineage": lineage,
                         "monotonic_ms": monotonic_ms(),
                     },
                 )
-                output = call_provider(
+                provider_response = call_provider(
                     provider=provider,
                     model=model,
                     prompt=prompt,
                     temperature=temperature,
                     max_output_tokens=max_output_tokens,
                 )
+                output = provider_response["content"]
+                provider_metadata = {
+                    key: value
+                    for key, value in provider_response.items()
+                    if key != "content"
+                }
                 output_path.write_text(output, encoding="utf-8")
                 elapsed_ms = monotonic_ms() - run_started_ms
                 trace_path.write_text(
@@ -166,6 +217,8 @@ def run_adapter(
                             "max_output_tokens": max_output_tokens,
                             "tools_used": [],
                             "elapsed_ms": elapsed_ms,
+                            "retry_lineage": lineage,
+                            "provider_metadata": provider_metadata,
                         },
                         ensure_ascii=False,
                     )
@@ -181,6 +234,8 @@ def run_adapter(
                         "status": status,
                         "output_bytes": len(output.encode("utf-8")),
                         "elapsed_ms": elapsed_ms,
+                        "retry_lineage": lineage,
+                        "provider_metadata": provider_metadata,
                         "monotonic_ms": monotonic_ms(),
                     },
                 )
@@ -210,6 +265,8 @@ def run_adapter(
                 "prompt": str(prompt_path),
                 "output": str(output_path),
                 "elapsed_ms": monotonic_ms() - run_started_ms,
+                "retry_lineage": lineage,
+                "provider_metadata": provider_metadata,
             }
         )
         append_jsonl(
@@ -220,6 +277,8 @@ def run_adapter(
                 "status": status,
                 "error": error,
                 "elapsed_ms": monotonic_ms() - run_started_ms,
+                "retry_lineage": lineage,
+                "provider_metadata": provider_metadata,
                 "monotonic_ms": monotonic_ms(),
             },
         )

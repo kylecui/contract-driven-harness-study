@@ -1,0 +1,164 @@
+# Post-Freeze Evidence Extension Plan
+
+Prepared: 2026-06-13
+
+Baseline: frozen v3.1.1 paper body
+
+Purpose: address the security/systems peer review without weakening experimental discipline or silently changing the frozen paper.
+
+## Research Questions
+
+1. Does the low-cost model maintain contract adherence across repeated provider executions?
+2. Do admitted macros survive representation-preserving perturbations?
+3. What latency, token, retry, and provider-cost overhead does the harness add?
+4. Does low-cost model plus G9 offer a useful cost/reliability tradeoff against a strong model with weak or full harnessing?
+
+## Stage A: Instrumentation And Local Gates
+
+No paid model calls.
+
+Status: **IN PROGRESS**
+
+Required changes:
+
+- [x] capture provider `usage` fields when available;
+- [x] record prompt tokens, completion tokens, total tokens, request identifiers, and retry lineage;
+- preserve prompt/output bytes and elapsed time;
+- [ ] add a dated provider-pricing snapshot outside the run results immediately before Stage B;
+- define variant-aware golden and known-bad fixtures;
+- verify that evaluators accept permitted aliases and still reject missing evidence obligations.
+
+Instrumentation check:
+
+- three local response/lineage unit tests pass;
+- the adapter and test module compile;
+- the four-run SiliconFlow smoke manifest completes in dry-run mode;
+- no provider call was made;
+- see `research/07_reviews/contract-driven-harness-adapter-usage-instrumentation-check.md`.
+
+Gate:
+
+- canonical golden passes;
+- every perturbation golden passes;
+- every perturbation known-bad fails for the intended reason;
+- no secret or provider credential enters artifacts;
+- dry-run manifests compile with zero errors.
+
+## Stage B: 30-Run Perturbation Pilot
+
+Model: `Qwen/Qwen3-8B`
+
+Harness arm: G9
+
+Macros:
+
+- Stage 7e v4 evidence-bound decision;
+- Stage 7-next method-plan update.
+
+Conditions:
+
+1. canonical contract;
+2. evidence order shuffled;
+3. declared field alias, such as `evidence_ids` to `source_references`;
+4. semantically equivalent unknown-state wording;
+5. irrelevant but plausible distractor evidence.
+
+Design:
+
+```text
+2 macros x 5 conditions x 3 repetitions = 30 runs
+```
+
+Stop immediately if:
+
+- an evaluator cannot distinguish an allowed representation from a semantic failure;
+- any condition passes fewer than 2/3 runs;
+- provider failure rate exceeds 20%;
+- output truncation or timeout prevents a fair comparison;
+- a perturbation changes the obligation rather than its representation.
+
+## Stage C: Stability Expansion
+
+Proceed only if Stage B passes without fixture or evaluator changes.
+
+Add five repetitions to each existing cell:
+
+```text
+2 macros x 5 conditions x 5 additional repetitions = 50 additional runs
+```
+
+Combined total:
+
+```text
+2 macros x 5 conditions x 8 repetitions = 80 runs
+```
+
+Report:
+
+- pass rate by macro and condition;
+- pooled pass rate by macro;
+- two-sided 95% Wilson intervals;
+- provider failure/retry rate;
+- latency median, P90, and range;
+- prompt/completion token distributions;
+- failures separated into contract, evaluator, truncation, timeout, and provider categories.
+
+If all 40 runs for one macro pass, the descriptive 95% Wilson lower bound is approximately 0.912. This supports a bounded stability statement across the tested perturbations. It does not establish open-ended workflow reliability.
+
+If Stage B causes any fixture, contract, or evaluator revision, Stage C must use fresh runs; the pilot cannot be pooled into the final 40-run macro estimate.
+
+## Stage D: Overhead Matrix
+
+Use one representative admitted macro unless Stage B shows materially different behavior between the two macros.
+
+Primary 2x2 design:
+
+| Model | Harness |
+|---|---|
+| Qwen3-8B | G0 |
+| Qwen3-8B | G9 |
+| DeepSeek-V3.2 | G0 |
+| DeepSeek-V3.2 | G9 |
+
+Target:
+
+```text
+4 cells x 10 repetitions = 40 runs
+```
+
+Existing compatible G9 runs may be reused only when instrumentation fields are complete and protocol-equivalent. Otherwise, run fresh cells.
+
+Primary decision metrics:
+
+- contract pass rate;
+- provider cost per successful contract pass;
+- median and P90 latency;
+- prompt and completion tokens;
+- timeout, truncation, and retry rate.
+
+Do not use the current heuristic `cost_efficiency=1.000` as a billing claim.
+
+## Statistical Boundary
+
+- Repetition estimates run stability, not task-family generalization.
+- Perturbation estimates local representation robustness, not arbitrary schema portability.
+- Confidence intervals describe observed binary pass rates; they do not remove fixture dependence.
+- Provider comparisons require a dated pricing snapshot and matched task/contract conditions.
+- Any claim beyond the tested macros remains a non-claim.
+
+## Execution Budget
+
+Minimum paid extension if no reset is required:
+
+```text
+Stage B 30 + Stage C 50 + Stage D 40 = 120 calls
+```
+
+Stage B is the first paid gate. Stage C and Stage D require a separate go decision after reviewing Stage B failures, latency, and estimated cost.
+
+## Paper Versioning
+
+- v3.1.1 remains frozen and citable as the current bounded-evidence draft.
+- Citation and layout work may continue against v3.1.1.
+- Successful new evidence enters a separate v4 draft after an explicit unfreeze decision.
+- Failed or mixed results must be published in the v4 evidence record rather than discarded.

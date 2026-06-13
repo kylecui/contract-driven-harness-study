@@ -188,6 +188,12 @@ python research/04_methods/scripts/validate_provider_config.py `
 
 OpenAI-compatible adapter for the first real slice. It defaults to dry-run mode and does not call a model unless `--execute` is passed.
 
+For executed runs, the adapter preserves provider-reported token usage when
+available, response/request identifiers, response model metadata, elapsed time,
+payload bytes, and optional retry lineage declared in `adapter_request.json`.
+Missing provider usage remains `null`; byte counts are not substituted for
+tokens.
+
 Dry run:
 
 ```powershell
