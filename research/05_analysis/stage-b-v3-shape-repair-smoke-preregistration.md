@@ -2,7 +2,7 @@
 
 Prepared: 2026-06-13
 
-Status: prepared before provider execution
+Status: executed; passed 2/3 admission threshold on 2026-06-13
 
 ## Hypothesis
 
@@ -108,3 +108,23 @@ protocols.
 
 Do not pool Stage B v2 and Stage B v3 runs. Preserve both outcomes and their
 protocol lineage.
+
+## Execution Outcome
+
+The three preregistered lineages produced:
+
+- r1 attempt 1: completed, shape preserved, full contract failed because the
+  grounded-claim evidence combination omitted required evidence;
+- r2 attempt 1: provider HTTP 500; attempt 2 completed and passed;
+- r3 attempt 1: provider HTTP 500; attempt 2 completed and passed.
+
+The first completed model response for each lineage therefore yields 2/3 full
+contract passes. The mechanism-specific hierarchy obligation passed 3/3.
+
+The smoke passes its admission threshold. This permits preparation, but not
+automatic execution, of a separately frozen full Stage B v3 perturbation slice.
+The full-slice literal skeleton must expand `grounded_claims` into explicit
+claim slots so the template does not invite evidence-combination compression.
+
+Full analysis:
+`research/07_reviews/stage-b-v3-shape-repair-smoke-summary.md`.

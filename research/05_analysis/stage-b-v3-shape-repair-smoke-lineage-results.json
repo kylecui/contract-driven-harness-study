@@ -1,0 +1,89 @@
+{
+  "protocol_id": "stage_b_v3_hierarchical_shape_repair_smoke",
+  "decision": "pass",
+  "decision_rule": "At least 2 of 3 lineages must pass the unchanged full contract.",
+  "full_contract_passes": 2,
+  "lineage_count": 3,
+  "shape_mechanism_passes": 3,
+  "provider_attempts": 5,
+  "provider_responses": 3,
+  "provider_errors": 2,
+  "lineages": [
+    {
+      "lineage": "r1",
+      "completed_attempt": 1,
+      "full_contract_pass": false,
+      "shape_mechanism_pass": true,
+      "task_success": 0.857,
+      "failed_metrics": [
+        "citation_grounding",
+        "atom_primary_metric"
+      ],
+      "provider_attempts": [
+        {
+          "attempt": 1,
+          "status": "executed",
+          "elapsed_ms": 51375,
+          "prompt_tokens": 6350,
+          "completion_tokens": 1706,
+          "total_tokens": 8056
+        }
+      ]
+    },
+    {
+      "lineage": "r2",
+      "completed_attempt": 2,
+      "full_contract_pass": true,
+      "shape_mechanism_pass": true,
+      "task_success": 1.0,
+      "failed_metrics": [],
+      "provider_attempts": [
+        {
+          "attempt": 1,
+          "status": "provider_error",
+          "error": "HTTP Error 500: Internal Server Error",
+          "elapsed_ms": 188
+        },
+        {
+          "attempt": 2,
+          "status": "executed",
+          "elapsed_ms": 29234,
+          "prompt_tokens": 6350,
+          "completion_tokens": 1838,
+          "total_tokens": 8188
+        }
+      ]
+    },
+    {
+      "lineage": "r3",
+      "completed_attempt": 2,
+      "full_contract_pass": true,
+      "shape_mechanism_pass": true,
+      "task_success": 1.0,
+      "failed_metrics": [],
+      "provider_attempts": [
+        {
+          "attempt": 1,
+          "status": "provider_error",
+          "error": "HTTP Error 500: Internal Server Error",
+          "elapsed_ms": 187
+        },
+        {
+          "attempt": 2,
+          "status": "executed",
+          "elapsed_ms": 22531,
+          "prompt_tokens": 6350,
+          "completion_tokens": 1824,
+          "total_tokens": 8174
+        }
+      ]
+    }
+  ],
+  "completed_response_totals": {
+    "elapsed_ms": 103140,
+    "prompt_tokens": 19050,
+    "completion_tokens": 5368,
+    "total_tokens": 24418
+  },
+  "next_gate": "Prepare a separately frozen full Stage B v3 perturbation slice with explicit grounded-claim slots; do not execute it without a new approval."
+}
