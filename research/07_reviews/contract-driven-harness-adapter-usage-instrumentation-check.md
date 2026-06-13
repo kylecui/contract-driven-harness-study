@@ -14,8 +14,10 @@ available:
 - provider-reported prompt, completion, and total tokens;
 - the raw provider usage object;
 - response ID, response model, creation timestamp, and system fingerprint;
-- the `x-request-id` response header;
+- the official `x-siliconcloud-trace-id` response header, with
+  `x-request-id` retained as a compatibility fallback;
 - declared retry lineage (`lineage_id`, `attempt`, and `retry_of_run_id`);
+- the explicit `enable_thinking` request setting;
 - existing prompt/output byte and elapsed-time measurements.
 
 When a provider omits usage metadata, the adapter records `usage: null`.
@@ -26,26 +28,29 @@ It does not estimate tokens from bytes.
 Commands:
 
 ```text
-python -m unittest research/04_methods/scripts/test_run_openai_adapter.py
+python -B -m unittest research/04_methods/scripts/test_run_openai_adapter.py
 python -m py_compile research/04_methods/scripts/run_openai_adapter.py research/04_methods/scripts/test_run_openai_adapter.py
 python research/04_methods/scripts/run_openai_adapter.py --manifest research/05_analysis/real-run-artifacts/first-slice-smoke-manifest.json --config research/04_methods/provider-config.siliconflow-reviewed.json --report C:/tmp/contract-harness-adapter-dry-run.json --event-log C:/tmp/contract-harness-adapter-dry-run-events.jsonl
 ```
 
 Results:
 
-- 3/3 unit tests passed;
+- 5/5 unit tests passed, including explicit non-thinking payload inclusion and
+  unspecified-thinking omission;
 - both Python modules compiled;
 - 4/4 manifest entries were processed with `execute=false`;
 - dry-run reports contain retry-lineage fields and null provider metadata;
 - no network request or paid model call occurred.
 
-## Remaining Stage A Work
+## Stage A Completion
 
-- construct five representation-preserving variants for each selected macro;
-- add golden and known-bad outputs for every variant;
-- prove that aliases are accepted only when declared;
-- prove that missing evidence obligations still fail;
-- capture an official dated pricing snapshot immediately before Stage B.
+- five representation-preserving variants were constructed for each selected
+  macro;
+- golden and known-bad outputs pass their local expectations;
+- aliases are accepted only when declared;
+- missing evidence obligations still fail;
+- the official dated pricing snapshot was captured on 2026-06-13;
+- Stage B inference mode is frozen to `enable_thinking=false`.
 
-Stage B remains blocked until these local gates pass and the user gives an
-explicit go decision for 30 paid calls.
+Stage B remains blocked only until the user gives an explicit go decision for
+30 provider calls.

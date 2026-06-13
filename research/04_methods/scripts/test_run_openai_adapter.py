@@ -8,7 +8,11 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from run_openai_adapter import parse_provider_response, retry_lineage
+from run_openai_adapter import (
+    build_provider_payload,
+    parse_provider_response,
+    retry_lineage,
+)
 
 
 class ProviderResponseTests(unittest.TestCase):
@@ -69,6 +73,30 @@ class ProviderResponseTests(unittest.TestCase):
                 "retry_of_run_id": "run-1",
             },
         )
+
+    def test_provider_payload_records_explicit_non_thinking_mode(self) -> None:
+        payload = build_provider_payload(
+            model="Qwen/Qwen3-8B",
+            prompt="test",
+            temperature=0,
+            max_output_tokens=2000,
+            enable_thinking=False,
+        )
+
+        self.assertIs(payload["enable_thinking"], False)
+        self.assertNotIn("reasoning_effort", payload)
+        self.assertNotIn("thinking_budget", payload)
+
+    def test_provider_payload_omits_unspecified_thinking_mode(self) -> None:
+        payload = build_provider_payload(
+            model="example/model",
+            prompt="test",
+            temperature=0,
+            max_output_tokens=2000,
+            enable_thinking=None,
+        )
+
+        self.assertNotIn("enable_thinking", payload)
 
 
 if __name__ == "__main__":

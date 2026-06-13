@@ -10,8 +10,8 @@ Paid provider calls: none
 ## Result
 
 Stage A local gates pass. Stage B is structurally ready but remains blocked
-until an official dated SiliconFlow pricing snapshot is recorded and the user
-explicitly authorizes 30 paid calls.
+until the user explicitly authorizes 30 paid calls. The official dated
+SiliconFlow pricing snapshot was recorded on 2026-06-13.
 
 ## Perturbation Suite
 
@@ -84,7 +84,9 @@ All runs use:
 - model tier: low-cost model;
 - provider model: `Qwen/Qwen3-8B`;
 - harness: G9;
-- temperature: 0.
+- temperature: 0;
+- maximum output tokens: 2000;
+- thinking mode: explicitly disabled.
 
 Readiness:
 
@@ -110,4 +112,6 @@ Readiness:
 
 Stage A local work: **PASS**
 
-Stage B paid execution: **BLOCKED PENDING PRICING SNAPSHOT AND EXPLICIT GO**
+Pricing snapshot: **COMPLETE**
+
+Stage B paid execution: **BLOCKED PENDING EXPLICIT GO**

@@ -18,6 +18,7 @@
   },
   "defaults": {
     "temperature": 0,
-    "max_output_tokens": 2000
+    "max_output_tokens": 2000,
+    "enable_thinking": false
   }
 }

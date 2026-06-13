@@ -17,14 +17,14 @@ Purpose: address the security/systems peer review without weakening experimental
 
 No paid model calls.
 
-Status: **LOCAL GATES COMPLETE; PRICING SNAPSHOT AND PAID-RUN GO PENDING**
+Status: **LOCAL GATES AND PRICING SNAPSHOT COMPLETE; PAID-RUN GO PENDING**
 
 Required changes:
 
 - [x] capture provider `usage` fields when available;
 - [x] record prompt tokens, completion tokens, total tokens, request identifiers, and retry lineage;
 - [x] preserve prompt/output bytes and elapsed time;
-- [ ] add a dated provider-pricing snapshot outside the run results immediately before Stage B;
+- [x] add a dated provider-pricing snapshot outside the run results immediately before Stage B;
 - [x] define variant-aware golden and known-bad fixtures;
 - [x] verify that evaluators accept permitted aliases and still reject missing evidence obligations.
 
@@ -58,6 +58,9 @@ Gate:
 Model: `Qwen/Qwen3-8B`
 
 Harness arm: G9
+
+Inference controls: `temperature=0`, `max_tokens=2000`,
+`enable_thinking=false`; do not send `reasoning_effort` or `thinking_budget`.
 
 Macros:
 

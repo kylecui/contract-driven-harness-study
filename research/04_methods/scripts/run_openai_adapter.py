@@ -81,22 +81,15 @@ def retry_lineage(
     }
 
 
-def call_provider(
+def build_provider_payload(
     *,
-    provider: dict[str, Any],
     model: str,
     prompt: str,
     temperature: float,
     max_output_tokens: int,
+    enable_thinking: bool | None,
 ) -> dict[str, Any]:
-    key_env = str(provider["api_key_env"])
-    api_key = os.environ.get(key_env)
-    if not api_key:
-        raise RuntimeError(f"Missing API key environment variable: {key_env}")
-
-    base_url = str(provider.get("base_url", "https://api.openai.com/v1")).rstrip("/")
-    timeout = int(provider.get("timeout_seconds", 120))
-    payload = {
+    payload: dict[str, Any] = {
         "model": model,
         "messages": [
             {
@@ -107,6 +100,34 @@ def call_provider(
         "temperature": temperature,
         "max_tokens": max_output_tokens,
     }
+    if enable_thinking is not None:
+        payload["enable_thinking"] = enable_thinking
+    return payload
+
+
+def call_provider(
+    *,
+    provider: dict[str, Any],
+    model: str,
+    prompt: str,
+    temperature: float,
+    max_output_tokens: int,
+    enable_thinking: bool | None,
+) -> dict[str, Any]:
+    key_env = str(provider["api_key_env"])
+    api_key = os.environ.get(key_env)
+    if not api_key:
+        raise RuntimeError(f"Missing API key environment variable: {key_env}")
+
+    base_url = str(provider.get("base_url", "https://api.openai.com/v1")).rstrip("/")
+    timeout = int(provider.get("timeout_seconds", 120))
+    payload = build_provider_payload(
+        model=model,
+        prompt=prompt,
+        temperature=temperature,
+        max_output_tokens=max_output_tokens,
+        enable_thinking=enable_thinking,
+    )
     data = json.dumps(payload).encode("utf-8")
     req = request.Request(
         f"{base_url}/chat/completions",
@@ -119,7 +140,9 @@ def call_provider(
     )
     with request.urlopen(req, timeout=timeout) as response:  # noqa: S310 - user-configured endpoint
         result = json.loads(response.read().decode("utf-8"))
-        header_request_id = response.headers.get("x-request-id")
+        header_request_id = response.headers.get(
+            "x-siliconcloud-trace-id"
+        ) or response.headers.get("x-request-id")
     return parse_provider_response(result, header_request_id=header_request_id)
 
 
@@ -135,6 +158,9 @@ def run_adapter(
     defaults = config.get("defaults", {})
     temperature = float(defaults.get("temperature", 0))
     max_output_tokens = int(defaults.get("max_output_tokens", 2000))
+    enable_thinking = defaults.get("enable_thinking")
+    if enable_thinking is not None and not isinstance(enable_thinking, bool):
+        raise TypeError("defaults.enable_thinking must be a boolean or null")
 
     results = []
     run_total = len(manifest.get("runs", []))
@@ -187,6 +213,7 @@ def run_adapter(
                         "timeout_seconds": provider.get("timeout_seconds", 120),
                         "temperature": temperature,
                         "max_output_tokens": max_output_tokens,
+                        "enable_thinking": enable_thinking,
                         "prompt_bytes": len(prompt.encode("utf-8")),
                         "retry_lineage": lineage,
                         "monotonic_ms": monotonic_ms(),
@@ -198,6 +225,7 @@ def run_adapter(
                     prompt=prompt,
                     temperature=temperature,
                     max_output_tokens=max_output_tokens,
+                    enable_thinking=enable_thinking,
                 )
                 output = provider_response["content"]
                 provider_metadata = {
@@ -215,6 +243,7 @@ def run_adapter(
                             "model": model,
                             "temperature": temperature,
                             "max_output_tokens": max_output_tokens,
+                            "enable_thinking": enable_thinking,
                             "tools_used": [],
                             "elapsed_ms": elapsed_ms,
                             "retry_lineage": lineage,

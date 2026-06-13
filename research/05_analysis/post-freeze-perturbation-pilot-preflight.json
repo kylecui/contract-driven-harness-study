@@ -1,7 +1,7 @@
 {
   "manifest_path": "research\\05_analysis\\real-run-artifacts\\post-freeze-perturbation-pilot-manifest-with-prompts.json",
   "config_path": "research\\04_methods\\provider-config.siliconflow-reviewed.json",
-  "require_keys": false,
+  "require_keys": true,
   "errors": [],
   "warnings": [],
   "runs": {

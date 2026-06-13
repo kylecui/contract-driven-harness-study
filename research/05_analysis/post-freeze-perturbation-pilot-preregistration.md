@@ -27,7 +27,9 @@ Controlled variables:
 - provider: SiliconFlow;
 - harness: G9;
 - temperature: 0;
-- maximum output tokens: provider configuration value;
+- maximum output tokens: 2000;
+- thinking mode: explicitly disabled with `enable_thinking=false`;
+- `reasoning_effort` and `thinking_budget`: not sent;
 - evaluator thresholds and semantic obligations;
 - three repetitions per macro-condition cell.
 
@@ -93,5 +95,19 @@ conditions.
 - Provider runtime variation may be correlated across sequential calls.
 - Declared alias handling tests contract portability, not arbitrary schema
   interpretation.
+- Earlier Stage 7 requests omitted `enable_thinking`; Stage B's canonical
+  condition is therefore a newly frozen protocol rather than a confirmed
+  inference-mode-identical replication of the historical runs.
 - Deterministic evaluators can still miss semantically poor but contract-shaped
   outputs; qualitative failure review remains required.
+
+## Pre-Execution Amendment
+
+On 2026-06-13, before any paid Stage B call, the controlled variables were
+amended to make the provider inference mode explicit. The earlier adapter
+omitted `enable_thinking`, leaving provider-default behavior implicit. Stage B
+now sends `enable_thinking=false` for every run and records the setting in the
+event log and tool trace. No paid result was changed, removed, or rescored.
+
+Decision record:
+`research/05_analysis/post-freeze-stage-b-model-and-reasoning-settings.md`.
