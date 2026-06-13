@@ -1,0 +1,33 @@
+{
+  "suite_id": "stage_b_v3_full_perturbation_suite",
+  "purpose": "full_repair_confirmation_after_stage_b_v3_shape_smoke",
+  "macros": [
+    "stage7e-v4-known-state-provenance-decision",
+    "stage7-next-method-plan-update"
+  ],
+  "conditions": [
+    "canonical",
+    "evidence-order-shuffled",
+    "field-alias",
+    "unknown-state-paraphrase",
+    "distractor-evidence"
+  ],
+  "fixture_count": 10,
+  "fixtures": [
+    "stage7e-v4-known-state-provenance-decision-v3--canonical",
+    "stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled",
+    "stage7e-v4-known-state-provenance-decision-v3--field-alias",
+    "stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase",
+    "stage7e-v4-known-state-provenance-decision-v3--distractor-evidence",
+    "stage7-next-method-plan-update-v3--canonical",
+    "stage7-next-method-plan-update-v3--evidence-order-shuffled",
+    "stage7-next-method-plan-update-v3--field-alias",
+    "stage7-next-method-plan-update-v3--unknown-state-paraphrase",
+    "stage7-next-method-plan-update-v3--distractor-evidence"
+  ],
+  "mechanism_atoms": [
+    "hierarchical_output_shape_preservation",
+    "explicit_grounded_claim_slot_preservation"
+  ],
+  "pooling_policy": "must_not_pool_with_stage_b_v1_or_v2"
+}

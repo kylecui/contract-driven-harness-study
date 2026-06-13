@@ -1,0 +1,51 @@
+{
+  "base_macro": "stage7-next-method-plan-update",
+  "condition": "unknown-state-paraphrase",
+  "representation_preserving": true,
+  "known_bad_expectations": {
+    "missing_paraphrased_unknown_state": [
+      "state_accuracy"
+    ],
+    "canonical_unknown_state_fallback": [
+      "schema_validity"
+    ],
+    "incomplete_selected_claim_support": [
+      "trace_completeness"
+    ],
+    "expanded_typed_evidence_objects": [
+      "schema_validity"
+    ],
+    "open_vocabulary_status": [
+      "schema_validity"
+    ],
+    "missing_required_nested_field": [
+      "schema_validity"
+    ],
+    "hybrid_unknown_state_surface": [
+      "schema_validity"
+    ],
+    "flattened_state_inventory": [
+      "schema_validity",
+      "state_accuracy"
+    ],
+    "root_promoted_state_fields": [
+      "schema_validity",
+      "state_accuracy"
+    ],
+    "omitted_nested_state_fields": [
+      "schema_validity",
+      "state_accuracy"
+    ],
+    "compressed_grounded_claim_slots": [
+      "schema_validity",
+      "citation_grounding"
+    ]
+  },
+  "suite_version": "stage_b_v3_full",
+  "repair_confirmation": true,
+  "mechanism_atoms": [
+    "hierarchical_output_shape_preservation",
+    "explicit_grounded_claim_slot_preservation"
+  ],
+  "pooling_policy": "must_not_pool_with_stage_b_v1_or_v2"
+}

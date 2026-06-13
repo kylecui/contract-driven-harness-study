@@ -1,0 +1,23 @@
+{
+  "slice_id": "stage7e_v4_known_state_provenance_memory_001",
+  "must_load": [
+    "Stage 7r.1 targeted smoke completed 8/8 and passed 8/8",
+    "Stage 7r.2 admits only a narrow evidence-bound decision macro",
+    "Stage 7e v2 repaired trace and stage-gate retention",
+    "Stage 7e v3 repaired Git/CI/network unknown-state retention",
+    "Stage 7e v3 still had one known-state provenance compression failure",
+    "current Git branch is unknown",
+    "CI status is unknown",
+    "network/API approval is unknown",
+    "full project initialization remains blocked",
+    "full research workflow remains blocked"
+  ],
+  "must_not_load": [
+    "old universal gap-closure note",
+    "old production-readiness note",
+    "current Git branch value",
+    "CI status value",
+    "network/API approval value"
+  ],
+  "staleness_policy": "fixed_snapshot_with_explicit_exclusion"
+}

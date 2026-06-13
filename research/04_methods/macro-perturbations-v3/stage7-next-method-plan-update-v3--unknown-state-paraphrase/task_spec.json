@@ -1,0 +1,57 @@
+{
+  "task_id": "stage7_next_method_plan_update",
+  "task_type": "stage7_next_evidence_bound_macro",
+  "objective": "Compose the passing Stage 7e v4 obligations into a bounded evidence-bound method-plan update packet.",
+  "composition_chain": [
+    "A4R",
+    "A2R1",
+    "A8R",
+    "A7R1",
+    "A5R",
+    "trace_gate_retention_contract",
+    "state_retention_contract",
+    "known_state_provenance_contract",
+    "method_plan_update_contract"
+  ],
+  "constraints": [
+    "Use only supplied workspace snapshot and evidence items.",
+    "Do not infer Git branch, CI status, or network/API approval.",
+    "state_inventory.known_state must explicitly include stage7e_v4_macro_passed, claim_boundary_updated, methodology_outline_updated, and backlog_stage7next_open.",
+    "Every known_state item must carry evidence_ids.",
+    "state_inventory.unknown_state must explicitly include branch_currently_checked_out, continuous_integration_result, and permission_to_use_external_model_api.",
+    "state_inventory.forbidden_inferences must explicitly include do_not_infer_branch_currently_checked_out, do_not_infer_continuous_integration_result, and do_not_infer_permission_to_use_external_model_api.",
+    "Exclude stale context from the decision.",
+    "Bind every grounded claim to claim-level evidence IDs.",
+    "Classify evidence into EXTRACTED, INFERRED, AMBIGUOUS, or PROPOSED.",
+    "Select exactly one candidate claim.",
+    "Reject overbroad or unsupported claims with evidence-linked reasons.",
+    "Every decision_trace item must be an object with option_id, decision, evidence_ids, and carried_obligations.",
+    "The stage_gate must explicitly block real_model_execution, broader_workflow_expansion, and production_or_universal_claim.",
+    "The stage_gate must explicitly list stage7_next_local_gate and stage7_next_targeted_smoke as missing prerequisites.",
+    "The method_plan_update section must name the selected next macro, admission criteria, local gates, real-model gate, and non-claims.",
+    "Carry forward negative obligations across selected_claim, rejected_options, decision_trace, stage_gate, method_plan_update, and carried_obligations."
+  ],
+  "success_conditions": [
+    "Known-state provenance explicitly preserves the four required state IDs with evidence IDs.",
+    "Unknown-state inventory explicitly preserves the three unknown state fields.",
+    "Forbidden inferences explicitly block the three unknown state fields.",
+    "Grounded claims have claim-level evidence IDs.",
+    "Production readiness, universal gap closure, and immediate broader workflow expansion are not grounded.",
+    "Evidence typing includes EXTRACTED, INFERRED, AMBIGUOUS, and PROPOSED where appropriate.",
+    "Selected claim is C2.",
+    "Rejected options include C1 and C3 with evidence IDs.",
+    "Decision trace covers C2 support, C1 rejection, and C3 rejection as structured objects.",
+    "Stage gate blocks all three blocked outputs and lists both Stage 7-next prerequisites.",
+    "Method-plan update preserves macro boundaries and local-first admission criteria.",
+    "Carried obligations preserve stale-context exclusion and unsupported-production-readiness exclusion."
+  ],
+  "perturbation_condition": "unknown-state-paraphrase",
+  "base_macro": "stage7-next-method-plan-update",
+  "protocol_version": "stage_b_v3_full",
+  "repair_confirmation": true,
+  "fixture_id": "stage7-next-method-plan-update-v3--unknown-state-paraphrase",
+  "mechanism_atoms": [
+    "hierarchical_output_shape_preservation",
+    "explicit_grounded_claim_slot_preservation"
+  ]
+}

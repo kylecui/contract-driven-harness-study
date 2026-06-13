@@ -1,0 +1,483 @@
+{
+  "output_contract_id": "out_stage7e_v4_known_state_provenance_decision_001_stage_b_v3_full",
+  "format": "json",
+  "retention_contract_required": true,
+  "state_retention_contract_required": true,
+  "known_state_retention_contract_required": true,
+  "required_sections": [
+    "state_inventory",
+    "grounded_claims",
+    "unsupported_claims",
+    "typed_evidence",
+    "selected_claim",
+    "rejected_options",
+    "decision_trace",
+    "stage_gate",
+    "carried_obligations"
+  ],
+  "required_nested_fields": {
+    "state_inventory": [
+      "known_state",
+      "unknown_state",
+      "forbidden_inferences"
+    ],
+    "grounded_claims": [
+      "claim",
+      "evidence_ids"
+    ],
+    "unsupported_claims": [
+      "claim",
+      "reason"
+    ],
+    "selected_claim": [
+      "option_id",
+      "claim",
+      "evidence_ids"
+    ],
+    "rejected_options": [
+      "option_id",
+      "reason",
+      "evidence_ids"
+    ],
+    "decision_trace": [
+      "option_id",
+      "decision",
+      "evidence_ids",
+      "carried_obligations"
+    ],
+    "stage_gate": [
+      "status",
+      "blocked_outputs",
+      "missing_prerequisites",
+      "next_required_actions"
+    ],
+    "carried_obligations": [
+      "obligation",
+      "status",
+      "evidence_ids"
+    ]
+  },
+  "known_state_retention_rules": {
+    "known_state_must_include": [
+      "stage7r1_targeted_smoke_complete",
+      "stage7r2_narrow_macro_admitted",
+      "stage7e_v2_trace_gate_retention_repaired",
+      "stage7e_v3_unknown_state_retention_repaired"
+    ],
+    "known_state_evidence_ids_must_include": [
+      "stage7e-e01",
+      "stage7e-e04",
+      "stage7e-e07",
+      "stage7e-e08"
+    ]
+  },
+  "state_retention_rules": {
+    "unknown_state_must_include": [
+      "current_git_branch",
+      "ci_status",
+      "network_api_approval"
+    ],
+    "forbidden_inferences_must_include": [
+      "do_not_infer_current_git_branch",
+      "do_not_infer_ci_status",
+      "do_not_infer_network_api_approval"
+    ]
+  },
+  "claim_grounding_rules": {
+    "selected_claim_support_any": [
+      [
+        "stage7e-e01",
+        "stage7e-e04",
+        "stage7e-e07",
+        "stage7e-e08",
+        "stage7e-e09"
+      ]
+    ],
+    "trace_evidence_required_any": [
+      [
+        "stage7e-e01",
+        "stage7e-e04",
+        "stage7e-e05"
+      ],
+      [
+        "stage7e-e04",
+        "stage7e-e05",
+        "stage7e-e07",
+        "stage7e-e08"
+      ],
+      [
+        "stage7e-e05",
+        "stage7e-e06",
+        "stage7e-e08",
+        "stage7e-e09"
+      ]
+    ],
+    "grounded_claim_support_any": [
+      [
+        "stage7e-e01",
+        "stage7e-e04",
+        "stage7e-e08",
+        "stage7e-e09"
+      ]
+    ]
+  },
+  "retention_rules": {
+    "decision_trace_required_options": [
+      "C2",
+      "C1",
+      "C3"
+    ],
+    "stage_gate_blocked_outputs": [
+      "final_recommendation",
+      "full_project_initialization",
+      "full_research_workflow"
+    ],
+    "stage_gate_missing_prerequisites": [
+      "stage7e_v4_local_gate",
+      "stage7e_v4_smoke"
+    ],
+    "must_carry_obligations": [
+      "exclude stale universal-gap-closure and production-readiness note",
+      "do not claim production readiness",
+      "do not claim universal model-gap closure",
+      "do not claim full project initialization or full research workflow readiness"
+    ]
+  },
+  "citation_policy": "claim_level_and_decision_trace",
+  "style_profile": "minimal_json",
+  "tool_trace_required": false,
+  "value_aliases": {
+    "branch_currently_checked_out": "current_git_branch",
+    "continuous_integration_result": "ci_status",
+    "permission_to_use_external_model_api": "network_api_approval",
+    "do_not_guess_branch_currently_checked_out": "do_not_infer_current_git_branch",
+    "do_not_guess_continuous_integration_result": "do_not_infer_ci_status",
+    "do_not_guess_permission_to_use_external_model_api": "do_not_infer_network_api_approval"
+  },
+  "required_surface_values": [
+    "branch_currently_checked_out",
+    "continuous_integration_result",
+    "permission_to_use_external_model_api",
+    "do_not_guess_branch_currently_checked_out",
+    "do_not_guess_continuous_integration_result",
+    "do_not_guess_permission_to_use_external_model_api"
+  ],
+  "perturbation_condition": "unknown-state-paraphrase",
+  "protocol_version": "stage_b_v3_full",
+  "output_template": {
+    "state_inventory": {
+      "known_state": [
+        {
+          "state_id": "stage7r1_targeted_smoke_complete",
+          "fact": "<grounded fact for stage7r1_targeted_smoke_complete>",
+          "evidence_ids": [
+            "stage7e-e01"
+          ]
+        },
+        {
+          "state_id": "stage7r2_narrow_macro_admitted",
+          "fact": "<grounded fact for stage7r2_narrow_macro_admitted>",
+          "evidence_ids": [
+            "stage7e-e04"
+          ]
+        },
+        {
+          "state_id": "stage7e_v2_trace_gate_retention_repaired",
+          "fact": "<grounded fact for stage7e_v2_trace_gate_retention_repaired>",
+          "evidence_ids": [
+            "stage7e-e07"
+          ]
+        },
+        {
+          "state_id": "stage7e_v3_unknown_state_retention_repaired",
+          "fact": "<grounded fact for stage7e_v3_unknown_state_retention_repaired>",
+          "evidence_ids": [
+            "stage7e-e08"
+          ]
+        }
+      ],
+      "unknown_state": [
+        "branch_currently_checked_out",
+        "continuous_integration_result",
+        "permission_to_use_external_model_api"
+      ],
+      "forbidden_inferences": [
+        "do_not_guess_branch_currently_checked_out",
+        "do_not_guess_continuous_integration_result",
+        "do_not_guess_permission_to_use_external_model_api",
+        "do_not_infer_production_readiness",
+        "do_not_infer_universal_model_gap_closure"
+      ]
+    },
+    "grounded_claims": [
+      {
+        "claim": "<grounded claim 1>",
+        "evidence_ids": [
+          "stage7e-e01"
+        ]
+      },
+      {
+        "claim": "<grounded claim 2>",
+        "evidence_ids": [
+          "stage7e-e08",
+          "stage7e-e09"
+        ]
+      },
+      {
+        "claim": "<grounded claim 3>",
+        "evidence_ids": [
+          "stage7e-e04"
+        ]
+      }
+    ],
+    "unsupported_claims": [
+      {
+        "claim": "<unsupported claim 1>",
+        "reason": "<evidence-linked reason 1>",
+        "evidence_ids": [
+          "stage7e-e05"
+        ]
+      },
+      {
+        "claim": "<unsupported claim 2>",
+        "reason": "<evidence-linked reason 2>",
+        "evidence_ids": [
+          "stage7e-e05"
+        ]
+      }
+    ],
+    "typed_evidence": {
+      "extracted": [
+        "stage7e-e01",
+        "stage7e-e04",
+        "stage7e-e05",
+        "stage7e-e07",
+        "stage7e-e08",
+        "stage7e-e09"
+      ],
+      "inferred": [
+        "stage7e-e02"
+      ],
+      "ambiguous": [
+        "stage7e-e03"
+      ],
+      "proposed": [
+        "stage7e-e06"
+      ]
+    },
+    "selected_claim": {
+      "option_id": "C2",
+      "claim": "<selected bounded C2 claim>",
+      "evidence_ids": [
+        "stage7e-e01",
+        "stage7e-e04",
+        "stage7e-e07",
+        "stage7e-e08",
+        "stage7e-e09"
+      ]
+    },
+    "rejected_options": [
+      {
+        "option_id": "C1",
+        "reason": "<evidence-linked reason for C1>",
+        "evidence_ids": [
+          "stage7e-e05",
+          "stage7e-e03"
+        ]
+      },
+      {
+        "option_id": "C3",
+        "reason": "<evidence-linked reason for C3>",
+        "evidence_ids": [
+          "stage7e-e05",
+          "stage7e-e04"
+        ]
+      }
+    ],
+    "decision_trace": [
+      {
+        "option_id": "C2",
+        "decision": "support",
+        "step": "<decision step for C2>",
+        "evidence_ids": [
+          "stage7e-e01",
+          "stage7e-e04",
+          "stage7e-e07",
+          "stage7e-e08",
+          "stage7e-e09"
+        ],
+        "carried_obligations": [
+          "preserve known-state provenance",
+          "preserve unknown state",
+          "preserve stage gate"
+        ]
+      },
+      {
+        "option_id": "C1",
+        "decision": "reject",
+        "step": "<decision step for C1>",
+        "evidence_ids": [
+          "stage7e-e05",
+          "stage7e-e03"
+        ],
+        "carried_obligations": [
+          "do not claim universal model-gap closure",
+          "exclude stale context"
+        ]
+      },
+      {
+        "option_id": "C3",
+        "decision": "reject",
+        "step": "<decision step for C3>",
+        "evidence_ids": [
+          "stage7e-e05",
+          "stage7e-e04"
+        ],
+        "carried_obligations": [
+          "do not claim production readiness",
+          "do not claim full workflow readiness"
+        ]
+      }
+    ],
+    "stage_gate": {
+      "status": "blocked",
+      "blocked_outputs": [
+        "final_recommendation",
+        "full_project_initialization",
+        "full_research_workflow"
+      ],
+      "missing_prerequisites": [
+        "stage7e_v4_local_gate",
+        "stage7e_v4_smoke"
+      ],
+      "next_required_actions": [
+        "run Stage 7e v4 local golden/bad checks",
+        "run targeted low-cost-model Stage 7e v4 smoke only if local gates pass"
+      ],
+      "evidence_ids": [
+        "stage7e-e04",
+        "stage7e-e06",
+        "stage7e-e09"
+      ]
+    },
+    "carried_obligations": [
+      {
+        "obligation": "exclude stale universal-gap-closure and production-readiness note",
+        "status": "preserved",
+        "evidence_ids": [
+          "stage7e-e05"
+        ]
+      },
+      {
+        "obligation": "do not claim production readiness",
+        "status": "preserved",
+        "evidence_ids": [
+          "stage7e-e05"
+        ]
+      },
+      {
+        "obligation": "do not claim universal model-gap closure",
+        "status": "preserved",
+        "evidence_ids": [
+          "stage7e-e05",
+          "stage7e-e03"
+        ]
+      },
+      {
+        "obligation": "do not claim full project initialization or full research workflow readiness",
+        "status": "preserved",
+        "evidence_ids": [
+          "stage7e-e04"
+        ]
+      }
+    ]
+  },
+  "output_shape_rules": {
+    "typed_evidence_id_lists_only": true,
+    "enforce_required_nested_fields": true,
+    "required_nested_fields": {
+      "state_inventory": [
+        "known_state",
+        "unknown_state",
+        "forbidden_inferences"
+      ],
+      "grounded_claims": [
+        "claim",
+        "evidence_ids"
+      ],
+      "unsupported_claims": [
+        "claim",
+        "reason"
+      ],
+      "selected_claim": [
+        "option_id",
+        "claim",
+        "evidence_ids"
+      ],
+      "rejected_options": [
+        "option_id",
+        "reason",
+        "evidence_ids"
+      ],
+      "decision_trace": [
+        "option_id",
+        "decision",
+        "evidence_ids",
+        "carried_obligations"
+      ],
+      "stage_gate": [
+        "status",
+        "blocked_outputs",
+        "missing_prerequisites",
+        "next_required_actions"
+      ],
+      "carried_obligations": [
+        "obligation",
+        "status",
+        "evidence_ids"
+      ]
+    },
+    "exact_array_counts": {
+      "rejected_options": 2,
+      "decision_trace": 3,
+      "carried_obligations": 4,
+      "grounded_claims": 3,
+      "unsupported_claims": 2
+    },
+    "carried_obligation_status_values": [
+      "preserved"
+    ]
+  },
+  "closed_vocabularies": {
+    "carried_obligations.status": [
+      "preserved"
+    ]
+  },
+  "compact_output_rules": [
+    "Return exactly one JSON object with no Markdown fence or prose.",
+    "Use evidence ID strings only inside typed_evidence buckets.",
+    "Use exactly the arrays and object shapes declared in output_template.",
+    "Use preserved as the only carried-obligation status.",
+    "Do not repeat EvidenceBundle claim text inside typed_evidence."
+  ],
+  "forbidden_surface_values": [
+    "current_git_branch",
+    "ci_status",
+    "network_api_approval",
+    "do_not_infer_current_git_branch",
+    "do_not_infer_ci_status",
+    "do_not_infer_network_api_approval"
+  ],
+  "mechanism_atoms": [
+    "hierarchical_output_shape_preservation",
+    "explicit_grounded_claim_slot_preservation"
+  ],
+  "literal_json_skeleton_required": true,
+  "literal_json_skeleton_instructions": [
+    "Copy the JSON key hierarchy and array slot count exactly.",
+    "Replace placeholder prose strings but never move, rename, promote, omit, merge, or add contract keys.",
+    "Preserve every evidence-reference array exactly as shown in the skeleton.",
+    "state_inventory must remain an object containing known_state, unknown_state, and forbidden_inferences.",
+    "grounded_claims must retain every explicit evidence slot; do not compress multiple slots into fewer claims."
+  ]
+}

@@ -1,0 +1,516 @@
+{
+  "execute": false,
+  "processed": 30,
+  "results": [
+    {
+      "run_id": "stage7-next-method-plan-update-v3--canonical__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--canonical__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--canonical__budget_model__G9__r1\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--canonical__budget_model__G9__r1",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--canonical__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--canonical__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--canonical__budget_model__G9__r2\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--canonical__budget_model__G9__r2",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--canonical__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--canonical__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--canonical__budget_model__G9__r3\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--canonical__budget_model__G9__r3",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r1\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r1",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r2\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r2",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r3\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--distractor-evidence__budget_model__G9__r3",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r1\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r1",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r2\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r2",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r3\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--evidence-order-shuffled__budget_model__G9__r3",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r1\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r1",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r2\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r2",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r3\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--field-alias__budget_model__G9__r3",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r1\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r1",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r2\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r2",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r3\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7-next-method-plan-update-v3--unknown-state-paraphrase__budget_model__G9__r3",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r1\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r1",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r2\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r2",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r3\\output.md",
+      "elapsed_ms": 16,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--canonical__budget_model__G9__r3",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r1\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r1",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r2\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r2",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r3\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--distractor-evidence__budget_model__G9__r3",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r1\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r1",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r2\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r2",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r3\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--evidence-order-shuffled__budget_model__G9__r3",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r1\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r1",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r2\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r2",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r3\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--field-alias__budget_model__G9__r3",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r1",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r1\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r1\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r1",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r2",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r2\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r2\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r2",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    },
+    {
+      "run_id": "stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r3",
+      "model_tier": "budget_model",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "status": "dry_run",
+      "error": null,
+      "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r3\\prompt.md",
+      "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v3-full\\stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r3\\output.md",
+      "elapsed_ms": 0,
+      "retry_lineage": {
+        "lineage_id": "stage7e-v4-known-state-provenance-decision-v3--unknown-state-paraphrase__budget_model__G9__r3",
+        "attempt": 1,
+        "retry_of_run_id": null
+      },
+      "provider_metadata": null
+    }
+  ]
+}
