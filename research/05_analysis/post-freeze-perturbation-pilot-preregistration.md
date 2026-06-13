@@ -2,7 +2,7 @@
 
 Prepared: 2026-06-13
 
-Status: frozen before paid Stage B execution
+Status: executed; failed stop rule on 2026-06-13
 
 ## Hypothesis
 
@@ -111,3 +111,14 @@ event log and tool trace. No paid result was changed, removed, or rescored.
 
 Decision record:
 `research/05_analysis/post-freeze-stage-b-model-and-reasoning-settings.md`.
+
+## Execution Outcome
+
+All 30 provider calls returned, but only 5/10 macro-condition cells passed the
+required 2/3 threshold after a documented evaluator construct-validity
+correction. Stage B therefore failed and Stage C/D remain blocked.
+
+The correction accepted `satisfied` as a semantically valid
+carried-obligation status. Because it was made after paid execution, the
+30-run pilot cannot be pooled into Stage C. Full analysis:
+`research/07_reviews/contract-driven-harness-stage-b-30-run-summary.md`.

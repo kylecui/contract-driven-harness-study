@@ -451,7 +451,10 @@ def evaluate_payload(
         ("stale" in carried_text or "old" in carried_text)
         and "universal" in carried_text
         and "production" in carried_text
-        and has_any(carried_text, ["preserved", "active", "fulfilled", "excluded", "enforced"])
+        and has_any(
+            carried_text,
+            ["preserved", "active", "fulfilled", "satisfied", "excluded", "enforced"],
+        )
     )
     metrics["context_relevance"] = 1.0 if carried_ok and "old note says" not in selected_text else 0.0
 

@@ -9,9 +9,9 @@ Paid provider calls: none
 
 ## Result
 
-Stage A local gates pass. Stage B is structurally ready but remains blocked
-until the user explicitly authorizes 30 paid calls. The official dated
-SiliconFlow pricing snapshot was recorded on 2026-06-13.
+Stage A local gates passed. Stage B was subsequently authorized and executed
+on 2026-06-13. Its outcome is recorded separately and does not change the
+Stage A local-gate result.
 
 ## Perturbation Suite
 
@@ -114,4 +114,7 @@ Stage A local work: **PASS**
 
 Pricing snapshot: **COMPLETE**
 
-Stage B paid execution: **BLOCKED PENDING EXPLICIT GO**
+Stage B paid execution: **COMPLETED; FAILED STAGE B STOP RULE**
+
+See
+`research/07_reviews/contract-driven-harness-stage-b-30-run-summary.md`.

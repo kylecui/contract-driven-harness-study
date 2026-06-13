@@ -17,7 +17,7 @@ Purpose: address the security/systems peer review without weakening experimental
 
 No paid model calls.
 
-Status: **LOCAL GATES AND PRICING SNAPSHOT COMPLETE; PAID-RUN GO PENDING**
+Status: **STAGE B COMPLETE AND FAILED; STAGE C/D BLOCKED**
 
 Required changes:
 
@@ -54,6 +54,18 @@ Gate:
 - dry-run manifests compile with zero errors.
 
 ## Stage B: 30-Run Perturbation Pilot
+
+Outcome on 2026-06-13:
+
+- 30/30 provider calls returned with no provider error;
+- a post-execution construct-validity correction changed the run-pass result
+  from raw 0/30 to corrected 16/30;
+- 5/10 macro-condition cells reached the required 2/3 threshold;
+- the pilot failed its stop rule;
+- Stage C and Stage D are blocked pending a fresh Stage B v2 protocol.
+
+See
+`research/07_reviews/contract-driven-harness-stage-b-30-run-summary.md`.
 
 Model: `Qwen/Qwen3-8B`
 
@@ -93,6 +105,9 @@ Stop immediately if:
 
 Proceed only if Stage B passes without fixture or evaluator changes.
 
+Current status: **BLOCKED**. Stage B did not pass and required an evaluator
+construct-validity correction.
+
 Add five repetitions to each existing cell:
 
 ```text
@@ -120,6 +135,8 @@ If all 40 runs for one macro pass, the descriptive 95% Wilson lower bound is app
 If Stage B causes any fixture, contract, or evaluator revision, Stage C must use fresh runs; the pilot cannot be pooled into the final 40-run macro estimate.
 
 ## Stage D: Overhead Matrix
+
+Current status: **BLOCKED** until a repaired Stage B protocol passes.
 
 Use one representative admitted macro unless Stage B shows materially different behavior between the two macros.
 

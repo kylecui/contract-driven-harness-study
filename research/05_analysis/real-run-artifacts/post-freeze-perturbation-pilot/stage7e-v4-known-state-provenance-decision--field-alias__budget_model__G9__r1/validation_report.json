@@ -1,3 +1,15 @@
 {
-  "status": "pending"
+  "status": "complete",
+  "passed": false,
+  "reason": "Output is not valid JSON.",
+  "findings": [
+    "Expected JSON-compatible output for evidence-bound macro evaluation."
+  ],
+  "expect_pass": null,
+  "expectation_met": true,
+  "parsed_output": null,
+  "run_id": "stage7e-v4-known-state-provenance-decision--field-alias__budget_model__G9__r1",
+  "model": "budget_model",
+  "harness_arm": "G9",
+  "fixture": "stage7e-v4-known-state-provenance-decision--field-alias"
 }
