@@ -1,0 +1,2004 @@
+{
+  "protocol_id": "stage-b-v53-explicit-transition-delta-30run",
+  "prepared_date": "2026-06-14",
+  "base_commit": "178ca0624e182f7dfc418b60bac5794e07022d81",
+  "hash_algorithm": "sha256",
+  "file_count": 399,
+  "files": [
+    {
+      "path": "research/04_methods/benchmark-matrix-stage-b-v53-explicit-transition-delta.json",
+      "bytes": 8604,
+      "sha256": "a41013f00c7f5bad830f1230db01cb4de14c34007cb842f78b6642ed2f93a89c"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--canonical/evaluation_spec.json",
+      "bytes": 6845,
+      "sha256": "0aca294dd2aa7d0ac4a2a48db6319e581609a82aec7f6439581e43c11f526ce2"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--canonical/evidence_bundle.json",
+      "bytes": 1281,
+      "sha256": "54cc325e17c9a1db9e05ee3f473864132caea19a578c4b416a0dbf5c663d65e8"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--canonical/golden_output.json",
+      "bytes": 1902,
+      "sha256": "e0d62513498b295b84cb7ee6165d02aaac040d69f323c2c0b077d2fcce2bd6c4"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--canonical/input.md",
+      "bytes": 608,
+      "sha256": "07d68b423e33ad189742b61ba31b9cfaedafcebb7d7f73380db5ac77059f0c55"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--canonical/known_bad_outputs/evidence_omission.json",
+      "bytes": 1884,
+      "sha256": "95a1cc71947e1c94e91f7dbea288c0bef649764134ca9e6cb5456fde81cfc1ca"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--canonical/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 1861,
+      "sha256": "77bcd93a9df96833e18fc01a2be2324ab4439e951864d295f2b0ccdf75316a87"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--canonical/known_bad_outputs/obsolete_forbidden_inference_retained.json",
+      "bytes": 1946,
+      "sha256": "ea1e18d003d9b991b7432fb532e27ca4af3e24cfbc036dd5b28df548d4e7ee78"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--canonical/known_bad_outputs/residual_forbidden_reordered.json",
+      "bytes": 1902,
+      "sha256": "90b83d190cfe21fe7b6921d6bc3c1354af39637e947e55ec62a04b1b2f5a9e47"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--canonical/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 1902,
+      "sha256": "e3bee23f21afd60370b9fee7dd7711a783521f54bb7ba989eb20e9dbee1232a4"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--canonical/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 1884,
+      "sha256": "a6458eb2a9e2c9ef77b532befefbc753a0d1c7c8ad0ce4460869067e76bdca27"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--canonical/known_bad_outputs/transitioned_state_retained_as_unknown.json",
+      "bytes": 1933,
+      "sha256": "002b4c95c9e5d96686c7a8d142ded0d9eab95617f8053ba75acdc127a1d67485"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--canonical/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 1922,
+      "sha256": "c7feab8e0d3dc8d2885b78c6c0b7e3cc58034d428314b4fb0a52d7910d11fa5f"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--canonical/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 1874,
+      "sha256": "a811c5a31f792bf26c06cc8aa001a374c4a4b593bce47938a6d24367394c29b9"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--canonical/known_bad_outputs/wrong_transition_value.json",
+      "bytes": 1898,
+      "sha256": "f524fb8455212fa9f77833db8b574713f98372c36941aa562cbe6e719b975a21"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--canonical/memory_slice.json",
+      "bytes": 450,
+      "sha256": "2c48b243fbb7791e513b90deb3b4a39a43315d3e7aad860cb83c85b07a91e478"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--canonical/output_contract.json",
+      "bytes": 3314,
+      "sha256": "6606f70b0f8fd48d812e7c81d8992784ab43db8b9c7e3e751d03e3054c230854"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--canonical/task_spec.json",
+      "bytes": 948,
+      "sha256": "0ac6a6b1bd526cbd02def7fd452dc251845af1fa43a2b2e4fecc7d802beddc0c"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--distractor-evidence/evaluation_spec.json",
+      "bytes": 6855,
+      "sha256": "67962fa9ccf70578d1acbb66449846f18ae5678be755d82077902c991d22fafc"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--distractor-evidence/evidence_bundle.json",
+      "bytes": 1651,
+      "sha256": "9bb1430dc10f7c3dd18bc3d0725cce7b18b1bdb76472a64d2aa86b93c43ade59"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--distractor-evidence/golden_output.json",
+      "bytes": 1902,
+      "sha256": "e0d62513498b295b84cb7ee6165d02aaac040d69f323c2c0b077d2fcce2bd6c4"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--distractor-evidence/input.md",
+      "bytes": 618,
+      "sha256": "4853711231d82855183a113946ef732e84907805216eff7f93b5fb54bf4f32ec"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--distractor-evidence/known_bad_outputs/evidence_omission.json",
+      "bytes": 1884,
+      "sha256": "95a1cc71947e1c94e91f7dbea288c0bef649764134ca9e6cb5456fde81cfc1ca"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--distractor-evidence/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 1861,
+      "sha256": "77bcd93a9df96833e18fc01a2be2324ab4439e951864d295f2b0ccdf75316a87"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--distractor-evidence/known_bad_outputs/obsolete_forbidden_inference_retained.json",
+      "bytes": 1946,
+      "sha256": "ea1e18d003d9b991b7432fb532e27ca4af3e24cfbc036dd5b28df548d4e7ee78"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--distractor-evidence/known_bad_outputs/residual_forbidden_reordered.json",
+      "bytes": 1902,
+      "sha256": "90b83d190cfe21fe7b6921d6bc3c1354af39637e947e55ec62a04b1b2f5a9e47"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--distractor-evidence/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 1902,
+      "sha256": "e3bee23f21afd60370b9fee7dd7711a783521f54bb7ba989eb20e9dbee1232a4"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--distractor-evidence/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 1884,
+      "sha256": "a6458eb2a9e2c9ef77b532befefbc753a0d1c7c8ad0ce4460869067e76bdca27"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--distractor-evidence/known_bad_outputs/transitioned_state_retained_as_unknown.json",
+      "bytes": 1933,
+      "sha256": "002b4c95c9e5d96686c7a8d142ded0d9eab95617f8053ba75acdc127a1d67485"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--distractor-evidence/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 1922,
+      "sha256": "c7feab8e0d3dc8d2885b78c6c0b7e3cc58034d428314b4fb0a52d7910d11fa5f"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--distractor-evidence/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 1874,
+      "sha256": "a811c5a31f792bf26c06cc8aa001a374c4a4b593bce47938a6d24367394c29b9"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--distractor-evidence/known_bad_outputs/wrong_transition_value.json",
+      "bytes": 1898,
+      "sha256": "f524fb8455212fa9f77833db8b574713f98372c36941aa562cbe6e719b975a21"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--distractor-evidence/memory_slice.json",
+      "bytes": 460,
+      "sha256": "fe591762186cb2d8cc090f356c7213e0dad39d649ab700fc42433798e14e7cd4"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--distractor-evidence/output_contract.json",
+      "bytes": 3324,
+      "sha256": "6d723f46562b332c2e92c5c63bdb5aef10554f83902b12dee4a76ca41d8b4155"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--distractor-evidence/task_spec.json",
+      "bytes": 968,
+      "sha256": "936f662dda7c606468928c6b876ac63692f6167fd4b4fc8ce5eb2335eb8ac8c1"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--evidence-order-shuffled/evaluation_spec.json",
+      "bytes": 6859,
+      "sha256": "dfd6ca812f13eda2fe05b97e9e2bbc30b16817c25e8e3c4df6a59611a0abecda"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--evidence-order-shuffled/evidence_bundle.json",
+      "bytes": 1295,
+      "sha256": "abd2b5b6c9d19f3e7e68de0340483c69bb8308fb0645bc8343edcfa8c3eea74e"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--evidence-order-shuffled/golden_output.json",
+      "bytes": 1902,
+      "sha256": "e0d62513498b295b84cb7ee6165d02aaac040d69f323c2c0b077d2fcce2bd6c4"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--evidence-order-shuffled/input.md",
+      "bytes": 622,
+      "sha256": "71b9d9f0df1dc937c3a7af5270244f54f3c9953b8b17c7b602a1959fdedb1e33"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--evidence-order-shuffled/known_bad_outputs/evidence_omission.json",
+      "bytes": 1884,
+      "sha256": "95a1cc71947e1c94e91f7dbea288c0bef649764134ca9e6cb5456fde81cfc1ca"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--evidence-order-shuffled/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 1861,
+      "sha256": "77bcd93a9df96833e18fc01a2be2324ab4439e951864d295f2b0ccdf75316a87"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--evidence-order-shuffled/known_bad_outputs/obsolete_forbidden_inference_retained.json",
+      "bytes": 1946,
+      "sha256": "ea1e18d003d9b991b7432fb532e27ca4af3e24cfbc036dd5b28df548d4e7ee78"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--evidence-order-shuffled/known_bad_outputs/residual_forbidden_reordered.json",
+      "bytes": 1902,
+      "sha256": "90b83d190cfe21fe7b6921d6bc3c1354af39637e947e55ec62a04b1b2f5a9e47"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--evidence-order-shuffled/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 1902,
+      "sha256": "e3bee23f21afd60370b9fee7dd7711a783521f54bb7ba989eb20e9dbee1232a4"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--evidence-order-shuffled/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 1884,
+      "sha256": "a6458eb2a9e2c9ef77b532befefbc753a0d1c7c8ad0ce4460869067e76bdca27"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--evidence-order-shuffled/known_bad_outputs/transitioned_state_retained_as_unknown.json",
+      "bytes": 1933,
+      "sha256": "002b4c95c9e5d96686c7a8d142ded0d9eab95617f8053ba75acdc127a1d67485"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--evidence-order-shuffled/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 1922,
+      "sha256": "c7feab8e0d3dc8d2885b78c6c0b7e3cc58034d428314b4fb0a52d7910d11fa5f"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--evidence-order-shuffled/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 1874,
+      "sha256": "a811c5a31f792bf26c06cc8aa001a374c4a4b593bce47938a6d24367394c29b9"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--evidence-order-shuffled/known_bad_outputs/wrong_transition_value.json",
+      "bytes": 1898,
+      "sha256": "f524fb8455212fa9f77833db8b574713f98372c36941aa562cbe6e719b975a21"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--evidence-order-shuffled/memory_slice.json",
+      "bytes": 464,
+      "sha256": "4062991de699694421c8cf2b14db2fed27e03f4c83b5dadd28afad35876f26bd"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--evidence-order-shuffled/output_contract.json",
+      "bytes": 3328,
+      "sha256": "ade886ca02ec5f5917ec5c7c9d13b38e757dd44d92aca8ebd3725233de578441"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--evidence-order-shuffled/task_spec.json",
+      "bytes": 976,
+      "sha256": "01672d6d204b7315a4c3988a6fceac691372620582561430b9fe66b8f8b529e5"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--field-alias/evaluation_spec.json",
+      "bytes": 6877,
+      "sha256": "2c19d5517b8e9fb7887c4af82c0ce6436d820bd2bff5a7eb654ed5343d6946ff"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--field-alias/evidence_bundle.json",
+      "bytes": 1283,
+      "sha256": "ebef3c753ee8aa171dc4466f61bc0aef5cab42e99c73cb7b55ab873cc7847514"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--field-alias/golden_output.json",
+      "bytes": 1947,
+      "sha256": "4284fa22fb55849a6e32aa11df4adb5b8fcdc88777b40361bb88bcbc358061b7"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--field-alias/input.md",
+      "bytes": 615,
+      "sha256": "ce01566278ecc523ada69d727c77d416b188576ca452d3a75a267ee8167bcfe5"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--field-alias/known_bad_outputs/evidence_omission.json",
+      "bytes": 1929,
+      "sha256": "6854bbba36b4833d965092c4e1ce7528a5ed52b6c851f991634a16c3efa4fedf"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--field-alias/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 1901,
+      "sha256": "a3491e8e9224302b548125d5b4859f48a43d58aa6f26351b04855d667d0ee56f"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--field-alias/known_bad_outputs/obsolete_forbidden_inference_retained.json",
+      "bytes": 1991,
+      "sha256": "1353663e2b0738ca8c407e8932595c1d4201b84f1e39c3c5b4584634bd17f7c8"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--field-alias/known_bad_outputs/residual_forbidden_reordered.json",
+      "bytes": 1947,
+      "sha256": "5c999ffcde7b7413f5462030e45dc8681a4a5c38542f61c2f04f5f8316de69db"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--field-alias/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 1947,
+      "sha256": "27ef7011fcfca0cd91a5a74cc2323f9455fd76e9e5f3889715e84b2f08dbd208"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--field-alias/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 1929,
+      "sha256": "7cc48917202fa6e0eaf0baa62e714e327ca92b958725d887e307f2f07404065b"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--field-alias/known_bad_outputs/transitioned_state_retained_as_unknown.json",
+      "bytes": 1978,
+      "sha256": "1d5694494173294d418353af41a0ebeb0f142fc2cad32a5d00f122b469ff2e67"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--field-alias/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 1927,
+      "sha256": "fc2fba3773297e008ca10e1c603ab9958a4a8e2cb416561edbc69197ad2407e0"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--field-alias/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 1919,
+      "sha256": "84baf6156c156c8cffe2aab98978d50a2707b41f317e68061b699203597f3406"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--field-alias/known_bad_outputs/wrong_transition_value.json",
+      "bytes": 1943,
+      "sha256": "bc7f9634f60a34f68cc557dd7401e6bf00700e0e265a6aa622223257bc4de66e"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--field-alias/memory_slice.json",
+      "bytes": 452,
+      "sha256": "7f4b010006cc55b67367c920fd3d3be2298d743db9bdb875f2a9876c75923a1b"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--field-alias/output_contract.json",
+      "bytes": 3381,
+      "sha256": "1584f46d21770595ab228f9fcb74b8de00dda12f9d25c19b51385d4721e65cbc"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--field-alias/task_spec.json",
+      "bytes": 957,
+      "sha256": "e7e7fa53fed037ebd3bc9c157d45f17cccbd9d5dff668b591d61369e63ed98bd"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--unknown-state-paraphrase/evaluation_spec.json",
+      "bytes": 6952,
+      "sha256": "af5edd93074d4b0238b554d971013cfb5be3cb77caf69a3999a6bb759ab1d859"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--unknown-state-paraphrase/evidence_bundle.json",
+      "bytes": 1296,
+      "sha256": "2e9411fef0c64beb551e7c249b2d28466b5e898ef9828cc7bd00886480820979"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--unknown-state-paraphrase/golden_output.json",
+      "bytes": 2010,
+      "sha256": "e2f69fffef20566159ab081b357bb626471bfe70b695772d38c71bcbc106e201"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--unknown-state-paraphrase/input.md",
+      "bytes": 623,
+      "sha256": "13d6f1dbacaea4041de63c885ddc4dc676c41062ec95d76cbcd3fdc7a9e22e6f"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--unknown-state-paraphrase/known_bad_outputs/evidence_omission.json",
+      "bytes": 1992,
+      "sha256": "92a978ae74b01c1abcea6e2a6a7199834fc55e88befae466c182b155445a49af"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--unknown-state-paraphrase/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 1969,
+      "sha256": "36cc055278752ebe685e5fa291e3b031d7c3edb64101b4064f5e7a52b3a9e743"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--unknown-state-paraphrase/known_bad_outputs/obsolete_forbidden_inference_retained.json",
+      "bytes": 2070,
+      "sha256": "ef87737510c3c267a6b3f05de9719084089bd11941efc0e76e9a6c12b26a7988"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--unknown-state-paraphrase/known_bad_outputs/residual_forbidden_reordered.json",
+      "bytes": 2010,
+      "sha256": "6150ea40e4542518cbcf27d5ed750c7b2f9c9fafdeb32eb3e9491eaba40f3dc6"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--unknown-state-paraphrase/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 2010,
+      "sha256": "abfeeb88a10aa48f8197ab09b21cb275fb5463a7ffa652763f7eef8d568b9e1c"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--unknown-state-paraphrase/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 1992,
+      "sha256": "524c001b491c370eccc179603fedabd5ff255679ede96f36f9480ebfd9ea3b0d"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--unknown-state-paraphrase/known_bad_outputs/transitioned_state_retained_as_unknown.json",
+      "bytes": 2057,
+      "sha256": "1001783a8d27ad770c12ed9d78206eed7067185618aeda70e5b58a1ef1eb57aa"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--unknown-state-paraphrase/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 2030,
+      "sha256": "f986247209479facebc361f765619b0be6953afcb7ace1fa2caac04520422f11"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--unknown-state-paraphrase/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 1982,
+      "sha256": "1744ecc62dce853c7ecb27d58a4942e029919603a75d588e6f173855acfcaba1"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--unknown-state-paraphrase/known_bad_outputs/wrong_transition_value.json",
+      "bytes": 2006,
+      "sha256": "3fd7c9e897e815c6b2fde7ee16fcfd9c0c565e8b7c355eb05eb35ccc6ddda81b"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--unknown-state-paraphrase/memory_slice.json",
+      "bytes": 465,
+      "sha256": "b8efd5278ecd82dab6b41ca532d5377b3fe500e261558b2666330922ee8f6660"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--unknown-state-paraphrase/output_contract.json",
+      "bytes": 3529,
+      "sha256": "c46eb654e454fb9300185552771ba831bc8bcbe1badbc6694716d8d0533cee25"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p1--unknown-state-paraphrase/task_spec.json",
+      "bytes": 978,
+      "sha256": "d167e7d6696c5017544646e53f73aca439315dc9dcb7e2dc8515102f0ab1963b"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/evaluation_spec.json",
+      "bytes": 7404,
+      "sha256": "47c2da230590ab3dc61f3c17856a462cbcca24f8634c5200076fc3912689dfe9"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/evidence_bundle.json",
+      "bytes": 1281,
+      "sha256": "585ac9675ca8aa6eb5f29d59fa1e000d11f1f3c1d4f24f91f810e8fcfc80997e"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/golden_output.json",
+      "bytes": 1902,
+      "sha256": "e0d62513498b295b84cb7ee6165d02aaac040d69f323c2c0b077d2fcce2bd6c4"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/input.md",
+      "bytes": 629,
+      "sha256": "e2b52a8ced0754fda16e2922a35639db0087567f7dec7c859971dbadff814c09"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/known_bad_outputs/evidence_omission.json",
+      "bytes": 1884,
+      "sha256": "95a1cc71947e1c94e91f7dbea288c0bef649764134ca9e6cb5456fde81cfc1ca"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 1861,
+      "sha256": "77bcd93a9df96833e18fc01a2be2324ab4439e951864d295f2b0ccdf75316a87"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/known_bad_outputs/obsolete_forbidden_inference_retained.json",
+      "bytes": 1946,
+      "sha256": "ea1e18d003d9b991b7432fb532e27ca4af3e24cfbc036dd5b28df548d4e7ee78"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/known_bad_outputs/residual_forbidden_reordered.json",
+      "bytes": 1902,
+      "sha256": "90b83d190cfe21fe7b6921d6bc3c1354af39637e947e55ec62a04b1b2f5a9e47"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 1902,
+      "sha256": "e3bee23f21afd60370b9fee7dd7711a783521f54bb7ba989eb20e9dbee1232a4"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 1884,
+      "sha256": "a6458eb2a9e2c9ef77b532befefbc753a0d1c7c8ad0ce4460869067e76bdca27"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/known_bad_outputs/transitioned_state_retained_as_unknown.json",
+      "bytes": 1933,
+      "sha256": "002b4c95c9e5d96686c7a8d142ded0d9eab95617f8053ba75acdc127a1d67485"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 1922,
+      "sha256": "c7feab8e0d3dc8d2885b78c6c0b7e3cc58034d428314b4fb0a52d7910d11fa5f"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 1874,
+      "sha256": "a811c5a31f792bf26c06cc8aa001a374c4a4b593bce47938a6d24367394c29b9"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/known_bad_outputs/wrong_transition_value.json",
+      "bytes": 1898,
+      "sha256": "f524fb8455212fa9f77833db8b574713f98372c36941aa562cbe6e719b975a21"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/memory_slice.json",
+      "bytes": 450,
+      "sha256": "f8c9fb1aad9b979b2d3914249f7656a02482ad9cbf9e811bf5a63a37bbf8331e"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/output_contract.json",
+      "bytes": 3919,
+      "sha256": "55af8fc540fdac8d440a7f70d91b18e7410cf44098d13cb92817971ffe1e5351"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/task_spec.json",
+      "bytes": 969,
+      "sha256": "fa8b3c18d96326a9826bc3b4a8d24c1c5bea2b725fe3280302b8e40e4f45c6e0"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/evaluation_spec.json",
+      "bytes": 7414,
+      "sha256": "ce221635822ec6728f0b35f03b2b739fa5b1687ffab7a03426babe897e5a98b4"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/evidence_bundle.json",
+      "bytes": 1651,
+      "sha256": "cc3adef7f9d10150a3a2936150c4f19737d06ccc119a07034c971f9fdb418e48"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/golden_output.json",
+      "bytes": 1902,
+      "sha256": "e0d62513498b295b84cb7ee6165d02aaac040d69f323c2c0b077d2fcce2bd6c4"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/input.md",
+      "bytes": 639,
+      "sha256": "edb47eccbe67868a0303b625375273d3a6da4a5d2cc0882806be5b3ce89496c8"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/known_bad_outputs/evidence_omission.json",
+      "bytes": 1884,
+      "sha256": "95a1cc71947e1c94e91f7dbea288c0bef649764134ca9e6cb5456fde81cfc1ca"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 1861,
+      "sha256": "77bcd93a9df96833e18fc01a2be2324ab4439e951864d295f2b0ccdf75316a87"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/known_bad_outputs/obsolete_forbidden_inference_retained.json",
+      "bytes": 1946,
+      "sha256": "ea1e18d003d9b991b7432fb532e27ca4af3e24cfbc036dd5b28df548d4e7ee78"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/known_bad_outputs/residual_forbidden_reordered.json",
+      "bytes": 1902,
+      "sha256": "90b83d190cfe21fe7b6921d6bc3c1354af39637e947e55ec62a04b1b2f5a9e47"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 1902,
+      "sha256": "e3bee23f21afd60370b9fee7dd7711a783521f54bb7ba989eb20e9dbee1232a4"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 1884,
+      "sha256": "a6458eb2a9e2c9ef77b532befefbc753a0d1c7c8ad0ce4460869067e76bdca27"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/known_bad_outputs/transitioned_state_retained_as_unknown.json",
+      "bytes": 1933,
+      "sha256": "002b4c95c9e5d96686c7a8d142ded0d9eab95617f8053ba75acdc127a1d67485"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 1922,
+      "sha256": "c7feab8e0d3dc8d2885b78c6c0b7e3cc58034d428314b4fb0a52d7910d11fa5f"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 1874,
+      "sha256": "a811c5a31f792bf26c06cc8aa001a374c4a4b593bce47938a6d24367394c29b9"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/known_bad_outputs/wrong_transition_value.json",
+      "bytes": 1898,
+      "sha256": "f524fb8455212fa9f77833db8b574713f98372c36941aa562cbe6e719b975a21"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/memory_slice.json",
+      "bytes": 460,
+      "sha256": "8a3ac890e3de71cce79c83a689f7ab7d839b5fbfee2690280fe3343fcea0b5ae"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/output_contract.json",
+      "bytes": 3929,
+      "sha256": "dd198a8f310fca58fe0894030deaafce5dd023febb8027be26884a20be1770c5"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/task_spec.json",
+      "bytes": 989,
+      "sha256": "8007e1ea8a06ac5f5e964ef6444721a624ab11b1cd835c38639fe94a581e18c2"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/evaluation_spec.json",
+      "bytes": 7418,
+      "sha256": "c8d6bed421db476efde1611229c34bf83bb9a3bdbce576162146758363199762"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/evidence_bundle.json",
+      "bytes": 1295,
+      "sha256": "9d2b3ed101ff1dc43a3c38d4c83da663039f802bcb906558797a34b69e64a6ec"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/golden_output.json",
+      "bytes": 1902,
+      "sha256": "e0d62513498b295b84cb7ee6165d02aaac040d69f323c2c0b077d2fcce2bd6c4"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/input.md",
+      "bytes": 643,
+      "sha256": "b261d6c176f978d850d31a8c7cbaab1d2772a734c4c08af6d266c72b42f0a08e"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/known_bad_outputs/evidence_omission.json",
+      "bytes": 1884,
+      "sha256": "95a1cc71947e1c94e91f7dbea288c0bef649764134ca9e6cb5456fde81cfc1ca"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 1861,
+      "sha256": "77bcd93a9df96833e18fc01a2be2324ab4439e951864d295f2b0ccdf75316a87"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/known_bad_outputs/obsolete_forbidden_inference_retained.json",
+      "bytes": 1946,
+      "sha256": "ea1e18d003d9b991b7432fb532e27ca4af3e24cfbc036dd5b28df548d4e7ee78"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/known_bad_outputs/residual_forbidden_reordered.json",
+      "bytes": 1902,
+      "sha256": "90b83d190cfe21fe7b6921d6bc3c1354af39637e947e55ec62a04b1b2f5a9e47"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 1902,
+      "sha256": "e3bee23f21afd60370b9fee7dd7711a783521f54bb7ba989eb20e9dbee1232a4"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 1884,
+      "sha256": "a6458eb2a9e2c9ef77b532befefbc753a0d1c7c8ad0ce4460869067e76bdca27"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/known_bad_outputs/transitioned_state_retained_as_unknown.json",
+      "bytes": 1933,
+      "sha256": "002b4c95c9e5d96686c7a8d142ded0d9eab95617f8053ba75acdc127a1d67485"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 1922,
+      "sha256": "c7feab8e0d3dc8d2885b78c6c0b7e3cc58034d428314b4fb0a52d7910d11fa5f"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 1874,
+      "sha256": "a811c5a31f792bf26c06cc8aa001a374c4a4b593bce47938a6d24367394c29b9"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/known_bad_outputs/wrong_transition_value.json",
+      "bytes": 1898,
+      "sha256": "f524fb8455212fa9f77833db8b574713f98372c36941aa562cbe6e719b975a21"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/memory_slice.json",
+      "bytes": 464,
+      "sha256": "3d7af865e24d7d710f28671f467a042a64178bfa08025a7839bc9783faae4be2"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/output_contract.json",
+      "bytes": 3933,
+      "sha256": "3ad58cbcb8922c82c2b757a25f841e05b9b2ac1bcf244a72585223833ac40fcf"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/task_spec.json",
+      "bytes": 997,
+      "sha256": "68d13b457613e6ccaba090210156f0ce1f11f25b0949c522bafc806675f0861a"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/evaluation_spec.json",
+      "bytes": 7441,
+      "sha256": "ad4c56a43bd7887de9310a07eba10b808aa3ebd19b250d2564b164eaab0a7811"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/evidence_bundle.json",
+      "bytes": 1283,
+      "sha256": "31182ac50c604951ba377d6c685a1bdcb3f745e3cc54e6b4053e882f643fb851"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/golden_output.json",
+      "bytes": 1947,
+      "sha256": "4284fa22fb55849a6e32aa11df4adb5b8fcdc88777b40361bb88bcbc358061b7"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/input.md",
+      "bytes": 636,
+      "sha256": "0ee94f87b381c776e960aa3111582d833738f23b7c320134f50810ea3d29007a"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/known_bad_outputs/evidence_omission.json",
+      "bytes": 1929,
+      "sha256": "6854bbba36b4833d965092c4e1ce7528a5ed52b6c851f991634a16c3efa4fedf"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 1901,
+      "sha256": "a3491e8e9224302b548125d5b4859f48a43d58aa6f26351b04855d667d0ee56f"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/known_bad_outputs/obsolete_forbidden_inference_retained.json",
+      "bytes": 1991,
+      "sha256": "1353663e2b0738ca8c407e8932595c1d4201b84f1e39c3c5b4584634bd17f7c8"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/known_bad_outputs/residual_forbidden_reordered.json",
+      "bytes": 1947,
+      "sha256": "5c999ffcde7b7413f5462030e45dc8681a4a5c38542f61c2f04f5f8316de69db"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 1947,
+      "sha256": "27ef7011fcfca0cd91a5a74cc2323f9455fd76e9e5f3889715e84b2f08dbd208"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 1929,
+      "sha256": "7cc48917202fa6e0eaf0baa62e714e327ca92b958725d887e307f2f07404065b"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/known_bad_outputs/transitioned_state_retained_as_unknown.json",
+      "bytes": 1978,
+      "sha256": "1d5694494173294d418353af41a0ebeb0f142fc2cad32a5d00f122b469ff2e67"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 1927,
+      "sha256": "fc2fba3773297e008ca10e1c603ab9958a4a8e2cb416561edbc69197ad2407e0"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 1919,
+      "sha256": "84baf6156c156c8cffe2aab98978d50a2707b41f317e68061b699203597f3406"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/known_bad_outputs/wrong_transition_value.json",
+      "bytes": 1943,
+      "sha256": "bc7f9634f60a34f68cc557dd7401e6bf00700e0e265a6aa622223257bc4de66e"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/memory_slice.json",
+      "bytes": 452,
+      "sha256": "652f2aa460dc39750a1999f9b782609b27e5a6d28e1f67c5b6e6b30ba077b0d8"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/output_contract.json",
+      "bytes": 3991,
+      "sha256": "8d80be9f10a4895ebd002748dd6f567e6247b6e9e9b54c6936d490a80cd26e1b"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/task_spec.json",
+      "bytes": 978,
+      "sha256": "53ed25f9600b6c3e3045f8e1a8b72422d0dbb75505fd601d786726146f20cf5c"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/evaluation_spec.json",
+      "bytes": 7619,
+      "sha256": "f0032c252d63c6297fb568b268ee056d4fc7ef08236b4b20b74f08b936e16fb9"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/evidence_bundle.json",
+      "bytes": 1296,
+      "sha256": "619f02af559dea46bf7440dc89021aaca4c027b2b8654ee8e9050da5bab8d98c"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/golden_output.json",
+      "bytes": 2010,
+      "sha256": "e2f69fffef20566159ab081b357bb626471bfe70b695772d38c71bcbc106e201"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/input.md",
+      "bytes": 644,
+      "sha256": "2060d1fb1b6c01401217b28e95a623d2276bdeaec5d5f0ea7d9ac7ca4d8d4a84"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/known_bad_outputs/evidence_omission.json",
+      "bytes": 1992,
+      "sha256": "92a978ae74b01c1abcea6e2a6a7199834fc55e88befae466c182b155445a49af"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 1969,
+      "sha256": "36cc055278752ebe685e5fa291e3b031d7c3edb64101b4064f5e7a52b3a9e743"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/known_bad_outputs/obsolete_forbidden_inference_retained.json",
+      "bytes": 2070,
+      "sha256": "ef87737510c3c267a6b3f05de9719084089bd11941efc0e76e9a6c12b26a7988"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/known_bad_outputs/residual_forbidden_reordered.json",
+      "bytes": 2010,
+      "sha256": "6150ea40e4542518cbcf27d5ed750c7b2f9c9fafdeb32eb3e9491eaba40f3dc6"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 2010,
+      "sha256": "abfeeb88a10aa48f8197ab09b21cb275fb5463a7ffa652763f7eef8d568b9e1c"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 1992,
+      "sha256": "524c001b491c370eccc179603fedabd5ff255679ede96f36f9480ebfd9ea3b0d"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/known_bad_outputs/transitioned_state_retained_as_unknown.json",
+      "bytes": 2057,
+      "sha256": "1001783a8d27ad770c12ed9d78206eed7067185618aeda70e5b58a1ef1eb57aa"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 2030,
+      "sha256": "f986247209479facebc361f765619b0be6953afcb7ace1fa2caac04520422f11"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 1982,
+      "sha256": "1744ecc62dce853c7ecb27d58a4942e029919603a75d588e6f173855acfcaba1"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/known_bad_outputs/wrong_transition_value.json",
+      "bytes": 2006,
+      "sha256": "3fd7c9e897e815c6b2fde7ee16fcfd9c0c565e8b7c355eb05eb35ccc6ddda81b"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/memory_slice.json",
+      "bytes": 465,
+      "sha256": "31b85484830708c9e9bed7b818dbfe41031c3008f36860747910415fef89cc2c"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/output_contract.json",
+      "bytes": 4242,
+      "sha256": "2160081a705faf38acf3b9d087a3bbd4675084dcb273e14ed15b13a8e1435ede"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/task_spec.json",
+      "bytes": 999,
+      "sha256": "064ad7113b5b626a276d5ef8d906a00b67a8c8eea89280744cccd160a0478565"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/suite.json",
+      "bytes": 924,
+      "sha256": "1efa77c151afa62ac118614e94bb313799d9f97624512b5e3809e2c424ab40d6"
+    },
+    {
+      "path": "research/04_methods/provider-config.siliconflow-reviewed.json",
+      "bytes": 500,
+      "sha256": "1ce1a847ad55b70b8ccaf5bbf24a9aed3d5496b9232571bcccc7601dca44e583"
+    },
+    {
+      "path": "research/04_methods/scripts/analyze_stage_b_v53_explicit_transition_delta.py",
+      "bytes": 7999,
+      "sha256": "87a96da31dcd990c4c4de2fcdbfabba56e9d84823a71d400b9cae6cde3677b86"
+    },
+    {
+      "path": "research/04_methods/scripts/build_stage_b_v53_explicit_transition_delta.py",
+      "bytes": 16842,
+      "sha256": "6954ff06cbb55aa8a241cb9f8d43ab88a9f919f87fd3a442af0711741dd04021"
+    },
+    {
+      "path": "research/04_methods/scripts/evaluate_stage_b_v53_explicit_transition_delta.py",
+      "bytes": 11101,
+      "sha256": "9e3d0a31206c6ccb85dde5002db5d8b9b6bc83addaad81fdb3098f5c4677f982"
+    },
+    {
+      "path": "research/04_methods/scripts/test_evaluate_stage_b_v53_explicit_transition_delta.py",
+      "bytes": 5524,
+      "sha256": "3497d458a7696b82b3ab54ecfef7a22f90688fd6b04705093f1e70accfd62b48"
+    },
+    {
+      "path": "research/05_analysis/benchmark-stage-b-v53-explicit-transition-delta-packets.jsonl",
+      "bytes": 189747,
+      "sha256": "52e7a0ab7a011b8c14ac8be7b4e896d021565ba2980bdd2c83ff8508aa9a55d5"
+    },
+    {
+      "path": "research/05_analysis/benchmark-stage-b-v53-explicit-transition-delta-packets.md",
+      "bytes": 1037,
+      "sha256": "c370087a43046ef6bc1a86214fff818803f5ee0b6004adaa6af1fecf147819bf"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta-manifest-with-prompts.json",
+      "bytes": 42720,
+      "sha256": "b5d283e2089a42a1a0dd30f47cd66c1e50bf33e08cc9581cfb9bd29ec98ccc32"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta-manifest.json",
+      "bytes": 31848,
+      "sha256": "3a6c7dce68d7435c734f03894cd29c3e988a6b607dabc6ff2e26abaa1f6f8e00"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--canonical__budget_model__G9__r1/adapter_request.json",
+      "bytes": 407,
+      "sha256": "9ca9d304899259dd20d868f25aa3ee1f4fbd1341ed2c1e07f58c2bf559b8ced6"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--canonical__budget_model__G9__r1/manifest.json",
+      "bytes": 1284,
+      "sha256": "0ba949aaca89a61be8a4af000664a50e75e4af3b3d97cd897ff7345133d70da2"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--canonical__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--canonical__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--canonical__budget_model__G9__r1/prompt.md",
+      "bytes": 7444,
+      "sha256": "1217bc05764a8ecf5fceeda0f404ca8a694ad33be61827bab35d4bf4a51b5f35"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--canonical__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--canonical__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--canonical__budget_model__G9__r2/adapter_request.json",
+      "bytes": 407,
+      "sha256": "2027735d1cdc10697876ab537e0987687ea94fe02193e4f58f5fca646ffe21c0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--canonical__budget_model__G9__r2/manifest.json",
+      "bytes": 1284,
+      "sha256": "54c85d92d6f2f92e34f61e00fb4d60373551d00062fc8ff635a1d8e66fb31912"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--canonical__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--canonical__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--canonical__budget_model__G9__r2/prompt.md",
+      "bytes": 7444,
+      "sha256": "5bb45958fc2cf1b952e33a8c3d8c470d5a5787e635720214e8fb850a026a9047"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--canonical__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--canonical__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--canonical__budget_model__G9__r3/adapter_request.json",
+      "bytes": 407,
+      "sha256": "21e5f31997bb1df70b6d94569e7bd02abd6f662f53c5fbe2bdc215378ac82d0c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--canonical__budget_model__G9__r3/manifest.json",
+      "bytes": 1284,
+      "sha256": "eac670ee8e884d2add4f8c2694930b5f50d7ed788f6041e5e8f65585fe7177d5"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--canonical__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--canonical__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--canonical__budget_model__G9__r3/prompt.md",
+      "bytes": 7444,
+      "sha256": "3457fda93d4b7d9366b7cf070df9748123e1f37b22097a42faec573550f95de9"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--canonical__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--canonical__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--distractor-evidence__budget_model__G9__r1/adapter_request.json",
+      "bytes": 427,
+      "sha256": "f652818c6d31878bb3dd32ed32834b3888dc458881ced6f584c36fc6a40e10f5"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--distractor-evidence__budget_model__G9__r1/manifest.json",
+      "bytes": 1364,
+      "sha256": "832ea19d1977ae3fc23127ee6131a0ebfc29f3357332a07325466a58b54f712b"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--distractor-evidence__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--distractor-evidence__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--distractor-evidence__budget_model__G9__r1/prompt.md",
+      "bytes": 7884,
+      "sha256": "01d56e0e1067883b2c0d062db4460d71d501a2c2882165aae08cc58f22dffc5d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--distractor-evidence__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--distractor-evidence__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--distractor-evidence__budget_model__G9__r2/adapter_request.json",
+      "bytes": 427,
+      "sha256": "cf1510e32f1ba93013718486024e3708197889f6bef11a6cdb95550f6b604eba"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--distractor-evidence__budget_model__G9__r2/manifest.json",
+      "bytes": 1364,
+      "sha256": "aa7b195ccee26f1656691dd26d796bdee712ac308a8e29d9b23259fcdc9a128f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--distractor-evidence__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--distractor-evidence__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--distractor-evidence__budget_model__G9__r2/prompt.md",
+      "bytes": 7884,
+      "sha256": "4b39f8c93563923005346b9f7f8ef8b08a3439d1185981702d67a89670f18432"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--distractor-evidence__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--distractor-evidence__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--distractor-evidence__budget_model__G9__r3/adapter_request.json",
+      "bytes": 427,
+      "sha256": "ff9e837d126c92fdf161e43241086058be000ef69691cf1213e69ee7961eeb7d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--distractor-evidence__budget_model__G9__r3/manifest.json",
+      "bytes": 1364,
+      "sha256": "ed8e2115693ecbdc2758040d0420ef78c872651a47d612619673e259fbcedaa2"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--distractor-evidence__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--distractor-evidence__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--distractor-evidence__budget_model__G9__r3/prompt.md",
+      "bytes": 7884,
+      "sha256": "921c32db2578fa8ff9738254f84bb49b759a5334eb388263276f1477b2b64ec6"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--distractor-evidence__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--distractor-evidence__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--evidence-order-shuffled__budget_model__G9__r1/adapter_request.json",
+      "bytes": 435,
+      "sha256": "766c9ecbc9c16e1e89c539aaa950e613fc8bab5efa6d39298a240499534d9fa7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--evidence-order-shuffled__budget_model__G9__r1/manifest.json",
+      "bytes": 1396,
+      "sha256": "4ec6add5bfd851ff7f4df48054f83f3365b143eb20c20dc25cef6c04031cc43c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--evidence-order-shuffled__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--evidence-order-shuffled__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--evidence-order-shuffled__budget_model__G9__r1/prompt.md",
+      "bytes": 7556,
+      "sha256": "6312d1f3afd30d604bf57876639a16137bc6ac0a9137cf571b1125af926af593"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--evidence-order-shuffled__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--evidence-order-shuffled__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--evidence-order-shuffled__budget_model__G9__r2/adapter_request.json",
+      "bytes": 435,
+      "sha256": "f9d3564aa8d3151498644bd58d9f3a8c2df597156c7eb418ef989f8d163fdc4b"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--evidence-order-shuffled__budget_model__G9__r2/manifest.json",
+      "bytes": 1396,
+      "sha256": "2de959db5bae45a01bbf6e25d66a5e6de074312032be9b9bb875288887a44684"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--evidence-order-shuffled__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--evidence-order-shuffled__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--evidence-order-shuffled__budget_model__G9__r2/prompt.md",
+      "bytes": 7556,
+      "sha256": "a4583d3339ba514ba6bfba7b132b0c3c3fd29b2b8ddf8d15ea2802ebef65b30f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--evidence-order-shuffled__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--evidence-order-shuffled__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--evidence-order-shuffled__budget_model__G9__r3/adapter_request.json",
+      "bytes": 435,
+      "sha256": "46a5bf4c4b480b6b876af53de4329d93b4ff4cbebc5c708e40d800affdd13899"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--evidence-order-shuffled__budget_model__G9__r3/manifest.json",
+      "bytes": 1396,
+      "sha256": "4adcaf9974c3bb05c7fa71af5c6158a471a0bd83957ca98e1f627a3980be6ea3"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--evidence-order-shuffled__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--evidence-order-shuffled__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--evidence-order-shuffled__budget_model__G9__r3/prompt.md",
+      "bytes": 7556,
+      "sha256": "a51e12fa9be4294facd5546b1513a6f024946382f11b16d390ed574f6b8cdbfb"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--evidence-order-shuffled__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--evidence-order-shuffled__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--field-alias__budget_model__G9__r1/adapter_request.json",
+      "bytes": 411,
+      "sha256": "584b275615670949a892ba3dff32ad58231cf8a5cb83da3068561c718e91a2e2"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--field-alias__budget_model__G9__r1/manifest.json",
+      "bytes": 1300,
+      "sha256": "8a2afb01e0368ca77190b4a52ac909d6b1d5aa522330faa6a8b50e25ab5acc4d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--field-alias__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--field-alias__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--field-alias__budget_model__G9__r1/prompt.md",
+      "bytes": 7535,
+      "sha256": "f07e60629a343ab095572610118f636c483c8ae1d5c32c27b519a2ab18aa0141"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--field-alias__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--field-alias__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--field-alias__budget_model__G9__r2/adapter_request.json",
+      "bytes": 411,
+      "sha256": "fdc05de41e973b22a1186702ba69148c1682cb543a85d24884821450b6eb0387"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--field-alias__budget_model__G9__r2/manifest.json",
+      "bytes": 1300,
+      "sha256": "36fae2f6a81e852d449685af77f818354cf9f751e7517e8ecc41c053e165fe78"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--field-alias__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--field-alias__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--field-alias__budget_model__G9__r2/prompt.md",
+      "bytes": 7535,
+      "sha256": "e06b7b5f5c4a5c0b67eb21f966c735eb87ecdbea7d5632ea5499ee690a3fce09"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--field-alias__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--field-alias__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--field-alias__budget_model__G9__r3/adapter_request.json",
+      "bytes": 411,
+      "sha256": "dbf4d5b162f818fe254f1d91ba86ce1347e79f76bf77ad46af64a1b6ee356e5e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--field-alias__budget_model__G9__r3/manifest.json",
+      "bytes": 1300,
+      "sha256": "c7a4c4b46f90527bf45abed51a70c93cce3d01d7bce024097eba1c0f2acc8685"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--field-alias__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--field-alias__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--field-alias__budget_model__G9__r3/prompt.md",
+      "bytes": 7535,
+      "sha256": "764429cd4fed33fc8207a74a2b0819f62057d86dc5c278296ef8fd0c3c554543"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--field-alias__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--field-alias__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--unknown-state-paraphrase__budget_model__G9__r1/adapter_request.json",
+      "bytes": 437,
+      "sha256": "23b207710c19637039f13d663dbea9e2ba3f517b47bc39f63625e48364e49e99"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--unknown-state-paraphrase__budget_model__G9__r1/manifest.json",
+      "bytes": 1404,
+      "sha256": "564a59447d2cb0d270f43c1c16abbc230f0e213395728cce52eda9367a610897"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--unknown-state-paraphrase__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--unknown-state-paraphrase__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--unknown-state-paraphrase__budget_model__G9__r1/prompt.md",
+      "bytes": 7764,
+      "sha256": "d90bdea461ecd1048de57385ff182e0d6a0ae91d08b270a90073241d0742f747"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--unknown-state-paraphrase__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--unknown-state-paraphrase__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--unknown-state-paraphrase__budget_model__G9__r2/adapter_request.json",
+      "bytes": 437,
+      "sha256": "bee6e332914f0f6f9a5e631c1ce19fcca100129177fb81e8c3e802505b6fef9e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--unknown-state-paraphrase__budget_model__G9__r2/manifest.json",
+      "bytes": 1404,
+      "sha256": "479334a9d246ab72f3c221e8f5c4d9abcc43ea154c8a55f24e3a653070329ed9"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--unknown-state-paraphrase__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--unknown-state-paraphrase__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--unknown-state-paraphrase__budget_model__G9__r2/prompt.md",
+      "bytes": 7764,
+      "sha256": "c9f5a67e1f5892a62be48d7311f9581a1ee544dc41f6e25f42ffc8d5ae5c6ffd"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--unknown-state-paraphrase__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--unknown-state-paraphrase__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--unknown-state-paraphrase__budget_model__G9__r3/adapter_request.json",
+      "bytes": 437,
+      "sha256": "9d817d260e7c25e085683dd8486704c798ace75b0df336138cccfca2a6671750"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--unknown-state-paraphrase__budget_model__G9__r3/manifest.json",
+      "bytes": 1404,
+      "sha256": "5252ee4fb7c2b7d799e8197ec7934a980d898f36e2383f940318939719b60d3d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--unknown-state-paraphrase__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--unknown-state-paraphrase__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--unknown-state-paraphrase__budget_model__G9__r3/prompt.md",
+      "bytes": 7764,
+      "sha256": "4e65271402520f3a09de4b1610ff6b7b0f35c715dbce7e30389d422011571ad1"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--unknown-state-paraphrase__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p1--unknown-state-paraphrase__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--canonical__budget_model__G9__r1/adapter_request.json",
+      "bytes": 407,
+      "sha256": "a063026ffa2a6890e827bb9da887c4c9222b31d54fe9620d5606c7b17656ef02"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--canonical__budget_model__G9__r1/manifest.json",
+      "bytes": 1284,
+      "sha256": "04d3fdef287f582cdd03ed34760cd93b392dc275d4f70117463cf4fe9daa9d28"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--canonical__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--canonical__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--canonical__budget_model__G9__r1/prompt.md",
+      "bytes": 8091,
+      "sha256": "abdc89cd3d7122131f36d2b1365155f370b04074215cefb461841e80951f496c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--canonical__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--canonical__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--canonical__budget_model__G9__r2/adapter_request.json",
+      "bytes": 407,
+      "sha256": "83e0ca43d31efededc86a7f1088db7a978da361354d61333ef1e73bc790911e7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--canonical__budget_model__G9__r2/manifest.json",
+      "bytes": 1284,
+      "sha256": "83e1939d54c08e0271f59b24e86d4d842fcf140d017bbebdd717d710c92c3de7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--canonical__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--canonical__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--canonical__budget_model__G9__r2/prompt.md",
+      "bytes": 8091,
+      "sha256": "cfc6919e50f1e6f17c212a3b22be20346cee90d01fdd641467f77400949178e0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--canonical__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--canonical__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--canonical__budget_model__G9__r3/adapter_request.json",
+      "bytes": 407,
+      "sha256": "34d2ebf7c9c2d334914c8f610a1de04182f790348df1d10fefc8a58f22fc26a3"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--canonical__budget_model__G9__r3/manifest.json",
+      "bytes": 1284,
+      "sha256": "70dd12de1859dd6c76abc05939607d4d1e5270e40476f89221ce3f06a6448fde"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--canonical__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--canonical__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--canonical__budget_model__G9__r3/prompt.md",
+      "bytes": 8091,
+      "sha256": "fee6b6e3ae9a74b4c804cdb709c60205537328a2cbf5f822c52253f58abffb46"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--canonical__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--canonical__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--distractor-evidence__budget_model__G9__r1/adapter_request.json",
+      "bytes": 427,
+      "sha256": "746419b585cbc1f5cdbf0c71b6d5cb0d580f7217bca883ddc4b28ef34606f9ac"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--distractor-evidence__budget_model__G9__r1/manifest.json",
+      "bytes": 1364,
+      "sha256": "be0ceab0abc9c8e3cc650759310887fda02f9b307863e2133b7cbaa04ba9d55c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--distractor-evidence__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--distractor-evidence__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--distractor-evidence__budget_model__G9__r1/prompt.md",
+      "bytes": 8531,
+      "sha256": "d0f25fd78c8342c8214879a95bf1d1f2f04c6c98b2b1ac1ef8ae3e8531748e71"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--distractor-evidence__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--distractor-evidence__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--distractor-evidence__budget_model__G9__r2/adapter_request.json",
+      "bytes": 427,
+      "sha256": "6888e20ca7b32c4b008b2e7b8a8f57b9ba4060393e66764f6e7844e45a24378a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--distractor-evidence__budget_model__G9__r2/manifest.json",
+      "bytes": 1364,
+      "sha256": "1eca84872bfc4cb1919f71a0dedf21b92e3fb3327406c395ac8d69dd12be9b6c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--distractor-evidence__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--distractor-evidence__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--distractor-evidence__budget_model__G9__r2/prompt.md",
+      "bytes": 8531,
+      "sha256": "b97abd9f8e99a601d59aa4870764d54c97797238d44b5029a8ec5cec360d81f3"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--distractor-evidence__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--distractor-evidence__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--distractor-evidence__budget_model__G9__r3/adapter_request.json",
+      "bytes": 427,
+      "sha256": "8f4700e09c30684301050c02f104bf6893f86856808d192f49f5bdd201a6b376"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--distractor-evidence__budget_model__G9__r3/manifest.json",
+      "bytes": 1364,
+      "sha256": "6851ba390eb159da288959f6dc5ac93bedf9cd6551a31b8e46f1a573f78390ba"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--distractor-evidence__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--distractor-evidence__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--distractor-evidence__budget_model__G9__r3/prompt.md",
+      "bytes": 8531,
+      "sha256": "fcbe7d7021d3b10dbf2342ddfba3d83092272b0a8a925d698370d3a5eb960aa4"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--distractor-evidence__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--distractor-evidence__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--evidence-order-shuffled__budget_model__G9__r1/adapter_request.json",
+      "bytes": 435,
+      "sha256": "e3e6e339c9df48e1b69f67056f2124872719005276a3ab0cc806843dceb7be95"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--evidence-order-shuffled__budget_model__G9__r1/manifest.json",
+      "bytes": 1396,
+      "sha256": "030eea527224a3a77ab0874d801514d7b4ee189874ee5d204c3e52a685eb3b05"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--evidence-order-shuffled__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--evidence-order-shuffled__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--evidence-order-shuffled__budget_model__G9__r1/prompt.md",
+      "bytes": 8203,
+      "sha256": "3663952f4aff34d95dd9fcc88f7d981f876b10f7ede1fa9d9b7434dc699d5911"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--evidence-order-shuffled__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--evidence-order-shuffled__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--evidence-order-shuffled__budget_model__G9__r2/adapter_request.json",
+      "bytes": 435,
+      "sha256": "8e128cb4a6b4ab1afc40d43ca736adefc8c555b2d1dcd840baec6c6e110b41c7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--evidence-order-shuffled__budget_model__G9__r2/manifest.json",
+      "bytes": 1396,
+      "sha256": "2183f228323bc205d31f16dbff8daef2bcd35add59bdb36494c422c7c108300c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--evidence-order-shuffled__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--evidence-order-shuffled__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--evidence-order-shuffled__budget_model__G9__r2/prompt.md",
+      "bytes": 8203,
+      "sha256": "7fd95e5861cabf3716b61a3d67923ca0c47260423eec9e0c8f994114815a26af"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--evidence-order-shuffled__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--evidence-order-shuffled__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--evidence-order-shuffled__budget_model__G9__r3/adapter_request.json",
+      "bytes": 435,
+      "sha256": "e31e3b2d0698dfbd2eb023360e5ff303e364588bad72892f6f4f8ba174f18f0c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--evidence-order-shuffled__budget_model__G9__r3/manifest.json",
+      "bytes": 1396,
+      "sha256": "e1e5df468aa34e2263c66e3841a187b3b3561182aef76b6d67ca704bbf3ad72f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--evidence-order-shuffled__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--evidence-order-shuffled__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--evidence-order-shuffled__budget_model__G9__r3/prompt.md",
+      "bytes": 8203,
+      "sha256": "a811ad7903a84945950459ea33675f7ecf729e50d877359963914f7f4f4cde31"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--evidence-order-shuffled__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--evidence-order-shuffled__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--field-alias__budget_model__G9__r1/adapter_request.json",
+      "bytes": 411,
+      "sha256": "7127d890db803177a0a06b2ce438924a0239fe37e4fc68e4821a89903c5f66f5"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--field-alias__budget_model__G9__r1/manifest.json",
+      "bytes": 1300,
+      "sha256": "319ef773735d637d0fec9fc2b2e3ec96b6ffc3ed23f8285cd03d4dac883477d7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--field-alias__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--field-alias__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--field-alias__budget_model__G9__r1/prompt.md",
+      "bytes": 8187,
+      "sha256": "80f7a0c0ae10c9b6738a98fca763b7e47b944d71902aca586de4ef7d4c96ebda"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--field-alias__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--field-alias__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--field-alias__budget_model__G9__r2/adapter_request.json",
+      "bytes": 411,
+      "sha256": "5f5bad1e27b20b9a4c948f5a901cf7ee38634b557d4d019a8b779142452d3e37"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--field-alias__budget_model__G9__r2/manifest.json",
+      "bytes": 1300,
+      "sha256": "aac0fd1810ed8e92d57fa9b726b6a15b909f98f95bdd1826b3db346ef192ff13"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--field-alias__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--field-alias__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--field-alias__budget_model__G9__r2/prompt.md",
+      "bytes": 8187,
+      "sha256": "31e062607abdde57398b28d8d20304d801a1d7edcc144db715ab466ab4193473"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--field-alias__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--field-alias__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--field-alias__budget_model__G9__r3/adapter_request.json",
+      "bytes": 411,
+      "sha256": "b3cfe5a2f4000aab48ba925426eca98c47a6f91c679bdac81dea3157922eb87a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--field-alias__budget_model__G9__r3/manifest.json",
+      "bytes": 1300,
+      "sha256": "3ea2d02bb01a17459dd8ef14b8fd5ff40b6f0c24c06982e9f01c7d4f1a061b53"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--field-alias__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--field-alias__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--field-alias__budget_model__G9__r3/prompt.md",
+      "bytes": 8187,
+      "sha256": "c1899f2c2905038b0169a67982171bd196ebdb3c23a7d93c1575523eff753b4b"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--field-alias__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--field-alias__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--unknown-state-paraphrase__budget_model__G9__r1/adapter_request.json",
+      "bytes": 437,
+      "sha256": "599924d67572e91990629bf93d9b3b2f6dd8dccb0b7556cad575e8c64a763800"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--unknown-state-paraphrase__budget_model__G9__r1/manifest.json",
+      "bytes": 1404,
+      "sha256": "a9be543474a9e84b2c0027ee00f961b70f20127012e3e5247cb8a234d1ac88a5"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--unknown-state-paraphrase__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--unknown-state-paraphrase__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--unknown-state-paraphrase__budget_model__G9__r1/prompt.md",
+      "bytes": 8519,
+      "sha256": "33da7acb0b05a0c03b0b88b410e2c76bc223aa5a328c75c36f157dd0951f9886"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--unknown-state-paraphrase__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--unknown-state-paraphrase__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--unknown-state-paraphrase__budget_model__G9__r2/adapter_request.json",
+      "bytes": 437,
+      "sha256": "1bc5d1f23a9c067dc9eaa95832e99557ccdc06a60e09ae2577833e0cfe32fe3a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--unknown-state-paraphrase__budget_model__G9__r2/manifest.json",
+      "bytes": 1404,
+      "sha256": "45845637c9843bcac976f3d93e6f7e53ca5cbd4f34050daa5a73d46297b19148"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--unknown-state-paraphrase__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--unknown-state-paraphrase__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--unknown-state-paraphrase__budget_model__G9__r2/prompt.md",
+      "bytes": 8519,
+      "sha256": "3657d7b43204a57fbd51f47c5d46d2a0d5f1b026f3afaecf03e0e00027576517"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--unknown-state-paraphrase__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--unknown-state-paraphrase__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--unknown-state-paraphrase__budget_model__G9__r3/adapter_request.json",
+      "bytes": 437,
+      "sha256": "c34ee7681dc47481b607a679d152ec06d2ee63484b61f5b3457ec8f18207b27a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--unknown-state-paraphrase__budget_model__G9__r3/manifest.json",
+      "bytes": 1404,
+      "sha256": "243a998e3179c7bcf2967ca6d61adc24fc67497a55589251e1ec7c272846ea98"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--unknown-state-paraphrase__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--unknown-state-paraphrase__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--unknown-state-paraphrase__budget_model__G9__r3/prompt.md",
+      "bytes": 8519,
+      "sha256": "ab6b70b26c303d70a285a2a89e67d7af74fdf0a7e87784e644acb4c5ec6ad098"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--unknown-state-paraphrase__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v53-explicit-transition-delta/stage-b-v53-p2--unknown-state-paraphrase__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v53-explicit-transition-delta-adapter-dry-run-events.jsonl",
+      "bytes": 31648,
+      "sha256": "c5a5cad7038844dbb932ac6d48db5ad5865adb920ab53190a92b2a3ea869cd18"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v53-explicit-transition-delta-adapter-dry-run.json",
+      "bytes": 24510,
+      "sha256": "532ea22af168c6486e916c2487e759fe6c238fd883f18ec449043cf638798bea"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v53-explicit-transition-delta-experiment-plan.md",
+      "bytes": 6287,
+      "sha256": "48125a8c506ac41d21a76f22fb1ed56775daabfcbde2a3b957d65075e894c8e6"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v53-explicit-transition-delta-local-check.json",
+      "bytes": 423322,
+      "sha256": "06f90474cff69f21b10c954951057566ce235d09bac0c01aff0a08a831dea71f"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v53-explicit-transition-delta-local-check.md",
+      "bytes": 14330,
+      "sha256": "3f97d3a4cfd8eaf24c5b6f2d580f25f6cb667d1dcbbe00178e5298645cbf97ab"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v53-explicit-transition-delta-pre-execution-audit.md",
+      "bytes": 2035,
+      "sha256": "30ecb4262177baddae0ace047705a3e171e7dfe0e9d3a69f88aad128eededab9"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v53-explicit-transition-delta-preflight.json",
+      "bytes": 1798,
+      "sha256": "14009fab8a35239494da26a4e1e3a14a71641d2282fa8554fee5b445dbc0d0e0"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v53-explicit-transition-delta-preflight.md",
+      "bytes": 1619,
+      "sha256": "af722ffc8c1770bbf59a23dd2c91940a1ec2edec29552be660efc84e72157806"
+    }
+  ]
+}

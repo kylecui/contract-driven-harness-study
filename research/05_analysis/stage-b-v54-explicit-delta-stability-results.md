@@ -1,0 +1,44 @@
+# Stage B v5.3 Explicit Transition-Delta Model Evaluation
+
+| Run | Protocol | Condition | State | Evidence | Aggregate | Passed |
+|---|---|---|---:|---:|---:|---:|
+| `stage-b-v54-delta-stability--canonical__budget_model__G9__r1` | `explicit_delta` | `canonical` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--canonical__budget_model__G9__r2` | `explicit_delta` | `canonical` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--canonical__budget_model__G9__r3` | `explicit_delta` | `canonical` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--canonical__budget_model__G9__r4` | `explicit_delta` | `canonical` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--canonical__budget_model__G9__r5` | `explicit_delta` | `canonical` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--canonical__budget_model__G9__r6` | `explicit_delta` | `canonical` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--canonical__budget_model__G9__r7` | `explicit_delta` | `canonical` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--canonical__budget_model__G9__r8` | `explicit_delta` | `canonical` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--field-alias__budget_model__G9__r1` | `explicit_delta` | `field_alias` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--field-alias__budget_model__G9__r2` | `explicit_delta` | `field_alias` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--field-alias__budget_model__G9__r3` | `explicit_delta` | `field_alias` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--field-alias__budget_model__G9__r4` | `explicit_delta` | `field_alias` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--field-alias__budget_model__G9__r5` | `explicit_delta` | `field_alias` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--field-alias__budget_model__G9__r6` | `explicit_delta` | `field_alias` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--field-alias__budget_model__G9__r7` | `explicit_delta` | `field_alias` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--field-alias__budget_model__G9__r8` | `explicit_delta` | `field_alias` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r1` | `explicit_delta` | `evidence_order_shuffled` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r2` | `explicit_delta` | `evidence_order_shuffled` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r3` | `explicit_delta` | `evidence_order_shuffled` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r4` | `explicit_delta` | `evidence_order_shuffled` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r5` | `explicit_delta` | `evidence_order_shuffled` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r6` | `explicit_delta` | `evidence_order_shuffled` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r7` | `explicit_delta` | `evidence_order_shuffled` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r8` | `explicit_delta` | `evidence_order_shuffled` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r1` | `explicit_delta` | `distractor_evidence` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r2` | `explicit_delta` | `distractor_evidence` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r3` | `explicit_delta` | `distractor_evidence` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r4` | `explicit_delta` | `distractor_evidence` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r5` | `explicit_delta` | `distractor_evidence` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r6` | `explicit_delta` | `distractor_evidence` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r7` | `explicit_delta` | `distractor_evidence` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r8` | `explicit_delta` | `distractor_evidence` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r1` | `explicit_delta` | `unknown_state_paraphrase` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r2` | `explicit_delta` | `unknown_state_paraphrase` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r3` | `explicit_delta` | `unknown_state_paraphrase` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r4` | `explicit_delta` | `unknown_state_paraphrase` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r5` | `explicit_delta` | `unknown_state_paraphrase` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r6` | `explicit_delta` | `unknown_state_paraphrase` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r7` | `explicit_delta` | `unknown_state_paraphrase` | 1.000 | 1.000 | 1.000 | true |
+| `stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r8` | `explicit_delta` | `unknown_state_paraphrase` | 1.000 | 1.000 | 1.000 | true |

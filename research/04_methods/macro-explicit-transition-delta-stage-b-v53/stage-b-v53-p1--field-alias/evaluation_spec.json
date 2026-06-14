@@ -1,0 +1,220 @@
+{
+  "evaluation_version": "stage_b_v53_explicit_transition_delta_001",
+  "primary_metric": "residual_unknown_vocabulary_accuracy",
+  "protocol_arm": "postcondition_only",
+  "representation_arm": "postcondition_only",
+  "perturbation_condition": "field_alias",
+  "evidence_section": "evidence_bindings",
+  "reference_field": "source_references",
+  "expected_payload": [
+    {
+      "slot_id": "claim_alpha",
+      "references": [
+        "ev-01"
+      ]
+    },
+    {
+      "slot_id": "claim_beta",
+      "references": [
+        "ev-06"
+      ]
+    },
+    {
+      "slot_id": "claim_gamma",
+      "references": [
+        "ev-10",
+        "ev-11"
+      ]
+    },
+    {
+      "slot_id": "claim_delta",
+      "references": [
+        "ev-09"
+      ]
+    }
+  ],
+  "expected_known_state": [
+    {
+      "state_id": "network_api_approval",
+      "value": "approved",
+      "source_references": [
+        "ev-09"
+      ]
+    }
+  ],
+  "expected_unknown_state": [
+    "current_git_branch",
+    "ci_status"
+  ],
+  "expected_forbidden_inferences": [
+    "do_not_infer_current_git_branch",
+    "do_not_infer_ci_status"
+  ],
+  "expected_transition_record": {
+    "event_id": "event-api-approval-001",
+    "state_id": "network_api_approval",
+    "from_status": "unknown",
+    "to_status": "approved",
+    "source_references": [
+      "ev-09"
+    ],
+    "applied": true
+  },
+  "expected_gate": {
+    "status": "open",
+    "permitted_action": "provider_execution",
+    "satisfied_prerequisite": "network_api_approval",
+    "next_action": "complete_stage_b_v53_explicit_transition_delta",
+    "support_slot_ids": [
+      "claim_alpha",
+      "claim_beta",
+      "claim_gamma",
+      "claim_delta"
+    ]
+  },
+  "expected_attestation": {
+    "status": "preserved_after_transition",
+    "immutable_fields": [
+      "evidence_bindings[].slot_id",
+      "evidence_bindings[].source_references",
+      "state_inventory.unknown_state",
+      "state_inventory.forbidden_inferences",
+      "state_inventory.known_state[].state_id",
+      "state_inventory.known_state[].source_references",
+      "transition_record.event_id",
+      "transition_record.source_references"
+    ]
+  },
+  "expected_postconditions": {
+    "known_state": [
+      {
+        "state_id": "network_api_approval",
+        "value": "approved",
+        "source_references": [
+          "ev-09"
+        ]
+      }
+    ],
+    "residual_unknown_state": [
+      "current_git_branch",
+      "ci_status"
+    ],
+    "residual_forbidden_inferences": [
+      "do_not_infer_current_git_branch",
+      "do_not_infer_ci_status"
+    ]
+  },
+  "expected_transition_delta": null,
+  "known_bad_expectations": {
+    "obsolete_forbidden_inference_retained": {
+      "schema_validity": 1.0,
+      "exact_evidence_array_preservation": 1.0,
+      "residual_unknown_vocabulary_accuracy": 0.0,
+      "state_transition_accuracy": 1.0,
+      "transition_gate_accuracy": 1.0,
+      "retention_attestation_accuracy": 1.0,
+      "controlled_state_mutation_success": 0.0
+    },
+    "transitioned_state_retained_as_unknown": {
+      "schema_validity": 1.0,
+      "exact_evidence_array_preservation": 1.0,
+      "residual_unknown_vocabulary_accuracy": 0.0,
+      "state_transition_accuracy": 1.0,
+      "transition_gate_accuracy": 1.0,
+      "retention_attestation_accuracy": 1.0,
+      "controlled_state_mutation_success": 0.0
+    },
+    "residual_unknown_reordered": {
+      "schema_validity": 1.0,
+      "exact_evidence_array_preservation": 1.0,
+      "residual_unknown_vocabulary_accuracy": 0.0,
+      "state_transition_accuracy": 1.0,
+      "transition_gate_accuracy": 1.0,
+      "retention_attestation_accuracy": 1.0,
+      "controlled_state_mutation_success": 0.0
+    },
+    "residual_forbidden_reordered": {
+      "schema_validity": 1.0,
+      "exact_evidence_array_preservation": 1.0,
+      "residual_unknown_vocabulary_accuracy": 0.0,
+      "state_transition_accuracy": 1.0,
+      "transition_gate_accuracy": 1.0,
+      "retention_attestation_accuracy": 1.0,
+      "controlled_state_mutation_success": 0.0
+    },
+    "evidence_omission": {
+      "schema_validity": 1.0,
+      "exact_evidence_array_preservation": 0.0,
+      "residual_unknown_vocabulary_accuracy": 1.0,
+      "state_transition_accuracy": 1.0,
+      "transition_gate_accuracy": 1.0,
+      "retention_attestation_accuracy": 1.0,
+      "controlled_state_mutation_success": 0.0
+    },
+    "semantic_evidence_remap": {
+      "schema_validity": 1.0,
+      "exact_evidence_array_preservation": 0.0,
+      "residual_unknown_vocabulary_accuracy": 1.0,
+      "state_transition_accuracy": 1.0,
+      "transition_gate_accuracy": 1.0,
+      "retention_attestation_accuracy": 1.0,
+      "controlled_state_mutation_success": 0.0
+    },
+    "undeclared_reference_field": {
+      "schema_validity": 0.0,
+      "exact_evidence_array_preservation": 0.0,
+      "residual_unknown_vocabulary_accuracy": 1.0,
+      "state_transition_accuracy": 1.0,
+      "transition_gate_accuracy": 1.0,
+      "retention_attestation_accuracy": 1.0,
+      "controlled_state_mutation_success": 0.0
+    },
+    "wrong_transition_value": {
+      "schema_validity": 1.0,
+      "exact_evidence_array_preservation": 1.0,
+      "residual_unknown_vocabulary_accuracy": 1.0,
+      "state_transition_accuracy": 0.0,
+      "transition_gate_accuracy": 1.0,
+      "retention_attestation_accuracy": 1.0,
+      "controlled_state_mutation_success": 0.0
+    },
+    "wrong_gate_next_action": {
+      "schema_validity": 1.0,
+      "exact_evidence_array_preservation": 1.0,
+      "residual_unknown_vocabulary_accuracy": 1.0,
+      "state_transition_accuracy": 1.0,
+      "transition_gate_accuracy": 0.0,
+      "retention_attestation_accuracy": 1.0,
+      "controlled_state_mutation_success": 0.0
+    },
+    "incomplete_retention_attestation": {
+      "schema_validity": 1.0,
+      "exact_evidence_array_preservation": 1.0,
+      "residual_unknown_vocabulary_accuracy": 1.0,
+      "state_transition_accuracy": 1.0,
+      "transition_gate_accuracy": 1.0,
+      "retention_attestation_accuracy": 0.0,
+      "controlled_state_mutation_success": 0.0
+    }
+  },
+  "model_surface_files": [
+    "input.md",
+    "task_spec.json",
+    "memory_slice.json",
+    "evidence_bundle.json",
+    "output_contract.json"
+  ],
+  "forbidden_model_surface_values": [
+    "postcondition_only",
+    "explicit_delta",
+    "postcondition-only",
+    "explicit-delta",
+    "evidence_ids",
+    "branch_currently_checked_out",
+    "continuous_integration_result",
+    "permission_to_use_external_model_api",
+    "do_not_guess_branch_currently_checked_out",
+    "do_not_guess_continuous_integration_result",
+    "do_not_guess_permission_to_use_external_model_api"
+  ]
+}

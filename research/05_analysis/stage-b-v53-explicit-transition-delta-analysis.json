@@ -1,0 +1,892 @@
+{
+  "protocol": "stage_b_v53_explicit_transition_delta",
+  "run_count": 30,
+  "arm_summary": {
+    "explicit_delta": {
+      "run_count": 15,
+      "components": {
+        "schema_validity": {
+          "successes": 15,
+          "total": 15,
+          "rate": 1.0,
+          "wilson_95": [
+            0.796111,
+            1.0
+          ]
+        },
+        "exact_evidence_array_preservation": {
+          "successes": 15,
+          "total": 15,
+          "rate": 1.0,
+          "wilson_95": [
+            0.796111,
+            1.0
+          ]
+        },
+        "residual_unknown_vocabulary_accuracy": {
+          "successes": 15,
+          "total": 15,
+          "rate": 1.0,
+          "wilson_95": [
+            0.796111,
+            1.0
+          ]
+        },
+        "state_transition_accuracy": {
+          "successes": 15,
+          "total": 15,
+          "rate": 1.0,
+          "wilson_95": [
+            0.796111,
+            1.0
+          ]
+        },
+        "transition_gate_accuracy": {
+          "successes": 15,
+          "total": 15,
+          "rate": 1.0,
+          "wilson_95": [
+            0.796111,
+            1.0
+          ]
+        },
+        "retention_attestation_accuracy": {
+          "successes": 15,
+          "total": 15,
+          "rate": 1.0,
+          "wilson_95": [
+            0.796111,
+            1.0
+          ]
+        },
+        "controlled_state_mutation_success": {
+          "successes": 15,
+          "total": 15,
+          "rate": 1.0,
+          "wilson_95": [
+            0.796111,
+            1.0
+          ]
+        }
+      }
+    },
+    "postcondition_only": {
+      "run_count": 15,
+      "components": {
+        "schema_validity": {
+          "successes": 15,
+          "total": 15,
+          "rate": 1.0,
+          "wilson_95": [
+            0.796111,
+            1.0
+          ]
+        },
+        "exact_evidence_array_preservation": {
+          "successes": 15,
+          "total": 15,
+          "rate": 1.0,
+          "wilson_95": [
+            0.796111,
+            1.0
+          ]
+        },
+        "residual_unknown_vocabulary_accuracy": {
+          "successes": 13,
+          "total": 15,
+          "rate": 0.866667,
+          "wilson_95": [
+            0.621175,
+            0.96264
+          ]
+        },
+        "state_transition_accuracy": {
+          "successes": 15,
+          "total": 15,
+          "rate": 1.0,
+          "wilson_95": [
+            0.796111,
+            1.0
+          ]
+        },
+        "transition_gate_accuracy": {
+          "successes": 15,
+          "total": 15,
+          "rate": 1.0,
+          "wilson_95": [
+            0.796111,
+            1.0
+          ]
+        },
+        "retention_attestation_accuracy": {
+          "successes": 15,
+          "total": 15,
+          "rate": 1.0,
+          "wilson_95": [
+            0.796111,
+            1.0
+          ]
+        },
+        "controlled_state_mutation_success": {
+          "successes": 13,
+          "total": 15,
+          "rate": 0.866667,
+          "wilson_95": [
+            0.621175,
+            0.96264
+          ]
+        }
+      }
+    }
+  },
+  "cell_summary": {
+    "explicit_delta::canonical": {
+      "run_count": 3,
+      "components": {
+        "schema_validity": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "exact_evidence_array_preservation": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "residual_unknown_vocabulary_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "state_transition_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "transition_gate_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "retention_attestation_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "controlled_state_mutation_success": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        }
+      },
+      "cell_pass": true
+    },
+    "explicit_delta::distractor_evidence": {
+      "run_count": 3,
+      "components": {
+        "schema_validity": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "exact_evidence_array_preservation": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "residual_unknown_vocabulary_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "state_transition_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "transition_gate_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "retention_attestation_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "controlled_state_mutation_success": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        }
+      },
+      "cell_pass": true
+    },
+    "explicit_delta::evidence_order_shuffled": {
+      "run_count": 3,
+      "components": {
+        "schema_validity": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "exact_evidence_array_preservation": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "residual_unknown_vocabulary_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "state_transition_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "transition_gate_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "retention_attestation_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "controlled_state_mutation_success": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        }
+      },
+      "cell_pass": true
+    },
+    "explicit_delta::field_alias": {
+      "run_count": 3,
+      "components": {
+        "schema_validity": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "exact_evidence_array_preservation": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "residual_unknown_vocabulary_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "state_transition_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "transition_gate_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "retention_attestation_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "controlled_state_mutation_success": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        }
+      },
+      "cell_pass": true
+    },
+    "explicit_delta::unknown_state_paraphrase": {
+      "run_count": 3,
+      "components": {
+        "schema_validity": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "exact_evidence_array_preservation": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "residual_unknown_vocabulary_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "state_transition_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "transition_gate_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "retention_attestation_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "controlled_state_mutation_success": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        }
+      },
+      "cell_pass": true
+    },
+    "postcondition_only::canonical": {
+      "run_count": 3,
+      "components": {
+        "schema_validity": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "exact_evidence_array_preservation": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "residual_unknown_vocabulary_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "state_transition_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "transition_gate_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "retention_attestation_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "controlled_state_mutation_success": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        }
+      },
+      "cell_pass": true
+    },
+    "postcondition_only::distractor_evidence": {
+      "run_count": 3,
+      "components": {
+        "schema_validity": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "exact_evidence_array_preservation": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "residual_unknown_vocabulary_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "state_transition_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "transition_gate_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "retention_attestation_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "controlled_state_mutation_success": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        }
+      },
+      "cell_pass": true
+    },
+    "postcondition_only::evidence_order_shuffled": {
+      "run_count": 3,
+      "components": {
+        "schema_validity": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "exact_evidence_array_preservation": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "residual_unknown_vocabulary_accuracy": {
+          "successes": 2,
+          "total": 3,
+          "rate": 0.666667,
+          "wilson_95": [
+            0.207655,
+            0.93851
+          ]
+        },
+        "state_transition_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "transition_gate_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "retention_attestation_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "controlled_state_mutation_success": {
+          "successes": 2,
+          "total": 3,
+          "rate": 0.666667,
+          "wilson_95": [
+            0.207655,
+            0.93851
+          ]
+        }
+      },
+      "cell_pass": true
+    },
+    "postcondition_only::field_alias": {
+      "run_count": 3,
+      "components": {
+        "schema_validity": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "exact_evidence_array_preservation": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "residual_unknown_vocabulary_accuracy": {
+          "successes": 2,
+          "total": 3,
+          "rate": 0.666667,
+          "wilson_95": [
+            0.207655,
+            0.93851
+          ]
+        },
+        "state_transition_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "transition_gate_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "retention_attestation_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "controlled_state_mutation_success": {
+          "successes": 2,
+          "total": 3,
+          "rate": 0.666667,
+          "wilson_95": [
+            0.207655,
+            0.93851
+          ]
+        }
+      },
+      "cell_pass": true
+    },
+    "postcondition_only::unknown_state_paraphrase": {
+      "run_count": 3,
+      "components": {
+        "schema_validity": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "exact_evidence_array_preservation": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "residual_unknown_vocabulary_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "state_transition_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "transition_gate_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "retention_attestation_accuracy": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        },
+        "controlled_state_mutation_success": {
+          "successes": 3,
+          "total": 3,
+          "rate": 1.0,
+          "wilson_95": [
+            0.438494,
+            1.0
+          ]
+        }
+      },
+      "cell_pass": true
+    }
+  },
+  "primary_comparison": {
+    "metric": "residual_unknown_vocabulary_accuracy",
+    "explicit_delta_successes": 15,
+    "explicit_delta_total": 15,
+    "postcondition_only_successes": 13,
+    "postcondition_only_total": 15,
+    "risk_difference": 0.133333,
+    "engineering_effect_threshold": 0.2,
+    "fisher_exact_two_sided_p": 0.48275862
+  },
+  "hypotheses": {
+    "H1_delta_robustness": true,
+    "H2_delta_effect": false,
+    "H3_obligation_preservation": true,
+    "H4_no_regression": true
+  },
+  "decision": "mixed_result",
+  "execution_integrity": {
+    "completed_calls": 30,
+    "provider_errors": 0,
+    "retries": 0,
+    "prompt_tokens": 60201,
+    "completion_tokens": 14774,
+    "total_tokens": 74975,
+    "reasoning_tokens": 0,
+    "latency_ms": [
+      23250,
+      21906,
+      19453,
+      18875,
+      24297,
+      26141,
+      25797,
+      24781,
+      20812,
+      22329,
+      19328,
+      20422,
+      19313,
+      26015,
+      20859,
+      18375,
+      24985,
+      20297,
+      22109,
+      17406,
+      23860,
+      27078,
+      18875,
+      19547,
+      23640,
+      23000,
+      20016,
+      23328,
+      18781,
+      20079
+    ]
+  }
+}

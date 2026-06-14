@@ -1,0 +1,47 @@
+{
+  "bundle_id": "stage-b-v53-p2--field-alias_evidence_001",
+  "items": [
+    {
+      "evidence_id": "ev-01",
+      "type": "EXTRACTED",
+      "claim": "Stage B v4-local passed all local gates.",
+      "source": "P2-E136"
+    },
+    {
+      "evidence_id": "ev-04",
+      "type": "AMBIGUOUS",
+      "claim": "Stage B v3 macros retained mixed failed cells.",
+      "source": "P2-E133"
+    },
+    {
+      "evidence_id": "ev-06",
+      "type": "EXTRACTED",
+      "claim": "Stage B v4 isolated smoke passed all eight runs.",
+      "source": "P2-E140"
+    },
+    {
+      "evidence_id": "ev-08",
+      "type": "PROPOSED",
+      "claim": "A state transition should follow a clean local gate.",
+      "source": "Stage B v5 plan"
+    },
+    {
+      "evidence_id": "ev-09",
+      "type": "EXTRACTED",
+      "claim": "The fixture event approves provider execution.",
+      "source": "event-api-approval-001"
+    },
+    {
+      "evidence_id": "ev-10",
+      "type": "EXTRACTED",
+      "claim": "Stage B v4 recomposition smoke completed four calls.",
+      "source": "P2-E145"
+    },
+    {
+      "evidence_id": "ev-11",
+      "type": "EXTRACTED",
+      "claim": "All four bounded recomposition outputs passed.",
+      "source": "P2-E146"
+    }
+  ]
+}

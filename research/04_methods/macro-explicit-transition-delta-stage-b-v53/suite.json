@@ -1,0 +1,34 @@
+{
+  "suite_id": "stage_b_v53_explicit_transition_delta",
+  "protocol_arms": [
+    "postcondition-only",
+    "explicit-delta"
+  ],
+  "model_visible_profiles": [
+    "P1",
+    "P2"
+  ],
+  "conditions": [
+    "canonical",
+    "field-alias",
+    "evidence-order-shuffled",
+    "distractor-evidence",
+    "unknown-state-paraphrase"
+  ],
+  "fixture_count": 10,
+  "known_bad_count": 100,
+  "fixtures": [
+    "stage-b-v53-p1--canonical",
+    "stage-b-v53-p1--field-alias",
+    "stage-b-v53-p1--evidence-order-shuffled",
+    "stage-b-v53-p1--distractor-evidence",
+    "stage-b-v53-p1--unknown-state-paraphrase",
+    "stage-b-v53-p2--canonical",
+    "stage-b-v53-p2--field-alias",
+    "stage-b-v53-p2--evidence-order-shuffled",
+    "stage-b-v53-p2--distractor-evidence",
+    "stage-b-v53-p2--unknown-state-paraphrase"
+  ],
+  "provider_calls": 0,
+  "pooling_policy": "must_not_pool_with_v51_or_v52"
+}

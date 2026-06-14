@@ -1,0 +1,23 @@
+{
+  "run_id": "stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r2",
+  "fixture": "stage-b-v53-p2--evidence-order-shuffled",
+  "task_class": "stage_b_v53_explicit_transition_delta_ablation",
+  "model": "budget_model",
+  "harness_arm": "G9",
+  "protocol_arm": "explicit_delta",
+  "perturbation_condition": "evidence_order_shuffled",
+  "validation_status": "complete",
+  "passed": true,
+  "metrics": {
+    "task_success": 1.0,
+    "schema_validity": 1.0,
+    "exact_evidence_array_preservation": 1.0,
+    "residual_unknown_vocabulary_accuracy": 1.0,
+    "state_transition_accuracy": 1.0,
+    "transition_gate_accuracy": 1.0,
+    "retention_attestation_accuracy": 1.0,
+    "controlled_state_mutation_success": 1.0,
+    "atom_primary_metric": 1.0
+  },
+  "mock": false
+}

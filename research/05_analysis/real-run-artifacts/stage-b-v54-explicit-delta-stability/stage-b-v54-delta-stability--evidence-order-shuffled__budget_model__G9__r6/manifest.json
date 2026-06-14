@@ -1,0 +1,16 @@
+{
+  "run_id": "stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r6",
+  "fixture": "stage-b-v53-p2--evidence-order-shuffled",
+  "task_type": "stage_b_v53_explicit_transition_delta_ablation",
+  "model": "budget_model",
+  "harness_arm": "G9",
+  "status": "pending",
+  "paths": {
+    "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v54-explicit-delta-stability\\stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r6\\output.md",
+    "tool_trace": "research\\05_analysis\\real-run-artifacts\\stage-b-v54-explicit-delta-stability\\stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r6\\tool_trace.jsonl",
+    "validation_report": "research\\05_analysis\\real-run-artifacts\\stage-b-v54-explicit-delta-stability\\stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r6\\validation_report.json",
+    "metrics": "research\\05_analysis\\real-run-artifacts\\stage-b-v54-explicit-delta-stability\\stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r6\\metrics.json",
+    "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v54-explicit-delta-stability\\stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r6\\prompt.md",
+    "adapter_request": "research\\05_analysis\\real-run-artifacts\\stage-b-v54-explicit-delta-stability\\stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r6\\adapter_request.json"
+  }
+}

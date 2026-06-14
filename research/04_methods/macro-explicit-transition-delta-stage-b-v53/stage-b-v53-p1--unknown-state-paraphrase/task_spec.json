@@ -1,0 +1,21 @@
+{
+  "task_id": "stage_b_v53_p1__unknown_state_paraphrase",
+  "task_type": "stage_b_v53_explicit_transition_delta_ablation",
+  "objective": "Apply one supplied state transition while preserving exact evidence bindings, residual state, the complete gate, and the retention attestation.",
+  "protocol_profile": "P1",
+  "perturbation_condition": "unknown_state_paraphrase",
+  "constraints": [
+    "Use only the supplied fixture event.",
+    "Use `evidence_ids` as the only reference field.",
+    "Copy every `evidence_bindings` slot and array exactly.",
+    "Satisfy `required_postconditions` exactly.",
+    "Copy the complete required transition gate exactly.",
+    "Return exactly one JSON object with no extra prose."
+  ],
+  "success_conditions": [
+    "Schema validity passes.",
+    "Residual state exactly matches the declared result.",
+    "All four evidence arrays remain exact.",
+    "The transition, complete gate, and attestation remain exact."
+  ]
+}

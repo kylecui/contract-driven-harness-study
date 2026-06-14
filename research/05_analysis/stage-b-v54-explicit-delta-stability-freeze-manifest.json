@@ -1,0 +1,1929 @@
+{
+  "protocol_id": "stage-b-v54-explicit-delta-stability-40run",
+  "prepared_date": "2026-06-14",
+  "base_commit": "178ca0624e182f7dfc418b60bac5794e07022d81",
+  "hash_algorithm": "sha256",
+  "file_count": 384,
+  "files": [
+    {
+      "path": "research/04_methods/benchmark-matrix-stage-b-v54-explicit-delta-stability.json",
+      "bytes": 11533,
+      "sha256": "38c5cb2ad45046156bb567be93faedddad41e524f5987f825eadd0e45f69ba56"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/evaluation_spec.json",
+      "bytes": 7404,
+      "sha256": "47c2da230590ab3dc61f3c17856a462cbcca24f8634c5200076fc3912689dfe9"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/evidence_bundle.json",
+      "bytes": 1281,
+      "sha256": "585ac9675ca8aa6eb5f29d59fa1e000d11f1f3c1d4f24f91f810e8fcfc80997e"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/golden_output.json",
+      "bytes": 1902,
+      "sha256": "e0d62513498b295b84cb7ee6165d02aaac040d69f323c2c0b077d2fcce2bd6c4"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/input.md",
+      "bytes": 629,
+      "sha256": "e2b52a8ced0754fda16e2922a35639db0087567f7dec7c859971dbadff814c09"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/known_bad_outputs/evidence_omission.json",
+      "bytes": 1884,
+      "sha256": "95a1cc71947e1c94e91f7dbea288c0bef649764134ca9e6cb5456fde81cfc1ca"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 1861,
+      "sha256": "77bcd93a9df96833e18fc01a2be2324ab4439e951864d295f2b0ccdf75316a87"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/known_bad_outputs/obsolete_forbidden_inference_retained.json",
+      "bytes": 1946,
+      "sha256": "ea1e18d003d9b991b7432fb532e27ca4af3e24cfbc036dd5b28df548d4e7ee78"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/known_bad_outputs/residual_forbidden_reordered.json",
+      "bytes": 1902,
+      "sha256": "90b83d190cfe21fe7b6921d6bc3c1354af39637e947e55ec62a04b1b2f5a9e47"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 1902,
+      "sha256": "e3bee23f21afd60370b9fee7dd7711a783521f54bb7ba989eb20e9dbee1232a4"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 1884,
+      "sha256": "a6458eb2a9e2c9ef77b532befefbc753a0d1c7c8ad0ce4460869067e76bdca27"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/known_bad_outputs/transitioned_state_retained_as_unknown.json",
+      "bytes": 1933,
+      "sha256": "002b4c95c9e5d96686c7a8d142ded0d9eab95617f8053ba75acdc127a1d67485"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 1922,
+      "sha256": "c7feab8e0d3dc8d2885b78c6c0b7e3cc58034d428314b4fb0a52d7910d11fa5f"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 1874,
+      "sha256": "a811c5a31f792bf26c06cc8aa001a374c4a4b593bce47938a6d24367394c29b9"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/known_bad_outputs/wrong_transition_value.json",
+      "bytes": 1898,
+      "sha256": "f524fb8455212fa9f77833db8b574713f98372c36941aa562cbe6e719b975a21"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/memory_slice.json",
+      "bytes": 450,
+      "sha256": "f8c9fb1aad9b979b2d3914249f7656a02482ad9cbf9e811bf5a63a37bbf8331e"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/output_contract.json",
+      "bytes": 3919,
+      "sha256": "55af8fc540fdac8d440a7f70d91b18e7410cf44098d13cb92817971ffe1e5351"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--canonical/task_spec.json",
+      "bytes": 969,
+      "sha256": "fa8b3c18d96326a9826bc3b4a8d24c1c5bea2b725fe3280302b8e40e4f45c6e0"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/evaluation_spec.json",
+      "bytes": 7414,
+      "sha256": "ce221635822ec6728f0b35f03b2b739fa5b1687ffab7a03426babe897e5a98b4"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/evidence_bundle.json",
+      "bytes": 1651,
+      "sha256": "cc3adef7f9d10150a3a2936150c4f19737d06ccc119a07034c971f9fdb418e48"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/golden_output.json",
+      "bytes": 1902,
+      "sha256": "e0d62513498b295b84cb7ee6165d02aaac040d69f323c2c0b077d2fcce2bd6c4"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/input.md",
+      "bytes": 639,
+      "sha256": "edb47eccbe67868a0303b625375273d3a6da4a5d2cc0882806be5b3ce89496c8"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/known_bad_outputs/evidence_omission.json",
+      "bytes": 1884,
+      "sha256": "95a1cc71947e1c94e91f7dbea288c0bef649764134ca9e6cb5456fde81cfc1ca"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 1861,
+      "sha256": "77bcd93a9df96833e18fc01a2be2324ab4439e951864d295f2b0ccdf75316a87"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/known_bad_outputs/obsolete_forbidden_inference_retained.json",
+      "bytes": 1946,
+      "sha256": "ea1e18d003d9b991b7432fb532e27ca4af3e24cfbc036dd5b28df548d4e7ee78"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/known_bad_outputs/residual_forbidden_reordered.json",
+      "bytes": 1902,
+      "sha256": "90b83d190cfe21fe7b6921d6bc3c1354af39637e947e55ec62a04b1b2f5a9e47"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 1902,
+      "sha256": "e3bee23f21afd60370b9fee7dd7711a783521f54bb7ba989eb20e9dbee1232a4"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 1884,
+      "sha256": "a6458eb2a9e2c9ef77b532befefbc753a0d1c7c8ad0ce4460869067e76bdca27"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/known_bad_outputs/transitioned_state_retained_as_unknown.json",
+      "bytes": 1933,
+      "sha256": "002b4c95c9e5d96686c7a8d142ded0d9eab95617f8053ba75acdc127a1d67485"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 1922,
+      "sha256": "c7feab8e0d3dc8d2885b78c6c0b7e3cc58034d428314b4fb0a52d7910d11fa5f"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 1874,
+      "sha256": "a811c5a31f792bf26c06cc8aa001a374c4a4b593bce47938a6d24367394c29b9"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/known_bad_outputs/wrong_transition_value.json",
+      "bytes": 1898,
+      "sha256": "f524fb8455212fa9f77833db8b574713f98372c36941aa562cbe6e719b975a21"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/memory_slice.json",
+      "bytes": 460,
+      "sha256": "8a3ac890e3de71cce79c83a689f7ab7d839b5fbfee2690280fe3343fcea0b5ae"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/output_contract.json",
+      "bytes": 3929,
+      "sha256": "dd198a8f310fca58fe0894030deaafce5dd023febb8027be26884a20be1770c5"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--distractor-evidence/task_spec.json",
+      "bytes": 989,
+      "sha256": "8007e1ea8a06ac5f5e964ef6444721a624ab11b1cd835c38639fe94a581e18c2"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/evaluation_spec.json",
+      "bytes": 7418,
+      "sha256": "c8d6bed421db476efde1611229c34bf83bb9a3bdbce576162146758363199762"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/evidence_bundle.json",
+      "bytes": 1295,
+      "sha256": "9d2b3ed101ff1dc43a3c38d4c83da663039f802bcb906558797a34b69e64a6ec"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/golden_output.json",
+      "bytes": 1902,
+      "sha256": "e0d62513498b295b84cb7ee6165d02aaac040d69f323c2c0b077d2fcce2bd6c4"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/input.md",
+      "bytes": 643,
+      "sha256": "b261d6c176f978d850d31a8c7cbaab1d2772a734c4c08af6d266c72b42f0a08e"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/known_bad_outputs/evidence_omission.json",
+      "bytes": 1884,
+      "sha256": "95a1cc71947e1c94e91f7dbea288c0bef649764134ca9e6cb5456fde81cfc1ca"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 1861,
+      "sha256": "77bcd93a9df96833e18fc01a2be2324ab4439e951864d295f2b0ccdf75316a87"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/known_bad_outputs/obsolete_forbidden_inference_retained.json",
+      "bytes": 1946,
+      "sha256": "ea1e18d003d9b991b7432fb532e27ca4af3e24cfbc036dd5b28df548d4e7ee78"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/known_bad_outputs/residual_forbidden_reordered.json",
+      "bytes": 1902,
+      "sha256": "90b83d190cfe21fe7b6921d6bc3c1354af39637e947e55ec62a04b1b2f5a9e47"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 1902,
+      "sha256": "e3bee23f21afd60370b9fee7dd7711a783521f54bb7ba989eb20e9dbee1232a4"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 1884,
+      "sha256": "a6458eb2a9e2c9ef77b532befefbc753a0d1c7c8ad0ce4460869067e76bdca27"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/known_bad_outputs/transitioned_state_retained_as_unknown.json",
+      "bytes": 1933,
+      "sha256": "002b4c95c9e5d96686c7a8d142ded0d9eab95617f8053ba75acdc127a1d67485"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 1922,
+      "sha256": "c7feab8e0d3dc8d2885b78c6c0b7e3cc58034d428314b4fb0a52d7910d11fa5f"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 1874,
+      "sha256": "a811c5a31f792bf26c06cc8aa001a374c4a4b593bce47938a6d24367394c29b9"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/known_bad_outputs/wrong_transition_value.json",
+      "bytes": 1898,
+      "sha256": "f524fb8455212fa9f77833db8b574713f98372c36941aa562cbe6e719b975a21"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/memory_slice.json",
+      "bytes": 464,
+      "sha256": "3d7af865e24d7d710f28671f467a042a64178bfa08025a7839bc9783faae4be2"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/output_contract.json",
+      "bytes": 3933,
+      "sha256": "3ad58cbcb8922c82c2b757a25f841e05b9b2ac1bcf244a72585223833ac40fcf"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--evidence-order-shuffled/task_spec.json",
+      "bytes": 997,
+      "sha256": "68d13b457613e6ccaba090210156f0ce1f11f25b0949c522bafc806675f0861a"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/evaluation_spec.json",
+      "bytes": 7441,
+      "sha256": "ad4c56a43bd7887de9310a07eba10b808aa3ebd19b250d2564b164eaab0a7811"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/evidence_bundle.json",
+      "bytes": 1283,
+      "sha256": "31182ac50c604951ba377d6c685a1bdcb3f745e3cc54e6b4053e882f643fb851"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/golden_output.json",
+      "bytes": 1947,
+      "sha256": "4284fa22fb55849a6e32aa11df4adb5b8fcdc88777b40361bb88bcbc358061b7"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/input.md",
+      "bytes": 636,
+      "sha256": "0ee94f87b381c776e960aa3111582d833738f23b7c320134f50810ea3d29007a"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/known_bad_outputs/evidence_omission.json",
+      "bytes": 1929,
+      "sha256": "6854bbba36b4833d965092c4e1ce7528a5ed52b6c851f991634a16c3efa4fedf"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 1901,
+      "sha256": "a3491e8e9224302b548125d5b4859f48a43d58aa6f26351b04855d667d0ee56f"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/known_bad_outputs/obsolete_forbidden_inference_retained.json",
+      "bytes": 1991,
+      "sha256": "1353663e2b0738ca8c407e8932595c1d4201b84f1e39c3c5b4584634bd17f7c8"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/known_bad_outputs/residual_forbidden_reordered.json",
+      "bytes": 1947,
+      "sha256": "5c999ffcde7b7413f5462030e45dc8681a4a5c38542f61c2f04f5f8316de69db"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 1947,
+      "sha256": "27ef7011fcfca0cd91a5a74cc2323f9455fd76e9e5f3889715e84b2f08dbd208"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 1929,
+      "sha256": "7cc48917202fa6e0eaf0baa62e714e327ca92b958725d887e307f2f07404065b"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/known_bad_outputs/transitioned_state_retained_as_unknown.json",
+      "bytes": 1978,
+      "sha256": "1d5694494173294d418353af41a0ebeb0f142fc2cad32a5d00f122b469ff2e67"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 1927,
+      "sha256": "fc2fba3773297e008ca10e1c603ab9958a4a8e2cb416561edbc69197ad2407e0"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 1919,
+      "sha256": "84baf6156c156c8cffe2aab98978d50a2707b41f317e68061b699203597f3406"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/known_bad_outputs/wrong_transition_value.json",
+      "bytes": 1943,
+      "sha256": "bc7f9634f60a34f68cc557dd7401e6bf00700e0e265a6aa622223257bc4de66e"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/memory_slice.json",
+      "bytes": 452,
+      "sha256": "652f2aa460dc39750a1999f9b782609b27e5a6d28e1f67c5b6e6b30ba077b0d8"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/output_contract.json",
+      "bytes": 3991,
+      "sha256": "8d80be9f10a4895ebd002748dd6f567e6247b6e9e9b54c6936d490a80cd26e1b"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--field-alias/task_spec.json",
+      "bytes": 978,
+      "sha256": "53ed25f9600b6c3e3045f8e1a8b72422d0dbb75505fd601d786726146f20cf5c"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/evaluation_spec.json",
+      "bytes": 7619,
+      "sha256": "f0032c252d63c6297fb568b268ee056d4fc7ef08236b4b20b74f08b936e16fb9"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/evidence_bundle.json",
+      "bytes": 1296,
+      "sha256": "619f02af559dea46bf7440dc89021aaca4c027b2b8654ee8e9050da5bab8d98c"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/golden_output.json",
+      "bytes": 2010,
+      "sha256": "e2f69fffef20566159ab081b357bb626471bfe70b695772d38c71bcbc106e201"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/input.md",
+      "bytes": 644,
+      "sha256": "2060d1fb1b6c01401217b28e95a623d2276bdeaec5d5f0ea7d9ac7ca4d8d4a84"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/known_bad_outputs/evidence_omission.json",
+      "bytes": 1992,
+      "sha256": "92a978ae74b01c1abcea6e2a6a7199834fc55e88befae466c182b155445a49af"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 1969,
+      "sha256": "36cc055278752ebe685e5fa291e3b031d7c3edb64101b4064f5e7a52b3a9e743"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/known_bad_outputs/obsolete_forbidden_inference_retained.json",
+      "bytes": 2070,
+      "sha256": "ef87737510c3c267a6b3f05de9719084089bd11941efc0e76e9a6c12b26a7988"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/known_bad_outputs/residual_forbidden_reordered.json",
+      "bytes": 2010,
+      "sha256": "6150ea40e4542518cbcf27d5ed750c7b2f9c9fafdeb32eb3e9491eaba40f3dc6"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 2010,
+      "sha256": "abfeeb88a10aa48f8197ab09b21cb275fb5463a7ffa652763f7eef8d568b9e1c"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 1992,
+      "sha256": "524c001b491c370eccc179603fedabd5ff255679ede96f36f9480ebfd9ea3b0d"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/known_bad_outputs/transitioned_state_retained_as_unknown.json",
+      "bytes": 2057,
+      "sha256": "1001783a8d27ad770c12ed9d78206eed7067185618aeda70e5b58a1ef1eb57aa"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 2030,
+      "sha256": "f986247209479facebc361f765619b0be6953afcb7ace1fa2caac04520422f11"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 1982,
+      "sha256": "1744ecc62dce853c7ecb27d58a4942e029919603a75d588e6f173855acfcaba1"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/known_bad_outputs/wrong_transition_value.json",
+      "bytes": 2006,
+      "sha256": "3fd7c9e897e815c6b2fde7ee16fcfd9c0c565e8b7c355eb05eb35ccc6ddda81b"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/memory_slice.json",
+      "bytes": 465,
+      "sha256": "31b85484830708c9e9bed7b818dbfe41031c3008f36860747910415fef89cc2c"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/output_contract.json",
+      "bytes": 4242,
+      "sha256": "2160081a705faf38acf3b9d087a3bbd4675084dcb273e14ed15b13a8e1435ede"
+    },
+    {
+      "path": "research/04_methods/macro-explicit-transition-delta-stage-b-v53/stage-b-v53-p2--unknown-state-paraphrase/task_spec.json",
+      "bytes": 999,
+      "sha256": "064ad7113b5b626a276d5ef8d906a00b67a8c8eea89280744cccd160a0478565"
+    },
+    {
+      "path": "research/04_methods/provider-config.siliconflow-reviewed.json",
+      "bytes": 500,
+      "sha256": "1ce1a847ad55b70b8ccaf5bbf24a9aed3d5496b9232571bcccc7601dca44e583"
+    },
+    {
+      "path": "research/04_methods/scripts/analyze_stage_b_v54_delta_stability.py",
+      "bytes": 6696,
+      "sha256": "65c4da629218ff981bb5c0c69b885af9cf35543dc68416806f1fff87d38911c5"
+    },
+    {
+      "path": "research/04_methods/scripts/build_stage_b_v54_delta_stability_matrix.py",
+      "bytes": 2167,
+      "sha256": "bc3c48db2f9292a035ce935f760f297aa9c065c987b3c0c2f3f2d2285775dcf9"
+    },
+    {
+      "path": "research/04_methods/scripts/evaluate_stage_b_v52_evidence_binding_ablation.py",
+      "bytes": 17462,
+      "sha256": "a6ba42c18198df66edc8e9c384e58d188cc7b01e8cf2b71689e2a016699998d8"
+    },
+    {
+      "path": "research/04_methods/scripts/evaluate_stage_b_v53_explicit_transition_delta.py",
+      "bytes": 11101,
+      "sha256": "9e3d0a31206c6ccb85dde5002db5d8b9b6bc83addaad81fdb3098f5c4677f982"
+    },
+    {
+      "path": "research/04_methods/scripts/evaluate_stage_b_v5_state_transition.py",
+      "bytes": 17994,
+      "sha256": "5a46a0adbdc85791e16d97c0fd688ba9211854fdf5cc1a7a7a080a96fbbcca19"
+    },
+    {
+      "path": "research/04_methods/scripts/test_analyze_stage_b_v54_delta_stability.py",
+      "bytes": 3696,
+      "sha256": "7c924e6529e333a5674de2a3ea74cc07fd8116985e24db3d59f0837a12b0399d"
+    },
+    {
+      "path": "research/05_analysis/benchmark-stage-b-v54-explicit-delta-stability-packets.jsonl",
+      "bytes": 263408,
+      "sha256": "1ae50cb812b3897be5bf065ed1eba9affcda96fabf6737dd19fc615d20bf0cc7"
+    },
+    {
+      "path": "research/05_analysis/benchmark-stage-b-v54-explicit-delta-stability-packets.md",
+      "bytes": 810,
+      "sha256": "a571e1c2a9913fa81e396ad88da7abe8d9df3b1514c0ab8fdf89184a9685e69c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability-manifest-with-prompts.json",
+      "bytes": 60285,
+      "sha256": "3f5e658103ae9d9c3ce17071ae381a02c800b64de4e3dc1abf5d44cd84021f17"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability-manifest.json",
+      "bytes": 44829,
+      "sha256": "b7fc1a759feb26e161f88febd08ba8911847f808a436332e068a959f4afb1515"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r1/adapter_request.json",
+      "bytes": 432,
+      "sha256": "5292cd1c211962b0803b0805c4d74d786896edae6270c03488b13f9d51f375a7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r1/manifest.json",
+      "bytes": 1369,
+      "sha256": "6c3623bad7b79d191ecb26498bc43ed515d20c03fec54ae562aa1072064b5165"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r1/prompt.md",
+      "bytes": 8104,
+      "sha256": "3dadf3463f9a5a4117db267adbb72875ee33fd2db6bb570def99795d5ee2fb36"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r2/adapter_request.json",
+      "bytes": 432,
+      "sha256": "da6ab227463807d4f82546696163560d0ad4dbf31de7935142433959b09e9383"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r2/manifest.json",
+      "bytes": 1369,
+      "sha256": "4a54b9fe5f9358712f25c776fbd1ae3a8d45ab85c6d0fbfdad8ddea25d83df43"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r2/prompt.md",
+      "bytes": 8104,
+      "sha256": "a9a6903d66b2a590a310c07cd8c14e821bce619c9fa8d9673de3c3c65b4f422f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r3/adapter_request.json",
+      "bytes": 432,
+      "sha256": "bb0020f309e4a279b2626e85484093d6c5d11cdfc13c8765919b2756033ba899"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r3/manifest.json",
+      "bytes": 1369,
+      "sha256": "2c37c873eaa9cfc0c2206bef72ab057e6666170b0f1fa55dd480cf73d9c5ed69"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r3/prompt.md",
+      "bytes": 8104,
+      "sha256": "01456dfdafb179d21decdeba4f5ef2b5a1cc6b04953bc38fa2995890841c13d4"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r4/adapter_request.json",
+      "bytes": 432,
+      "sha256": "5d85c8142605d18d365ddcb67aa37908367aec61ab53566d88b8607631a1e6f8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r4/manifest.json",
+      "bytes": 1369,
+      "sha256": "ca2701be39bfdcdee6e3ac6ed4ac4cd3f5bee3fdbd6bf194357d8545dc9055dd"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r4/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r4/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r4/prompt.md",
+      "bytes": 8104,
+      "sha256": "69183489571656e31aed0fe46be19282ffc22ff2dd1675fc52edd95d486193b3"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r4/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r4/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r5/adapter_request.json",
+      "bytes": 432,
+      "sha256": "26678c1555dda62e55988b8598aac7bf2e0b69b0ae4cdf46ad328eee830aaa34"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r5/manifest.json",
+      "bytes": 1369,
+      "sha256": "06d72da2c303c42301443d872e3c2d1ef91142d1fb2d8198466ef0702d0772d6"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r5/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r5/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r5/prompt.md",
+      "bytes": 8104,
+      "sha256": "253a657ade5170c52f8275e180fd3c2c0e61d49eac41bbb62ca1af83a730aa02"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r5/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r5/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r6/adapter_request.json",
+      "bytes": 432,
+      "sha256": "20995de978923a414324a4ba5dd64046a056e56f6cfcb4c45e6935b07068a9f7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r6/manifest.json",
+      "bytes": 1369,
+      "sha256": "e1ba299650d8606fb038f5eb92aad8e7e23301da89ccd1f2ec852a07848e24b6"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r6/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r6/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r6/prompt.md",
+      "bytes": 8104,
+      "sha256": "f65746bf16500354e209bb9f28f6220e7f2d7378ef03a80edd1636724191865f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r6/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r6/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r7/adapter_request.json",
+      "bytes": 432,
+      "sha256": "da2fef72c24cb1671453bcfa7049b093f345f7a5646b678ac869a53de3eb2d7d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r7/manifest.json",
+      "bytes": 1369,
+      "sha256": "53419b74ea798575a0826e872b9aec8258c152c312a0d73c8a434bc6ed6ade31"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r7/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r7/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r7/prompt.md",
+      "bytes": 8104,
+      "sha256": "1615f69882da3018a201ada67dbed870ccfda2df1f0c21642dd3c5fd3bb18aa1"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r7/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r7/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r8/adapter_request.json",
+      "bytes": 432,
+      "sha256": "ccfe2b726237307c7672219ac9a232e43fde7afca093bda4e7d5f13ef59f2322"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r8/manifest.json",
+      "bytes": 1369,
+      "sha256": "84b1c7a5bb5e7e1c0629dc0668f0e3489ec6d126921f83b23fee08e15bc5f86f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r8/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r8/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r8/prompt.md",
+      "bytes": 8104,
+      "sha256": "661a8aad10f40f971f36f64a2c24e2ee02ad74456f85844d83a2845bdb2395da"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r8/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--canonical__budget_model__G9__r8/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r1/adapter_request.json",
+      "bytes": 452,
+      "sha256": "dd93d5ad053ab9675afd20feaa1c9f8c74ecf388d3510cf13441cd5dfc8aae2a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r1/manifest.json",
+      "bytes": 1449,
+      "sha256": "fa086094731e42cc37735b881646f77df10877e41c419363369110087b1b73e9"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r1/prompt.md",
+      "bytes": 8544,
+      "sha256": "633ff6f1f6b0408178064d3fc929a31586feab54b9c784fde7c5b9c3b1762f32"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r2/adapter_request.json",
+      "bytes": 452,
+      "sha256": "e22d19605032ef30fd4a22a5563d765c49e25afa449cde1a0f1b41a50f0b3398"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r2/manifest.json",
+      "bytes": 1449,
+      "sha256": "541af4ba57c668aacb1fddb2f79b13ddfe59c4e32c05cc612ed4d1429d36ae81"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r2/prompt.md",
+      "bytes": 8544,
+      "sha256": "93e8ae9f3787930c102f830c4ba47ffffcbbac206327c4ae26ec827889142854"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r3/adapter_request.json",
+      "bytes": 452,
+      "sha256": "5acf85e79f1062c5fb568325ef525fcbf655fecfda5dd74a3bbdbeb7844a8979"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r3/manifest.json",
+      "bytes": 1449,
+      "sha256": "294c65ed967c2cb0897c58f9ef0542d4ba498ff645afb187c7d6f7e18390dfd7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r3/prompt.md",
+      "bytes": 8544,
+      "sha256": "276efdac422fbf8c57cd1ca96da25c5606a1e5abd92cc0b98494d49e2d5198eb"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r4/adapter_request.json",
+      "bytes": 452,
+      "sha256": "4c9f9296a95fcdba7f4547a6ca31dddef5de280f6958c077f4715f45ed68b206"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r4/manifest.json",
+      "bytes": 1449,
+      "sha256": "edfe099584e2725e0a5efec4b1a4323f9ecb0237ed7fe1cf9213ba524584de6f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r4/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r4/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r4/prompt.md",
+      "bytes": 8544,
+      "sha256": "4966bbbff04e8b42e9b57dccdd278723f494933f4866a8ace5005ac936509df0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r4/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r4/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r5/adapter_request.json",
+      "bytes": 452,
+      "sha256": "da5c2423a98a870b4d29502ac9bb2ff4c7a08d4c584f84e4154ca034e6453f77"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r5/manifest.json",
+      "bytes": 1449,
+      "sha256": "7695e433ce0e7622cf5ea0df92bf864ec5a520a7946ede0ecfe6ea2526d4bbc5"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r5/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r5/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r5/prompt.md",
+      "bytes": 8544,
+      "sha256": "f030aca502c9f0fc33e5988ab15adec61dd09fd1c9bbb57494466bb211de3230"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r5/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r5/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r6/adapter_request.json",
+      "bytes": 452,
+      "sha256": "01f4a140b5272e781070183a5f81de3aacfb1571ab1fdd47b8f9ce8fd9ae350e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r6/manifest.json",
+      "bytes": 1449,
+      "sha256": "2c111d1b3fbd0513d6a09be0aa2890df22c39a6d88e08aba320500b56fe7ba45"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r6/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r6/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r6/prompt.md",
+      "bytes": 8544,
+      "sha256": "c4f232795d476e4fd67d8678b842db8ca32dc91b3e06afd5a138ce71b1db8623"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r6/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r6/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r7/adapter_request.json",
+      "bytes": 452,
+      "sha256": "5505a0bfed57220048438651f0cd63c162fa74231df9bc7c9b3866d54c84a670"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r7/manifest.json",
+      "bytes": 1449,
+      "sha256": "8307d000ecff90a70fbef024848624fab34026da8eeeb7d31f13303544606558"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r7/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r7/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r7/prompt.md",
+      "bytes": 8544,
+      "sha256": "bb904b7017de517e5b1d207c7a5f9f07662ea24d7c55ae1bb0b92c0dcd5d6af6"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r7/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r7/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r8/adapter_request.json",
+      "bytes": 452,
+      "sha256": "466ee3b80b7b352740259e97b49f8df8ff8fd7162621776ff37c754e71707f18"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r8/manifest.json",
+      "bytes": 1449,
+      "sha256": "25a3c41d0464b7ed67d376b5819a4a63fe2f29bbd41b5ef46b69176308a5a2ba"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r8/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r8/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r8/prompt.md",
+      "bytes": 8544,
+      "sha256": "bf7f2d66d4d0997eed59beff8f76c859ecdd9b392e6315ac59add9d1d25f77d7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r8/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--distractor-evidence__budget_model__G9__r8/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r1/adapter_request.json",
+      "bytes": 460,
+      "sha256": "55934aff27fd39c3e98f41c7db78162b4548ea9b6d982e0ac83b783c848308ff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r1/manifest.json",
+      "bytes": 1481,
+      "sha256": "49c205fb351f41ea824da4372a13cfda446b53e45ea58d50c6f67ec6012fd24c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r1/prompt.md",
+      "bytes": 8216,
+      "sha256": "3f37d78599a0b7db99043c7fb50ad8f4afb7349353e837c6f88235d71b0c4f56"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r2/adapter_request.json",
+      "bytes": 460,
+      "sha256": "6508e2b3dd6e447f766478f63ef984ed97dd7a7c7c6c3149ab94c36bc464c848"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r2/manifest.json",
+      "bytes": 1481,
+      "sha256": "34d6bd0b628c32c235a1b7c562006aae8e5837e2fd20273ca139890b1cfa2e91"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r2/prompt.md",
+      "bytes": 8216,
+      "sha256": "134b36c10c97e57bf3a4b856cc4c28e00d744a025f88f30e5932f7a0e012c91d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r3/adapter_request.json",
+      "bytes": 460,
+      "sha256": "9338976ab8aca27114f61079c80ebf69f3247d03f0f959f72b9ebe202bb95cf1"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r3/manifest.json",
+      "bytes": 1481,
+      "sha256": "aacd0262d6d1c9193c730987b913bf603a83c88be906210fa53bfb572c471a34"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r3/prompt.md",
+      "bytes": 8216,
+      "sha256": "d75667f2d147629a39b44d40f47c1fd0e4bbe8715f4d09a936e40e15d3369a33"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r4/adapter_request.json",
+      "bytes": 460,
+      "sha256": "16fcd35e9d54177da3bbd4a2f1e64c6b3f2fc447fa2717e775dc928059b6e96f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r4/manifest.json",
+      "bytes": 1481,
+      "sha256": "9443c2296718701831a9d7fa5df760356483f43431d12e1fb371336d1e17efb4"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r4/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r4/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r4/prompt.md",
+      "bytes": 8216,
+      "sha256": "4f0e67f179009233e7ce068f2ba0f09cd7c436db1b71b5f6d77ea0d865310089"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r4/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r4/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r5/adapter_request.json",
+      "bytes": 460,
+      "sha256": "927b66a3f640e6feca855df2e4c398e0f974f6128b0dbc5b46ed1b8a48af6d2f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r5/manifest.json",
+      "bytes": 1481,
+      "sha256": "367f0c020de55cc934426d854dc03bdc6c9dbab7616c9e623fed147a6882e01e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r5/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r5/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r5/prompt.md",
+      "bytes": 8216,
+      "sha256": "57809be1210fede2c8d0a5fbbe4f01b52b0a49e9c62127ac970ecf5d405b5b19"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r5/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r5/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r6/adapter_request.json",
+      "bytes": 460,
+      "sha256": "1712b331e7bec6d1b38bae4793748c498c8e7e7dfc06076d595c048fa64eb8c0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r6/manifest.json",
+      "bytes": 1481,
+      "sha256": "6073ac0adb4c2f2e846929f41636e01ad28fe6d981483fd10b4a2317c4ac378f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r6/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r6/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r6/prompt.md",
+      "bytes": 8216,
+      "sha256": "e9ba6a82ec6a4d81dbda1d3668a0a4345eb53e8b3d8f0d770bc8772f3f95add7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r6/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r6/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r7/adapter_request.json",
+      "bytes": 460,
+      "sha256": "5203d18859878b33f8e0cf44a934a87f5c189ad45d2076aea7b07a10f2652066"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r7/manifest.json",
+      "bytes": 1481,
+      "sha256": "fc3767fa9f096e5c97635f5d8f7c69f18c3aa1ef5f76faf0b2f66be2318a9dd6"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r7/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r7/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r7/prompt.md",
+      "bytes": 8216,
+      "sha256": "781639d60600dcf26f82fe38d0a7852f415caca7aedaa2b2fa1a3bbbe3921630"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r7/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r7/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r8/adapter_request.json",
+      "bytes": 460,
+      "sha256": "630c90be14907adc32431045c3d3a6bd597162a9eb156d65cc6d448f5bdeb55d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r8/manifest.json",
+      "bytes": 1481,
+      "sha256": "c0931985d3aae3f8e9a13b12da4ef3d2f0d1fb497879cf48c9e0918c3794eae3"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r8/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r8/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r8/prompt.md",
+      "bytes": 8216,
+      "sha256": "eb181292e9b050324758c90b59eb5a97f4cc00dccd5a38de24bcd053a31f8ce8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r8/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--evidence-order-shuffled__budget_model__G9__r8/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r1/adapter_request.json",
+      "bytes": 436,
+      "sha256": "f1f17982f91f94d3be8dfba821330436f1b9ba38a3da5ec16d49b4edcfbebf3b"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r1/manifest.json",
+      "bytes": 1385,
+      "sha256": "d81f7d6b9b6d677844020719624e963048efef84d2832d793612170b65378648"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r1/prompt.md",
+      "bytes": 8200,
+      "sha256": "be29a968182f19d2f3735f5ef813eef0697f71a6cef2854c9aa0c9e51af9ee3d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r2/adapter_request.json",
+      "bytes": 436,
+      "sha256": "5419fb0998062379faaf7ed5af4248f0793a0c1152b332b926553dad4738300c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r2/manifest.json",
+      "bytes": 1385,
+      "sha256": "03430a9e70352fd9466d02125c7f773a39f2ea41f08d5238da4331086d630905"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r2/prompt.md",
+      "bytes": 8200,
+      "sha256": "d99cc2a8797ca8a19a4284bf63be1f8d05a80bc7734b8e4fd9f44637b12ac551"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r3/adapter_request.json",
+      "bytes": 436,
+      "sha256": "6ce8d74d06332cf10507da36fca5828b5cbbd7f55f3362876a92da9bd773d463"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r3/manifest.json",
+      "bytes": 1385,
+      "sha256": "d3c10ed9019349f6185d0bdf37d92fa2002f85556bcf4ad4060481a7bbba86b1"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r3/prompt.md",
+      "bytes": 8200,
+      "sha256": "6528374b93c0fe26dfbdc7f8ca8bfd7e27b6c9fad7044537ec5a923f34f4ff02"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r4/adapter_request.json",
+      "bytes": 436,
+      "sha256": "dc7b9898cc2ded4aa99027431f67385472d5c252a63e210b51ad7938441bc748"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r4/manifest.json",
+      "bytes": 1385,
+      "sha256": "58e00c2d2aaaed7679a0b76c3db7e2084bca41353c35631bfbbf1da02e9a5eb1"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r4/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r4/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r4/prompt.md",
+      "bytes": 8200,
+      "sha256": "d93975f3fecaab1c3a9e5a9de816b99100b42bfccdd39f17b3d810756531259d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r4/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r4/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r5/adapter_request.json",
+      "bytes": 436,
+      "sha256": "052fb4281be93c4e3f5066eef418cb7a755a6a2401b1ba1ed78c6c0e3db96597"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r5/manifest.json",
+      "bytes": 1385,
+      "sha256": "7fcbe9fa6c978545a0521fc8ea197f17d7af9f6ff20c90d7f4d71bc0d8145c3f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r5/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r5/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r5/prompt.md",
+      "bytes": 8200,
+      "sha256": "ab34ed290521bff354b9cd9ffb1772fb42890e193a1625c0b7b27b46f916348c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r5/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r5/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r6/adapter_request.json",
+      "bytes": 436,
+      "sha256": "b91996e77d68f14cbd701f99f2803654f712d5f50b54a158ab9b058ad672bc82"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r6/manifest.json",
+      "bytes": 1385,
+      "sha256": "f4c70b35fa725e6abb4bbfa4fab30d7832790ade6cc6b7de736cdf4f39a06028"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r6/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r6/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r6/prompt.md",
+      "bytes": 8200,
+      "sha256": "7813fe9fab7230820b8435a943f2cb218f85baad01436e3e64d25b68b68ea41b"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r6/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r6/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r7/adapter_request.json",
+      "bytes": 436,
+      "sha256": "137de391dbcfbd4c15bea37375842cd9fbe0491b69f72667573d5bfb86512a6e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r7/manifest.json",
+      "bytes": 1385,
+      "sha256": "b5b5dec342a2b7c0e86fad20a7da794a22119f38ea165a78802d8f18563451a2"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r7/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r7/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r7/prompt.md",
+      "bytes": 8200,
+      "sha256": "88ab301f6ea87b3472036b1ee883214bef8cb0f535241c09edc947b825d074df"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r7/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r7/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r8/adapter_request.json",
+      "bytes": 436,
+      "sha256": "82829e10f20ffd87ffba30dcb771c28e4a3aae50ea2dbdc9773492f8d5a7aea6"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r8/manifest.json",
+      "bytes": 1385,
+      "sha256": "19e99918b607dfbd7e23d1e910bb68b411c426eca58b130bb52fd036af6de166"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r8/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r8/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r8/prompt.md",
+      "bytes": 8200,
+      "sha256": "8618fa2c84ba493c2ddc98495857fb76972f25b78dbca147d3c66170aaca2d43"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r8/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--field-alias__budget_model__G9__r8/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r1/adapter_request.json",
+      "bytes": 462,
+      "sha256": "5c87f1d3311592aaabb021594ac1c832abd34c81edd7908fbc31d7247f320dc1"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r1/manifest.json",
+      "bytes": 1489,
+      "sha256": "59e5ecfc59ea0b5f91692406c7c62526c54a10629eccd38d6149e5ba98f4b78d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r1/prompt.md",
+      "bytes": 8532,
+      "sha256": "1972095b0c63b0c7b6fdc48d18e2dc2cd75a9ca555546132d9afd303690fca82"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r2/adapter_request.json",
+      "bytes": 462,
+      "sha256": "0139092b98aa8057fc6aa9786c4bfa99d63664a25f272b5ba9cb7b37021aa430"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r2/manifest.json",
+      "bytes": 1489,
+      "sha256": "a0ed673b70ea83e54cc47ba85e1431281fa8a482cbbf33f4feb166d84c94fc40"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r2/prompt.md",
+      "bytes": 8532,
+      "sha256": "dd2876ba30a481c043b4e189e453228e241f56048bbec6b57e5a59fc57366eea"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r3/adapter_request.json",
+      "bytes": 462,
+      "sha256": "e767ae72440d614b40bc41b01c7e6ca87c2e7f84af5ab41582b206ae652b4cdb"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r3/manifest.json",
+      "bytes": 1489,
+      "sha256": "2eec776182fcf63f492bb94b9a7600a2522d427abf93d6883d1a4046b99ff44c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r3/prompt.md",
+      "bytes": 8532,
+      "sha256": "ed7ee5da2408a1023fed3148760be9f89dd6a7a449800e21eca1d2c08c0f0c72"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r4/adapter_request.json",
+      "bytes": 462,
+      "sha256": "ce65600700b9de7d0d23ddc713aab0d5069b45bcbc1ebdf470095a0ae32d9fb1"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r4/manifest.json",
+      "bytes": 1489,
+      "sha256": "55aab4fdc4443b507be5df7c97a458cb12e8d5644a98c672126c0467514e5976"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r4/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r4/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r4/prompt.md",
+      "bytes": 8532,
+      "sha256": "11dada57f71f9b0ae9e762a1618580fde10cecc6b6776b1a00b0b48331109d57"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r4/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r4/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r5/adapter_request.json",
+      "bytes": 462,
+      "sha256": "49ef2a101a5403fb5f265bb1069f6bd70a4a9f631c442f16041ba466f1798f0f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r5/manifest.json",
+      "bytes": 1489,
+      "sha256": "0ac18b0a7b7a65f2d64c9f887ae6927ef0b22dcda75ea1c413aba54a94df6fcb"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r5/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r5/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r5/prompt.md",
+      "bytes": 8532,
+      "sha256": "636cce336b6f409fdb1022c9bf582453d8d205920cb6c3d2000460d82f4811d4"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r5/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r5/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r6/adapter_request.json",
+      "bytes": 462,
+      "sha256": "519ae259ab7e82a74af755455fe2c38aa8fe14de2a60fcacea04ba61661a6d3c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r6/manifest.json",
+      "bytes": 1489,
+      "sha256": "68d4b9e0eab0fa3f2aad68e88682b924112fe02242ac8a68a1d518aee37ae762"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r6/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r6/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r6/prompt.md",
+      "bytes": 8532,
+      "sha256": "e4831fa2335a5ad20aa53ce2478a183ca318d33efb85ea3d6f102408eadcfe09"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r6/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r6/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r7/adapter_request.json",
+      "bytes": 462,
+      "sha256": "d410e148f5fa2a5666ab891a00192d071843afdaf099ce1c97aa74c9a4ba7476"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r7/manifest.json",
+      "bytes": 1489,
+      "sha256": "3ad62997aaae2624ea8f75ad8f889a2472d9056ab3b80d18ae987da9a07eeb3d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r7/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r7/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r7/prompt.md",
+      "bytes": 8532,
+      "sha256": "d11d1c474f9f4795ed0db0edcb5461ab8586a591c31a27adac85467971f53d27"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r7/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r7/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r8/adapter_request.json",
+      "bytes": 462,
+      "sha256": "6bd33060f3626795f68e3e3f063e9e5c59c5226b285c9efa0f9c896545bcf00d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r8/manifest.json",
+      "bytes": 1489,
+      "sha256": "c325d7c08a68eac044d25adc58048cfb486469ef635ab3970b7bc02e3f5f6d9e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r8/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r8/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r8/prompt.md",
+      "bytes": 8532,
+      "sha256": "352dc77075c011be712e10b833d6a5dcb1f89e7373a4b12f25536deb8248ebd6"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r8/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability/stage-b-v54-delta-stability--unknown-state-paraphrase__budget_model__G9__r8/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v53-explicit-transition-delta-result-summary.md",
+      "bytes": 2520,
+      "sha256": "9f262ead4692214aad599568f88a0216a717f6f428a74abeeb9b0e3038524eca"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v54-explicit-delta-stability-adapter-dry-run-events.jsonl",
+      "bytes": 45244,
+      "sha256": "3be2fd47215d20ea0fe356d4c39017b02d0ba537a5af3d76bd5c0c1ca97aaf21"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v54-explicit-delta-stability-adapter-dry-run.json",
+      "bytes": 34662,
+      "sha256": "1f4ed85cdee0afb67fcec9ec9d96204d17b11f50571dd0e53d54ab54bcb6333e"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v54-explicit-delta-stability-plan.md",
+      "bytes": 3119,
+      "sha256": "d6098c44aa6e903b513e989c403952cc1e1cba42263d8a7145b39299d73b1d24"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v54-explicit-delta-stability-pre-execution-audit.md",
+      "bytes": 2322,
+      "sha256": "d8b991a13cc8b66d428537404f4bc91b720e7d232939c7c788c6e9263f542136"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v54-explicit-delta-stability-preflight.json",
+      "bytes": 1461,
+      "sha256": "2eaa7b5cf6da85aa717c9496543e8e3ba2d49be5c13273c0a93739a83a0bff7d"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v54-explicit-delta-stability-preflight.md",
+      "bytes": 1292,
+      "sha256": "35d88862f5c713aea80c4e3f1c85970b90a6771cbd3f1f411b372570516ede4a"
+    }
+  ]
+}

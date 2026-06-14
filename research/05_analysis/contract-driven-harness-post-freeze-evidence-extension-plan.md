@@ -94,6 +94,42 @@ Decision:
 See
 `research/05_analysis/stage-b-v52-evidence-binding-ablation-result-summary.md`.
 
+### Stage B v5.3 Explicit-Delta Ablation
+
+Outcome on 2026-06-14:
+
+- 30/30 calls completed with no provider error or retry;
+- explicit transition delta passed 15/15 strict and residual-state checks;
+- exact postconditions without the delta passed 13/15;
+- the risk difference was `0.133`, below the preregistered `0.20` threshold;
+- the causal decision was mixed, not confirmed.
+
+This result supports the absolute robustness of the explicit-delta protocol but
+does not establish the planned large causal advantage. The two baseline
+failures retained one obsolete forbidden-inference entry.
+
+### Stage B v5.4 Fresh Stability Confirmation
+
+Outcome on 2026-06-14:
+
+- 40 fresh explicit-delta calls completed with no provider error or retry;
+- strict and every component metric passed 40/40;
+- all five perturbation cells passed 8/8;
+- the pooled 95% Wilson interval was `[0.912375, 1.0]`;
+- prompt bodies were unchanged from the frozen v5.3 P2 protocol;
+- the 15-run v5.3 pilot was not pooled into the confirmatory estimate.
+
+Decision:
+
+- bounded absolute stability is confirmed for this model, macro, harness, and
+  perturbation suite;
+- v5.3 remains a mixed causal result;
+- the result does not establish open-ended workflow or state-machine
+  reliability.
+
+See
+`research/05_analysis/stage-b-v54-explicit-delta-stability-result-summary.md`.
+
 Model: `Qwen/Qwen3-8B`
 
 Harness arm: G9
@@ -132,8 +168,13 @@ Stop immediately if:
 
 Proceed only if Stage B passes without fixture or evaluator changes.
 
-Current status: **BLOCKED**. Stage B did not pass and required an evaluator
-construct-validity correction.
+Current status: **ORIGINAL TWO-MACRO EXPANSION BLOCKED; FRESH ONE-MACRO
+STABILITY BRANCH COMPLETE**.
+
+The original two-macro Stage C cannot be resumed or pooled because its Stage B
+pilot failed and required an evaluator correction. Stage B v5.4 instead
+completed the fresh 40-run estimate required for one repaired controlled-state
+mutation macro.
 
 Add five repetitions to each existing cell:
 
@@ -163,7 +204,12 @@ If Stage B causes any fixture, contract, or evaluator revision, Stage C must use
 
 ## Stage D: Overhead Matrix
 
-Current status: **BLOCKED** until a repaired Stage B protocol passes.
+Current status: **ELIGIBLE FOR SEPARATE PREREGISTRATION; NOT YET
+AUTHORIZED**.
+
+The v5.4 result supplies one stable representative macro. Any overhead matrix
+must still freeze matched G0/G9 contracts, model settings, pricing assumptions,
+and success evaluators before provider execution.
 
 Use one representative admitted macro unless Stage B shows materially different behavior between the two macros.
 
