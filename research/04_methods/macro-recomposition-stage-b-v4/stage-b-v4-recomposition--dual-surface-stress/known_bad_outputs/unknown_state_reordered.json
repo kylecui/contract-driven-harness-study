@@ -1,0 +1,58 @@
+{
+  "state_inventory": {
+    "unknown_state": [
+      "permission_to_use_external_model_api",
+      "continuous_integration_result",
+      "branch_currently_checked_out"
+    ],
+    "forbidden_inferences": [
+      "do_not_guess_branch_currently_checked_out",
+      "do_not_guess_continuous_integration_result",
+      "do_not_guess_permission_to_use_external_model_api"
+    ]
+  },
+  "grounded_claims": [
+    {
+      "slot_id": "claim_alpha",
+      "claim": "Stage B v4-local passed before provider execution.",
+      "source_references": [
+        "ev-01"
+      ]
+    },
+    {
+      "slot_id": "claim_beta",
+      "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+      "source_references": [
+        "ev-06"
+      ]
+    },
+    {
+      "slot_id": "claim_gamma",
+      "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+      "source_references": [
+        "ev-07",
+        "ev-08"
+      ]
+    }
+  ],
+  "composition_gate": {
+    "status": "blocked",
+    "blocked_action": "provider_execution",
+    "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+    "next_action": "prepare_targeted_recomposition_smoke",
+    "support_slot_ids": [
+      "claim_alpha",
+      "claim_beta",
+      "claim_gamma"
+    ]
+  },
+  "retention_attestation": {
+    "status": "preserved",
+    "immutable_fields": [
+      "state_inventory.unknown_state",
+      "state_inventory.forbidden_inferences",
+      "grounded_claims[].slot_id",
+      "grounded_claims[].source_references"
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "evaluation_version": "stage_b_v4_recomposition_local_001",
+  "primary_metric": "composition_retention",
+  "reference_field": "evidence_ids",
+  "expected_slots": [
+    {
+      "slot_id": "claim_alpha",
+      "references": [
+        "ev-01"
+      ]
+    },
+    {
+      "slot_id": "claim_beta",
+      "references": [
+        "ev-06"
+      ]
+    },
+    {
+      "slot_id": "claim_gamma",
+      "references": [
+        "ev-07",
+        "ev-08"
+      ]
+    }
+  ],
+  "expected_unknown_state": [
+    "current_git_branch",
+    "ci_status",
+    "network_api_approval"
+  ],
+  "expected_forbidden_inferences": [
+    "do_not_infer_current_git_branch",
+    "do_not_infer_ci_status",
+    "do_not_infer_network_api_approval"
+  ],
+  "expected_gate": {
+    "status": "blocked",
+    "blocked_action": "provider_execution",
+    "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+    "next_action": "prepare_targeted_recomposition_smoke",
+    "support_slot_ids": [
+      "claim_alpha",
+      "claim_beta",
+      "claim_gamma"
+    ]
+  },
+  "expected_attestation": {
+    "status": "preserved",
+    "immutable_fields": [
+      "state_inventory.unknown_state",
+      "state_inventory.forbidden_inferences",
+      "grounded_claims[].slot_id",
+      "grounded_claims[].evidence_ids"
+    ]
+  },
+  "known_bad_expectations": {
+    "evidence_substitution": {
+      "schema_validity": 1.0,
+      "exact_evidence_array_preservation": 0.0,
+      "exact_closed_vocabulary_retention": 1.0,
+      "composition_gate_accuracy": 1.0,
+      "composition_retention": 0.0
+    },
+    "evidence_array_reordered": {
+      "schema_validity": 1.0,
+      "exact_evidence_array_preservation": 0.0,
+      "exact_closed_vocabulary_retention": 1.0,
+      "composition_gate_accuracy": 1.0,
+      "composition_retention": 0.0
+    },
+    "undeclared_reference_field": {
+      "schema_validity": 0.0,
+      "exact_evidence_array_preservation": 0.0,
+      "exact_closed_vocabulary_retention": 1.0,
+      "composition_gate_accuracy": 1.0,
+      "composition_retention": 0.0
+    },
+    "forbidden_prefix_substitution": {
+      "schema_validity": 1.0,
+      "exact_evidence_array_preservation": 1.0,
+      "exact_closed_vocabulary_retention": 0.0,
+      "composition_gate_accuracy": 1.0,
+      "composition_retention": 0.0
+    },
+    "alternate_vocabulary_fallback": {
+      "schema_validity": 1.0,
+      "exact_evidence_array_preservation": 1.0,
+      "exact_closed_vocabulary_retention": 0.0,
+      "composition_gate_accuracy": 1.0,
+      "composition_retention": 0.0
+    },
+    "unknown_state_reordered": {
+      "schema_validity": 1.0,
+      "exact_evidence_array_preservation": 1.0,
+      "exact_closed_vocabulary_retention": 0.0,
+      "composition_gate_accuracy": 1.0,
+      "composition_retention": 0.0
+    },
+    "premature_gate_open": {
+      "schema_validity": 1.0,
+      "exact_evidence_array_preservation": 1.0,
+      "exact_closed_vocabulary_retention": 1.0,
+      "composition_gate_accuracy": 0.0,
+      "composition_retention": 0.0
+    },
+    "incomplete_gate_support": {
+      "schema_validity": 1.0,
+      "exact_evidence_array_preservation": 1.0,
+      "exact_closed_vocabulary_retention": 1.0,
+      "composition_gate_accuracy": 0.0,
+      "composition_retention": 0.0
+    },
+    "dual_component_corruption": {
+      "schema_validity": 1.0,
+      "exact_evidence_array_preservation": 0.0,
+      "exact_closed_vocabulary_retention": 0.0,
+      "composition_gate_accuracy": 1.0,
+      "composition_retention": 0.0
+    },
+    "flattened_state_inventory": {
+      "schema_validity": 0.0,
+      "exact_evidence_array_preservation": 1.0,
+      "exact_closed_vocabulary_retention": 0.0,
+      "composition_gate_accuracy": 1.0,
+      "composition_retention": 0.0
+    }
+  },
+  "model_surface_files": [
+    "input.md",
+    "task_spec.json",
+    "memory_slice.json",
+    "evidence_bundle.json",
+    "output_contract.json"
+  ],
+  "forbidden_model_surface_values": [
+    "source_references",
+    "branch_currently_checked_out",
+    "continuous_integration_result",
+    "permission_to_use_external_model_api",
+    "do_not_guess_branch_currently_checked_out",
+    "do_not_guess_continuous_integration_result",
+    "do_not_guess_permission_to_use_external_model_api"
+  ]
+}

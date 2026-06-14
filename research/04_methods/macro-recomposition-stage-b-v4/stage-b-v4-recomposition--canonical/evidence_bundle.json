@@ -1,0 +1,35 @@
+{
+  "bundle_id": "stage-b-v4-recomposition--canonical_evidence_001",
+  "items": [
+    {
+      "evidence_id": "ev-01",
+      "type": "EXTRACTED",
+      "claim": "Stage B v4-local passed all local gates.",
+      "source": "P2-E136"
+    },
+    {
+      "evidence_id": "ev-04",
+      "type": "AMBIGUOUS",
+      "claim": "Stage B v3 full macros had mixed and failed cells.",
+      "source": "P2-E133"
+    },
+    {
+      "evidence_id": "ev-06",
+      "type": "EXTRACTED",
+      "claim": "Stage B v4-smoke passed all eight isolated runs.",
+      "source": "P2-E140"
+    },
+    {
+      "evidence_id": "ev-07",
+      "type": "INFERRED",
+      "claim": "The next unresolved question is bounded composition transfer.",
+      "source": "P2-E141"
+    },
+    {
+      "evidence_id": "ev-08",
+      "type": "PROPOSED",
+      "claim": "Provider execution follows only after the recomposition local gate.",
+      "source": "Stage B v4 recomposition plan"
+    }
+  ]
+}

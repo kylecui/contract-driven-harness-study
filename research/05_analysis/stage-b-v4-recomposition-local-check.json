@@ -1,0 +1,1920 @@
+{
+  "suite": "stage_b_v4_bounded_recomposition_local",
+  "fixture_count": 2,
+  "case_count": 22,
+  "expectation_failure_count": 0,
+  "model_surface_violation_count": 0,
+  "model_surface_violations": [],
+  "cases": [
+    {
+      "fixture": "stage-b-v4-recomposition--canonical",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "expect_pass": true,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status",
+              "network_api_approval"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status",
+              "do_not_infer_network_api_approval"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "evidence_ids": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "blocked",
+            "blocked_action": "provider_execution",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v4-recomposition--canonical__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "exact_closed_vocabulary_retention": 1.0,
+        "composition_gate_accuracy": 1.0,
+        "composition_retention": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v4-recomposition--canonical",
+      "case": "alternate_vocabulary_fallback",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result",
+              "permission_to_use_external_model_api"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result",
+              "do_not_guess_permission_to_use_external_model_api"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "evidence_ids": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "blocked",
+            "blocked_action": "provider_execution",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v4-recomposition--canonical__alternate_vocabulary_fallback",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.75,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "composition_gate_accuracy": 1.0,
+        "composition_retention": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v4-recomposition--canonical",
+      "case": "dual_component_corruption",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed",
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status",
+              "network_api_approval"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_current_git_branch",
+              "do_not_guess_ci_status",
+              "do_not_guess_network_api_approval"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-04"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "evidence_ids": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "blocked",
+            "blocked_action": "provider_execution",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v4-recomposition--canonical__dual_component_corruption",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "composition_gate_accuracy": 1.0,
+        "composition_retention": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v4-recomposition--canonical",
+      "case": "evidence_array_reordered",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed"
+        ],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status",
+              "network_api_approval"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status",
+              "do_not_infer_network_api_approval"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "evidence_ids": [
+                "ev-08",
+                "ev-07"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "blocked",
+            "blocked_action": "provider_execution",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v4-recomposition--canonical__evidence_array_reordered",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.75,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 1.0,
+        "composition_gate_accuracy": 1.0,
+        "composition_retention": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v4-recomposition--canonical",
+      "case": "evidence_substitution",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed"
+        ],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status",
+              "network_api_approval"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status",
+              "do_not_infer_network_api_approval"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-04"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "evidence_ids": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "blocked",
+            "blocked_action": "provider_execution",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v4-recomposition--canonical__evidence_substitution",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.75,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 1.0,
+        "composition_gate_accuracy": 1.0,
+        "composition_retention": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v4-recomposition--canonical",
+      "case": "flattened_state_inventory",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [
+          "schema_contract_failed",
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "evidence_ids": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "blocked",
+            "blocked_action": "provider_execution",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids"
+            ]
+          },
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status",
+            "network_api_approval"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status",
+            "do_not_infer_network_api_approval"
+          ]
+        },
+        "run_id": "stage-b-v4-recomposition--canonical__flattened_state_inventory",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 0.0,
+        "exact_evidence_array_preservation": 1.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "composition_gate_accuracy": 1.0,
+        "composition_retention": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v4-recomposition--canonical",
+      "case": "forbidden_prefix_substitution",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status",
+              "network_api_approval"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_current_git_branch",
+              "do_not_guess_ci_status",
+              "do_not_guess_network_api_approval"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "evidence_ids": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "blocked",
+            "blocked_action": "provider_execution",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v4-recomposition--canonical__forbidden_prefix_substitution",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.75,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "composition_gate_accuracy": 1.0,
+        "composition_retention": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v4-recomposition--canonical",
+      "case": "incomplete_gate_support",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [
+          "composition_gate_accuracy_failed"
+        ],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status",
+              "network_api_approval"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status",
+              "do_not_infer_network_api_approval"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "evidence_ids": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "blocked",
+            "blocked_action": "provider_execution",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v4-recomposition--canonical__incomplete_gate_support",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.75,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "exact_closed_vocabulary_retention": 1.0,
+        "composition_gate_accuracy": 0.0,
+        "composition_retention": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v4-recomposition--canonical",
+      "case": "premature_gate_open",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [
+          "composition_gate_accuracy_failed"
+        ],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status",
+              "network_api_approval"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status",
+              "do_not_infer_network_api_approval"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "evidence_ids": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "open",
+            "blocked_action": "none",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v4-recomposition--canonical__premature_gate_open",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.75,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "exact_closed_vocabulary_retention": 1.0,
+        "composition_gate_accuracy": 0.0,
+        "composition_retention": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v4-recomposition--canonical",
+      "case": "undeclared_reference_field",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [
+          "schema_contract_failed",
+          "exact_evidence_array_preservation_failed"
+        ],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status",
+              "network_api_approval"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status",
+              "do_not_infer_network_api_approval"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "source_references": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "blocked",
+            "blocked_action": "provider_execution",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v4-recomposition--canonical__undeclared_reference_field",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 0.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 1.0,
+        "composition_gate_accuracy": 1.0,
+        "composition_retention": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v4-recomposition--canonical",
+      "case": "unknown_state_reordered",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "network_api_approval",
+              "ci_status",
+              "current_git_branch"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status",
+              "do_not_infer_network_api_approval"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "evidence_ids": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "blocked",
+            "blocked_action": "provider_execution",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v4-recomposition--canonical__unknown_state_reordered",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.75,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "composition_gate_accuracy": 1.0,
+        "composition_retention": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v4-recomposition--dual-surface-stress",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "expect_pass": true,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result",
+              "permission_to_use_external_model_api"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result",
+              "do_not_guess_permission_to_use_external_model_api"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "source_references": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "blocked",
+            "blocked_action": "provider_execution",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v4-recomposition--dual-surface-stress__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "exact_closed_vocabulary_retention": 1.0,
+        "composition_gate_accuracy": 1.0,
+        "composition_retention": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v4-recomposition--dual-surface-stress",
+      "case": "alternate_vocabulary_fallback",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status",
+              "network_api_approval"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status",
+              "do_not_infer_network_api_approval"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "source_references": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "blocked",
+            "blocked_action": "provider_execution",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v4-recomposition--dual-surface-stress__alternate_vocabulary_fallback",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.75,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "composition_gate_accuracy": 1.0,
+        "composition_retention": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v4-recomposition--dual-surface-stress",
+      "case": "dual_component_corruption",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed",
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result",
+              "permission_to_use_external_model_api"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_branch_currently_checked_out",
+              "do_not_infer_continuous_integration_result",
+              "do_not_infer_permission_to_use_external_model_api"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-04"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "source_references": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "blocked",
+            "blocked_action": "provider_execution",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v4-recomposition--dual-surface-stress__dual_component_corruption",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "composition_gate_accuracy": 1.0,
+        "composition_retention": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v4-recomposition--dual-surface-stress",
+      "case": "evidence_array_reordered",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed"
+        ],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result",
+              "permission_to_use_external_model_api"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result",
+              "do_not_guess_permission_to_use_external_model_api"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "source_references": [
+                "ev-08",
+                "ev-07"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "blocked",
+            "blocked_action": "provider_execution",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v4-recomposition--dual-surface-stress__evidence_array_reordered",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.75,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 1.0,
+        "composition_gate_accuracy": 1.0,
+        "composition_retention": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v4-recomposition--dual-surface-stress",
+      "case": "evidence_substitution",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed"
+        ],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result",
+              "permission_to_use_external_model_api"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result",
+              "do_not_guess_permission_to_use_external_model_api"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-04"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "source_references": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "blocked",
+            "blocked_action": "provider_execution",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v4-recomposition--dual-surface-stress__evidence_substitution",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.75,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 1.0,
+        "composition_gate_accuracy": 1.0,
+        "composition_retention": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v4-recomposition--dual-surface-stress",
+      "case": "flattened_state_inventory",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [
+          "schema_contract_failed",
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "source_references": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "blocked",
+            "blocked_action": "provider_execution",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references"
+            ]
+          },
+          "unknown_state": [
+            "branch_currently_checked_out",
+            "continuous_integration_result",
+            "permission_to_use_external_model_api"
+          ],
+          "forbidden_inferences": [
+            "do_not_guess_branch_currently_checked_out",
+            "do_not_guess_continuous_integration_result",
+            "do_not_guess_permission_to_use_external_model_api"
+          ]
+        },
+        "run_id": "stage-b-v4-recomposition--dual-surface-stress__flattened_state_inventory",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 0.0,
+        "exact_evidence_array_preservation": 1.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "composition_gate_accuracy": 1.0,
+        "composition_retention": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v4-recomposition--dual-surface-stress",
+      "case": "forbidden_prefix_substitution",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result",
+              "permission_to_use_external_model_api"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_branch_currently_checked_out",
+              "do_not_infer_continuous_integration_result",
+              "do_not_infer_permission_to_use_external_model_api"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "source_references": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "blocked",
+            "blocked_action": "provider_execution",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v4-recomposition--dual-surface-stress__forbidden_prefix_substitution",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.75,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "composition_gate_accuracy": 1.0,
+        "composition_retention": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v4-recomposition--dual-surface-stress",
+      "case": "incomplete_gate_support",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [
+          "composition_gate_accuracy_failed"
+        ],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result",
+              "permission_to_use_external_model_api"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result",
+              "do_not_guess_permission_to_use_external_model_api"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "source_references": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "blocked",
+            "blocked_action": "provider_execution",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v4-recomposition--dual-surface-stress__incomplete_gate_support",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.75,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "exact_closed_vocabulary_retention": 1.0,
+        "composition_gate_accuracy": 0.0,
+        "composition_retention": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v4-recomposition--dual-surface-stress",
+      "case": "premature_gate_open",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [
+          "composition_gate_accuracy_failed"
+        ],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result",
+              "permission_to_use_external_model_api"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result",
+              "do_not_guess_permission_to_use_external_model_api"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "source_references": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "open",
+            "blocked_action": "none",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v4-recomposition--dual-surface-stress__premature_gate_open",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.75,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "exact_closed_vocabulary_retention": 1.0,
+        "composition_gate_accuracy": 0.0,
+        "composition_retention": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v4-recomposition--dual-surface-stress",
+      "case": "undeclared_reference_field",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [
+          "schema_contract_failed",
+          "exact_evidence_array_preservation_failed"
+        ],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result",
+              "permission_to_use_external_model_api"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result",
+              "do_not_guess_permission_to_use_external_model_api"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "evidence_ids": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "blocked",
+            "blocked_action": "provider_execution",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v4-recomposition--dual-surface-stress__undeclared_reference_field",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 0.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 1.0,
+        "composition_gate_accuracy": 1.0,
+        "composition_retention": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v4-recomposition--dual-surface-stress",
+      "case": "unknown_state_reordered",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the bounded recomposition contract.",
+        "findings": [
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "primary_metric": "composition_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "permission_to_use_external_model_api",
+              "continuous_integration_result",
+              "branch_currently_checked_out"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result",
+              "do_not_guess_permission_to_use_external_model_api"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "Provider execution remains blocked until the recomposition local gate passes.",
+              "source_references": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "composition_gate": {
+            "status": "blocked",
+            "blocked_action": "provider_execution",
+            "missing_prerequisite": "stage_b_v4_recomposition_local_gate",
+            "next_action": "prepare_targeted_recomposition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved",
+            "immutable_fields": [
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v4-recomposition--dual-surface-stress__unknown_state_reordered",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.75,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "composition_gate_accuracy": 1.0,
+        "composition_retention": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    }
+  ]
+}

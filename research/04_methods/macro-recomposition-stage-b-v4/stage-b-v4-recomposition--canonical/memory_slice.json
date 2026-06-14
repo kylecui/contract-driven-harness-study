@@ -1,0 +1,14 @@
+{
+  "slice_id": "stage-b-v4-recomposition--canonical_memory_001",
+  "must_load": [
+    "B4A and B4B passed their isolated local and smoke gates",
+    "recomposition provider execution remains blocked",
+    "only claim prose is editable"
+  ],
+  "must_not_load": [
+    "Stage B v3 broad macro obligations",
+    "alternative evidence fields or state vocabularies",
+    "production or workflow readiness claims"
+  ],
+  "staleness_policy": "fixed_snapshot"
+}

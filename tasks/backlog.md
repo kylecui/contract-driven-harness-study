@@ -109,6 +109,6 @@
 - [x] Close Stage B v3 as a failed protocol: 18/30 runs and 6/10 cells passed; no provider retry was needed.
 - [x] Stage B v4-local: isolate exact evidence-array immutability and exact paraphrased-value retention as separate mechanism atoms. Four fixtures passed 32/32 local expectations, six evaluator unit tests, zero model-surface leaks, and the unchanged 110-case Stage B v3 regression.
 - [x] Stage B v4-smoke: run a small targeted low-cost-model smoke only after both local atom gates pass. Qwen3-8B + G9 passed 8/8 runs and all four fixtures passed 2/2 repetitions with no retry.
-- [ ] Stage B v4-recomposition-local: compose B4A and B4B into one bounded macro while fixing all other obligations, then require local golden/known-bad and Stage B v3 regression gates before any provider call.
+- [x] Stage B v4-recomposition-local: compose B4A and B4B into one bounded macro while fixing all other obligations, then require local golden/known-bad and Stage B v3 regression gates before any provider call. Two fixtures passed 22/22 local expectations, five evaluator unit tests, zero model-surface leaks, the v4 atom 32-case regression, and the Stage B v3 110-case regression.
 - [ ] Stage B v4-recomposition-smoke: run a small targeted low-cost-model smoke only if the recomposed local gate passes.
 - [ ] Design controlled state-mutating macro before any full workflow expansion.

@@ -282,6 +282,29 @@ python research/04_methods/scripts/evaluate_stage_b_v4_atoms.py `
 Passing this local gate admits only a targeted model smoke. It is not model
 performance evidence.
 
+## Stage B v4 Bounded Recomposition
+
+`build_stage_b_v4_recomposition.py` composes exact evidence-array retention and
+exact closed-vocabulary retention into a bounded macro with one local-first
+composition gate. The evaluator reports component metrics separately and
+checks preregistered metric vectors for each known-bad output.
+
+```powershell
+python research/04_methods/scripts/build_stage_b_v4_recomposition.py `
+  --output-dir research/04_methods/macro-recomposition-stage-b-v4
+
+python research/04_methods/scripts/test_evaluate_stage_b_v4_recomposition.py
+
+python research/04_methods/scripts/evaluate_stage_b_v4_recomposition.py `
+  --fixtures-dir research/04_methods/macro-recomposition-stage-b-v4 `
+  --local-check `
+  --output-runs research/05_analysis/stage-b-v4-recomposition-local-check.json `
+  --output-md research/05_analysis/stage-b-v4-recomposition-local-check.md
+```
+
+The local gate also requires the Stage B v4 atom regression and unchanged
+Stage B v3 110-case regression before any provider call.
+
 ## `collect_run_metrics.py`
 
 Collects per-run `metrics.json` files into one runs payload for `harness_benchmark_metrics.py`.
