@@ -1,0 +1,29 @@
+{
+  "task_id": "stage_b_v51_state_transition__canonical",
+  "task_type": "stage_b_v51_controlled_state_transition_macro",
+  "objective": "Apply one evidence-backed unknown-to-known transition while copying immutable evidence bindings and the complete gate exactly.",
+  "composition_chain": [
+    "B4B",
+    "B4A",
+    "state_transition",
+    "transition_gate"
+  ],
+  "constraints": [
+    "Use only the supplied transition event.",
+    "Treat the event as fixture state, not runner authorization.",
+    "Use `evidence_ids` as the only reference field.",
+    "Copy every evidence-binding object exactly and in order.",
+    "Move only the declared API-permission state from unknown to known.",
+    "Keep branch and CI state unknown in their declared order.",
+    "Remove only the matching API-permission forbidden inference.",
+    "Copy the complete required transition gate exactly.",
+    "Return exactly one JSON object with no extra prose."
+  ],
+  "success_conditions": [
+    "Exact evidence-array preservation passes.",
+    "Residual unknown-state vocabulary passes.",
+    "The transition record and known-state item match the event.",
+    "The complete gate matches the declared postcondition.",
+    "The retention attestation remains complete."
+  ]
+}

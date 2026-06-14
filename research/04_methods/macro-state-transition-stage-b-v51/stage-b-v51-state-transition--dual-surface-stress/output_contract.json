@@ -1,0 +1,115 @@
+{
+  "output_contract_id": "out_stage_b_v51_state_transition__dual_surface_stress_001",
+  "format": "json",
+  "required_sections": [
+    "state_inventory",
+    "evidence_bindings",
+    "transition_record",
+    "transition_gate",
+    "retention_attestation"
+  ],
+  "reference_field": "source_references",
+  "output_shape": {
+    "state_inventory": {
+      "known_state": "array of {state_id, value, source_references}",
+      "unknown_state": "array of exact declared labels",
+      "forbidden_inferences": "array of exact declared labels"
+    },
+    "evidence_bindings": "array of {slot_id, source_references}",
+    "transition_record": "{event_id, state_id, from_status, to_status, source_references, applied}",
+    "transition_gate": "{status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}",
+    "retention_attestation": "{status, immutable_fields}"
+  },
+  "required_evidence_bindings": [
+    {
+      "slot_id": "claim_alpha",
+      "source_references": [
+        "ev-01"
+      ]
+    },
+    {
+      "slot_id": "claim_beta",
+      "source_references": [
+        "ev-06"
+      ]
+    },
+    {
+      "slot_id": "claim_gamma",
+      "source_references": [
+        "ev-10",
+        "ev-11"
+      ]
+    },
+    {
+      "slot_id": "claim_delta",
+      "source_references": [
+        "ev-09"
+      ]
+    }
+  ],
+  "initial_state": {
+    "known_state": [],
+    "unknown_state": [
+      "branch_currently_checked_out",
+      "continuous_integration_result",
+      "permission_to_use_external_model_api"
+    ],
+    "forbidden_inferences": [
+      "do_not_guess_branch_currently_checked_out",
+      "do_not_guess_continuous_integration_result",
+      "do_not_guess_permission_to_use_external_model_api"
+    ],
+    "gate_status": "blocked"
+  },
+  "transition_event": {
+    "event_id": "event-api-approval-001",
+    "scope": "fixture_only",
+    "state_id": "permission_to_use_external_model_api",
+    "from_status": "unknown",
+    "to_status": "approved",
+    "source_references": [
+      "ev-09"
+    ]
+  },
+  "required_postconditions": {
+    "known_state_id": "permission_to_use_external_model_api",
+    "known_state_value": "approved",
+    "residual_unknown_state": [
+      "branch_currently_checked_out",
+      "continuous_integration_result"
+    ],
+    "residual_forbidden_inferences": [
+      "do_not_guess_branch_currently_checked_out",
+      "do_not_guess_continuous_integration_result"
+    ]
+  },
+  "required_transition_gate": {
+    "status": "open",
+    "permitted_action": "provider_execution",
+    "satisfied_prerequisite": "permission_to_use_external_model_api",
+    "next_action": "run_targeted_state_transition_repair_smoke",
+    "support_slot_ids": [
+      "claim_alpha",
+      "claim_beta",
+      "claim_gamma",
+      "claim_delta"
+    ]
+  },
+  "required_attestation": {
+    "status": "preserved_after_transition",
+    "immutable_fields": [
+      "evidence_bindings[].slot_id",
+      "evidence_bindings[].source_references",
+      "state_inventory.unknown_state",
+      "state_inventory.forbidden_inferences",
+      "state_inventory.known_state[].state_id",
+      "state_inventory.known_state[].source_references",
+      "transition_record.event_id",
+      "transition_record.source_references"
+    ]
+  },
+  "editable_fields": [],
+  "citation_policy": "none",
+  "style_profile": "minimal_json",
+  "tool_trace_required": false
+}

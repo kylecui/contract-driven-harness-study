@@ -1,0 +1,34 @@
+{
+  "checked_on": "2026-06-14",
+  "provider_calls": 0,
+  "regressions": [
+    {
+      "suite": "stage_b_v5_controlled_state_transition_local",
+      "case_count": 30,
+      "expectation_failure_count": 0,
+      "model_surface_violation_count": 0
+    },
+    {
+      "suite": "stage_b_v4_local_mechanism_atoms",
+      "case_count": 32,
+      "expectation_failure_count": 0,
+      "model_surface_violation_count": 0
+    },
+    {
+      "suite": "stage_b_v4_bounded_recomposition_local",
+      "case_count": 22,
+      "expectation_failure_count": 0,
+      "model_surface_violation_count": 0
+    },
+    {
+      "suite": "stage_b_v3_full_perturbation_suite",
+      "case_count": 110,
+      "expectation_failure_count": 0
+    }
+  ],
+  "historical_unit_tests": {
+    "stage_b_v5": "8/8 passed",
+    "stage_b_v4_atoms": "6/6 passed",
+    "stage_b_v4_recomposition": "5/5 passed"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "slice_id": "stage-b-v51-state-transition--canonical_memory_001",
+  "must_load": [
+    "Stage B v5 smoke preserved residual state and transition semantics",
+    "branch and CI state remain unknown",
+    "API permission changes only through event-api-approval-001",
+    "the event applies only inside this fixture"
+  ],
+  "must_not_load": [
+    "alternative evidence fields or state vocabularies",
+    "implicit branch or CI values",
+    "production or full-workflow readiness claims"
+  ],
+  "staleness_policy": "event_driven_snapshot"
+}

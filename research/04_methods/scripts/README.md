@@ -329,6 +329,30 @@ The local gate requires all transition known-bads, the static-copy ablation,
 surface-isolation checks, and the unchanged Stage B v4 atom, v4 recomposition,
 and Stage B v3 regressions to pass before any provider call.
 
+## Stage B v5.1 Transition Contract Repair
+
+`build_stage_b_v51_state_transition.py` retains the v5 state mutation but
+repairs two contract defects identified after the failed v5 smoke. Immutable
+slot-to-reference arrays now live in `evidence_bindings`, separate from claim
+prose, and the complete expected `transition_gate` is model-visible.
+
+```powershell
+python research/04_methods/scripts/build_stage_b_v51_state_transition.py `
+  --output-dir research/04_methods/macro-state-transition-stage-b-v51
+
+python research/04_methods/scripts/test_evaluate_stage_b_v51_state_transition.py
+
+python research/04_methods/scripts/evaluate_stage_b_v51_state_transition.py `
+  --fixtures-dir research/04_methods/macro-state-transition-stage-b-v51 `
+  --local-check `
+  --output-runs research/05_analysis/stage-b-v51-state-transition-local-check.json `
+  --output-md research/05_analysis/stage-b-v51-state-transition-local-check.md
+```
+
+The v5.1 suite is a new repaired protocol. It does not replace, rescore, or
+pool with the failed v5 smoke. Any provider smoke remains separately
+authorized.
+
 ## `collect_run_metrics.py`
 
 Collects per-run `metrics.json` files into one runs payload for `harness_benchmark_metrics.py`.

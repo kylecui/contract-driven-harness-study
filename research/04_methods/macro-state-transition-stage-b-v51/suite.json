@@ -1,0 +1,19 @@
+{
+  "suite_id": "stage_b_v51_controlled_state_transition_local",
+  "protocol_relation": "new repaired protocol; does not replace or rescore Stage B v5",
+  "composition_chain": [
+    "B4B",
+    "B4A",
+    "state_transition",
+    "transition_gate"
+  ],
+  "fixtures": [
+    "stage-b-v51-state-transition--canonical",
+    "stage-b-v51-state-transition--dual-surface-stress"
+  ],
+  "fixture_count": 2,
+  "known_bad_count": 36,
+  "provider_calls": 0,
+  "pooling_policy": "must_not_pool_with_stage_b_v5_or_prior_protocols",
+  "next_gate": "a four-run repair smoke is admissible only after all local expectations, surface checks, unit tests, and historical regressions pass"
+}
