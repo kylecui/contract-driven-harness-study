@@ -1,0 +1,30 @@
+{
+  "suite_id": "stage_b_v52_evidence_binding_ablation",
+  "representations": [
+    "claim-coupled",
+    "binding-separated"
+  ],
+  "conditions": [
+    "canonical",
+    "field-alias",
+    "evidence-order-shuffled",
+    "distractor-evidence",
+    "unknown-state-paraphrase"
+  ],
+  "fixture_count": 10,
+  "known_bad_count": 90,
+  "fixtures": [
+    "stage-b-v52-r1--canonical",
+    "stage-b-v52-r1--field-alias",
+    "stage-b-v52-r1--evidence-order-shuffled",
+    "stage-b-v52-r1--distractor-evidence",
+    "stage-b-v52-r1--unknown-state-paraphrase",
+    "stage-b-v52-r2--canonical",
+    "stage-b-v52-r2--field-alias",
+    "stage-b-v52-r2--evidence-order-shuffled",
+    "stage-b-v52-r2--distractor-evidence",
+    "stage-b-v52-r2--unknown-state-paraphrase"
+  ],
+  "provider_calls": 0,
+  "pooling_policy": "must_not_pool_with_stage_b_v5_or_v51"
+}

@@ -353,6 +353,44 @@ The v5.1 suite is a new repaired protocol. It does not replace, rescore, or
 pool with the failed v5 smoke. Any provider smoke remains separately
 authorized.
 
+## Stage B v5.2 evidence-binding ablation
+
+Build and locally validate the two-profile, five-condition ablation:
+
+```powershell
+python research/04_methods/scripts/build_stage_b_v52_evidence_binding_ablation.py `
+  --output-dir research/04_methods/macro-evidence-binding-ablation-stage-b-v52 `
+  --matrix-output research/04_methods/benchmark-matrix-stage-b-v52-evidence-binding-ablation.json
+
+python research/04_methods/scripts/test_evaluate_stage_b_v52_evidence_binding_ablation.py
+
+python research/04_methods/scripts/evaluate_stage_b_v52_evidence_binding_ablation.py `
+  --fixtures-dir research/04_methods/macro-evidence-binding-ablation-stage-b-v52 `
+  --local-check `
+  --output-runs research/05_analysis/stage-b-v52-evidence-binding-ablation-local-check.json `
+  --output-md research/05_analysis/stage-b-v52-evidence-binding-ablation-local-check.md
+```
+
+After separately authorized provider execution, evaluate and analyze the frozen
+manifest:
+
+```powershell
+python research/04_methods/scripts/evaluate_stage_b_v52_evidence_binding_ablation.py `
+  --fixtures-dir research/04_methods/macro-evidence-binding-ablation-stage-b-v52 `
+  --manifest research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation-manifest-with-prompts.json `
+  --output-runs research/05_analysis/stage-b-v52-evidence-binding-ablation-results.json `
+  --output-md research/05_analysis/stage-b-v52-evidence-binding-ablation-results.md
+
+python research/04_methods/scripts/analyze_stage_b_v52_evidence_binding_ablation.py `
+  --evaluated-runs research/05_analysis/stage-b-v52-evidence-binding-ablation-results.json `
+  --execution research/05_analysis/stage-b-v52-evidence-binding-ablation-execution.json `
+  --output-json research/05_analysis/stage-b-v52-evidence-binding-ablation-analysis.json `
+  --output-md research/05_analysis/stage-b-v52-evidence-binding-ablation-analysis.md
+```
+
+The frozen 30-run result found no engineering-scale evidence-representation
+effect. Do not pool a future state-instruction repair with this protocol.
+
 ## `collect_run_metrics.py`
 
 Collects per-run `metrics.json` files into one runs payload for `harness_benchmark_metrics.py`.

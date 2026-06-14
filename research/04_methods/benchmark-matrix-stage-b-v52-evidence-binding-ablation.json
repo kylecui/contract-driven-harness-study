@@ -1,0 +1,276 @@
+{
+  "fixtures_dir": "research\\04_methods\\macro-evidence-binding-ablation-stage-b-v52",
+  "models": [
+    "budget_model"
+  ],
+  "harness_arms": [
+    "G9"
+  ],
+  "representations": [
+    "claim-coupled",
+    "binding-separated"
+  ],
+  "conditions": [
+    "canonical",
+    "field-alias",
+    "evidence-order-shuffled",
+    "distractor-evidence",
+    "unknown-state-paraphrase"
+  ],
+  "fixtures": [
+    "stage-b-v52-r1--canonical",
+    "stage-b-v52-r1--field-alias",
+    "stage-b-v52-r1--evidence-order-shuffled",
+    "stage-b-v52-r1--distractor-evidence",
+    "stage-b-v52-r1--unknown-state-paraphrase",
+    "stage-b-v52-r2--canonical",
+    "stage-b-v52-r2--field-alias",
+    "stage-b-v52-r2--evidence-order-shuffled",
+    "stage-b-v52-r2--distractor-evidence",
+    "stage-b-v52-r2--unknown-state-paraphrase"
+  ],
+  "repetitions": 3,
+  "run_count": 30,
+  "runs": [
+    {
+      "run_id": "stage-b-v52-r1--canonical__budget_model__G9__r1",
+      "fixture": "stage-b-v52-r1--canonical",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r1--canonical__budget_model__G9__r2",
+      "fixture": "stage-b-v52-r1--canonical",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r1--canonical__budget_model__G9__r3",
+      "fixture": "stage-b-v52-r1--canonical",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r1--field-alias__budget_model__G9__r1",
+      "fixture": "stage-b-v52-r1--field-alias",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r1--field-alias__budget_model__G9__r2",
+      "fixture": "stage-b-v52-r1--field-alias",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r1--field-alias__budget_model__G9__r3",
+      "fixture": "stage-b-v52-r1--field-alias",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r1",
+      "fixture": "stage-b-v52-r1--evidence-order-shuffled",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r2",
+      "fixture": "stage-b-v52-r1--evidence-order-shuffled",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r3",
+      "fixture": "stage-b-v52-r1--evidence-order-shuffled",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r1--distractor-evidence__budget_model__G9__r1",
+      "fixture": "stage-b-v52-r1--distractor-evidence",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r1--distractor-evidence__budget_model__G9__r2",
+      "fixture": "stage-b-v52-r1--distractor-evidence",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r1--distractor-evidence__budget_model__G9__r3",
+      "fixture": "stage-b-v52-r1--distractor-evidence",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r1",
+      "fixture": "stage-b-v52-r1--unknown-state-paraphrase",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r2",
+      "fixture": "stage-b-v52-r1--unknown-state-paraphrase",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r3",
+      "fixture": "stage-b-v52-r1--unknown-state-paraphrase",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r2--canonical__budget_model__G9__r1",
+      "fixture": "stage-b-v52-r2--canonical",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r2--canonical__budget_model__G9__r2",
+      "fixture": "stage-b-v52-r2--canonical",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r2--canonical__budget_model__G9__r3",
+      "fixture": "stage-b-v52-r2--canonical",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r2--field-alias__budget_model__G9__r1",
+      "fixture": "stage-b-v52-r2--field-alias",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r2--field-alias__budget_model__G9__r2",
+      "fixture": "stage-b-v52-r2--field-alias",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r2--field-alias__budget_model__G9__r3",
+      "fixture": "stage-b-v52-r2--field-alias",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r1",
+      "fixture": "stage-b-v52-r2--evidence-order-shuffled",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r2",
+      "fixture": "stage-b-v52-r2--evidence-order-shuffled",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r3",
+      "fixture": "stage-b-v52-r2--evidence-order-shuffled",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r2--distractor-evidence__budget_model__G9__r1",
+      "fixture": "stage-b-v52-r2--distractor-evidence",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r2--distractor-evidence__budget_model__G9__r2",
+      "fixture": "stage-b-v52-r2--distractor-evidence",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r2--distractor-evidence__budget_model__G9__r3",
+      "fixture": "stage-b-v52-r2--distractor-evidence",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r1",
+      "fixture": "stage-b-v52-r2--unknown-state-paraphrase",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r2",
+      "fixture": "stage-b-v52-r2--unknown-state-paraphrase",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r3",
+      "fixture": "stage-b-v52-r2--unknown-state-paraphrase",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 3,
+      "status": "planned"
+    }
+  ]
+}

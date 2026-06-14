@@ -1,0 +1,83 @@
+{
+  "state_inventory": {
+    "known_state": [
+      {
+        "state_id": "permission_to_use_external_model_api",
+        "value": "approved",
+        "evidence_ids": [
+          "ev-09"
+        ]
+      }
+    ],
+    "unknown_state": [
+      "branch_currently_checked_out",
+      "continuous_integration_result"
+    ],
+    "forbidden_inferences": [
+      "do_not_guess_branch_currently_checked_out",
+      "do_not_guess_continuous_integration_result"
+    ]
+  },
+  "evidence_bindings": [
+    {
+      "slot_id": "claim_alpha",
+      "evidence_ids": [
+        "ev-01"
+      ]
+    },
+    {
+      "slot_id": "claim_beta",
+      "evidence_ids": [
+        "ev-06"
+      ]
+    },
+    {
+      "slot_id": "claim_gamma",
+      "evidence_ids": [
+        "ev-10"
+      ]
+    },
+    {
+      "slot_id": "claim_delta",
+      "evidence_ids": [
+        "ev-09",
+        "ev-11"
+      ]
+    }
+  ],
+  "transition_record": {
+    "event_id": "event-api-approval-001",
+    "state_id": "permission_to_use_external_model_api",
+    "from_status": "unknown",
+    "to_status": "approved",
+    "evidence_ids": [
+      "ev-09"
+    ],
+    "applied": true
+  },
+  "transition_gate": {
+    "status": "open",
+    "permitted_action": "provider_execution",
+    "satisfied_prerequisite": "permission_to_use_external_model_api",
+    "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+    "support_slot_ids": [
+      "claim_alpha",
+      "claim_beta",
+      "claim_gamma",
+      "claim_delta"
+    ]
+  },
+  "retention_attestation": {
+    "status": "preserved_after_transition",
+    "immutable_fields": [
+      "evidence_bindings[].slot_id",
+      "evidence_bindings[].evidence_ids",
+      "state_inventory.unknown_state",
+      "state_inventory.forbidden_inferences",
+      "state_inventory.known_state[].state_id",
+      "state_inventory.known_state[].evidence_ids",
+      "transition_record.event_id",
+      "transition_record.evidence_ids"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "run_id": "stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r2",
+  "fixture": "stage-b-v52-r1--unknown-state-paraphrase",
+  "task_type": "stage_b_v52_evidence_binding_ablation",
+  "model": "budget_model",
+  "harness_arm": "G9",
+  "status": "pending",
+  "paths": {
+    "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v52-evidence-binding-ablation\\stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r2\\output.md",
+    "tool_trace": "research\\05_analysis\\real-run-artifacts\\stage-b-v52-evidence-binding-ablation\\stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r2\\tool_trace.jsonl",
+    "validation_report": "research\\05_analysis\\real-run-artifacts\\stage-b-v52-evidence-binding-ablation\\stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r2\\validation_report.json",
+    "metrics": "research\\05_analysis\\real-run-artifacts\\stage-b-v52-evidence-binding-ablation\\stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r2\\metrics.json",
+    "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v52-evidence-binding-ablation\\stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r2\\prompt.md",
+    "adapter_request": "research\\05_analysis\\real-run-artifacts\\stage-b-v52-evidence-binding-ablation\\stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r2\\adapter_request.json"
+  }
+}

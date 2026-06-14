@@ -1,0 +1,21 @@
+{
+  "task_id": "stage_b_v52_r2__unknown_state_paraphrase",
+  "task_type": "stage_b_v52_evidence_binding_ablation",
+  "objective": "Apply one supplied state transition while preserving exact evidence bindings, residual state, the complete gate, and the retention attestation.",
+  "representation_profile": "R2",
+  "perturbation_condition": "unknown_state_paraphrase",
+  "constraints": [
+    "Use only the supplied fixture event.",
+    "Use `evidence_ids` as the only reference field.",
+    "Preserve every `evidence_bindings` slot and array exactly.",
+    "Move only the declared API-permission state to approved.",
+    "Copy the complete required transition gate exactly.",
+    "Return exactly one JSON object with no extra prose."
+  ],
+  "success_conditions": [
+    "Schema validity passes.",
+    "All four evidence arrays remain exact.",
+    "Residual state and transition checks pass.",
+    "The complete gate and attestation remain exact."
+  ]
+}

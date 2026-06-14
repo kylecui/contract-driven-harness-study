@@ -128,3 +128,30 @@ a failed low-cost-model macro into a passable bounded protocol. It does not
 show which repair was independently causal, estimate a stable success rate,
 or validate arbitrary state machines. The failed v5 record remains valid and
 must not be rescored or pooled with v5.1.
+
+## Stage B v5.2 Ablation Boundary Update
+
+The 2026-06-14 Stage B v5.2 experiment held the complete gate constant and
+compared claim-coupled evidence with separated immutable bindings over 30
+Qwen3-8B + G9 runs.
+
+- Binding-separated evidence passed 15/15 exact-array checks.
+- Claim-coupled evidence passed 14/15 exact-array checks.
+- The risk difference was `0.067`, below the preregistered `0.20`
+  engineering-effect threshold; Fisher's exact two-sided `p=1.000`.
+- Both representations passed 10/15 strict aggregates.
+- Complete gate and transition accuracy passed 30/30.
+- Nine strict failures retained the transitioned state's obsolete
+  forbidden-inference label; one claim-coupled distractor run remapped evidence.
+
+The evidence does not identify binding separation as the independent cause of
+the v5.1 repair result. Both representations were highly reliable on the exact
+evidence obligation once the complete contract was visible. This is a bounded
+null result for a large representation effect, not proof that representation
+never matters.
+
+The v5.2 strict aggregate must not be used as a reliability estimate for the
+fully explicit v5.1 protocol. v5.2 omitted v5.1's direct instruction to remove
+the matching forbidden-inference label, although the exact postcondition
+remained model-visible. Any repaired reliability experiment is a new protocol
+and cannot be pooled with v5.2.

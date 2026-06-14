@@ -17,7 +17,7 @@ Purpose: address the security/systems peer review without weakening experimental
 
 No paid model calls.
 
-Status: **STAGE B COMPLETE AND FAILED; STAGE C/D BLOCKED**
+Status: **STAGE B REPAIR ABLATION COMPLETE; STAGE C/D BLOCKED**
 
 Required changes:
 
@@ -66,6 +66,33 @@ Outcome on 2026-06-13:
 
 See
 `research/07_reviews/contract-driven-harness-stage-b-30-run-summary.md`.
+
+### Stage B v5.2 Repair Ablation
+
+Outcome on 2026-06-14:
+
+- 30/30 Qwen3-8B + G9 calls completed with no provider error or retry;
+- binding-separated evidence passed 15/15 exact checks;
+- claim-coupled evidence passed 14/15 exact checks;
+- the `0.067` risk difference missed the preregistered `0.20` engineering
+  threshold, with Fisher's exact two-sided `p=1.000`;
+- both profiles passed 10/15 strict aggregates;
+- gate and transition accuracy passed 30/30;
+- nine strict failures shared one residual forbidden-inference error;
+- one claim-coupled distractor run produced a genuine evidence remapping.
+
+Decision:
+
+- the hypothesized large independent benefit from evidence-binding separation
+  was not observed;
+- no additional run is needed for that ablation question;
+- Stage C and Stage D remain blocked because stable macro reliability has not
+  been established;
+- a future reliability experiment must restore the explicit state-removal
+  operation locally and start as a new protocol with fresh runs.
+
+See
+`research/05_analysis/stage-b-v52-evidence-binding-ablation-result-summary.md`.
 
 Model: `Qwen/Qwen3-8B`
 

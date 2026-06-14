@@ -1,0 +1,86 @@
+{
+  "state_inventory": {
+    "known_state": [
+      {
+        "state_id": "network_api_approval",
+        "value": "approved",
+        "evidence_ids": [
+          "ev-09"
+        ]
+      }
+    ],
+    "unknown_state": [
+      "current_git_branch",
+      "ci_status"
+    ],
+    "forbidden_inferences": [
+      "do_not_infer_current_git_branch",
+      "do_not_infer_ci_status"
+    ]
+  },
+  "grounded_claims": [
+    {
+      "slot_id": "claim_alpha",
+      "claim": "Stage B v4-local passed all local gates.",
+      "evidence_ids": [
+        "ev-01"
+      ]
+    },
+    {
+      "slot_id": "claim_beta",
+      "claim": "Stage B v4 isolated smoke passed all eight runs.",
+      "evidence_ids": [
+        "ev-06"
+      ]
+    },
+    {
+      "slot_id": "claim_gamma",
+      "claim": "Stage B v4 recomposition smoke completed four calls.",
+      "evidence_ids": [
+        "ev-10"
+      ]
+    },
+    {
+      "slot_id": "claim_delta",
+      "claim": "All four bounded recomposition outputs passed.",
+      "evidence_ids": [
+        "ev-11"
+      ]
+    }
+  ],
+  "transition_record": {
+    "event_id": "event-api-approval-001",
+    "state_id": "network_api_approval",
+    "from_status": "unknown",
+    "to_status": "approved",
+    "evidence_ids": [
+      "ev-09"
+    ],
+    "applied": true
+  },
+  "transition_gate": {
+    "status": "open",
+    "permitted_action": "provider_execution",
+    "satisfied_prerequisite": "network_api_approval",
+    "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+    "support_slot_ids": [
+      "claim_alpha",
+      "claim_beta",
+      "claim_gamma",
+      "claim_delta"
+    ]
+  },
+  "retention_attestation": {
+    "status": "preserved_after_transition",
+    "immutable_fields": [
+      "grounded_claims[].slot_id",
+      "grounded_claims[].evidence_ids",
+      "state_inventory.unknown_state",
+      "state_inventory.forbidden_inferences",
+      "state_inventory.known_state[].state_id",
+      "state_inventory.known_state[].evidence_ids",
+      "transition_record.event_id",
+      "transition_record.evidence_ids"
+    ]
+  }
+}

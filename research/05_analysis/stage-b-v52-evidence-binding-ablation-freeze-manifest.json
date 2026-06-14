@@ -1,0 +1,1954 @@
+{
+  "protocol_id": "stage-b-v52-evidence-binding-ablation-30run",
+  "prepared_date": "2026-06-14",
+  "base_commit": "34528860d3d16ccc9fc0742874d2d3d6456fedb8",
+  "hash_algorithm": "sha256",
+  "file_count": 389,
+  "files": [
+    {
+      "path": "research/04_methods/benchmark-matrix-stage-b-v52-evidence-binding-ablation.json",
+      "bytes": 8628,
+      "sha256": "9f0a290ea18a74f112d5d03d637c1e7ebd97539db60062530feac531a8f91826"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--canonical/evaluation_spec.json",
+      "bytes": 5859,
+      "sha256": "8f1b26459a3090804671cef0f3784b62290f732eeffce955dc1cd51023c8a046"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--canonical/evidence_bundle.json",
+      "bytes": 1281,
+      "sha256": "c0649dda08368345bab04922396ea57646472c25314a4fdf2e5f5d58311c3aff"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--canonical/golden_output.json",
+      "bytes": 2198,
+      "sha256": "432751c456b620df9fc57f9628f80f9c3d0bb2ade78922bc5e39372b972f0e8d"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--canonical/input.md",
+      "bytes": 739,
+      "sha256": "3087a61a1c75c64de7e164a9b656e87ab6f6028669abb5b745a94b0780cde9d1"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--canonical/known_bad_outputs/evidence_array_reordered.json",
+      "bytes": 2198,
+      "sha256": "454408aeb186d289d11ad510eb94f3a2691ff6d1e28115d980880b32cb80596a"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--canonical/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 2157,
+      "sha256": "df4b773825943e645ab98e86fa1c8cf26202a85c8e322937f93f6a6795ae3e5f"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--canonical/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 2198,
+      "sha256": "c966fad662717b009d3d1e464935eac070ec85f1f8470349e8a454c53c5c3c96"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--canonical/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 2198,
+      "sha256": "64710fcc86604f5ace5c518fb4b8e18e9c2cd2e5162154f63464d259ffb52212"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--canonical/known_bad_outputs/static_pretransition_copy.json",
+      "bytes": 2062,
+      "sha256": "37aaa7fad0d1f13e81044514cdec866d8a2d9f2a28b4cfbd616fd7a55a8d4f80"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--canonical/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 2218,
+      "sha256": "6e829b44487a922c69c350b3a7c3085095c62e43ec9dc5ef3a3287b6b62caeee"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--canonical/known_bad_outputs/v5_observed_evidence_omission.json",
+      "bytes": 2180,
+      "sha256": "258116cd954b3ab629ac05822f10caa398bd9670c73d5c14b396ded746c82dff"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--canonical/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 2170,
+      "sha256": "76bec7c43214182aa9c60e5acb171cb251b89a268898f948f22c823a0292b64e"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--canonical/known_bad_outputs/wrong_transition_evidence.json",
+      "bytes": 2198,
+      "sha256": "113e21abe86eeec3d697eda3faacfa8314e757e59969a01eeb96d8fb699a71f0"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--canonical/memory_slice.json",
+      "bytes": 450,
+      "sha256": "1b72c0b409940b9f86b634e8c9c69d304c3ecbf7bd4c7d16ab356604fb7eb459"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--canonical/output_contract.json",
+      "bytes": 3560,
+      "sha256": "e8e5603a7469d4df2d540d22d48b01d42238b8570936420e23a6b1e6db5445ac"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--canonical/task_spec.json",
+      "bytes": 939,
+      "sha256": "b2c6429edd7d5611412d4d991472614735417abd1724ff32cf6f2a0680b9a533"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--distractor-evidence/evaluation_spec.json",
+      "bytes": 5869,
+      "sha256": "f8be229e3bbdf4f5cfd955a2e0d0967ea78f8d52042490cbcd16880201e8e780"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--distractor-evidence/evidence_bundle.json",
+      "bytes": 1651,
+      "sha256": "cc8d63419d11dbc055073c8f54dbb7efccb08b6b2e0a95f5aceddfde344e0321"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--distractor-evidence/golden_output.json",
+      "bytes": 2198,
+      "sha256": "432751c456b620df9fc57f9628f80f9c3d0bb2ade78922bc5e39372b972f0e8d"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--distractor-evidence/input.md",
+      "bytes": 749,
+      "sha256": "c451a2714b4ca09abcdb4c89bc612204ab34e56a3d7a7f514912d76aff514dcf"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--distractor-evidence/known_bad_outputs/evidence_array_reordered.json",
+      "bytes": 2198,
+      "sha256": "454408aeb186d289d11ad510eb94f3a2691ff6d1e28115d980880b32cb80596a"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--distractor-evidence/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 2157,
+      "sha256": "df4b773825943e645ab98e86fa1c8cf26202a85c8e322937f93f6a6795ae3e5f"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--distractor-evidence/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 2198,
+      "sha256": "c966fad662717b009d3d1e464935eac070ec85f1f8470349e8a454c53c5c3c96"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--distractor-evidence/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 2198,
+      "sha256": "64710fcc86604f5ace5c518fb4b8e18e9c2cd2e5162154f63464d259ffb52212"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--distractor-evidence/known_bad_outputs/static_pretransition_copy.json",
+      "bytes": 2062,
+      "sha256": "37aaa7fad0d1f13e81044514cdec866d8a2d9f2a28b4cfbd616fd7a55a8d4f80"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--distractor-evidence/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 2218,
+      "sha256": "6e829b44487a922c69c350b3a7c3085095c62e43ec9dc5ef3a3287b6b62caeee"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--distractor-evidence/known_bad_outputs/v5_observed_evidence_omission.json",
+      "bytes": 2180,
+      "sha256": "258116cd954b3ab629ac05822f10caa398bd9670c73d5c14b396ded746c82dff"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--distractor-evidence/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 2170,
+      "sha256": "76bec7c43214182aa9c60e5acb171cb251b89a268898f948f22c823a0292b64e"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--distractor-evidence/known_bad_outputs/wrong_transition_evidence.json",
+      "bytes": 2198,
+      "sha256": "113e21abe86eeec3d697eda3faacfa8314e757e59969a01eeb96d8fb699a71f0"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--distractor-evidence/memory_slice.json",
+      "bytes": 460,
+      "sha256": "ce2b8dcfd48d0b97389e22664b4a9a4e15539ee02abc2b11d43a62e7c65b20f4"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--distractor-evidence/output_contract.json",
+      "bytes": 3570,
+      "sha256": "dc180719273ac596c3ea7e44cd3a36e8ec7f70c954961c1dcd5eca95651af1f9"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--distractor-evidence/task_spec.json",
+      "bytes": 959,
+      "sha256": "37758bf40fab3a73d3139c79a02a292c754a47adeb089d675370353c3d470e3f"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--evidence-order-shuffled/evaluation_spec.json",
+      "bytes": 5873,
+      "sha256": "4e5e11a4ef95b4908be38ca16fb67acb148a7e6d20d8031bcc1fa5312fc8867d"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--evidence-order-shuffled/evidence_bundle.json",
+      "bytes": 1295,
+      "sha256": "7b250de40069a337982e1ca99eee59974e18b680b447366ea265e5bd22c74253"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--evidence-order-shuffled/golden_output.json",
+      "bytes": 2198,
+      "sha256": "432751c456b620df9fc57f9628f80f9c3d0bb2ade78922bc5e39372b972f0e8d"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--evidence-order-shuffled/input.md",
+      "bytes": 753,
+      "sha256": "945b8e0fa6cb98190d8048d0485435192bf0f9057e928c5424d9837d19d7490f"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--evidence-order-shuffled/known_bad_outputs/evidence_array_reordered.json",
+      "bytes": 2198,
+      "sha256": "454408aeb186d289d11ad510eb94f3a2691ff6d1e28115d980880b32cb80596a"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--evidence-order-shuffled/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 2157,
+      "sha256": "df4b773825943e645ab98e86fa1c8cf26202a85c8e322937f93f6a6795ae3e5f"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--evidence-order-shuffled/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 2198,
+      "sha256": "c966fad662717b009d3d1e464935eac070ec85f1f8470349e8a454c53c5c3c96"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--evidence-order-shuffled/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 2198,
+      "sha256": "64710fcc86604f5ace5c518fb4b8e18e9c2cd2e5162154f63464d259ffb52212"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--evidence-order-shuffled/known_bad_outputs/static_pretransition_copy.json",
+      "bytes": 2062,
+      "sha256": "37aaa7fad0d1f13e81044514cdec866d8a2d9f2a28b4cfbd616fd7a55a8d4f80"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--evidence-order-shuffled/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 2218,
+      "sha256": "6e829b44487a922c69c350b3a7c3085095c62e43ec9dc5ef3a3287b6b62caeee"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--evidence-order-shuffled/known_bad_outputs/v5_observed_evidence_omission.json",
+      "bytes": 2180,
+      "sha256": "258116cd954b3ab629ac05822f10caa398bd9670c73d5c14b396ded746c82dff"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--evidence-order-shuffled/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 2170,
+      "sha256": "76bec7c43214182aa9c60e5acb171cb251b89a268898f948f22c823a0292b64e"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--evidence-order-shuffled/known_bad_outputs/wrong_transition_evidence.json",
+      "bytes": 2198,
+      "sha256": "113e21abe86eeec3d697eda3faacfa8314e757e59969a01eeb96d8fb699a71f0"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--evidence-order-shuffled/memory_slice.json",
+      "bytes": 464,
+      "sha256": "337c9656c4834526b7788a5dce9dbf70c52bf2745361e07424b51561df35dd6c"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--evidence-order-shuffled/output_contract.json",
+      "bytes": 3574,
+      "sha256": "d67d5e972bc1501345187a41dc5d523ce97b3b7d57feee1c8b14d3fd0bbeccee"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--evidence-order-shuffled/task_spec.json",
+      "bytes": 967,
+      "sha256": "f28c45b3f1ba9a219563fe72e990fba4e5ee0927c4a0bd7a8fb9109862d82d2f"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--field-alias/evaluation_spec.json",
+      "bytes": 5886,
+      "sha256": "e213dc059a53134aba232110c2b5647b85d0464ad8bc2c65a93238c2d4493370"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--field-alias/evidence_bundle.json",
+      "bytes": 1283,
+      "sha256": "de2296841d57438afc4fa027fa981538896bed964e311efac7f22ae90eceadef"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--field-alias/golden_output.json",
+      "bytes": 2243,
+      "sha256": "253988d26c7c38dd714ec447b915b3769c80e01cacd19c894f59d51395aee3de"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--field-alias/input.md",
+      "bytes": 746,
+      "sha256": "1867fd169132d1759147068a0d8357c1aec2e06b4f962b4559a55040cb957069"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--field-alias/known_bad_outputs/evidence_array_reordered.json",
+      "bytes": 2243,
+      "sha256": "a3db0169314308d166b63f6fcf33074c7538219bbd8c6ad3107aa0d22ee2e0b2"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--field-alias/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 2197,
+      "sha256": "b46200c6137e29422450eb91caaec0fb261f8eedb9cc4a0ebeb6a30d0c25bee2"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--field-alias/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 2243,
+      "sha256": "aaa38949617a751192d42c255cdba600e4daf76b33566efab247e9fb7a6f41d5"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--field-alias/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 2243,
+      "sha256": "7ee94fbf23a83d671b5e73edb94376664d3c587a46255978697b63bdc13e32c6"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--field-alias/known_bad_outputs/static_pretransition_copy.json",
+      "bytes": 2102,
+      "sha256": "f6cba1df8cd8cce083e1b081e10e2f392bc6665f35be2e93831129b557538035"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--field-alias/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 2223,
+      "sha256": "82e7e3daa3b35611f66abcf795c082a7c3fcad6a6294731866d917cc00a4722e"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--field-alias/known_bad_outputs/v5_observed_evidence_omission.json",
+      "bytes": 2225,
+      "sha256": "c1b8ec3caf249d382a711b4457ddaf44dd01942ed541d768e60803acbcb4a567"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--field-alias/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 2215,
+      "sha256": "047c13c6ebc8d72956a5e300b30d27bfa55ddc43ddaa61b34144ba072d1a2374"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--field-alias/known_bad_outputs/wrong_transition_evidence.json",
+      "bytes": 2243,
+      "sha256": "88b4c829e1f12e428384579e8451ac971c19e09a76e2af8ea20889806641c67a"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--field-alias/memory_slice.json",
+      "bytes": 452,
+      "sha256": "956b39229a08a917e600bedc308a42289127b3b6f11e7dcc2e3d73fe2de057e0"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--field-alias/output_contract.json",
+      "bytes": 3622,
+      "sha256": "ae2242efec0ed855a442184b67af46c92ab4d965fc48bf982adc6b50b28fe999"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--field-alias/task_spec.json",
+      "bytes": 948,
+      "sha256": "7b71ed10c7a3d7cabf5f0af6ca0ffc50716171c418221e474d90bec0387db6c6"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--unknown-state-paraphrase/evaluation_spec.json",
+      "bytes": 5890,
+      "sha256": "9c1e61488fa506ba90a778a78c593ce6f436baf78db585a3f6aaebbcec073de8"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--unknown-state-paraphrase/evidence_bundle.json",
+      "bytes": 1296,
+      "sha256": "990f6bbdba46aef3d4c358bef6299998493688c5ad63e9e5f78e1595861f1323"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--unknown-state-paraphrase/golden_output.json",
+      "bytes": 2306,
+      "sha256": "698fc092ef0cab9aa92f3376362756551089310c900b95530f5270de539c2b2c"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--unknown-state-paraphrase/input.md",
+      "bytes": 770,
+      "sha256": "871e2d6ce1a239ad83748732c09339055b6801e8e237ee8acb2aa0eb3bfd92c0"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--unknown-state-paraphrase/known_bad_outputs/evidence_array_reordered.json",
+      "bytes": 2306,
+      "sha256": "db84253c6d1f7ce41cf13c01cc3ec98621dc02efbc256ffed768ce5f44fb4e39"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--unknown-state-paraphrase/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 2265,
+      "sha256": "6b51cb499722c6f6523a30ce9e7480ef6c7a5c679712abae3eaf1c5f88906e76"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--unknown-state-paraphrase/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 2306,
+      "sha256": "fbec388435b77a121049f274c3ee4afc1809f0f1e1ba06c5364e114f4906f53e"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--unknown-state-paraphrase/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 2306,
+      "sha256": "96056a4ade6aadabaed521ac6eb7d54603d2834d0c3872227f4ceaf39c942310"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--unknown-state-paraphrase/known_bad_outputs/static_pretransition_copy.json",
+      "bytes": 2170,
+      "sha256": "6370d64575cc135cc76560246109ffe35e6a0e63f1d8edaed3bd30b966c8d1b0"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--unknown-state-paraphrase/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 2326,
+      "sha256": "446a780606f0a3439596548c6f5bd62084a618fd34894449ec228f8ea2463fec"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--unknown-state-paraphrase/known_bad_outputs/v5_observed_evidence_omission.json",
+      "bytes": 2288,
+      "sha256": "1c0f3bfb9b77cdbdb31c3322e3e1a9dd143c44d90f03168b34f9d0bc3b7dbfa7"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--unknown-state-paraphrase/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 2278,
+      "sha256": "1177d0fe22fc29561a87f8e233d35e5239f4a9b71c8bbd41d05fd09bdc671d83"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--unknown-state-paraphrase/known_bad_outputs/wrong_transition_evidence.json",
+      "bytes": 2306,
+      "sha256": "3ff3c8c9cd9bbd20b550d13c9dd39857a14ab607127fa1c0d61e7c92abafccef"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--unknown-state-paraphrase/memory_slice.json",
+      "bytes": 465,
+      "sha256": "e93225a1dd966a35e39f5636ba28ad88856f71486d3a7c6fbd1febb2074011db"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--unknown-state-paraphrase/output_contract.json",
+      "bytes": 3775,
+      "sha256": "face64984f3cfc2835f337774fbc2f0535622bd6392ff4020a8d457bb02f8aa0"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r1--unknown-state-paraphrase/task_spec.json",
+      "bytes": 969,
+      "sha256": "cba8f687fe069d30921608f26aae97c29513594114f88400f13ddc1f3170818f"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--canonical/evaluation_spec.json",
+      "bytes": 5869,
+      "sha256": "724c3093bae3dda0010056cc086e95c512f075a957969f16f8310cdf6fb0c32f"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--canonical/evidence_bundle.json",
+      "bytes": 1281,
+      "sha256": "fa984e49ff4ef575108b093246ff17cd13fce87f8dfb10a0056cfd3058bee8c8"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--canonical/golden_output.json",
+      "bytes": 1902,
+      "sha256": "0e5ba9fb206e112ad258e1e94ca26ee3e072ebfca059cee2318f57df97f96daf"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--canonical/input.md",
+      "bytes": 702,
+      "sha256": "175dcec118048082387b2f213e554ce286ca9ec8f101c3f0ef9a2dbe822d96e3"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--canonical/known_bad_outputs/evidence_array_reordered.json",
+      "bytes": 1902,
+      "sha256": "300c641464ec0398b127fa5fd2337b239296178a6745d57861ef8c49a2ffed60"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--canonical/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 1861,
+      "sha256": "58669c41f523516e52c55c11d7839e4d2e1f21804539628f66ae4bf4dec301ff"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--canonical/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 1902,
+      "sha256": "7161277712b40074d99523b8f71cdbc4d56b40ab8597eb0ae2837ed469ba6d3e"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--canonical/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 1902,
+      "sha256": "30eeab98b3aec345860f55256fbe939da162760ab7f911d0f8f1f3fbb16d7e63"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--canonical/known_bad_outputs/static_pretransition_copy.json",
+      "bytes": 1766,
+      "sha256": "7db2755ab9504596b886164a13fb67e8d80b1daa658be4e39936172a2a20f5ef"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--canonical/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 1922,
+      "sha256": "47cb4724b7a4b7e85e97d349e491a2b49bd06ea7392334e951e8164344c5d0c3"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--canonical/known_bad_outputs/v5_observed_evidence_omission.json",
+      "bytes": 1884,
+      "sha256": "8996ebda219199d0d3b911c6eae16d0d0b18fc7ae02342562c64fa617f15170e"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--canonical/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 1874,
+      "sha256": "a811c5a31f792bf26c06cc8aa001a374c4a4b593bce47938a6d24367394c29b9"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--canonical/known_bad_outputs/wrong_transition_evidence.json",
+      "bytes": 1902,
+      "sha256": "062cb884434845a9f3d91e8b4d57d15dde7e38475c2a61061eb9d9d4dbaef66c"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--canonical/memory_slice.json",
+      "bytes": 450,
+      "sha256": "a56b8cac8915aa3a2389803f0310532f203b7e0413cb57ce4a53c4b4372ef051"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--canonical/output_contract.json",
+      "bytes": 3224,
+      "sha256": "326ae60d88f3b944835667716a13306e93ca5830341aa0cabd03ef9173e0e4cf"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--canonical/task_spec.json",
+      "bytes": 941,
+      "sha256": "227f99829ba269ef4496fbbc13ed2b720dea50ed52fe88834bd36374b245fe5e"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--distractor-evidence/evaluation_spec.json",
+      "bytes": 5879,
+      "sha256": "173e721993d78b7795cd1cf47511e9d98c945de40747a346d6f5fb39e3493bad"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--distractor-evidence/evidence_bundle.json",
+      "bytes": 1651,
+      "sha256": "b4b90b4f2230f2a7dc692b26c3217a421a7389c6d34bbbfed0c4a3e4e57ba1e2"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--distractor-evidence/golden_output.json",
+      "bytes": 1902,
+      "sha256": "0e5ba9fb206e112ad258e1e94ca26ee3e072ebfca059cee2318f57df97f96daf"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--distractor-evidence/input.md",
+      "bytes": 712,
+      "sha256": "ddfc0c2ecfa085c4b68dbcc76d8a5ffa236afe234edb6c6ea69b859a7ae36a5a"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--distractor-evidence/known_bad_outputs/evidence_array_reordered.json",
+      "bytes": 1902,
+      "sha256": "300c641464ec0398b127fa5fd2337b239296178a6745d57861ef8c49a2ffed60"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--distractor-evidence/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 1861,
+      "sha256": "58669c41f523516e52c55c11d7839e4d2e1f21804539628f66ae4bf4dec301ff"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--distractor-evidence/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 1902,
+      "sha256": "7161277712b40074d99523b8f71cdbc4d56b40ab8597eb0ae2837ed469ba6d3e"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--distractor-evidence/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 1902,
+      "sha256": "30eeab98b3aec345860f55256fbe939da162760ab7f911d0f8f1f3fbb16d7e63"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--distractor-evidence/known_bad_outputs/static_pretransition_copy.json",
+      "bytes": 1766,
+      "sha256": "7db2755ab9504596b886164a13fb67e8d80b1daa658be4e39936172a2a20f5ef"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--distractor-evidence/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 1922,
+      "sha256": "47cb4724b7a4b7e85e97d349e491a2b49bd06ea7392334e951e8164344c5d0c3"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--distractor-evidence/known_bad_outputs/v5_observed_evidence_omission.json",
+      "bytes": 1884,
+      "sha256": "8996ebda219199d0d3b911c6eae16d0d0b18fc7ae02342562c64fa617f15170e"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--distractor-evidence/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 1874,
+      "sha256": "a811c5a31f792bf26c06cc8aa001a374c4a4b593bce47938a6d24367394c29b9"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--distractor-evidence/known_bad_outputs/wrong_transition_evidence.json",
+      "bytes": 1902,
+      "sha256": "062cb884434845a9f3d91e8b4d57d15dde7e38475c2a61061eb9d9d4dbaef66c"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--distractor-evidence/memory_slice.json",
+      "bytes": 460,
+      "sha256": "16a2730543de1c6840d3a1068e30b280867d6275d1e5a4ddccb50e115a8ec997"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--distractor-evidence/output_contract.json",
+      "bytes": 3234,
+      "sha256": "d9c77e1da76d5b6b7f2c12908b98bef1340fe371f51ed9c03b3aab3d22414243"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--distractor-evidence/task_spec.json",
+      "bytes": 961,
+      "sha256": "2f4d97150167eb57c357a3f6caeacb7f323531b3b5e4ec985490a67fa15163ec"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--evidence-order-shuffled/evaluation_spec.json",
+      "bytes": 5883,
+      "sha256": "40882bc499c4be7f4253172bc6c47ffe0ca1ef15fd8344c37fe4f4d2aec694af"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--evidence-order-shuffled/evidence_bundle.json",
+      "bytes": 1295,
+      "sha256": "1b9fa40871e8acf329c2916fd56a9f80e0bc1b23d4a28f7dc18655a4204c95aa"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--evidence-order-shuffled/golden_output.json",
+      "bytes": 1902,
+      "sha256": "0e5ba9fb206e112ad258e1e94ca26ee3e072ebfca059cee2318f57df97f96daf"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--evidence-order-shuffled/input.md",
+      "bytes": 716,
+      "sha256": "e0920b25b8c408b1ae0041520c8d499d78ca7e98242372bb6b856993b718e0b3"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--evidence-order-shuffled/known_bad_outputs/evidence_array_reordered.json",
+      "bytes": 1902,
+      "sha256": "300c641464ec0398b127fa5fd2337b239296178a6745d57861ef8c49a2ffed60"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--evidence-order-shuffled/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 1861,
+      "sha256": "58669c41f523516e52c55c11d7839e4d2e1f21804539628f66ae4bf4dec301ff"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--evidence-order-shuffled/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 1902,
+      "sha256": "7161277712b40074d99523b8f71cdbc4d56b40ab8597eb0ae2837ed469ba6d3e"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--evidence-order-shuffled/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 1902,
+      "sha256": "30eeab98b3aec345860f55256fbe939da162760ab7f911d0f8f1f3fbb16d7e63"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--evidence-order-shuffled/known_bad_outputs/static_pretransition_copy.json",
+      "bytes": 1766,
+      "sha256": "7db2755ab9504596b886164a13fb67e8d80b1daa658be4e39936172a2a20f5ef"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--evidence-order-shuffled/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 1922,
+      "sha256": "47cb4724b7a4b7e85e97d349e491a2b49bd06ea7392334e951e8164344c5d0c3"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--evidence-order-shuffled/known_bad_outputs/v5_observed_evidence_omission.json",
+      "bytes": 1884,
+      "sha256": "8996ebda219199d0d3b911c6eae16d0d0b18fc7ae02342562c64fa617f15170e"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--evidence-order-shuffled/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 1874,
+      "sha256": "a811c5a31f792bf26c06cc8aa001a374c4a4b593bce47938a6d24367394c29b9"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--evidence-order-shuffled/known_bad_outputs/wrong_transition_evidence.json",
+      "bytes": 1902,
+      "sha256": "062cb884434845a9f3d91e8b4d57d15dde7e38475c2a61061eb9d9d4dbaef66c"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--evidence-order-shuffled/memory_slice.json",
+      "bytes": 464,
+      "sha256": "43a55b908172c0d62a73894d4cd5ce10e2fe1a67037bee91da7c305a7648ed8c"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--evidence-order-shuffled/output_contract.json",
+      "bytes": 3238,
+      "sha256": "60ff3a456e22c4a115f12b368382a27f33b28cec2863d23a5d9013b4d3d69256"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--evidence-order-shuffled/task_spec.json",
+      "bytes": 969,
+      "sha256": "e3d4eea309fd9a9c2d7a7dceca215deba5acdc3f5189ea092188bc22261d0365"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--field-alias/evaluation_spec.json",
+      "bytes": 5896,
+      "sha256": "1705ed7b6cf8ddc95fb3c5a992d3708c4d67768ca218664876c6ca4ca91c0970"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--field-alias/evidence_bundle.json",
+      "bytes": 1283,
+      "sha256": "371874d051bf17a4bf7ae3ff4a33da03c621c10e507f7c3bdb2d3b71a5bfe06f"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--field-alias/golden_output.json",
+      "bytes": 1947,
+      "sha256": "1c282c9463b13fdbeb7134c311120d593cd530c296159988b68a16d05dd24aca"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--field-alias/input.md",
+      "bytes": 709,
+      "sha256": "b8229b452a590f0dcc2467c5de361c7908a72aae71fbd99e3d7368d180522ca8"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--field-alias/known_bad_outputs/evidence_array_reordered.json",
+      "bytes": 1947,
+      "sha256": "2c26322cf902336344afaf8bd3552edb3e0f8bf64518a328162785ef5527fd23"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--field-alias/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 1901,
+      "sha256": "06b4038def56d732439a5b394c5bdd9ae92283e69696b917213933069fb239bd"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--field-alias/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 1947,
+      "sha256": "fa271cb05d0eaaa158c008446aa9404073f1e389f4bd98d4e32b826b179b9126"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--field-alias/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 1947,
+      "sha256": "aaa98d7fbcd5b180b3b03ee539babc5aea06d1c22771e962e899b54082985a5f"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--field-alias/known_bad_outputs/static_pretransition_copy.json",
+      "bytes": 1806,
+      "sha256": "842d71795fc023004855e074a3c370259476091dd3f7228573ec26c4bc9e4921"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--field-alias/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 1927,
+      "sha256": "dc9bb544ba7938ac7e62e33a793e4d9a733dc9f56f83aab961efc767e0881668"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--field-alias/known_bad_outputs/v5_observed_evidence_omission.json",
+      "bytes": 1929,
+      "sha256": "4c30859c5df3cf8e1db60e58990b4a949143bf113d6aa73bebd6af80e5fa56f3"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--field-alias/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 1919,
+      "sha256": "84baf6156c156c8cffe2aab98978d50a2707b41f317e68061b699203597f3406"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--field-alias/known_bad_outputs/wrong_transition_evidence.json",
+      "bytes": 1947,
+      "sha256": "9f596304434403241544cbce1ddcc2aaa03ab715b055606108d08efc5f1620b5"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--field-alias/memory_slice.json",
+      "bytes": 452,
+      "sha256": "1b11fb2786626affff9da3dad8c4a1039df422f642372fe8569d60c2196eae86"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--field-alias/output_contract.json",
+      "bytes": 3286,
+      "sha256": "8f62f7b65b94cd3af286978099a8990e24d8c362fce687498e0a236eb3a6bec4"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--field-alias/task_spec.json",
+      "bytes": 950,
+      "sha256": "f1d22d0534cc3816041d2c4c6c187711ff663c4ab4ffaad497b7733ffb498452"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--unknown-state-paraphrase/evaluation_spec.json",
+      "bytes": 5900,
+      "sha256": "9424609066f1bb20c480dc17cef45a2bcfc52043342dc65fdc22c5c254160b54"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--unknown-state-paraphrase/evidence_bundle.json",
+      "bytes": 1296,
+      "sha256": "6777749409d2d9dfbe3a0412495ab789acbd747c9dfc49e9fd64f657a43d879d"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--unknown-state-paraphrase/golden_output.json",
+      "bytes": 2010,
+      "sha256": "bb79e00b090f9efc0b51526c8a606979fe7c4cf1a3ddef9cace3e6b5f98885bd"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--unknown-state-paraphrase/input.md",
+      "bytes": 733,
+      "sha256": "b66a87f09610107bf1c80853639c8ef105a180d2e4472f162e986ac4aaebfa4d"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--unknown-state-paraphrase/known_bad_outputs/evidence_array_reordered.json",
+      "bytes": 2010,
+      "sha256": "dc737526b3b47b77e5fb7254d753d827ae8c259fb91f110d875599c9c6d39677"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--unknown-state-paraphrase/known_bad_outputs/incomplete_retention_attestation.json",
+      "bytes": 1969,
+      "sha256": "149774da4a050df892d020de2211b80b7a15a926106e1d0414906b6965536f81"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--unknown-state-paraphrase/known_bad_outputs/residual_unknown_reordered.json",
+      "bytes": 2010,
+      "sha256": "760d764579786f1d24bfac39d7e64344ec2cb5a33b9921c324fd5831ae140675"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--unknown-state-paraphrase/known_bad_outputs/semantic_evidence_remap.json",
+      "bytes": 2010,
+      "sha256": "e5faad4ee2748f764e90148de7ec3f37e3106f5485edb9a3f1ad228e3a830d23"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--unknown-state-paraphrase/known_bad_outputs/static_pretransition_copy.json",
+      "bytes": 1874,
+      "sha256": "219c1400bdc6bb0827394f04b9c8785f8f786b04d5a4a2395ebf0c868c480365"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--unknown-state-paraphrase/known_bad_outputs/undeclared_reference_field.json",
+      "bytes": 2030,
+      "sha256": "8f35b0567285eb7579239c24e37e81ee5f795a06a09bf445f7b056836e7f38d9"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--unknown-state-paraphrase/known_bad_outputs/v5_observed_evidence_omission.json",
+      "bytes": 1992,
+      "sha256": "14f32e24f1d35c0e92a1f9437e5c64d74f9085682212435c59569155b1b25602"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--unknown-state-paraphrase/known_bad_outputs/wrong_gate_next_action.json",
+      "bytes": 1982,
+      "sha256": "1744ecc62dce853c7ecb27d58a4942e029919603a75d588e6f173855acfcaba1"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--unknown-state-paraphrase/known_bad_outputs/wrong_transition_evidence.json",
+      "bytes": 2010,
+      "sha256": "853c1da63c5a7261e2d1ce0b354fc4454e1a0b00dba3d14e743f33b7ec2f3e9e"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--unknown-state-paraphrase/memory_slice.json",
+      "bytes": 465,
+      "sha256": "2565617121d03123104f0bfa5fb34841db0e231bdf9dd970294e5ee294689969"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--unknown-state-paraphrase/output_contract.json",
+      "bytes": 3439,
+      "sha256": "ad5247a57858be0539cc8013fed39cbfadcebd942e1d105caf4deb59374322ee"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/stage-b-v52-r2--unknown-state-paraphrase/task_spec.json",
+      "bytes": 971,
+      "sha256": "f8b3872ec0218d7e527eeb1bad496eeb08a2addafdae20262875b366dbc6d057"
+    },
+    {
+      "path": "research/04_methods/macro-evidence-binding-ablation-stage-b-v52/suite.json",
+      "bytes": 872,
+      "sha256": "e1c29b301bf5a7fcb63874ea2e2b2920d0ad35f176d4a77def83dd61b682e95f"
+    },
+    {
+      "path": "research/04_methods/provider-config.siliconflow-reviewed.json",
+      "bytes": 500,
+      "sha256": "1ce1a847ad55b70b8ccaf5bbf24a9aed3d5496b9232571bcccc7601dca44e583"
+    },
+    {
+      "path": "research/04_methods/scripts/analyze_stage_b_v52_evidence_binding_ablation.py",
+      "bytes": 10729,
+      "sha256": "9080dba267a8586cabd9f5883beb911f3b1deaf1d4b3aaf951ba558562d2d01b"
+    },
+    {
+      "path": "research/04_methods/scripts/build_stage_b_v52_evidence_binding_ablation.py",
+      "bytes": 21960,
+      "sha256": "a3e60b8f0735fae8dafe0f51c5214b42a3ffbf79cace10e870b367f5b32b47bd"
+    },
+    {
+      "path": "research/04_methods/scripts/evaluate_stage_b_v52_evidence_binding_ablation.py",
+      "bytes": 17462,
+      "sha256": "a6ba42c18198df66edc8e9c384e58d188cc7b01e8cf2b71689e2a016699998d8"
+    },
+    {
+      "path": "research/04_methods/scripts/test_evaluate_stage_b_v52_evidence_binding_ablation.py",
+      "bytes": 5211,
+      "sha256": "bb1cd244dd26970bea216c4f27632bdac4523fb51b9348034ef8ab806d96a6b1"
+    },
+    {
+      "path": "research/05_analysis/benchmark-stage-b-v52-evidence-binding-ablation-packets.jsonl",
+      "bytes": 189309,
+      "sha256": "0dedd80666036bae291966c367d45aadc967547e87a0d07eb329ded2b9c1a8e6"
+    },
+    {
+      "path": "research/05_analysis/benchmark-stage-b-v52-evidence-binding-ablation-packets.md",
+      "bytes": 1037,
+      "sha256": "72c388d5bf40ad6864995c2f01282a8126a1ecfb79bfc98e24eb5ddabb1c87fe"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation-manifest-with-prompts.json",
+      "bytes": 42450,
+      "sha256": "5de6c0a34f9bad800188010199afc72879baee4a8a60145330d824d7abc83d3f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation-manifest.json",
+      "bytes": 31578,
+      "sha256": "5166a4e7363370a3ca74255efdcee924817fe2827318f5b879cfd54f76367cfa"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--canonical__budget_model__G9__r1/adapter_request.json",
+      "bytes": 407,
+      "sha256": "765752cd0ec3e4a46d3eb8c3bb4bb889e40a783db71f042ba1fa069917405837"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--canonical__budget_model__G9__r1/manifest.json",
+      "bytes": 1275,
+      "sha256": "68654c22281475db1038282bc543830c6f96c73d2ac5c42aa2f2181f336e9fd8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--canonical__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--canonical__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--canonical__budget_model__G9__r1/prompt.md",
+      "bytes": 7801,
+      "sha256": "fca4f6d5dbc15dae6df875c86aea0fe9aa5bb8481587291da0c24f550b72d4a0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--canonical__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--canonical__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--canonical__budget_model__G9__r2/adapter_request.json",
+      "bytes": 407,
+      "sha256": "3f6c13d91590c1813ff25a7470c37a5013ad06807a68b31fed421b545f57235d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--canonical__budget_model__G9__r2/manifest.json",
+      "bytes": 1275,
+      "sha256": "3789a9c12822ecabedea07544a204ba6c70049a22d1bf9f9dab075d412c736fe"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--canonical__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--canonical__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--canonical__budget_model__G9__r2/prompt.md",
+      "bytes": 7801,
+      "sha256": "db7968e31517aa5503a2a041a300f8a7a9979976222b9be43df1ed80bfd8b9d0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--canonical__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--canonical__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--canonical__budget_model__G9__r3/adapter_request.json",
+      "bytes": 407,
+      "sha256": "186a088c3926612a560cc0acdf64bd327be932ff3f51fe97240ac2be8fda865f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--canonical__budget_model__G9__r3/manifest.json",
+      "bytes": 1275,
+      "sha256": "c5da421a4088a5432f65807a1503460bc337b2e23be6c2a389e7ce6396b8c925"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--canonical__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--canonical__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--canonical__budget_model__G9__r3/prompt.md",
+      "bytes": 7801,
+      "sha256": "19ed42c1ad51f811a617de2b95a740c6b011b5f72483a81fdfe3c8fe0e12ced7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--canonical__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--canonical__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--distractor-evidence__budget_model__G9__r1/adapter_request.json",
+      "bytes": 427,
+      "sha256": "806f488e72224e3abde33fb23af8068ddd34ed1e5386e5c0ab5b9b8028eadd10"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--distractor-evidence__budget_model__G9__r1/manifest.json",
+      "bytes": 1355,
+      "sha256": "aa7491e74eb76e496aab46d2b73d3d6d1f2faea12f4764a4ae04922cb09c9b51"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--distractor-evidence__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--distractor-evidence__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--distractor-evidence__budget_model__G9__r1/prompt.md",
+      "bytes": 8241,
+      "sha256": "4ec6179f2a9d64bbfc282fc21271ccfab159834d5c6acd00b7fd8891fb0b429a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--distractor-evidence__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--distractor-evidence__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--distractor-evidence__budget_model__G9__r2/adapter_request.json",
+      "bytes": 427,
+      "sha256": "bbd7f30bbb6eafeb5d337cb655e11f83629d493c24b71a8b371d8cd2d406df26"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--distractor-evidence__budget_model__G9__r2/manifest.json",
+      "bytes": 1355,
+      "sha256": "129775181cbbffc028c762300b68fbf03f782aa75b34b8a21dc880849e832f03"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--distractor-evidence__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--distractor-evidence__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--distractor-evidence__budget_model__G9__r2/prompt.md",
+      "bytes": 8241,
+      "sha256": "9fa489c6e73c6b290c681faef25cf6f2e1f326cad46835ceccf4aef557262b3a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--distractor-evidence__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--distractor-evidence__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--distractor-evidence__budget_model__G9__r3/adapter_request.json",
+      "bytes": 427,
+      "sha256": "4e919379a508331e929c681de80c3415456497a26bbb83aae3f47d783e983a23"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--distractor-evidence__budget_model__G9__r3/manifest.json",
+      "bytes": 1355,
+      "sha256": "3721a46641dd51e9869f66067388587840c31af1d98522208b687cbc197103d5"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--distractor-evidence__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--distractor-evidence__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--distractor-evidence__budget_model__G9__r3/prompt.md",
+      "bytes": 8241,
+      "sha256": "18fd855668c34868c9a7ac7e8d182bb374c533a0db23b1fbb89bf62517cf9681"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--distractor-evidence__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--distractor-evidence__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r1/adapter_request.json",
+      "bytes": 435,
+      "sha256": "fdca651177caa52d10715f6f049d4b2a778611d0074d5fd4d6d64c8c07a97986"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r1/manifest.json",
+      "bytes": 1387,
+      "sha256": "197826627240e4ec32a2b7afee3f969c5614dd905a2508a895c0aec567d04e50"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r1/prompt.md",
+      "bytes": 7913,
+      "sha256": "72777292cc55ca77145e64953a11a5dea532829b2e8cc7a292dffce733dac688"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r2/adapter_request.json",
+      "bytes": 435,
+      "sha256": "a56899306acedfb0a51a9f9dab7be27e7dff97e461e0ee008853fbcfa5a62444"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r2/manifest.json",
+      "bytes": 1387,
+      "sha256": "a5bb65e1ab1c78545af10356e6254f6174a8dab86f5f82462a46f573ab2a565e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r2/prompt.md",
+      "bytes": 7913,
+      "sha256": "5e189bbacc37f4818d50b1f11ec1279d2a3cd7e0addc07200fc5a713a2db4f0f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r3/adapter_request.json",
+      "bytes": 435,
+      "sha256": "48bc33ca40d8282377d2ac9831a83c205000a688b5ba619a5c556c0b581f5303"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r3/manifest.json",
+      "bytes": 1387,
+      "sha256": "681d7c24cd75baff22d3cdc75cf2dcab0e3a659cd508e138f377399a567deffc"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r3/prompt.md",
+      "bytes": 7913,
+      "sha256": "6b9fa5c36cf95e623225d7cba8acb7c969d92a6c17e377bb6d40a5ba331da248"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--field-alias__budget_model__G9__r1/adapter_request.json",
+      "bytes": 411,
+      "sha256": "208c5084ab524111c03f9015d8f4e0198fb1eb6ca479e544fb64d6c2478c6ea4"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--field-alias__budget_model__G9__r1/manifest.json",
+      "bytes": 1291,
+      "sha256": "77d7be23ce3dbad9d8d16f2f8c8ee93ab3dfeceea41052ffe736d60df8510e62"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--field-alias__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--field-alias__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--field-alias__budget_model__G9__r1/prompt.md",
+      "bytes": 7887,
+      "sha256": "082d97ab05e4d21a36f6722d6d693bbc7f4c2b8f5f1daf2e0a3c687e86422b5a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--field-alias__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--field-alias__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--field-alias__budget_model__G9__r2/adapter_request.json",
+      "bytes": 411,
+      "sha256": "ea654d21958f55803efbb9309fe912b1542a66f8ff4edaafc6899595f6783d18"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--field-alias__budget_model__G9__r2/manifest.json",
+      "bytes": 1291,
+      "sha256": "a979fbf7d0ddba4ce1ac76500d62d0740ec19fad1f098a596e3b46663b916c51"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--field-alias__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--field-alias__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--field-alias__budget_model__G9__r2/prompt.md",
+      "bytes": 7887,
+      "sha256": "6d5ec90849bc21deb3b32532c5125c52c4215dfaecb6678eff8842a9bfb0feb3"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--field-alias__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--field-alias__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--field-alias__budget_model__G9__r3/adapter_request.json",
+      "bytes": 411,
+      "sha256": "afd3e99b69c7bf5d19c22b2cccae4cbaf491d7b81b59c20ea62ea3a97a549d06"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--field-alias__budget_model__G9__r3/manifest.json",
+      "bytes": 1291,
+      "sha256": "411162b704d7180c7cb0cd974f7e31383dbe75cb5909aab12bf98aef9e813af1"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--field-alias__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--field-alias__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--field-alias__budget_model__G9__r3/prompt.md",
+      "bytes": 7887,
+      "sha256": "341d2ee219e447bd74c115a29e9ea1741ad086a3adbfbef38bf7a3e78bf5f5ff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--field-alias__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--field-alias__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r1/adapter_request.json",
+      "bytes": 437,
+      "sha256": "6bf717519ebf8649e365ef16dae99c206f7b49ff1d2f3a6bfff73e0e6f91535d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r1/manifest.json",
+      "bytes": 1395,
+      "sha256": "fa6155a7d347d8eb09d7762600463db6fe599346de5193a38a5643b8da8af8ee"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r1/prompt.md",
+      "bytes": 8137,
+      "sha256": "da3f506760a9f8ffd1ce471241f67505d314a65e60dad33f45110bf0772157e7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r2/adapter_request.json",
+      "bytes": 437,
+      "sha256": "46209018d58cf6f6873e75fb8d4a6823fec39dfb8940860cc301671ebe8c94d0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r2/manifest.json",
+      "bytes": 1395,
+      "sha256": "4ae7e5d15c361a0710af384f0633161ebfa44600f5747a0c8e4481e38973b266"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r2/prompt.md",
+      "bytes": 8137,
+      "sha256": "96845f49d0c3baba045296b69569f4241de000a76b2e0872ed49c09fde8224a9"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r3/adapter_request.json",
+      "bytes": 437,
+      "sha256": "094702323facf7a32118a6473667d8360bb45f615832659ec1368bb550d8820b"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r3/manifest.json",
+      "bytes": 1395,
+      "sha256": "f6730a1160962546a32f8912f5a33b4ab45ce9101c6585f8be7e6120e2e75829"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r3/prompt.md",
+      "bytes": 8137,
+      "sha256": "731f1a157e0072aba224bacd45bd043bee7cf535d6f274d390d20ab2ecf901a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--canonical__budget_model__G9__r1/adapter_request.json",
+      "bytes": 407,
+      "sha256": "97abd8fdac39ad4a82c23ff537487f279e981e09855eb1d207831330f4c01fa1"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--canonical__budget_model__G9__r1/manifest.json",
+      "bytes": 1275,
+      "sha256": "7bdfa104f71beccd324cc5fa2dd5b64d247a276be560ae41710c60ce9ec6eb63"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--canonical__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--canonical__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--canonical__budget_model__G9__r1/prompt.md",
+      "bytes": 7432,
+      "sha256": "25406d9c47851b964dcdf5c08c2fb5e1436db46b2a5af49ed1adb2815d5e3231"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--canonical__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--canonical__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--canonical__budget_model__G9__r2/adapter_request.json",
+      "bytes": 407,
+      "sha256": "78ac77543cb754ed27d8740358c729d59dc971be890ec5a73d20c89ec8cf6db0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--canonical__budget_model__G9__r2/manifest.json",
+      "bytes": 1275,
+      "sha256": "77a564b881ec26f4606e7339dc258b2441d62bd4f8996f28d1b5167f1a65b4ab"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--canonical__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--canonical__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--canonical__budget_model__G9__r2/prompt.md",
+      "bytes": 7432,
+      "sha256": "be35ac99c02616d4b824daf54f5269c467c28d4c6c423eb72c89140a7ca96e09"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--canonical__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--canonical__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--canonical__budget_model__G9__r3/adapter_request.json",
+      "bytes": 407,
+      "sha256": "8708ac16f1d61daa880434c90c0ea3694dd777d6b78599426868dfdc2b3058d9"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--canonical__budget_model__G9__r3/manifest.json",
+      "bytes": 1275,
+      "sha256": "73c5c1685f6ad965754462a308dcb5d6627a67e4bede1d10ffb9ef1ce7839ba6"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--canonical__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--canonical__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--canonical__budget_model__G9__r3/prompt.md",
+      "bytes": 7432,
+      "sha256": "2c949827dd4daf7cd0fba21ff805ffc9059efc4d2fc0a2c2fb35594c501ed9f2"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--canonical__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--canonical__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--distractor-evidence__budget_model__G9__r1/adapter_request.json",
+      "bytes": 427,
+      "sha256": "d5fb7c0e31d8a2b8eac90a525b133059afff09e1f123ee1ef966df9b9aee75c7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--distractor-evidence__budget_model__G9__r1/manifest.json",
+      "bytes": 1355,
+      "sha256": "2c35b5c5455ab56615354b9043827dcedf49a23d9e6018f4c1c7895c226f804d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--distractor-evidence__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--distractor-evidence__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--distractor-evidence__budget_model__G9__r1/prompt.md",
+      "bytes": 7872,
+      "sha256": "11acab756a89592abde5dadaa75d3057b5815ba174315d2df2d91541d7eb46e7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--distractor-evidence__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--distractor-evidence__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--distractor-evidence__budget_model__G9__r2/adapter_request.json",
+      "bytes": 427,
+      "sha256": "1015b49dc47b173926520c07d903966ea764f6c807ac3a73860b212ad626ab2c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--distractor-evidence__budget_model__G9__r2/manifest.json",
+      "bytes": 1355,
+      "sha256": "88fdc54e1789618d32a2bf386d45d8972b2e1a8039130873b6b9674da40ae9b0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--distractor-evidence__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--distractor-evidence__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--distractor-evidence__budget_model__G9__r2/prompt.md",
+      "bytes": 7872,
+      "sha256": "277265839d76c19df7d72f1baec5beba199cbad83c6c1c9653015ec992978ba0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--distractor-evidence__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--distractor-evidence__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--distractor-evidence__budget_model__G9__r3/adapter_request.json",
+      "bytes": 427,
+      "sha256": "28f44f50c13447a829bfd80702ab8439c8ac865d868e561513e6305d88741071"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--distractor-evidence__budget_model__G9__r3/manifest.json",
+      "bytes": 1355,
+      "sha256": "2b5a7547ce43544047b7edae029bc08e09b796cc78ad4d32c4142a48f7feb2c1"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--distractor-evidence__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--distractor-evidence__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--distractor-evidence__budget_model__G9__r3/prompt.md",
+      "bytes": 7872,
+      "sha256": "9fb5a96a1d53fa2f11e8763cc43288eafcb94a999183316a78d8740789d1df75"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--distractor-evidence__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--distractor-evidence__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r1/adapter_request.json",
+      "bytes": 435,
+      "sha256": "6fd5b728440bad374a8d2f9ea077be308a19da811e27e606f5148411786e33e5"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r1/manifest.json",
+      "bytes": 1387,
+      "sha256": "c9f2f8f100cd3fe151e2198ae6397791dcf29befaf424f7afbf50decaf386c40"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r1/prompt.md",
+      "bytes": 7544,
+      "sha256": "2cf887de040d60767b8d1ef3584bf88c59f9368b825ada095ff08e947323cac1"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r2/adapter_request.json",
+      "bytes": 435,
+      "sha256": "6d2438e901438adf80f4f504fff70dd8c6c23263f06d43695cd438f403637c9d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r2/manifest.json",
+      "bytes": 1387,
+      "sha256": "3f6323ecb32fcaf65bbb850601652b5d95c7c79e875def489520a5db5b19bd3d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r2/prompt.md",
+      "bytes": 7544,
+      "sha256": "4fd26ba6dee13189ed9324d56e1af94b95c2d17c399daeb0ea51246e83fa0b99"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r3/adapter_request.json",
+      "bytes": 435,
+      "sha256": "c85c7132d5dd25a3264b9d3b8e7c8263286117b3cb9583c503c362176fb8671a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r3/manifest.json",
+      "bytes": 1387,
+      "sha256": "d851c9ca05a09d522064392bb50de2b2b5d466eec0226b1a5acb43329ee838a4"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r3/prompt.md",
+      "bytes": 7544,
+      "sha256": "6f5bbc8cffdadf3998e4478826c80c359b52e0679690682d81f1a17d3d883aa5"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--field-alias__budget_model__G9__r1/adapter_request.json",
+      "bytes": 411,
+      "sha256": "9dd8b8c3070769410e2d71f31fbbd73d3d8f0ba4e56e8e84a55b0109c0616bb7"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--field-alias__budget_model__G9__r1/manifest.json",
+      "bytes": 1291,
+      "sha256": "3132c00f057093ed1a99d185f94ab730c62b9b1da906ea16244deada23e6cf65"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--field-alias__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--field-alias__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--field-alias__budget_model__G9__r1/prompt.md",
+      "bytes": 7518,
+      "sha256": "5b7778169538a62ffa2eb37a8095d51f52a5ce3817b91b004ba37b75f654ad97"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--field-alias__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--field-alias__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--field-alias__budget_model__G9__r2/adapter_request.json",
+      "bytes": 411,
+      "sha256": "04987cd932387c09c7a1a606bf9f798f078d4671cea5f43e84359cc58876cd93"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--field-alias__budget_model__G9__r2/manifest.json",
+      "bytes": 1291,
+      "sha256": "1b79612fee64ca1758ce8d838d8f02e7f16cedfe631c5855eb945998c2e9d1fb"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--field-alias__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--field-alias__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--field-alias__budget_model__G9__r2/prompt.md",
+      "bytes": 7518,
+      "sha256": "7918179b97d173e29ac7051be564002581450e9254716c060570c9154ff5fae3"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--field-alias__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--field-alias__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--field-alias__budget_model__G9__r3/adapter_request.json",
+      "bytes": 411,
+      "sha256": "b0115ba28c1303dd0c53f5e879cd55a9e8dc34685477543d4cf9bbc96c992c5d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--field-alias__budget_model__G9__r3/manifest.json",
+      "bytes": 1291,
+      "sha256": "50f2abc3ff19fd42727298da6bbc9cca1f1593d86db1a118c8d9fbcfbb2f62d4"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--field-alias__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--field-alias__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--field-alias__budget_model__G9__r3/prompt.md",
+      "bytes": 7518,
+      "sha256": "681b8a81b8cef0c656f23dbf52821d27c0e4c5581d3571ffd2454a41e2cc9219"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--field-alias__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--field-alias__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r1/adapter_request.json",
+      "bytes": 437,
+      "sha256": "1ccac791952acaea89a1aa08540c8ea701d88dcd1c15e480666d09d97c916e1b"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r1/manifest.json",
+      "bytes": 1395,
+      "sha256": "b05ce888f1b259ec5aef45b19f73698e070a86b3b1dcccf8f268c51270113e53"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r1/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r1/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r1/prompt.md",
+      "bytes": 7768,
+      "sha256": "925438d6e1dbf1d4b839a27378510eee597a4caa62f5d61130ddd1b4e0dcbcc0"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r1/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r2/adapter_request.json",
+      "bytes": 437,
+      "sha256": "0f11fefb366618a721fac03ff4fc85a4b0e00eaa6684bb40e2cb0f072551b68f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r2/manifest.json",
+      "bytes": 1395,
+      "sha256": "341a77d2d279e8f332746bc09cc175c8326ab26c37b915872718df4f2e1dfee6"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r2/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r2/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r2/prompt.md",
+      "bytes": 7768,
+      "sha256": "f0a7373ca390b1bea19e593db9306cd39f4a265704f9621859a422b36a391319"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r2/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r3/adapter_request.json",
+      "bytes": 437,
+      "sha256": "457b806e33884b1870bfca651aec188fc37e91c8b2f1911ab75d15094cbbd0ca"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r3/manifest.json",
+      "bytes": 1395,
+      "sha256": "3969582e73e1ff5a583df3864179629092993bf690b5aaa539bf73c779c1bf77"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r3/metrics.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r3/output.md",
+      "bytes": 94,
+      "sha256": "fd8bdbf039fcc163bdefa8569d9d60053dcd0da93f837a1c99336cf557a8a8a8"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r3/prompt.md",
+      "bytes": 7768,
+      "sha256": "4443831e86be570c94f61f7b1214f5db6414ad5ccbb9dd7904a57e836ac8b07d"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r3/tool_trace.jsonl",
+      "bytes": 81,
+      "sha256": "7e999cfd8b322b2a1441c506d5ea5872ae7abf20d8d11ab4c2ee7bcfbd943dff"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v52-evidence-binding-ablation/stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r3/validation_report.json",
+      "bytes": 27,
+      "sha256": "a1ad7b97bdf63396029d6ed9aba04e6de0aeca825aea16140fe352bb350bb62e"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v52-evidence-binding-ablation-adapter-dry-run-events.jsonl",
+      "bytes": 31648,
+      "sha256": "72792c625dc1a69725b059da03815d76d73010573c77deb04726f3d592588dec"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v52-evidence-binding-ablation-adapter-dry-run.json",
+      "bytes": 24510,
+      "sha256": "92626f2fa5e2017b6b8342f1c7c29db3bd159191e628969d8188e2ef77a41048"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v52-evidence-binding-ablation-experiment-plan.md",
+      "bytes": 6384,
+      "sha256": "d9542bb9410a727e791901d2044893857152f2abcc80b85052bb77907c9dfea0"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v52-evidence-binding-ablation-local-check.json",
+      "bytes": 399148,
+      "sha256": "120ddbc3af9196d9c71723d9ddffa0bec0da89c8296db4420a4158dd0f5f626e"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v52-evidence-binding-ablation-local-check.md",
+      "bytes": 12914,
+      "sha256": "c5a90a4a18bdb561fa4fa7b3ceb4749c1e21377b4e120cd85d5d2284e34e3c08"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v52-evidence-binding-ablation-pre-execution-audit.md",
+      "bytes": 2048,
+      "sha256": "d56fe9d477d83336dbcbe897be34ba77e8d7020bb440c3c521b47db69ff6a467"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v52-evidence-binding-ablation-preflight.json",
+      "bytes": 1798,
+      "sha256": "cc7345df61103aaa28d39eeb70faefe1524c17616cf08f6c171c8dc656f38066"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v52-evidence-binding-ablation-preflight.md",
+      "bytes": 1619,
+      "sha256": "716e83c583df148addb6f4d68b02982ffc582e5671218dfdb6a113bca4f0809b"
+    }
+  ]
+}
