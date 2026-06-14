@@ -1,0 +1,71 @@
+{
+  "note": "Prepared artifact directories for real model-backed benchmark runs.",
+  "run_count": 4,
+  "runs_dir": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke",
+  "runs": [
+    {
+      "run_id": "stage-b-v51-state-transition--canonical__budget_model__G9__r1",
+      "fixture": "stage-b-v51-state-transition--canonical",
+      "task_type": "stage_b_v51_controlled_state_transition_macro",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--canonical__budget_model__G9__r1\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--canonical__budget_model__G9__r1\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--canonical__budget_model__G9__r1\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--canonical__budget_model__G9__r1\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--canonical__budget_model__G9__r1\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--canonical__budget_model__G9__r1\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "stage-b-v51-state-transition--canonical__budget_model__G9__r2",
+      "fixture": "stage-b-v51-state-transition--canonical",
+      "task_type": "stage_b_v51_controlled_state_transition_macro",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--canonical__budget_model__G9__r2\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--canonical__budget_model__G9__r2\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--canonical__budget_model__G9__r2\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--canonical__budget_model__G9__r2\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--canonical__budget_model__G9__r2\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--canonical__budget_model__G9__r2\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r1",
+      "fixture": "stage-b-v51-state-transition--dual-surface-stress",
+      "task_type": "stage_b_v51_controlled_state_transition_macro",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r1\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r1\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r1\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r1\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r1\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r1\\adapter_request.json"
+      }
+    },
+    {
+      "run_id": "stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r2",
+      "fixture": "stage-b-v51-state-transition--dual-surface-stress",
+      "task_type": "stage_b_v51_controlled_state_transition_macro",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "status": "pending",
+      "paths": {
+        "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r2\\output.md",
+        "tool_trace": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r2\\tool_trace.jsonl",
+        "validation_report": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r2\\validation_report.json",
+        "metrics": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r2\\metrics.json",
+        "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r2\\prompt.md",
+        "adapter_request": "research\\05_analysis\\real-run-artifacts\\stage-b-v51-state-transition-repair-smoke\\stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r2\\adapter_request.json"
+      }
+    }
+  ]
+}

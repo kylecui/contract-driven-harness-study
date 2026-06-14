@@ -110,3 +110,21 @@ robustness. Stage 7e v4 remains a valid bounded repair case, but its earlier
 small smoke does not establish perturbation stability. Future writing must not
 describe literal skeletons as sufficient for reliable evidence-array or
 closed-vocabulary preservation.
+
+## Stage B v5.1 Repair Boundary Update
+
+The 2026-06-14 Stage B v5.1 repair smoke adds a positive but bounded
+mechanism-repair result.
+
+- Stage B v5 failed 0/4 on the complete contract.
+- Its state transition passed 4/4, while evidence retention and strict gate
+  accuracy passed 0/4.
+- v5.1 separated immutable evidence bindings from editable claim prose and
+  made the complete exact gate model-visible.
+- Qwen3-8B + G9 then passed 4/4 v5.1 runs, with every component at `1.000`.
+
+This supports the statement that repairing explicit contract defects can turn
+a failed low-cost-model macro into a passable bounded protocol. It does not
+show which repair was independently causal, estimate a stable success rate,
+or validate arbitrary state machines. The failed v5 record remains valid and
+must not be rescored or pooled with v5.1.

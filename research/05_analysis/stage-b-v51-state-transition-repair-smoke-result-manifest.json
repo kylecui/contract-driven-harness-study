@@ -1,0 +1,244 @@
+{
+  "protocol_id": "stage-b-v51-state-transition-repair-smoke-result",
+  "prepared_date": "2026-06-14",
+  "base_commit": "f0f69d9",
+  "hash_algorithm": "sha256",
+  "file_count": 47,
+  "files": [
+    {
+      "path": "research/04_methods/benchmark-matrix-stage-b-v51-state-transition-repair-smoke.json",
+      "bytes": 1415,
+      "sha256": "6ba121fb967079c89e705e7b8786ce5a60114cc5cfbf9332e31cc726bf7efb0a"
+    },
+    {
+      "path": "research/05_analysis/benchmark-stage-b-v51-state-transition-repair-smoke-packets.jsonl",
+      "bytes": 28406,
+      "sha256": "8bcba88bfe0d4ea305719f1ab08ebf61a9d523c62e3adc43788aaf926e53bd40"
+    },
+    {
+      "path": "research/05_analysis/benchmark-stage-b-v51-state-transition-repair-smoke-packets.md",
+      "bytes": 698,
+      "sha256": "9de96cd71c012b1d9827e5b20e4ef31aa044c803b90c7d4e3de3a94c9564b617"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke-manifest-with-prompts.json",
+      "bytes": 6329,
+      "sha256": "5b6ba77e92d4e9806244e16b402986b80fe5ece472344bd5ebac235fec5c8391"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke-manifest.json",
+      "bytes": 4761,
+      "sha256": "380192a28cfa09284f5fd353f37a96a7457ab5b22ab7b2d75164f03ae6bde483"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--canonical__budget_model__G9__r1/adapter_request.json",
+      "bytes": 439,
+      "sha256": "9819bbc0313a20f40a5b0a83767e1065c6d08a306dded1fa4bed56fcd4b4f390"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--canonical__budget_model__G9__r1/manifest.json",
+      "bytes": 1419,
+      "sha256": "987619b28c170d5a4b24e268dd080802f450834436330b44644e1ffac9b34c1c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--canonical__budget_model__G9__r1/metrics.json",
+      "bytes": 705,
+      "sha256": "d495d8c726e94aaa75d4ee3d2572201bb21a5ee5c75099480ab3c2aaa1b0a4bb"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--canonical__budget_model__G9__r1/output.md",
+      "bytes": 1896,
+      "sha256": "5de6ae1c0046e4de9df63957db6cb2b0f4d4b73a7d5e8147f71e5fdb80cd9647"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--canonical__budget_model__G9__r1/prompt.md",
+      "bytes": 8377,
+      "sha256": "1232edb433e1b2845b95161224452dd42b668452f7ac7566a7694c87e3aee2b2"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--canonical__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 851,
+      "sha256": "11350fde9cdab54352b5f34083b6e3fab25c17b76355061db2e8add75766a7cd"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--canonical__budget_model__G9__r1/validation_report.json",
+      "bytes": 2522,
+      "sha256": "f69ccc8faba517dd188a2dcfc54c0d5e9010c324cd03305c8e8923eef2bef672"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--canonical__budget_model__G9__r2/adapter_request.json",
+      "bytes": 439,
+      "sha256": "a1dd0f2bef715adcf99e54d7ccfb25adbe711ea6d9edf8bf1ad1c0c847452b63"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--canonical__budget_model__G9__r2/manifest.json",
+      "bytes": 1419,
+      "sha256": "aea9ac92b9a81033e6797df457dd9cf88d5d12974c2697f63da42ea9b9a9d492"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--canonical__budget_model__G9__r2/metrics.json",
+      "bytes": 705,
+      "sha256": "c064ced6bcada61f310fa52f036e8af47fc075d3200cc56ad16b2dabe7b95b6c"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--canonical__budget_model__G9__r2/output.md",
+      "bytes": 1896,
+      "sha256": "5de6ae1c0046e4de9df63957db6cb2b0f4d4b73a7d5e8147f71e5fdb80cd9647"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--canonical__budget_model__G9__r2/prompt.md",
+      "bytes": 8377,
+      "sha256": "24231318f254fd26bf65cea2b4b1afd4617af7defc11407585ce53867091a641"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--canonical__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 851,
+      "sha256": "e77b6fcffe133e2a9c26703a02817c42eee16d51021f7cc02873f358e4b67994"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--canonical__budget_model__G9__r2/validation_report.json",
+      "bytes": 2522,
+      "sha256": "73d146cc9ab946a889786ffc8d8512418d048a6c014bc442efac4223335c1d06"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r1/adapter_request.json",
+      "bytes": 459,
+      "sha256": "17ea7bf00cbf44bf5bfc2c5e1379b0cd2b15197d74b87c1e30b8a88ccec91b10"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r1/manifest.json",
+      "bytes": 1499,
+      "sha256": "d9ff1d88b5571f7ae69432155709f8366a5c1b7b482e75aaff8cf28bc26d93c6"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r1/metrics.json",
+      "bytes": 725,
+      "sha256": "b47722ba5a283615fa2e74cb7c15a9230d4dd798844ae13e4e7fe2dc28645e5a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r1/output.md",
+      "bytes": 2049,
+      "sha256": "49a38ed080c3efbcccd57eea314cd23522a2dad2047a1fc7ad2d64a66b19238a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r1/prompt.md",
+      "bytes": 8836,
+      "sha256": "bd3016a755d74c4987447cb80b80011b97a3bc5061aafa3beb8323518187d836"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r1/tool_trace.jsonl",
+      "bytes": 861,
+      "sha256": "153f3324935998432154b9050db9f19e02a79e47e8e82a46e36bedf405f79210"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r1/validation_report.json",
+      "bytes": 2695,
+      "sha256": "35d148f0701edfbeaeebe49b8ddd90952af05c341f18e8124c3b93def89cf93f"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r2/adapter_request.json",
+      "bytes": 459,
+      "sha256": "23d10afbad3df0b56a3020d6db9f01e71324f21efe5c97b16f5a2c06b0da10ae"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r2/manifest.json",
+      "bytes": 1499,
+      "sha256": "e9b96809d63b26605437f2144e8646a81f5c373eeb0e611843a6057b867bae55"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r2/metrics.json",
+      "bytes": 725,
+      "sha256": "136dff44c9c708e16240939653862d4c414b54e9bf99fdb056b9554ac885ecdb"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r2/output.md",
+      "bytes": 2049,
+      "sha256": "49a38ed080c3efbcccd57eea314cd23522a2dad2047a1fc7ad2d64a66b19238a"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r2/prompt.md",
+      "bytes": 8836,
+      "sha256": "e707be8068b7905f1cf7239f4bfe7cdd54353681afc5cdbf4b5a29155a258b6e"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r2/tool_trace.jsonl",
+      "bytes": 861,
+      "sha256": "3404b1989be3865035829c957d1320fac2601929dac9c84b8bd49557de0939e2"
+    },
+    {
+      "path": "research/05_analysis/real-run-artifacts/stage-b-v51-state-transition-repair-smoke/stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r2/validation_report.json",
+      "bytes": 2695,
+      "sha256": "6167030afc01ee9e2588d13aa9446b2c85401e2c8dcee04d876cd13a0f1e891d"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v51-state-transition-repair-smoke-adapter-dry-run-events.jsonl",
+      "bytes": 4504,
+      "sha256": "529e509839dac4807fca6cb18eb0481135d657882c6c50cd4ed0105ec75b598b"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v51-state-transition-repair-smoke-adapter-dry-run.json",
+      "bytes": 3528,
+      "sha256": "ab6b539e18ac4b508e094e726f5887857ddbca24c331b0b43c7537d99739e0e6"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v51-state-transition-repair-smoke-adapter-events.jsonl",
+      "bytes": 11828,
+      "sha256": "5e6effca65ad5a6d1690d87a3c537fba47330acadca6f1c5f47a8095b45c648b"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v51-state-transition-repair-smoke-comparison-audit.json",
+      "bytes": 1848,
+      "sha256": "0408135366786cf864a6bca7d3dba80cceaffdc82896eb0c162d650ec7325bf0"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v51-state-transition-repair-smoke-evaluated-runs.json",
+      "bytes": 3223,
+      "sha256": "67615da65b6ab81f801cc619f1b1b636decb91857f0d64e238d978847bd7aae0"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v51-state-transition-repair-smoke-evaluation.md",
+      "bytes": 969,
+      "sha256": "1d9c730e7bf35612969e7c27092b55a004e7a8dcd08eb1df8120c59bfaeceda0"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v51-state-transition-repair-smoke-execution.json",
+      "bytes": 6663,
+      "sha256": "558c1eea508c3b6de6334064e88f2eefd47587232ebc0eebd7b33b52c93ee82d"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v51-state-transition-repair-smoke-experiment-plan.md",
+      "bytes": 5242,
+      "sha256": "2b876414d98b111f6f7ddc66c313cc8e93adf5a8778bd81a2db0a2fa2f3c63c0"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v51-state-transition-repair-smoke-freeze-manifest.json",
+      "bytes": 24198,
+      "sha256": "bb225de1d70a5e2b7d55594c5e7d269fb570cd569ecbc9b1819b4f0059a93ebb"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v51-state-transition-repair-smoke-preflight.json",
+      "bytes": 1283,
+      "sha256": "b5f06e47f98a4f9d5ce36dd89967735d84005fee1b185673d14be3b25a9808dc"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v51-state-transition-repair-smoke-preflight.md",
+      "bytes": 1121,
+      "sha256": "6d49096d9086fd3e33774fb3d1e4e4633d8c7c11654d2e49b1091beac38fc710"
+    },
+    {
+      "path": "research/05_analysis/stage-b-v51-state-transition-repair-smoke-result-summary.md",
+      "bytes": 4972,
+      "sha256": "996173333d75ac00d96bc657df2e6e6950356dd68f54eb84e8192ce6e2ca6eec"
+    },
+    {
+      "path": "research/07_reviews/stage-b-v51-state-transition-repair-smoke-ai-slop-review.md",
+      "bytes": 496,
+      "sha256": "fc7236826978f61178b303c4f13d71f21e027a787e83c9368b5d9cbc9427f7ef"
+    },
+    {
+      "path": "research/07_reviews/stage-b-v51-state-transition-repair-smoke-quality-review.md",
+      "bytes": 3467,
+      "sha256": "27e8a4bab1ae47aacacb513eb10a573163cee762f23180061ef9c4424d92b06e"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "audited_on": "2026-06-14",
+  "comparison": {
+    "stage_b_v5": {
+      "protocol": "editable claim prose plus fixed grounded-claim evidence arrays; incomplete model-visible exact gate",
+      "runs": 4,
+      "aggregate_passes": 0,
+      "component_passes": {
+        "schema_validity": 4,
+        "exact_evidence_array_preservation": 0,
+        "residual_unknown_vocabulary_accuracy": 4,
+        "state_transition_accuracy": 4,
+        "transition_gate_accuracy": 0,
+        "retention_attestation_accuracy": 4
+      }
+    },
+    "stage_b_v51": {
+      "protocol": "immutable evidence_bindings separated from prose; complete exact gate model-visible",
+      "runs": 4,
+      "aggregate_passes": 4,
+      "component_passes": {
+        "schema_validity": 4,
+        "exact_evidence_array_preservation": 4,
+        "residual_unknown_vocabulary_accuracy": 4,
+        "state_transition_accuracy": 4,
+        "transition_gate_accuracy": 4,
+        "retention_attestation_accuracy": 4
+      }
+    }
+  },
+  "execution_integrity": {
+    "planned_calls": 4,
+    "completed_calls": 4,
+    "provider_errors": 0,
+    "retries": 0,
+    "invalid_json": 0,
+    "prompt_tokens": 8340,
+    "completion_tokens": 1968,
+    "total_tokens": 10308,
+    "reasoning_tokens": 0,
+    "completion_token_range": [
+      490,
+      494
+    ],
+    "latency_seconds": {
+      "minimum": 18.266,
+      "maximum": 23.219,
+      "median": 19.9065
+    }
+  },
+  "attribution_boundary": {
+    "supported": "The bundled v5.1 repair protocol passed this four-run targeted smoke where v5 failed.",
+    "not_supported": [
+      "Either repair alone caused the improvement.",
+      "The observed 4/4 is a stable success-rate estimate.",
+      "The result generalizes to arbitrary state machines or workflows.",
+      "The v5 result should be rescored or pooled with v5.1."
+    ]
+  }
+}
