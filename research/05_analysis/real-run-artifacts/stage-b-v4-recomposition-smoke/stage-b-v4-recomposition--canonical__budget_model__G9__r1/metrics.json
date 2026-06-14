@@ -1,0 +1,19 @@
+{
+  "run_id": "stage-b-v4-recomposition--canonical__budget_model__G9__r1",
+  "fixture": "stage-b-v4-recomposition--canonical",
+  "task_class": "stage_b_v4_bounded_recomposition_macro",
+  "model": "budget_model",
+  "harness_arm": "G9",
+  "validation_status": "complete",
+  "passed": true,
+  "metrics": {
+    "task_success": 1.0,
+    "schema_validity": 1.0,
+    "exact_evidence_array_preservation": 1.0,
+    "exact_closed_vocabulary_retention": 1.0,
+    "composition_gate_accuracy": 1.0,
+    "composition_retention": 1.0,
+    "atom_primary_metric": 1.0
+  },
+  "mock": false
+}

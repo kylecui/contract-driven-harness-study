@@ -1,0 +1,44 @@
+{
+  "manifest_path": "research\\05_analysis\\real-run-artifacts\\stage-b-v4-recomposition-smoke-manifest-with-prompts.json",
+  "config_path": "research\\04_methods\\provider-config.siliconflow-reviewed.json",
+  "require_keys": true,
+  "errors": [],
+  "warnings": [],
+  "runs": {
+    "run_count": 4,
+    "required_model_tiers": [
+      "budget_model"
+    ],
+    "manifest_status_counts": {
+      "pending": 4
+    },
+    "validation_status_counts": {
+      "pending": 4
+    },
+    "group_counts": {
+      "stage-b-v4-recomposition--canonical | budget_model | G9": 2,
+      "stage-b-v4-recomposition--dual-surface-stress | budget_model | G9": 2
+    },
+    "non_placeholder_outputs": []
+  },
+  "config": {
+    "providers": {
+      "siliconflow": {
+        "api_key_env": "SILICONFLOW_API_KEY",
+        "api_key_present": true,
+        "base_url": "https://api.siliconflow.cn/v1"
+      }
+    },
+    "model_tiers": {
+      "strong_model": {
+        "provider": "siliconflow",
+        "model": "deepseek-ai/DeepSeek-V3.2"
+      },
+      "budget_model": {
+        "provider": "siliconflow",
+        "model": "Qwen/Qwen3-8B"
+      }
+    },
+    "config_path": "research\\04_methods\\provider-config.siliconflow-reviewed.json"
+  }
+}
