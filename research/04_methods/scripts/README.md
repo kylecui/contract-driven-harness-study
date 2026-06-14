@@ -255,6 +255,33 @@ python research/04_methods/scripts/evaluate_stage7e_macro_artifacts.py `
 The local check must pass before compiling or executing the paid perturbation
 pilot.
 
+## Stage B v4 Exact-Retention Atoms
+
+`build_stage_b_v4_local_atoms.py` creates four local mechanism fixtures that
+separate exact evidence-array immutability from exact closed-vocabulary
+retention. `evaluate_stage_b_v4_atoms.py` uses exact list equality, including
+order and multiplicity, and checks that evaluator-only alternatives do not
+leak into model-visible fixture files.
+
+```powershell
+python research/04_methods/scripts/build_stage_b_v4_local_atoms.py `
+  --output-dir research/04_methods/mechanism-atoms-stage-b-v4
+
+python research/04_methods/scripts/validate_mechanism_atoms.py `
+  --atoms-dir research/04_methods/mechanism-atoms-stage-b-v4
+
+python research/04_methods/scripts/test_evaluate_stage_b_v4_atoms.py
+
+python research/04_methods/scripts/evaluate_stage_b_v4_atoms.py `
+  --atoms-dir research/04_methods/mechanism-atoms-stage-b-v4 `
+  --local-check `
+  --output-runs research/05_analysis/stage-b-v4-local-check.json `
+  --output-md research/05_analysis/stage-b-v4-local-check.md
+```
+
+Passing this local gate admits only a targeted model smoke. It is not model
+performance evidence.
+
 ## `collect_run_metrics.py`
 
 Collects per-run `metrics.json` files into one runs payload for `harness_benchmark_metrics.py`.

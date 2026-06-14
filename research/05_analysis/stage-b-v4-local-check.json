@@ -1,0 +1,1658 @@
+{
+  "suite": "stage_b_v4_local_mechanism_atoms",
+  "case_count": 32,
+  "fixture_count": 4,
+  "expectation_failure_count": 0,
+  "model_surface_violation_count": 0,
+  "model_surface_violations": [],
+  "cases": [
+    {
+      "fixture": "b4a-evidence-array-immutability--canonical",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "expect_pass": true,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [],
+        "atom_id": "B4A",
+        "atom_name": "Exact Evidence-Array Immutability (canonical)",
+        "primary_metric": "exact_evidence_array_preservation",
+        "parsed_output": {
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "The local gate passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The proposed stressor remains blocked pending a targeted smoke.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The next decision must preserve both the method rule and the backlog state.",
+              "evidence_ids": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "immutability_check": {
+            "status": "preserved",
+            "immutable_fields": [
+              "slot_id",
+              "evidence_ids"
+            ]
+          }
+        },
+        "run_id": "b4a-evidence-array-immutability--canonical__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "b4a-evidence-array-immutability--canonical",
+      "case": "added_undeclared_reference",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed"
+        ],
+        "atom_id": "B4A",
+        "atom_name": "Exact Evidence-Array Immutability (canonical)",
+        "primary_metric": "exact_evidence_array_preservation",
+        "parsed_output": {
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "The local gate passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The proposed stressor remains blocked pending a targeted smoke.",
+              "evidence_ids": [
+                "ev-06",
+                "ev-09"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The next decision must preserve both the method rule and the backlog state.",
+              "evidence_ids": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "immutability_check": {
+            "status": "preserved",
+            "immutable_fields": [
+              "slot_id",
+              "evidence_ids"
+            ]
+          }
+        },
+        "run_id": "b4a-evidence-array-immutability--canonical__added_undeclared_reference",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4a-evidence-array-immutability--canonical",
+      "case": "duplicated_reference",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed"
+        ],
+        "atom_id": "B4A",
+        "atom_name": "Exact Evidence-Array Immutability (canonical)",
+        "primary_metric": "exact_evidence_array_preservation",
+        "parsed_output": {
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "The local gate passed before provider execution.",
+              "evidence_ids": [
+                "ev-01",
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The proposed stressor remains blocked pending a targeted smoke.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The next decision must preserve both the method rule and the backlog state.",
+              "evidence_ids": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "immutability_check": {
+            "status": "preserved",
+            "immutable_fields": [
+              "slot_id",
+              "evidence_ids"
+            ]
+          }
+        },
+        "run_id": "b4a-evidence-array-immutability--canonical__duplicated_reference",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4a-evidence-array-immutability--canonical",
+      "case": "edited_slot_id",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed"
+        ],
+        "atom_id": "B4A",
+        "atom_name": "Exact Evidence-Array Immutability (canonical)",
+        "primary_metric": "exact_evidence_array_preservation",
+        "parsed_output": {
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "The local gate passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "The proposed stressor remains blocked pending a targeted smoke.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The next decision must preserve both the method rule and the backlog state.",
+              "evidence_ids": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "immutability_check": {
+            "status": "preserved",
+            "immutable_fields": [
+              "slot_id",
+              "evidence_ids"
+            ]
+          }
+        },
+        "run_id": "b4a-evidence-array-immutability--canonical__edited_slot_id",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4a-evidence-array-immutability--canonical",
+      "case": "merged_claim_slots",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed"
+        ],
+        "atom_id": "B4A",
+        "atom_name": "Exact Evidence-Array Immutability (canonical)",
+        "primary_metric": "exact_evidence_array_preservation",
+        "parsed_output": {
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "The local gate passed before provider execution.",
+              "evidence_ids": [
+                "ev-01",
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The next decision must preserve both the method rule and the backlog state.",
+              "evidence_ids": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "immutability_check": {
+            "status": "preserved",
+            "immutable_fields": [
+              "slot_id",
+              "evidence_ids"
+            ]
+          }
+        },
+        "run_id": "b4a-evidence-array-immutability--canonical__merged_claim_slots",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4a-evidence-array-immutability--canonical",
+      "case": "reordered_multi_reference_array",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed"
+        ],
+        "atom_id": "B4A",
+        "atom_name": "Exact Evidence-Array Immutability (canonical)",
+        "primary_metric": "exact_evidence_array_preservation",
+        "parsed_output": {
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "The local gate passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The proposed stressor remains blocked pending a targeted smoke.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The next decision must preserve both the method rule and the backlog state.",
+              "evidence_ids": [
+                "ev-08",
+                "ev-07"
+              ]
+            }
+          ],
+          "immutability_check": {
+            "status": "preserved",
+            "immutable_fields": [
+              "slot_id",
+              "evidence_ids"
+            ]
+          }
+        },
+        "run_id": "b4a-evidence-array-immutability--canonical__reordered_multi_reference_array",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4a-evidence-array-immutability--canonical",
+      "case": "substituted_reference",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed"
+        ],
+        "atom_id": "B4A",
+        "atom_name": "Exact Evidence-Array Immutability (canonical)",
+        "primary_metric": "exact_evidence_array_preservation",
+        "parsed_output": {
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "The local gate passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The proposed stressor remains blocked pending a targeted smoke.",
+              "evidence_ids": [
+                "ev-04"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The next decision must preserve both the method rule and the backlog state.",
+              "evidence_ids": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "immutability_check": {
+            "status": "preserved",
+            "immutable_fields": [
+              "slot_id",
+              "evidence_ids"
+            ]
+          }
+        },
+        "run_id": "b4a-evidence-array-immutability--canonical__substituted_reference",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4a-evidence-array-immutability--canonical",
+      "case": "undeclared_field_fallback",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "schema_contract_failed",
+          "exact_evidence_array_preservation_failed"
+        ],
+        "atom_id": "B4A",
+        "atom_name": "Exact Evidence-Array Immutability (canonical)",
+        "primary_metric": "exact_evidence_array_preservation",
+        "parsed_output": {
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "The local gate passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The proposed stressor remains blocked pending a targeted smoke.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The next decision must preserve both the method rule and the backlog state.",
+              "source_references": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "immutability_check": {
+            "status": "preserved",
+            "immutable_fields": [
+              "slot_id",
+              "source_references"
+            ]
+          }
+        },
+        "run_id": "b4a-evidence-array-immutability--canonical__undeclared_field_fallback",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.0,
+        "schema_validity": 0.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4a-evidence-array-immutability--declared-field-alias",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "expect_pass": true,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [],
+        "atom_id": "B4A",
+        "atom_name": "Exact Evidence-Array Immutability (declared-field-alias)",
+        "primary_metric": "exact_evidence_array_preservation",
+        "parsed_output": {
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "The local gate passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The proposed stressor remains blocked pending a targeted smoke.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The next decision must preserve both the method rule and the backlog state.",
+              "source_references": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "immutability_check": {
+            "status": "preserved",
+            "immutable_fields": [
+              "slot_id",
+              "source_references"
+            ]
+          }
+        },
+        "run_id": "b4a-evidence-array-immutability--declared-field-alias__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "b4a-evidence-array-immutability--declared-field-alias",
+      "case": "added_undeclared_reference",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed"
+        ],
+        "atom_id": "B4A",
+        "atom_name": "Exact Evidence-Array Immutability (declared-field-alias)",
+        "primary_metric": "exact_evidence_array_preservation",
+        "parsed_output": {
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "The local gate passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The proposed stressor remains blocked pending a targeted smoke.",
+              "source_references": [
+                "ev-06",
+                "ev-09"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The next decision must preserve both the method rule and the backlog state.",
+              "source_references": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "immutability_check": {
+            "status": "preserved",
+            "immutable_fields": [
+              "slot_id",
+              "source_references"
+            ]
+          }
+        },
+        "run_id": "b4a-evidence-array-immutability--declared-field-alias__added_undeclared_reference",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4a-evidence-array-immutability--declared-field-alias",
+      "case": "duplicated_reference",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed"
+        ],
+        "atom_id": "B4A",
+        "atom_name": "Exact Evidence-Array Immutability (declared-field-alias)",
+        "primary_metric": "exact_evidence_array_preservation",
+        "parsed_output": {
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "The local gate passed before provider execution.",
+              "source_references": [
+                "ev-01",
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The proposed stressor remains blocked pending a targeted smoke.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The next decision must preserve both the method rule and the backlog state.",
+              "source_references": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "immutability_check": {
+            "status": "preserved",
+            "immutable_fields": [
+              "slot_id",
+              "source_references"
+            ]
+          }
+        },
+        "run_id": "b4a-evidence-array-immutability--declared-field-alias__duplicated_reference",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4a-evidence-array-immutability--declared-field-alias",
+      "case": "edited_slot_id",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed"
+        ],
+        "atom_id": "B4A",
+        "atom_name": "Exact Evidence-Array Immutability (declared-field-alias)",
+        "primary_metric": "exact_evidence_array_preservation",
+        "parsed_output": {
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "The local gate passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "The proposed stressor remains blocked pending a targeted smoke.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The next decision must preserve both the method rule and the backlog state.",
+              "source_references": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "immutability_check": {
+            "status": "preserved",
+            "immutable_fields": [
+              "slot_id",
+              "source_references"
+            ]
+          }
+        },
+        "run_id": "b4a-evidence-array-immutability--declared-field-alias__edited_slot_id",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4a-evidence-array-immutability--declared-field-alias",
+      "case": "merged_claim_slots",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed"
+        ],
+        "atom_id": "B4A",
+        "atom_name": "Exact Evidence-Array Immutability (declared-field-alias)",
+        "primary_metric": "exact_evidence_array_preservation",
+        "parsed_output": {
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "The local gate passed before provider execution.",
+              "source_references": [
+                "ev-01",
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The next decision must preserve both the method rule and the backlog state.",
+              "source_references": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "immutability_check": {
+            "status": "preserved",
+            "immutable_fields": [
+              "slot_id",
+              "source_references"
+            ]
+          }
+        },
+        "run_id": "b4a-evidence-array-immutability--declared-field-alias__merged_claim_slots",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4a-evidence-array-immutability--declared-field-alias",
+      "case": "reordered_multi_reference_array",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed"
+        ],
+        "atom_id": "B4A",
+        "atom_name": "Exact Evidence-Array Immutability (declared-field-alias)",
+        "primary_metric": "exact_evidence_array_preservation",
+        "parsed_output": {
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "The local gate passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The proposed stressor remains blocked pending a targeted smoke.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The next decision must preserve both the method rule and the backlog state.",
+              "source_references": [
+                "ev-08",
+                "ev-07"
+              ]
+            }
+          ],
+          "immutability_check": {
+            "status": "preserved",
+            "immutable_fields": [
+              "slot_id",
+              "source_references"
+            ]
+          }
+        },
+        "run_id": "b4a-evidence-array-immutability--declared-field-alias__reordered_multi_reference_array",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4a-evidence-array-immutability--declared-field-alias",
+      "case": "substituted_reference",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed"
+        ],
+        "atom_id": "B4A",
+        "atom_name": "Exact Evidence-Array Immutability (declared-field-alias)",
+        "primary_metric": "exact_evidence_array_preservation",
+        "parsed_output": {
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "The local gate passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The proposed stressor remains blocked pending a targeted smoke.",
+              "source_references": [
+                "ev-04"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The next decision must preserve both the method rule and the backlog state.",
+              "source_references": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "immutability_check": {
+            "status": "preserved",
+            "immutable_fields": [
+              "slot_id",
+              "source_references"
+            ]
+          }
+        },
+        "run_id": "b4a-evidence-array-immutability--declared-field-alias__substituted_reference",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4a-evidence-array-immutability--declared-field-alias",
+      "case": "undeclared_field_fallback",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "schema_contract_failed",
+          "exact_evidence_array_preservation_failed"
+        ],
+        "atom_id": "B4A",
+        "atom_name": "Exact Evidence-Array Immutability (declared-field-alias)",
+        "primary_metric": "exact_evidence_array_preservation",
+        "parsed_output": {
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "The local gate passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The proposed stressor remains blocked pending a targeted smoke.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The next decision must preserve both the method rule and the backlog state.",
+              "evidence_ids": [
+                "ev-07",
+                "ev-08"
+              ]
+            }
+          ],
+          "immutability_check": {
+            "status": "preserved",
+            "immutable_fields": [
+              "slot_id",
+              "evidence_ids"
+            ]
+          }
+        },
+        "run_id": "b4a-evidence-array-immutability--declared-field-alias__undeclared_field_fallback",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.0,
+        "schema_validity": 0.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4b-closed-vocabulary-retention--canonical",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "expect_pass": true,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [],
+        "atom_id": "B4B",
+        "atom_name": "Exact Closed-Vocabulary Retention (canonical)",
+        "primary_metric": "exact_closed_vocabulary_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status",
+              "network_api_approval"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status",
+              "do_not_infer_network_api_approval"
+            ]
+          },
+          "retention_status": "preserved"
+        },
+        "run_id": "b4b-closed-vocabulary-retention--canonical__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 1.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "b4b-closed-vocabulary-retention--canonical",
+      "case": "added_undeclared_value",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "atom_id": "B4B",
+        "atom_name": "Exact Closed-Vocabulary Retention (canonical)",
+        "primary_metric": "exact_closed_vocabulary_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status",
+              "network_api_approval",
+              "provider_region"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status",
+              "do_not_infer_network_api_approval"
+            ]
+          },
+          "retention_status": "preserved"
+        },
+        "run_id": "b4b-closed-vocabulary-retention--canonical__added_undeclared_value",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4b-closed-vocabulary-retention--canonical",
+      "case": "alternate_vocabulary_fallback",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "atom_id": "B4B",
+        "atom_name": "Exact Closed-Vocabulary Retention (canonical)",
+        "primary_metric": "exact_closed_vocabulary_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result",
+              "permission_to_use_external_model_api"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result",
+              "do_not_guess_permission_to_use_external_model_api"
+            ]
+          },
+          "retention_status": "preserved"
+        },
+        "run_id": "b4b-closed-vocabulary-retention--canonical__alternate_vocabulary_fallback",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4b-closed-vocabulary-retention--canonical",
+      "case": "mixed_surface_vocabulary",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "atom_id": "B4B",
+        "atom_name": "Exact Closed-Vocabulary Retention (canonical)",
+        "primary_metric": "exact_closed_vocabulary_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "current_git_branch",
+              "continuous_integration_result",
+              "network_api_approval"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status",
+              "do_not_infer_network_api_approval"
+            ]
+          },
+          "retention_status": "preserved"
+        },
+        "run_id": "b4b-closed-vocabulary-retention--canonical__mixed_surface_vocabulary",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4b-closed-vocabulary-retention--canonical",
+      "case": "omitted_forbidden_value",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "atom_id": "B4B",
+        "atom_name": "Exact Closed-Vocabulary Retention (canonical)",
+        "primary_metric": "exact_closed_vocabulary_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status",
+              "network_api_approval"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status"
+            ]
+          },
+          "retention_status": "preserved"
+        },
+        "run_id": "b4b-closed-vocabulary-retention--canonical__omitted_forbidden_value",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4b-closed-vocabulary-retention--canonical",
+      "case": "prefix_substitution",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "atom_id": "B4B",
+        "atom_name": "Exact Closed-Vocabulary Retention (canonical)",
+        "primary_metric": "exact_closed_vocabulary_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status",
+              "network_api_approval"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_current_git_branch",
+              "do_not_guess_ci_status",
+              "do_not_guess_network_api_approval"
+            ]
+          },
+          "retention_status": "preserved"
+        },
+        "run_id": "b4b-closed-vocabulary-retention--canonical__prefix_substitution",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4b-closed-vocabulary-retention--canonical",
+      "case": "renamed_inventory_section",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "schema_contract_failed",
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "atom_id": "B4B",
+        "atom_name": "Exact Closed-Vocabulary Retention (canonical)",
+        "primary_metric": "exact_closed_vocabulary_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status",
+              "do_not_infer_network_api_approval"
+            ],
+            "unknowns": [
+              "current_git_branch",
+              "ci_status",
+              "network_api_approval"
+            ]
+          },
+          "retention_status": "preserved"
+        },
+        "run_id": "b4b-closed-vocabulary-retention--canonical__renamed_inventory_section",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.0,
+        "schema_validity": 0.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4b-closed-vocabulary-retention--canonical",
+      "case": "reordered_unknown_state",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "atom_id": "B4B",
+        "atom_name": "Exact Closed-Vocabulary Retention (canonical)",
+        "primary_metric": "exact_closed_vocabulary_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "network_api_approval",
+              "ci_status",
+              "current_git_branch"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status",
+              "do_not_infer_network_api_approval"
+            ]
+          },
+          "retention_status": "preserved"
+        },
+        "run_id": "b4b-closed-vocabulary-retention--canonical__reordered_unknown_state",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4b-closed-vocabulary-retention--paraphrased",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "expect_pass": true,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [],
+        "atom_id": "B4B",
+        "atom_name": "Exact Closed-Vocabulary Retention (paraphrased)",
+        "primary_metric": "exact_closed_vocabulary_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result",
+              "permission_to_use_external_model_api"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result",
+              "do_not_guess_permission_to_use_external_model_api"
+            ]
+          },
+          "retention_status": "preserved"
+        },
+        "run_id": "b4b-closed-vocabulary-retention--paraphrased__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 1.0,
+        "atom_primary_metric": 1.0
+      }
+    },
+    {
+      "fixture": "b4b-closed-vocabulary-retention--paraphrased",
+      "case": "added_undeclared_value",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "atom_id": "B4B",
+        "atom_name": "Exact Closed-Vocabulary Retention (paraphrased)",
+        "primary_metric": "exact_closed_vocabulary_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result",
+              "permission_to_use_external_model_api",
+              "provider_region"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result",
+              "do_not_guess_permission_to_use_external_model_api"
+            ]
+          },
+          "retention_status": "preserved"
+        },
+        "run_id": "b4b-closed-vocabulary-retention--paraphrased__added_undeclared_value",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4b-closed-vocabulary-retention--paraphrased",
+      "case": "alternate_vocabulary_fallback",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "atom_id": "B4B",
+        "atom_name": "Exact Closed-Vocabulary Retention (paraphrased)",
+        "primary_metric": "exact_closed_vocabulary_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status",
+              "network_api_approval"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status",
+              "do_not_infer_network_api_approval"
+            ]
+          },
+          "retention_status": "preserved"
+        },
+        "run_id": "b4b-closed-vocabulary-retention--paraphrased__alternate_vocabulary_fallback",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4b-closed-vocabulary-retention--paraphrased",
+      "case": "mixed_surface_vocabulary",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "atom_id": "B4B",
+        "atom_name": "Exact Closed-Vocabulary Retention (paraphrased)",
+        "primary_metric": "exact_closed_vocabulary_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "ci_status",
+              "permission_to_use_external_model_api"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result",
+              "do_not_guess_permission_to_use_external_model_api"
+            ]
+          },
+          "retention_status": "preserved"
+        },
+        "run_id": "b4b-closed-vocabulary-retention--paraphrased__mixed_surface_vocabulary",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4b-closed-vocabulary-retention--paraphrased",
+      "case": "omitted_forbidden_value",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "atom_id": "B4B",
+        "atom_name": "Exact Closed-Vocabulary Retention (paraphrased)",
+        "primary_metric": "exact_closed_vocabulary_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result",
+              "permission_to_use_external_model_api"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result"
+            ]
+          },
+          "retention_status": "preserved"
+        },
+        "run_id": "b4b-closed-vocabulary-retention--paraphrased__omitted_forbidden_value",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4b-closed-vocabulary-retention--paraphrased",
+      "case": "prefix_substitution",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "atom_id": "B4B",
+        "atom_name": "Exact Closed-Vocabulary Retention (paraphrased)",
+        "primary_metric": "exact_closed_vocabulary_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result",
+              "permission_to_use_external_model_api"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_branch_currently_checked_out",
+              "do_not_infer_continuous_integration_result",
+              "do_not_infer_permission_to_use_external_model_api"
+            ]
+          },
+          "retention_status": "preserved"
+        },
+        "run_id": "b4b-closed-vocabulary-retention--paraphrased__prefix_substitution",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4b-closed-vocabulary-retention--paraphrased",
+      "case": "renamed_inventory_section",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "schema_contract_failed",
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "atom_id": "B4B",
+        "atom_name": "Exact Closed-Vocabulary Retention (paraphrased)",
+        "primary_metric": "exact_closed_vocabulary_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result",
+              "do_not_guess_permission_to_use_external_model_api"
+            ],
+            "unknowns": [
+              "branch_currently_checked_out",
+              "continuous_integration_result",
+              "permission_to_use_external_model_api"
+            ]
+          },
+          "retention_status": "preserved"
+        },
+        "run_id": "b4b-closed-vocabulary-retention--paraphrased__renamed_inventory_section",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.0,
+        "schema_validity": 0.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    },
+    {
+      "fixture": "b4b-closed-vocabulary-retention--paraphrased",
+      "case": "reordered_unknown_state",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated by exact Stage B v4 atom contract.",
+        "findings": [
+          "exact_closed_vocabulary_retention_failed"
+        ],
+        "atom_id": "B4B",
+        "atom_name": "Exact Closed-Vocabulary Retention (paraphrased)",
+        "primary_metric": "exact_closed_vocabulary_retention",
+        "parsed_output": {
+          "state_inventory": {
+            "unknown_state": [
+              "permission_to_use_external_model_api",
+              "continuous_integration_result",
+              "branch_currently_checked_out"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result",
+              "do_not_guess_permission_to_use_external_model_api"
+            ]
+          },
+          "retention_status": "preserved"
+        },
+        "run_id": "b4b-closed-vocabulary-retention--paraphrased__reordered_unknown_state",
+        "model": "known_bad",
+        "harness_arm": "local",
+        "primary_expectation_met": true
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "exact_closed_vocabulary_retention": 0.0,
+        "atom_primary_metric": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "output_contract_id": "out_stage_b_v4_b4b_paraphrased_001",
+  "format": "json",
+  "required_sections": [
+    "state_inventory",
+    "retention_status"
+  ],
+  "required_nested_fields": {
+    "state_inventory": [
+      "unknown_state",
+      "forbidden_inferences"
+    ]
+  },
+  "closed_vocabularies": {
+    "state_inventory.unknown_state": [
+      "branch_currently_checked_out",
+      "continuous_integration_result",
+      "permission_to_use_external_model_api"
+    ],
+    "state_inventory.forbidden_inferences": [
+      "do_not_guess_branch_currently_checked_out",
+      "do_not_guess_continuous_integration_result",
+      "do_not_guess_permission_to_use_external_model_api"
+    ],
+    "retention_status": [
+      "preserved"
+    ]
+  },
+  "exact_output_template": {
+    "state_inventory": {
+      "unknown_state": [
+        "branch_currently_checked_out",
+        "continuous_integration_result",
+        "permission_to_use_external_model_api"
+      ],
+      "forbidden_inferences": [
+        "do_not_guess_branch_currently_checked_out",
+        "do_not_guess_continuous_integration_result",
+        "do_not_guess_permission_to_use_external_model_api"
+      ]
+    },
+    "retention_status": "preserved"
+  },
+  "style_profile": "minimal_json",
+  "tool_trace_required": false
+}

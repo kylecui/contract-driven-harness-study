@@ -1,0 +1,63 @@
+{
+  "atom_version": "0.4.0-stage-b-v4-local",
+  "atom_id": "B4B",
+  "atom_name": "Exact Closed-Vocabulary Retention (canonical)",
+  "primary_mechanism": "OutputContract",
+  "supporting_mechanisms": [
+    "MemorySlice"
+  ],
+  "capability_under_test": "Retain declared unknown-state and forbidden-inference labels with exact value, multiplicity, and order equality.",
+  "non_goals": [
+    "Do not evaluate whether alternative labels are semantically similar.",
+    "Do not evaluate broad state reasoning.",
+    "Do not evaluate workflow composition."
+  ],
+  "input_contract": {
+    "required_inputs": [
+      "input.md",
+      "task_spec.json",
+      "memory_slice.json",
+      "evidence_bundle.json",
+      "output_contract.json"
+    ],
+    "fixed_snapshot": true,
+    "forbidden_assumptions": [
+      "Do not normalize labels to familiar synonyms.",
+      "Do not infer undeclared state."
+    ]
+  },
+  "output_contract_id": "out_stage_b_v4_b4b_canonical_001",
+  "pass_criteria": [
+    {
+      "metric": "schema_validity",
+      "threshold": 1.0,
+      "required": true
+    },
+    {
+      "metric": "exact_closed_vocabulary_retention",
+      "threshold": 1.0,
+      "required": true
+    }
+  ],
+  "known_failure_modes": [
+    "Guess-to-infer prefix substitution",
+    "Canonical or paraphrased vocabulary fallback",
+    "Value omission, addition, or reordering",
+    "Mixed vocabulary surfaces",
+    "Inventory section rename"
+  ],
+  "composition_interface": {
+    "input_from_previous": [
+      "declared_unknown_state_vocabulary"
+    ],
+    "output_to_next": [
+      "immutable_state_inventory_labels"
+    ],
+    "state_dependencies": [
+      "memory_slice"
+    ],
+    "evidence_dependencies": [],
+    "failure_signal": "exact-closed-vocabulary-retention_failed",
+    "repair_policy": "validator_repair"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "state_inventory": {
+    "unknown_state": [
+      "branch_currently_checked_out",
+      "ci_status",
+      "permission_to_use_external_model_api"
+    ],
+    "forbidden_inferences": [
+      "do_not_guess_branch_currently_checked_out",
+      "do_not_guess_continuous_integration_result",
+      "do_not_guess_permission_to_use_external_model_api"
+    ]
+  },
+  "retention_status": "preserved"
+}

@@ -1,0 +1,15 @@
+{
+  "state_inventory": {
+    "unknown_state": [
+      "current_git_branch",
+      "ci_status",
+      "network_api_approval"
+    ],
+    "forbidden_inferences": [
+      "do_not_infer_current_git_branch",
+      "do_not_infer_ci_status",
+      "do_not_infer_network_api_approval"
+    ]
+  },
+  "retention_status": "preserved"
+}

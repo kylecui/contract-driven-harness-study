@@ -1,0 +1,14 @@
+{
+  "suite_id": "stage_b_v4_local_mechanism_atoms",
+  "purpose": "isolate exact evidence-array immutability and exact closed-vocabulary retention after Stage B v3",
+  "fixture_count": 4,
+  "fixtures": [
+    "b4a-evidence-array-immutability--canonical",
+    "b4a-evidence-array-immutability--declared-field-alias",
+    "b4b-closed-vocabulary-retention--canonical",
+    "b4b-closed-vocabulary-retention--paraphrased"
+  ],
+  "provider_calls": 0,
+  "pooling_policy": "must_not_pool_with_stage_b_v1_v2_or_v3",
+  "next_gate": "targeted real-model smoke is admissible only if all golden, known-bad, model-surface, and regression checks pass"
+}

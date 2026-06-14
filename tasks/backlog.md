@@ -107,6 +107,6 @@
 - [x] Prepare Stage 7e/Stage 7-next fixture perturbation suite.
 - [x] Execute the Stage B v3 30-run literal-skeleton perturbation slice and retain all raw attempts.
 - [x] Close Stage B v3 as a failed protocol: 18/30 runs and 6/10 cells passed; no provider retry was needed.
-- [ ] Stage B v4-local: isolate exact evidence-array immutability and exact paraphrased-value retention as separate mechanism atoms.
+- [x] Stage B v4-local: isolate exact evidence-array immutability and exact paraphrased-value retention as separate mechanism atoms. Four fixtures passed 32/32 local expectations, six evaluator unit tests, zero model-surface leaks, and the unchanged 110-case Stage B v3 regression.
 - [ ] Stage B v4-smoke: run a small targeted low-cost-model smoke only after both local atom gates pass.
 - [ ] Design controlled state-mutating macro before any full workflow expansion.

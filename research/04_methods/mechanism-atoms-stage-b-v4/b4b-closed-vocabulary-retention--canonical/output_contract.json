@@ -1,0 +1,46 @@
+{
+  "output_contract_id": "out_stage_b_v4_b4b_canonical_001",
+  "format": "json",
+  "required_sections": [
+    "state_inventory",
+    "retention_status"
+  ],
+  "required_nested_fields": {
+    "state_inventory": [
+      "unknown_state",
+      "forbidden_inferences"
+    ]
+  },
+  "closed_vocabularies": {
+    "state_inventory.unknown_state": [
+      "current_git_branch",
+      "ci_status",
+      "network_api_approval"
+    ],
+    "state_inventory.forbidden_inferences": [
+      "do_not_infer_current_git_branch",
+      "do_not_infer_ci_status",
+      "do_not_infer_network_api_approval"
+    ],
+    "retention_status": [
+      "preserved"
+    ]
+  },
+  "exact_output_template": {
+    "state_inventory": {
+      "unknown_state": [
+        "current_git_branch",
+        "ci_status",
+        "network_api_approval"
+      ],
+      "forbidden_inferences": [
+        "do_not_infer_current_git_branch",
+        "do_not_infer_ci_status",
+        "do_not_infer_network_api_approval"
+      ]
+    },
+    "retention_status": "preserved"
+  },
+  "style_profile": "minimal_json",
+  "tool_trace_required": false
+}

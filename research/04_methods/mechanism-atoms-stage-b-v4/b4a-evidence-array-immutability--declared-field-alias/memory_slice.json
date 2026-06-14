@@ -1,0 +1,13 @@
+{
+  "slice_id": "stage_b_v4_b4a_declared-field-alias_memory_001",
+  "must_load": [
+    "the declared evidence-reference field is source_references",
+    "only claim prose is editable",
+    "array order and multiplicity are immutable"
+  ],
+  "must_not_load": [
+    "alternative field names or value aliases",
+    "undeclared evidence IDs or state labels"
+  ],
+  "staleness_policy": "fixed_snapshot"
+}

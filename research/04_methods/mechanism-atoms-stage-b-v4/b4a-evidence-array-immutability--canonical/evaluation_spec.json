@@ -1,0 +1,38 @@
+{
+  "evaluation_version": "stage_b_v4_local_001",
+  "atom_kind": "exact_evidence_array_immutability",
+  "primary_metric": "exact_evidence_array_preservation",
+  "reference_field": "evidence_ids",
+  "expected_slots": [
+    {
+      "slot_id": "claim_alpha",
+      "references": [
+        "ev-01"
+      ]
+    },
+    {
+      "slot_id": "claim_beta",
+      "references": [
+        "ev-06"
+      ]
+    },
+    {
+      "slot_id": "claim_gamma",
+      "references": [
+        "ev-07",
+        "ev-08"
+      ]
+    }
+  ],
+  "model_surface_files": [
+    "input.md",
+    "task_spec.json",
+    "memory_slice.json",
+    "evidence_bundle.json",
+    "output_contract.json"
+  ],
+  "forbidden_model_surface_values": [
+    "source_references"
+  ],
+  "known_bad_primary_metric_must_equal": 0.0
+}

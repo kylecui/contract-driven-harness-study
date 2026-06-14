@@ -1,0 +1,33 @@
+{
+  "grounded_claims": [
+    {
+      "slot_id": "claim_alpha",
+      "claim": "The local gate passed before provider execution.",
+      "evidence_ids": [
+        "ev-01"
+      ]
+    },
+    {
+      "slot_id": "claim_beta",
+      "claim": "The proposed stressor remains blocked pending a targeted smoke.",
+      "evidence_ids": [
+        "ev-06"
+      ]
+    },
+    {
+      "slot_id": "claim_gamma",
+      "claim": "The next decision must preserve both the method rule and the backlog state.",
+      "evidence_ids": [
+        "ev-08",
+        "ev-07"
+      ]
+    }
+  ],
+  "immutability_check": {
+    "status": "preserved",
+    "immutable_fields": [
+      "slot_id",
+      "evidence_ids"
+    ]
+  }
+}

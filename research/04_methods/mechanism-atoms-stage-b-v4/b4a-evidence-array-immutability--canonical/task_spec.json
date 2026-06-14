@@ -1,0 +1,17 @@
+{
+  "task_id": "stage_b_v4_b4a-evidence-array-immutability--canonical",
+  "task_type": "mechanism_atom",
+  "objective": "Return the three declared claim slots using `evidence_ids` and preserve every immutable value exactly.",
+  "constraints": [
+    "Only the claim prose may be edited.",
+    "Keep claim slots in the declared order.",
+    "Use `evidence_ids` as the only evidence-reference field.",
+    "Preserve every reference array exactly, including order and duplicates.",
+    "Return exactly one JSON object with no extra prose."
+  ],
+  "success_conditions": [
+    "All three slot IDs match exactly.",
+    "All three reference arrays match exactly.",
+    "The immutability check reports preserved."
+  ]
+}

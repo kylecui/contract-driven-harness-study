@@ -1,0 +1,17 @@
+{
+  "task_id": "stage_b_v4_b4b-closed-vocabulary-retention--paraphrased",
+  "task_type": "mechanism_atom",
+  "objective": "Copy the two declared closed-vocabulary arrays without normalization.",
+  "constraints": [
+    "Use only the labels declared in the output template.",
+    "Preserve value order and multiplicity.",
+    "Do not replace guess with infer or infer with guess.",
+    "Do not mix canonical and paraphrased labels.",
+    "Return exactly one JSON object with no extra prose."
+  ],
+  "success_conditions": [
+    "unknown_state exactly matches the declared array.",
+    "forbidden_inferences exactly matches the declared array.",
+    "retention_status is preserved."
+  ]
+}

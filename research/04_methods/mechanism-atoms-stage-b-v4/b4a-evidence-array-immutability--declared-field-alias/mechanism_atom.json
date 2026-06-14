@@ -1,0 +1,64 @@
+{
+  "atom_version": "0.4.0-stage-b-v4-local",
+  "atom_id": "B4A",
+  "atom_name": "Exact Evidence-Array Immutability (declared-field-alias)",
+  "primary_mechanism": "OutputContract",
+  "supporting_mechanisms": [
+    "EvidenceBundle"
+  ],
+  "capability_under_test": "Preserve each declared claim slot and its evidence-reference array with exact value, multiplicity, and order equality.",
+  "non_goals": [
+    "Do not evaluate prose quality.",
+    "Do not evaluate evidence relevance beyond the frozen slot mapping.",
+    "Do not evaluate broad workflow composition."
+  ],
+  "input_contract": {
+    "required_inputs": [
+      "input.md",
+      "task_spec.json",
+      "memory_slice.json",
+      "evidence_bundle.json",
+      "output_contract.json"
+    ],
+    "fixed_snapshot": true,
+    "forbidden_assumptions": [
+      "Do not substitute a semantically related evidence ID.",
+      "Do not rename the declared reference field."
+    ]
+  },
+  "output_contract_id": "out_stage_b_v4_b4a_declared_field_alias_001",
+  "pass_criteria": [
+    {
+      "metric": "schema_validity",
+      "threshold": 1.0,
+      "required": true
+    },
+    {
+      "metric": "exact_evidence_array_preservation",
+      "threshold": 1.0,
+      "required": true
+    }
+  ],
+  "known_failure_modes": [
+    "Evidence ID substitution",
+    "Evidence-array reordering",
+    "Evidence-array duplication or extension",
+    "Claim-slot merge or rename",
+    "Undeclared field-name fallback"
+  ],
+  "composition_interface": {
+    "input_from_previous": [
+      "fixed_claim_slots",
+      "fixed_evidence_bundle"
+    ],
+    "output_to_next": [
+      "immutable_grounded_claim_slots"
+    ],
+    "state_dependencies": [],
+    "evidence_dependencies": [
+      "evidence_bundle"
+    ],
+    "failure_signal": "exact-evidence-array-preservation_failed",
+    "repair_policy": "validator_repair"
+  }
+}

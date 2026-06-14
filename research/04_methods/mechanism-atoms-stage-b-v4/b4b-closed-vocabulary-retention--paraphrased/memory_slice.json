@@ -1,0 +1,13 @@
+{
+  "slice_id": "stage_b_v4_b4b_paraphrased_memory_001",
+  "must_load": [
+    "state labels are closed-vocabulary protocol tokens",
+    "semantic similarity does not authorize substitution",
+    "value order and multiplicity are immutable"
+  ],
+  "must_not_load": [
+    "alternative field names or value aliases",
+    "undeclared evidence IDs or state labels"
+  ],
+  "staleness_policy": "fixed_snapshot"
+}
