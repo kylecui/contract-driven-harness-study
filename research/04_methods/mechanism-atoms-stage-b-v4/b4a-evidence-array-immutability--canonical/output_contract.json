@@ -46,6 +46,7 @@
       ]
     }
   },
+  "citation_policy": "none",
   "style_profile": "minimal_json",
   "tool_trace_required": false
 }

@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "passed": true,
+  "expect_pass": null,
+  "expectation_met": true,
+  "reason": "Output evaluated by exact Stage B v4 atom contract.",
+  "findings": [],
+  "atom_id": "B4B",
+  "atom_name": "Exact Closed-Vocabulary Retention (canonical)",
+  "primary_metric": "exact_closed_vocabulary_retention",
+  "parsed_output": {
+    "state_inventory": {
+      "unknown_state": [
+        "current_git_branch",
+        "ci_status",
+        "network_api_approval"
+      ],
+      "forbidden_inferences": [
+        "do_not_infer_current_git_branch",
+        "do_not_infer_ci_status",
+        "do_not_infer_network_api_approval"
+      ]
+    },
+    "retention_status": "preserved"
+  },
+  "run_id": "b4b-closed-vocabulary-retention--canonical__budget_model__G9__r1",
+  "model": "budget_model",
+  "harness_arm": "G9",
+  "fixture": "b4b-closed-vocabulary-retention--canonical"
+}

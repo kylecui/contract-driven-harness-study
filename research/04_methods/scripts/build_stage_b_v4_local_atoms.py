@@ -275,6 +275,7 @@ def build_evidence_atom(root: Path, *, field: str, variant: str) -> str:
             f"grounded_claims[].{field}",
         ],
         "exact_output_template": golden,
+        "citation_policy": "none",
         "style_profile": "minimal_json",
         "tool_trace_required": False,
     }
@@ -515,6 +516,7 @@ def build_closed_vocab_atom(root: Path, *, variant: str) -> str:
             "retention_status": ["preserved"],
         },
         "exact_output_template": golden,
+        "citation_policy": "none",
         "style_profile": "minimal_json",
         "tool_trace_required": False,
     }

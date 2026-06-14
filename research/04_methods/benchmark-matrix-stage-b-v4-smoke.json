@@ -1,0 +1,83 @@
+{
+  "fixtures_dir": "research\\04_methods\\mechanism-atoms-stage-b-v4",
+  "models": [
+    "budget_model"
+  ],
+  "harness_arms": [
+    "G9"
+  ],
+  "fixtures": [
+    "b4a-evidence-array-immutability--canonical",
+    "b4a-evidence-array-immutability--declared-field-alias",
+    "b4b-closed-vocabulary-retention--canonical",
+    "b4b-closed-vocabulary-retention--paraphrased"
+  ],
+  "repetitions": 2,
+  "run_count": 8,
+  "runs": [
+    {
+      "run_id": "b4a-evidence-array-immutability--canonical__budget_model__G9__r1",
+      "fixture": "b4a-evidence-array-immutability--canonical",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "b4a-evidence-array-immutability--canonical__budget_model__G9__r2",
+      "fixture": "b4a-evidence-array-immutability--canonical",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "b4a-evidence-array-immutability--declared-field-alias__budget_model__G9__r1",
+      "fixture": "b4a-evidence-array-immutability--declared-field-alias",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "b4a-evidence-array-immutability--declared-field-alias__budget_model__G9__r2",
+      "fixture": "b4a-evidence-array-immutability--declared-field-alias",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "b4b-closed-vocabulary-retention--canonical__budget_model__G9__r1",
+      "fixture": "b4b-closed-vocabulary-retention--canonical",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "b4b-closed-vocabulary-retention--canonical__budget_model__G9__r2",
+      "fixture": "b4b-closed-vocabulary-retention--canonical",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    },
+    {
+      "run_id": "b4b-closed-vocabulary-retention--paraphrased__budget_model__G9__r1",
+      "fixture": "b4b-closed-vocabulary-retention--paraphrased",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 1,
+      "status": "planned"
+    },
+    {
+      "run_id": "b4b-closed-vocabulary-retention--paraphrased__budget_model__G9__r2",
+      "fixture": "b4b-closed-vocabulary-retention--paraphrased",
+      "model": "budget_model",
+      "harness_arm": "G9",
+      "repetition": 2,
+      "status": "planned"
+    }
+  ]
+}

@@ -1,38 +1,33 @@
 {
-  "output_contract_id": "out_stage_b_v4_b4a_declared_field_alias_001",
-  "format": "json",
-  "required_sections": [
-    "grounded_claims",
-    "immutability_check"
-  ],
-  "reference_field": "source_references",
-  "editable_fields": [
-    "grounded_claims[].claim"
-  ],
-  "immutable_fields": [
-    "grounded_claims[].slot_id",
-    "grounded_claims[].source_references"
-  ],
-  "exact_output_template": {
+  "status": "complete",
+  "passed": true,
+  "expect_pass": null,
+  "expectation_met": true,
+  "reason": "Output evaluated by exact Stage B v4 atom contract.",
+  "findings": [],
+  "atom_id": "B4A",
+  "atom_name": "Exact Evidence-Array Immutability (canonical)",
+  "primary_metric": "exact_evidence_array_preservation",
+  "parsed_output": {
     "grounded_claims": [
       {
         "slot_id": "claim_alpha",
         "claim": "The local gate passed before provider execution.",
-        "source_references": [
+        "evidence_ids": [
           "ev-01"
         ]
       },
       {
         "slot_id": "claim_beta",
         "claim": "The proposed stressor remains blocked pending a targeted smoke.",
-        "source_references": [
+        "evidence_ids": [
           "ev-06"
         ]
       },
       {
         "slot_id": "claim_gamma",
         "claim": "The next decision must preserve both the method rule and the backlog state.",
-        "source_references": [
+        "evidence_ids": [
           "ev-07",
           "ev-08"
         ]
@@ -42,11 +37,12 @@
       "status": "preserved",
       "immutable_fields": [
         "slot_id",
-        "source_references"
+        "evidence_ids"
       ]
     }
   },
-  "citation_policy": "none",
-  "style_profile": "minimal_json",
-  "tool_trace_required": false
+  "run_id": "b4a-evidence-array-immutability--canonical__budget_model__G9__r1",
+  "model": "budget_model",
+  "harness_arm": "G9",
+  "fixture": "b4a-evidence-array-immutability--canonical"
 }
