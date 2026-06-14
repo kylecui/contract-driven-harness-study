@@ -305,6 +305,30 @@ python research/04_methods/scripts/evaluate_stage_b_v4_recomposition.py `
 The local gate also requires the Stage B v4 atom regression and unchanged
 Stage B v3 110-case regression before any provider call.
 
+## Stage B v5 Controlled State Transition
+
+`build_stage_b_v5_state_transition.py` adds one evidence-backed
+unknown-to-known API-approval transition to the passed Stage B v4 bounded
+recomposition. The model-visible contract declares the nested schema, initial
+state, event, and postconditions without exposing the golden output.
+
+```powershell
+python research/04_methods/scripts/build_stage_b_v5_state_transition.py `
+  --output-dir research/04_methods/macro-state-transition-stage-b-v5
+
+python research/04_methods/scripts/test_evaluate_stage_b_v5_state_transition.py
+
+python research/04_methods/scripts/evaluate_stage_b_v5_state_transition.py `
+  --fixtures-dir research/04_methods/macro-state-transition-stage-b-v5 `
+  --local-check `
+  --output-runs research/05_analysis/stage-b-v5-state-transition-local-check.json `
+  --output-md research/05_analysis/stage-b-v5-state-transition-local-check.md
+```
+
+The local gate requires all transition known-bads, the static-copy ablation,
+surface-isolation checks, and the unchanged Stage B v4 atom, v4 recomposition,
+and Stage B v3 regressions to pass before any provider call.
+
 ## `collect_run_metrics.py`
 
 Collects per-run `metrics.json` files into one runs payload for `harness_benchmark_metrics.py`.

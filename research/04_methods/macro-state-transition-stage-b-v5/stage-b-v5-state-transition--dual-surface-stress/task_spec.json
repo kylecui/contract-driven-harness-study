@@ -1,0 +1,29 @@
+{
+  "task_id": "stage_b_v5_state_transition__dual_surface_stress",
+  "task_type": "stage_b_v5_controlled_state_transition_macro",
+  "objective": "Apply one evidence-backed unknown-to-known state transition while preserving exact evidence arrays and residual unknown-state duties.",
+  "composition_chain": [
+    "B4B",
+    "B4A",
+    "state_transition",
+    "transition_gate"
+  ],
+  "constraints": [
+    "Use only the supplied transition event.",
+    "Treat the event as fixture state, not authorization for the runner.",
+    "Use `source_references` as the only evidence-reference field.",
+    "Preserve every grounded-claim slot and evidence array exactly.",
+    "Move only the declared API-permission state from unknown to known.",
+    "Keep branch and CI state unknown in their declared order.",
+    "Remove only the matching API-permission forbidden inference.",
+    "Open provider execution only after applying the event.",
+    "Return exactly one JSON object with no extra prose."
+  ],
+  "success_conditions": [
+    "Exact evidence-array preservation passes.",
+    "Residual unknown-state vocabulary passes.",
+    "The transition record and known-state item match the event.",
+    "The gate reflects the post-transition state.",
+    "The retention attestation remains complete."
+  ]
+}

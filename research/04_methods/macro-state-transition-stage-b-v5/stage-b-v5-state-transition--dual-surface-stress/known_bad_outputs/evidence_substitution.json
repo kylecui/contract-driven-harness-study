@@ -1,0 +1,87 @@
+{
+  "state_inventory": {
+    "known_state": [
+      {
+        "state_id": "permission_to_use_external_model_api",
+        "value": "approved",
+        "source_references": [
+          "ev-09"
+        ]
+      }
+    ],
+    "unknown_state": [
+      "branch_currently_checked_out",
+      "continuous_integration_result"
+    ],
+    "forbidden_inferences": [
+      "do_not_guess_branch_currently_checked_out",
+      "do_not_guess_continuous_integration_result"
+    ]
+  },
+  "grounded_claims": [
+    {
+      "slot_id": "claim_alpha",
+      "claim": "Stage B v4-local passed before provider execution.",
+      "source_references": [
+        "ev-01"
+      ]
+    },
+    {
+      "slot_id": "claim_beta",
+      "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+      "source_references": [
+        "ev-04"
+      ]
+    },
+    {
+      "slot_id": "claim_gamma",
+      "claim": "The bounded recomposition smoke passed all four runs.",
+      "source_references": [
+        "ev-10",
+        "ev-11"
+      ]
+    },
+    {
+      "slot_id": "claim_delta",
+      "claim": "Within the fixture, the supplied event approves provider execution.",
+      "source_references": [
+        "ev-09"
+      ]
+    }
+  ],
+  "transition_record": {
+    "event_id": "event-api-approval-001",
+    "state_id": "permission_to_use_external_model_api",
+    "from_status": "unknown",
+    "to_status": "approved",
+    "source_references": [
+      "ev-09"
+    ],
+    "applied": true
+  },
+  "transition_gate": {
+    "status": "open",
+    "permitted_action": "provider_execution",
+    "satisfied_prerequisite": "permission_to_use_external_model_api",
+    "next_action": "run_targeted_state_transition_smoke",
+    "support_slot_ids": [
+      "claim_alpha",
+      "claim_beta",
+      "claim_gamma",
+      "claim_delta"
+    ]
+  },
+  "retention_attestation": {
+    "status": "preserved_after_transition",
+    "immutable_fields": [
+      "grounded_claims[].slot_id",
+      "grounded_claims[].source_references",
+      "state_inventory.unknown_state",
+      "state_inventory.forbidden_inferences",
+      "state_inventory.known_state[].state_id",
+      "state_inventory.known_state[].source_references",
+      "transition_record.event_id",
+      "transition_record.source_references"
+    ]
+  }
+}

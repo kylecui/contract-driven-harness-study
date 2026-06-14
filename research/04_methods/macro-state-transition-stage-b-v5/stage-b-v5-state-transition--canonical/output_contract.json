@@ -1,0 +1,113 @@
+{
+  "output_contract_id": "out_stage_b_v5_state_transition__canonical_001",
+  "format": "json",
+  "required_sections": [
+    "state_inventory",
+    "grounded_claims",
+    "transition_record",
+    "transition_gate",
+    "retention_attestation"
+  ],
+  "reference_field": "evidence_ids",
+  "output_shape": {
+    "state_inventory": {
+      "known_state": "array of {state_id, value, evidence_ids}",
+      "unknown_state": "array of exact declared labels",
+      "forbidden_inferences": "array of exact declared labels"
+    },
+    "grounded_claims": "array of {slot_id, claim, evidence_ids}",
+    "transition_record": "{event_id, state_id, from_status, to_status, evidence_ids, applied}",
+    "transition_gate": "{status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}",
+    "retention_attestation": "{status, immutable_fields}"
+  },
+  "grounded_claim_contract": [
+    {
+      "slot_id": "claim_alpha",
+      "evidence_ids": [
+        "ev-01"
+      ]
+    },
+    {
+      "slot_id": "claim_beta",
+      "evidence_ids": [
+        "ev-06"
+      ]
+    },
+    {
+      "slot_id": "claim_gamma",
+      "evidence_ids": [
+        "ev-10",
+        "ev-11"
+      ]
+    },
+    {
+      "slot_id": "claim_delta",
+      "evidence_ids": [
+        "ev-09"
+      ]
+    }
+  ],
+  "initial_state": {
+    "known_state": [],
+    "unknown_state": [
+      "current_git_branch",
+      "ci_status",
+      "network_api_approval"
+    ],
+    "forbidden_inferences": [
+      "do_not_infer_current_git_branch",
+      "do_not_infer_ci_status",
+      "do_not_infer_network_api_approval"
+    ],
+    "gate_status": "blocked"
+  },
+  "transition_event": {
+    "event_id": "event-api-approval-001",
+    "scope": "fixture_only",
+    "state_id": "network_api_approval",
+    "from_status": "unknown",
+    "to_status": "approved",
+    "evidence_ids": [
+      "ev-09"
+    ]
+  },
+  "required_postconditions": {
+    "known_state_id": "network_api_approval",
+    "known_state_value": "approved",
+    "residual_unknown_state": [
+      "current_git_branch",
+      "ci_status"
+    ],
+    "residual_forbidden_inferences": [
+      "do_not_infer_current_git_branch",
+      "do_not_infer_ci_status"
+    ],
+    "gate_status": "open",
+    "permitted_action": "provider_execution"
+  },
+  "required_support_slot_ids": [
+    "claim_alpha",
+    "claim_beta",
+    "claim_gamma",
+    "claim_delta"
+  ],
+  "required_attestation": {
+    "status": "preserved_after_transition",
+    "immutable_fields": [
+      "grounded_claims[].slot_id",
+      "grounded_claims[].evidence_ids",
+      "state_inventory.unknown_state",
+      "state_inventory.forbidden_inferences",
+      "state_inventory.known_state[].state_id",
+      "state_inventory.known_state[].evidence_ids",
+      "transition_record.event_id",
+      "transition_record.evidence_ids"
+    ]
+  },
+  "editable_fields": [
+    "grounded_claims[].claim"
+  ],
+  "citation_policy": "none",
+  "style_profile": "minimal_json",
+  "tool_trace_required": false
+}

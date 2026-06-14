@@ -1,0 +1,18 @@
+{
+  "suite_id": "stage_b_v5_controlled_state_transition_local",
+  "composition_chain": [
+    "B4B",
+    "B4A",
+    "state_transition",
+    "transition_gate"
+  ],
+  "fixtures": [
+    "stage-b-v5-state-transition--canonical",
+    "stage-b-v5-state-transition--dual-surface-stress"
+  ],
+  "fixture_count": 2,
+  "known_bad_count": 28,
+  "provider_calls": 0,
+  "pooling_policy": "must_not_pool_with_prior_stage_b_protocols",
+  "next_gate": "a targeted state-transition smoke is admissible only after all local expectations, surface-isolation checks, unit tests, and historical regressions pass"
+}

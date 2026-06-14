@@ -1,0 +1,3524 @@
+{
+  "suite": "stage_b_v5_controlled_state_transition_local",
+  "fixture_count": 2,
+  "case_count": 30,
+  "expectation_failure_count": 0,
+  "model_surface_violation_count": 0,
+  "model_surface_violations": [],
+  "cases": [
+    {
+      "fixture": "stage-b-v5-state-transition--canonical",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "expect_pass": true,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "network_api_approval",
+                "value": "approved",
+                "evidence_ids": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "evidence_ids": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "network_api_approval",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "evidence_ids": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "network_api_approval",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].evidence_ids",
+              "transition_record.event_id",
+              "transition_record.evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--canonical__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--canonical",
+      "case": "evidence_and_transition_corruption",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed",
+          "state_transition_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "network_api_approval",
+                "value": "denied",
+                "evidence_ids": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-04"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "evidence_ids": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "network_api_approval",
+            "from_status": "unknown",
+            "to_status": "denied",
+            "evidence_ids": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "network_api_approval",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].evidence_ids",
+              "transition_record.event_id",
+              "transition_record.evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--canonical__evidence_and_transition_corruption",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.667,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 0.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--canonical",
+      "case": "evidence_array_reordered",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "network_api_approval",
+                "value": "approved",
+                "evidence_ids": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "evidence_ids": [
+                "ev-11",
+                "ev-10"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "network_api_approval",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "evidence_ids": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "network_api_approval",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].evidence_ids",
+              "transition_record.event_id",
+              "transition_record.evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--canonical__evidence_array_reordered",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.833,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--canonical",
+      "case": "evidence_substitution",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "network_api_approval",
+                "value": "approved",
+                "evidence_ids": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-04"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "evidence_ids": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "network_api_approval",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "evidence_ids": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "network_api_approval",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].evidence_ids",
+              "transition_record.event_id",
+              "transition_record.evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--canonical__evidence_substitution",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.833,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--canonical",
+      "case": "incomplete_gate_support",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "transition_gate_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "network_api_approval",
+                "value": "approved",
+                "evidence_ids": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "evidence_ids": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "network_api_approval",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "evidence_ids": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "network_api_approval",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].evidence_ids",
+              "transition_record.event_id",
+              "transition_record.evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--canonical__incomplete_gate_support",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.833,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--canonical",
+      "case": "incomplete_retention_attestation",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "retention_attestation_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "network_api_approval",
+                "value": "approved",
+                "evidence_ids": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "evidence_ids": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "network_api_approval",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "evidence_ids": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "network_api_approval",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].evidence_ids",
+              "transition_record.event_id"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--canonical__incomplete_retention_attestation",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.833,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--canonical",
+      "case": "residual_forbidden_prefix_substitution",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "residual_unknown_vocabulary_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "network_api_approval",
+                "value": "approved",
+                "evidence_ids": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_current_git_branch",
+              "do_not_guess_ci_status"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "evidence_ids": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "network_api_approval",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "evidence_ids": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "network_api_approval",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].evidence_ids",
+              "transition_record.event_id",
+              "transition_record.evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--canonical__residual_forbidden_prefix_substitution",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.833,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--canonical",
+      "case": "residual_unknown_reordered",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "residual_unknown_vocabulary_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "network_api_approval",
+                "value": "approved",
+                "evidence_ids": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "ci_status",
+              "current_git_branch"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "evidence_ids": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "network_api_approval",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "evidence_ids": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "network_api_approval",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].evidence_ids",
+              "transition_record.event_id",
+              "transition_record.evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--canonical__residual_unknown_reordered",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.833,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--canonical",
+      "case": "stale_blocked_gate",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "transition_gate_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "network_api_approval",
+                "value": "approved",
+                "evidence_ids": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "evidence_ids": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "network_api_approval",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "evidence_ids": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "blocked",
+            "permitted_action": "none",
+            "satisfied_prerequisite": "network_api_approval",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].evidence_ids",
+              "transition_record.event_id",
+              "transition_record.evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--canonical__stale_blocked_gate",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.833,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--canonical",
+      "case": "static_pretransition_copy",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "residual_unknown_vocabulary_failed",
+          "state_transition_failed",
+          "transition_gate_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [],
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status",
+              "network_api_approval"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status",
+              "do_not_infer_network_api_approval"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "evidence_ids": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "network_api_approval",
+            "from_status": "unknown",
+            "to_status": "unknown",
+            "evidence_ids": [
+              "ev-09"
+            ],
+            "applied": false
+          },
+          "transition_gate": {
+            "status": "blocked",
+            "permitted_action": "none",
+            "satisfied_prerequisite": "none",
+            "next_action": "await_api_approval",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].evidence_ids",
+              "transition_record.event_id",
+              "transition_record.evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--canonical__static_pretransition_copy",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 0.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--canonical",
+      "case": "transition_record_omitted",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "schema_contract_failed",
+          "state_transition_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "network_api_approval",
+                "value": "approved",
+                "evidence_ids": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "evidence_ids": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "network_api_approval",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].evidence_ids",
+              "transition_record.event_id",
+              "transition_record.evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--canonical__transition_record_omitted",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.667,
+        "schema_validity": 0.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 0.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--canonical",
+      "case": "transitioned_target_duplicated_as_unknown",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "residual_unknown_vocabulary_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "network_api_approval",
+                "value": "approved",
+                "evidence_ids": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status",
+              "network_api_approval"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status",
+              "do_not_infer_network_api_approval"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "evidence_ids": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "network_api_approval",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "evidence_ids": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "network_api_approval",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].evidence_ids",
+              "transition_record.event_id",
+              "transition_record.evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--canonical__transitioned_target_duplicated_as_unknown",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.833,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--canonical",
+      "case": "undeclared_reference_field",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "schema_contract_failed",
+          "exact_evidence_array_preservation_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "network_api_approval",
+                "value": "approved",
+                "evidence_ids": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "source_references": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "network_api_approval",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "evidence_ids": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "network_api_approval",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].evidence_ids",
+              "transition_record.event_id",
+              "transition_record.evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--canonical__undeclared_reference_field",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.667,
+        "schema_validity": 0.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--canonical",
+      "case": "wrong_transition_evidence",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "state_transition_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "network_api_approval",
+                "value": "approved",
+                "evidence_ids": [
+                  "ev-08"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "evidence_ids": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "network_api_approval",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "evidence_ids": [
+              "ev-08"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "network_api_approval",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].evidence_ids",
+              "transition_record.event_id",
+              "transition_record.evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--canonical__wrong_transition_evidence",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.833,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 0.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--canonical",
+      "case": "wrong_transition_value",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "state_transition_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "network_api_approval",
+                "value": "denied",
+                "evidence_ids": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "current_git_branch",
+              "ci_status"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_current_git_branch",
+              "do_not_infer_ci_status"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "evidence_ids": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "network_api_approval",
+            "from_status": "unknown",
+            "to_status": "denied",
+            "evidence_ids": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "network_api_approval",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].evidence_ids",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].evidence_ids",
+              "transition_record.event_id",
+              "transition_record.evidence_ids"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--canonical__wrong_transition_value",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.833,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 0.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--dual-surface-stress",
+      "case": "golden",
+      "report": {
+        "status": "complete",
+        "passed": true,
+        "expect_pass": true,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "permission_to_use_external_model_api",
+                "value": "approved",
+                "source_references": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "source_references": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "permission_to_use_external_model_api",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "source_references": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "permission_to_use_external_model_api",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].source_references",
+              "transition_record.event_id",
+              "transition_record.source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--dual-surface-stress__golden",
+        "model": "golden",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 1.0,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--dual-surface-stress",
+      "case": "evidence_and_transition_corruption",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed",
+          "state_transition_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "permission_to_use_external_model_api",
+                "value": "denied",
+                "source_references": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-04"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "source_references": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "permission_to_use_external_model_api",
+            "from_status": "unknown",
+            "to_status": "denied",
+            "source_references": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "permission_to_use_external_model_api",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].source_references",
+              "transition_record.event_id",
+              "transition_record.source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--dual-surface-stress__evidence_and_transition_corruption",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.667,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 0.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--dual-surface-stress",
+      "case": "evidence_array_reordered",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "permission_to_use_external_model_api",
+                "value": "approved",
+                "source_references": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "source_references": [
+                "ev-11",
+                "ev-10"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "permission_to_use_external_model_api",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "source_references": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "permission_to_use_external_model_api",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].source_references",
+              "transition_record.event_id",
+              "transition_record.source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--dual-surface-stress__evidence_array_reordered",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.833,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--dual-surface-stress",
+      "case": "evidence_substitution",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "exact_evidence_array_preservation_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "permission_to_use_external_model_api",
+                "value": "approved",
+                "source_references": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-04"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "source_references": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "permission_to_use_external_model_api",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "source_references": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "permission_to_use_external_model_api",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].source_references",
+              "transition_record.event_id",
+              "transition_record.source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--dual-surface-stress__evidence_substitution",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.833,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--dual-surface-stress",
+      "case": "incomplete_gate_support",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "transition_gate_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "permission_to_use_external_model_api",
+                "value": "approved",
+                "source_references": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "source_references": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "permission_to_use_external_model_api",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "source_references": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "permission_to_use_external_model_api",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].source_references",
+              "transition_record.event_id",
+              "transition_record.source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--dual-surface-stress__incomplete_gate_support",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.833,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--dual-surface-stress",
+      "case": "incomplete_retention_attestation",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "retention_attestation_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "permission_to_use_external_model_api",
+                "value": "approved",
+                "source_references": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "source_references": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "permission_to_use_external_model_api",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "source_references": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "permission_to_use_external_model_api",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].source_references",
+              "transition_record.event_id"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--dual-surface-stress__incomplete_retention_attestation",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.833,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--dual-surface-stress",
+      "case": "residual_forbidden_prefix_substitution",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "residual_unknown_vocabulary_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "permission_to_use_external_model_api",
+                "value": "approved",
+                "source_references": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result"
+            ],
+            "forbidden_inferences": [
+              "do_not_infer_branch_currently_checked_out",
+              "do_not_infer_continuous_integration_result"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "source_references": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "permission_to_use_external_model_api",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "source_references": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "permission_to_use_external_model_api",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].source_references",
+              "transition_record.event_id",
+              "transition_record.source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--dual-surface-stress__residual_forbidden_prefix_substitution",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.833,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--dual-surface-stress",
+      "case": "residual_unknown_reordered",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "residual_unknown_vocabulary_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "permission_to_use_external_model_api",
+                "value": "approved",
+                "source_references": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "continuous_integration_result",
+              "branch_currently_checked_out"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "source_references": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "permission_to_use_external_model_api",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "source_references": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "permission_to_use_external_model_api",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].source_references",
+              "transition_record.event_id",
+              "transition_record.source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--dual-surface-stress__residual_unknown_reordered",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.833,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--dual-surface-stress",
+      "case": "stale_blocked_gate",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "transition_gate_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "permission_to_use_external_model_api",
+                "value": "approved",
+                "source_references": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "source_references": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "permission_to_use_external_model_api",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "source_references": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "blocked",
+            "permitted_action": "none",
+            "satisfied_prerequisite": "permission_to_use_external_model_api",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].source_references",
+              "transition_record.event_id",
+              "transition_record.source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--dual-surface-stress__stale_blocked_gate",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.833,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--dual-surface-stress",
+      "case": "static_pretransition_copy",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "residual_unknown_vocabulary_failed",
+          "state_transition_failed",
+          "transition_gate_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [],
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result",
+              "permission_to_use_external_model_api"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result",
+              "do_not_guess_permission_to_use_external_model_api"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "source_references": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "permission_to_use_external_model_api",
+            "from_status": "unknown",
+            "to_status": "unknown",
+            "source_references": [
+              "ev-09"
+            ],
+            "applied": false
+          },
+          "transition_gate": {
+            "status": "blocked",
+            "permitted_action": "none",
+            "satisfied_prerequisite": "none",
+            "next_action": "await_api_approval",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].source_references",
+              "transition_record.event_id",
+              "transition_record.source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--dual-surface-stress__static_pretransition_copy",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.5,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 0.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--dual-surface-stress",
+      "case": "transition_record_omitted",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "schema_contract_failed",
+          "state_transition_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "permission_to_use_external_model_api",
+                "value": "approved",
+                "source_references": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "source_references": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "permission_to_use_external_model_api",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].source_references",
+              "transition_record.event_id",
+              "transition_record.source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--dual-surface-stress__transition_record_omitted",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.667,
+        "schema_validity": 0.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 0.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--dual-surface-stress",
+      "case": "transitioned_target_duplicated_as_unknown",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "residual_unknown_vocabulary_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "permission_to_use_external_model_api",
+                "value": "approved",
+                "source_references": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result",
+              "permission_to_use_external_model_api"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result",
+              "do_not_guess_permission_to_use_external_model_api"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "source_references": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "permission_to_use_external_model_api",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "source_references": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "permission_to_use_external_model_api",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].source_references",
+              "transition_record.event_id",
+              "transition_record.source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--dual-surface-stress__transitioned_target_duplicated_as_unknown",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.833,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--dual-surface-stress",
+      "case": "undeclared_reference_field",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "schema_contract_failed",
+          "exact_evidence_array_preservation_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "permission_to_use_external_model_api",
+                "value": "approved",
+                "source_references": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "evidence_ids": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "evidence_ids": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "evidence_ids": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "permission_to_use_external_model_api",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "source_references": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "permission_to_use_external_model_api",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].source_references",
+              "transition_record.event_id",
+              "transition_record.source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--dual-surface-stress__undeclared_reference_field",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.667,
+        "schema_validity": 0.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--dual-surface-stress",
+      "case": "wrong_transition_evidence",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "state_transition_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "permission_to_use_external_model_api",
+                "value": "approved",
+                "source_references": [
+                  "ev-08"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "source_references": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "permission_to_use_external_model_api",
+            "from_status": "unknown",
+            "to_status": "approved",
+            "source_references": [
+              "ev-08"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "permission_to_use_external_model_api",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].source_references",
+              "transition_record.event_id",
+              "transition_record.source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--dual-surface-stress__wrong_transition_evidence",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.833,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 0.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    },
+    {
+      "fixture": "stage-b-v5-state-transition--dual-surface-stress",
+      "case": "wrong_transition_value",
+      "report": {
+        "status": "complete",
+        "passed": false,
+        "expect_pass": false,
+        "expectation_met": true,
+        "reason": "Output evaluated against the controlled transition contract.",
+        "findings": [
+          "state_transition_failed"
+        ],
+        "primary_metric": "controlled_state_mutation_success",
+        "parsed_output": {
+          "state_inventory": {
+            "known_state": [
+              {
+                "state_id": "permission_to_use_external_model_api",
+                "value": "denied",
+                "source_references": [
+                  "ev-09"
+                ]
+              }
+            ],
+            "unknown_state": [
+              "branch_currently_checked_out",
+              "continuous_integration_result"
+            ],
+            "forbidden_inferences": [
+              "do_not_guess_branch_currently_checked_out",
+              "do_not_guess_continuous_integration_result"
+            ]
+          },
+          "grounded_claims": [
+            {
+              "slot_id": "claim_alpha",
+              "claim": "Stage B v4-local passed before provider execution.",
+              "source_references": [
+                "ev-01"
+              ]
+            },
+            {
+              "slot_id": "claim_beta",
+              "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+              "source_references": [
+                "ev-06"
+              ]
+            },
+            {
+              "slot_id": "claim_gamma",
+              "claim": "The bounded recomposition smoke passed all four runs.",
+              "source_references": [
+                "ev-10",
+                "ev-11"
+              ]
+            },
+            {
+              "slot_id": "claim_delta",
+              "claim": "Within the fixture, the supplied event approves provider execution.",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "transition_record": {
+            "event_id": "event-api-approval-001",
+            "state_id": "permission_to_use_external_model_api",
+            "from_status": "unknown",
+            "to_status": "denied",
+            "source_references": [
+              "ev-09"
+            ],
+            "applied": true
+          },
+          "transition_gate": {
+            "status": "open",
+            "permitted_action": "provider_execution",
+            "satisfied_prerequisite": "permission_to_use_external_model_api",
+            "next_action": "run_targeted_state_transition_smoke",
+            "support_slot_ids": [
+              "claim_alpha",
+              "claim_beta",
+              "claim_gamma",
+              "claim_delta"
+            ]
+          },
+          "retention_attestation": {
+            "status": "preserved_after_transition",
+            "immutable_fields": [
+              "grounded_claims[].slot_id",
+              "grounded_claims[].source_references",
+              "state_inventory.unknown_state",
+              "state_inventory.forbidden_inferences",
+              "state_inventory.known_state[].state_id",
+              "state_inventory.known_state[].source_references",
+              "transition_record.event_id",
+              "transition_record.source_references"
+            ]
+          }
+        },
+        "run_id": "stage-b-v5-state-transition--dual-surface-stress__wrong_transition_value",
+        "model": "known_bad",
+        "harness_arm": "local"
+      },
+      "metrics": {
+        "task_success": 0.833,
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 0.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "metric_expectation_met": true,
+      "metric_mismatches": []
+    }
+  ]
+}

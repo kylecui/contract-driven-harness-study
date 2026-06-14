@@ -1,0 +1,23 @@
+{
+  "checked_on": "2026-06-14",
+  "provider_calls": 0,
+  "regressions": [
+    {
+      "suite": "stage_b_v4_local_mechanism_atoms",
+      "case_count": 32,
+      "expectation_failure_count": 0,
+      "model_surface_violation_count": 0
+    },
+    {
+      "suite": "stage_b_v4_bounded_recomposition_local",
+      "case_count": 22,
+      "expectation_failure_count": 0,
+      "model_surface_violation_count": 0
+    },
+    {
+      "suite": "stage_b_v3_full_perturbation_suite",
+      "case_count": 110,
+      "expectation_failure_count": 0
+    }
+  ]
+}
