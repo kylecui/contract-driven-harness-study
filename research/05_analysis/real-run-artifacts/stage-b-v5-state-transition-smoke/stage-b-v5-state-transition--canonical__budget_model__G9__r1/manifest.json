@@ -1,0 +1,16 @@
+{
+  "run_id": "stage-b-v5-state-transition--canonical__budget_model__G9__r1",
+  "fixture": "stage-b-v5-state-transition--canonical",
+  "task_type": "stage_b_v5_controlled_state_transition_macro",
+  "model": "budget_model",
+  "harness_arm": "G9",
+  "status": "pending",
+  "paths": {
+    "output": "research\\05_analysis\\real-run-artifacts\\stage-b-v5-state-transition-smoke\\stage-b-v5-state-transition--canonical__budget_model__G9__r1\\output.md",
+    "tool_trace": "research\\05_analysis\\real-run-artifacts\\stage-b-v5-state-transition-smoke\\stage-b-v5-state-transition--canonical__budget_model__G9__r1\\tool_trace.jsonl",
+    "validation_report": "research\\05_analysis\\real-run-artifacts\\stage-b-v5-state-transition-smoke\\stage-b-v5-state-transition--canonical__budget_model__G9__r1\\validation_report.json",
+    "metrics": "research\\05_analysis\\real-run-artifacts\\stage-b-v5-state-transition-smoke\\stage-b-v5-state-transition--canonical__budget_model__G9__r1\\metrics.json",
+    "prompt": "research\\05_analysis\\real-run-artifacts\\stage-b-v5-state-transition-smoke\\stage-b-v5-state-transition--canonical__budget_model__G9__r1\\prompt.md",
+    "adapter_request": "research\\05_analysis\\real-run-artifacts\\stage-b-v5-state-transition-smoke\\stage-b-v5-state-transition--canonical__budget_model__G9__r1\\adapter_request.json"
+  }
+}

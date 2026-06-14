@@ -1,0 +1,102 @@
+{
+  "status": "complete",
+  "passed": false,
+  "expect_pass": null,
+  "expectation_met": true,
+  "reason": "Output evaluated against the controlled transition contract.",
+  "findings": [
+    "exact_evidence_array_preservation_failed",
+    "transition_gate_failed"
+  ],
+  "primary_metric": "controlled_state_mutation_success",
+  "parsed_output": {
+    "state_inventory": {
+      "known_state": [
+        {
+          "state_id": "permission_to_use_external_model_api",
+          "value": "approved",
+          "source_references": [
+            "ev-09"
+          ]
+        }
+      ],
+      "unknown_state": [
+        "branch_currently_checked_out",
+        "continuous_integration_result"
+      ],
+      "forbidden_inferences": [
+        "do_not_guess_branch_currently_checked_out",
+        "do_not_guess_continuous_integration_result"
+      ]
+    },
+    "grounded_claims": [
+      {
+        "slot_id": "claim_alpha",
+        "claim": "Stage B v4-local passed all local gates.",
+        "source_references": [
+          "ev-01"
+        ]
+      },
+      {
+        "slot_id": "claim_beta",
+        "claim": "Stage B v4 isolated smoke passed all eight runs.",
+        "source_references": [
+          "ev-06"
+        ]
+      },
+      {
+        "slot_id": "claim_gamma",
+        "claim": "Stage B v4 recomposition smoke completed four calls.",
+        "source_references": [
+          "ev-10"
+        ]
+      },
+      {
+        "slot_id": "claim_delta",
+        "claim": "A state transition should follow a clean local gate.",
+        "source_references": [
+          "ev-08"
+        ]
+      }
+    ],
+    "transition_record": {
+      "event_id": "event-api-approval-001",
+      "state_id": "permission_to_use_external_model_api",
+      "from_status": "unknown",
+      "to_status": "approved",
+      "source_references": [
+        "ev-09"
+      ],
+      "applied": true
+    },
+    "transition_gate": {
+      "status": "open",
+      "permitted_action": "provider_execution",
+      "satisfied_prerequisite": "permission_to_use_external_model_api",
+      "next_action": "none",
+      "support_slot_ids": [
+        "claim_alpha",
+        "claim_beta",
+        "claim_gamma",
+        "claim_delta"
+      ]
+    },
+    "retention_attestation": {
+      "status": "preserved_after_transition",
+      "immutable_fields": [
+        "grounded_claims[].slot_id",
+        "grounded_claims[].source_references",
+        "state_inventory.unknown_state",
+        "state_inventory.forbidden_inferences",
+        "state_inventory.known_state[].state_id",
+        "state_inventory.known_state[].source_references",
+        "transition_record.event_id",
+        "transition_record.source_references"
+      ]
+    }
+  },
+  "run_id": "stage-b-v5-state-transition--dual-surface-stress__budget_model__G9__r1",
+  "model": "budget_model",
+  "harness_arm": "G9",
+  "fixture": "stage-b-v5-state-transition--dual-surface-stress"
+}

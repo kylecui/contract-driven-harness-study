@@ -413,6 +413,43 @@ def evaluate_local(
         raise SystemExit(1)
 
 
+def evaluate_manifest(
+    *,
+    manifest_path: Path,
+    fixtures_dir: Path,
+    output_json: Path,
+    output_md: Path,
+) -> None:
+    manifest = load_json(manifest_path)
+    results = []
+    for run in manifest["runs"]:
+        fixture_dir = fixtures_dir / run["fixture"]
+        report, metrics = evaluate_payload(
+            fixture_dir=fixture_dir,
+            output_text=Path(run["paths"]["output"]).read_text(encoding="utf-8"),
+            run_id=run["run_id"],
+            model=run["model"],
+            arm=run["harness_arm"],
+        )
+        report["fixture"] = run["fixture"]
+        metric_payload = {
+            "run_id": run["run_id"],
+            "fixture": run["fixture"],
+            "task_class": run["task_type"],
+            "model": run["model"],
+            "harness_arm": run["harness_arm"],
+            "validation_status": report["status"],
+            "passed": report["passed"],
+            "metrics": metrics,
+            "mock": False,
+        }
+        dump_json(Path(run["paths"]["validation_report"]), report)
+        dump_json(Path(run["paths"]["metrics"]), metric_payload)
+        results.append(metric_payload)
+    dump_json(output_json, {"runs": results})
+    output_md.write_text(manifest_markdown(results), encoding="utf-8")
+
+
 def local_markdown(payload: dict[str, Any]) -> str:
     lines = [
         "# Stage B v5 Controlled State-Transition Local Evaluation",
@@ -441,21 +478,53 @@ def local_markdown(payload: dict[str, Any]) -> str:
     return "\n".join(lines) + "\n"
 
 
+def manifest_markdown(results: list[dict[str, Any]]) -> str:
+    lines = [
+        "# Stage B v5 Controlled State-Transition Model Evaluation",
+        "",
+        "| Run | Fixture | Schema | Evidence | Residual state | Transition | Gate | Attestation | Aggregate | Passed |",
+        "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|",
+    ]
+    for result in results:
+        metrics = result["metrics"]
+        lines.append(
+            f"| `{result['run_id']}` | `{result['fixture']}` | "
+            f"{metrics['schema_validity']:.3f} | "
+            f"{metrics['exact_evidence_array_preservation']:.3f} | "
+            f"{metrics['residual_unknown_vocabulary_accuracy']:.3f} | "
+            f"{metrics['state_transition_accuracy']:.3f} | "
+            f"{metrics['transition_gate_accuracy']:.3f} | "
+            f"{metrics['retention_attestation_accuracy']:.3f} | "
+            f"{metrics['controlled_state_mutation_success']:.3f} | "
+            f"{str(result['passed']).lower()} |"
+        )
+    return "\n".join(lines) + "\n"
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--fixtures-dir", required=True)
+    parser.add_argument("--manifest", default=None)
     parser.add_argument("--local-check", action="store_true")
     parser.add_argument("--output-runs", required=True)
     parser.add_argument("--output-md", required=True)
     args = parser.parse_args()
 
-    if not args.local_check:
-        raise SystemExit("Stage B v5 currently supports --local-check only")
-    evaluate_local(
-        fixtures_dir=Path(args.fixtures_dir),
-        output_json=Path(args.output_runs),
-        output_md=Path(args.output_md),
-    )
+    if args.local_check:
+        evaluate_local(
+            fixtures_dir=Path(args.fixtures_dir),
+            output_json=Path(args.output_runs),
+            output_md=Path(args.output_md),
+        )
+    elif args.manifest:
+        evaluate_manifest(
+            manifest_path=Path(args.manifest),
+            fixtures_dir=Path(args.fixtures_dir),
+            output_json=Path(args.output_runs),
+            output_md=Path(args.output_md),
+        )
+    else:
+        raise SystemExit("Use either --local-check or --manifest")
 
 
 if __name__ == "__main__":

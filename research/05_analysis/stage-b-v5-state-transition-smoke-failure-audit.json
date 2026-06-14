@@ -1,0 +1,46 @@
+{
+  "audited_on": "2026-06-14",
+  "strict_protocol_decision": "fail",
+  "run_count": 4,
+  "strict_pass_count": 0,
+  "provider_errors": 0,
+  "retries": 0,
+  "component_pass_counts": {
+    "schema_validity": 4,
+    "exact_evidence_array_preservation": 0,
+    "residual_unknown_vocabulary_accuracy": 4,
+    "state_transition_accuracy": 4,
+    "transition_gate_accuracy": 0,
+    "retention_attestation_accuracy": 4,
+    "controlled_state_mutation_success": 0
+  },
+  "evidence_slot_audit": {
+    "exact_slot_arrays": 9,
+    "total_slot_arrays": 16,
+    "exact_rate": 0.5625,
+    "systematic_failure": "claim_gamma omitted ev-11 in all four runs",
+    "additional_failure": "claim_delta used the exact ev-09 array in only one of four runs"
+  },
+  "gate_audit": {
+    "strict_pass_count": 0,
+    "status_exact_count": 4,
+    "permitted_action_exact_count": 4,
+    "satisfied_prerequisite_exact_count": 4,
+    "support_slot_ids_exact_count": 4,
+    "next_action_exact_count": 0,
+    "only_mismatched_field": "next_action",
+    "fairness_issue": "The evaluator expected run_targeted_state_transition_smoke, but the model-visible required_postconditions did not declare an exact next_action value."
+  },
+  "classification": {
+    "model_failure": "The model did not preserve the explicitly declared per-slot evidence arrays.",
+    "protocol_defect": "The strict gate metric included an exact next_action obligation that was not fully exposed in the model-visible postconditions.",
+    "successful_components": "All four runs produced valid schema, exact residual unknown-state vocabulary, the correct event-backed unknown-to-approved transition, and the exact retention attestation."
+  },
+  "retry_decision": "No retry. All four outputs were complete parseable semantic attempts.",
+  "next_repair": [
+    "Expose the complete expected transition_gate object, including next_action.",
+    "Freeze grounded claim objects or move immutable slot-to-reference bindings into a separate exact payload so editable prose cannot trigger semantic remapping.",
+    "Add a wrong-next-action known-bad and claim-to-evidence remapping known-bads.",
+    "Pass a new local gate before requesting any repair smoke."
+  ]
+}
