@@ -2,15 +2,21 @@
 
 Prepared: 2026-06-14
 
-Status: active
+Status: completed and frozen on 2026-06-15
 
 ## Version Boundary
 
 - v3.1.1 remains frozen.
-- v4 is a separate evidence-extension draft.
+- v4 is a separate evidence-extension version.
 - This pass does not alter the v3.1.1 Markdown source or frozen PDF.
 - Stage D provider calls are outside this pass and require a separate
   preregistration and go decision.
+
+The reviewed v4 body and empirical narrative are frozen in:
+
+- `research/06_outputs/contract-driven-harness-arxiv-v4-frozen.md`;
+- `research/06_outputs/contract-driven-harness-paper-v4-frozen.pdf`;
+- `research/07_reviews/contract-driven-harness-v4-body-freeze.md`.
 
 ## New Evidence
 
