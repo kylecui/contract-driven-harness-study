@@ -4,6 +4,13 @@ Prepared: 2026-06-14
 
 Status: preregistered before fixture generation and provider execution
 
+Statistical-method correction (2026-06-15): the plan below preregistered a
+two-sided Fisher exact test. The completed matrix forms 15 matched pairs by
+perturbation condition and repetition, so the primary paired analysis was
+corrected post-execution to an exact McNemar test. The original plan remains
+visible for audit. See
+`research/05_analysis/stage-b-v53-paired-analysis-correction.md`.
+
 ## Motivation
 
 Stage B v5.2 did not observe an engineering-scale independent effect from

@@ -1,6 +1,6 @@
 # Contract-Driven Harness v4 Expression Review
 
-Reviewed: 2026-06-14
+Reviewed: 2026-06-15
 
 Result: **PASS**
 
@@ -17,6 +17,7 @@ Targeted scan:
 | `comprehensive` | 0 | No completeness claim. |
 | `effective` | 1 | Appears only in the cited title phrase `Building effective agents`; it is not an author claim. |
 
-The positive Stage B result is stated through run counts, perturbation cells,
-an interval, and execution-integrity facts. The same section retains the
-v5.3 threshold miss and explicit non-claims. No rewrite is required.
+The positive Stage B result is stated through run counts, pooled and
+per-condition intervals, and execution-integrity facts. The same section
+retains the v5.3 threshold miss, exact paired result, and explicit non-claims.
+No rewrite is required.

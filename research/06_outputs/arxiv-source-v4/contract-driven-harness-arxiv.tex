@@ -14,7 +14,7 @@
 
 \title{Contract-Driven Harness Engineering for Reliable Low-Cost Agent Tasks}
 \author{Contract-Driven Harness Study}
-\date{June 14, 2026}
+\date{June 15, 2026}
 
 \begin{document}
 \maketitle
@@ -27,7 +27,7 @@ The study is deliberately narrow. It does not test whether harnessing makes low-
 
 Across structured extraction, project initialization, research workflow, mechanism-atom, admitted-macro, and controlled-state-mutation experiments, harnessing improves absolute contract adherence. It can also compress model gaps when baseline gaps are nonzero and the task is highly constrained. Gap compression is not universal. The more stable result is weak-model enablement on bounded, contract-critical operations.
 
-The resulting method is mechanism-first: decompose broad workflows into testable mechanisms, admit only mechanisms with golden/known-bad/local-gate support, and expand macro scope only when carried obligations are explicit. In a fresh stability confirmation, Qwen3-8B under a frozen explicit-transition-delta G9 protocol passed 40/40 controlled state-mutation runs across five perturbation conditions; the two-sided 95\% Wilson interval was [0.912, 1.000]. A preceding paired ablation passed 15/15 with explicit delta and 13/15 with exact postconditions alone, but its 0.133 risk difference missed the preregistered 0.20 causal-effect threshold. The evidence supports bounded stability and weak-model enablement, not a large independent causal effect, production readiness, or open-ended workflow reliability.
+The resulting method is mechanism-first: decompose broad workflows into testable mechanisms, admit only mechanisms with golden/known-bad/local-gate support, and expand macro scope only when carried obligations are explicit. In a fresh stability confirmation, Qwen3-8B under a frozen explicit-transition-delta G9 protocol passed 40/40 controlled state-mutation runs across five perturbation conditions (95\% Wilson interval: [0.912, 1.000]). A preceding paired ablation favored the explicit-delta arm but did not meet the preregistered engineering-effect threshold. The evidence therefore supports bounded protocol stability and weak-model enablement, not a large independent causal effect, production readiness, or open-ended workflow reliability.
 
 \end{abstract}
 
@@ -62,7 +62,7 @@ The paper makes five contributions:
 \item We propose mechanism atoms as the unit of harness evaluation.
 \item We report a multi-stage empirical evaluation across task slices, mechanism atoms, and admitted macros.
 \item We introduce a repair-loop protocol for harness development.
-\item We provide bounded stability evidence that a low-cost model can maintain exact contract adherence on a frozen controlled-state-mutation protocol across repeated and perturbed runs.
+\item We provide bounded evidence that Qwen3-8B maintained strict contract adherence on one frozen controlled-state-mutation protocol across 40 fresh runs and five designed perturbation conditions.
 \end{enumerate}
 
 \section{Related Work}
@@ -284,7 +284,7 @@ Gap compression is computed only where a nonzero G0 baseline gap exists. If G0 b
 
 Weak-model enablement is reported when the low-cost model reaches a pass threshold under a harness condition after failing or underperforming under weaker conditions.
 
-The Stage B stability rate uses only the 40 fresh v5.4 runs. The 15-run v5.3 explicit-delta pilot is not pooled into that estimate. Pooled and per-condition rates are reported with two-sided 95\% Wilson intervals. Paired ablations report absolute risk difference and a two-sided Fisher exact result, with preregistered engineering thresholds taking precedence over post-hoc interpretation.
+The Stage B stability rate uses only the 40 fresh v5.4 runs. The 15-run v5.3 explicit-delta pilot is not pooled into that estimate. Pooled and per-condition rates are reported with two-sided 95\% Wilson intervals. The v5.3 comparison forms 15 matched pairs by perturbation condition and repetition. It reports the absolute risk difference, discordant-pair counts, and a two-sided exact McNemar result. The experiment originally preregistered Fisher's exact test, which treats the arms as independent; that value is retained in the audit record but is not used as the primary paired analysis. The preregistered 0.20 engineering threshold remains unchanged.
 
 \section{Results}
 
@@ -335,7 +335,8 @@ Atom & Stage 6 & 48 & mechanism failures -> atom contracts & low-cost lift & wea
 Macro & Stage 7p/v2 & 12 & stale-context loss -> carried obligations & repaired in v2 & composition retention \\
 Macro & Stage 7e & 6 + repairs & trace and state gaps -> explicit obligations & targeted smoke passed & fixed macro only \\
 Macro & Stage 7-next & 4 & neighboring transfer -> reused obligations & targeted smoke passed & narrow transfer \\
-Macro & Stage B v5.2-v5.4 & 30 + 30 + 40 & evidence/state mutation failures -> isolated controls & 40/40 fresh stability pass & one frozen transition protocol \\
+Ablation & Stage B v5.2-v5.3 & 30 + 30 & bundled repair -> isolated controls & no preregistered large independent effect & component-effect boundary \\
+Stability & Stage B v5.4 & 40 v5.4 & passing repair -> frozen protocol & 40/40 fresh passes & one frozen transition protocol \\
 \bottomrule
 \end{longtable}
 }
@@ -410,6 +411,8 @@ This supports a narrow transfer claim: the Stage 7e v4 obligations can be reused
 
 \subsection{Stage B: From Repair To Fresh Stability Confirmation}
 
+Stage B is not introduced as a new general state-transition method. It is a stricter test of the repair-loop protocol: separate bundled repair, component effect, and frozen-protocol stability.
+
 Stage B tested one controlled state mutation: move network API approval from unknown to known while preserving exact evidence bindings, residual unknown state, residual forbidden inferences, a transition record, the complete gate, and a retention attestation.
 
 The first state-transition smoke, Stage B v5, failed 0/4 under the strict aggregate. All four runs preserved schema, residual state, transition, and attestation. They failed exact evidence-array preservation, and the exact expected \path|next_action| value had not been declared in the model-visible gate. Stage B v5.1 exposed the complete gate and separated immutable evidence bindings from editable prose. The repaired protocol passed 4/4, but this bundled two changes and used too few runs for a stability estimate.
@@ -418,11 +421,34 @@ Stage B v5.2 isolated evidence-binding representation in a preregistered 30-run 
 
 Stage B v5.3 targeted that state error. Both arms received the same initial state, exact final postconditions, evidence bindings, event, gate, attestation, perturbations, and evaluator. The treatment added only a structured \path|required_transition_delta| that named the values to remove, add, and preserve. Across 30 fresh runs, the explicit-delta arm passed 15/15 strict and residual-state checks. The exact-postcondition-only arm passed 13/15. Evidence, transition, gate, schema, and attestation passed 15/15 in both arms.
 
-The residual-state risk difference was 0.133, below the preregistered 0.20 threshold; Fisher's exact two-sided result was \path|p=0.48275862|. The correct causal decision is mixed. The treatment passed all 15 runs, but the experiment did not establish the planned engineering-scale independent effect over an already strong baseline.
+The runs form 15 matched pairs by perturbation condition and repetition. Thirteen pairs were pass/pass, two were explicit-delta pass/postcondition-only fail, and none favored the postcondition-only arm. The exact McNemar two-sided result was \path|p=0.50000000|. The residual-state risk difference was 0.133, below the preregistered 0.20 threshold. The correct causal decision is mixed: the treatment passed all 15 runs, but the experiment did not establish the planned engineering-scale independent effect over an already strong baseline.
 
 Stage B v5.4 asked a different preregistered question: whether the frozen explicit-delta protocol would maintain high absolute adherence over 40 fresh executions. It reused the five frozen v5.3 treatment fixtures without changing the prompts, evaluator, thresholds, provider settings, or output contract. The conditions were canonical, field alias, evidence order shuffled, distractor evidence, and unknown-state paraphrase, with eight repetitions per condition.
 
-All 40 runs passed the strict controlled-mutation metric and every component metric. Each perturbation condition passed 8/8. The pooled strict rate was 1.000 with a two-sided 95\% Wilson interval of [0.912, 1.000]. All 40 calls returned valid JSON with zero provider errors and zero retries. Median latency was 19.500 seconds, P90 latency was 22.183 seconds, and total usage was 83,312 prompt tokens plus 19,672 completion tokens.
+All 40 runs passed the strict controlled-mutation metric and every component metric. Each perturbation condition passed 8/8. The pooled strict rate was 1.000 with a two-sided 95\% Wilson interval of [0.912, 1.000]. Each 8/8 condition has the wider interval [0.676, 1.000].
+
+{\small
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}}
+\toprule
+Condition & Passes & Rate & 95\% Wilson interval \\
+\midrule
+\endfirsthead
+\toprule
+Condition & Passes & Rate & 95\% Wilson interval \\
+\midrule
+\endhead
+canonical & 8/8 & 1.000 & [0.676, 1.000] \\
+field alias & 8/8 & 1.000 & [0.676, 1.000] \\
+evidence order & 8/8 & 1.000 & [0.676, 1.000] \\
+distractor evidence & 8/8 & 1.000 & [0.676, 1.000] \\
+unknown-state paraphrase & 8/8 & 1.000 & [0.676, 1.000] \\
+pooled & 40/40 & 1.000 & [0.912, 1.000] \\
+\bottomrule
+\end{longtable}
+}
+
+All 40 calls returned valid JSON with zero provider errors and zero retries. Median latency was 19.500 seconds, P90 latency was 22.183 seconds, and total usage was 83,312 prompt tokens plus 19,672 completion tokens.
 
 The result supports a bounded stability statement:
 
@@ -478,7 +504,7 @@ The evaluation pipeline relies on deterministic evaluators, golden outputs, and 
 
 The evaluator itself can also overfit. A known-bad suite covers only the failure modes that were anticipated or observed. Stage B v5.3-v5.4 partially addresses this risk with field-name, evidence-order, unknown-state-language, and distractor-evidence perturbations. Those conditions passed, but they remain a designed five-condition suite. The experiments do not cover arbitrary schema changes, adversarial evidence, event-order changes, multiple transitions, rollback, concurrent updates, or live tool state.
 
-Several earlier repair experiments remain targeted smoke tests with small run counts. Stage 7e v4 used four targeted smoke runs after retry. Stage 7-next used four targeted smoke runs. Stage B v5.4 improves the repetition evidence for one controlled-transition protocol, but its 40 runs do not increase task diversity. The Wilson interval describes repeated success under the frozen fixture family; it is not a population estimate over agent tasks.
+Several earlier repair experiments remain targeted smoke tests with small run counts. Stage 7e v4 used four targeted smoke runs after retry. Stage 7-next used four targeted smoke runs. Stage B v5.4 improves the repetition evidence for one controlled-transition protocol, but its 40 runs do not increase task diversity. Each perturbation condition has only eight runs, and its 8/8 Wilson interval is [0.676, 1.000]. The pooled interval describes repeated success under the frozen fixture family; it is not a population estimate over agent tasks.
 
 Provider behavior also affected earlier experiments. Some SiliconFlow runs timed out, and Stage 7e v4 required retrying one timed-out run and one truncated-output retry before completion. Stage 7-next, Stage B v5.3, and Stage B v5.4 completed without provider errors or retries. Runtime deviations remain validity threats because the study uses one provider and does not control provider-side batching, hardware, or service changes.
 
@@ -567,7 +593,7 @@ Stage 7r.1 repaired low-cost-model A2R/A7R failures through tighter output contr
 Stage 7e v1-v4 demonstrates a repair-loop protocol for a fixed evidence-decision macro. & P2-E62, P2-E64, P2-E66, P2-E68, P2-E69, P2-E70 & P2-STAGE7E-EVIDENCE-DECISION, P2-STAGE7E-V2-RETENTION, P2-STAGE7E-V3-STATE-RETENTION, P2-STAGE7E-V4-KNOWN-STATE-PROVENANCE, P2-CLAIM-BOUNDARY-MEMO & Supported with fixed-input/no-tool boundary. \\
 Stage 7-next transfers Stage 7e v4 obligations to a neighboring method-plan macro. & P2-E72, P2-E74, P2-E75 & P2-STAGE7-NEXT-METHOD-PLAN-LOCAL, P2-STAGE7-NEXT-METHOD-PLAN-SMOKE & Supported as narrow transfer evidence. \\
 Evidence-binding separation did not show the preregistered large independent effect. & P2-E160, P2-E161, P2-E162, P2-E163, P2-E164 & P2-STAGE-B-V52-EVIDENCE-BINDING-ABLATION-LOCAL, P2-STAGE-B-V52-EVIDENCE-BINDING-ABLATION-EXECUTION, P2-STAGE-B-V52-EVIDENCE-BINDING-ABLATION-EVALUATION, P2-STAGE-B-V52-EVIDENCE-BINDING-ABLATION-FAILURE-AUDIT, P2-STAGE-B-V52-EVIDENCE-BINDING-ABLATION-DECISION & Supported as a bounded negative ablation result. \\
-Explicit transition delta passed 15/15, but the 0.133 risk difference missed the preregistered 0.20 threshold. & P2-E165, P2-E166, P2-E167, P2-E168 & P2-STAGE-B-V53-EXPLICIT-DELTA-ABLATION & Supported as a mixed causal result. \\
+Explicit transition delta passed 15/15, but the 0.133 risk difference missed the preregistered 0.20 threshold; exact McNemar \path|p=0.500|. & P2-E165, P2-E166, P2-E167, P2-E168, P2-E176 & P2-STAGE-B-V53-EXPLICIT-DELTA-ABLATION, P2-STAGE-B-V53-PAIRED-ANALYSIS-CORRECTION & Supported as a mixed causal result. \\
 The frozen explicit-delta protocol passed 40/40 fresh runs across five perturbation conditions. & P2-E169, P2-E170, P2-E171, P2-E172 & P2-STAGE-B-V54-EXPLICIT-DELTA-STABILITY & Supported as bounded absolute stability, not task-family or state-machine generality. \\
 Full project initialization, full research workflow, production readiness, and general model equivalence remain non-claims. & P2-E33, P2-E63, P2-E69, P2-E70, P2-E75 & P2-CLAIM-BOUNDARY-MEMO, P2-STAGE7E-EVIDENCE-DECISION, P2-STAGE7E-V4-KNOWN-STATE-PROVENANCE, P2-STAGE7-NEXT-METHOD-PLAN-SMOKE & Supported as explicit boundary. \\
 Related work: orchestration, declarative programs, structured outputs, retrieval/tools, memory, verification, and skill ecosystems are adjacent lines. & P2-E05, P2-E06, P2-E07, P2-E08, P2-E09, P2-E83, P2-E84, P2-E85, P2-E86, P2-E87, P2-E88, P2-E89, P2-E90, P2-E91, P2-E92, P2-E93, P2-E94, P2-E95, P2-E96, P2-E98 & External source IDs listed in \path|source-index.md| & Supported as background; convert to publication-style citations before submission. \\

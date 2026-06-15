@@ -17,13 +17,13 @@
 
 ## Conditions
 
-| Condition | Strict pass | State pass |
-|---|---:|---:|
-| `canonical` | 8/8 | 8/8 |
-| `distractor_evidence` | 8/8 | 8/8 |
-| `evidence_order_shuffled` | 8/8 | 8/8 |
-| `field_alias` | 8/8 | 8/8 |
-| `unknown_state_paraphrase` | 8/8 | 8/8 |
+| Condition | Strict pass | Rate | Wilson 95% |
+|---|---:|---:|---|
+| `canonical` | 8/8 | 1.000 | [0.676, 1.000] |
+| `distractor_evidence` | 8/8 | 1.000 | [0.676, 1.000] |
+| `evidence_order_shuffled` | 8/8 | 1.000 | [0.676, 1.000] |
+| `field_alias` | 8/8 | 1.000 | [0.676, 1.000] |
+| `unknown_state_paraphrase` | 8/8 | 1.000 | [0.676, 1.000] |
 
 ## Hypotheses
 

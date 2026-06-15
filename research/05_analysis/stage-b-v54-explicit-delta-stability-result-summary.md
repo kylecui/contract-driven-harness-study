@@ -18,8 +18,18 @@ The frozen explicit-transition-delta protocol passed all preregistered gates.
 | Complete gate | 40/40 | 1.000 | [0.912, 1.000] |
 | Attestation | 40/40 | 1.000 | [0.912, 1.000] |
 
-Every perturbation condition passed 8/8: canonical, field alias, evidence
-order shuffled, distractor evidence, and unknown-state paraphrase.
+Every perturbation condition passed 8/8. Because each condition contains only
+eight runs, its interval is wider than the pooled interval.
+
+| Condition | Pass | Rate | Wilson 95% |
+|---|---:|---:|---|
+| canonical | 8/8 | 1.000 | [0.676, 1.000] |
+| field alias | 8/8 | 1.000 | [0.676, 1.000] |
+| evidence order shuffled | 8/8 | 1.000 | [0.676, 1.000] |
+| distractor evidence | 8/8 | 1.000 | [0.676, 1.000] |
+| unknown-state paraphrase | 8/8 | 1.000 | [0.676, 1.000] |
+| pooled | 40/40 | 1.000 | [0.912, 1.000] |
+
 [E:P2-E171]
 
 ## Execution
@@ -48,7 +58,9 @@ script, provider configuration, or manifest changed. [E:P2-E169; E:P2-E171]
 
 Stage B v5.3 remains a mixed causal result. Explicit delta passed 15/15 while
 the exact-postcondition baseline passed 13/15, but the `0.133` risk difference
-did not reach the preregistered `0.20` threshold. [E:P2-E167; E:P2-E168]
+did not reach the preregistered `0.20` threshold. Among 15 matched pairs, two
+favored explicit delta and none favored the baseline; exact McNemar
+`p=0.50000000`. [E:P2-E167; E:P2-E168; E:P2-E176]
 
 Stage B v5.4 answers a separate question. It confirms that the frozen
 explicit-delta protocol maintained exact contract adherence over 40 fresh

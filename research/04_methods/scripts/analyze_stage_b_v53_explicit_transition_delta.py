@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import argparse
+import math
+import re
 from collections import defaultdict
 from pathlib import Path
 from typing import Any
@@ -14,6 +16,112 @@ from analyze_stage_b_v52_evidence_binding_ablation import (
     load_json,
     summarize_group,
 )
+
+
+def exact_mcnemar_two_sided(
+    treatment_pass_control_fail: int,
+    treatment_fail_control_pass: int,
+) -> float:
+    """Return the exact two-sided McNemar p-value for discordant pairs."""
+    discordant = (
+        treatment_pass_control_fail + treatment_fail_control_pass
+    )
+    if discordant == 0:
+        return 1.0
+    tail = min(
+        treatment_pass_control_fail,
+        treatment_fail_control_pass,
+    )
+    probability = sum(
+        math.comb(discordant, value)
+        for value in range(tail + 1)
+    ) / (2**discordant)
+    return min(1.0, 2 * probability)
+
+
+def pair_key(run: dict[str, Any]) -> tuple[str, int]:
+    condition = run["perturbation_condition"]
+    if "repetition" in run:
+        return condition, int(run["repetition"])
+    match = re.search(r"__r(\d+)$", run.get("run_id", ""))
+    if not match:
+        raise ValueError(
+            "Paired Stage B v5.3 runs require a repetition field or "
+            f"an __rN run_id suffix: {run.get('run_id', '<missing>')}"
+        )
+    return condition, int(match.group(1))
+
+
+def summarize_pairs(
+    runs: list[dict[str, Any]],
+    metric: str,
+) -> dict[str, Any]:
+    pairs: dict[tuple[str, int], dict[str, dict[str, Any]]] = defaultdict(dict)
+    for run in runs:
+        key = pair_key(run)
+        arm = run["protocol_arm"]
+        if arm in pairs[key]:
+            raise ValueError(f"Duplicate {arm} run for pair {key}")
+        pairs[key][arm] = run
+
+    expected_arms = {"postcondition_only", "explicit_delta"}
+    incomplete = {
+        key: sorted(expected_arms - set(arms))
+        for key, arms in pairs.items()
+        if set(arms) != expected_arms
+    }
+    if incomplete or len(pairs) != 15:
+        raise ValueError(
+            "Stage B v5.3 requires 15 complete matched pairs; "
+            f"found {len(pairs)} pairs with incomplete={incomplete}"
+        )
+
+    counts = {
+        "treatment_pass_control_pass": 0,
+        "treatment_pass_control_fail": 0,
+        "treatment_fail_control_pass": 0,
+        "treatment_fail_control_fail": 0,
+    }
+    pair_results = []
+    for (condition, repetition), arms in sorted(pairs.items()):
+        treatment_pass = (
+            arms["explicit_delta"]["metrics"][metric] == 1.0
+        )
+        control_pass = (
+            arms["postcondition_only"]["metrics"][metric] == 1.0
+        )
+        if treatment_pass and control_pass:
+            bucket = "treatment_pass_control_pass"
+        elif treatment_pass:
+            bucket = "treatment_pass_control_fail"
+        elif control_pass:
+            bucket = "treatment_fail_control_pass"
+        else:
+            bucket = "treatment_fail_control_fail"
+        counts[bucket] += 1
+        pair_results.append(
+            {
+                "condition": condition,
+                "repetition": repetition,
+                "treatment_pass": treatment_pass,
+                "control_pass": control_pass,
+                "classification": bucket,
+            }
+        )
+
+    counts["discordant_pairs"] = (
+        counts["treatment_pass_control_fail"]
+        + counts["treatment_fail_control_pass"]
+    )
+    counts["exact_mcnemar_two_sided_p"] = round(
+        exact_mcnemar_two_sided(
+            counts["treatment_pass_control_fail"],
+            counts["treatment_fail_control_pass"],
+        ),
+        8,
+    )
+    counts["pairs"] = pair_results
+    return counts
 
 
 def analyze(evaluated: dict[str, Any], execution: dict[str, Any]) -> dict[str, Any]:
@@ -51,6 +159,10 @@ def analyze(evaluated: dict[str, Any], execution: dict[str, Any]) -> dict[str, A
         baseline_state,
         baseline_total - baseline_state,
     )
+    paired = summarize_pairs(
+        runs,
+        "residual_unknown_vocabulary_accuracy",
+    )
 
     delta_cells = [
         summary
@@ -77,7 +189,7 @@ def analyze(evaluated: dict[str, Any], execution: dict[str, Any]) -> dict[str, A
         for arm in ["postcondition_only", "explicit_delta"]
     )
 
-    if h1 and h2 and fisher_p < 0.05:
+    if h1 and h2 and paired["exact_mcnemar_two_sided_p"] < 0.05:
         decision = "delta_effect_with_strong_statistical_support"
     elif h1 and h2:
         decision = "delta_effect_supported"
@@ -139,7 +251,13 @@ def analyze(evaluated: dict[str, Any], execution: dict[str, Any]) -> dict[str, A
             "postcondition_only_total": baseline_total,
             "risk_difference": round(risk_difference, 6),
             "engineering_effect_threshold": 0.20,
-            "fisher_exact_two_sided_p": round(fisher_p, 8),
+            "matched_pairs": paired,
+            "exact_mcnemar_two_sided_p": paired[
+                "exact_mcnemar_two_sided_p"
+            ],
+            "legacy_independent_groups_fisher_two_sided_p": round(
+                fisher_p, 8
+            ),
         },
         "hypotheses": {
             "H1_delta_robustness": h1,
@@ -161,8 +279,15 @@ def render_markdown(payload: dict[str, Any]) -> str:
         f"- Decision: `{payload['decision']}`",
         f"- Residual-state risk difference: {comparison['risk_difference']:.3f}",
         (
-            "- Fisher exact two-sided p: "
-            f"{comparison['fisher_exact_two_sided_p']:.8f}"
+            "- Exact McNemar two-sided p: "
+            f"{comparison['exact_mcnemar_two_sided_p']:.8f}"
+        ),
+        (
+            "- Discordant pairs (treatment pass/control fail vs "
+            "treatment fail/control pass): "
+            f"{comparison['matched_pairs']['treatment_pass_control_fail']} "
+            "vs "
+            f"{comparison['matched_pairs']['treatment_fail_control_pass']}"
         ),
         "",
         "## Arm Results",
@@ -196,6 +321,22 @@ def render_markdown(payload: dict[str, Any]) -> str:
             f"{components['controlled_state_mutation_success']['successes']}/3 | "
             f"{components['residual_unknown_vocabulary_accuracy']['successes']}/3 | "
             f"{'pass' if summary['cell_pass'] else 'fail'} |"
+        )
+    lines.extend(
+        [
+            "",
+            "## Matched-Pair Results",
+            "",
+            "| Condition | Repetition | Treatment | Control | Classification |",
+            "|---|---:|---|---|---|",
+        ]
+    )
+    for pair in comparison["matched_pairs"]["pairs"]:
+        lines.append(
+            f"| `{pair['condition']}` | {pair['repetition']} | "
+            f"{'pass' if pair['treatment_pass'] else 'fail'} | "
+            f"{'pass' if pair['control_pass'] else 'fail'} | "
+            f"`{pair['classification']}` |"
         )
     lines.extend(["", "## Hypotheses", ""])
     for name, passed in payload["hypotheses"].items():

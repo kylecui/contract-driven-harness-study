@@ -839,7 +839,123 @@
     "postcondition_only_total": 15,
     "risk_difference": 0.133333,
     "engineering_effect_threshold": 0.2,
-    "fisher_exact_two_sided_p": 0.48275862
+    "matched_pairs": {
+      "treatment_pass_control_pass": 13,
+      "treatment_pass_control_fail": 2,
+      "treatment_fail_control_pass": 0,
+      "treatment_fail_control_fail": 0,
+      "discordant_pairs": 2,
+      "exact_mcnemar_two_sided_p": 0.5,
+      "pairs": [
+        {
+          "condition": "canonical",
+          "repetition": 1,
+          "treatment_pass": true,
+          "control_pass": true,
+          "classification": "treatment_pass_control_pass"
+        },
+        {
+          "condition": "canonical",
+          "repetition": 2,
+          "treatment_pass": true,
+          "control_pass": true,
+          "classification": "treatment_pass_control_pass"
+        },
+        {
+          "condition": "canonical",
+          "repetition": 3,
+          "treatment_pass": true,
+          "control_pass": true,
+          "classification": "treatment_pass_control_pass"
+        },
+        {
+          "condition": "distractor_evidence",
+          "repetition": 1,
+          "treatment_pass": true,
+          "control_pass": true,
+          "classification": "treatment_pass_control_pass"
+        },
+        {
+          "condition": "distractor_evidence",
+          "repetition": 2,
+          "treatment_pass": true,
+          "control_pass": true,
+          "classification": "treatment_pass_control_pass"
+        },
+        {
+          "condition": "distractor_evidence",
+          "repetition": 3,
+          "treatment_pass": true,
+          "control_pass": true,
+          "classification": "treatment_pass_control_pass"
+        },
+        {
+          "condition": "evidence_order_shuffled",
+          "repetition": 1,
+          "treatment_pass": true,
+          "control_pass": true,
+          "classification": "treatment_pass_control_pass"
+        },
+        {
+          "condition": "evidence_order_shuffled",
+          "repetition": 2,
+          "treatment_pass": true,
+          "control_pass": true,
+          "classification": "treatment_pass_control_pass"
+        },
+        {
+          "condition": "evidence_order_shuffled",
+          "repetition": 3,
+          "treatment_pass": true,
+          "control_pass": false,
+          "classification": "treatment_pass_control_fail"
+        },
+        {
+          "condition": "field_alias",
+          "repetition": 1,
+          "treatment_pass": true,
+          "control_pass": true,
+          "classification": "treatment_pass_control_pass"
+        },
+        {
+          "condition": "field_alias",
+          "repetition": 2,
+          "treatment_pass": true,
+          "control_pass": true,
+          "classification": "treatment_pass_control_pass"
+        },
+        {
+          "condition": "field_alias",
+          "repetition": 3,
+          "treatment_pass": true,
+          "control_pass": false,
+          "classification": "treatment_pass_control_fail"
+        },
+        {
+          "condition": "unknown_state_paraphrase",
+          "repetition": 1,
+          "treatment_pass": true,
+          "control_pass": true,
+          "classification": "treatment_pass_control_pass"
+        },
+        {
+          "condition": "unknown_state_paraphrase",
+          "repetition": 2,
+          "treatment_pass": true,
+          "control_pass": true,
+          "classification": "treatment_pass_control_pass"
+        },
+        {
+          "condition": "unknown_state_paraphrase",
+          "repetition": 3,
+          "treatment_pass": true,
+          "control_pass": true,
+          "classification": "treatment_pass_control_pass"
+        }
+      ]
+    },
+    "exact_mcnemar_two_sided_p": 0.5,
+    "legacy_independent_groups_fisher_two_sided_p": 0.48275862
   },
   "hypotheses": {
     "H1_delta_robustness": true,

@@ -15,8 +15,8 @@ state-machine or workflow result.
 | C3 | Mechanism atoms make broad workflow failures interpretable. | Stage 6-7 atoms and local golden/known-bad gates. | Atom pass does not imply macro or workflow pass. |
 | C4 | A repair loop can convert specific low-cost-model failures into explicit, testable obligations. | Stage 7e v1-v4; Stage B v5-v5.4. | Fixed mechanisms and contracts only. |
 | C5 | Repaired obligations can transfer to a neighboring bounded macro. | Stage 7-next 4/4 targeted smoke. | Fixed-input, no-tool transfer only. |
-| C6 | The frozen explicit-delta protocol is stable on one controlled state-mutation macro. | Stage B v5.4: 40/40 fresh strict passes, five conditions 8/8, Wilson 95% `[0.912, 1.000]`. | One model, provider, macro, harness, and perturbation suite. |
-| C7 | Explicit delta shows directional but not preregistered engineering-scale improvement over exact postconditions. | Stage B v5.3: 15/15 vs 13/15; risk difference `0.133`; Fisher `p=0.48275862`. | Mixed causal result; no `0.20` effect claim. |
+| C6 | The frozen explicit-delta protocol is stable on one controlled state-mutation macro. | Stage B v5.4: 40/40 fresh strict passes; pooled Wilson 95% `[0.912, 1.000]`; each designed condition 8/8 with `[0.676, 1.000]`. | One model, provider, macro, harness, and designed perturbation suite. |
+| C7 | Explicit delta shows directional but not preregistered engineering-scale improvement over exact postconditions. | Stage B v5.3: 15 matched pairs; 2 treatment-pass/control-fail, 0 reverse; risk difference `0.133`; exact McNemar `p=0.500`. | Mixed causal result; no `0.20` effect claim. |
 
 ## Evaluation Blocks
 
@@ -26,8 +26,8 @@ state-machine or workflow result.
 | Mechanism atoms | Can obligations be isolated and tested? | Positive with boundary cases. | Method validity. |
 | Composition and Stage 7e/next | Can repaired obligations survive bounded composition? | Targeted positive results after explicit repairs. | Repair-loop and narrow transfer. |
 | Stage B v5.2 | Does evidence-binding separation have a large independent effect? | No engineering-scale effect observed. | Negative ablation. |
-| Stage B v5.3 | Does explicit transition delta add a large effect over exact postconditions? | Mixed: robust treatment, threshold miss. | Causal boundary. |
-| Stage B v5.4 | Does the frozen explicit-delta protocol remain stable over fresh repetitions? | 40/40 strict; all cells 8/8. | Bounded stability claim. |
+| Stage B v5.3 | Does explicit transition delta add a large effect over exact postconditions? | Mixed: 2 favorable discordant pairs, 0 reverse, threshold miss, exact McNemar `p=0.500`. | Causal boundary. |
+| Stage B v5.4 | Does the frozen explicit-delta protocol remain stable over fresh repetitions? | 40/40 strict; all cells 8/8, with wide per-condition intervals. | Bounded stability claim. |
 
 ## Non-Claims
 

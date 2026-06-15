@@ -9,7 +9,10 @@ import unittest
 from pathlib import Path
 
 from build_stage_b_v53_explicit_transition_delta import write_fixture
-from analyze_stage_b_v53_explicit_transition_delta import analyze
+from analyze_stage_b_v53_explicit_transition_delta import (
+    analyze,
+    exact_mcnemar_two_sided,
+)
 from evaluate_stage_b_v52_evidence_binding_ablation import (
     evidence_exact,
     residual_exact,
@@ -98,6 +101,21 @@ class TransitionDeltaTests(unittest.TestCase):
             "mixed_result",
         )
 
+    def test_exact_mcnemar_uses_discordant_pairs(self) -> None:
+        self.assertEqual(exact_mcnemar_two_sided(2, 0), 0.5)
+        self.assertEqual(exact_mcnemar_two_sided(0, 0), 1.0)
+        self.assertAlmostEqual(exact_mcnemar_two_sided(6, 0), 0.03125)
+
+    def test_analysis_reports_matched_pair_table(self) -> None:
+        evaluated = {"runs": synthetic_runs(delta_state=15, baseline_state=13)}
+        result = analyze(evaluated, synthetic_execution())
+        pairs = result["primary_comparison"]["matched_pairs"]
+        self.assertEqual(pairs["treatment_pass_control_fail"], 2)
+        self.assertEqual(pairs["treatment_fail_control_pass"], 0)
+        self.assertEqual(pairs["discordant_pairs"], 2)
+        self.assertEqual(pairs["exact_mcnemar_two_sided_p"], 0.5)
+        self.assertEqual(len(pairs["pairs"]), 15)
+
 
 def synthetic_runs(delta_state: int, baseline_state: int) -> list[dict]:
     runs = []
@@ -118,8 +136,13 @@ def synthetic_runs(delta_state: int, baseline_state: int) -> list[dict]:
             }
             runs.append(
                 {
+                    "run_id": (
+                        f"synthetic-{arm}-{index // 3}"
+                        f"__budget_model__G9__r{index % 3 + 1}"
+                    ),
                     "protocol_arm": arm,
                     "perturbation_condition": f"cell_{index // 3}",
+                    "repetition": index % 3 + 1,
                     "metrics": metrics,
                 }
             )

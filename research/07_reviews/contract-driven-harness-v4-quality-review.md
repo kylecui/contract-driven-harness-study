@@ -1,6 +1,6 @@
 # Contract-Driven Harness v4 Quality Review
 
-Reviewed: 2026-06-14
+Reviewed: 2026-06-15
 
 Artifact:
 `research/06_outputs/contract-driven-harness-arxiv-v4-draft.md`
@@ -18,7 +18,7 @@ Blocking issues: none
 | Citation coverage | Pass | All 24 project source references resolve in the source index, and all 22 external citation keys resolve to used BibTeX entries. |
 | Logic chain | Pass | The sequence from observed failure to explicit repair, ablation, mixed causal result, frozen protocol, fresh stability confirmation, and bounded claim is intact. |
 | Counter-evidence | Pass | Stage B v5.2 remains a bounded null result and v5.3 remains mixed; neither is displaced by the v5.4 40/40 result. |
-| Method fit | Pass | The draft distinguishes paired ablation from absolute stability, does not pool the v5.3 pilot, reports Wilson intervals, and preserves preregistered thresholds. |
+| Method fit | Pass | The draft distinguishes paired ablation from absolute stability, uses exact McNemar for the 15 matched v5.3 pairs, does not pool the pilot, reports pooled and per-condition Wilson intervals, and preserves the preregistered engineering threshold. |
 | Actionability | Pass | The next decision is explicit: freeze the v4 evidence draft or preregister a separate matched Stage D overhead matrix before further provider calls. |
 | Expression quality | Pass | Quantitative statements are attached to counts, thresholds, intervals, and non-claims. The draft avoids unsupported superiority language. |
 | Risk disclosure | Pass | Model, provider, fixture, perturbation, task-family, causal, runtime, evaluator, overhead, tool, rollback, concurrency, and production limits are stated. |
@@ -28,9 +28,12 @@ Blocking issues: none
 - Stage B v5.2 remains `15/15` versus `14/15` on exact evidence arrays and
   `10/15` versus `10/15` on the strict aggregate.
 - Stage B v5.3 remains `15/15` versus `13/15`, risk difference `0.133`, with
-  Fisher's exact two-sided `p=0.48275862`.
+  13 pass/pass pairs, 2 treatment-pass/control-fail pairs, 0 reverse pairs,
+  and exact McNemar two-sided `p=0.50000000`.
 - Stage B v5.4 uses only 40 fresh runs, reports `40/40`, and gives the Wilson
   interval `[0.912, 1.000]`.
+- Each v5.4 perturbation condition reports `8/8` with Wilson interval
+  `[0.676, 1.000]`.
 - The v5.3 pilot is not pooled into the v5.4 stability estimate.
 - V5.4 usage remains `83,312 + 19,672 = 102,984` tokens.
 - Provider errors and retries remain zero for v5.3 and v5.4.

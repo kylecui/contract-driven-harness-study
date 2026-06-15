@@ -1,6 +1,6 @@
 # Contract-Driven Harness v4 Compile And Layout Check
 
-Reviewed: 2026-06-14
+Reviewed: 2026-06-15
 
 Target package:
 `research/06_outputs/arxiv-source-v4/`
@@ -23,9 +23,9 @@ The v4 evidence-extension source compiled with MiKTeX 25.12 using:
 
 | Check | Result |
 |---|---:|
-| PDF pages | 22 |
-| PDF size | 279002 bytes |
-| PDF SHA-256 | `abf83152c60c261699fef4111b51a62e49e282b6eb53a227a295ae21a80a5715` |
+| PDF pages | 23 |
+| PDF size | 280953 bytes |
+| PDF SHA-256 | `5aec1d907ea40dbfb3ced9fc21eff1889b767f96967a38f56b2f21bffef86d0d` |
 | LaTeX errors | 0 |
 | Undefined citations | 0 |
 | Undefined references | 0 |
@@ -39,12 +39,15 @@ affect compilation.
 
 ## Layout Review
 
-Pages 1, 9, 10, 11, 13, 17, and 20 were rendered and inspected.
+Pages 1, 5, 10, 11, 13, 14, 17, and 20 were rendered and inspected.
 
-- The title page carries the June 14, 2026 draft date and no converter banner.
+- The title page carries the June 15, 2026 draft date and no converter banner.
 - The metric guide is readable and includes the human-preference boundary.
 - Table 4 uses fixed-width columns, allows the repair description to wrap,
-  keeps allowed claims short, and continues cleanly from page 10 to page 11.
+  keeps allowed claims short, separates ablation from stability, and continues
+  cleanly from page 10 to page 11.
+- The Stage B condition table reports the five per-condition Wilson intervals
+  without overlap, clipping, or ambiguous pooling.
 - The Stage B result section, current non-claims, contribution alignment, and
   evidence traceability appendix show no overlap or clipped content.
 
@@ -54,7 +57,7 @@ Pages 1, 9, 10, 11, 13, 17, and 20 were rendered and inspected.
 |---|---:|---|
 | Overfull hbox | 12 | Long metric names, result strings, contribution-table text, and repository paths. |
 | Underfull hbox | 5 | Bibliography URL wrapping. |
-| Infinite glue shrinkage ignored | 4 | Longtable page splitting. |
+| Infinite glue shrinkage ignored | 5 | Longtable page splitting. |
 
 The largest overflow is an existing long reproducibility-package path in the
 bibliography section. The new Stage B paragraph produces a 4.67 pt warning,

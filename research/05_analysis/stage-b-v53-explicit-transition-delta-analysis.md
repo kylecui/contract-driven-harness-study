@@ -3,7 +3,8 @@
 - Runs: 30
 - Decision: `mixed_result`
 - Residual-state risk difference: 0.133
-- Fisher exact two-sided p: 0.48275862
+- Exact McNemar two-sided p: 0.50000000
+- Discordant pairs (treatment pass/control fail vs treatment fail/control pass): 2 vs 0
 
 ## Arm Results
 
@@ -26,6 +27,26 @@
 | `postcondition_only` | `evidence_order_shuffled` | 2/3 | 2/3 | pass |
 | `postcondition_only` | `field_alias` | 2/3 | 2/3 | pass |
 | `postcondition_only` | `unknown_state_paraphrase` | 3/3 | 3/3 | pass |
+
+## Matched-Pair Results
+
+| Condition | Repetition | Treatment | Control | Classification |
+|---|---:|---|---|---|
+| `canonical` | 1 | pass | pass | `treatment_pass_control_pass` |
+| `canonical` | 2 | pass | pass | `treatment_pass_control_pass` |
+| `canonical` | 3 | pass | pass | `treatment_pass_control_pass` |
+| `distractor_evidence` | 1 | pass | pass | `treatment_pass_control_pass` |
+| `distractor_evidence` | 2 | pass | pass | `treatment_pass_control_pass` |
+| `distractor_evidence` | 3 | pass | pass | `treatment_pass_control_pass` |
+| `evidence_order_shuffled` | 1 | pass | pass | `treatment_pass_control_pass` |
+| `evidence_order_shuffled` | 2 | pass | pass | `treatment_pass_control_pass` |
+| `evidence_order_shuffled` | 3 | pass | fail | `treatment_pass_control_fail` |
+| `field_alias` | 1 | pass | pass | `treatment_pass_control_pass` |
+| `field_alias` | 2 | pass | pass | `treatment_pass_control_pass` |
+| `field_alias` | 3 | pass | fail | `treatment_pass_control_fail` |
+| `unknown_state_paraphrase` | 1 | pass | pass | `treatment_pass_control_pass` |
+| `unknown_state_paraphrase` | 2 | pass | pass | `treatment_pass_control_pass` |
+| `unknown_state_paraphrase` | 3 | pass | pass | `treatment_pass_control_pass` |
 
 ## Hypotheses
 

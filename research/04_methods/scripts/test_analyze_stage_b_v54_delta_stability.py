@@ -5,7 +5,7 @@ from __future__ import annotations
 
 import unittest
 
-from analyze_stage_b_v54_delta_stability import analyze
+from analyze_stage_b_v54_delta_stability import analyze, render_markdown
 
 
 COMPONENTS = [
@@ -72,6 +72,11 @@ class StabilityAnalysisTests(unittest.TestCase):
         )
         self.assertEqual(result["decision"], "bounded_stability_confirmed")
         self.assertTrue(all(result["hypotheses"].values()))
+        for summary in result["condition_summary"].values():
+            strict = summary["components"]["controlled_state_mutation_success"]
+            self.assertEqual(strict["wilson_95"], [0.675584, 1.0])
+        rendered = render_markdown(result)
+        self.assertIn("[0.676, 1.000]", rendered)
 
     def test_below_strict_threshold_does_not_confirm(self) -> None:
         result = analyze(

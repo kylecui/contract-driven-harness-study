@@ -35,6 +35,8 @@ v4 integrates:
 8. Update contribution-evaluation alignment and evidence traceability.
 9. Regenerate a separate v4 LaTeX/PDF package and run compile checks.
 10. Run an independent quality and expression review before freezing v4.
+11. Correct the v5.3 paired analysis to exact McNemar and report
+    per-condition v5.4 Wilson intervals.
 
 ## Claim Rules
 
@@ -59,6 +61,8 @@ Not supported:
 - v5.3 remains labeled mixed;
 - v5.4 remains labeled absolute bounded stability;
 - the 15-run pilot is not pooled with the fresh 40-run confirmation;
+- the v5.3 paired result reports discordant pairs and exact McNemar;
+- the five v5.4 condition intervals are reported beside the pooled interval;
 - v3.1.1 hashes remain unchanged;
 - the v4 source compiles without undefined references or citations;
 - independent review finds no blocking claim-boundary issue.

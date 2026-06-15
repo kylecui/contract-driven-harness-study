@@ -172,16 +172,19 @@ def render_markdown(payload: dict[str, Any]) -> str:
             "",
             "## Conditions",
             "",
-            "| Condition | Strict pass | State pass |",
-            "|---|---:|---:|",
+            "| Condition | Strict pass | Rate | Wilson 95% |",
+            "|---|---:|---:|---|",
         ]
     )
     for condition, summary in payload["condition_summary"].items():
         items = summary["components"]
+        strict_item = items["controlled_state_mutation_success"]
         lines.append(
             f"| `{condition}` | "
-            f"{items['controlled_state_mutation_success']['successes']}/8 | "
-            f"{items['residual_unknown_vocabulary_accuracy']['successes']}/8 |"
+            f"{strict_item['successes']}/{strict_item['total']} | "
+            f"{strict_item['rate']:.3f} | "
+            f"[{strict_item['wilson_95'][0]:.3f}, "
+            f"{strict_item['wilson_95'][1]:.3f}] |"
         )
     lines.extend(["", "## Hypotheses", ""])
     for name, passed in payload["hypotheses"].items():

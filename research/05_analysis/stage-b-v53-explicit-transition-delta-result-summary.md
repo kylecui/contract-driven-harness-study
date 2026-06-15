@@ -12,8 +12,12 @@ Decision: mixed result
 | Exact postcondition only | 13/15 | 13/15 | 15/15 | 15/15 | 15/15 |
 
 The residual-state risk difference was `0.133`, below the preregistered
-engineering threshold of `0.20`. Fisher's exact two-sided result was
-`p=0.48275862`.
+engineering threshold of `0.20`.
+
+The 30 runs form 15 matched pairs by perturbation condition and repetition.
+Thirteen pairs were pass/pass, two were explicit-delta pass/postcondition-only
+fail, and none favored the postcondition-only arm. The exact McNemar
+two-sided result was `p=0.50000000`.
 
 H1 delta robustness, H3 obligation preservation, and H4 no-regression passed.
 H2 delta effect did not pass.
@@ -57,6 +61,13 @@ defines that combination as a mixed result.
 The decision branch and its synthetic test were corrected to follow the
 written rule. No prompt, fixture, evaluator, metric, threshold, output, or
 provider record changed.
+
+On 2026-06-15, a second analysis correction replaced the preregistered Fisher
+exact test with an exact McNemar test because the outcomes are paired by
+condition and repetition. The original independent-groups Fisher value,
+`p=0.48275862`, remains in the machine-readable analysis as a legacy
+sensitivity value. It is no longer the primary inferential result. The
+engineering-threshold decision and the mixed result did not change.
 
 ## Next Gate
 

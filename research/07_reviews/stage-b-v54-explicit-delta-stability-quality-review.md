@@ -33,6 +33,7 @@ Blocking issues: none
 - prompt plus completion tokens equal total tokens:
   `83,312 + 19,672 = 102,984`;
 - the pooled Wilson interval is `[0.912375, 1.0]`;
+- each condition-level 8/8 Wilson interval is `[0.675584, 1.0]`;
 - freeze audit found zero immutable post-freeze changes.
 
 ## Automated Gate Compatibility
