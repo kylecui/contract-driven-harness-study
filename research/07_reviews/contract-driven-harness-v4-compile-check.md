@@ -24,8 +24,8 @@ The v4 evidence-extension source compiled with MiKTeX 25.12 using:
 | Check | Result |
 |---|---:|
 | PDF pages | 23 |
-| PDF size | 280953 bytes |
-| PDF SHA-256 | `5aec1d907ea40dbfb3ced9fc21eff1889b767f96967a38f56b2f21bffef86d0d` |
+| PDF size | 281534 bytes |
+| PDF SHA-256 | `0c3e26b4ccd9662e757c280c1078cdfae03592278b20d69f1c6062b0b4d52118` |
 | LaTeX errors | 0 |
 | Undefined citations | 0 |
 | Undefined references | 0 |
@@ -39,13 +39,15 @@ affect compilation.
 
 ## Layout Review
 
-Pages 1, 5, 10, 11, 13, 14, 17, and 20 were rendered and inspected.
+Pages 1, 5, 10, 11, 13, 14, 15, 17, and 20 were rendered and inspected.
 
 - The title page carries the June 15, 2026 draft date and no converter banner.
 - The metric guide is readable and includes the human-preference boundary.
 - Table 4 uses fixed-width columns, allows the repair description to wrap,
   keeps allowed claims short, separates ablation from stability, and continues
   cleanly from page 10 to page 11.
+- The Methods threshold definition, three-decimal McNemar result, and
+  limited-power statement are readable without overlap or clipping.
 - The Stage B condition table reports the five per-condition Wilson intervals
   without overlap, clipping, or ambiguous pooling.
 - The Stage B result section, current non-claims, contribution alignment, and

@@ -284,7 +284,9 @@ Gap compression is computed only where a nonzero G0 baseline gap exists. If G0 b
 
 Weak-model enablement is reported when the low-cost model reaches a pass threshold under a harness condition after failing or underperforming under weaker conditions.
 
-The Stage B stability rate uses only the 40 fresh v5.4 runs. The 15-run v5.3 explicit-delta pilot is not pooled into that estimate. Pooled and per-condition rates are reported with two-sided 95\% Wilson intervals. The v5.3 comparison forms 15 matched pairs by perturbation condition and repetition. It reports the absolute risk difference, discordant-pair counts, and a two-sided exact McNemar result. The experiment originally preregistered Fisher's exact test, which treats the arms as independent; that value is retained in the audit record but is not used as the primary paired analysis. The preregistered 0.20 engineering threshold remains unchanged.
+The Stage B stability rate uses only the 40 fresh v5.4 runs. The 15-run v5.3 explicit-delta pilot is not pooled into that estimate. Pooled and per-condition rates are reported with two-sided 95\% Wilson intervals. The v5.3 comparison forms 15 matched pairs by perturbation condition and repetition. It reports the absolute risk difference, discordant-pair counts, and a two-sided exact McNemar result. The experiment originally preregistered Fisher's exact test, which treats the arms as independent; that value is retained in the audit record but is not used as the primary paired analysis.
+
+The Stage B v5.3 experiment plan in the reproducibility package defined the engineering-effect threshold as an absolute risk difference of 0.20. With 15 runs per arm, this required at least three additional passes. The threshold was fixed before execution as a coarse engineering decision gate. It was not a conventional significance threshold, equivalence margin, or power-derived minimum detectable effect, and the preregistration did not include a separate utility analysis for the cutoff.
 
 \section{Results}
 
@@ -336,7 +338,7 @@ Macro & Stage 7p/v2 & 12 & stale-context loss -> carried obligations & repaired 
 Macro & Stage 7e & 6 + repairs & trace and state gaps -> explicit obligations & targeted smoke passed & fixed macro only \\
 Macro & Stage 7-next & 4 & neighboring transfer -> reused obligations & targeted smoke passed & narrow transfer \\
 Ablation & Stage B v5.2-v5.3 & 30 + 30 & bundled repair -> isolated controls & no preregistered large independent effect & component-effect boundary \\
-Stability & Stage B v5.4 & 40 v5.4 & passing repair -> frozen protocol & 40/40 fresh passes & one frozen transition protocol \\
+Stability & Stage B v5.4 & 40 & passing repair -> frozen protocol & 40/40 fresh passes & one frozen transition protocol \\
 \bottomrule
 \end{longtable}
 }
@@ -421,7 +423,7 @@ Stage B v5.2 isolated evidence-binding representation in a preregistered 30-run 
 
 Stage B v5.3 targeted that state error. Both arms received the same initial state, exact final postconditions, evidence bindings, event, gate, attestation, perturbations, and evaluator. The treatment added only a structured \path|required_transition_delta| that named the values to remove, add, and preserve. Across 30 fresh runs, the explicit-delta arm passed 15/15 strict and residual-state checks. The exact-postcondition-only arm passed 13/15. Evidence, transition, gate, schema, and attestation passed 15/15 in both arms.
 
-The runs form 15 matched pairs by perturbation condition and repetition. Thirteen pairs were pass/pass, two were explicit-delta pass/postcondition-only fail, and none favored the postcondition-only arm. The exact McNemar two-sided result was \path|p=0.50000000|. The residual-state risk difference was 0.133, below the preregistered 0.20 threshold. The correct causal decision is mixed: the treatment passed all 15 runs, but the experiment did not establish the planned engineering-scale independent effect over an already strong baseline.
+The runs form 15 matched pairs by perturbation condition and repetition. Thirteen pairs were pass/pass, two were explicit-delta pass/postcondition-only fail, and none favored the postcondition-only arm. The exact McNemar two-sided result was \path|p=0.500|. The residual-state risk difference was 0.133, below the preregistered 0.20 threshold. The correct causal decision is mixed: the treatment passed all 15 runs, but the experiment did not establish the planned engineering-scale independent effect over an already strong baseline.
 
 Stage B v5.4 asked a different preregistered question: whether the frozen explicit-delta protocol would maintain high absolute adherence over 40 fresh executions. It reused the five frozen v5.3 treatment fixtures without changing the prompts, evaluator, thresholds, provider settings, or output contract. The conditions were canonical, field alias, evidence order shuffled, distractor evidence, and unknown-state paraphrase, with eight repetitions per condition.
 
@@ -466,7 +468,7 @@ The main finding is that some reliability requirements can be moved out of the m
 
 This changes how we interpret several failures in the experiments. The low-cost model did not preserve decision-trace retention until the trace was made structurally required. It did not preserve unknown state until unknown state was enumerated. It compressed known-state provenance until provenance-bearing state objects were required. It failed partial macro composition until cross-step carried obligations were made explicit. These are not just weaker answers. They are missing obligations that can be named and tested.
 
-Stage B adds an important qualification. Making an obligation explicit can produce a stable passing protocol without proving that the added field has a large independent causal effect over every strong alternative specification. The v5.3 baseline already exposed exact final postconditions and passed 13/15. The explicit delta removed the remaining observed failures, but the preregistered effect threshold did not pass. The v5.4 result is therefore evidence of bounded absolute stability, not proof that explicit delta is universally necessary or sufficient.
+Stage B adds an important qualification. Making an obligation explicit can produce a stable passing protocol without proving that the added field has a large independent causal effect over every strong alternative specification. The v5.3 baseline already exposed exact final postconditions and passed 13/15. The explicit delta removed the remaining observed failures, but the preregistered effect threshold did not pass. With only two discordant pairs, the paired comparison has little power for small effects; it establishes neither equivalence nor the absence of a modest benefit. The v5.4 result is therefore evidence of bounded absolute stability, not proof that explicit delta is universally necessary or sufficient.
 
 \subsection{Gap Compression Is Conditional}
 

@@ -12,6 +12,7 @@ from build_stage_b_v53_explicit_transition_delta import write_fixture
 from analyze_stage_b_v53_explicit_transition_delta import (
     analyze,
     exact_mcnemar_two_sided,
+    render_markdown,
 )
 from evaluate_stage_b_v52_evidence_binding_ablation import (
     evidence_exact,
@@ -115,6 +116,10 @@ class TransitionDeltaTests(unittest.TestCase):
         self.assertEqual(pairs["discordant_pairs"], 2)
         self.assertEqual(pairs["exact_mcnemar_two_sided_p"], 0.5)
         self.assertEqual(len(pairs["pairs"]), 15)
+        self.assertIn(
+            "Exact McNemar two-sided p: 0.500",
+            render_markdown(result),
+        )
 
 
 def synthetic_runs(delta_state: int, baseline_state: int) -> list[dict]:

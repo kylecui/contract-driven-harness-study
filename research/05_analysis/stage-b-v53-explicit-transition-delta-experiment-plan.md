@@ -11,6 +11,13 @@ corrected post-execution to an exact McNemar test. The original plan remains
 visible for audit. See
 `research/05_analysis/stage-b-v53-paired-analysis-correction.md`.
 
+Threshold-interpretation clarification (2026-06-15): the preregistration
+fixed an absolute risk-difference threshold of `0.20` before execution. With
+15 runs per arm, this required at least three additional passes. It was a
+coarse engineering decision gate, not a conventional significance threshold,
+equivalence margin, or power-derived minimum detectable effect. The original
+plan did not include a separate utility analysis for the cutoff.
+
 ## Motivation
 
 Stage B v5.2 did not observe an engineering-scale independent effect from

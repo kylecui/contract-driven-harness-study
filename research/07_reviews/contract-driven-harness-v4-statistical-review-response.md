@@ -16,7 +16,7 @@ Revision:
 - reported 13 pass/pass, 2 treatment-pass/control-fail, 0 reverse, and
   0 fail/fail pairs;
 - replaced Fisher as the primary result with exact McNemar
-  (`p=0.50000000`);
+  (`p=0.500`);
 - retained the old Fisher value only as a legacy sensitivity calculation;
 - added tests for pair completeness and the exact McNemar calculation.
 
@@ -67,3 +67,21 @@ Revision: split the former Stage B row into:
 - a stability row for v5.4 (`40`).
 
 This keeps component-effect evidence separate from frozen-protocol stability.
+
+## Freeze-Proofreading Follow-Up
+
+The final proofreading pass made four additional presentation and
+interpretation corrections:
+
+- rounded the reported McNemar result to `p=0.500`;
+- removed the repeated `v5.4` label from the Table 4 Runs column;
+- defined the preregistered `0.20` threshold as an absolute risk-difference
+  engineering gate, equivalent to at least three additional passes in a
+  15-run arm, and identified the Stage B v5.3 experiment plan as its source;
+- stated that the two-discordant-pair comparison establishes neither
+  equivalence nor the absence of a modest benefit.
+
+Venue-specific compression remains separate from the evidence freeze. The
+traceability matrix, detailed Stage B audit trail, and most artifact-level
+material are candidates for supplementary placement once a target venue is
+selected.

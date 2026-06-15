@@ -37,6 +37,11 @@ v4 integrates:
 10. Run an independent quality and expression review before freezing v4.
 11. Correct the v5.3 paired analysis to exact McNemar and report
     per-condition v5.4 Wilson intervals.
+12. Define the preregistered `0.20` engineering gate as an absolute risk
+    difference and distinguish it from significance, equivalence, and
+    power-derived thresholds.
+13. State that the two-discordant-pair result rules out neither a modest
+    benefit nor equivalence.
 
 ## Claim Rules
 
@@ -63,6 +68,9 @@ Not supported:
 - the 15-run pilot is not pooled with the fresh 40-run confirmation;
 - the v5.3 paired result reports discordant pairs and exact McNemar;
 - the five v5.4 condition intervals are reported beside the pooled interval;
+- the `0.20` threshold has a named preregistration artifact and explicit
+  engineering interpretation;
+- the paired-result language does not imply no effect or equivalence;
 - v3.1.1 hashes remain unchanged;
 - the v4 source compiles without undefined references or citations;
 - independent review finds no blocking claim-boundary issue.

@@ -9,4 +9,4 @@ Files:
 
 Compile with a standard LaTeX + BibTeX workflow, for example `pdflatex`, `bibtex`, `pdflatex`, `pdflatex`.
 
-This source package corresponds to the paper v4 evidence-extension draft with paired-analysis correction.
+This source package corresponds to the paper v4 pre-freeze proofreading draft.

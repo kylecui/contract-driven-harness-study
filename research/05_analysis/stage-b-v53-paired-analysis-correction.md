@@ -37,11 +37,17 @@ The exact two-sided McNemar test, equivalently an exact two-sided binomial test
 on the discordant pairs, gives:
 
 ```text
-p = 0.50000000
+p = 0.500
 ```
 
 The absolute risk difference remains `0.133333`, below the preregistered
 engineering threshold of `0.20`.
+
+The v5.3 experiment plan fixed that threshold before execution. With 15 runs
+per arm, `0.20` corresponds to at least three additional passes. It is a
+coarse engineering decision gate, not a significance threshold, equivalence
+margin, or power-derived minimum detectable effect. The preregistration did
+not include a separate utility analysis for the cutoff.
 
 ## Effect On The Decision
 
@@ -52,6 +58,10 @@ The correction does not change the v5.3 decision:
 - the engineering-effect threshold still does not pass;
 - the exact paired test is not statistically significant;
 - the result remains mixed.
+
+With only two discordant pairs, the comparison has little power for small
+effects. It establishes neither equivalence nor the absence of a modest
+benefit.
 
 The original Fisher value, `p=0.48275862`, is retained only as a legacy
 independent-groups sensitivity calculation in the machine-readable analysis.

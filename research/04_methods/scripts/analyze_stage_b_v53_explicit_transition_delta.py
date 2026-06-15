@@ -280,7 +280,7 @@ def render_markdown(payload: dict[str, Any]) -> str:
         f"- Residual-state risk difference: {comparison['risk_difference']:.3f}",
         (
             "- Exact McNemar two-sided p: "
-            f"{comparison['exact_mcnemar_two_sided_p']:.8f}"
+            f"{comparison['exact_mcnemar_two_sided_p']:.3f}"
         ),
         (
             "- Discordant pairs (treatment pass/control fail vs "

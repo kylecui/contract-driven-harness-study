@@ -17,7 +17,7 @@ engineering threshold of `0.20`.
 The 30 runs form 15 matched pairs by perturbation condition and repetition.
 Thirteen pairs were pass/pass, two were explicit-delta pass/postcondition-only
 fail, and none favored the postcondition-only arm. The exact McNemar
-two-sided result was `p=0.50000000`.
+two-sided result was `p=0.500`.
 
 H1 delta robustness, H3 obligation preservation, and H4 no-regression passed.
 H2 delta effect did not pass.
@@ -46,6 +46,9 @@ It does not support the preregistered large causal-effect claim:
 
 > Current evidence does not show that the explicit delta improves residual
 > state by at least 0.20 over an exact, strongly stated postcondition.
+
+With only two discordant pairs, the paired result has little power for small
+effects. It rules out neither a modest benefit nor equivalence.
 
 The baseline was deliberately strong. It exposed the same exact final state
 and instructed the model to satisfy that object exactly. This prevents an

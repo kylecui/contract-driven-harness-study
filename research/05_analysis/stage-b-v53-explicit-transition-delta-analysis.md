@@ -3,7 +3,7 @@
 - Runs: 30
 - Decision: `mixed_result`
 - Residual-state risk difference: 0.133
-- Exact McNemar two-sided p: 0.50000000
+- Exact McNemar two-sided p: 0.500
 - Discordant pairs (treatment pass/control fail vs treatment fail/control pass): 2 vs 0
 
 ## Arm Results

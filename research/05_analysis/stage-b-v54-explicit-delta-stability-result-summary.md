@@ -60,7 +60,9 @@ Stage B v5.3 remains a mixed causal result. Explicit delta passed 15/15 while
 the exact-postcondition baseline passed 13/15, but the `0.133` risk difference
 did not reach the preregistered `0.20` threshold. Among 15 matched pairs, two
 favored explicit delta and none favored the baseline; exact McNemar
-`p=0.50000000`. [E:P2-E167; E:P2-E168; E:P2-E176]
+`p=0.500`. The comparison has little power for small effects and establishes
+neither equivalence nor the absence of a modest benefit.
+[E:P2-E167; E:P2-E168; E:P2-E176]
 
 Stage B v5.4 answers a separate question. It confirms that the frozen
 explicit-delta protocol maintained exact contract adherence over 40 fresh

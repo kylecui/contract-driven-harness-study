@@ -19,5 +19,7 @@ Targeted scan:
 
 The positive Stage B result is stated through run counts, pooled and
 per-condition intervals, and execution-integrity facts. The same section
-retains the v5.3 threshold miss, exact paired result, and explicit non-claims.
-No rewrite is required.
+retains the v5.3 threshold miss, exact paired result, limited-power statement,
+and explicit non-claims. The engineering threshold is defined without
+presenting it as a significance or equivalence boundary. No further style
+rewrite is required.

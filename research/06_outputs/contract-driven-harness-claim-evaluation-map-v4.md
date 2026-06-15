@@ -16,7 +16,7 @@ state-machine or workflow result.
 | C4 | A repair loop can convert specific low-cost-model failures into explicit, testable obligations. | Stage 7e v1-v4; Stage B v5-v5.4. | Fixed mechanisms and contracts only. |
 | C5 | Repaired obligations can transfer to a neighboring bounded macro. | Stage 7-next 4/4 targeted smoke. | Fixed-input, no-tool transfer only. |
 | C6 | The frozen explicit-delta protocol is stable on one controlled state-mutation macro. | Stage B v5.4: 40/40 fresh strict passes; pooled Wilson 95% `[0.912, 1.000]`; each designed condition 8/8 with `[0.676, 1.000]`. | One model, provider, macro, harness, and designed perturbation suite. |
-| C7 | Explicit delta shows directional but not preregistered engineering-scale improvement over exact postconditions. | Stage B v5.3: 15 matched pairs; 2 treatment-pass/control-fail, 0 reverse; risk difference `0.133`; exact McNemar `p=0.500`. | Mixed causal result; no `0.20` effect claim. |
+| C7 | Explicit delta shows directional but not preregistered engineering-scale improvement over exact postconditions. | Stage B v5.3: 15 matched pairs; 2 treatment-pass/control-fail, 0 reverse; risk difference `0.133`; exact McNemar `p=0.500`. | Mixed causal result; no `0.20` effect, equivalence, or no-effect claim. |
 
 ## Evaluation Blocks
 
@@ -50,5 +50,6 @@ The strongest new statement is:
 The paper must state beside it:
 
 > The paired v5.3 ablation did not meet the preregistered `0.20` causal-effect
-> threshold, so the stability result is not evidence of a large independent
-> advantage over exact postconditions.
+> threshold. With only two discordant pairs, it remains a mixed result rather
+> than evidence of a large independent advantage, equivalence, or absence of
+> a modest effect.
