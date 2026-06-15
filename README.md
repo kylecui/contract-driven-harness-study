@@ -52,3 +52,18 @@ python research/04_methods/scripts/analyze_stage_b_v54_delta_stability.py `
   --output-json research/05_analysis/stage-b-v54-explicit-delta-stability-analysis.json `
   --output-md research/05_analysis/stage-b-v54-explicit-delta-stability-analysis.md
 ```
+
+## Paper Drafts
+
+- Frozen v3.1.1 PDF:
+  `research/06_outputs/contract-driven-harness-paper-v3.1.1-frozen.pdf`
+- V4 evidence-extension draft:
+  `research/06_outputs/contract-driven-harness-arxiv-v4-draft.md`
+- V4 reader PDF:
+  `research/06_outputs/contract-driven-harness-paper-v4-draft.pdf`
+- V4 LaTeX source package:
+  `research/06_outputs/arxiv-source-v4/`
+
+V4 adds the Stage B v5.2-v5.4 evidence. It reports the v5.3 causal
+comparison as mixed and the separate v5.4 result as bounded absolute
+stability: 40/40 fresh strict passes across five tested perturbations.

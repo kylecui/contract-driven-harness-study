@@ -9,7 +9,7 @@ Initialized an academic research workspace for Codex with PEtFiSh support. The s
 - Project name: `petfish4codex-test4fun`
 - Project type: `research`
 - Research domain: `Academic`
-- Target directory: `C:\Users\崔崟\Documents\petfish4codex-test4fun`
+- Target directory: project workspace root
 - Platform: `codex`
 - Overwrite policy: no overwrite
 
@@ -85,4 +85,3 @@ No development environment was created.
 2. Expand `tasks/backlog.md` with concrete research tasks.
 3. Start a source discovery log in `research/01_sources/`.
 4. Build an evidence ledger in `research/03_evidence/`.
-

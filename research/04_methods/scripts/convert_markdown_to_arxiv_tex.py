@@ -176,7 +176,12 @@ def convert_markdown(markdown: str) -> tuple[str, str]:
             i += 1
             continue
 
-        if line.strip().startswith("arXiv-style working draft derived"):
+        if line.strip().startswith(
+            (
+                "arXiv-style working draft derived",
+                "Version 4 evidence-extension draft",
+            )
+        ):
             i += 1
             continue
 
@@ -285,6 +290,8 @@ def main() -> None:
     parser.add_argument("--input", required=True)
     parser.add_argument("--bib", required=True)
     parser.add_argument("--output-dir", required=True)
+    parser.add_argument("--date", default="June 10, 2026")
+    parser.add_argument("--package-label", default="working draft")
     args = parser.parse_args()
 
     source = Path(args.input)
@@ -314,7 +321,7 @@ def main() -> None:
 
 \title{{{escape_latex(title)}}}
 \author{{Contract-Driven Harness Study}}
-\date{{June 10, 2026}}
+\date{{{escape_latex(args.date)}}}
 
 \begin{{document}}
 \maketitle
@@ -332,15 +339,13 @@ def main() -> None:
     )
     (output_dir / "README.md").write_text(
         "# arXiv Source Package\n\n"
-        "Generated from `research/06_outputs/contract-driven-harness-arxiv-draft.md`.\n\n"
+        f"Generated from `{source.as_posix()}`.\n\n"
         "Files:\n\n"
         "- `contract-driven-harness-arxiv.tex`\n"
         "- `contract-driven-harness-references.bib`\n\n"
         "Compile with a standard LaTeX + BibTeX workflow, for example `pdflatex`, "
         "`bibtex`, `pdflatex`, `pdflatex`.\n\n"
-        "The current source package corresponds to paper v3.1. See "
-        "`research/07_reviews/contract-driven-harness-arxiv-v3-1-compile-check.md` "
-        "for the latest PDF size, page count, warning summary, and remaining layout gates.\n",
+        f"This source package corresponds to {args.package_label}.\n",
         encoding="utf-8",
     )
 

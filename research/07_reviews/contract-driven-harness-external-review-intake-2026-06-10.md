@@ -1,6 +1,7 @@
 # External Review Intake: Contract-Driven Harness Paper
 
-Review file: `D:/Downloads/xwechat_files/kylecui_0b33/msg/file/2026-06/contract_driven_harness_analysis_report.md`
+Review file: external attachment supplied by the author; machine-local path
+omitted from the public repository.
 
 Intake date: 2026-06-10
 

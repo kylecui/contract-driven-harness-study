@@ -2,7 +2,8 @@
 
 Review date: 2026-06-12
 
-External review file: `D:/Downloads/xwechat_files/kylecui_0b33/msg/file/2026-06/petfish_style_rewrite_cross_review.md`
+External review file: external attachment supplied by the author; machine-local
+path omitted from the public repository.
 
 Target: `research/06_outputs/contract-driven-harness-arxiv-draft.md`
 

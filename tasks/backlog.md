@@ -119,4 +119,5 @@
 - [x] Stage B v5.2 evidence-binding ablation: retain the bounded null result for a large independent effect and the complete failure audit.
 - [x] Stage B v5.3 explicit-delta ablation: complete 30 fresh calls; explicit delta passed 15/15 versus 13/15 for exact postconditions, but the 0.133 risk difference missed the 0.20 causal threshold.
 - [x] Stage B v5.4 explicit-delta stability: freeze the v5.3 P2 protocol and complete 40 fresh calls; all strict and component metrics passed 40/40, every perturbation condition passed 8/8, and no provider error or retry occurred.
-- [ ] Preregister the Stage D matched overhead matrix or stop provider experimentation and integrate v5.3/v5.4 into a separate v4 paper draft.
+- [x] Integrate Stage B v5.2-v5.4 into a separate v4 paper draft, claim map, LaTeX source package, PDF, and independent review without changing the frozen v3.1.1 body.
+- [ ] Decide whether to preregister the Stage D matched overhead matrix. Do not begin provider calls until the cost, latency, retry, model, harness-arm, and success-normalization rules are frozen.

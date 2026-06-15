@@ -1,0 +1,8 @@
+# LaTeX build products can contain machine-local paths. Keep source, BibTeX,
+# review records, and the named reader PDFs instead.
+research/06_outputs/arxiv-source*/contract-driven-harness-arxiv.aux
+research/06_outputs/arxiv-source*/contract-driven-harness-arxiv.bbl
+research/06_outputs/arxiv-source*/contract-driven-harness-arxiv.blg
+research/06_outputs/arxiv-source*/contract-driven-harness-arxiv.log
+research/06_outputs/arxiv-source*/contract-driven-harness-arxiv.out
+research/06_outputs/arxiv-source*/contract-driven-harness-arxiv.pdf
