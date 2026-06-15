@@ -1,0 +1,672 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{cmap}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{verbatim}
+
+\title{Contract-Driven Harness Engineering for Reliable Low-Cost Agent Tasks}
+\author{Contract-Driven Harness Study}
+\date{June 15, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+
+Many agent failures in productivity tasks are treated as model failures. In bounded tasks, some of those failures are more concrete: the model was not given an inspectable obligation to preserve evidence, state, stage gates, or output fields. We study contract-driven harness engineering: a reliability layer that represents those obligations as task specifications, bounded memory slices, evidence bundles, output contracts, validation gates, and trace requirements.
+
+The study is deliberately narrow. It does not test whether harnessing makes low-cost models generally equivalent to strong models. It asks whether explicit obligations can turn failures observed in low-cost-model runs into inspectable, repairable, and regression-testable engineering objects.
+
+Across structured extraction, project initialization, research workflow, mechanism-atom, admitted-macro, and controlled-state-mutation experiments, harnessing improves absolute contract adherence. It can also compress model gaps when baseline gaps are nonzero and the task is highly constrained. Gap compression is not universal. The more stable result is weak-model enablement on bounded, contract-critical operations.
+
+The resulting method is mechanism-first: decompose broad workflows into testable mechanisms, admit only mechanisms with golden/known-bad/local-gate support, and expand macro scope only when carried obligations are explicit. In a fresh stability confirmation, Qwen3-8B under a frozen explicit-transition-delta G9 protocol passed 40/40 controlled state-mutation runs across five perturbation conditions (95\% Wilson interval: [0.912, 1.000]). A preceding paired ablation favored the explicit-delta arm but did not meet the preregistered engineering-effect threshold. The evidence therefore supports bounded protocol stability and weak-model enablement, not a large independent causal effect, production readiness, or open-ended workflow reliability.
+
+\end{abstract}
+
+\section{Introduction}
+
+Agent systems are now used for ordinary productivity work: initializing projects, extracting structured information, synthesizing evidence, preparing plans, updating documents, and coordinating multi-step workflows. In these settings, reliability is often attributed directly to model capability. If an agent loses a constraint, cites no evidence, skips a stage, or reuses stale context, the common explanation is that the underlying model is not strong enough.
+
+That explanation is sometimes correct, but it misses a system-design problem. Many productivity tasks contain obligations that can be stated before generation starts: which evidence may be used, which state is known or unknown, which actions are blocked, which fields must be present, which claims require citations, and which stage gate prevents a final recommendation. If those obligations stay implicit, the model must infer and retain them while generating. If they are represented as contracts, part of the reliability burden moves from the model into the surrounding system.
+
+We call this approach contract-driven harness engineering. It uses task specifications, bounded memory, evidence bundles, output contracts, workflow gates, validators, and trace requirements to constrain agent behavior. Low-cost models are not generally equivalent to strong models. The question studied here is smaller: which parts of agent reliability become less dependent on unconstrained generation once task obligations are made inspectable?
+
+The study separates three problems that are often collapsed in agent evaluation. Model capability is the model's ability to reason, follow instructions, and recover from ambiguity. Harness specification is the system's ability to state task obligations, admissible evidence, known and unknown state, output structure, and blocked actions. Workflow composition is the ability to preserve those obligations across steps, tools, and state transitions. The current evidence covers harness specification and bounded composition. It does not cover open-ended workflow autonomy.
+
+The project began with a gap-compression hypothesis: a stable harness may reduce the measured gap between strong and low-cost models. The results support that hypothesis only under specific conditions. In highly structured extraction tasks, stronger harnessing compressed measured nonzero baseline gaps. In broader project-initialization and research-workflow slices, harnessing improved absolute contract adherence but produced mixed or undefined gap movement. Those broader slices exposed a measurement problem. A workflow-level task can hide several mechanisms at once: schema following, state retention, evidence grounding, stage discipline, and trace completeness.
+
+We therefore moved from workflow-first evaluation to mechanism-first evaluation. A mechanism atom is a fixed-input, deterministic, contract-bound operation with one primary mechanism, one dominant failure mode, a golden output, a known-bad output, and a composition interface. This yields smaller evaluation questions: Does an explicit evidence bundle improve claim grounding? Does a memory slice prevent state hallucination? Does a stage gate prevent premature recommendation? Does a trace requirement make rejected options auditable? Passing atoms do not prove that a whole workflow is solved, but they make later composition easier to interpret.
+
+The strongest evidence in this study comes from the repair loop created after broad workflow tests exposed unstable behavior. In the Evidence-Decision Macro Repair sequence (Stage 7e), we composed a narrow evidence-bound decision macro from state inventory, evidence grounding, evidence typing, traceable decision, and stage-gated synthesis mechanisms. The first version showed that a low-cost model could pass under one harness arm but still lose decision-trace and stage-gate obligations under another. We isolated the miss and revised the contract. Stage 7e v2 repaired trace and gate retention, but exposed unknown-state omissions. Stage 7e v3 repaired unknown-state retention, but exposed known-state provenance compression. Stage 7e v4 made known-state provenance explicit and passed 4/4 targeted smoke runs after retry.
+
+We then checked whether this was only a one-fixture patch. The Neighboring Macro Transfer study (Stage 7-next) reused the Stage 7e v4 obligations in a neighboring evidence-bound method-plan update macro. The output had to select the next admitted macro, list admission criteria, preserve local and real-model gates, and declare non-claims. The low-cost model passed 4/4 targeted smoke runs under G8/G9, with all runs scoring 1.000 on task success and the strict primary macro metric. This is narrow evidence, but it shows that a repaired obligation set can transfer to a closely related bounded macro.
+
+The later Controlled State-Mutation Study (Stage B) tested whether a repaired state-mutation obligation could survive stricter evaluation. Stage B v5 exposed evidence-array and gate failures. Stage B v5.1 repaired the complete gate and immutable evidence bindings. Stage B v5.2 found no engineering-scale independent effect from evidence-binding separation. Stage B v5.3 then isolated an explicit transition delta: the delta arm passed 15/15, while an exact-postcondition baseline passed 13/15. The difference was directional but below the preregistered effect threshold. Stage B v5.4 therefore asked a separate absolute question and ran only the frozen delta protocol. It passed 40/40 fresh runs across canonical, field-alias, evidence-order, distractor-evidence, and unknown-state-paraphrase conditions, with zero provider errors and zero retries.
+
+The resulting claim is narrower than the original gap-compression thesis. Contract-driven harnesses do not make weak models generally equivalent to strong models, and they do not guarantee gap compression. They can raise the usable floor of low-cost models on bounded, contract-critical operations. They also make some failures easier to repair: a missing obligation can be named, added to the contract, captured as a known-bad case, checked locally, rerun against a model, and carried into the evidence ledger and claim boundary.
+
+\subsection{Contributions}
+
+The paper makes five contributions:
+
+\begin{enumerate}
+\item We define contract-driven harness engineering as an explicit reliability layer for agent tasks.
+\item We propose mechanism atoms as the unit of harness evaluation.
+\item We report a multi-stage empirical evaluation across task slices, mechanism atoms, and admitted macros.
+\item We introduce a repair-loop protocol for harness development.
+\item We provide bounded evidence that Qwen3-8B maintained strict contract adherence on one frozen controlled-state-mutation protocol across 40 fresh runs and five designed perturbation conditions.
+\end{enumerate}
+
+\section{Related Work}
+
+The relevant prior work spans agent orchestration, declarative LM programming, structured output constraints, retrieval and tool augmentation, memory systems, safety verification, and skill ecosystems. These lines of work share a practical move. They take obligations that would otherwise sit inside free-form model generation and place them in runtime, specification, tool, memory, validation, or evaluation layers.
+
+The distinction is summarized in Table 1.
+
+{\small
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}}
+\toprule
+Work family & Main focus & What it externalizes & What this paper adds \\
+\midrule
+\endfirsthead
+\toprule
+Work family & Main focus & What it externalizes & What this paper adds \\
+\midrule
+\endhead
+Workflow orchestration & execution graph and state & steps, tools, persistence, human checkpoints & obligation-level evaluation and repair \\
+Structured outputs & syntactic output control & schema and format constraints & semantic contract obligations such as evidence, unknown state, and blocked claims \\
+Guardrails and validators & runtime checks and retries & validation policies and failure handling & known-bad-driven repair loops tied to mechanism atoms \\
+Declarative LM programs & modules, signatures, metrics & program structure and optimization targets & mechanism-first empirical repair for low-cost-model enablement \\
+Agent specifications & portability and interface contracts & workflow, state, and step definitions & evidence-bound admission criteria before macro composition \\
+Retrieval, tools, and memory & external knowledge and actions & documents, APIs, tool calls, long-term state & bounded memory/evidence contracts before live side effects \\
+Safety and verification & policy compliance and assurance & constraints, static checks, runtime firewalls & empirical contract adherence with explicit non-claims \\
+\bottomrule
+\end{longtable}
+}
+
+\subsection{Agent Workflows And Orchestration}
+
+Recent agent engineering guidance distinguishes between fully autonomous agents and workflows whose control paths are explicitly defined. Anthropic's discussion of effective agents is useful here: workflows fit tasks that can be decomposed into predictable steps, while agents fit cases that require open-ended model autonomy. LangGraph, AutoGen, Semantic Kernel, and related orchestration frameworks make a similar engineering move. They expose execution state, graph structure, persistence, human-in-the-loop intervention, tool calls, and observability as system concerns rather than leaving them solely inside a prompt. \cite{P2_EXT_ANTHROPIC,P2_EXT_LANGGRAPH,P2_EXT_AUTOGEN,P2_EXT_SEMANTIC_KERNEL}
+
+These systems make execution durable, inspectable, and easier to integrate with tools and humans. That does not settle the evaluation problem in this study. A workflow graph can route steps correctly while still losing evidence provenance, collapsing unknown state, skipping stage gates, or producing an ungrounded final recommendation.
+
+Contract-driven harness engineering overlaps with workflow orchestration but treats the graph as only one layer. The unit of interest is the obligation that must survive the graph: state inventory, evidence binding, evidence type separation, trace completeness, stage-gate retention, excluded-context preservation, and repairability.
+
+\subsection{Declarative LM Programs And Agent Specifications}
+
+Declarative LM programming systems, especially DSPy, argue that language model behavior should be represented as programs with signatures, modules, metrics, and optimizers rather than as hand-written prompts. Agent specification work such as AgentSPEX and AgentSpec pushes in a related direction for agent systems: workflows, state, steps, and interfaces should be declared in portable and inspectable forms. \cite{P2_EXT_DSPY,P2_EXT_AGENTSPEX,P2_EXT_AGENTSPEC}
+
+This line of work is close to our method. Both assume that some reliability gains come from making task structure explicit. The difference is the evaluation target. Declarative systems often emphasize program optimization, portability, or agent specification. Here, the unit is a contract-critical obligation. We define it, create golden and known-bad outputs, run deterministic local gates, execute small real-model slices, and update the claim boundary before composing broader workflows.
+
+\subsection{Structured Outputs, Guardrails, And Validators}
+
+Structured output systems and guardrail frameworks externalize output form. OpenAI structured output mechanisms, Outlines-style constrained generation, and Guardrails validators reduce the burden of asking a model to follow a format. They make schema adherence and selected validation checks part of the system layer. \cite{P2_EXT_OPENAI_STRUCTURED_OUTPUTS,P2_EXT_OUTLINES,P2_EXT_GUARDRAILS}
+
+These mechanisms are necessary but insufficient for the problem studied here. Schema validity can guarantee that an output has the expected shape. By itself, it cannot guarantee that a claim is supported, that unknown state remains unknown, that excluded context is not reused, or that a recommendation is blocked when a stage gate is incomplete. The harness studied here treats validators as one component in a larger contract stack. The output contract includes fields, but also semantic obligations: required evidence IDs, evidence type separation, rejected-option traces, explicit blocked outputs, and non-claims.
+
+\subsection{Retrieval, Tools, Memory, And Externalized Capability}
+
+RAG, ReAct, Toolformer, Gorilla, and tool/API-focused agent work show that models can become more capable when knowledge and action are externalized. Retrieval can provide updated evidence and provenance. Tool-use frameworks can turn external actions into typed calls. API benchmarks show that tool descriptions and retrieval can materially improve call generation compared with unaided model behavior. \cite{P2_EXT_RAG,P2_EXT_REACT,P2_EXT_TOOLFORMER,P2_EXT_GORILLA}
+
+Memory-oriented systems such as MemGPT and Letta show that agents can use hierarchical, archival, or stateful memory to extend beyond a single context window. They also expose a reliability problem for this study: memory is not automatically beneficial. A system must decide what to store, when to summarize, how to retrieve, how to scope memory, and how to prevent stale or irrelevant context from contaminating a new task. \cite{P2_EXT_MEMGPT,P2_EXT_LETTA}
+
+This study does not primarily test live retrieval, live tool execution, or long-term memory. Most admitted mechanism atoms and macros are fixed-input, no-tool tasks. That choice isolates whether the model can honor explicit contracts before live tools, changing corpora, or runtime side effects are added.
+
+\subsection{Evaluation, Safety, Verification, And Skill Ecosystems}
+
+Agent evaluation and safety work highlights the fragility of agent claims. OAgents-style critiques emphasize protocol variance and reproducibility challenges. Semantic Integrity Constraints, Agentproof, LlamaFirewall, and related verification or guardrail systems argue that agent behavior must be constrained, audited, or checked against explicit policies and semantic rules. \cite{P2_EXT_OAGENTS,P2_EXT_SIC,P2_EXT_AGENTPROOF,P2_EXT_LLAMAFIREWALL}
+
+Capability ecosystems such as MCP servers, agent skills, registries, pack systems, and PEtFiSh-style skill markets represent another route toward harness engineering. They externalize reusable procedures, tool access, installation state, platform routing, quality gates, and capability discovery. In PEtFiSh specifically, packs, skills, MCP servers, installers, trigger evaluators, quality gates, and context plugins make the system a useful experimental setting for studying harness design as an engineering object. Local PEtFiSh-specific evidence is preserved in Appendix C and the reproducibility package.
+
+PEtFiSh is the implementation context, not the transferable claim. The claim concerns a contract stack and repair-loop protocol: task specs, bounded memory, evidence bundles, output contracts, workflow gates, trace logs, validators, known-bad cases, and claim-boundary updates.
+
+This paper focuses on a narrower gap: mechanism-level evaluation. Which explicit obligations let a low-cost model complete bounded contract-critical operations, and how should a harness be repaired when those obligations fail?
+
+The closest prior lines are declarative LM programs, guardrail or validator systems, and agent specification languages. They externalize structure, interfaces, or runtime checks. Our contribution is operationally different: we treat each missing reliability obligation as an empirical repair target, require golden and known-bad fixtures before admission, and restrict macro claims to obligations that survive composition. The unit of evaluation is the obligation that must remain auditable across the harness, not the workflow graph or the schema alone.
+
+\section{Methods}
+
+\subsection{Study Design}
+
+This study evaluates whether explicit agent harness contracts can make productivity tasks less dependent on unconstrained model behavior. Agent workflow is not treated as a primitive benchmark unit. We evaluate harness mechanisms in three levels:
+
+\begin{enumerate}
+\item task slices, which compare broad task classes across harness strengths;
+\item mechanism atoms, which isolate a single primary harness mechanism and a dominant failure mode;
+\item admitted macros, which compose only mechanisms that have passed local gates and targeted model checks.
+\end{enumerate}
+
+This design is intentionally conservative. Broad workflow results can motivate failure analysis, but they do not by themselves justify claims about a general harness methodology. A workflow can enter the main claim only when its component mechanisms, local evaluators, known-bad cases, and cross-step obligations are explicit.
+
+The experimental path therefore moves from broad failures toward admitted composition rather than from one benchmark score to a larger benchmark score:
+
+\begin{verbatim}
+Task slices
+  |- structured extraction
+  |- project initialization
+  `- research workflow
+        -> failure analysis
+Mechanism atoms
+  |- Stage 6
+  |- Stage 7r
+  `- Stage 7r.1
+        -> admission gate
+Admitted macros
+  |- Stage 7p / 7p v2
+  |- Stage 7e v1-v4
+  |- Stage 7-next
+  `- Stage B v5-v5.4
+\end{verbatim}
+
+This map is the method in miniature. Broad tasks expose unstable behavior, mechanism atoms isolate the obligation, local gates reject known-bad outputs, and only then can a macro carry the obligation forward.
+
+{\small
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.160\linewidth}>{\raggedright\arraybackslash}p{0.280\linewidth}>{\raggedright\arraybackslash}p{0.460\linewidth}}
+\toprule
+Internal stage ID & Paper-facing label & Purpose \\
+\midrule
+\endfirsthead
+\toprule
+Internal stage ID & Paper-facing label & Purpose \\
+\midrule
+\endhead
+Stage 6 & Mechanism-Atom Pilot & Test isolated harness mechanisms. \\
+Stage 7p & Partial Macro Composition & Test whether passing atoms compose. \\
+Stage 7r / 7r.1 & Atom Revision and Repair & Repair boundary-prone atoms. \\
+Stage 7e & Evidence-Decision Macro Repair & Apply the iterative macro repair loop. \\
+Stage 7-next & Neighboring Macro Transfer & Test narrow obligation transfer. \\
+Stage B & Controlled State-Mutation Study & Separate repair, ablation, and stability evidence. \\
+\bottomrule
+\end{longtable}
+}
+
+The stage identifiers are retained from the reproducibility package for traceability; descriptive labels are used in the paper to clarify each stage's role.
+
+\subsection{Harness Model}
+
+We define a contract-driven harness as a set of explicit control objects around a language model:
+
+{\small
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.450\linewidth}>{\raggedright\arraybackslash}p{0.450\linewidth}}
+\toprule
+Object & Role \\
+\midrule
+\endfirsthead
+\toprule
+Object & Role \\
+\midrule
+\endhead
+\path|TaskSpec| & Objective, constraints, success conditions, and non-goals. \\
+\path|MemorySlice| & Bounded context that may be used, plus excluded or unknown state. \\
+\path|EvidenceBundle| & Admissible evidence items, evidence types, and source links. \\
+\path|OutputContract| & Required output shape, nested fields, citation policy, and validator rules. \\
+\path|WorkflowGraph| or stage gate & Required order of intermediate steps and blocked outputs. \\
+\path|TraceLog| & Decision trace requirements for auditable reasoning and rejection paths. \\
+\path|ValidatorGate| & Deterministic local checks that distinguish passing outputs from known-bad outputs. \\
+\bottomrule
+\end{longtable}
+}
+
+The study uses a conservative working assumption: when a task can be bounded, reliability should move from implicit model judgment into explicit, inspectable contracts. The harness is evaluated as a reliability-engineering layer, not as a claim that low-cost models become generally equivalent to strong models.
+
+The object of study is not an improved prompt. It is the lifecycle by which a missing obligation becomes a contract field, a known-bad fixture, a deterministic gate, and an admitted macro requirement.
+
+\subsection{Harness Arms And Models}
+
+Experiments use harness arms to vary the strength of external control. G0 is raw or minimally constrained task input. G2/G3 represent intermediate mechanism arms when relevant. G8 is contract-rich execution with validator or evaluator obligations. G9 is the full harness packet with task spec, output contract, evidence, memory policy, workflow, trace, and regression expectations.
+
+The real-model slices use SiliconFlow's OpenAI-compatible API. The current low-cost model tier is \path|Qwen/Qwen3-8B|; strong-model slices in earlier stages used \path|deepseek-ai/DeepSeek-V3.2|. Provider-backed runs use temperature \path|0|, fixed prompt artifacts exported before execution, per-run artifact directories, adapter request files, output files, validation reports, metrics files, and event logs for provider start/end, elapsed time, errors, and retry analysis. \cite{P2_EXT_SILICONFLOW_CHAT}
+
+\subsection{Task Slices, Mechanism Atoms, And Macros}
+
+The first empirical layer uses broad task slices to identify where harnessing helps and where broad task definitions become too noisy. Structured extraction tests a high-constraint task with deterministic output structure. Project initialization tests a multi-constraint workspace planning task. Research workflow tests evidence-backed synthesis.
+
+A mechanism atom is the smallest testable unit of harness behavior with one primary mechanism, fixed input, explicit output contract, deterministic evaluator, known-bad rejection, pass threshold, and composition interface. Atoms are accepted only when fixture structure validates, the golden output passes, at least one known-bad output fails for the intended reason, the baseline leaves room for improvement, the low-cost model improves under the relevant harness arm, and the atom declares how it can compose with downstream mechanisms.
+
+Macro tasks are composed only after component mechanisms pass local gates and targeted model checks. A macro must preserve cross-step obligations explicitly. The current admitted macro family is fixed-input: Stage 7p v2, Stage 7e v1-v4, Stage 7-next, and the Stage B controlled-state-mutation sequence. Project initialization and full research workflow remain blocked because the current evidence covers bounded macros, not open-ended tool-using workflows.
+
+\subsection{Admission Criteria}
+
+An atom or macro is admitted to the next experimental layer only if all of the following hold:
+
+\begin{enumerate}
+\item the fixture schema validates;
+\item the golden output passes;
+\item at least one known-bad output fails for the intended reason;
+\item the baseline leaves improvement room or the evaluation question explicitly targets absolute contract adherence;
+\item the low-cost model improves under G8/G9 or reaches the declared pass threshold;
+\item the composition interface is declared;
+\item cross-step carried obligations are explicit when a macro composes multiple atoms;
+\item unsupported claims and non-claims are updated before expansion.
+\end{enumerate}
+
+These criteria are deliberately stricter than ordinary prompt evaluation. They are designed to prevent a broad workflow result from entering the claim set before the underlying mechanism and failure mode are visible.
+
+\subsection{Repair-Loop Protocol}
+
+The main methodological contribution is the repair-loop protocol:
+
+\begin{enumerate}
+\item observe a real model failure;
+\item isolate the missing mechanism or obligation;
+\item make the obligation explicit in the input and output contract;
+\item add or update a known-bad fixture that captures the failure;
+\item run local golden/bad regression;
+\item execute a targeted real-model slice;
+\item update the evidence ledger, claim boundary, and backlog before expanding scope.
+\end{enumerate}
+
+Stage 7e illustrates this protocol. Stage 7e v1 found a low-cost-model G9 failure in stage-gate and decision-trace retention. Stage 7e v2 repaired trace/gate retention but exposed unknown-state omissions. Stage 7e v3 repaired unknown-state retention but exposed known-state provenance compression. Stage 7e v4 made known-state provenance explicit and passed 4/4 targeted smoke runs after retry. Stage 7-next then reused those obligations in a method-plan update macro and passed 4/4 targeted smoke runs without provider errors.
+
+Stage B extends the loop from targeted repair to ablation and stability confirmation. Stage B v5 failed 0/4 strict runs because exact evidence arrays were not preserved and one exact gate field was not model-visible. Stage B v5.1 exposed the complete gate and separated immutable evidence bindings, then passed 4/4. Stage B v5.2 isolated evidence-binding representation and did not observe the preregistered large independent effect. Stage B v5.3 restored explicit state-removal operations through a structured transition delta and obtained 15/15 strict passes, but the paired causal threshold still did not pass. Stage B v5.4 froze that protocol before execution and obtained 40/40 fresh strict passes across five perturbations. The sequence separates three questions that should not be collapsed: whether a bundled repair works, whether one repair component has a large independent effect, and whether the repaired protocol remains stable under repetition.
+
+\subsection{Metrics And Claim Rules}
+
+Each evaluated run emits metrics including \path|task_success|, \path|schema_validity|, \path|citation_grounding|, \path|state_accuracy|, \path|evidence_type_accuracy|, \path|stage_completion|, \path|trace_completeness|, \path|context_relevance|, and \path|atom_primary_metric|. The controlled-transition experiments add exact evidence-array preservation, residual-state accuracy, state-transition accuracy, complete-gate accuracy, retention-attestation accuracy, and a strict aggregate controlled-mutation decision.
+
+Table 2 gives a compact reading guide for the core metrics. Detailed thresholds, fixture-specific checks, and evaluator outputs are provided in the reproducibility package.
+
+{\small
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.430\linewidth}>{\raggedright\arraybackslash}p{0.270\linewidth}}
+\toprule
+Metric & What it checks & Evaluator type \\
+\midrule
+\endfirsthead
+\toprule
+Metric & What it checks & Evaluator type \\
+\midrule
+\endhead
+\path|schema_validity| & Required fields and types are present & deterministic schema/field check \\
+\path|citation_grounding| & Claims carry admissible evidence IDs & deterministic evidence-ID check \\
+\path|state_accuracy| & Known and unknown state are preserved & fixture-specific state check \\
+\path|evidence_type_accuracy| & Evidence type labels remain correct & evidence-type check \\
+\path|stage_completion| & Required stage gates are preserved & stage-gate check \\
+\path|trace_completeness| & Required decision and rejection traces are present & structured trace check \\
+\path|context_relevance| & Required or excluded context obligations are respected & context-obligation check \\
+\path|atom_primary_metric| & The atom-specific dominant obligation is satisfied & atom evaluator \\
+\path|task_success| & The declared task contract passes & composite evaluator \\
+\bottomrule
+\end{longtable}
+}
+
+These metrics evaluate contract adherence rather than open-ended output quality or human preference.
+
+Gap compression is computed only where a nonzero G0 baseline gap exists. If G0 baselines collapse for both models, or if the low-cost model improves more than the strong model and reopens the absolute gap in the opposite direction, the result is reported as mixed, undefined, or negative rather than forced into a compression claim.
+
+Weak-model enablement is reported when the low-cost model reaches a pass threshold under a harness condition after failing or underperforming under weaker conditions.
+
+The Stage B stability rate uses only the 40 fresh v5.4 runs. The 15-run v5.3 explicit-delta pilot is not pooled into that estimate. Pooled and per-condition rates are reported with two-sided 95\% Wilson intervals. The v5.3 comparison forms 15 matched pairs by perturbation condition and repetition. It reports the absolute risk difference, discordant-pair counts, and a two-sided exact McNemar result. The experiment originally preregistered Fisher's exact test, which treats the arms as independent; that value is retained in the audit record but is not used as the primary paired analysis.
+
+The Stage B v5.3 experiment plan in the reproducibility package defined the engineering-effect threshold as an absolute risk difference of 0.20. With 15 runs per arm, this required at least three additional passes. The threshold was fixed before execution as a coarse engineering decision gate. It was not a conventional significance threshold, equivalence margin, or power-derived minimum detectable effect, and the preregistration did not include a separate utility analysis for the cutoff.
+
+\section{Results}
+
+\subsection{Overview}
+
+The results support a bounded version of the original hypothesis. Contract-rich harnessing improves absolute contract adherence across several productivity-task settings. It can also compress cross-model gaps in highly constrained tasks when baseline gaps are nonzero. Gap compression is not universal. The more stable result is weak-model enablement on bounded, contract-critical operations: when task obligations are explicit and evaluated deterministically, the low-cost model can reach pass-level behavior on tasks where weaker harnessing or broader prompts were unstable.
+
+Table 3 summarizes the main claim boundary.
+
+{\small
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}}
+\toprule
+Claim & Evidence & Boundary \\
+\midrule
+\endfirsthead
+\toprule
+Claim & Evidence & Boundary \\
+\midrule
+\endhead
+Absolute contract adherence lift & broad slices, mechanism atoms, admitted macros & tested conditions only \\
+Gap compression & strongest in structured extraction & conditional on nonzero baseline gaps and constrained tasks \\
+Weak-model enablement & Stage 6, Stage 7r.1, Stage 7e v4, Stage 7-next, Stage B v5.4 & bounded contract-critical operations \\
+Controlled-transition stability & Stage B v5.4 & one frozen protocol, model, provider, and perturbation suite \\
+Full workflow reliability & not supported & remains a non-claim \\
+Production readiness & not supported & remains a non-claim \\
+\bottomrule
+\end{longtable}
+}
+
+Table 4 summarizes the main empirical layers and the claim each layer permits.
+
+{\small
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.105\linewidth}>{\raggedright\arraybackslash}p{0.125\linewidth}>{\raggedright\arraybackslash}p{0.065\linewidth}>{\raggedright\arraybackslash}p{0.305\linewidth}>{\raggedright\arraybackslash}p{0.155\linewidth}>{\raggedright\arraybackslash}p{0.165\linewidth}}
+\toprule
+Layer & Stage & Runs & Failure -> Repair & Outcome & Allowed claim \\
+\midrule
+\endfirsthead
+\toprule
+Layer & Stage & Runs & Failure -> Repair & Outcome & Allowed claim \\
+\midrule
+\endhead
+Task slice & structured extraction & 24 & schema/tool gaps -> G9 packet & key gaps to 0 & conditional gap compression \\
+Task slice & project init & 12 & mixed metric movement -> G9 & mixed & no universal compression \\
+Task slice & research workflow & 12 & zero or mixed baseline gaps -> G9 & mixed/undefined & absolute adherence only \\
+Atom & Stage 6 & 48 & mechanism failures -> atom contracts & low-cost lift & weak-model enablement \\
+Macro & Stage 7p/v2 & 12 & stale-context loss -> carried obligations & repaired in v2 & composition retention \\
+Macro & Stage 7e & 6 + repairs & trace and state gaps -> explicit obligations & targeted smoke passed & fixed macro only \\
+Macro & Stage 7-next & 4 & neighboring transfer -> reused obligations & targeted smoke passed & narrow transfer \\
+Ablation & Stage B v5.2-v5.3 & 30 + 30 & bundled repair -> isolated controls & no preregistered large independent effect & component-effect boundary \\
+Stability & Stage B v5.4 & 40 & passing repair -> frozen protocol & 40/40 fresh passes & one frozen transition protocol \\
+\bottomrule
+\end{longtable}
+}
+
+\subsection{Task Slices: Strong Absolute Lift, Conditional Gap Compression}
+
+The structured-extraction v2 slice provides the clearest positive gap-compression result. Under G0, nonzero baseline gaps appeared on task success, schema validity, tool-call correctness, human acceptance, cost efficiency, and safety consistency. Under G9, all measured nonzero gaps compressed to 0.000, producing compression ratios of 1.000 on those metrics. Citation grounding had a baseline gap of 0.000 and is therefore reported as n/a rather than as compression.
+
+The project-initialization slice shows why gap compression cannot be the universal claim. G9 compressed the task-success gap from 0.111 to 0.000 and the safety-consistency gap from 0.200 to 0.000. Schema validity moved in the opposite direction, from a baseline gap of 0.250 to an arm gap of 0.583, yielding a negative compression ratio of -1.333. Human acceptance and cost efficiency also showed negative compression ratios.
+
+The research-workflow slice further weakens a universal gap-compression story. Several G0 baseline gaps were already 0.000, making compression undefined. G9 compressed schema-validity gap from 0.067 to 0.000, but task-success gap became 0.083 from a 0.000 baseline and human-acceptance/cost-efficiency gap movement was slightly negative.
+
+These results are best interpreted as absolute lift with conditional gap compression, not universal gap closure.
+
+\subsection{Mechanism-Atom Pilot: Broad Workflows Need Smaller Units}
+
+The Mechanism-Atom Pilot (Stage 6) tested 48 real model runs and completed 48/48 after documented timeout recovery. Its strongest result was weak-model enablement. For the low-cost model relative to G0, G9 produced task\_success lift of +0.576 and schema\_validity and atom\_primary\_metric lift of +0.833.
+
+The harnessed low-cost model also outperformed the unconstrained strong model on contract-critical metrics. Relative to strong\_model + G0, low-cost model + G9 showed task\_success advantage of +0.743 and schema\_validity and atom\_primary\_metric advantages of +1.000.
+
+Gap compression was mostly positive on general contract metrics, including G9 task\_success compression of 1.000 and G9 schema\_validity compression of 1.000. But atom\_primary\_metric remained mixed, with G9 compression of 0.000 and G2/G8 negative values. This supports the conclusion that harnesses can substantially raise low-cost-model reliability on bounded operations even when atom-specific gap compression is not uniform.
+
+\subsection{Partial Macro Composition: Atom Success Is Not Enough}
+
+The Partial Macro Composition study (Stage 7p) tested whether passing atoms could compose into a narrow partial macro:
+
+\begin{verbatim}
+A10 bounded context recall -> A9 no-overwrite action planning -> A6 validator repair
+\end{verbatim}
+
+The execution completed cleanly with 6/6 real SiliconFlow runs. Strong\_model G8 and G9 passed the full partial-composition chain. The low-cost model improved strongly under G8/G9, reaching task\_success=0.800 under G8 and 0.900 under G9, with schema\_validity=1.000 and safety=1.000. Yet it failed the full chain because context\_relevance stayed 0.000: the composed output did not explicitly carry forward the stale-context exclusion.
+
+Stage 7p v2 then added an explicit composition-retention contract. The same partial chain passed for both model tiers under G8/G9. This result supports a composition-layer mechanism claim: cross-step obligation retention is necessary when a macro must preserve negative context constraints across multiple atom outputs.
+
+\subsection{Atom Revision And Targeted Repair}
+
+The Atom Revision and Repair sequence (Stage 7r / 7r.1) began by redesigning six boundary-prone atoms: A2R, A3R, A4R, A5R, A7R, and A8R. Local gates passed: 6/6 fixture structures, 12/12 local golden/bad expectations, 36/36 packet compilation, and preflight with 0 errors and 0 warnings.
+
+The real-model smoke completed 35/36 outputs. The single missing output was A8R low-cost G8, which repeatedly timed out under SiliconFlow and was treated as an execution deviation rather than a model-quality score. On completed runs, strong-model G8/G9 passed 12/12, while the low-cost model still failed strict A2R citation grounding and A7R trace completeness.
+
+Stage 7r.1 targeted exactly those failures by tightening the contracts. A2R1 required every grounded claim to be an object with non-empty \path|evidence_ids|. A7R1 required rejected-option objects with evidence IDs and trace steps for C2 support, C1 rejection, and C3 rejection. The targeted 8-run low-cost-model smoke passed 8/8.
+
+This supports the mechanism-first repair hypothesis: low-cost-model failures on claim-level evidence binding and rejection-trace completeness can be repaired by narrowing the output contract.
+
+\subsection{Evidence-Decision Macro Repair (Stage 7e)}
+
+The Evidence-Decision Macro Repair sequence (Stage 7e) composed a narrow evidence-bound decision macro from state inventory, evidence grounding, evidence-type separation, traceable decision, and stage-gated synthesis mechanisms. The first Stage 7e smoke completed 6/6 runs. Strong\_model G8/G9 and low-cost-model G8 passed with task\_success=1.000 and atom\_primary\_metric=1.000. G0 failed for both model tiers. Low-cost-model G9 partially failed with task\_success=0.714 because it missed complete decision-trace and stage-gate retention.
+
+Stage 7e v2 added explicit retention requirements for decision\_trace, stage\_gate, and carried\_obligations. The targeted low-cost-model G8/G9 smoke completed 4/4 targeted smoke runs, and all four targeted runs achieved trace\_completeness=1.000 and stage\_completion=1.000. However, only 1/4 runs fully passed because the remaining runs omitted Git branch, CI status, or network/API approval unknowns from state\_inventory.
+
+Stage 7e v3 targeted unknown-state retention. The four-run targeted smoke preserved all required Git/CI/network unknown-state fields and forbidden-inference fields. Full strict macro pass improved to 3/4. The remaining failure was narrower: one G8 run compressed known-state provenance into generic labels.
+
+Stage 7e v4 made known-state provenance explicit. It required \path|state_inventory.known_state[]| entries with \path|state_id|, \path|fact|, and \path|evidence_ids|. After retrying one provider timeout and one truncated-output retry, all four targeted runs passed with task\_success=1.000 and atom\_primary\_metric=1.000. State accuracy, citation grounding, evidence type accuracy, trace completeness, and stage completion all reached 1.000.
+
+This sequence is the clearest evidence for the repair-loop protocol. The low-cost model did not become generally stronger. The harness made the missing obligations explicit, then verified that the model could satisfy them under a fixed macro contract.
+
+\subsection{Neighboring Macro Transfer (Stage 7-next)}
+
+The Neighboring Macro Transfer study (Stage 7-next) tested whether the Stage 7e v4 obligation set was only a fixture-specific patch. The new macro was an evidence-bound method-plan update. It reused Stage 7e v4 obligations and added one new stressor: the output had to select the next admitted macro, specify admission criteria, preserve local and real-model gates, and declare non-claims.
+
+The local gate passed with 2/2 expectations met: the golden output passed with task\_success=1.000 and atom\_primary\_metric=1.000, while the known-bad premature broader-workflow expansion failed with task\_success=0.000.
+
+The real smoke used the low-cost model only:
+
+\begin{verbatim}
+Qwen/Qwen3-8B x G8/G9 x 2 repetitions = 4 runs
+\end{verbatim}
+
+All four targeted runs executed without provider errors, timeout, or truncated-output retry. The same slice passed with task\_success=1.000, atom\_primary\_metric=1.000, schema\_validity=1.000, citation\_grounding=1.000, state\_accuracy=1.000, evidence\_type\_accuracy=1.000, trace\_completeness=1.000, stage\_completion=1.000, and context\_relevance=1.000.
+
+This supports a narrow transfer claim: the Stage 7e v4 obligations can be reused to make the low-cost model complete a closely related fixed method-plan macro with one new explicit stressor.
+
+\subsection{Controlled State-Mutation Study (Stage B)}
+
+The Controlled State-Mutation Study (Stage B) is not introduced as a new general state-transition method. It is a stricter test of the repair-loop protocol: separate bundled repair, component effect, and frozen-protocol stability.
+
+Stage B tested one controlled state mutation: move network API approval from unknown to known while preserving exact evidence bindings, residual unknown state, residual forbidden inferences, a transition record, the complete gate, and a retention attestation.
+
+The first state-transition smoke, Stage B v5, failed 0/4 under the strict aggregate. All four runs preserved schema, residual state, transition, and attestation. They failed exact evidence-array preservation, and the exact expected \path|next_action| value had not been declared in the model-visible gate. Stage B v5.1 exposed the complete gate and separated immutable evidence bindings from editable prose. The repaired protocol passed 4/4, but this bundled two changes and used too few runs for a stability estimate.
+
+Stage B v5.2 isolated evidence-binding representation in a preregistered 30-run ablation. Binding-separated evidence passed 15/15 exact-array checks, while claim-coupled evidence passed 14/15. The 0.067 risk difference was below the 0.20 engineering threshold, and both arms passed only 10/15 strict aggregates because nine runs retained an obsolete forbidden-inference entry. The result did not support a large independent evidence-binding effect.
+
+Stage B v5.3 targeted that state error. Both arms received the same initial state, exact final postconditions, evidence bindings, event, gate, attestation, perturbations, and evaluator. The treatment added only a structured \path|required_transition_delta| that named the values to remove, add, and preserve. Across 30 fresh runs, the explicit-delta arm passed 15/15 strict and residual-state checks. The exact-postcondition-only arm passed 13/15. Evidence, transition, gate, schema, and attestation passed 15/15 in both arms.
+
+The runs form 15 matched pairs by perturbation condition and repetition. Thirteen pairs were pass/pass, two were explicit-delta pass/postcondition-only fail, and none favored the postcondition-only arm. The exact McNemar two-sided result was \path|p=0.500|. The residual-state risk difference was 0.133, below the preregistered 0.20 threshold. The correct causal decision is mixed: the treatment passed all 15 runs, but the experiment did not establish the planned engineering-scale independent effect over an already strong baseline.
+
+Stage B v5.4 asked a different preregistered question: whether the frozen explicit-delta protocol would maintain high absolute adherence over 40 fresh executions. It reused the five frozen v5.3 treatment fixtures without changing the prompts, evaluator, thresholds, provider settings, or output contract. The conditions were canonical, field alias, evidence order shuffled, distractor evidence, and unknown-state paraphrase, with eight repetitions per condition.
+
+All 40 runs passed the strict controlled-mutation metric and every component metric. Each perturbation condition passed 8/8. The pooled strict rate was 1.000 with a two-sided 95\% Wilson interval of [0.912, 1.000]. Each 8/8 condition has the wider interval [0.676, 1.000].
+
+{\small
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}}
+\toprule
+Condition & Passes & Rate & 95\% Wilson interval \\
+\midrule
+\endfirsthead
+\toprule
+Condition & Passes & Rate & 95\% Wilson interval \\
+\midrule
+\endhead
+canonical & 8/8 & 1.000 & [0.676, 1.000] \\
+field alias & 8/8 & 1.000 & [0.676, 1.000] \\
+evidence order & 8/8 & 1.000 & [0.676, 1.000] \\
+distractor evidence & 8/8 & 1.000 & [0.676, 1.000] \\
+unknown-state paraphrase & 8/8 & 1.000 & [0.676, 1.000] \\
+pooled & 40/40 & 1.000 & [0.912, 1.000] \\
+\bottomrule
+\end{longtable}
+}
+
+All 40 calls returned valid JSON with zero provider errors and zero retries. Median latency was 19.500 seconds, P90 latency was 22.183 seconds, and total usage was 83,312 prompt tokens plus 19,672 completion tokens.
+
+The result supports a bounded stability statement:
+
+\begin{quote}
+Under the frozen explicit-transition-delta G9 protocol, Qwen3-8B completed the tested controlled multi-array state mutation in 40/40 fresh runs across five perturbation conditions.
+\end{quote}
+
+It does not convert the mixed v5.3 ablation into a causal-effect result. It also does not establish arbitrary state-machine reliability, tool execution, rollback, concurrency, task-family generalization, or production readiness.
+
+\section{Discussion And Limitations}
+
+\subsection{What The Results Mean}
+
+The main finding is that some reliability requirements can be moved out of the model and into explicit contracts. When task state, admissible evidence, output shape, stage gates, trace requirements, and carried obligations are inspectable objects, low-cost models can satisfy bounded tasks that were unstable under weaker or broader prompts.
+
+This changes how we interpret several failures in the experiments. The low-cost model did not preserve decision-trace retention until the trace was made structurally required. It did not preserve unknown state until unknown state was enumerated. It compressed known-state provenance until provenance-bearing state objects were required. It failed partial macro composition until cross-step carried obligations were made explicit. These are not just weaker answers. They are missing obligations that can be named and tested.
+
+Stage B adds an important qualification. Making an obligation explicit can produce a stable passing protocol without proving that the added field has a large independent causal effect over every strong alternative specification. The v5.3 baseline already exposed exact final postconditions and passed 13/15. The explicit delta removed the remaining observed failures, but the preregistered effect threshold did not pass. With only two discordant pairs, the paired comparison has little power for small effects; it establishes neither equivalence nor the absence of a modest benefit. The v5.4 result is therefore evidence of bounded absolute stability, not proof that explicit delta is universally necessary or sufficient.
+
+\subsection{Gap Compression Is Conditional}
+
+The original research motivation was model capability gap compression. The results support that idea in structured settings, but not as a general law. Structured extraction produced the clearest compression result because the input, output, and correctness criteria are highly constrained. Project initialization and research workflow produced a more complicated pattern: harnessing improved absolute contract adherence, but gap movement was mixed, undefined, or negative depending on the metric.
+
+The implication is that gap compression is an observed outcome, not the thesis. It depends on the task, metric, baseline gap, and harness arm. The more useful question is whether the low-cost model reaches a declared contract-adherence threshold under explicit harnessing.
+
+\subsection{Why Negative Results Matter}
+
+Several negative or partial results carry real information. Stage 7p v1 showed that passing atoms do not automatically compose. Stage 7r showed that redesigned atoms could improve low-cost-model performance without fully repairing all contract-critical behavior. Stage 7e v2 and v3 exposed the missing obligations that made Stage 7e v4 meaningful.
+
+The negative results are therefore part of the method, not noise around it.
+
+\subsection{Bounded Macros Are Not Full Workflows}
+
+Stage 7e v4 and Stage 7-next are fixed-input, no-tool, deterministic tasks. They do not involve live source discovery, file mutation, external tool execution, or changing workspace state. That boundary matters for how the results should be read.
+
+The result should be stated carefully:
+
+\begin{quote}
+Low-cost models can complete bounded evidence-bound macros when reliability obligations are explicit.
+\end{quote}
+
+It should not be stated as:
+
+\begin{quote}
+Low-cost models can reliably run full project initialization or full research workflows.
+\end{quote}
+
+Full workflows introduce problems that the current macros do not test: tool selection, permission handling, filesystem mutation, live source volatility, partial failure recovery, long-horizon memory, user clarification, and multi-step state updates. The current work provides a method for approaching those workflows, not evidence that they are already solved.
+
+\subsection{Deterministic Evaluation, Sample Size, And Runtime Effects}
+
+The evaluation pipeline relies on deterministic evaluators, golden outputs, and known-bad outputs. This makes pass/fail decisions auditable and regression-testable. It also keeps the benchmark away from subjective preference scoring. The tradeoff is narrower validity: the metrics capture contract adherence, not prose quality, human usefulness, creative insight, or open-ended judgment.
+
+The evaluator itself can also overfit. A known-bad suite covers only the failure modes that were anticipated or observed. Stage B v5.3-v5.4 partially addresses this risk with field-name, evidence-order, unknown-state-language, and distractor-evidence perturbations. Those conditions passed, but they remain a designed five-condition suite. The experiments do not cover arbitrary schema changes, adversarial evidence, event-order changes, multiple transitions, rollback, concurrent updates, or live tool state.
+
+Several earlier repair experiments remain targeted smoke tests with small run counts. Stage 7e v4 used four targeted smoke runs after retry. Stage 7-next used four targeted smoke runs. Stage B v5.4 improves the repetition evidence for one controlled-transition protocol, but its 40 runs do not increase task diversity. Each perturbation condition has only eight runs, and its 8/8 Wilson interval is [0.676, 1.000]. The pooled interval describes repeated success under the frozen fixture family; it is not a population estimate over agent tasks.
+
+Provider behavior also affected earlier experiments. Some SiliconFlow runs timed out, and Stage 7e v4 required retrying one timed-out run and one truncated-output retry before completion. Stage 7-next, Stage B v5.3, and Stage B v5.4 completed without provider errors or retries. Runtime deviations remain validity threats because the study uses one provider and does not control provider-side batching, hardware, or service changes.
+
+The present evidence uses SiliconFlow-backed runs and should be replicated across providers and model families before making provider-independent claims. This paper therefore does not make a provider-independent reliability claim.
+
+\subsection{PEtFiSh Specificity And Harness Cost}
+
+The fixtures and workflows are grounded in the PEtFiSh project context. The exact skills, packs, evidence ledgers, and backlog structures may not generalize to all agent systems. For this reason, PEtFiSh should be read as the implementation context. The transferable constructs are task specs, bounded memory, evidence bundles, output contracts, workflow gates, trace logs, validators, known-bad cases, and repair loops.
+
+The claim is about the contract stack and the repair-loop protocol, not the specific pack catalog, skill names, or project directory conventions.
+
+Contract-driven harnessing also adds overhead. It requires fixture design, schemas, evidence bundles, evaluators, local gates, manifests, event logs, and postprocessing. Stage B v5.4 records 102,984 total tokens and a 19.500-second median latency for 40 G9 runs, but there is no matched G0/G9 and weak/strong-model overhead matrix. The paper therefore cannot claim that the low-cost-model harness is cheaper per successful task than using a stronger model directly. For simple tasks, engineering and inference overhead may exceed the benefit. There is also a risk of over-constraint: strong models may become more stable but less flexible under strict contracts.
+
+\subsection{Future Work}
+
+The next empirical decision is between breadth and economics. A matched overhead matrix can compare Qwen3-8B and DeepSeek-V3.2 under G0 and G9 on the same frozen macro, with cost per successful contract pass, token use, latency, and retries as primary outcomes. A broader reliability path would instead add multiple transition events, rollback, event ordering, live tool state, or a second task family. Either path requires a new preregistration; the current 40-run result should not be reused as if it answered those questions.
+
+\section{Conclusion}
+
+Contract-driven harness engineering makes some low-cost-model failures observable, repairable, and regression-testable by moving reliability obligations into explicit contracts. Model quality still matters. The point is narrower: for bounded productivity tasks, part of agent reliability can be engineered outside the model.
+
+The supported claim is weak-model enablement on bounded contract-critical operations. Gap compression remains conditional. It is clearest in structured extraction and present on some contract metrics in mechanism and partial macro tests. It is mixed or undefined in broader project-initialization and research-workflow slices.
+
+The practical value is the repair loop. A harness failure can be turned into a named obligation, a contract revision, a known-bad fixture, a local regression gate, a targeted ablation, a fresh stability confirmation, and an updated claim boundary. In the controlled-transition case, that process produced 40/40 strict passes across five tested perturbations. The paired ablation still missed its preregistered large-effect threshold, so the conclusion remains bounded: the repaired protocol was stable in the tested setting; the independent causal contribution and broader generality remain unresolved.
+
+\section{Appendix A. Current Non-Claims}
+
+This paper should not claim:
+
+\begin{itemize}
+\item low-cost models are generally equivalent to strong models;
+\item harnessing universally compresses model gaps;
+\item full project initialization is solved;
+\item full research workflow is solved;
+\item the harness is production ready;
+\item fixed macro success implies open-ended tool-using workflow reliability;
+\item explicit transition delta has a proven 0.20 causal advantage over exact postconditions;
+\item one 40-run fixture family establishes arbitrary state-machine reliability;
+\item current evidence establishes a favorable cost or latency tradeoff against a strong model.
+\end{itemize}
+
+\section{Appendix B. Contribution-To-Evaluation Alignment}
+
+{\small
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}}
+\toprule
+Contribution & Evaluation support & Boundary \\
+\midrule
+\endfirsthead
+\toprule
+Contribution & Evaluation support & Boundary \\
+\midrule
+\endhead
+Contract-driven harness model & Task slices and methods artifacts & Method definition, not a production-readiness claim. \\
+Mechanism atoms & Atom definition, coverage framework, Stage 6-7 atom results & Atom pass does not prove workflow pass. \\
+Conditional gap compression & Structured extraction, project initialization, research workflow slices & Compression only when baseline gaps are nonzero and gap movement is not reversed. \\
+Repair-loop protocol & Stage 7e v1-v4 and Stage B v5-v5.4 & Fixed evidence-decision and controlled-transition macros. \\
+Bounded weak-model enablement & Stage 7e v4, Stage 7-next, and Stage B v5.4 & Fixed-input, no-tool, deterministic macros. \\
+Controlled-transition stability & Stage B v5.4 & One frozen model/provider/harness/fixture family. \\
+Independent explicit-delta effect & Stage B v5.3 & Mixed; preregistered 0.20 threshold not met. \\
+\bottomrule
+\end{longtable}
+}
+
+\section{Appendix C. Evidence Traceability Matrix}
+
+{\small
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}>{\raggedright\arraybackslash}p{0.220\linewidth}}
+\toprule
+Paper claim & Evidence IDs & Source IDs & Status \\
+\midrule
+\endfirsthead
+\toprule
+Paper claim & Evidence IDs & Source IDs & Status \\
+\midrule
+\endhead
+Contract-rich harnessing improves absolute contract adherence and can compress gaps under constrained conditions. & P2-E28, P2-E30, P2-E32, P2-E33 & P2-SILICONFLOW-V2-FULL24, P2-SILICONFLOW-PROJECT-INIT-12, P2-SILICONFLOW-RESEARCH-WORKFLOW-12, P2-CLAIM-BOUNDARY-MEMO & Supported with conditional wording. \\
+Structured extraction is the clearest positive gap-compression task slice. & P2-E27, P2-E28 & P2-SILICONFLOW-V2-FULL24 & Supported for tested SiliconFlow v2 slice. \\
+Project initialization and research workflow do not support universal gap compression. & P2-E30, P2-E32, P2-E33 & P2-SILICONFLOW-PROJECT-INIT-12, P2-SILICONFLOW-RESEARCH-WORKFLOW-12, P2-CLAIM-BOUNDARY-MEMO & Supported; use mixed/undefined wording. \\
+Mechanism atoms make broad workflow failures interpretable. & P2-E35, P2-E36, P2-E56, P2-E60 & P2-MECHANISM-ATOM-DEFINITION, P2-MECHANISM-ATOM-COVERAGE, P2-STAGE7R-REVISED-ATOMS, P2-STAGE7R1-A2R-A7R-SMOKE & Supported as methodology and targeted empirical repair evidence. \\
+Atom success does not automatically imply macro composition success. & P2-E51, P2-E52 & P2-STAGE7P-PARTIAL-COMPOSITION & Supported by Stage 7p v1 failure. \\
+Explicit cross-step carried obligations can repair the Stage 7p composition failure. & P2-E53, P2-E54 & P2-STAGE7P-V2-COMPOSITION-RETENTION & Supported for A10 -> A9 -> A6 partial macro. \\
+Stage 7r.1 repaired low-cost-model A2R/A7R failures through tighter output contracts. & P2-E57, P2-E58, P2-E59, P2-E60 & P2-STAGE7R1-A2R-A7R-PREP, P2-STAGE7R1-A2R-A7R-SMOKE & Supported for targeted atoms only. \\
+Stage 7e v1-v4 demonstrates a repair-loop protocol for a fixed evidence-decision macro. & P2-E62, P2-E64, P2-E66, P2-E68, P2-E69, P2-E70 & P2-STAGE7E-EVIDENCE-DECISION, P2-STAGE7E-V2-RETENTION, P2-STAGE7E-V3-STATE-RETENTION, P2-STAGE7E-V4-KNOWN-STATE-PROVENANCE, P2-CLAIM-BOUNDARY-MEMO & Supported with fixed-input/no-tool boundary. \\
+Stage 7-next transfers Stage 7e v4 obligations to a neighboring method-plan macro. & P2-E72, P2-E74, P2-E75 & P2-STAGE7-NEXT-METHOD-PLAN-LOCAL, P2-STAGE7-NEXT-METHOD-PLAN-SMOKE & Supported as narrow transfer evidence. \\
+Evidence-binding separation did not show the preregistered large independent effect. & P2-E160, P2-E161, P2-E162, P2-E163, P2-E164 & P2-STAGE-B-V52-EVIDENCE-BINDING-ABLATION-LOCAL, P2-STAGE-B-V52-EVIDENCE-BINDING-ABLATION-EXECUTION, P2-STAGE-B-V52-EVIDENCE-BINDING-ABLATION-EVALUATION, P2-STAGE-B-V52-EVIDENCE-BINDING-ABLATION-FAILURE-AUDIT, P2-STAGE-B-V52-EVIDENCE-BINDING-ABLATION-DECISION & Supported as a bounded negative ablation result. \\
+Explicit transition delta passed 15/15, but the 0.133 risk difference missed the preregistered 0.20 threshold; exact McNemar \path|p=0.500|. & P2-E165, P2-E166, P2-E167, P2-E168, P2-E176 & P2-STAGE-B-V53-EXPLICIT-DELTA-ABLATION, P2-STAGE-B-V53-PAIRED-ANALYSIS-CORRECTION & Supported as a mixed causal result. \\
+The frozen explicit-delta protocol passed 40/40 fresh runs across five perturbation conditions. & P2-E169, P2-E170, P2-E171, P2-E172 & P2-STAGE-B-V54-EXPLICIT-DELTA-STABILITY & Supported as bounded absolute stability, not task-family or state-machine generality. \\
+Full project initialization, full research workflow, production readiness, and general model equivalence remain non-claims. & P2-E33, P2-E63, P2-E69, P2-E70, P2-E75 & P2-CLAIM-BOUNDARY-MEMO, P2-STAGE7E-EVIDENCE-DECISION, P2-STAGE7E-V4-KNOWN-STATE-PROVENANCE, P2-STAGE7-NEXT-METHOD-PLAN-SMOKE & Supported as explicit boundary. \\
+Related work: orchestration, declarative programs, structured outputs, retrieval/tools, memory, verification, and skill ecosystems are adjacent lines. & P2-E05, P2-E06, P2-E07, P2-E08, P2-E09, P2-E83, P2-E84, P2-E85, P2-E86, P2-E87, P2-E88, P2-E89, P2-E90, P2-E91, P2-E92, P2-E93, P2-E94, P2-E95, P2-E96, P2-E98 & External source IDs listed in \path|source-index.md| & Supported as background; convert to publication-style citations before submission. \\
+\bottomrule
+\end{longtable}
+}
+
+\section{Reproducibility Package}
+
+This draft is supported by a public reproducibility package in the project repository and by local artifacts under \path|research/| \cite{P2_LOCAL_ARTIFACTS}. The package includes the source index, evidence ledger, mechanism-atom definitions, macro fixtures, prompt manifests, provider event logs, model-output artifacts, deterministic evaluator outputs, metric summaries, stage reports, citation audit reports, and citation metadata.
+
+Repository: \path|https://github.com/kylecui/contract-driven-harness-study|.
+
+A reviewer can audit the claims in four steps:
+
+\begin{enumerate}
+\item Read Appendix C to map each paper claim to evidence IDs.
+\item Open \path|research/03_evidence/evidence-ledger.jsonl| and locate those evidence IDs.
+\item Inspect the referenced stage report, metric summary, fixture, validator output, provider event log, and model-output artifact.
+\item Re-run the deterministic local gate for the corresponding fixture when a fixture/evaluator pair is provided.
+\end{enumerate}
+
+For example, the Stage B v5.4 claim starts from P2-E169 through P2-E172. A reviewer should then inspect the preregistration, freeze manifest, prompt manifest, 40 execution records, raw outputs, deterministic evaluation, analysis, and freeze-integrity audit before treating the bounded stability claim as supported.
+
+When available, stage reports include the exact command or script path used to regenerate local evaluator outputs. The repository README and method scripts provide the current entry points for local gate reruns and artifact inspection.
+
+The core traceability files are:
+
+\begin{itemize}
+\item \path|research/01_sources/source-index.md|
+\item \path|research/01_sources/contract-driven-harness-citation-metadata.md|
+\item \path|research/03_evidence/evidence-ledger.jsonl|
+\item \path|research/06_outputs/contract-driven-harness-compact-results-appendix.md|
+\item \path|research/07_reviews/contract-driven-harness-citation-audit.md|
+\item \path|research/07_reviews/contract-driven-harness-source-coverage.md|
+\item \path|research/07_reviews/contract-driven-harness-unsupported-claims.md|
+\end{itemize}
+
+External references are prepared in \path|research/06_outputs/contract-driven-harness-references.bib|. Local empirical claims should be checked against Appendix C and the evidence ledger rather than treated as ordinary literature citations.
+
+\section{Bibliography}
+
+The BibTeX bibliography for this working draft is maintained in \path|research/06_outputs/contract-driven-harness-references.bib|.
+
+For arXiv preparation, compile this manuscript with that BibTeX file and keep Appendix C as the evidence traceability layer. For ACM or IEEE submission, move most local evidence IDs to supplementary material and cite the local artifact bundle as a reproducibility package.
+
+
+\bibliographystyle{plain}
+\bibliography{contract-driven-harness-references}
+
+\end{document}

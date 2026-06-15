@@ -75,6 +75,7 @@ def convert_table(lines: list[str]) -> str:
             0.165,
         ],
         ("Metric", "What it checks", "Evaluator type"): [0.22, 0.43, 0.27],
+        ("Internal stage ID", "Paper-facing label", "Purpose"): [0.16, 0.28, 0.46],
     }
     widths = widths_by_header.get(tuple(header))
     if widths is None:
