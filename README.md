@@ -33,6 +33,8 @@ This project is prepared for academic research workflows: framing research quest
 Run the local method tests:
 
 ```powershell
+# Tests live under research/04_methods/scripts and only import siblings,
+# so they run from the scripts directory.
 cd research/04_methods/scripts
 python -m unittest discover -p "test_*.py"
 ```
@@ -40,6 +42,10 @@ python -m unittest discover -p "test_*.py"
 Regenerate the frozen v5.4 analysis from retained outputs:
 
 ```powershell
+# Run from the repository root, not from scripts/.
+# Scripts import siblings by bare module name, so PYTHONPATH must include the scripts dir.
+$env:PYTHONPATH = "research/04_methods/scripts"
+
 python research/04_methods/scripts/evaluate_stage_b_v53_explicit_transition_delta.py `
   --fixtures-dir research/04_methods/macro-explicit-transition-delta-stage-b-v53 `
   --manifest research/05_analysis/real-run-artifacts/stage-b-v54-explicit-delta-stability-manifest-with-prompts.json `

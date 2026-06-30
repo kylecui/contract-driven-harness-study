@@ -6,3 +6,12 @@ research/06_outputs/arxiv-source*/contract-driven-harness-arxiv.blg
 research/06_outputs/arxiv-source*/contract-driven-harness-arxiv.log
 research/06_outputs/arxiv-source*/contract-driven-harness-arxiv.out
 research/06_outputs/arxiv-source*/contract-driven-harness-arxiv.pdf
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
