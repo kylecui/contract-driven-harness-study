@@ -1,0 +1,51 @@
+{
+  "skill_name": "fat-slim-writer",
+  "evals": [
+    {
+      "id": "book-chapter-from-outline",
+      "prompt": "根据这个提纲写一章关于AI Agent安全控制的内容，要求先胖后瘦。",
+      "expected_output": "包含Fat草稿、Source Ledger、Slim Review和最终章稿。",
+      "files": ["evals/files/sample-outline.md"],
+      "assertions": [
+        "输出包含Fat阶段内容",
+        "输出包含Slim阶段处理记录",
+        "至少使用DELETE/COMPRESS/MERGE/MOVE/REWRITE中的两类动作",
+        "待查事实没有被当作已核验事实写入最终稿",
+        "素材标签体系被正确使用（[用户提供]/[待查]/[推测]等）"
+      ]
+    },
+    {
+      "id": "whitepaper-auto-final",
+      "prompt": "帮我直接完成一份3000字白皮书初稿，不要中途问我。",
+      "expected_output": "自动执行Fat和Slim，不在中途卡确认。",
+      "assertions": [
+        "选择auto模式",
+        "没有要求用户在Fat后确认",
+        "输出最终稿和删减摘要",
+        "包含Slim Action Log"
+      ]
+    },
+    {
+      "id": "slim-existing-draft",
+      "prompt": "这是我的长文草稿，请只帮我做减法，不要重写一篇。",
+      "expected_output": "只执行Slim，不重新生成Fat。",
+      "files": ["evals/files/sample-raw-materials.md"],
+      "assertions": [
+        "选择review-only模式",
+        "不生成新的完整Fat草稿",
+        "提供删减、压缩、合并或重写建议",
+        "每个动作附带原因和去向"
+      ]
+    },
+    {
+      "id": "should-not-trigger-short-polish",
+      "prompt": "帮我把这段话润色得自然一点。",
+      "expected_output": "不应使用fat-slim流程。",
+      "assertions": [
+        "不执行Fat阶段",
+        "不要求生成Source Ledger",
+        "不强制输出Slim Review"
+      ]
+    }
+  ]
+}

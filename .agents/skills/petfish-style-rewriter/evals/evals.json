@@ -1,0 +1,163 @@
+{
+  "skill_name": "petfish-style-rewriter",
+  "version": "4.1.0",
+  "evals": [
+    {
+      "id": "zh-en-spacing-001",
+      "prompt": "请按petfish风格改写：接入层支持 Webhook 挂载。接入事件包括 Git 提交。",
+      "expected_output": "输出应包含：Webhook挂载、Git提交；不应包含 Webhook 挂载 或 Git 提交。",
+      "assertions": [
+        "中文和英文技术词之间没有不必要空格",
+        "表达简洁直接",
+        "没有额外修辞"
+      ]
+    },
+    {
+      "id": "cn-ai-fluff-001",
+      "prompt": "请把下面这段话说人话，并尽量接近我的风格：在当今高度复杂的网络对抗格局中，银弹式的单点防御理念早已失效。我们需要构建从点到线再到面的立体认知，打造完整能力闭环。",
+      "expected_output": "输出应去掉银弹、立体认知、打造闭环等表达，改为现有防御体系局限、原因分析、必要改进方向。",
+      "assertions": [
+        "不出现\"银弹\"\"立体认知\"\"打造\"等词",
+        "包含明确的问题定义",
+        "包含至少两个分析维度",
+        "结尾收敛到必要性或下一步"
+      ]
+    },
+    {
+      "id": "cn-course-proposal-002",
+      "prompt": "用我的语言习惯表达：本课程基于CAISP与CAIDCP两大权威框架，系统覆盖AI安全认知、威胁分析、技术防护、合规治理、开发落地、安全运营与组织管理七大维度，帮助企业建立从看得懂AI风险到管得住AI风险的完整能力闭环。",
+      "expected_output": "输出应简化句式，减少口号，将课程目标、内容范围、交付结果拆开表达。",
+      "assertions": [
+        "不出现\"从看得懂到管得住\"",
+        "不出现\"完整能力闭环\"或将其具体化",
+        "句子结构清晰，避免单句承载过多内容"
+      ]
+    },
+    {
+      "id": "en-support-email-003",
+      "prompt": "Rewrite this in my English support email style: The network seems to be broken and the server cannot receive the full authentication blob. The customer should check the network device.",
+      "expected_output": "Output should use concise support engineer style, include findings and recommended action, and avoid dramatic wording.",
+      "assertions": [
+        "Includes a clear finding",
+        "Uses cautious wording such as appears/seems if evidence is incomplete",
+        "Includes recommended next step",
+        "Does not overstate certainty"
+      ]
+    },
+    {
+      "id": "cn-negative-judgment-004",
+      "prompt": "按我的风格改写：这个方案很烂，根本不可能落地。",
+      "expected_output": "Output should express criticism objectively with reasons and without emotional wording.",
+      "assertions": [
+        "不出现\"很烂\"",
+        "说明不可落地的条件或原因",
+        "语气客观克制"
+      ]
+    },
+    {
+      "id": "ai-slop-dash-001",
+      "prompt": "按petfish风格改写：这不是一个简单的工具——而是一个改变游戏规则的平台——它正在重新定义我们的工作方式。",
+      "expected_output": "去掉破折号滥用，改为短句直接表达",
+      "assertions": [
+        "输出中破折号不超过1处",
+        "每个句子表达一个主要意思",
+        "不出现\"改变游戏规则\"等空洞修辞"
+      ]
+    },
+    {
+      "id": "ai-slop-triplet-002",
+      "prompt": "说人话：该方案能够全面提升效率、质量和体验，实现更快、更准、更安全的目标。",
+      "expected_output": "去掉空泛三人组排比，替换为具体改进内容",
+      "assertions": [
+        "不出现连续三项空泛排比",
+        "包含至少一个具体改进措施",
+        "不出现\"全面提升\""
+      ]
+    },
+    {
+      "id": "ai-slop-notxbuty-003",
+      "prompt": "用我的语言习惯表达：它不是简单的代码生成器，而是赋能开发者的智能伙伴；不仅是工具，更是思维方式的革命。",
+      "expected_output": "去掉空洞的not X but Y结构和空洞修辞",
+      "assertions": [
+        "不出现无信息增量的\"不是X而是Y\"结构",
+        "不出现\"赋能\"\"革命\"等空洞词",
+        "用具体功能或机制替代修辞"
+      ]
+    },
+    {
+      "id": "ai-slop-en-words-004",
+      "prompt": "Rewrite in petfish style: We need to leverage a nuanced approach to foster robust collaboration and seamlessly integrate transformative solutions across the organization.",
+      "expected_output": "Remove AI-frequent English words, replace with concrete actions",
+      "assertions": [
+        "Does not contain 'leverage', 'nuanced', 'foster', 'robust', 'seamlessly', or 'transformative'",
+        "Includes specific actions or mechanisms instead of abstract descriptors",
+        "Sentence structure is clear and direct"
+      ]
+    },
+    {
+      "id": "ai-slop-preserve-001",
+      "prompt": "按petfish风格改写，但注意保留合理的并列结构：信息安全产业高速度发展的原因有三：一是政策法规持续推动，二是企业安全支出稳步增长，三是攻防技术演进加速。",
+      "expected_output": "保留有信息增量的有序并列结构，不做过度清洗",
+      "assertions": [
+        "保留了'一是……二是……三是……'的结构",
+        "没有把有序论述改成散句",
+        "保留了每个并列项的具体内容"
+      ]
+    },
+    {
+      "id": "academic-abstract-001",
+      "prompt": "用学术写作模式改写以下摘要，让它更像真实研究者的写作：In recent years, deep learning models have achieved significant progress in software vulnerability detection. However, existing approaches face challenges in handling cross-project scenarios. We propose a novel framework that leverages transfer learning to improve detection accuracy. Our approach constructs a domain-invariant representation and incorporates it into the detection process. Experimental results demonstrate that our method achieves state-of-the-art performance. Furthermore, our approach shows robust generalization.",
+      "expected_output": "去掉'In recent years''significant progress''novel''state-of-the-art''robust generalization'等AI高频表达；加入burstiness（长短句交替）；加入authorial voice（如we find/observe）；打破对称模板；保留至少一处限制或意外发现",
+      "assertions": [
+        "不出现'In recent years'或'significant progress'",
+        "不出现'novel framework'或'state-of-the-art'",
+        "不出现'robust generalization'",
+        "句长有波动（至少有一个短句和一个长句）",
+        "包含authorial voice短语（如we find/we observe/to our surprise/somewhat unexpectedly）",
+        "至少在一个地方打破了背景→方法→结果→结论的对称模板"
+      ]
+    },
+    {
+      "id": "academic-burstiness-002",
+      "prompt": "用学术写作模式改写，修复句长波动不足的问题：The model achieves high accuracy on the task. The model handles edge cases well. The model scales to large datasets. The model integrates with existing tools. The model supports multiple languages.",
+      "expected_output": "打破连续相同句式模板（The model + verb + object），加入句长变化，每句承载不同信息",
+      "assertions": [
+        "不出现连续3句以上'The model + 动词'的相同模板",
+        "句长有明显波动（非全部相同长度）",
+        "每句承载不同维度的信息而非平行重述",
+        "至少有一处添加了具体条件或限制"
+      ]
+    },
+    {
+      "id": "academic-related-work-003",
+      "prompt": "用学术写作模式改写以下related work段落，改为按方法分组而非按作者列举：Smith et al. proposed method A. Jones et al. proposed method B. Lee et al. proposed method C. Wang et al. combined A and C. Our method is different.",
+      "expected_output": "按方法类别分组，每组说明方法和与本工作相关的局限，结尾定位本工作",
+      "assertions": [
+        "不再是按作者逐个列举的扁平结构",
+        "按方法类别分组（如至少两组）",
+        "每组包含方法说明和相关局限",
+        "结尾有定位本工作的句子"
+      ]
+    },
+    {
+      "id": "academic-symmetry-004",
+      "prompt": "按petfish学术风格改写，打破段落模板化和连接词堆叠：Therefore, we observe that the accuracy improves. However, the latency also increases. Specifically, the trade-off is significant. In conclusion, we need to balance accuracy and latency.",
+      "expected_output": "减少显式连接词堆叠，打破对称模板，改为隐式衔接和句长变化",
+      "assertions": [
+        "不出现连续四句每句一个显式连接词（Therefore/However/Specifically/In conclusion）的结构",
+        "至少有一处改为隐式逻辑衔接",
+        "句式有变化而非全部相同骨架"
+      ]
+    },
+    {
+      "id": "academic-hedge-005",
+      "prompt": "用学术写作模式改写以下过度断言的句子：Our method completely solves the cross-project vulnerability detection problem and is the best approach in the field.",
+      "expected_output": "将过度断言改为有scope限制的hedged claim，使用authorial voice",
+      "assertions": [
+        "不出现'completely solves'或'the best approach'",
+        "包含scope限制（如'in the settings we examined'或'on the benchmarks tested'）",
+        "使用hedging语言（如suggests/is consistent with/to our knowledge）或bounded novelty claim"
+      ]
+    }
+  ]
+}

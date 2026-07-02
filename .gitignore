@@ -15,3 +15,15 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+
+# PEtFiSh / OpenCode — runtime state & regenerable dependencies
+# (project skills/commands/agents-rules/mcp/plugin ARE committed; these are local-only)
+.petfish/
+.ai-context/
+connector.yaml
+.opencode/node_modules/
+.opencode/package.json
+.opencode/package-lock.json
+.opencode/bun.lock
+.opencode/installed-packs.json
+.opencode/**/*.bak
