@@ -17,7 +17,7 @@
 | DeepSeek-V3.2 | DeepSeek MoE | 40/40 | **40/40** | [0.9124, 1.0000] | ✅ exact |
 | Qwen2.5-7B | Qwen2.5 7B | 0/40 | **0/40** | [0.0000, 0.0876] | ✅ exact |
 
-\* Qwen3-14B: 3 failures were API read timeouts (infrastructure), not model capability errors. Excluding timeouts: 37/37 valid calls passed = 100%.
+\* Qwen3-14B: 3 failures were API read timeouts (infrastructure), not model capability errors. Excluding timeouts: 37/37 valid calls passed = 100%. However, the pass rate (37/40) and Wilson interval [0.801, 0.974] in the paper (§4.10) conservatively count timeouts as failures, because the frozen protocol did not produce a strict-pass on those runs regardless of cause. The distinction is: timeouts are not evidence of a model capability gap, but they are counted as failures in the headline rate and interval so that the claim boundary remains conservative.
 
 ---
 
