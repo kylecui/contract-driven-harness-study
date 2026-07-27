@@ -6,3 +6,32 @@ research/06_outputs/arxiv-source*/contract-driven-harness-arxiv.blg
 research/06_outputs/arxiv-source*/contract-driven-harness-arxiv.log
 research/06_outputs/arxiv-source*/contract-driven-harness-arxiv.out
 research/06_outputs/arxiv-source*/contract-driven-harness-arxiv.pdf
+
+# PEtFiSh / Codex workspace artifacts (paper-irrelevant)
+.agents/
+AGENTS.md
+initialization-report.md
+.petfish/
+.opencode/
+.sisyphus/
+
+# IDE / editor settings
+.vscode/
+.idea/
+*.code-workspace
+
+# Python build / test artifacts
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local temp / scratch
+tmp/
