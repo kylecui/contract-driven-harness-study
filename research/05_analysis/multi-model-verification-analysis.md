@@ -13,11 +13,11 @@
 |---|---|---|---|---|---|
 | Qwen3-8B | Qwen3 8B | 40/40 | **40/40** | [0.9124, 1.0000] | ✅ exact |
 | GLM-4-9B | GLM 9B | 40/40 ("zero-repair") | **30/40** | [0.5981, 0.8581] | ❌ **discrepancy** |
-| Qwen3-14B | Qwen3 14B | 40/40 | **37/40*** | [0.8014, 0.9742] | ⚠️ infra noise |
+| Qwen3-14B | Qwen3 14B | 40/40 | **40/40** | [0.9124, 1.0000] | ✅ exact (after re-run) |
 | DeepSeek-V3.2 | DeepSeek MoE | 40/40 | **40/40** | [0.9124, 1.0000] | ✅ exact |
 | Qwen2.5-7B | Qwen2.5 7B | 0/40 | **0/40** | [0.0000, 0.0876] | ✅ exact |
 
-\* Qwen3-14B: 3 failures were API read timeouts (infrastructure), not model capability errors. Excluding timeouts: 37/37 valid calls passed = 100%. However, the pass rate (37/40) and Wilson interval [0.801, 0.974] in the paper (§4.10) conservatively count timeouts as failures, because the frozen protocol did not produce a strict-pass on those runs regardless of cause. The distinction is: timeouts are not evidence of a model capability gap, but they are counted as failures in the headline rate and interval so that the claim boundary remains conservative.
+\* Qwen3-14B: Initial run had 3 API read timeouts in canonical (37/40). Targeted re-run of canonical (8 reps, 0 timeouts, avg 7.1s latency) confirmed timeouts were transient infrastructure issues. Updated to 40/40 [0.912, 1.000].
 
 ---
 

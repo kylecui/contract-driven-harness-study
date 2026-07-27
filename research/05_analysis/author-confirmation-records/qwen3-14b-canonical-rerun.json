@@ -1,0 +1,57 @@
+{
+  "model": "Qwen/Qwen3-14B",
+  "condition": "canonical",
+  "reps": 8,
+  "results": [
+    {
+      "rep": 1,
+      "pass": true,
+      "elapsed": 7.8,
+      "failed_checks": []
+    },
+    {
+      "rep": 2,
+      "pass": true,
+      "elapsed": 6.8,
+      "failed_checks": []
+    },
+    {
+      "rep": 3,
+      "pass": true,
+      "elapsed": 7.5,
+      "failed_checks": []
+    },
+    {
+      "rep": 4,
+      "pass": true,
+      "elapsed": 6.7,
+      "failed_checks": []
+    },
+    {
+      "rep": 5,
+      "pass": true,
+      "elapsed": 6.4,
+      "failed_checks": []
+    },
+    {
+      "rep": 6,
+      "pass": true,
+      "elapsed": 7.2,
+      "failed_checks": []
+    },
+    {
+      "rep": 7,
+      "pass": true,
+      "elapsed": 7.4,
+      "failed_checks": []
+    },
+    {
+      "rep": 8,
+      "pass": true,
+      "elapsed": 6.8,
+      "failed_checks": []
+    }
+  ],
+  "passed": 8,
+  "timeouts": 0
+}

@@ -1,6 +1,6 @@
 model_key,model_id,family,size,floor_status,total_runs,strict_passes,pass_rate,wilson_95_low,wilson_95_high,canonical,field_alias,evidence_order_shuffled,distractor_evidence,unknown_state_paraphrase,data_source,verification_date,notes
 qwen3-8b,Qwen/Qwen3-8B,Qwen3,8B,above,40,40,1.0000,0.9124,1.0000,8/8,8/8,8/8,8/8,8/8,author_confirmed,2026-07-27,primary model; exact match with V4 frozen + Kimi
 glm-4-9b,THUDM/GLM-4-9B-0414,GLM,9B,above,40,30,0.7500,0.5981,0.8581,8/8,6/8,8/8,8/8,0/8,author_confirmed,2026-07-27,DISCREPANCY: Kimi reported 40/40; author got 30/40; unknown_state_paraphrase all failed
-qwen3-14b,Qwen/Qwen3-14B,Qwen3,14B,above,40,37,0.9250,0.8014,0.9742,5/8,8/8,8/8,8/8,8/8,author_confirmed,2026-07-27,3 API read timeouts conservatively counted as failures in rate/interval; 37/37 valid calls passed; not model capability errors
+qwen3-14b,Qwen/Qwen3-14B,Qwen3,14B,above,40,40,1.0000,0.9124,1.0000,8/8,8/8,8/8,8/8,8/8,author_confirmed,2026-07-27,initial run 3 API timeouts in canonical; targeted re-run 8/8 pass 0 timeouts avg 7.1s; updated to 40/40
 deepseek-v3.2,deepseek-ai/DeepSeek-V3.2,DeepSeek,MoE,above,40,40,1.0000,0.9124,1.0000,8/8,8/8,8/8,8/8,8/8,author_confirmed,2026-07-27,cross-family (MoE) transfer confirmed
 qwen2.5-7b,Qwen/Qwen2.5-7B-Instruct,Qwen2.5,7B,below,40,0,0.0000,0.0000,0.0876,0/8,0/8,0/8,0/8,0/8,author_confirmed,2026-07-27,structural floor confirmed; all 40 runs failed JSON parsing

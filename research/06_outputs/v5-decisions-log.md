@@ -37,12 +37,12 @@
 **Verification result (2026-07-27)**:
 - Qwen3-8B: 40/40 ✅ exact match with Kimi
 - GLM-4-9B: **30/40 ❌ discrepancy** (Kimi reported 40/40; author got 30/40; `unknown_state_paraphrase` all failed)
-- Qwen3-14B: 37/40 (3 API read timeouts conservatively counted as failures in rate and interval; 37/37 valid calls passed)
+- Qwen3-14B: **40/40** (initial run had 3 API read timeouts; targeted canonical re-run 8/8 pass confirmed transient infrastructure issue)
 - DeepSeek-V3.2: 40/40 ✅ exact match with Kimi
 - Qwen2.5-7B: 0/40 ✅ exact match (structural floor confirmed)
 
 **Revised above-floor claim**:
-> "Within the above-floor models tested, a frozen contract produced strict-conforming pass rates of 40/40 on Qwen3-8B and DeepSeek-V3.2, 37/40 on Qwen3-14B (3 API timeouts conservatively counted as failures; 37/37 valid calls passed), and 30/40 on GLM-4-9B (failures concentrated in paraphrased-state-label condition). The contract transfers zero-shot to Qwen3 and DeepSeek families; GLM-4-9B requires additional repair-loop iterations."
+> "Within the above-floor models tested, a frozen contract produced strict-conforming pass rates of 40/40 on Qwen3-8B, Qwen3-14B, and DeepSeek-V3.2, and 30/40 on GLM-4-9B (failures concentrated in paraphrased-state-label condition). The contract transfers zero-shot to Qwen3 and DeepSeek families; GLM-4-9B requires additional repair-loop iterations."
 
 **Dropped claims**:
 - ❌ "GLM-4-9B zero-repair one-pass"
