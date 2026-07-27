@@ -1,0 +1,242 @@
+[
+ {
+  "condition": "canonical",
+  "rep": 0,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "canonical",
+  "rep": 1,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "canonical",
+  "rep": 2,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "canonical",
+  "rep": 3,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "canonical",
+  "rep": 4,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "canonical",
+  "rep": 5,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "canonical",
+  "rep": 6,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "canonical",
+  "rep": 7,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "field_alias",
+  "rep": 0,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "field_alias",
+  "rep": 1,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "field_alias",
+  "rep": 2,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "field_alias",
+  "rep": 3,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "field_alias",
+  "rep": 4,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "field_alias",
+  "rep": 5,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "field_alias",
+  "rep": 6,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "field_alias",
+  "rep": 7,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "evidence_order",
+  "rep": 0,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "evidence_order",
+  "rep": 1,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "evidence_order",
+  "rep": 2,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "evidence_order",
+  "rep": 3,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "evidence_order",
+  "rep": 4,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "evidence_order",
+  "rep": 5,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "evidence_order",
+  "rep": 6,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "evidence_order",
+  "rep": 7,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "distractor_evidence",
+  "rep": 0,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "distractor_evidence",
+  "rep": 1,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "distractor_evidence",
+  "rep": 2,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "distractor_evidence",
+  "rep": 3,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "distractor_evidence",
+  "rep": 4,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "distractor_evidence",
+  "rep": 5,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "distractor_evidence",
+  "rep": 6,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "distractor_evidence",
+  "rep": 7,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "unknown_state_paraphrase",
+  "rep": 0,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "unknown_state_paraphrase",
+  "rep": 1,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "unknown_state_paraphrase",
+  "rep": 2,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "unknown_state_paraphrase",
+  "rep": 3,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "unknown_state_paraphrase",
+  "rep": 4,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "unknown_state_paraphrase",
+  "rep": 5,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "unknown_state_paraphrase",
+  "rep": 6,
+  "strict": true,
+  "fails": {}
+ },
+ {
+  "condition": "unknown_state_paraphrase",
+  "rep": 7,
+  "strict": true,
+  "fails": {}
+ }
+]

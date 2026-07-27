@@ -1,0 +1,594 @@
+[
+ {
+  "condition": "canonical",
+  "rep": 0,
+  "strict": false,
+  "fails": {
+   "schema_validity": "缺少字段: ['residual_unknown_state', 'residual_forbidden_inferences', 'retention_attestation']",
+   "exact_evidence_array": "evidence_array=['E ', ',E ']，期望 ['E1','E2']（顺序敏感）",
+   "residual_state_accuracy": "剩余未知状态/禁止推断被破坏",
+   "state_transition_accuracy": "transition_record 与增量不一致",
+   "complete_gate": "类型/结构违规: AttributeError",
+   "retention_attestation": "retention_attestation 缺失或未声明 data_residency 保持未知",
+   "strict": "schema_validity:缺少字段: ['residual_unknown_state', 'residual_forbidden_inferences', 'retention_attestation']; exact_evidence_array:evidence_array=['E ', ',E ']，期望 ['E1','E2']（顺序敏感）; residual_state_accuracy:剩余未知状态/禁止推断被破坏; state_transition_accuracy:transition_record 与增量不一致; complete_gate:类型/结构违规: AttributeError; retention_attestation:retention_attestation 缺失或未声明 data_residency 保持未知"
+  }
+ },
+ {
+  "condition": "canonical",
+  "rep": 1,
+  "strict": false,
+  "fails": {
+   "schema_validity": "缺少字段: ['residual_unknown_state', 'residual_forbidden_inferences', 'retention_attestation']",
+   "exact_evidence_array": "evidence_array=['E ', ',E ']，期望 ['E1','E2']（顺序敏感）",
+   "residual_state_accuracy": "剩余未知状态/禁止推断被破坏",
+   "state_transition_accuracy": "transition_record 与增量不一致",
+   "complete_gate": "类型/结构违规: AttributeError",
+   "retention_attestation": "retention_attestation 缺失或未声明 data_residency 保持未知",
+   "strict": "schema_validity:缺少字段: ['residual_unknown_state', 'residual_forbidden_inferences', 'retention_attestation']; exact_evidence_array:evidence_array=['E ', ',E ']，期望 ['E1','E2']（顺序敏感）; residual_state_accuracy:剩余未知状态/禁止推断被破坏; state_transition_accuracy:transition_record 与增量不一致; complete_gate:类型/结构违规: AttributeError; retention_attestation:retention_attestation 缺失或未声明 data_residency 保持未知"
+  }
+ },
+ {
+  "condition": "canonical",
+  "rep": 2,
+  "strict": false,
+  "fails": {
+   "schema_validity": "缺少字段: ['residual_unknown_state', 'residual_forbidden_inferences', 'retention_attestation']",
+   "exact_evidence_array": "evidence_array=['E ', ',E ']，期望 ['E1','E2']（顺序敏感）",
+   "residual_state_accuracy": "剩余未知状态/禁止推断被破坏",
+   "state_transition_accuracy": "transition_record 与增量不一致",
+   "complete_gate": "类型/结构违规: AttributeError",
+   "retention_attestation": "retention_attestation 缺失或未声明 data_residency 保持未知",
+   "strict": "schema_validity:缺少字段: ['residual_unknown_state', 'residual_forbidden_inferences', 'retention_attestation']; exact_evidence_array:evidence_array=['E ', ',E ']，期望 ['E1','E2']（顺序敏感）; residual_state_accuracy:剩余未知状态/禁止推断被破坏; state_transition_accuracy:transition_record 与增量不一致; complete_gate:类型/结构违规: AttributeError; retention_attestation:retention_attestation 缺失或未声明 data_residency 保持未知"
+  }
+ },
+ {
+  "condition": "canonical",
+  "rep": 3,
+  "strict": false,
+  "fails": {
+   "schema_validity": "缺少字段: ['residual_unknown_state', 'residual_forbidden_inferences', 'retention_attestation']",
+   "exact_evidence_array": "evidence_array=['E ', ',E ']，期望 ['E1','E2']（顺序敏感）",
+   "residual_state_accuracy": "剩余未知状态/禁止推断被破坏",
+   "state_transition_accuracy": "transition_record 与增量不一致",
+   "complete_gate": "类型/结构违规: AttributeError",
+   "retention_attestation": "retention_attestation 缺失或未声明 data_residency 保持未知",
+   "strict": "schema_validity:缺少字段: ['residual_unknown_state', 'residual_forbidden_inferences', 'retention_attestation']; exact_evidence_array:evidence_array=['E ', ',E ']，期望 ['E1','E2']（顺序敏感）; residual_state_accuracy:剩余未知状态/禁止推断被破坏; state_transition_accuracy:transition_record 与增量不一致; complete_gate:类型/结构违规: AttributeError; retention_attestation:retention_attestation 缺失或未声明 data_residency 保持未知"
+  }
+ },
+ {
+  "condition": "canonical",
+  "rep": 4,
+  "strict": false,
+  "fails": {
+   "schema_validity": "缺少字段: ['residual_unknown_state', 'residual_forbidden_inferences', 'retention_attestation']",
+   "exact_evidence_array": "evidence_array=['E ', ',E ']，期望 ['E1','E2']（顺序敏感）",
+   "residual_state_accuracy": "剩余未知状态/禁止推断被破坏",
+   "state_transition_accuracy": "transition_record 与增量不一致",
+   "complete_gate": "类型/结构违规: AttributeError",
+   "retention_attestation": "retention_attestation 缺失或未声明 data_residency 保持未知",
+   "strict": "schema_validity:缺少字段: ['residual_unknown_state', 'residual_forbidden_inferences', 'retention_attestation']; exact_evidence_array:evidence_array=['E ', ',E ']，期望 ['E1','E2']（顺序敏感）; residual_state_accuracy:剩余未知状态/禁止推断被破坏; state_transition_accuracy:transition_record 与增量不一致; complete_gate:类型/结构违规: AttributeError; retention_attestation:retention_attestation 缺失或未声明 data_residency 保持未知"
+  }
+ },
+ {
+  "condition": "canonical",
+  "rep": 5,
+  "strict": false,
+  "fails": {
+   "schema_validity": "缺少字段: ['residual_unknown_state', 'residual_forbidden_inferences', 'retention_attestation']",
+   "exact_evidence_array": "evidence_array=['E ', ',E ']，期望 ['E1','E2']（顺序敏感）",
+   "residual_state_accuracy": "剩余未知状态/禁止推断被破坏",
+   "state_transition_accuracy": "transition_record 与增量不一致",
+   "complete_gate": "类型/结构违规: AttributeError",
+   "retention_attestation": "retention_attestation 缺失或未声明 data_residency 保持未知",
+   "strict": "schema_validity:缺少字段: ['residual_unknown_state', 'residual_forbidden_inferences', 'retention_attestation']; exact_evidence_array:evidence_array=['E ', ',E ']，期望 ['E1','E2']（顺序敏感）; residual_state_accuracy:剩余未知状态/禁止推断被破坏; state_transition_accuracy:transition_record 与增量不一致; complete_gate:类型/结构违规: AttributeError; retention_attestation:retention_attestation 缺失或未声明 data_residency 保持未知"
+  }
+ },
+ {
+  "condition": "canonical",
+  "rep": 6,
+  "strict": false,
+  "fails": {
+   "schema_validity": "缺少字段: ['residual_unknown_state', 'residual_forbidden_inferences', 'retention_attestation']",
+   "exact_evidence_array": "evidence_array=['E ', ',E ']，期望 ['E1','E2']（顺序敏感）",
+   "residual_state_accuracy": "剩余未知状态/禁止推断被破坏",
+   "state_transition_accuracy": "transition_record 与增量不一致",
+   "complete_gate": "类型/结构违规: AttributeError",
+   "retention_attestation": "retention_attestation 缺失或未声明 data_residency 保持未知",
+   "strict": "schema_validity:缺少字段: ['residual_unknown_state', 'residual_forbidden_inferences', 'retention_attestation']; exact_evidence_array:evidence_array=['E ', ',E ']，期望 ['E1','E2']（顺序敏感）; residual_state_accuracy:剩余未知状态/禁止推断被破坏; state_transition_accuracy:transition_record 与增量不一致; complete_gate:类型/结构违规: AttributeError; retention_attestation:retention_attestation 缺失或未声明 data_residency 保持未知"
+  }
+ },
+ {
+  "condition": "canonical",
+  "rep": 7,
+  "strict": false,
+  "fails": {
+   "schema_validity": "缺少字段: ['residual_unknown_state', 'residual_forbidden_inferences', 'retention_attestation']",
+   "exact_evidence_array": "evidence_array=['E ', ',E ']，期望 ['E1','E2']（顺序敏感）",
+   "residual_state_accuracy": "剩余未知状态/禁止推断被破坏",
+   "state_transition_accuracy": "transition_record 与增量不一致",
+   "complete_gate": "类型/结构违规: AttributeError",
+   "retention_attestation": "retention_attestation 缺失或未声明 data_residency 保持未知",
+   "strict": "schema_validity:缺少字段: ['residual_unknown_state', 'residual_forbidden_inferences', 'retention_attestation']; exact_evidence_array:evidence_array=['E ', ',E ']，期望 ['E1','E2']（顺序敏感）; residual_state_accuracy:剩余未知状态/禁止推断被破坏; state_transition_accuracy:transition_record 与增量不一致; complete_gate:类型/结构违规: AttributeError; retention_attestation:retention_attestation 缺失或未声明 data_residency 保持未知"
+  }
+ },
+ {
+  "condition": "field_alias",
+  "rep": 0,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "field_alias",
+  "rep": 1,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "field_alias",
+  "rep": 2,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "field_alias",
+  "rep": 3,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "field_alias",
+  "rep": 4,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "field_alias",
+  "rep": 5,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "field_alias",
+  "rep": 6,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "field_alias",
+  "rep": 7,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "evidence_order",
+  "rep": 0,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "evidence_order",
+  "rep": 1,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "evidence_order",
+  "rep": 2,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "evidence_order",
+  "rep": 3,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "evidence_order",
+  "rep": 4,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "evidence_order",
+  "rep": 5,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "evidence_order",
+  "rep": 6,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "evidence_order",
+  "rep": 7,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "distractor_evidence",
+  "rep": 0,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "distractor_evidence",
+  "rep": 1,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "distractor_evidence",
+  "rep": 2,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "distractor_evidence",
+  "rep": 3,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "distractor_evidence",
+  "rep": 4,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "distractor_evidence",
+  "rep": 5,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "distractor_evidence",
+  "rep": 6,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "distractor_evidence",
+  "rep": 7,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "unknown_state_paraphrase",
+  "rep": 0,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "unknown_state_paraphrase",
+  "rep": 1,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "unknown_state_paraphrase",
+  "rep": 2,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "unknown_state_paraphrase",
+  "rep": 3,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "unknown_state_paraphrase",
+  "rep": 4,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "unknown_state_paraphrase",
+  "rep": 5,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "unknown_state_paraphrase",
+  "rep": 6,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ },
+ {
+  "condition": "unknown_state_paraphrase",
+  "rep": 7,
+  "strict": false,
+  "fails": {
+   "strict": "输出不是合法 JSON",
+   "schema_validity": "无 JSON",
+   "exact_evidence_array": "无 JSON",
+   "residual_state_accuracy": "无 JSON",
+   "state_transition_accuracy": "无 JSON",
+   "forbidden_inference": "无 JSON",
+   "complete_gate": "无 JSON",
+   "retention_attestation": "无 JSON"
+  }
+ }
+]
