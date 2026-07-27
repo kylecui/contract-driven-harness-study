@@ -1,0 +1,63 @@
+# Closely-Related-Work Differentiation Table
+
+**Purpose**: Input to WP1 narrative restructuring for §2 Related Work of the contract-driven-harness paper. The table sharpens the contribution positioning against the two closest prior works (AgentSpec and Agent Behavioral Contracts) and briefly situates two additional guardrails/declarative-LM lines (DSPy Assertions, Guardrails as Infrastructure).
+
+**Source access note**: All summaries below are derived from the publicly available arXiv abstracts and, for Agent Behavioral Contracts, from the alphaXiv overview. Where full-text details are not verified, entries are marked with uncertainty brackets or conservative partial marks (~). No invented citations or empirical claims are introduced.
+
+---
+
+## Summary: The Contract-Driven-Harness Contribution in This Landscape
+
+Prior work in the same conceptual neighborhood treats contracts, guardrails, or declarative constraints primarily as *runtime enforcement mechanisms* that keep agents inside safety or policy boundaries. AgentSpec and Agent Behavioral Contracts are the closest precedents: both externalize behavioral rules, both enforce them at runtime, and both report strong safety or compliance metrics. The contract-driven-harness paper occupies a different, narrower role. It treats the contract as a *task skeleton* whose completeness is the binding constraint, and it uses fixture-driven admission (golden must pass, known-bad must fail for the *expected* reason) and a repair-loop protocol to make missing obligations inspectable and repairable. The unit of evaluation is not the whole agent or the behavior class, but a *mechanism atom*—a fixed-input, deterministic, contract-bound operation with one dominant failure mode. The resulting claim is therefore bounded: weak-model enablement on contract-critical operations, not general agent reliability, and repair-loop convergence as a development protocol, not runtime self-healing. This table makes that distinction explicit across seven dimensions.
+
+---
+
+## Differentiation Table
+
+| Dimension | Contract-Driven Harness (this paper) | AgentSpec (arXiv:2503.18666) | Agent Behavioral Contracts (arXiv:2602.22302) | DSPy Assertions (arXiv:2312.13382) | Guardrails as Infrastructure (arXiv:2603.18059) |
+|---|---|---|---|---|---|
+| **Unit of specification** | ✓ **Mechanism atom + contract stack** (TaskSpec, MemorySlice, EvidenceBundle, OutputContract, WorkflowGate, TraceLog, ValidatorGate). Each atom is a fixed-input, single-mechanism testable unit. | ~ **Whole-agent / safety-rule level** via a lightweight DSL of triggers, predicates, and enforcement mechanisms. Strong on runtime safety rules, less granular than mechanism atoms. | ~ **Behavior-class / contract stack** (Preconditions, Invariants, Governance, Recovery). Formally structured, but specified at the level of agent behavior classes and multi-agent chains. | ~ **Pipeline / module assertions** inside a declarative LM-programming framework. | ~ **Tool invocation / policy pack** layer. Specification is a policy DSL mediating tool calls. |
+| **Static spec or dynamic / repairable?** | ✓ **Dynamic repair-loop protocol**. Development protocol: observe failure → isolate missing obligation → update contract and known-bad fixture → local regression → targeted model slice → update claim boundary. | ~ **Static rules with runtime enforcement**. Rules are authored (or LLM-generated) and enforced; repair is not a first-class development protocol. | ~ **Runtime enforcement with recovery**. Recovery mechanisms are part of the contract, but the emphasis is on runtime drift bounding, not an iterative development repair loop. | ✓ **Dynamic self-refinement at inference time**. Assertions trigger LM-based retry/refinement, but not a fixture-driven development protocol. | ✗ **Static policy packs**. Five policy packs with fixed strictness levels; evaluated for safety-utility trade-offs, not iteratively repaired. |
+| **What is verified?** | ✓ **Contract adherence** across semantic obligations: required evidence IDs, evidence type separation, unknown-state retention, stage-gate completion, decision trace, rejected-option trace, non-claims, and output schema. | ~ **Safety-policy adherence** (prevent unsafe executions, hazardous actions, legal violations). Focus is on security/safety boundaries, not task-level semantic obligations. | ✓ **Contract compliance** (hard/soft constraints) via (p, δ, k)-satisfaction; hard invariants, governance, and recovery. | ~ **Output / computational constraints** in LM pipelines. Improves constraint passing and downstream quality, but not evidence/state/trace semantics. | ~ **Tool-permission / safety-policy adherence** plus safety-utility trade-offs (violation prevention, retry amplification, leakage recall). |
+| **Evaluation method** | ✓ **Mechanism atoms + repair-loop convergence + controlled perturbations**. Local golden/bad regression plus targeted real-model slices (e.g., Stage B v5.4: 40/40 fresh runs across five perturbation conditions). | ~ **Benchmark / case studies across domains** (code execution, embodied agents, autonomous driving). Reports prevention rates by domain. | ~ **Benchmark (AgentContract-Bench)**: 200 scenarios, 7 models from 6 vendors, 1,980 sessions, extended 12-turn sessions. | ~ **Case studies**: four diverse text-generation tasks. | ~ **Trace replay with controlled fault/misuse injection**: 225 controlled runs across five policy packs and three fault profiles. |
+| **Admission criterion** | ✓ **Golden must pass; known-bad must fail for the expected reason**. Atoms/macros are admitted only when fixture schema validates, golden passes, and at least one known-bad fails for the intended reason. | ✗ **Pass-threshold / violation-prevention rate** (e.g., >90% unsafe executions prevented, 100% AV compliance). No known-bad-failure-for-expected-reason requirement. | ✗ **Hard/soft constraint compliance rate** (88–100% hard compliance, bounded drift D* < 0.27). No fixture-driven known-bad admission criterion. | ✗ **Constraint passing rate** (up to 164% more constraints passed). Assertions are used as runtime checks, not as admission gates. | ✗ **Violation prevention rate** (P0→P4 improvement from 0.000 to 0.681). No fixture-driven admission gate. |
+| **Reproducibility artifact** | ✓ **Frozen fixtures + known-bad + golden + prompt hashes + evaluator version + temperature=0 manifest**. Each admitted protocol is frozen before fresh runs. | ~ **Code repository (haoyuwang99/AgentSpec) + generated rule sets**. Public artifacts exist, but fixture freezing is not a central claim. | ~ **AgentAssert runtime library + AgentContract-Bench benchmark + ContractSpec YAML DSL**. Reproducible, but does not emphasize frozen golden/known-bad fixtures per atom. | ~ **Integrated into DSPy open-source framework**. Reference implementation is public, but artifact freezing is not a study contribution. | ~ **Benchmark (trace replay) + policy packs**. Reproducible controlled runs, but no per-mechanism fixture set. |
+| **Scope of claim** | ✓ **Bounded contract-critical operations / weak-model enablement**. Deliberately narrow: controlled state mutation, evidence-bound decision macros, etc. Explicitly denies general agent reliability or open-ended workflow autonomy. | ~ **General agents across domains** for safety enforcement. Claims broad applicability (code, embodied, AV). | ~ **General autonomous agents / multi-agent chains**. Provides formal probabilistic bounds and compositionality theorems. | ~ **Text-generation / LM pipelines**. Focused on downstream task quality and constraint compliance. | ~ **Tool-orchestrated workflows**. Model-agnostic permission layer for scripts, CI bots, and agentic assistants. |
+
+---
+
+## Sharpest Differentiators Against the Two Closest Works
+
+### AgentSpec (arXiv:2503.18666)
+- **What it shares**: Both externalize constraints into a runtime-enforceable DSL; both care about preventing undesirable agent behavior; both report strong empirical metrics.
+- **What differs**: AgentSpec specifies at the *whole-agent* level and targets *safety* (unsafe execution, hazardous actions, legal violations). The contract-driven-harness paper specifies at the *mechanism-atom* level and targets *task-level reliability obligations* (evidence, state, stage gates, trace). AgentSpec enforces rules; this paper requires rules to be admitted by a fixture-driven gate before they can carry a claim. AgentSpec does not require known-bad outputs to fail for an expected reason, nor does it treat the repair loop as a development protocol.
+
+### Agent Behavioral Contracts (arXiv:2602.22302)
+- **What it shares**: Both bring formal contract thinking to agents; both define contract stacks; both evaluate empirically across multiple models.
+- **What differs**: ABC is a *formal, probabilistic* framework for behavioral governance of autonomous agents, with preconditions/invariants/governance/recovery, drift-bounds theorems, and multi-agent compositionality. Its contract is at the *behavior-class* level. The contract-driven-harness paper is an *empirical, fixture-driven* engineering method at the *mechanism-atom* level, with the goal of weak-model enablement on bounded tasks. ABC uses (p, δ, k)-satisfaction and drift bounds; this paper uses golden/known-bad local regression and repair-loop convergence. ABC's scope is general autonomous agents; this paper's scope is explicitly bounded and denies universal claims.
+
+### DSPy Assertions (arXiv:2312.13382) and Guardrails as Infrastructure (arXiv:2603.18059)
+- **DSPy Assertions** is the closest within the declarative-LM-programming line. It uses assertions as computational constraints and can trigger model self-refinement. It does not use deterministic fixture admission or mechanism atoms, and its evidence is case-study-based rather than fixture-regression-based.
+- **Guardrails as Infrastructure** shares the engineering intuition that reliability comes from surrounding the model with explicit constraints rather than making the model stronger. Its focus is tool-orchestrated workflows and policy packs, not task-level semantic obligations or fixture-driven repair loops. It makes safety-utility trade-offs explicit, but does not require known-bad cases to fail for an expected reason.
+
+---
+
+## Source Inventory
+
+- `source-agentspec`: Wang, Poskitt, Sun. *AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents.* arXiv:2503.18666, 2025. Abstract retrieved from arXiv; full text not independently verified.
+- `source-abc`: Bhardwaj. *Agent Behavioral Contracts: Formal Specification and Runtime Enforcement for Reliable Autonomous AI Agents.* arXiv:2602.22302, 2026. Abstract from arXiv; detailed overview from alphaXiv (accessed 2026-07-27).
+- `source-dspy-assertions`: Singhvi et al. *DSPy Assertions: Computational Constraints for Self-Refining Language Model Pipelines.* arXiv:2312.13382, 2023/2024. Abstract from arXiv; full text not independently verified.
+- `source-guardrails-infra`: Sigdel, Baral. *Guardrails as Infrastructure: Policy-First Control for Tool-Orchestrated Workflows.* arXiv:2603.18059, 2026. Abstract from arXiv; full text not independently verified.
+- `source-cdh-paper`: Contract-driven-harness paper, v4 frozen body, `research/06_outputs/contract-driven-harness-arxiv-v4-frozen.md`, §2 Related Work and §3 Methods.
+- `source-plan`: `paper-update-plan-v2.1.md`, WP0 subtask 3.
+
+---
+
+## Uncertainty and Limitations of This Table
+
+- **AgentSpec**: Detailed evaluation numbers (domain-specific prevention rates, LLM-generated rule precision/recall) are from the abstract. The DSL syntax, enforcement semantics, and any explicit repair-loop mechanism were not verified from full text.
+- **Agent Behavioral Contracts**: The alphaXiv overview provides substantially more detail than the abstract, but it is a third-party summary. The contract syntax, theorem conditions, and exact benchmark design should be verified against the PDF before final citation in the paper body.
+- **DSPy Assertions**: Claims about self-refinement and case-study results are from the abstract. The distinction between compile-time and inference-time assertion strategies was not verified from full text.
+- **Guardrails as Infrastructure**: The policy DSL, runtime architecture, and benchmark details are from the abstract only. The exact trade-off numbers (P0–P4) are abstract-reported and should be verified.
+
+This table is intended as a *pre-writing positioning instrument* for WP1, not as a final literature-review paragraph. It should be checked against the full PDFs before the related-work narrative is finalized.

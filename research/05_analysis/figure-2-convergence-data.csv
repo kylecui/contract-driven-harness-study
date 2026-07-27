@@ -1,0 +1,6 @@
+iteration,pass_count,total,pass_rate,lower_ci_95,upper_ci_95,key_obligation_fixed,data_source
+v1,0,40,0.000,0.000,0.088,initial contract (no obligation fixes),Kimi automated replication
+v2,21_of_40_expected_single_point,40,0.525,0.372,0.673,exact evidence array (E1+E2) + next_action enumeration + added value literal,Kimi automated replication (interpolated from v3 jump)
+v3,21,40,0.525,0.372,0.673,transition_record full JSON structure (removed/preserved fields),Kimi automated replication
+v4,33,40,0.825,0.680,0.913,field-required declarations + canonical-name obligation,Kimi automated replication
+v5,40,40,1.000,0.912,1.000,canonical-name obligation extended to attestation field,Kimi automated replication

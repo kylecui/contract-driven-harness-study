@@ -1,0 +1,179 @@
+{
+  "core_path": "research\\04_methods\\scripts",
+  "files_scanned": 58,
+  "total_lines": 16593,
+  "blocker_count": 8,
+  "warning_count": 12,
+  "info_count": 4,
+  "passed": false,
+  "findings": [
+    {
+      "file": "research\\04_methods\\scripts\\run_petfishframework_pilot.py",
+      "line": 13,
+      "type": "string",
+      "severity": "WARNING",
+      "content": "DEFAULT_FRAMEWORK_PATH = Path(\"C:/tmp/petfishframework-0.1.5\")"
+    },
+    {
+      "file": "research\\04_methods\\scripts\\run_petfishframework_pilot.py",
+      "line": 16,
+      "type": "string",
+      "severity": "WARNING",
+      "content": "DEFAULT_JSON_OUT = Path(\"research/05_analysis/petfishframework-v015-stage-b-v54-pilot.json\")"
+    },
+    {
+      "file": "research\\04_methods\\scripts\\run_petfishframework_pilot.py",
+      "line": 17,
+      "type": "string",
+      "severity": "WARNING",
+      "content": "DEFAULT_MD_OUT = Path(\"research/05_analysis/petfishframework-v015-stage-b-v54-pilot.md\")"
+    },
+    {
+      "file": "research\\04_methods\\scripts\\run_petfishframework_pilot.py",
+      "line": 52,
+      "type": "import",
+      "severity": "BLOCKER",
+      "content": "    from petfishframework.core.structured import parse_json"
+    },
+    {
+      "file": "research\\04_methods\\scripts\\run_petfishframework_pilot.py",
+      "line": 53,
+      "type": "import",
+      "severity": "BLOCKER",
+      "content": "    from petfishframework.core.types import Result, Task"
+    },
+    {
+      "file": "research\\04_methods\\scripts\\run_petfishframework_pilot.py",
+      "line": 54,
+      "type": "import",
+      "severity": "BLOCKER",
+      "content": "    from petfishframework.reliability.pass_at_k import pass_at_k_with_perturbations"
+    },
+    {
+      "file": "research\\04_methods\\scripts\\run_petfishframework_pilot.py",
+      "line": 57,
+      "type": "string",
+      "severity": "WARNING",
+      "content": "        version = importlib.metadata.version(\"petfishframework\")"
+    },
+    {
+      "file": "research\\04_methods\\scripts\\run_petfishframework_pilot.py",
+      "line": 214,
+      "type": "string",
+      "severity": "WARNING",
+      "content": "        \"# petfishframework 0.1.5 Pilot: Stage B v5.4 Offline Recheck\","
+    },
+    {
+      "file": "research\\04_methods\\scripts\\run_petfishframework_pilot.py",
+      "line": 258,
+      "type": "string",
+      "severity": "WARNING",
+      "content": "            \"This pilot supports using petfishframework as a thin reliability/audit wrapper for existing benchmark artifacts.\","
+    },
+    {
+      "file": "research\\04_methods\\scripts\\run_petfishframework_pilot.py",
+      "line": 295,
+      "type": "string",
+      "severity": "WARNING",
+      "content": "            \"ReplayEnvironment was not directly applicable because existing artifacts store prompt/output/tool_trace files, not petfishframework ModelResponse/ToolResult recordings.\","
+    },
+    {
+      "file": "research\\04_methods\\scripts\\run_petfishframework_pilot.py",
+      "line": 52,
+      "type": "ast_import",
+      "severity": "BLOCKER",
+      "content": "AST: from petfishframework.core.structured import ..."
+    },
+    {
+      "file": "research\\04_methods\\scripts\\run_petfishframework_pilot.py",
+      "line": 53,
+      "type": "ast_import",
+      "severity": "BLOCKER",
+      "content": "AST: from petfishframework.core.types import ..."
+    },
+    {
+      "file": "research\\04_methods\\scripts\\run_petfishframework_pilot.py",
+      "line": 54,
+      "type": "ast_import",
+      "severity": "BLOCKER",
+      "content": "AST: from petfishframework.reliability.pass_at_k import ..."
+    },
+    {
+      "file": "research\\04_methods\\scripts\\verify_zero_petfish_dep.py",
+      "line": 50,
+      "type": "comment",
+      "severity": "INFO",
+      "content": "# Patterns that would indicate PEtFiSh coupling"
+    },
+    {
+      "file": "research\\04_methods\\scripts\\verify_zero_petfish_dep.py",
+      "line": 52,
+      "type": "string",
+      "severity": "WARNING",
+      "content": "    re.compile(r\"^\\s*import\\s+petfishframework\", re.MULTILINE),"
+    },
+    {
+      "file": "research\\04_methods\\scripts\\verify_zero_petfish_dep.py",
+      "line": 53,
+      "type": "string",
+      "severity": "WARNING",
+      "content": "    re.compile(r\"^\\s*from\\s+petfishframework\", re.MULTILINE),"
+    },
+    {
+      "file": "research\\04_methods\\scripts\\verify_zero_petfish_dep.py",
+      "line": 58,
+      "type": "attribute",
+      "severity": "BLOCKER",
+      "content": "# Attribute access patterns (e.g., petfish.Agent, pf.Session)"
+    },
+    {
+      "file": "research\\04_methods\\scripts\\verify_zero_petfish_dep.py",
+      "line": 58,
+      "type": "comment",
+      "severity": "INFO",
+      "content": "# Attribute access patterns (e.g., petfish.Agent, pf.Session)"
+    },
+    {
+      "file": "research\\04_methods\\scripts\\verify_zero_petfish_dep.py",
+      "line": 63,
+      "type": "attribute",
+      "severity": "BLOCKER",
+      "content": "    # (e.g., pf.Agent, pf.Session) or known framework method names"
+    },
+    {
+      "file": "research\\04_methods\\scripts\\verify_zero_petfish_dep.py",
+      "line": 67,
+      "type": "comment",
+      "severity": "INFO",
+      "content": "# String literal patterns (config paths, error messages mentioning petfish)"
+    },
+    {
+      "file": "research\\04_methods\\scripts\\verify_zero_petfish_dep.py",
+      "line": 69,
+      "type": "string",
+      "severity": "WARNING",
+      "content": "    re.compile(r\"\"\"['\"](?:[^'\"]*?)petfishframework([^'\"]*?)['\"]\"\"\", re.IGNORECASE),"
+    },
+    {
+      "file": "research\\04_methods\\scripts\\verify_zero_petfish_dep.py",
+      "line": 73,
+      "type": "comment",
+      "severity": "INFO",
+      "content": "# Comments are OK to mention petfish (historical context); we still report them"
+    },
+    {
+      "file": "research\\04_methods\\scripts\\verify_zero_petfish_dep.py",
+      "line": 191,
+      "type": "string",
+      "severity": "WARNING",
+      "content": "                    if alias.name.startswith((\"petfishframework\", \"pf\")):"
+    },
+    {
+      "file": "research\\04_methods\\scripts\\verify_zero_petfish_dep.py",
+      "line": 203,
+      "type": "string",
+      "severity": "WARNING",
+      "content": "                    node.module.startswith(\"petfishframework\")"
+    }
+  ]
+}
