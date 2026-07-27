@@ -1,0 +1,842 @@
+{
+  "model_key": "qwen2.5-7b",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "family": "Qwen2.5",
+  "size": "7B",
+  "floor_expectation": "below_candidate",
+  "timestamp": "2026-07-27T10:32:48.774411+00:00",
+  "total_runs": 40,
+  "strict_passes": 0,
+  "pass_rate": 0.0,
+  "wilson_95_low": 0.0,
+  "wilson_95_high": 0.0876,
+  "conditions": {
+    "canonical": {
+      "passes": 0,
+      "total": 8,
+      "pass_rate": 0.0
+    },
+    "field_alias": {
+      "passes": 0,
+      "total": 8,
+      "pass_rate": 0.0
+    },
+    "evidence_order_shuffled": {
+      "passes": 0,
+      "total": 8,
+      "pass_rate": 0.0
+    },
+    "distractor_evidence": {
+      "passes": 0,
+      "total": 8,
+      "pass_rate": 0.0
+    },
+    "unknown_state_paraphrase": {
+      "passes": 0,
+      "total": 8,
+      "pass_rate": 0.0
+    }
+  },
+  "runs": [
+    {
+      "run_id": "qwen2.5-7b__canonical__r1",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "canonical",
+      "rep": 1,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"task_id\": \"stage_b_v53_pD_caniale\",, \"task_type\": \"stage_b_vD3_explicit_transition_delta_ablation\",, \"objective\": \"Apply one transition while while while \"preserve exact evidence bindings\" residual and \"retain residual\" the\" and \"retain retention\"att\" \"protocolprofile\": \"PD\" \"perturbationcondition\": \"canonical\" \"constraints\": [ [\"Use only the G fixture only\" \"use only the e \" \"e \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" ",
+      "elapsed_s": 36.85,
+      "usage": {
+        "prompt_tokens": 2083,
+        "completion_tokens": 1040,
+        "total_tokens": 3123,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2083
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__canonical__r2",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "canonical",
+      "rep": 2,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"task_id\": \"stage_b_v53_pD_caniale\",, \"task_type\": \"stage_b_vD3_explicit_transition_delta_ablDation\",,objective\": \"Apply one transition while while while while while while while while while while while while while \"preserve exact bindings for G the, and \"retain G four evidence arrays\", \"retain G four eGements remain\", \"retain G four eGements remain\" \"retain G four eGements remain\" \"retain G four eGements remain\" \"retain G four eGements remain\" \"retain G four eGements remain\" \"retain G four eGem",
+      "elapsed_s": 64.63,
+      "usage": {
+        "prompt_tokens": 2083,
+        "completion_tokens": 2048,
+        "total_tokens": 4131,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2083
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__canonical__r3",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "canonical",
+      "rep": 3,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"task_id\": \"stage_b_v53_pD_caniale\",, \"task_type\": \"stage_b_vD3_explicit_transition_delta_ablation\",, \"objective\": \"Apply one transition while while while \"preserve exact evidence bindings\" residual and \"retain residual\" the\" and \"retain retention\"attest\" exactly\" and \"satisf\" exactly\" and \"return\" exactly\" and \"return\" exactly\" and \"return\" exactly\" and \"return\" exactly\" and \"return\" \"success_conditions\": [\"validity\" \"res residual\" \"remain \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" ",
+      "elapsed_s": 59.2,
+      "usage": {
+        "prompt_tokens": 2083,
+        "completion_tokens": 2048,
+        "total_tokens": 4131,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2083
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__canonical__r4",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "canonical",
+      "rep": 4,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"task_id\": \"stage_b_v53_pD_caniale\",, \"task_type\": \"stage_b_vD3_explicit_transition_delta_ablDation\",,objective\": \"Apply one transition while while while while while while while while while while while while while \"preserve exact bindings for G the, and \"retain G four evidence arrays\", \"retain G four eGements remain\", \"retain G four eGements remain\" \"retain G four eGements remain\" \"retain G four eGements remain\" \"retain G four eGements remain\" \"retain G four eGements remain\" \"retain G four eGem",
+      "elapsed_s": 63.67,
+      "usage": {
+        "prompt_tokens": 2083,
+        "completion_tokens": 2048,
+        "total_tokens": 4131,
+        "prompt_tokens_details": {
+          "cached_tokens": 2080
+        },
+        "prompt_cache_hit_tokens": 2080,
+        "prompt_cache_miss_tokens": 3
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__canonical__r5",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "canonical",
+      "rep": 5,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"task_id\": \"stage_b_v53_pD_caniale\",, \"task_type\": \"stage_b_vD3_explicit_transition_delta_ablation\",, \"objective\": \"Apply one transition while while while\"D\"transition\"D\"preserve exactevidence bindings\"D\"res\"res\"D\"D\"D\"protocol_profile\": \"PD\"D \"perturbationcondition\": \"canonical\"D \"constraints\": [\"Use only the G fixture only.\"D\"Use the only only \" \"e only the e\"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D \"D",
+      "elapsed_s": 58.4,
+      "usage": {
+        "prompt_tokens": 2083,
+        "completion_tokens": 1789,
+        "total_tokens": 3872,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2083
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__canonical__r6",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "canonical",
+      "rep": 6,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"task_id\": \"stage_b_v53_pD_caniale\",, \"task_type\": \"stage_b_vD3_explicit_transition_delta_ablation\",, \"objective\": \"Apply one transition while while while \"preserve exact evidence bindings\" residual and \"retain residual\" the\" and \"retain retention\"att\" \"respect\" \"evidence\" \"protocolprofile\": \"P D\" \"perturbationcondition\": \"canonical\" \"constraints\": [ \"Use only only \"e \" \"copy every \" required \"required_evidence_bindings\" \"exactly\" \"execute every operation in \" \"required_transition_delta\" \"exact",
+      "elapsed_s": 62.41,
+      "usage": {
+        "prompt_tokens": 2083,
+        "completion_tokens": 2048,
+        "total_tokens": 4131,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2083
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__canonical__r7",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "canonical",
+      "rep": 7,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"task_id\": \"stage_b_v53_pD_caniale\",, \"task_type\": \"stage_b_vD3_explicit_transition_delta_ablation\",, \"objective\": \"Apply one transition while while while \"preserve exact evidence bindings\" residual and \"retain residual\" the\" and \"retain retention\"att\" \"respect\" \"evidence\" \"protocolprofile\": \"P D\" \"perturbationcondition\": \"canonical\" \"constraints\": [ \"Use only only \"e \"evidence\" \" \"e \"evidence_bindings\" \" \"execute every operation in \" required \" required \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" ",
+      "elapsed_s": 68.82,
+      "usage": {
+        "prompt_tokens": 2083,
+        "completion_tokens": 2048,
+        "total_tokens": 4131,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2083
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__canonical__r8",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "canonical",
+      "rep": 8,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"task_id\": \"stage_b_v53_pD_canical\",, \"task_type\": \"stage_b_vD3_explicit_transition_delta_ablation\",, \"objective\": \"Apply one transition while while while while \" while bindings \" residual and \" residual \" and the retention\" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" ",
+      "elapsed_s": 62.91,
+      "usage": {
+        "prompt_tokens": 2083,
+        "completion_tokens": 2048,
+        "total_tokens": 4131,
+        "prompt_tokens_details": {
+          "cached_tokens": 2080
+        },
+        "prompt_cache_hit_tokens": 2080,
+        "prompt_cache_miss_tokens": 3
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__field_alias__r1",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "field_alias",
+      "rep": 1,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\n  \"output_contract\": {\n    \"format\": \"json\",\n \"required_sections\": [\n \"e_inventory\",\n \"e_bindings\",\n \"transition\",\n \"transition_gate\",\n \"retention_att\"\n ],\n \"source_references\": \"P\",\n \"protocol_profile\": \"P D\",\n \"output\": {\n \" inventory\": {\n \"known_state\": [\n \" \"e\": \"ev-1\"\n \" \" \"a\": \"ev-4\"\n \" \" \"b\": \"ev-6\"\n \" \" \"c\": \"ev-8\"\n \" \" \"\": \"ev-\"\n \" \" \"e\": \"ev-9\"\n \" },\n \"unknown_state\": \" \" \"\n \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" ",
+      "elapsed_s": 37.16,
+      "usage": {
+        "prompt_tokens": 2083,
+        "completion_tokens": 1353,
+        "total_tokens": 3436,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2083
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__field_alias__r2",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "field_alias",
+      "rep": 2,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\n  \"output_contract\": {\n    \"format\": \"json\",\n \"required_sections\": [\n \"e_inventory\",\n \"e_bindings\",\n \"transition\",\n \"transition_gate\",\n \"retention_att\"\n ],\n \"source_references\": \"P\",\n \"protocol_profile\": \"P D\",\n \"output\": {\n \" \"inventory\": {\n \" \"known_state\": \" [ \"array [ { \" \"references\" } \" } \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" ",
+      "elapsed_s": 60.88,
+      "usage": {
+        "prompt_tokens": 2083,
+        "completion_tokens": 2048,
+        "total_tokens": 4131,
+        "prompt_tokens_details": {
+          "cached_tokens": 2080
+        },
+        "prompt_cache_hit_tokens": 2080,
+        "prompt_cache_miss_tokens": 3
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__field_alias__r3",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "field_alias",
+      "rep": 3,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\n  \"output_contract\": {\n    \"format\": \"json\",\n \"required_sections\": [\n \"e_inventory\",\n \"e_bindings\",\n \"transition\",\n \"transition_gate\",\n \"retention_att\"\n },\n \"source_references\": \"P\",\n \"protocol_profile\": \"P D\",\n \"required_sections\": [\n \"inventory\",\n \"e_bindings\"\n \"transition\"\n \"transition_gate\"\n \"retention_att\"\n },\n \"required_e_bindings\": [\n {\n \"slot_id\": \"cl_alpha\"\n \"source_references\": [\n \"ev-1\"\n },\n {\n \"slot_id\": \"cl_beta\"\n \"source_references\": [\n \"ev-6\"\n },\n {\n \"slot\": \"cl_gamma\"\n \"source_",
+      "elapsed_s": 17.02,
+      "usage": {
+        "prompt_tokens": 2083,
+        "completion_tokens": 542,
+        "total_tokens": 2625,
+        "prompt_tokens_details": {
+          "cached_tokens": 64
+        },
+        "prompt_cache_hit_tokens": 64,
+        "prompt_cache_miss_tokens": 2019
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__field_alias__r4",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "field_alias",
+      "rep": 4,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\n  \"output_contract\": {\n    \"format\": \"json\",\n \"required_sections\": [\n \"e_inventory\",\n \"e_bindings\",\n \"transition\",\n \"transition_gate\",\n \"retention_att\"\n ],\n \"source_references\": \"P\",\n \"protocol_profile\": \"P D\",\n \"output\": {\n \" inventory\": {\n \"known_state\": [\n \" \"e\": \"ev-1\"\n \" \" \"a\": \"ev-4\"\n \" \" \"b\": \"ev-6\"\n \" \" \"c\": \"ev-8\"\n \" \" \"\": \"ev-\"\n \" \" \"e\": \"ev-9\"\n \" },\n \"unknown_state\": \" \" \"\n \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" ",
+      "elapsed_s": 42.22,
+      "usage": {
+        "prompt_tokens": 2083,
+        "completion_tokens": 1353,
+        "total_tokens": 3436,
+        "prompt_tokens_details": {
+          "cached_tokens": 2080
+        },
+        "prompt_cache_hit_tokens": 2080,
+        "prompt_cache_miss_tokens": 3
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__field_alias__r5",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "field_alias",
+      "rep": 5,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\n  \"output_contract\": {\n    \"format\": \"json\",\n \"required_sections\": [\n \"e_inventory\",\n \"e_bindings\",\n \"transition\",\n \"transition_gate\",\n \"retention_att\"\n },\n \"source_references\": \"P\",\n \"protocol_profile\": \"P D\",\n \"required_sections\": [\n \"inventory\",\n \"e_bindings\"\n \"transition\"\n \"transition_gate\"\n \"retention_att\"\n },\n \"required_e_bindings\": [\n {\n \"slot_id\": \"cl_alpha\"\n \"source_references\": [\n \"ev-1\"\n },\n {\n \"slot_id\": \"cl_beta\"\n \"source_references\": [\n \"ev-6\"\n },\n {\n \"slot\": \"cl_gamma\"\n \"source_",
+      "elapsed_s": 15.05,
+      "usage": {
+        "prompt_tokens": 2083,
+        "completion_tokens": 449,
+        "total_tokens": 2532,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2083
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__field_alias__r6",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "field_alias",
+      "rep": 6,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\n  \"output_contract\": {\n    \"format\": \"json\",\n \"required_sections\": [\n \"e_inventory\",\n \"e_bindings\",\n \"transition\",\n \"transition_gate\",\n \"retention_att\"\n },\n \"source_references\": \"P\",\n \"protocol_profile\": \"P D\",\n \"required_sections\": [\n \"inventory\",\n \"e_bindings\"\n \"transition\"\n \"transition_gate\"\n \"retention_att\"\n },\n \"required_e_bindings\": [\n {\n \"slot_id\": \"cl_alpha\"\n \"source_references\": [\n \"ev-1\"\n },\n {\n \"slot_id\": \"cl_beta\"\n \"source_references\": [\n \"ev-6\"\n },\n {\n \"slot\": \"cl_gamma\"\n \"source_",
+      "elapsed_s": 59.45,
+      "usage": {
+        "prompt_tokens": 2083,
+        "completion_tokens": 2048,
+        "total_tokens": 4131,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2083
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__field_alias__r7",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "field_alias",
+      "rep": 7,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\n  \"output_contract\": {\n    \"format\": \"json\",\n \"required_sections\": [\n \"e_inventory\",\n \"e_bindings\",\n \"transition\",\n \"transition_gate\",\n \"retention_att\"\n ],\n \"source_references\": \"P\",\n \"protocol_profile\": \"P D\",\n \"output\": {\n \" \"inventory\": {\n \" \"known_state\": [\n \" \"references\": []\n \" \"slot_id\": \" \"clase_alpha\"\n \" \"references\": [\n \" \"ev- \" \"\n \" \"\n \" \"\n \" \"\n \" \"\n \" \"\n \" \"\n\n \" \"slot_id\": \" \"clase_beta\"\n \" \"references\": [\n \" \"ev-6\"\n \" \"\n \" \"\n \" \"\n \" \"\n \" \"\n \" \"\n \" \"slot_id\": \" \"clase_gamma\"\n \" \"re",
+      "elapsed_s": 69.2,
+      "usage": {
+        "prompt_tokens": 2083,
+        "completion_tokens": 2048,
+        "total_tokens": 4131,
+        "prompt_tokens_details": {
+          "cached_tokens": 2080
+        },
+        "prompt_cache_hit_tokens": 2080,
+        "prompt_cache_miss_tokens": 3
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__field_alias__r8",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "field_alias",
+      "rep": 8,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\n  \"output_contract\": {\n    \"format\": \"json\",\n \"required_sections\": [\n \"e_inventory\",\n \"e_bindings\",\n \"transition\",\n \"transition_gate\",\n \"retention_att\"\n },\n \"source_references\": \"P\",\n \"protocol_profile\": \"P D\",\n \"required_sections\": [\n \"inventory\",\n \"e_bindings\"\n \"transition\"\n \"transition_gate\"\n \"retention_att\"\n },\n \"required_e_bindings\": [\n {\n \"slot_id\": \"cl_alpha\"\n \"source_references\": [\n \"ev-1\"\n },\n {\n \"slot_id\": \"cl_beta\"\n \"source_references\": [\n \"ev-6\"\n },\n {\n \"slot\": \"cl_gamma\"\n \"source_",
+      "elapsed_s": 66.7,
+      "usage": {
+        "prompt_tokens": 2083,
+        "completion_tokens": 2048,
+        "total_tokens": 4131,
+        "prompt_tokens_details": {
+          "cached_tokens": 2080
+        },
+        "prompt_cache_hit_tokens": 2080,
+        "prompt_cache_miss_tokens": 3
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__evidence_order_shuffled__r1",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "evidence_order_shuffled",
+      "rep": 1,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": \"json\", \"required_sections\": [\"[\"inventory\",, \"bindings\",, \"transition_delta\", \" \"transition_gate\" \" \"retention_attest\" \", \"required_e_bindings\": \" \"slot_id\": \"alpha\", \"e_ids\": [ \"ev- \"9\" \" \" \"slot_id\": \"beta\" \"e_ids\": [ \"ev- \"6\" \" \" \"slotid\": \"gamma\" \"e ids\": [ \"ev- \" \" \"ev- \"5 \" \" \" \"slot id\": \"gamma\" \"e ids\": [ \"ev- \"5\" \" \" \"slot id\": \"gamma\" \" e ids\": [ \"ev- \"9\" \" \" \"required_transition_delta\": \" \"from\": \"unknown\" \" \"to\": \"known\" \" \"e_ids\": [ \"ev- \"9\" \" \" \"requiredtransit",
+      "elapsed_s": 47.35,
+      "usage": {
+        "prompt_tokens": 2114,
+        "completion_tokens": 1366,
+        "total_tokens": 3480,
+        "prompt_tokens_details": {
+          "cached_tokens": 64
+        },
+        "prompt_cache_hit_tokens": 64,
+        "prompt_cache_miss_tokens": 2050
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__evidence_order_shuffled__r2",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "evidence_order_shuffled",
+      "rep": 2,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": \"stage_b-v53-p_p \" \"order-shuffled\" \" \", \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \"",
+      "elapsed_s": 41.11,
+      "usage": {
+        "prompt_tokens": 2114,
+        "completion_tokens": 1366,
+        "total_tokens": 3480,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2114
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__evidence_order_shuffled__r3",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "evidence_order_shuffled",
+      "rep": 3,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": \"json\", \"required_sections\": [\"[\"inventory\",, \"bindings\",, \"transition_delta\", \" \"transition_gate\" \" \"retention_attest\" \", \"required_e_bindings\": \" \"slot_id\": \"alpha\", \"e_ids\": [ \"ev- \"9\" \" \" \"slot_id\": \"beta\" \"e_ids\": [ \"ev- \"6\" \" \" \"slotid\": \"gamma\" \"e ids\": [ \"ev- \" \" \"ev- \"5 \" \" \" \"slot id\": \"gamma\" \"e ids\": [ \"ev- \"5\" \" \" \"slot id\": \"gamma\" \" e ids\": [ \"ev- \"9\" \" \" \"slot id\": \"delta\" \" e ids\": [ \"ev- \"5\" \" \" \"required_transition_delta\": \" \"from\": \"unknown\" \" \"to\": \" \" \" ",
+      "elapsed_s": 66.99,
+      "usage": {
+        "prompt_tokens": 2114,
+        "completion_tokens": 2048,
+        "total_tokens": 4162,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2114
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__evidence_order_shuffled__r4",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "evidence_order_shuffled",
+      "rep": 4,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": \"json\", \"required_sections\": [\"[\"inventory\",, \"bindings\",, \"transition_delta\", \" \"transition_gate\" \" \"retention_attest\" \", \"required_e_bindings\": \" \"slot_id\": \"alpha\", \"e_ids\": [ \"ev- \"9\" \" \" \"slot_id\": \"beta\" \"e_ids\": [ \"ev- \"6\" \" \" \"slotid\": \"gamma\" \"e ids\": [ \"ev- \" \" \"ev- \"5 \" \" \" \"slot id\": \"gamma\" \"e ids\": [ \"ev- \"5\" \" \" \"slot id\": \"gamma\" \" e ids\": [ \"ev- \"gamma \" \" \" \"slot id\": \"gamma\" \" e ids\": [ \"ev- \"gamma\" \" \"required_transition_delta\": \" \"from\": \"unknown\" \" \"to\":",
+      "elapsed_s": 66.03,
+      "usage": {
+        "prompt_tokens": 2114,
+        "completion_tokens": 2048,
+        "total_tokens": 4162,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2114
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__evidence_order_shuffled__r5",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "evidence_order_shuffled",
+      "rep": 5,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": \"json\", \"required_sections\": [\"[\"inventory\",, \"bindings\",, \"transition\", \" \"gate\", \" \"retention_att\" \", \"required_e_bindings\": \" \"slot\": \"alpha\", \"e_ids\": [ \"ev- \"9\" \" \" \"slot\": \"beta\" \" \"e_ids\": [ \"ev- \"6\" \" \"slot\": \"gamma\" \" \"e_ids\": [ \"ev- \" \"9\" \"ev- \" \" \" \"slot\": \"delta\" \" \"e_ids\": [ \"ev- \"9\" \" \" \"transition\": \" \"id\": \" \"id\" \" \"e id\": \"network_api_approval\" \" \" \"from\": \"unknown\" \" \" \"to\": \" \" \" \" \"e ids\": [ \"ev- \"9\" \" \" \"gate\": \" \" \" \"status\": \" \" \" \" \" \" \" \" \" \" \" \" \" \" ",
+      "elapsed_s": 43.96,
+      "usage": {
+        "prompt_tokens": 2114,
+        "completion_tokens": 1366,
+        "total_tokens": 3480,
+        "prompt_tokens_details": {
+          "cached_tokens": 2112
+        },
+        "prompt_cache_hit_tokens": 2112,
+        "prompt_cache_miss_tokens": 2
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__evidence_order_shuffled__r6",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "evidence_order_shuffled",
+      "rep": 6,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": \"json\", \"required_sections\": [\"[\"inventory\",, \"bindings\",, \"transition\", \" \"gate\", \" \"retention_att\" \", \"required_e_bindings\": \" \"slot\": \"alpha\", \"e_ids\": [ \"ev- \"9\" \" \" \"slot\": \"beta\" \" \"e_ids\": [ \"ev- \"6\" \" \"slot\": \"gamma\" \" \"e_ids\": [ \"ev- \" \"9\" \"ev- \" \" \" \"slot\": \"delta\" \" \"e_ids\": [ \"ev- \"9\" \" \" \"transition\": \" \"id\": \" \"id\" \" \"e id\": \"network_api_approval\" \" \" \"from\": \"unknown\" \" \" \"to\": \" \" \" \" \"e ids\": [ \"ev- \"9\" \" \" \"gate\": \" \" \" \"status\": \" \" \" \" \" \" \" \" \" \" \" \" \" \" ",
+      "elapsed_s": 39.14,
+      "usage": {
+        "prompt_tokens": 2114,
+        "completion_tokens": 1366,
+        "total_tokens": 3480,
+        "prompt_tokens_details": {
+          "cached_tokens": 2112
+        },
+        "prompt_cache_hit_tokens": 2112,
+        "prompt_cache_miss_tokens": 2
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__evidence_order_shuffled__r7",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "evidence_order_shuffled",
+      "rep": 7,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": \"json\", \"required_sections\": [\"[\"inventory\",, \"bindings\",, \"transition\", \" \"gate\", \" \"retention_att\" \", \"required_e_bindings\": \" \"slot\": \"alpha\", \"e_ids\": [ \"ev- \"9\" \" \" \"slot\": \"beta\" \" \"e_ids\": [ \"ev- \"6\" \" \"slot\": \"gamma\" \" \"e_ids\": [ \"ev- \" \"9\" \"ev- \" \" \" \"slot\": \"delta\" \" \"e_ids\": [ \"ev- \"9\" \" \" \"transition\": \" \"id\": \" \"id\" \" \"e id\": \"network_api_approval\" \" \" \"from\": \"unknown\" \" \" \"to\": \" \" \" \" \"e ids\": [ \"ev- \"9\" \" \" \"gate\": \" \" \" \"status\": \" \" \" \" \" \" \" \" \" \" \" \" \" \" ",
+      "elapsed_s": 48.39,
+      "usage": {
+        "prompt_tokens": 2114,
+        "completion_tokens": 1366,
+        "total_tokens": 3480,
+        "prompt_tokens_details": {
+          "cached_tokens": 2112
+        },
+        "prompt_cache_hit_tokens": 2112,
+        "prompt_cache_miss_tokens": 2
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__evidence_order_shuffled__r8",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "evidence_order_shuffled",
+      "rep": 8,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": \"json\", \"required_sections\": [\"[\"inventory\",, \"bindings\",, \"transition_delta\", \" \"transition_gate\" \" \"retention_attest\" \", \"required_e_bindings\": \" \"slot_id\": \"alpha\", \"e_ids\": [ \"ev- \"9\" \" \" \"slot_id\": \"beta\" \"e_ids\": [ \"ev- \"6\" \" \" \"slotid\": \"gamma\"e_ids\": [ \"ev- \" \" \" \"slot id\": \"gamma\" \"e ids\": [ \"ev- \" \" \" \"slot id\": \"gamma\" \"e ids\": [ \"ev- \" \" \" \" \"slot id\": \"gamma\" \"e ids\": [ \"ev- \" \" \" \"required_transition_delta\": \" \"from\": \"unknown\" \"to\": \"known \" \"e ids\": [ \"ev- \"9\"",
+      "elapsed_s": 69.9,
+      "usage": {
+        "prompt_tokens": 2114,
+        "completion_tokens": 2048,
+        "total_tokens": 4162,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2114
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__distractor_evidence__r1",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "distractor_evidence",
+      "rep": 1,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": {\"protocol_profile\": \"P\",, \"required_sections\": [\"inventory\",, \"bindings\",, \"transition_record\":, \"gate\": \"retention_att\", }, \"required_e_bindings\": [{\"slot_id\": \"alpha\",, \"e_ids\": [\"ev-9\"}, \"transition_record\": {\"from\": \"unknown\",, \"to\": \"known\",, \"e ids\": \"network_api_approval\"}, \"transition_gate\": {\"status\": \" \"p\"\",\" \"permitted\": \"provider_execution\",, \"squisite\": \"network_api_approval\"}, \"retention_att\": {\"status\": \"preserved\", \"immutable_fields\": [\"e_bindings[].slot_id\",",
+      "elapsed_s": 62.82,
+      "usage": {
+        "prompt_tokens": 2215,
+        "completion_tokens": 2048,
+        "total_tokens": 4263,
+        "prompt_tokens_details": {
+          "cached_tokens": 64
+        },
+        "prompt_cache_hit_tokens": 64,
+        "prompt_cache_miss_tokens": 2151
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__distractor_evidence__r2",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "distractor_evidence",
+      "rep": 2,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": {\"protocol_profile\": \"P\",, \"required_sections\": [\"inventory\",, \"bindings\",, \"transition_record\":, \"gate\": \"retention_att\", }, \"required_e_bindings\": [{\"slot_id\": \"alpha\",, \"e_ids\": [\"ev-9\"}, \"transition_record\": {\"from\": \"unknown\",, \"to\": \"known\",, \"e ids\": \"network_api_approval\"}, \"transition_gate\": {\"status\": \" \"p\"\",\" \"permitted\": \"provider_execution\",, \"squisite\": \"network_api_approval\"}, \"retention_att\": {\"status\": \"preserved_after_\",, \"immutable_fields\": [\"e_bindings[].s",
+      "elapsed_s": 64.73,
+      "usage": {
+        "prompt_tokens": 2215,
+        "completion_tokens": 2048,
+        "total_tokens": 4263,
+        "prompt_tokens_details": {
+          "cached_tokens": 64
+        },
+        "prompt_cache_hit_tokens": 64,
+        "prompt_cache_miss_tokens": 2151
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__distractor_evidence__r3",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "distractor_evidence",
+      "rep": 3,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": {\"protocol_profile\": \"P\",, \"required_sections\": [\"inventory\",, \"bindings\",, \"transition_record\":, \"gate\": \"transition_gate\",, \"retention_att\": \"retention_att\"}, \"required_e_bindings\": [{\"slot_id\": \"alpha\",, \"e_ids\": [\"ev-19\"},, \"transition_record\": {\"id\": \"network_api_approval\",, \"scope\": \"fixture\",, \"id_id\": \"network_api_approval\",, \"from\": \"unknown\", \"to\": \"known\", \"e_ids\": [\"ev- \"9\"}. \"required_transition_gate\": {\"status\": \" \"p\"\",\" \"permitted\": \"provider_execution\", \"squis",
+      "elapsed_s": 67.28,
+      "usage": {
+        "prompt_tokens": 2215,
+        "completion_tokens": 2048,
+        "total_tokens": 4263,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2215
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__distractor_evidence__r4",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "distractor_evidence",
+      "rep": 4,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": {\"protocol_profile\": \"P\",, \"required_sections\": [\"inventory\",, \"bindings\",, \"transition_record\":, \"gate\": \"retention_att\", }, \"required_e_bindings\": [{\"slot_id\": \"alpha\",, \"e_ids\": [\"ev-9\"}, \"transition_record\": {\"from\": \"unknown\",, \"to\": \"known\",, \"e ids\": \"network_api_approval\"}, \"transition_gate\": {\"status\": \" \"p\"\",\" \"permitted\": \"provider_execution\",, \"squisite\": \"network_api_approval\"}, \"retention_att\": {\"status\": \"preserved\", \"immutable_fields\": [\"e_bindings[].slot_id\",",
+      "elapsed_s": 8.27,
+      "usage": {
+        "prompt_tokens": 2215,
+        "completion_tokens": 258,
+        "total_tokens": 2473,
+        "prompt_tokens_details": {
+          "cached_tokens": 2208
+        },
+        "prompt_cache_hit_tokens": 2208,
+        "prompt_cache_miss_tokens": 7
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__distractor_evidence__r5",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "distractor_evidence",
+      "rep": 5,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": {\"protocol_profile\": \"P\",, \"required_sections\": [\"inventory\",, \"bindings\",, \"transition_record\":, \"gate\": \"retention_att\", }, \"required_e_bindings\": [{\"slot_id\": \"alpha\",, \"e_ids\": [\"ev-9\"}, \"transition_record\": {\"from\": \"unknown\",, \"to\": \"known\",, \"e ids\": \"network_api_approval\"}, \"transition_gate\": {\"status\": \" \"p\"\",\" \"permitted\": \"provider_execution\",, \"squisite\": \"network_api_approval\"}, \"retention_att\": {\"status\": \"preserved\",, \"immutable_fields\": [\"e_bindings[].slot_id\"",
+      "elapsed_s": 65.68,
+      "usage": {
+        "prompt_tokens": 2215,
+        "completion_tokens": 2048,
+        "total_tokens": 4263,
+        "prompt_tokens_details": {
+          "cached_tokens": 2208
+        },
+        "prompt_cache_hit_tokens": 2208,
+        "prompt_cache_miss_tokens": 7
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__distractor_evidence__r6",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "distractor_evidence",
+      "rep": 6,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": {\"protocol_profile\": \"P\",, \"required_sections\": [\"inventory\",, \"bindings\",, \"transition_record\":, \"gate\": \"retention_att\", }, \"required_e_bindings\": [{\"slot\": \"alpha\",, \"e_ids\": [\"ev-19\" }, \"transition_record\": \"{ \"e_id\": \"network_api_approval\" , \"from\": \"unknown\" , \"to\": \"known\" , \"e_ids\": [\"ev- \"9\" } }, \"transition_gate\": \"{ \"status\": \" \" , \"permitted\": \"provider_execution\" , \"satisfied_prerequisite\": \"network_api_approval\" , \"next\": \"stage_b_v53_explicit_transition_delta\" ",
+      "elapsed_s": 20.36,
+      "usage": {
+        "prompt_tokens": 2215,
+        "completion_tokens": 588,
+        "total_tokens": 2803,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2215
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__distractor_evidence__r7",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "distractor_evidence",
+      "rep": 7,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": {\"protocol_profile\": \"P\",, \"required_sections\": [\"inventory\",, \"bindings\",, \"transition_record\":, \"gate\": \"transition_gate\",, \"retention_att\": \"retention_att\"}, \"required_e_bindings\": [{\"slot_id\": \"alpha\",, \"e_ids\": [\"ev-19\"},, \"transition_record\": {\"id\": \"network_api_approval\",, \"scope\": \"fixture\",, \"id_id\": \"network_api_approval\",, \"from\": \"unknown\", \"to\": \"known\", \"e_ids\": [\"ev- \"9\"}. \"required_transition_gate\": {\"status\": \" \"p\"\",\" \"permitted\": \"provider_execution\",, \"squi",
+      "elapsed_s": 8.84,
+      "usage": {
+        "prompt_tokens": 2215,
+        "completion_tokens": 346,
+        "total_tokens": 2561,
+        "prompt_tokens_details": {
+          "cached_tokens": 2208
+        },
+        "prompt_cache_hit_tokens": 2208,
+        "prompt_cache_miss_tokens": 7
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__distractor_evidence__r8",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "distractor_evidence",
+      "rep": 8,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": {\"protocol_profile\": \"P\",, \"required_sections\": [\"inventory\",, \"bindings\",, \"transition_record\":, \"gate\": \"retention_att\", }, \"required_e_bindings\": [{\"slot_id\": \"alpha\",, \"e_ids\": [\"ev-9\"}, \"transition_record\": {\"from\": \"unknown\",, \"to\": \"known\",, \"e ids\": \"network_api_approval\"}, \"transition_gate\": {\"status\": \" \"p\"\",\" \"permitted\": \"provider_execution\",, \"squisite\": \"network_api_approval\"}, \"retention_att\": {\"status\": \"preserved\", \"immutable_fields\": [\"e_bindings[].slot_id\",",
+      "elapsed_s": 9.14,
+      "usage": {
+        "prompt_tokens": 2215,
+        "completion_tokens": 283,
+        "total_tokens": 2498,
+        "prompt_tokens_details": {
+          "cached_tokens": 2208
+        },
+        "prompt_cache_hit_tokens": 2208,
+        "prompt_cache_miss_tokens": 7
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__unknown_state_paraphrase__r1",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "unknown_state_paraphrase",
+      "rep": 1,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": \"stage_b-v53-pp-unknown-state-parphrase\",\",protocol_profile\": \"P\",\",\"evidence_ids\": [\"ev-9\",D\"required_transition_delta\": {\"from_unknown_state\": [\"use_external_model_api\",D\"from_forbidden_inferences\": \"do_not_external_model_api\"D \"to_known_state\": {\"status\": \" \"D \"e_id\": \"use_external_model_api\"D \"e\": \" \"D \"eids\": [\"ev-9\"D \"preserve_unknownstate\": \"branch_currentlychecked\"D \"preservecontinuous_integration_result\": \"continuous_integrationresult\"D \"preserveforbiddeninferences\":",
+      "elapsed_s": 10.48,
+      "usage": {
+        "prompt_tokens": 2149,
+        "completion_tokens": 413,
+        "total_tokens": 2562,
+        "prompt_tokens_details": {
+          "cached_tokens": 64
+        },
+        "prompt_cache_hit_tokens": 64,
+        "prompt_cache_miss_tokens": 2085
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__unknown_state_paraphrase__r2",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "unknown_state_paraphrase",
+      "rep": 2,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": \"stage_b-v53-pp-unknown-state-parphrase\",\",protocol_profile\": \"P\",\",\"evidence_ids\": [\"ev-9\",D\"required_transition_delta\": {\"from_unknown_state\": [\"use_external_model_api\",D\"from_forbidden_inferences\": \"do_not_external_model_api\"D \"to_known_state\": {\"status\": \" \"D \"e_id\": \"use_external_model_api\"D \"e\": \" \"D \"eids\": [\"ev-9\"D \"preserve_unknownstate\": \"branch_currentlychecked\"D \"preservecontinuous_integration_result\": \"continuous_integrationresult\"D \"preserveforbiddeninferences\":",
+      "elapsed_s": 15.6,
+      "usage": {
+        "prompt_tokens": 2149,
+        "completion_tokens": 530,
+        "total_tokens": 2679,
+        "prompt_tokens_details": {
+          "cached_tokens": 64
+        },
+        "prompt_cache_hit_tokens": 64,
+        "prompt_cache_miss_tokens": 2085
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__unknown_state_paraphrase__r3",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "unknown_state_paraphrase",
+      "rep": 3,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": \"stage_b-v53-pp-unknown-state-parphrase\",\",protocol_profile\": \"P\",\",\"evidence_ids\": [\"ev-9\",D\"required_transition_delta\": {\"from_unknown_state\": [\"use_external_model_api\",D\"from_forbidden_inferences\": \"do_not_external_model_api\"D \"to_known_state\": {\"status\": \" \"D \"e_id\": \"use_external_model_api\"D \"e\": \" \"D \"eids\": [\"ev-9\"D \"preserve_unknownstate\": \"branch_currentlychecked\"D \"preservecontinuous_integration_result\": \"continuous_integrationresult\"D \"preserveforbiddeninferences\":",
+      "elapsed_s": 16.13,
+      "usage": {
+        "prompt_tokens": 2149,
+        "completion_tokens": 521,
+        "total_tokens": 2670,
+        "prompt_tokens_details": {
+          "cached_tokens": 2144
+        },
+        "prompt_cache_hit_tokens": 2144,
+        "prompt_cache_miss_tokens": 5
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__unknown_state_paraphrase__r4",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "unknown_state_paraphrase",
+      "rep": 4,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": \"stage_b-v53-pp-unknown-state-parphrase\",\",protocol_profile\": \"P\",\",\"evidence_ids\": [\"ev-9\",D\"required_transition_delta\": {\"from_unknown_state\": [\"use_external_model_api\",D\"from_forbidden_inferences\": \"do_not_external_model_api\"D \"to_known_state\": {\"status\": \" \"D \"e_id\": \"use_external_model_api\"D \"e\": \" \"D \"eids\": [\"ev-9\"D \"preserve_unknownstate\": \"branch_currentlychecked\"D \"preserveforbiddeninin \"not_guessbranchcurrentl ychecked\"D \"notguesscontinuous_integrationresult\"D \"not",
+      "elapsed_s": 13.44,
+      "usage": {
+        "prompt_tokens": 2149,
+        "completion_tokens": 336,
+        "total_tokens": 2485,
+        "prompt_tokens_details": {
+          "cached_tokens": 2144
+        },
+        "prompt_cache_hit_tokens": 2144,
+        "prompt_cache_miss_tokens": 5
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__unknown_state_paraphrase__r5",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "unknown_state_paraphrase",
+      "rep": 5,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": \"stage_b-v53-pp-unknown-state-parphrase\",\",protocol_profile\": \"P\",\",\"evidence_ids\": [\"ev-9\",D\"required_transition_delta\": {\"from_unknown_state\": [\"use_external_model_api\",D\"from_forbidden_inferences\": \"do_not_external_model_api\"D \"to_known_state\": {\"status\": \" \"D \"e_id\": \"use_external_model_api\"D \"e\": \" \"D \"eids\": [\"ev-9\"D \"preserve_unknownstate\": \"branch_currentlychecked\"D \"preservecontinuous_integration_result\": \"continuous_integrationresult\"D \"preserveforbiddeninferences\":",
+      "elapsed_s": 60.32,
+      "usage": {
+        "prompt_tokens": 2149,
+        "completion_tokens": 2048,
+        "total_tokens": 4197,
+        "prompt_tokens_details": {
+          "cached_tokens": 64
+        },
+        "prompt_cache_hit_tokens": 64,
+        "prompt_cache_miss_tokens": 2085
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__unknown_state_paraphrase__r6",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "unknown_state_paraphrase",
+      "rep": 6,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": \"stage_b-v53-pp-unknown-state-parphrase\",\",protocol_profile\": \"P\",\",\"evidence_ids\": [\"ev-9\",D\"required_transition_delta\": {\"from_unknown_state\": [\"use_external_model_api\",D\"from_forbidden_inferences\": \"do_not_external_model_api\"D \"to_known_state\": {\"status\": \" \"D \"e_id\": \"use_external_model_api\"D \"e\": \" \"D \"eids\": [\"ev-9\"D \"preserve_unknownstate\": \"branch_currentlychecked\"D \"preservecontinuous_integration_result\": \"continuous_integrationresult\"D \"preserveforbiddeninferences\":",
+      "elapsed_s": 64.56,
+      "usage": {
+        "prompt_tokens": 2149,
+        "completion_tokens": 2048,
+        "total_tokens": 4197,
+        "prompt_tokens_details": {
+          "cached_tokens": 2144
+        },
+        "prompt_cache_hit_tokens": 2144,
+        "prompt_cache_miss_tokens": 5
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__unknown_state_paraphrase__r7",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "unknown_state_paraphrase",
+      "rep": 7,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": \"stage_b-v53-pp-unknown-state-parphrase\",\",protocol_profile\": \"P\",\",\"evidence_ids\": [\"ev-9\",D\"required_transition_delta\": {\"from_unknown_state\": [\"use_external_model_api\",D\"from_forbidden_inferences\": \"do_not_external_model_api\"D \"to_known_state\": {\"status\": \" \"D \"e_id\": \"use_external_model_api\"D \"e\": \" \"D \"eids\": [\"ev-9\"D \"preserve_unknownstate\": \"branch_currentlychecked\"D \"preservecontinuous_integration_result\": \"continuous_integrationresult\"D \"preserveforbiddeninferences\":",
+      "elapsed_s": 7.46,
+      "usage": {
+        "prompt_tokens": 2149,
+        "completion_tokens": 473,
+        "total_tokens": 2622,
+        "prompt_tokens_details": {
+          "cached_tokens": 2144
+        },
+        "prompt_cache_hit_tokens": 2144,
+        "prompt_cache_miss_tokens": 5
+      }
+    },
+    {
+      "run_id": "qwen2.5-7b__unknown_state_paraphrase__r8",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "condition": "unknown_state_paraphrase",
+      "rep": 8,
+      "strict_pass": false,
+      "parse_error": true,
+      "raw_output": "{\"output_contract\": \"stage_b-v53-pp-unknown-state-parphrase\",\",protocol_profile\": \"P\",\",\"evidence_ids\": [\"ev-9\",D\"required_transition_delta\": {\"from_unknown_state\": [\"use_external_model_api\",D\"from_forbidden_inferences\": \"do_not_external_model_api\"D \"to_known_state\": {\"status\": \" \"D \"e_id\": \" \"D \"e ids\": [\"ev-9\"D \"e bindings\": {\"status\": \" \"D \"immutable_fields\": [\"e bindings[].slot_id\",D \"e bindings[].e ids\"D \"inventory.unknown_state\": [\"branch_currentlychecked\"D \"inventory_continuous_integratio",
+      "elapsed_s": 15.75,
+      "usage": {
+        "prompt_tokens": 2149,
+        "completion_tokens": 939,
+        "total_tokens": 3088,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2149
+      }
+    }
+  ]
+}

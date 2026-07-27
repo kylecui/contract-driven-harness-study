@@ -1,0 +1,1042 @@
+{
+  "model_key": "glm-4-9b",
+  "model_id": "THUDM/GLM-4-9B-0414",
+  "family": "GLM",
+  "size": "9B",
+  "floor_expectation": "above",
+  "timestamp": "2026-07-27T09:19:26.418501+00:00",
+  "total_runs": 40,
+  "strict_passes": 30,
+  "pass_rate": 0.75,
+  "wilson_95_low": 0.5981,
+  "wilson_95_high": 0.8581,
+  "conditions": {
+    "canonical": {
+      "passes": 8,
+      "total": 8,
+      "pass_rate": 1.0
+    },
+    "field_alias": {
+      "passes": 6,
+      "total": 8,
+      "pass_rate": 0.75
+    },
+    "evidence_order_shuffled": {
+      "passes": 8,
+      "total": 8,
+      "pass_rate": 1.0
+    },
+    "distractor_evidence": {
+      "passes": 8,
+      "total": 8,
+      "pass_rate": 1.0
+    },
+    "unknown_state_paraphrase": {
+      "passes": 0,
+      "total": 8,
+      "pass_rate": 0.0
+    }
+  },
+  "runs": [
+    {
+      "run_id": "glm-4-9b__canonical__r1",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "canonical",
+      "rep": 1,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 16.56,
+      "usage": {
+        "prompt_tokens": 2030,
+        "completion_tokens": 444,
+        "total_tokens": 2474
+      },
+      "response_id": "019fa2d930d8e4877b53498638c70e7c"
+    },
+    {
+      "run_id": "glm-4-9b__canonical__r2",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "canonical",
+      "rep": 2,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 13.62,
+      "usage": {
+        "prompt_tokens": 2030,
+        "completion_tokens": 444,
+        "total_tokens": 2474
+      },
+      "response_id": "019fa2d9748f2a40e1ddf9c34e4ffb4b"
+    },
+    {
+      "run_id": "glm-4-9b__canonical__r3",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "canonical",
+      "rep": 3,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 9.0,
+      "usage": {
+        "prompt_tokens": 2030,
+        "completion_tokens": 444,
+        "total_tokens": 2474
+      },
+      "response_id": "019fa2d9aa81e39f4e4069df47a309de"
+    },
+    {
+      "run_id": "glm-4-9b__canonical__r4",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "canonical",
+      "rep": 4,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 8.6,
+      "usage": {
+        "prompt_tokens": 2030,
+        "completion_tokens": 444,
+        "total_tokens": 2474
+      },
+      "response_id": "019fa2d9cfb3c26732624bf426ae76e0"
+    },
+    {
+      "run_id": "glm-4-9b__canonical__r5",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "canonical",
+      "rep": 5,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 17.34,
+      "usage": {
+        "prompt_tokens": 2030,
+        "completion_tokens": 444,
+        "total_tokens": 2474
+      },
+      "response_id": "019fa2d9f34294e1dcc7c7be35ebc3a7"
+    },
+    {
+      "run_id": "glm-4-9b__canonical__r6",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "canonical",
+      "rep": 6,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 10.84,
+      "usage": {
+        "prompt_tokens": 2030,
+        "completion_tokens": 444,
+        "total_tokens": 2474
+      },
+      "response_id": "019fa2da38de73d26626331f5d088732"
+    },
+    {
+      "run_id": "glm-4-9b__canonical__r7",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "canonical",
+      "rep": 7,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 8.46,
+      "usage": {
+        "prompt_tokens": 2030,
+        "completion_tokens": 444,
+        "total_tokens": 2474
+      },
+      "response_id": "019fa2da6514556ff77146eed88ef293"
+    },
+    {
+      "run_id": "glm-4-9b__canonical__r8",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "canonical",
+      "rep": 8,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 6.54,
+      "usage": {
+        "prompt_tokens": 2030,
+        "completion_tokens": 444,
+        "total_tokens": 2474
+      },
+      "response_id": "019fa2da882f99ea8b20624ec9fefec1"
+    },
+    {
+      "run_id": "glm-4-9b__field_alias__r1",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "field_alias",
+      "rep": 1,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 10.27,
+      "usage": {
+        "prompt_tokens": 2030,
+        "completion_tokens": 436,
+        "total_tokens": 2466
+      },
+      "response_id": "019fa2daa3b6796389b173fa798d6fb1"
+    },
+    {
+      "run_id": "glm-4-9b__field_alias__r2",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "field_alias",
+      "rep": 2,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 7.19,
+      "usage": {
+        "prompt_tokens": 2030,
+        "completion_tokens": 436,
+        "total_tokens": 2466
+      },
+      "response_id": "019fa2dacdbe6fcf96efbdb365dbef06"
+    },
+    {
+      "run_id": "glm-4-9b__field_alias__r3",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "field_alias",
+      "rep": 3,
+      "strict_pass": false,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 0.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "task_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "elapsed_s": 9.04,
+      "usage": {
+        "prompt_tokens": 2030,
+        "completion_tokens": 429,
+        "total_tokens": 2459
+      },
+      "response_id": "019fa2daebcdad2c8fe37c7541ff10fc"
+    },
+    {
+      "run_id": "glm-4-9b__field_alias__r4",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "field_alias",
+      "rep": 4,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 6.26,
+      "usage": {
+        "prompt_tokens": 2030,
+        "completion_tokens": 436,
+        "total_tokens": 2466
+      },
+      "response_id": "019fa2db110dfb6ac109bb44200d9937"
+    },
+    {
+      "run_id": "glm-4-9b__field_alias__r5",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "field_alias",
+      "rep": 5,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 9.3,
+      "usage": {
+        "prompt_tokens": 2030,
+        "completion_tokens": 436,
+        "total_tokens": 2466
+      },
+      "response_id": "019fa2db2b7ebde3d8603e2fc298c692"
+    },
+    {
+      "run_id": "glm-4-9b__field_alias__r6",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "field_alias",
+      "rep": 6,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 9.01,
+      "usage": {
+        "prompt_tokens": 2030,
+        "completion_tokens": 436,
+        "total_tokens": 2466
+      },
+      "response_id": "019fa2db51dc15e1587c874c9ac6f27d"
+    },
+    {
+      "run_id": "glm-4-9b__field_alias__r7",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "field_alias",
+      "rep": 7,
+      "strict_pass": false,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 0.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "task_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "elapsed_s": 9.49,
+      "usage": {
+        "prompt_tokens": 2030,
+        "completion_tokens": 429,
+        "total_tokens": 2459
+      },
+      "response_id": "019fa2db76fa1fc1947781858c147988"
+    },
+    {
+      "run_id": "glm-4-9b__field_alias__r8",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "field_alias",
+      "rep": 8,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 8.65,
+      "usage": {
+        "prompt_tokens": 2030,
+        "completion_tokens": 436,
+        "total_tokens": 2466
+      },
+      "response_id": "019fa2db9dd6392c29407db8881a6952"
+    },
+    {
+      "run_id": "glm-4-9b__evidence_order_shuffled__r1",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "evidence_order_shuffled",
+      "rep": 1,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 8.38,
+      "usage": {
+        "prompt_tokens": 2061,
+        "completion_tokens": 444,
+        "total_tokens": 2505
+      },
+      "response_id": "019fa2dbc193e5d7e0d9312c1608a699"
+    },
+    {
+      "run_id": "glm-4-9b__evidence_order_shuffled__r2",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "evidence_order_shuffled",
+      "rep": 2,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 18.17,
+      "usage": {
+        "prompt_tokens": 2061,
+        "completion_tokens": 444,
+        "total_tokens": 2505
+      },
+      "response_id": "019fa2dbe4677bb6ab8d45567e3dcf91"
+    },
+    {
+      "run_id": "glm-4-9b__evidence_order_shuffled__r3",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "evidence_order_shuffled",
+      "rep": 3,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 7.51,
+      "usage": {
+        "prompt_tokens": 2061,
+        "completion_tokens": 444,
+        "total_tokens": 2505
+      },
+      "response_id": "019fa2dc2d6b8b6f3c0a4301f01988fd"
+    },
+    {
+      "run_id": "glm-4-9b__evidence_order_shuffled__r4",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "evidence_order_shuffled",
+      "rep": 4,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 9.49,
+      "usage": {
+        "prompt_tokens": 2061,
+        "completion_tokens": 444,
+        "total_tokens": 2505
+      },
+      "response_id": "019fa2dc4c96ba3842339efcfcdaa899"
+    },
+    {
+      "run_id": "glm-4-9b__evidence_order_shuffled__r5",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "evidence_order_shuffled",
+      "rep": 5,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 10.07,
+      "usage": {
+        "prompt_tokens": 2061,
+        "completion_tokens": 444,
+        "total_tokens": 2505
+      },
+      "response_id": "019fa2dc73a26bfc3d0d3a8ea3765be0"
+    },
+    {
+      "run_id": "glm-4-9b__evidence_order_shuffled__r6",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "evidence_order_shuffled",
+      "rep": 6,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 6.47,
+      "usage": {
+        "prompt_tokens": 2061,
+        "completion_tokens": 444,
+        "total_tokens": 2505
+      },
+      "response_id": "019fa2dc9cf57d048ee69a9e4e1a1e8e"
+    },
+    {
+      "run_id": "glm-4-9b__evidence_order_shuffled__r7",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "evidence_order_shuffled",
+      "rep": 7,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 12.02,
+      "usage": {
+        "prompt_tokens": 2061,
+        "completion_tokens": 444,
+        "total_tokens": 2505
+      },
+      "response_id": "019fa2dcb8006a70e08937622fe85300"
+    },
+    {
+      "run_id": "glm-4-9b__evidence_order_shuffled__r8",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "evidence_order_shuffled",
+      "rep": 8,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 7.07,
+      "usage": {
+        "prompt_tokens": 2061,
+        "completion_tokens": 444,
+        "total_tokens": 2505
+      },
+      "response_id": "019fa2dcd7829cee9ee15f9323f9a0c0"
+    },
+    {
+      "run_id": "glm-4-9b__distractor_evidence__r1",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "distractor_evidence",
+      "rep": 1,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 7.9,
+      "usage": {
+        "prompt_tokens": 2158,
+        "completion_tokens": 444,
+        "total_tokens": 2602
+      },
+      "response_id": "019fa2dcf5139fa28799b068a2dd18e9"
+    },
+    {
+      "run_id": "glm-4-9b__distractor_evidence__r2",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "distractor_evidence",
+      "rep": 2,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 15.31,
+      "usage": {
+        "prompt_tokens": 2158,
+        "completion_tokens": 444,
+        "total_tokens": 2602
+      },
+      "response_id": "019fa2dd15fdeb284d830f2e03fb4caa"
+    },
+    {
+      "run_id": "glm-4-9b__distractor_evidence__r3",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "distractor_evidence",
+      "rep": 3,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 8.09,
+      "usage": {
+        "prompt_tokens": 2158,
+        "completion_tokens": 444,
+        "total_tokens": 2602
+      },
+      "response_id": "019fa2dd539a40b91551747148f2ce1d"
+    },
+    {
+      "run_id": "glm-4-9b__distractor_evidence__r4",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "distractor_evidence",
+      "rep": 4,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 10.47,
+      "usage": {
+        "prompt_tokens": 2158,
+        "completion_tokens": 444,
+        "total_tokens": 2602
+      },
+      "response_id": "019fa2dd753c6f8c33ba30aa970406ff"
+    },
+    {
+      "run_id": "glm-4-9b__distractor_evidence__r5",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "distractor_evidence",
+      "rep": 5,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 7.05,
+      "usage": {
+        "prompt_tokens": 2158,
+        "completion_tokens": 444,
+        "total_tokens": 2602
+      },
+      "response_id": "019fa2dda00c21a145846b3ba50a865f"
+    },
+    {
+      "run_id": "glm-4-9b__distractor_evidence__r6",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "distractor_evidence",
+      "rep": 6,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 8.74,
+      "usage": {
+        "prompt_tokens": 2158,
+        "completion_tokens": 444,
+        "total_tokens": 2602
+      },
+      "response_id": "019fa2ddbddd8ee92c8f00ae8a507efa"
+    },
+    {
+      "run_id": "glm-4-9b__distractor_evidence__r7",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "distractor_evidence",
+      "rep": 7,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 9.79,
+      "usage": {
+        "prompt_tokens": 2158,
+        "completion_tokens": 444,
+        "total_tokens": 2602
+      },
+      "response_id": "019fa2dde1afeb6e401bfd476e8e0fac"
+    },
+    {
+      "run_id": "glm-4-9b__distractor_evidence__r8",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "distractor_evidence",
+      "rep": 8,
+      "strict_pass": true,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 1.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 1.0,
+        "task_success": 1.0,
+        "atom_primary_metric": 1.0
+      },
+      "elapsed_s": 7.31,
+      "usage": {
+        "prompt_tokens": 2158,
+        "completion_tokens": 444,
+        "total_tokens": 2602
+      },
+      "response_id": "019fa2de09dad140cf0d378f4ce58873"
+    },
+    {
+      "run_id": "glm-4-9b__unknown_state_paraphrase__r1",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "unknown_state_paraphrase",
+      "rep": 1,
+      "strict_pass": false,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "task_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "elapsed_s": 10.55,
+      "usage": {
+        "prompt_tokens": 2096,
+        "completion_tokens": 475,
+        "total_tokens": 2571
+      },
+      "response_id": "019fa2de286c0b99fb3501abd4503834"
+    },
+    {
+      "run_id": "glm-4-9b__unknown_state_paraphrase__r2",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "unknown_state_paraphrase",
+      "rep": 2,
+      "strict_pass": false,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "task_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "elapsed_s": 9.14,
+      "usage": {
+        "prompt_tokens": 2096,
+        "completion_tokens": 475,
+        "total_tokens": 2571
+      },
+      "response_id": "019fa2de53d0fa5ce2f05d9c22d02237"
+    },
+    {
+      "run_id": "glm-4-9b__unknown_state_paraphrase__r3",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "unknown_state_paraphrase",
+      "rep": 3,
+      "strict_pass": false,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "task_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "elapsed_s": 6.83,
+      "usage": {
+        "prompt_tokens": 2096,
+        "completion_tokens": 475,
+        "total_tokens": 2571
+      },
+      "response_id": "019fa2de793a5d0d2d3b70c4020a4883"
+    },
+    {
+      "run_id": "glm-4-9b__unknown_state_paraphrase__r4",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "unknown_state_paraphrase",
+      "rep": 4,
+      "strict_pass": false,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "task_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "elapsed_s": 7.4,
+      "usage": {
+        "prompt_tokens": 2096,
+        "completion_tokens": 475,
+        "total_tokens": 2571
+      },
+      "response_id": "019fa2de95ccd3da95bf6bc4228520c1"
+    },
+    {
+      "run_id": "glm-4-9b__unknown_state_paraphrase__r5",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "unknown_state_paraphrase",
+      "rep": 5,
+      "strict_pass": false,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "task_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "elapsed_s": 8.52,
+      "usage": {
+        "prompt_tokens": 2096,
+        "completion_tokens": 475,
+        "total_tokens": 2571
+      },
+      "response_id": "019fa2deb4e308184e913b8ae3459684"
+    },
+    {
+      "run_id": "glm-4-9b__unknown_state_paraphrase__r6",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "unknown_state_paraphrase",
+      "rep": 6,
+      "strict_pass": false,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "task_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "elapsed_s": 8.34,
+      "usage": {
+        "prompt_tokens": 2096,
+        "completion_tokens": 475,
+        "total_tokens": 2571
+      },
+      "response_id": "019fa2ded7e0e17aa3878134cfe70711"
+    },
+    {
+      "run_id": "glm-4-9b__unknown_state_paraphrase__r7",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "unknown_state_paraphrase",
+      "rep": 7,
+      "strict_pass": false,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "task_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "elapsed_s": 7.44,
+      "usage": {
+        "prompt_tokens": 2096,
+        "completion_tokens": 475,
+        "total_tokens": 2571
+      },
+      "response_id": "019fa2defa7f63fc6b4aa3d5c0fcdac5"
+    },
+    {
+      "run_id": "glm-4-9b__unknown_state_paraphrase__r8",
+      "model": "THUDM/GLM-4-9B-0414",
+      "condition": "unknown_state_paraphrase",
+      "rep": 8,
+      "strict_pass": false,
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 1.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 1.0,
+        "retention_attestation_accuracy": 1.0,
+        "controlled_state_mutation_success": 0.0,
+        "task_success": 0.0,
+        "atom_primary_metric": 0.0
+      },
+      "elapsed_s": 7.85,
+      "usage": {
+        "prompt_tokens": 2096,
+        "completion_tokens": 475,
+        "total_tokens": 2571
+      },
+      "response_id": "019fa2df199fa10d29009331e47722f9"
+    }
+  ]
+}

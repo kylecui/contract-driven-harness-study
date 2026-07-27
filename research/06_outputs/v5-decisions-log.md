@@ -29,26 +29,28 @@
 
 ---
 
-## D2: Multi-model interchangeability claim wording (frozen)
+## D2: Multi-model interchangeability claim wording (frozen → REVISED after verification)
 
 **Date**: 2026-07-27
-**Status**: FROZEN (pending verification)
+**Status**: REVISED based on author verification (was: frozen pending; now: revised with actual data)
 
-**Above-floor claim** (used in §3.7, §4.11-appendix):
-> "Within the above-floor models tested (Qwen3-8B, GLM-4-9B, Qwen3-14B, DeepSeek-V3.2), a frozen contract produced zero-shot pass rates of 40/40 (Wilson [0.912, 1.000]) on the controlled-state-mutation task family."
+**Verification result (2026-07-27)**:
+- Qwen3-8B: 40/40 ✅ exact match with Kimi
+- GLM-4-9B: **30/40 ❌ discrepancy** (Kimi reported 40/40; author got 30/40; `unknown_state_paraphrase` all failed)
+- Qwen3-14B: 37/40 (3 API timeouts excluded; 37/37 valid = 100%)
+- DeepSeek-V3.2: 40/40 ✅ exact match with Kimi
+- Qwen2.5-7B: 0/40 ✅ exact match (structural floor confirmed)
 
-**Below-floor claim** (downgraded from v2's "floor is structural"):
-> "In one below-floor model tested (Qwen2.5-7B), we observed structural-level failure (0/40) characterized by inability to produce syntactically valid JSON, suggesting a categorical capability threshold for this task family. We do not claim universality of this floor characterization; it is scoped to one model in one task family."
+**Revised above-floor claim**:
+> "Within the above-floor models tested, a frozen contract produced strict-conforming pass rates of 40/40 on Qwen3-8B and DeepSeek-V3.2, 37/40 on Qwen3-14B (API timeouts excluded), and 30/40 on GLM-4-9B (failures concentrated in paraphrased-state-label condition). The contract transfers zero-shot to Qwen3 and DeepSeek families; GLM-4-9B requires additional repair-loop iterations."
 
-**Rationale for wording**:
-- "Within above-floor models tested" — scoped to actual sample, not universal
-- "Zero-shot" — explicit that no repair was applied to non-Qwen3-8B models
-- "On the controlled-state-mutation task family" — task scope explicit
-- Below-floor uses "in one model" + "do not claim universality" — honest about n=1
+**Dropped claims**:
+- ❌ "GLM-4-9B zero-repair one-pass"
+- ❌ "4 models at 40/40"
+- ❌ Figure 1 title "transfers without modification across model families"
 
-**Conditions for upgrade**:
-- Add 2+ below-floor models with consistent structural failure → can claim "structural floor observed across N models"
-- Currently: not in scope for v5 (per Executor kill list)
+**Below-floor claim** (unchanged):
+> "In one below-floor model tested (Qwen2.5-7B), we observed structural-level failure (0/40), characterized by inability to produce syntactically valid JSON."
 
 ---
 
@@ -77,30 +79,25 @@
 
 ---
 
-## D4: Target venue strategy (open — requires author input)
+## D4: Target venue strategy (LOCKED = Industry track)
 
 **Date**: 2026-07-27
-**Status**: OPEN (author to decide before WP1 final draft)
+**Status**: LOCKED (author confirmed: use recommendation)
 
-**Candidate venues analyzed**:
+**Decision**: Target **Industry track (EMNLP/NAACL Industry or ICSOC)**.
 
-| Venue class | Examples | Fit | Notes |
-|---|---|---|---|
-| SE main track | ICSE, FSE, ASE | Medium | Strong on methodology + threats to validity; weak on small sample size; AgentSpec/ABC differentiation critical |
-| Industry track | EMNLP industry, NAACL industry, ICSOC | **High** | Values working protocol + reproducible artifact + cost analysis; this paper could be best-in-class |
-| NLP/ML methods | EMNLP main, ACL main | Low-Medium | Reviewers expect benchmarks; this paper offers methodology + case study |
-| Agent workshop | AgentBench workshop, LLM Agents workshop | High (but lower prestige) | Strong fit, smaller audience |
+**Locked model IDs for verification**:
+- `Qwen/Qwen3-8B` (primary low-cost)
+- `THUDM/GLM-4-9B-0414` (cross-architecture)
+- `Qwen/Qwen3-14B` (larger same-family)
+- `deepseek-ai/DeepSeek-V3.2` (different family, MoE)
+- `Qwen/Qwen2.5-7B-Instruct` (below-floor candidate)
 
-**Recommendation**: EMNLP/NAACL Industry track or ICSOC. These venues:
-- Value practitioner artifacts (ContractBench, 320-line reference core, 4-tier admission funnel)
-- Tolerate single-task-family case studies if execution is rigorous
-- Have AI Use Disclosure policies that align with our BLOCKER-1 mitigation
-- Lower risk of desk-reject on sample size grounds
-
-**Author to confirm**: This decision affects:
-- WP1 emphasis (Industry: practitioner checklist prominent; SE: Threats to Validity prominent)
-- WP5 priority (Industry: Stage D cost matrix is critical; SE: can defer to v5.1)
-- WP6 final formatting
+**Implications (now active for all downstream WPs)**:
+- WP1 emphasis: practitioner checklist + cost matrix prominent; repair-loop narrative framed as engineering method
+- WP5 priority: Stage D cost matrix is **in v5 scope** (per B6 unlock); not deferred to v5.1
+- WP6 formatting: Industry-track LaTeX template (2-column, usually 6 pages + references)
+- Threats to Validity: scoped to "bounded contract-critical operations", not general agent reliability
 
 ---
 
