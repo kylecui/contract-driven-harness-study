@@ -1,0 +1,1121 @@
+{
+  "stage": "first-slice",
+  "total_runs": 24,
+  "json_parsed": 24,
+  "matched_frozen_high_similarity": 2,
+  "frozen_task_success_1_count": 0,
+  "timestamp": "2026-07-28T09:38:31.365231+00:00",
+  "runs": [
+    {
+      "run_id": "first-slice__project-initialization__budget_model__G0__r1",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:20:43.319385+00:00",
+      "elapsed_s": 98.66,
+      "usage": {
+        "prompt_tokens": 408,
+        "completion_tokens": 2404,
+        "total_tokens": 2812,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2289
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 408
+      },
+      "response_id": "019fa805420cceb13972d8cf25c108c7",
+      "raw_content": "\n\n{\n  \"created_directories\": [\n    \"data\",\n    \"notebooks\",\n    \"results\",\n    \"src\"\n  ],\n  \"created_files\": [],\n  \"skipped_files\": [\n    \"AGENTS.md\",\n    \".agents/installed-packs.json\",\n    \".git/\"\n  ],\n  \"notes\": \"Initialized research project structure with standard directories (data, notebooks, results, src) without overwriting existing files. Preserved AGENTS.md, .agents/installed-packs.json, and .git/ as per no-overwrite constraints.\"\n}",
+      "parsed_output": {
+        "created_directories": [
+          "data",
+          "notebooks",
+          "results",
+          "src"
+        ],
+        "created_files": [],
+        "skipped_files": [
+          "AGENTS.md",
+          ".agents/installed-packs.json",
+          ".git/"
+        ],
+        "notes": "Initialized research project structure with standard directories (data, notebooks, results, src) without overwriting existing files. Preserved AGENTS.md, .agents/installed-packs.json, and .git/ as per no-overwrite constraints."
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "first-slice__project-initialization__budget_model__G0__r2",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__budget_model__G0__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:21:40.540279+00:00",
+      "elapsed_s": 56.92,
+      "usage": {
+        "prompt_tokens": 408,
+        "completion_tokens": 1584,
+        "total_tokens": 1992,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1548
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 408
+      },
+      "response_id": "019fa807ea8f49b932dafb0b200dd1ca",
+      "raw_content": "\n\n{\n  \"created\": [\n    \"README.md\",\n    \"data/\",\n    \"results/\",\n    \"src/\",\n    \"notebooks/\",\n    \"docs/\"\n  ]\n}",
+      "parsed_output": {
+        "created": [
+          "README.md",
+          "data/",
+          "results/",
+          "src/",
+          "notebooks/",
+          "docs/"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "first-slice__project-initialization__budget_model__G0__r3",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__budget_model__G0__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:22:33.242894+00:00",
+      "elapsed_s": 52.4,
+      "usage": {
+        "prompt_tokens": 408,
+        "completion_tokens": 1301,
+        "total_tokens": 1709,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1203
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 408
+      },
+      "response_id": "019fa807a404723a57be29c1ae3f876d",
+      "raw_content": "\n\n{\n  \"task_result\": {\n    \"created_directories\": [\n      \"data\",\n      \"notebooks\",\n      \"results\",\n      \"docs\"\n    ],\n    \"created_files\": [],\n    \"skipped_files\": [\n      \"AGENTS.md\",\n      \".agents/installed-packs.json\"\n    ],\n    \"status\": \"success\"\n  },\n  \"risk_profile\": \"medium\",\n  \"output_contract_id\": \"out_project_initialization_001\"\n}",
+      "parsed_output": {
+        "task_result": {
+          "created_directories": [
+            "data",
+            "notebooks",
+            "results",
+            "docs"
+          ],
+          "created_files": [],
+          "skipped_files": [
+            "AGENTS.md",
+            ".agents/installed-packs.json"
+          ],
+          "status": "success"
+        },
+        "risk_profile": "medium",
+        "output_contract_id": "out_project_initialization_001"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "first-slice__project-initialization__budget_model__G9__r1",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:23:10.325072+00:00",
+      "elapsed_s": 36.78,
+      "usage": {
+        "prompt_tokens": 848,
+        "completion_tokens": 919,
+        "total_tokens": 1767,
+        "completion_tokens_details": {
+          "reasoning_tokens": 638
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 848
+      },
+      "response_id": "019fa80871d5dc86e7c87886ca68638c",
+      "raw_content": "\n\n{\n  \"created_files\": [\n    \".research/roadmap.md\",\n    \".research/config.json\",\n    \"data/analysis_scripts/\",\n    \"data/raw/\",\n    \"data/processed/\",\n    \"docs/research_agenda.md\",\n    \"references.bib\"\n  ],\n  \"skipped_files\": [\n    \"AGENTS.md\",\n    \".agents/installed-packs.json\",\n    \".git/\"\n  ],\n  \"risks\": [\n    \"Potential for incomplete directory structure if missing files are not identified\",\n    \"Risk of conflicting file creation if existing files are not properly checked\",\n    \"Limited toolset may restrict advanced research workflow capabilities\"\n  ],\n  \"next_steps\": [\n    \"Implement research router for task prioritization\",\n    \"Add data management protocols to .research/config.json\",\n    \"Initialize version control with research-specific tracking\",\n    \"Create analysis templates in data/analysis_scripts/\"\n  ],\n  \"tool_trace\": {\n    \"filesystem\": {\n      \"purpose\": \"Verify existing files and create missing research directories\",\n      \"actions\": [\n        \"Check existence of AGENTS.md (skip creation)\",\n        \"Check .agents/installed-packs.json (skip creation)\",\n        \"Check .git/ directory (skip creation)\",\n        \"Create .research/ directory with workflow subdirectories\",\n        \"Generate research-specific configuration and documentation files\"\n      ]\n    }\n  }\n}",
+      "parsed_output": {
+        "created_files": [
+          ".research/roadmap.md",
+          ".research/config.json",
+          "data/analysis_scripts/",
+          "data/raw/",
+          "data/processed/",
+          "docs/research_agenda.md",
+          "references.bib"
+        ],
+        "skipped_files": [
+          "AGENTS.md",
+          ".agents/installed-packs.json",
+          ".git/"
+        ],
+        "risks": [
+          "Potential for incomplete directory structure if missing files are not identified",
+          "Risk of conflicting file creation if existing files are not properly checked",
+          "Limited toolset may restrict advanced research workflow capabilities"
+        ],
+        "next_steps": [
+          "Implement research router for task prioritization",
+          "Add data management protocols to .research/config.json",
+          "Initialize version control with research-specific tracking",
+          "Create analysis templates in data/analysis_scripts/"
+        ],
+        "tool_trace": {
+          "filesystem": {
+            "purpose": "Verify existing files and create missing research directories",
+            "actions": [
+              "Check existence of AGENTS.md (skip creation)",
+              "Check .agents/installed-packs.json (skip creation)",
+              "Check .git/ directory (skip creation)",
+              "Create .research/ directory with workflow subdirectories",
+              "Generate research-specific configuration and documentation files"
+            ]
+          }
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0098
+    },
+    {
+      "run_id": "first-slice__project-initialization__budget_model__G9__r2",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:24:19.232972+00:00",
+      "elapsed_s": 68.61,
+      "usage": {
+        "prompt_tokens": 848,
+        "completion_tokens": 1596,
+        "total_tokens": 2444,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1223
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 848
+      },
+      "response_id": "019fa80902cef1da4b937603fc63c16c",
+      "raw_content": "\n\n{\n  \"created_files\": [\n    \"data/\",\n    \"notebooks/\",\n    \"results/\",\n    \"scripts/\",\n    \"README.md\"\n  ],\n  \"skipped_files\": [\n    \"AGENTS.md\",\n    \".agents/installed-packs.json\",\n    \".git/\"\n  ],\n  \"risks\": [\n    \"Medium risk: No-overwrite policy may leave project configuration incomplete if required files are missing.\",\n    \"Potential risk: Research workflow directories may not align with specific academic discipline requirements.\"\n  ],\n  \"next_steps\": [\n    \"Populate AGENTS.md with research agent definitions (existing file)\",\n    \"Update .agents/installed-packs.json with required tool configurations (existing file)\",\n    \"Initialize Git repository in .git/ directory (existing structure)\",\n    \"Add project-specific configuration files in scripts/ directory\"\n  ],\n  \"tool_trace\": [\n    {\n      \"tool\": \"filesystem\",\n      \"action\": \"create\",\n      \"path\": \"data/\",\n      \"reason\": \"Standard research project directory for raw data storage\"\n    },\n    {\n      \"tool\": \"filesystem\",\n      \"action\": \"create\",\n      \"path\": \"notebooks/\",\n      \"reason\": \"Directory for Jupyter notebook research documentation\"\n    },\n    {\n      \"tool\": \"filesystem\",\n      \"action\": \"create\",\n      \"path\": \"results/\",\n      \"reason\": \"Directory for storing research output files\"\n    },\n    {\n      \"tool\": \"filesystem\",\n      \"action\": \"create\",\n      \"path\": \"scripts/\",\n      \"reason\": \"Directory for executable scripts and automation tools\"\n    },\n    {\n      \"tool\": \"filesystem\",\n      \"action\": \"create\",\n      \"path\": \"README.md\",\n      \"reason\": \"Project overview file for academic research documentation\"\n    }\n  ]\n}",
+      "parsed_output": {
+        "created_files": [
+          "data/",
+          "notebooks/",
+          "results/",
+          "scripts/",
+          "README.md"
+        ],
+        "skipped_files": [
+          "AGENTS.md",
+          ".agents/installed-packs.json",
+          ".git/"
+        ],
+        "risks": [
+          "Medium risk: No-overwrite policy may leave project configuration incomplete if required files are missing.",
+          "Potential risk: Research workflow directories may not align with specific academic discipline requirements."
+        ],
+        "next_steps": [
+          "Populate AGENTS.md with research agent definitions (existing file)",
+          "Update .agents/installed-packs.json with required tool configurations (existing file)",
+          "Initialize Git repository in .git/ directory (existing structure)",
+          "Add project-specific configuration files in scripts/ directory"
+        ],
+        "tool_trace": [
+          {
+            "tool": "filesystem",
+            "action": "create",
+            "path": "data/",
+            "reason": "Standard research project directory for raw data storage"
+          },
+          {
+            "tool": "filesystem",
+            "action": "create",
+            "path": "notebooks/",
+            "reason": "Directory for Jupyter notebook research documentation"
+          },
+          {
+            "tool": "filesystem",
+            "action": "create",
+            "path": "results/",
+            "reason": "Directory for storing research output files"
+          },
+          {
+            "tool": "filesystem",
+            "action": "create",
+            "path": "scripts/",
+            "reason": "Directory for executable scripts and automation tools"
+          },
+          {
+            "tool": "filesystem",
+            "action": "create",
+            "path": "README.md",
+            "reason": "Project overview file for academic research documentation"
+          }
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0093
+    },
+    {
+      "run_id": "first-slice__project-initialization__budget_model__G9__r3",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__budget_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:25:27.195894+00:00",
+      "elapsed_s": 67.66,
+      "usage": {
+        "prompt_tokens": 848,
+        "completion_tokens": 1692,
+        "total_tokens": 2540,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1252
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 848
+      },
+      "response_id": "019fa80a100a10f2eae32e902e97b37b",
+      "raw_content": "\n\n{\n  \"created_files\": [\n    \"README.md\",\n    \"config/analysis_config.yaml\",\n    \"data/raw/\",\n    \"data/processed/\",\n    \"docs/research_agenda.md\",\n    \"src/main.py\",\n    \"notebooks/exploratory_analysis.ipynb\"\n  ],\n  \"skipped_files\": [\n    \"AGENTS.md\",\n    \".agents/installed-packs.json\"\n  ],\n  \"risks\": [\n    \"Potential missing dependencies in installed-packs.json if not explicitly defined\",\n    \"No-overwrite policy may leave project structure incomplete if critical files are missing\",\n    \"Research workflow directories may require additional configuration beyond basic scaffolding\"\n  ],\n  \"next_steps\": [\n    \"Verify file creation against research workflow requirements\",\n    \"Update installed-packs.json with required research tools\",\n    \"Validate AGENTS.md content against no-overwrite policy\",\n    \"Implement version control with gitignore configuration\"\n  ],\n  \"tool_trace\": {\n    \"filesystem\": {\n      \"operations\": [\n        {\n          \"action\": \"create\",\n          \"path\": \"README.md\",\n          \"reason\": \"Standard project documentation file\"\n        },\n        {\n          \"action\": \"create\",\n          \"path\": \"config/analysis_config.yaml\",\n          \"reason\": \"Research configuration management\"\n        },\n        {\n          \"action\": \"create\",\n          \"path\": \"data/raw\",\n          \"reason\": \"Data storage for raw research materials\"\n        },\n        {\n          \"action\": \"create\",\n          \"path\": \"data/processed\",\n          \"reason\": \"Data storage for processed research outputs\"\n        },\n        {\n          \"action\": \"create\",\n          \"path\": \"docs/research_agenda.md\",\n          \"reason\": \"Research planning documentation\"\n        },\n        {\n          \"action\": \"create\",\n          \"path\": \"src/main.py\",\n          \"reason\": \"Primary research execution script\"\n        },\n        {\n          \"action\": \"create\",\n          \"path\": \"notebooks/exploratory_analysis.ipynb\",\n          \"reason\": \"Exploratory data analysis notebook\"\n        }\n      ]\n    }\n  }\n}",
+      "parsed_output": {
+        "created_files": [
+          "README.md",
+          "config/analysis_config.yaml",
+          "data/raw/",
+          "data/processed/",
+          "docs/research_agenda.md",
+          "src/main.py",
+          "notebooks/exploratory_analysis.ipynb"
+        ],
+        "skipped_files": [
+          "AGENTS.md",
+          ".agents/installed-packs.json"
+        ],
+        "risks": [
+          "Potential missing dependencies in installed-packs.json if not explicitly defined",
+          "No-overwrite policy may leave project structure incomplete if critical files are missing",
+          "Research workflow directories may require additional configuration beyond basic scaffolding"
+        ],
+        "next_steps": [
+          "Verify file creation against research workflow requirements",
+          "Update installed-packs.json with required research tools",
+          "Validate AGENTS.md content against no-overwrite policy",
+          "Implement version control with gitignore configuration"
+        ],
+        "tool_trace": {
+          "filesystem": {
+            "operations": [
+              {
+                "action": "create",
+                "path": "README.md",
+                "reason": "Standard project documentation file"
+              },
+              {
+                "action": "create",
+                "path": "config/analysis_config.yaml",
+                "reason": "Research configuration management"
+              },
+              {
+                "action": "create",
+                "path": "data/raw",
+                "reason": "Data storage for raw research materials"
+              },
+              {
+                "action": "create",
+                "path": "data/processed",
+                "reason": "Data storage for processed research outputs"
+              },
+              {
+                "action": "create",
+                "path": "docs/research_agenda.md",
+                "reason": "Research planning documentation"
+              },
+              {
+                "action": "create",
+                "path": "src/main.py",
+                "reason": "Primary research execution script"
+              },
+              {
+                "action": "create",
+                "path": "notebooks/exploratory_analysis.ipynb",
+                "reason": "Exploratory data analysis notebook"
+              }
+            ]
+          }
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0089
+    },
+    {
+      "run_id": "first-slice__project-initialization__strong_model__G0__r1",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:26:17.533456+00:00",
+      "elapsed_s": 50.04,
+      "usage": {
+        "prompt_tokens": 408,
+        "completion_tokens": 1171,
+        "total_tokens": 1579,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1108
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 408
+      },
+      "response_id": "019fa80b195ab1e8821538f96d7b4260",
+      "raw_content": "\n\n{\n  \"task_id\": \"project_initialization_001\",\n  \"status\": \"success\",\n  \"created_files\": [],\n  \"message\": \"No files created as existing AGENTS.md and .agents/installed-packs.json were not overwritten, and .git/ directory already exists.\"\n}",
+      "parsed_output": {
+        "task_id": "project_initialization_001",
+        "status": "success",
+        "created_files": [],
+        "message": "No files created as existing AGENTS.md and .agents/installed-packs.json were not overwritten, and .git/ directory already exists."
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "first-slice__project-initialization__strong_model__G0__r2",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__strong_model__G0__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:27:11.549026+00:00",
+      "elapsed_s": 53.71,
+      "usage": {
+        "prompt_tokens": 408,
+        "completion_tokens": 1309,
+        "total_tokens": 1717,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1236
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 408
+      },
+      "response_id": "019fa80bde5f42b17e840fc2ed589641",
+      "raw_content": "\n\n{\n  \"task_id\": \"project_initialization_001\",\n  \"status\": \"completed\",\n  \"created_files\": [],\n  \"message\": \"No files created as existing AGENTS.md and .agents/installed-packs.json were retained. .git/ directory remains untouched. Research workflow directories not specified in task input were not created.\"\n}",
+      "parsed_output": {
+        "task_id": "project_initialization_001",
+        "status": "completed",
+        "created_files": [],
+        "message": "No files created as existing AGENTS.md and .agents/installed-packs.json were retained. .git/ directory remains untouched. Research workflow directories not specified in task input were not created."
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "first-slice__project-initialization__strong_model__G0__r3",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__strong_model__G0__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:30:28.881112+00:00",
+      "elapsed_s": 197.03,
+      "usage": {
+        "prompt_tokens": 408,
+        "completion_tokens": 1699,
+        "total_tokens": 2107,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1628
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 408
+      },
+      "response_id": "019fa80e8de7e96018cbca65eeedf2ac",
+      "raw_content": "\n\n{\n  \"created_files\": [\n    \"README.md\",\n    \"data/\",\n    \"notebooks/\",\n    \"results/\",\n    \"documentation/\",\n    \"config/\",\n    \"references.bib\"\n  ],\n  \"skipped_files\": [\n    \"AGENTS.md\",\n    \".agents/installed-packs.json\",\n    \".git/\"\n  ]\n}",
+      "parsed_output": {
+        "created_files": [
+          "README.md",
+          "data/",
+          "notebooks/",
+          "results/",
+          "documentation/",
+          "config/",
+          "references.bib"
+        ],
+        "skipped_files": [
+          "AGENTS.md",
+          ".agents/installed-packs.json",
+          ".git/"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "first-slice__project-initialization__strong_model__G9__r1",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:31:23.395606+00:00",
+      "elapsed_s": 54.21,
+      "usage": {
+        "prompt_tokens": 848,
+        "completion_tokens": 1181,
+        "total_tokens": 2029,
+        "completion_tokens_details": {
+          "reasoning_tokens": 948
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 848
+      },
+      "response_id": "019fa80fb3e8fde2b371000d320f6611",
+      "raw_content": "\n\n{\n  \"created_files\": [\n    \"data/\",\n    \"notebooks/\",\n    \"results/\",\n    \"config/\"\n  ],\n  \"skipped_files\": [\n    \"AGENTS.md\",\n    \".agents/installed-packs.json\",\n    \".git/\"\n  ],\n  \"risks\": [\n    \"Potential for incomplete scaffold if required directories/files are missing\",\n    \"No-overwrite policy may leave project in inconsistent state if missing files are not properly created\",\n    \"Assumption about standard research directories may not align with specific project needs\"\n  ],\n  \"next_steps\": [\n    \"Add README.md to project root\",\n    \"Configure version control with .gitignore\",\n    \"Initialize environment configuration files\",\n    \"Set up research-specific workflows in .github directory\"\n  ],\n  \"tool_trace\": {\n    \"used_tools\": [\n      {\n        \"tool_id\": \"filesystem\",\n        \"reason\": \"Created research workflow directories while respecting no-overwrite policy for existing files\"\n      }\n    ],\n    \"evidence_ids\": [\n      \"fixture-pi-e01\",\n      \"fixture-pi-e02\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "created_files": [
+          "data/",
+          "notebooks/",
+          "results/",
+          "config/"
+        ],
+        "skipped_files": [
+          "AGENTS.md",
+          ".agents/installed-packs.json",
+          ".git/"
+        ],
+        "risks": [
+          "Potential for incomplete scaffold if required directories/files are missing",
+          "No-overwrite policy may leave project in inconsistent state if missing files are not properly created",
+          "Assumption about standard research directories may not align with specific project needs"
+        ],
+        "next_steps": [
+          "Add README.md to project root",
+          "Configure version control with .gitignore",
+          "Initialize environment configuration files",
+          "Set up research-specific workflows in .github directory"
+        ],
+        "tool_trace": {
+          "used_tools": [
+            {
+              "tool_id": "filesystem",
+              "reason": "Created research workflow directories while respecting no-overwrite policy for existing files"
+            }
+          ],
+          "evidence_ids": [
+            "fixture-pi-e01",
+            "fixture-pi-e02"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "first-slice__project-initialization__strong_model__G9__r2",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__strong_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:32:31.707872+00:00",
+      "elapsed_s": 68.01,
+      "usage": {
+        "prompt_tokens": 848,
+        "completion_tokens": 1573,
+        "total_tokens": 2421,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1126
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 848
+      },
+      "response_id": "019fa81088cd99a100693fe37d64006d",
+      "raw_content": "\n\n{\n  \"created_files\": [\n    \"README.md\",\n    \"data/\",\n    \"notebooks/\",\n    \"src/\",\n    \"reports/\",\n    \".github/workflows/\"\n  ],\n  \"skipped_files\": [\n    \"AGENTS.md\",\n    \".agents/installed-packs.json\",\n    \".git/\"\n  ],\n  \"risks\": [\n    \"Risk of missing critical directories if initial file inventory is incomplete (cited: fixture-pi-e02)\",\n    \"Potential for inconsistent file structure if existing files conflict with new scaffold\",\n    \"No-overwrite policy may leave project incomplete if required files are missing\"\n  ],\n  \"next_steps\": [\n    \"Populate README.md with project overview\",\n    \"Initialize Git repository in .git/\",\n    \"Configure installed-packs.json in .agents/\",\n    \"Add research-specific configuration files to src/\",\n    \"Create initial analysis notebook in notebooks/\"\n  ],\n  \"tool_trace\": [\n    {\n      \"tool\": \"filesystem\",\n      \"action\": \"create_directory\",\n      \"path\": \"data/\",\n      \"reason\": \"Establish dedicated directory for research datasets (cited: fixture-pi-e02)\"\n    },\n    {\n      \"tool\": \"filesystem\",\n      \"action\": \"create_directory\",\n      \"path\": \"notebooks/\",\n      \"reason\": \"Create workspace for Jupyter notebooks and analysis scripts\"\n    },\n    {\n      \"tool\": \"filesystem\",\n      \"action\": \"create_directory\",\n      \"path\": \"src/\",\n      \"reason\": \"Organize source code and research utilities\"\n    },\n    {\n      \"tool\": \"filesystem\",\n      \"action\": \"create_directory\",\n      \"path\": \"reports/\",\n      \"reason\": \"Prepare directory for research output documentation\"\n    },\n    {\n      \"tool\": \"filesystem\",\n      \"action\": \"create_directory\",\n      \"path\": \".github/workflows/\",\n      \"reason\": \"Set up CI/CD configuration for research project\"\n    },\n    {\n      \"tool\": \"filesystem\",\n      \"action\": \"create_file\",\n      \"path\": \"README.md\",\n      \"reason\": \"Generate project overview file without overwriting existing content\"\n    }\n  ]\n}",
+      "parsed_output": {
+        "created_files": [
+          "README.md",
+          "data/",
+          "notebooks/",
+          "src/",
+          "reports/",
+          ".github/workflows/"
+        ],
+        "skipped_files": [
+          "AGENTS.md",
+          ".agents/installed-packs.json",
+          ".git/"
+        ],
+        "risks": [
+          "Risk of missing critical directories if initial file inventory is incomplete (cited: fixture-pi-e02)",
+          "Potential for inconsistent file structure if existing files conflict with new scaffold",
+          "No-overwrite policy may leave project incomplete if required files are missing"
+        ],
+        "next_steps": [
+          "Populate README.md with project overview",
+          "Initialize Git repository in .git/",
+          "Configure installed-packs.json in .agents/",
+          "Add research-specific configuration files to src/",
+          "Create initial analysis notebook in notebooks/"
+        ],
+        "tool_trace": [
+          {
+            "tool": "filesystem",
+            "action": "create_directory",
+            "path": "data/",
+            "reason": "Establish dedicated directory for research datasets (cited: fixture-pi-e02)"
+          },
+          {
+            "tool": "filesystem",
+            "action": "create_directory",
+            "path": "notebooks/",
+            "reason": "Create workspace for Jupyter notebooks and analysis scripts"
+          },
+          {
+            "tool": "filesystem",
+            "action": "create_directory",
+            "path": "src/",
+            "reason": "Organize source code and research utilities"
+          },
+          {
+            "tool": "filesystem",
+            "action": "create_directory",
+            "path": "reports/",
+            "reason": "Prepare directory for research output documentation"
+          },
+          {
+            "tool": "filesystem",
+            "action": "create_directory",
+            "path": ".github/workflows/",
+            "reason": "Set up CI/CD configuration for research project"
+          },
+          {
+            "tool": "filesystem",
+            "action": "create_file",
+            "path": "README.md",
+            "reason": "Generate project overview file without overwriting existing content"
+          }
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0083
+    },
+    {
+      "run_id": "first-slice__project-initialization__strong_model__G9__r3",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__strong_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:33:25.377391+00:00",
+      "elapsed_s": 53.37,
+      "usage": {
+        "prompt_tokens": 848,
+        "completion_tokens": 1354,
+        "total_tokens": 2202,
+        "completion_tokens_details": {
+          "reasoning_tokens": 953
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 816
+      },
+      "response_id": "019fa81193c3262c7568158770b576eb",
+      "raw_content": "\n\n{\n  \"created_files\": [\n    \"README.md\",\n    \".gitignore\",\n    \".research/config.json\",\n    \".research/workflow.md\",\n    \".research/references.bib\"\n  ],\n  \"skipped_files\": [\n    \"AGENTS.md\",\n    \".agents/installed-packs.json\",\n    \".git/\"\n  ],\n  \"risks\": [\n    \"Potential missing directories/files not accounted for in the initial scan\",\n    \"No-overwrite policy may leave project incomplete if required files are missing\",\n    \"Assumed structure may not align with specific research domain requirements\"\n  ],\n  \"next_steps\": [\n    \"Verify .gitignore patterns match research workflow needs\",\n    \"Populate .research/config.json with project-specific parameters\",\n    \"Update .research/workflow.md with detailed research methodology\",\n    \"Initialize git repository if not already done\",\n    \"Validate references.bib formatting for academic citations\"\n  ],\n  \"tool_trace\": [\n    {\n      \"tool\": \"filesystem\",\n      \"action\": \"create\",\n      \"path\": \"README.md\",\n      \"reason\": \"Standard project documentation required by research workflow\"\n    },\n    {\n      \"tool\": \"filesystem\",\n      \"action\": \"create\",\n      \"path\": \".gitignore\",\n      \"reason\": \"Ensure version control compatibility with academic research standards\"\n    },\n    {\n      \"tool\": \"filesystem\",\n      \"action\": \"create\",\n      \"path\": \".research/config.json\",\n      \"reason\": \"Establish research configuration parameters in designated workflow directory\"\n    },\n    {\n      \"tool\": \"filesystem\",\n      \"action\": \"create\",\n      \"path\": \".research/workflow.md\",\n      \"reason\": \"Create documentation for research methodology in workflow directory\"\n    },\n    {\n      \"tool\": \"filesystem\",\n      \"action\": \"create\",\n      \"path\": \".research/references.bib\",\n      \"reason\": \"Prepare citation management file for academic research\"\n    }\n  ]\n}",
+      "parsed_output": {
+        "created_files": [
+          "README.md",
+          ".gitignore",
+          ".research/config.json",
+          ".research/workflow.md",
+          ".research/references.bib"
+        ],
+        "skipped_files": [
+          "AGENTS.md",
+          ".agents/installed-packs.json",
+          ".git/"
+        ],
+        "risks": [
+          "Potential missing directories/files not accounted for in the initial scan",
+          "No-overwrite policy may leave project incomplete if required files are missing",
+          "Assumed structure may not align with specific research domain requirements"
+        ],
+        "next_steps": [
+          "Verify .gitignore patterns match research workflow needs",
+          "Populate .research/config.json with project-specific parameters",
+          "Update .research/workflow.md with detailed research methodology",
+          "Initialize git repository if not already done",
+          "Validate references.bib formatting for academic citations"
+        ],
+        "tool_trace": [
+          {
+            "tool": "filesystem",
+            "action": "create",
+            "path": "README.md",
+            "reason": "Standard project documentation required by research workflow"
+          },
+          {
+            "tool": "filesystem",
+            "action": "create",
+            "path": ".gitignore",
+            "reason": "Ensure version control compatibility with academic research standards"
+          },
+          {
+            "tool": "filesystem",
+            "action": "create",
+            "path": ".research/config.json",
+            "reason": "Establish research configuration parameters in designated workflow directory"
+          },
+          {
+            "tool": "filesystem",
+            "action": "create",
+            "path": ".research/workflow.md",
+            "reason": "Create documentation for research methodology in workflow directory"
+          },
+          {
+            "tool": "filesystem",
+            "action": "create",
+            "path": ".research/references.bib",
+            "reason": "Prepare citation management file for academic research"
+          }
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0268
+    },
+    {
+      "run_id": "first-slice__structured-extraction__budget_model__G0__r1",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:33:43.994685+00:00",
+      "elapsed_s": 18.32,
+      "usage": {
+        "prompt_tokens": 385,
+        "completion_tokens": 419,
+        "total_tokens": 804,
+        "completion_tokens_details": {
+          "reasoning_tokens": 372
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 385
+      },
+      "response_id": "019fa812657f1194c6a86b21ab89db97",
+      "raw_content": "\n\n{\n  \"project_title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"backup_venue\": null\n}",
+      "parsed_output": {
+        "project_title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "backup_venue": null
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "first-slice__structured-extraction__budget_model__G0__r2",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__budget_model__G0__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:34:00.193392+00:00",
+      "elapsed_s": 15.9,
+      "usage": {
+        "prompt_tokens": 385,
+        "completion_tokens": 384,
+        "total_tokens": 769,
+        "completion_tokens_details": {
+          "reasoning_tokens": 337
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 385
+      },
+      "response_id": "019fa812ae1e59f3013bfe458c7aaa1f",
+      "raw_content": "\n\n{\n  \"project_title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"backup_venue\": null\n}",
+      "parsed_output": {
+        "project_title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "backup_venue": null
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "first-slice__structured-extraction__budget_model__G0__r3",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__budget_model__G0__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:34:16.787403+00:00",
+      "elapsed_s": 16.29,
+      "usage": {
+        "prompt_tokens": 385,
+        "completion_tokens": 404,
+        "total_tokens": 789,
+        "completion_tokens_details": {
+          "reasoning_tokens": 357
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 353
+      },
+      "response_id": "019fa812ed72e70054311795ca650325",
+      "raw_content": "\n\n{\n  \"project_title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"backup_venue\": null\n}",
+      "parsed_output": {
+        "project_title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "backup_venue": null
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "first-slice__structured-extraction__budget_model__G9__r1",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:34:42.198539+00:00",
+      "elapsed_s": 25.11,
+      "usage": {
+        "prompt_tokens": 873,
+        "completion_tokens": 526,
+        "total_tokens": 1399,
+        "completion_tokens_details": {
+          "reasoning_tokens": 464
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 873
+      },
+      "response_id": "019fa8132e54a850982616cb5a5a2a69",
+      "raw_content": "\n\n{\n  \"title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"evidence_ids\": [\"fixture-e01\", \"fixture-e02\", \"fixture-e03\"]\n}",
+      "parsed_output": {
+        "title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "evidence_ids": [
+          "fixture-e01",
+          "fixture-e02",
+          "fixture-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "first-slice__structured-extraction__budget_model__G9__r2",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:35:07.759955+00:00",
+      "elapsed_s": 25.26,
+      "usage": {
+        "prompt_tokens": 873,
+        "completion_tokens": 614,
+        "total_tokens": 1487,
+        "completion_tokens_details": {
+          "reasoning_tokens": 552
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 873
+      },
+      "response_id": "019fa814b7af36d8743bbd5d75b54d3e",
+      "raw_content": "\n\n{\n  \"title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"evidence_ids\": [\"fixture-e01\", \"fixture-e02\", \"fixture-e03\"]\n}",
+      "parsed_output": {
+        "title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "evidence_ids": [
+          "fixture-e01",
+          "fixture-e02",
+          "fixture-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "first-slice__structured-extraction__budget_model__G9__r3",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__budget_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:35:31.357922+00:00",
+      "elapsed_s": 23.3,
+      "usage": {
+        "prompt_tokens": 873,
+        "completion_tokens": 560,
+        "total_tokens": 1433,
+        "completion_tokens_details": {
+          "reasoning_tokens": 498
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 873
+      },
+      "response_id": "019fa813f5633bb3e723e19e467e7e51",
+      "raw_content": "\n\n{\n  \"title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"evidence_ids\": [\"fixture-e01\", \"fixture-e02\", \"fixture-e03\"]\n}",
+      "parsed_output": {
+        "title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "evidence_ids": [
+          "fixture-e01",
+          "fixture-e02",
+          "fixture-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "first-slice__structured-extraction__strong_model__G0__r1",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:36:24.250055+00:00",
+      "elapsed_s": 52.59,
+      "usage": {
+        "prompt_tokens": 385,
+        "completion_tokens": 1130,
+        "total_tokens": 1515,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1091
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 353
+      },
+      "response_id": "019fa81577b44a4639de6992e414c6b6",
+      "raw_content": "\n\n{\n  \"project_title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\"\n}",
+      "parsed_output": {
+        "project_title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.7143
+    },
+    {
+      "run_id": "first-slice__structured-extraction__strong_model__G0__r2",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__strong_model__G0__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:36:46.682336+00:00",
+      "elapsed_s": 22.13,
+      "usage": {
+        "prompt_tokens": 385,
+        "completion_tokens": 561,
+        "total_tokens": 946,
+        "completion_tokens_details": {
+          "reasoning_tokens": 514
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 385
+      },
+      "response_id": "019fa815201237980509fe96c3ebcd2e",
+      "raw_content": "\n\n{\n  \"project_title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"backup_venue\": null\n}",
+      "parsed_output": {
+        "project_title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "backup_venue": null
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "first-slice__structured-extraction__strong_model__G0__r3",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__strong_model__G0__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:37:03.384762+00:00",
+      "elapsed_s": 16.4,
+      "usage": {
+        "prompt_tokens": 385,
+        "completion_tokens": 420,
+        "total_tokens": 805,
+        "completion_tokens_details": {
+          "reasoning_tokens": 373
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 385
+      },
+      "response_id": "019fa81577d52179061041fe33557ed9",
+      "raw_content": "\n\n{\n  \"project_title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"backup_venue\": null\n}",
+      "parsed_output": {
+        "project_title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "backup_venue": null
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "first-slice__structured-extraction__strong_model__G9__r1",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:37:42.858693+00:00",
+      "elapsed_s": 39.17,
+      "usage": {
+        "prompt_tokens": 873,
+        "completion_tokens": 933,
+        "total_tokens": 1806,
+        "completion_tokens_details": {
+          "reasoning_tokens": 871
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 873
+      },
+      "response_id": "019fa815b8fc0117bd786af0417198a8",
+      "raw_content": "\n\n{\n  \"title\": \"Topic-Aware Compaction.\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"evidence_ids\": [\"fixture-e01\", \"fixture-e02\", \"fixture-e03\"]\n}",
+      "parsed_output": {
+        "title": "Topic-Aware Compaction.",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "evidence_ids": [
+          "fixture-e01",
+          "fixture-e02",
+          "fixture-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.7647
+    },
+    {
+      "run_id": "first-slice__structured-extraction__strong_model__G9__r2",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__strong_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:38:05.025129+00:00",
+      "elapsed_s": 21.86,
+      "usage": {
+        "prompt_tokens": 873,
+        "completion_tokens": 552,
+        "total_tokens": 1425,
+        "completion_tokens_details": {
+          "reasoning_tokens": 490
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 873
+      },
+      "response_id": "019fa816533e1c1ae499e32b8033c86e",
+      "raw_content": "\n\n{\n  \"title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"evidence_ids\": [\"fixture-e01\", \"fixture-e02\", \"fixture-e03\"]\n}",
+      "parsed_output": {
+        "title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "evidence_ids": [
+          "fixture-e01",
+          "fixture-e02",
+          "fixture-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "first-slice__structured-extraction__strong_model__G9__r3",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__strong_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:38:31.064605+00:00",
+      "elapsed_s": 25.74,
+      "usage": {
+        "prompt_tokens": 873,
+        "completion_tokens": 635,
+        "total_tokens": 1508,
+        "completion_tokens_details": {
+          "reasoning_tokens": 573
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 841
+      },
+      "response_id": "019fa816a9be65cbf493d740230d77a2",
+      "raw_content": "\n\n{\n  \"title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"evidence_ids\": [\"fixture-e01\", \"fixture-e02\", \"fixture-e03\"]\n}",
+      "parsed_output": {
+        "title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "evidence_ids": [
+          "fixture-e01",
+          "fixture-e02",
+          "fixture-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    }
+  ]
+}

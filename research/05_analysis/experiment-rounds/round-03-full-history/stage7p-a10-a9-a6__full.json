@@ -1,0 +1,446 @@
+{
+  "stage": "stage7p-a10-a9-a6",
+  "total_runs": 6,
+  "json_parsed": 6,
+  "matched_frozen_high_similarity": 0,
+  "frozen_task_success_1_count": 0,
+  "timestamp": "2026-07-28T17:53:47.175112+00:00",
+  "runs": [
+    {
+      "run_id": "stage7p-a10-a9-a6__stage7p-a10-a9-a6__budget_model__G0__r1",
+      "stage": "stage7p-a10-a9-a6",
+      "frozen_run_name": "stage7p-a10-a9-a6__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T17:50:55.798031+00:00",
+      "elapsed_s": 21.97,
+      "usage": {
+        "prompt_tokens": 551,
+        "completion_tokens": 539,
+        "total_tokens": 1090,
+        "completion_tokens_details": {
+          "reasoning_tokens": 433
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 551
+      },
+      "response_id": "019fa9d98ea3bc625e4e8075738108f3",
+      "raw_content": "\n\n{\n  \"title\": \"Contract-Driven Harness\",\n  \"evidence_ids\": [\"atom-a6-e01\"],\n  \"composition_order\": [\"A10\", \"A9\", \"A6\"],\n  \"task_label\": \"partial_composition\",\n  \"notes\": \"Stage 2 is next per current roadmap. Avoid broad workflow slices. Created missing file research/06_outputs/README.md. Kept existing valid fields unchanged. No overwrites to AGENTS.md or research/CONTEXT.md.\"\n}",
+      "parsed_output": {
+        "title": "Contract-Driven Harness",
+        "evidence_ids": [
+          "atom-a6-e01"
+        ],
+        "composition_order": [
+          "A10",
+          "A9",
+          "A6"
+        ],
+        "task_label": "partial_composition",
+        "notes": "Stage 2 is next per current roadmap. Avoid broad workflow slices. Created missing file research/06_outputs/README.md. Kept existing valid fields unchanged. No overwrites to AGENTS.md or research/CONTEXT.md."
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.1569
+    },
+    {
+      "run_id": "stage7p-a10-a9-a6__stage7p-a10-a9-a6__budget_model__G8__r1",
+      "stage": "stage7p-a10-a9-a6",
+      "frozen_run_name": "stage7p-a10-a9-a6__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T17:51:46.572341+00:00",
+      "elapsed_s": 50.47,
+      "usage": {
+        "prompt_tokens": 1030,
+        "completion_tokens": 1320,
+        "total_tokens": 2350,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1085
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1030
+      },
+      "response_id": "019fa9d9e589121509274badd2e4c8bf",
+      "raw_content": "\n\n{\n  \"bounded_context\": {\n    \"current_stage\": \"Stage 2\",\n    \"existing_files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n    \"missing_files\": [\"research/06_outputs/README.md\"],\n    \"protected_files\": [\"AGENTS.md\"]\n  },\n  \"safe_action_plan\": {\n    \"actions\": [\n      {\n        \"type\": \"create\",\n        \"file_path\": \"research/06_outputs/README.md\",\n        \"content\": \"Partial composition output for Stage 7p task\",\n        \"reason\": \"Missing file identified in must-load constraints\"\n      }\n    ],\n    \"exclusions\": [\"AGENTS.md\"]\n  },\n  \"validator_repair\": {\n    \"output\": {\n      \"title\": \"Contract-Driven Harness\",\n      \"evidence_ids\": [\"atom-a6-e01\"]\n    },\n    \"integrity_check\": {\n      \"valid_fields\": [\"title\"],\n      \"unchanged_fields\": [\"title\"]\n    }\n  },\n  \"composition_trace\": [\"A10\", \"A9\", \"A6\"],\n  \"boundary\": \"partial_composition\"\n}",
+      "parsed_output": {
+        "bounded_context": {
+          "current_stage": "Stage 2",
+          "existing_files": [
+            "AGENTS.md",
+            "research/CONTEXT.md"
+          ],
+          "missing_files": [
+            "research/06_outputs/README.md"
+          ],
+          "protected_files": [
+            "AGENTS.md"
+          ]
+        },
+        "safe_action_plan": {
+          "actions": [
+            {
+              "type": "create",
+              "file_path": "research/06_outputs/README.md",
+              "content": "Partial composition output for Stage 7p task",
+              "reason": "Missing file identified in must-load constraints"
+            }
+          ],
+          "exclusions": [
+            "AGENTS.md"
+          ]
+        },
+        "validator_repair": {
+          "output": {
+            "title": "Contract-Driven Harness",
+            "evidence_ids": [
+              "atom-a6-e01"
+            ]
+          },
+          "integrity_check": {
+            "valid_fields": [
+              "title"
+            ],
+            "unchanged_fields": [
+              "title"
+            ]
+          }
+        },
+        "composition_trace": [
+          "A10",
+          "A9",
+          "A6"
+        ],
+        "boundary": "partial_composition"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2443
+    },
+    {
+      "run_id": "stage7p-a10-a9-a6__stage7p-a10-a9-a6__budget_model__G9__r1",
+      "stage": "stage7p-a10-a9-a6",
+      "frozen_run_name": "stage7p-a10-a9-a6__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T17:52:17.664932+00:00",
+      "elapsed_s": 30.79,
+      "usage": {
+        "prompt_tokens": 1050,
+        "completion_tokens": 843,
+        "total_tokens": 1893,
+        "completion_tokens_details": {
+          "reasoning_tokens": 450
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1050
+      },
+      "response_id": "019fa9daac07132d12622fb289f521e5",
+      "raw_content": "\n\n{\n  \"bounded_context\": {\n    \"current_roadmap\": \"Stage 2 is next\",\n    \"existing_files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n    \"missing_files\": [\"research/06_outputs/README.md\"],\n    \"protected_files\": [\"AGENTS.md\"]\n  },\n  \"safe_action_plan\": {\n    \"planned_actions\": [\n      {\n        \"action\": \"create_file\",\n        \"file_path\": \"research/06_outputs/README.md\",\n        \"content\": \"Partial composition output for Stage 7p task\",\n        \"reason\": \"Missing file identified in memory slice and not protected\"\n      }\n    ],\n    \"excluded_actions\": [\n      \"overwrite AGENTS.md\",\n      \"execute broad-workflow plan\"\n    ]\n  },\n  \"validator_repair\": {\n    \"original_output\": {\n      \"title\": \"Contract-Driven Harness\"\n    },\n    \"repair_actions\": [\n      {\n        \"evidence_id\": \"atom-a6-e01\",\n        \"claim\": \"Primary evidence for Validator Repair\",\n        \"action\": \"add_evidence_reference\",\n        \"reason\": \"Validator feedback requires adding missing evidence_ids\"\n      }\n    ],\n    \"unchanged_fields\": [\"title\"]\n  },\n  \"composition_trace\": {\n    \"sequence\": [\"A10\", \"A9\", \"A6\"],\n    \"context_recall\": \"Stage 7p context from fixture and memory slice\",\n    \"action_planning\": \"No-overwrite plan based on protected files\",\n    \"repair_applied\": \"Validator-reported output preserved with evidence ID added\"\n  },\n  \"boundary\": {\n    \"constraints\": [\n      \"Partial composition only\",\n      \"No overwrite of AGENTS.md\",\n      \"Only create missing unprotected files\",\n      \"Label as partial composition\"\n    ],\n    \"evidence_ids\": [\"atom-a6-e01\"]\n  }\n}",
+      "parsed_output": {
+        "bounded_context": {
+          "current_roadmap": "Stage 2 is next",
+          "existing_files": [
+            "AGENTS.md",
+            "research/CONTEXT.md"
+          ],
+          "missing_files": [
+            "research/06_outputs/README.md"
+          ],
+          "protected_files": [
+            "AGENTS.md"
+          ]
+        },
+        "safe_action_plan": {
+          "planned_actions": [
+            {
+              "action": "create_file",
+              "file_path": "research/06_outputs/README.md",
+              "content": "Partial composition output for Stage 7p task",
+              "reason": "Missing file identified in memory slice and not protected"
+            }
+          ],
+          "excluded_actions": [
+            "overwrite AGENTS.md",
+            "execute broad-workflow plan"
+          ]
+        },
+        "validator_repair": {
+          "original_output": {
+            "title": "Contract-Driven Harness"
+          },
+          "repair_actions": [
+            {
+              "evidence_id": "atom-a6-e01",
+              "claim": "Primary evidence for Validator Repair",
+              "action": "add_evidence_reference",
+              "reason": "Validator feedback requires adding missing evidence_ids"
+            }
+          ],
+          "unchanged_fields": [
+            "title"
+          ]
+        },
+        "composition_trace": {
+          "sequence": [
+            "A10",
+            "A9",
+            "A6"
+          ],
+          "context_recall": "Stage 7p context from fixture and memory slice",
+          "action_planning": "No-overwrite plan based on protected files",
+          "repair_applied": "Validator-reported output preserved with evidence ID added"
+        },
+        "boundary": {
+          "constraints": [
+            "Partial composition only",
+            "No overwrite of AGENTS.md",
+            "Only create missing unprotected files",
+            "Label as partial composition"
+          ],
+          "evidence_ids": [
+            "atom-a6-e01"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2568
+    },
+    {
+      "run_id": "stage7p-a10-a9-a6__stage7p-a10-a9-a6__strong_model__G0__r1",
+      "stage": "stage7p-a10-a9-a6",
+      "frozen_run_name": "stage7p-a10-a9-a6__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T17:52:40.779344+00:00",
+      "elapsed_s": 22.81,
+      "usage": {
+        "prompt_tokens": 551,
+        "completion_tokens": 630,
+        "total_tokens": 1181,
+        "completion_tokens_details": {
+          "reasoning_tokens": 458
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 519
+      },
+      "response_id": "019fa9db257c429c336d9ad1e60bdb2b",
+      "raw_content": "\n\n{\n  \"context_selection\": {\n    \"must_load\": \"current roadmap says Stage 2 is next\",\n    \"must_not_load\": \"old plan says run another broad workflow slice\"\n  },\n  \"safe_planning\": {\n    \"existing_files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n    \"missing_files\": [\"research/06_outputs/README.md\"],\n    \"protected_files\": [\"AGENTS.md\"],\n    \"actions\": [\"create research/06_outputs/README.md\"]\n  },\n  \"validator_repair\": {\n    \"original_output\": {\"title\": \"Contract-Driven Harness\"},\n    \"repaired_output\": {\n      \"title\": \"Contract-Driven Harness\",\n      \"evidence_ids\": [\"atom-a6-e01\"]\n    }\n  },\n  \"composition_label\": \"partial composition\"\n}",
+      "parsed_output": {
+        "context_selection": {
+          "must_load": "current roadmap says Stage 2 is next",
+          "must_not_load": "old plan says run another broad workflow slice"
+        },
+        "safe_planning": {
+          "existing_files": [
+            "AGENTS.md",
+            "research/CONTEXT.md"
+          ],
+          "missing_files": [
+            "research/06_outputs/README.md"
+          ],
+          "protected_files": [
+            "AGENTS.md"
+          ],
+          "actions": [
+            "create research/06_outputs/README.md"
+          ]
+        },
+        "validator_repair": {
+          "original_output": {
+            "title": "Contract-Driven Harness"
+          },
+          "repaired_output": {
+            "title": "Contract-Driven Harness",
+            "evidence_ids": [
+              "atom-a6-e01"
+            ]
+          }
+        },
+        "composition_label": "partial composition"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2927
+    },
+    {
+      "run_id": "stage7p-a10-a9-a6__stage7p-a10-a9-a6__strong_model__G8__r1",
+      "stage": "stage7p-a10-a9-a6",
+      "frozen_run_name": "stage7p-a10-a9-a6__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T17:53:19.293204+00:00",
+      "elapsed_s": 38.21,
+      "usage": {
+        "prompt_tokens": 1030,
+        "completion_tokens": 1035,
+        "total_tokens": 2065,
+        "completion_tokens_details": {
+          "reasoning_tokens": 642
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1030
+      },
+      "response_id": "019fa9db7fd46fdfead370170b898fcc",
+      "raw_content": "\n\n{\n  \"bounded_context\": {\n    \"current_stage\": \"Stage 2\",\n    \"existing_files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n    \"missing_files\": [\"research/06_outputs/README.md\"],\n    \"protected_files\": [\"AGENTS.md\"]\n  },\n  \"safe_action_plan\": {\n    \"actions\": [\n      {\n        \"type\": \"create\",\n        \"file_path\": \"research/06_outputs/README.md\",\n        \"content\": \"Initial README for outputs directory\",\n        \"reason\": \"Missing file identified in must-load context\"\n      }\n    ],\n    \"exclusions\": [\n      \"AGENTS.md\"\n    ]\n  },\n  \"validator_repair\": {\n    \"original_output\": {\n      \"title\": \"Contract-Driven Harness\"\n    },\n    \"evidence_ids\": [\"atom-a6-e01\"],\n    \"repaired_output\": {\n      \"title\": \"Contract-Driven Harness\",\n      \"evidence\": {\n        \"atom-a6-e01\": {\n          \"type\": \"EXTRACTED\",\n          \"claim\": \"Primary evidence for Validator Repair\"\n        }\n      }\n    }\n  },\n  \"composition_trace\": {\n    \"sequence\": [\n      \"A10: Bounded context recall of current roadmap and file state\",\n      \"A9: Safe action planning to create missing README.md\",\n      \"A6: Validator repair applying evidence atom-a6-e01\"\n    ],\n    \"constraints_applied\": [\n      \"No overwrites to protected AGENTS.md\",\n      \"Only missing unprotected files created\",\n      \"Existing valid fields preserved\"\n    ]\n  },\n  \"boundary\": {\n    \"label\": \"partial_composition\",\n    \"scope\": \"A10 -> A9 -> A6\",\n    \"exclusions\": [\n      \"full_project_initialization\",\n      \"full_research_workflow_validation\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "bounded_context": {
+          "current_stage": "Stage 2",
+          "existing_files": [
+            "AGENTS.md",
+            "research/CONTEXT.md"
+          ],
+          "missing_files": [
+            "research/06_outputs/README.md"
+          ],
+          "protected_files": [
+            "AGENTS.md"
+          ]
+        },
+        "safe_action_plan": {
+          "actions": [
+            {
+              "type": "create",
+              "file_path": "research/06_outputs/README.md",
+              "content": "Initial README for outputs directory",
+              "reason": "Missing file identified in must-load context"
+            }
+          ],
+          "exclusions": [
+            "AGENTS.md"
+          ]
+        },
+        "validator_repair": {
+          "original_output": {
+            "title": "Contract-Driven Harness"
+          },
+          "evidence_ids": [
+            "atom-a6-e01"
+          ],
+          "repaired_output": {
+            "title": "Contract-Driven Harness",
+            "evidence": {
+              "atom-a6-e01": {
+                "type": "EXTRACTED",
+                "claim": "Primary evidence for Validator Repair"
+              }
+            }
+          }
+        },
+        "composition_trace": {
+          "sequence": [
+            "A10: Bounded context recall of current roadmap and file state",
+            "A9: Safe action planning to create missing README.md",
+            "A6: Validator repair applying evidence atom-a6-e01"
+          ],
+          "constraints_applied": [
+            "No overwrites to protected AGENTS.md",
+            "Only missing unprotected files created",
+            "Existing valid fields preserved"
+          ]
+        },
+        "boundary": {
+          "label": "partial_composition",
+          "scope": "A10 -> A9 -> A6",
+          "exclusions": [
+            "full_project_initialization",
+            "full_research_workflow_validation"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2063
+    },
+    {
+      "run_id": "stage7p-a10-a9-a6__stage7p-a10-a9-a6__strong_model__G9__r1",
+      "stage": "stage7p-a10-a9-a6",
+      "frozen_run_name": "stage7p-a10-a9-a6__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T17:53:46.874721+00:00",
+      "elapsed_s": 27.28,
+      "usage": {
+        "prompt_tokens": 1050,
+        "completion_tokens": 744,
+        "total_tokens": 1794,
+        "completion_tokens_details": {
+          "reasoning_tokens": 403
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1050
+      },
+      "response_id": "019fa9dc16330579236131813ac480a3",
+      "raw_content": "\n\n{\n  \"bounded_context\": {\n    \"current_roadmap\": \"Stage 2 is next\",\n    \"existing_files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n    \"missing_files\": [\"research/06_outputs/README.md\"],\n    \"protected_files\": [\"AGENTS.md\"],\n    \"original_output\": {\n      \"title\": \"Contract-Driven Harness\"\n    }\n  },\n  \"safe_action_plan\": {\n    \"actions\": [\n      \"Create research/06_outputs/README.md if missing\",\n      \"Preserve AGENTS.md content\",\n      \"Avoid overwriting existing files\"\n    ],\n    \"rationale\": \"Only missing unprotected files are created, protected files remain unchanged, and no broad workflow actions are executed.\"\n  },\n  \"validator_repair\": {\n    \"repaired_output\": {\n      \"title\": \"Contract-Driven Harness\",\n      \"evidence_ids\": [\"atom-a6-e01\"]\n    },\n    \"integrity_check\": \"All existing valid fields from original output preserved\"\n  },\n  \"composition_trace\": {\n    \"atom_order\": [\"A10\", \"A9\", \"A6\"],\n    \"context_selection\": \"Loaded current roadmap and existing files\",\n    \"action_planning\": \"Generated safe action plan for missing files\",\n    \"repair_applied\": \"Added evidence_ids from validator feedback\"\n  },\n  \"boundary\": {\n    \"composition_label\": \"partial composition\",\n    \"constraints_applied\": [\n      \"No full project initialization validation\",\n      \"No overwriting of AGENTS.md\",\n      \"Only A10->A9->A6 atoms composed\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "bounded_context": {
+          "current_roadmap": "Stage 2 is next",
+          "existing_files": [
+            "AGENTS.md",
+            "research/CONTEXT.md"
+          ],
+          "missing_files": [
+            "research/06_outputs/README.md"
+          ],
+          "protected_files": [
+            "AGENTS.md"
+          ],
+          "original_output": {
+            "title": "Contract-Driven Harness"
+          }
+        },
+        "safe_action_plan": {
+          "actions": [
+            "Create research/06_outputs/README.md if missing",
+            "Preserve AGENTS.md content",
+            "Avoid overwriting existing files"
+          ],
+          "rationale": "Only missing unprotected files are created, protected files remain unchanged, and no broad workflow actions are executed."
+        },
+        "validator_repair": {
+          "repaired_output": {
+            "title": "Contract-Driven Harness",
+            "evidence_ids": [
+              "atom-a6-e01"
+            ]
+          },
+          "integrity_check": "All existing valid fields from original output preserved"
+        },
+        "composition_trace": {
+          "atom_order": [
+            "A10",
+            "A9",
+            "A6"
+          ],
+          "context_selection": "Loaded current roadmap and existing files",
+          "action_planning": "Generated safe action plan for missing files",
+          "repair_applied": "Added evidence_ids from validator feedback"
+        },
+        "boundary": {
+          "composition_label": "partial composition",
+          "constraints_applied": [
+            "No full project initialization validation",
+            "No overwriting of AGENTS.md",
+            "Only A10->A9->A6 atoms composed"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2533
+    }
+  ]
+}

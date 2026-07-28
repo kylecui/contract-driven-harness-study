@@ -1,0 +1,370 @@
+{
+  "stage": "stage7p-v2-a10-a9-a6",
+  "total_runs": 6,
+  "json_parsed": 6,
+  "matched_frozen_high_similarity": 0,
+  "frozen_task_success_1_count": 0,
+  "timestamp": "2026-07-28T17:59:40.852257+00:00",
+  "runs": [
+    {
+      "run_id": "stage7p-v2-a10-a9-a6__stage7p-v2-a10-a9-a6__budget_model__G0__r1",
+      "stage": "stage7p-v2-a10-a9-a6",
+      "frozen_run_name": "stage7p-v2-a10-a9-a6__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T17:54:40.516973+00:00",
+      "elapsed_s": 50.34,
+      "usage": {
+        "prompt_tokens": 709,
+        "completion_tokens": 1262,
+        "total_tokens": 1971,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1177
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 677
+      },
+      "response_id": "019fa9dc8da45b552c111953a12b7ef4",
+      "raw_content": "\n\n{\n  \"title\": \"Contract-Driven Harness\",\n  \"evidence_ids\": [\"atom-a6-e01\"],\n  \"bounded_context\": {\n    \"excluded_context\": [\"old broad-workflow plan\"]\n  },\n  \"carried_obligations\": [\n    \"A10 obligation to exclude old broad-workflow plan and mark it preserved\"\n  ],\n  \"label\": \"partial composition\"\n}",
+      "parsed_output": {
+        "title": "Contract-Driven Harness",
+        "evidence_ids": [
+          "atom-a6-e01"
+        ],
+        "bounded_context": {
+          "excluded_context": [
+            "old broad-workflow plan"
+          ]
+        },
+        "carried_obligations": [
+          "A10 obligation to exclude old broad-workflow plan and mark it preserved"
+        ],
+        "label": "partial composition"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2078
+    },
+    {
+      "run_id": "stage7p-v2-a10-a9-a6__stage7p-v2-a10-a9-a6__budget_model__G8__r1",
+      "stage": "stage7p-v2-a10-a9-a6",
+      "frozen_run_name": "stage7p-v2-a10-a9-a6__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T17:55:16.735539+00:00",
+      "elapsed_s": 35.91,
+      "usage": {
+        "prompt_tokens": 1327,
+        "completion_tokens": 1066,
+        "total_tokens": 2393,
+        "completion_tokens_details": {
+          "reasoning_tokens": 794
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 1295
+      },
+      "response_id": "019fa9dd53a18d1397eda09f769c1790",
+      "raw_content": "\n\n{\n  \"bounded_context\": {\n    \"used_context\": [\n      \"Current roadmap says Stage 2 is next.\",\n      \"Existing files: AGENTS.md and research/CONTEXT.md.\"\n    ],\n    \"excluded_context\": [\n      \"Old broad-workflow plan\"\n    ]\n  },\n  \"carried_obligations\": [\n    {\n      \"from_atom\": \"A10\",\n      \"obligation\": \"exclude old broad workflow plan and mark it preserved\",\n      \"status\": \"preserved\"\n    }\n  ],\n  \"safe_action_plan\": [\n    \"Create research/06_outputs/README.md as missing unprotected file\"\n  ],\n  \"validator_repair\": {\n    \"original_output\": {\n      \"title\": \"Contract-Driven Harness\"\n    },\n    \"repaired_output\": {\n      \"title\": \"Contract-Driven Harness\",\n      \"evidence_ids\": [\n        \"atom-a6-e01\"\n      ]\n    }\n  },\n  \"composition_trace\": [\n    \"A10: Bounded context recall with explicit exclusion of old broad-workflow plan\",\n    \"A9: No-overwrite action planning preserving AGENTS.md\",\n    \"A6: Validator repair adding evidence_ids while retaining valid fields\"\n  ],\n  \"boundary\": \"stage7p_v2_partial_composition\"\n}",
+      "parsed_output": {
+        "bounded_context": {
+          "used_context": [
+            "Current roadmap says Stage 2 is next.",
+            "Existing files: AGENTS.md and research/CONTEXT.md."
+          ],
+          "excluded_context": [
+            "Old broad-workflow plan"
+          ]
+        },
+        "carried_obligations": [
+          {
+            "from_atom": "A10",
+            "obligation": "exclude old broad workflow plan and mark it preserved",
+            "status": "preserved"
+          }
+        ],
+        "safe_action_plan": [
+          "Create research/06_outputs/README.md as missing unprotected file"
+        ],
+        "validator_repair": {
+          "original_output": {
+            "title": "Contract-Driven Harness"
+          },
+          "repaired_output": {
+            "title": "Contract-Driven Harness",
+            "evidence_ids": [
+              "atom-a6-e01"
+            ]
+          }
+        },
+        "composition_trace": [
+          "A10: Bounded context recall with explicit exclusion of old broad-workflow plan",
+          "A9: No-overwrite action planning preserving AGENTS.md",
+          "A6: Validator repair adding evidence_ids while retaining valid fields"
+        ],
+        "boundary": "stage7p_v2_partial_composition"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.487
+    },
+    {
+      "run_id": "stage7p-v2-a10-a9-a6__stage7p-v2-a10-a9-a6__budget_model__G9__r1",
+      "stage": "stage7p-v2-a10-a9-a6",
+      "frozen_run_name": "stage7p-v2-a10-a9-a6__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T17:57:48.703544+00:00",
+      "elapsed_s": 151.67,
+      "usage": {
+        "prompt_tokens": 1347,
+        "completion_tokens": 791,
+        "total_tokens": 2138,
+        "completion_tokens_details": {
+          "reasoning_tokens": 528
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1347
+      },
+      "response_id": "019fa9dfbdcd2d8b006a1f717ca49490",
+      "raw_content": "\n\n{\n  \"bounded_context\": {\n    \"used_context\": [\n      \"Current roadmap says Stage 2 is next.\",\n      \"Existing files: AGENTS.md and research/CONTEXT.md.\"\n    ],\n    \"excluded_context\": [\n      \"old broad-workflow plan\"\n    ]\n  },\n  \"carried_obligations\": [\n    {\n      \"from_atom\": \"A10\",\n      \"obligation\": \"exclude old broad workflow plan\",\n      \"status\": \"preserved\"\n    }\n  ],\n  \"safe_action_plan\": [\n    \"Create research/06_outputs/README.md as missing unprotected file.\"\n  ],\n  \"validator_repair\": {\n    \"original_output\": {\n      \"title\": \"Contract-Driven Harness\"\n    },\n    \"repaired_output\": {\n      \"title\": \"Contract-Driven Harness\",\n      \"evidence_ids\": [\n        \"atom-a6-e01\"\n      ]\n    }\n  },\n  \"composition_trace\": [\n    \"A10: Bounded context recall with exclusion of old broad-workflow plan\",\n    \"A9: No-overwrite action planning for protected AGENTS.md\",\n    \"A6: Validator repair using atom-a6-e01 evidence\"\n  ],\n  \"boundary\": \"partial composition\"\n}",
+      "parsed_output": {
+        "bounded_context": {
+          "used_context": [
+            "Current roadmap says Stage 2 is next.",
+            "Existing files: AGENTS.md and research/CONTEXT.md."
+          ],
+          "excluded_context": [
+            "old broad-workflow plan"
+          ]
+        },
+        "carried_obligations": [
+          {
+            "from_atom": "A10",
+            "obligation": "exclude old broad workflow plan",
+            "status": "preserved"
+          }
+        ],
+        "safe_action_plan": [
+          "Create research/06_outputs/README.md as missing unprotected file."
+        ],
+        "validator_repair": {
+          "original_output": {
+            "title": "Contract-Driven Harness"
+          },
+          "repaired_output": {
+            "title": "Contract-Driven Harness",
+            "evidence_ids": [
+              "atom-a6-e01"
+            ]
+          }
+        },
+        "composition_trace": [
+          "A10: Bounded context recall with exclusion of old broad-workflow plan",
+          "A9: No-overwrite action planning for protected AGENTS.md",
+          "A6: Validator repair using atom-a6-e01 evidence"
+        ],
+        "boundary": "partial composition"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.3207
+    },
+    {
+      "run_id": "stage7p-v2-a10-a9-a6__stage7p-v2-a10-a9-a6__strong_model__G0__r1",
+      "stage": "stage7p-v2-a10-a9-a6",
+      "frozen_run_name": "stage7p-v2-a10-a9-a6__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T17:58:17.861722+00:00",
+      "elapsed_s": 28.86,
+      "usage": {
+        "prompt_tokens": 709,
+        "completion_tokens": 816,
+        "total_tokens": 1525,
+        "completion_tokens_details": {
+          "reasoning_tokens": 648
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 709
+      },
+      "response_id": "019fa9e0329b303c464c8a4d76a81e30",
+      "raw_content": "\n\n{\n  \"bounded_context\": {\n    \"excluded_context\": [\"old broad-workflow plan\"],\n    \"current_context\": \"Stage 2 is next per roadmap\"\n  },\n  \"action_plan\": {\n    \"planned_actions\": [\"create research/06_outputs/README.md\"],\n    \"protected_files\": [\"AGENTS.md\"],\n    \"new_files\": [\"research/06_outputs/README.md\"]\n  },\n  \"validator_repair\": {\n    \"evidence_ids\": [\"atom-a6-e01\"],\n    \"preserved_fields\": [\"title\"],\n    \"output\": {\n      \"title\": \"Contract-Driven Harness\"\n    }\n  },\n  \"carried_obligations\": [\n    \"exclude old broad workflow plan (preserved)\"\n  ],\n  \"composition_label\": \"partial composition\"\n}",
+      "parsed_output": {
+        "bounded_context": {
+          "excluded_context": [
+            "old broad-workflow plan"
+          ],
+          "current_context": "Stage 2 is next per roadmap"
+        },
+        "action_plan": {
+          "planned_actions": [
+            "create research/06_outputs/README.md"
+          ],
+          "protected_files": [
+            "AGENTS.md"
+          ],
+          "new_files": [
+            "research/06_outputs/README.md"
+          ]
+        },
+        "validator_repair": {
+          "evidence_ids": [
+            "atom-a6-e01"
+          ],
+          "preserved_fields": [
+            "title"
+          ],
+          "output": {
+            "title": "Contract-Driven Harness"
+          }
+        },
+        "carried_obligations": [
+          "exclude old broad workflow plan (preserved)"
+        ],
+        "composition_label": "partial composition"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2533
+    },
+    {
+      "run_id": "stage7p-v2-a10-a9-a6__stage7p-v2-a10-a9-a6__strong_model__G8__r1",
+      "stage": "stage7p-v2-a10-a9-a6",
+      "frozen_run_name": "stage7p-v2-a10-a9-a6__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T17:59:01.622813+00:00",
+      "elapsed_s": 43.46,
+      "usage": {
+        "prompt_tokens": 1327,
+        "completion_tokens": 1193,
+        "total_tokens": 2520,
+        "completion_tokens_details": {
+          "reasoning_tokens": 873
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1327
+      },
+      "response_id": "019fa9e0a496f26692944e00684dcef8",
+      "raw_content": "\n\n{\n  \"bounded_context\": {\n    \"used_context\": \"Current roadmap says Stage 2 is next. Existing files: AGENTS.md and research/CONTEXT.md. Missing file: research/06_outputs/README.md. Protected file: AGENTS.md.\",\n    \"excluded_context\": \"old broad-workflow plan\"\n  },\n  \"carried_obligations\": [\n    {\n      \"from_atom\": \"A10\",\n      \"obligation\": \"exclude old broad workflow plan\",\n      \"status\": \"preserved\"\n    }\n  ],\n  \"safe_action_plan\": {\n    \"actions\": [\n      \"Create research/06_outputs/README.md as missing unprotected file\"\n    ],\n    \"constraints\": [\n      \"Do not overwrite AGENTS.md\"\n    ]\n  },\n  \"validator_repair\": {\n    \"original_output\": {\n      \"title\": \"Contract-Driven Harness\"\n    },\n    \"repaired_output\": {\n      \"title\": \"Contract-Driven Harness\",\n      \"evidence_ids\": [\n        \"atom-a6-e01\"\n      ]\n    },\n    \"unchanged_fields\": [\n      \"title\"\n    ]\n  },\n  \"composition_trace\": {\n    \"A10\": \"Bounded context recall completed with explicit exclusion of old broad-workflow plan\",\n    \"A9\": \"No-overwrite action planning confirmed for protected AGENTS.md\",\n    \"A6\": \"Validator repair applied with evidence_id atom-a6-e01 preserving existing valid fields\"\n  },\n  \"boundary\": \"partial composition\"\n}",
+      "parsed_output": {
+        "bounded_context": {
+          "used_context": "Current roadmap says Stage 2 is next. Existing files: AGENTS.md and research/CONTEXT.md. Missing file: research/06_outputs/README.md. Protected file: AGENTS.md.",
+          "excluded_context": "old broad-workflow plan"
+        },
+        "carried_obligations": [
+          {
+            "from_atom": "A10",
+            "obligation": "exclude old broad workflow plan",
+            "status": "preserved"
+          }
+        ],
+        "safe_action_plan": {
+          "actions": [
+            "Create research/06_outputs/README.md as missing unprotected file"
+          ],
+          "constraints": [
+            "Do not overwrite AGENTS.md"
+          ]
+        },
+        "validator_repair": {
+          "original_output": {
+            "title": "Contract-Driven Harness"
+          },
+          "repaired_output": {
+            "title": "Contract-Driven Harness",
+            "evidence_ids": [
+              "atom-a6-e01"
+            ]
+          },
+          "unchanged_fields": [
+            "title"
+          ]
+        },
+        "composition_trace": {
+          "A10": "Bounded context recall completed with explicit exclusion of old broad-workflow plan",
+          "A9": "No-overwrite action planning confirmed for protected AGENTS.md",
+          "A6": "Validator repair applied with evidence_id atom-a6-e01 preserving existing valid fields"
+        },
+        "boundary": "partial composition"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2342
+    },
+    {
+      "run_id": "stage7p-v2-a10-a9-a6__stage7p-v2-a10-a9-a6__strong_model__G9__r1",
+      "stage": "stage7p-v2-a10-a9-a6",
+      "frozen_run_name": "stage7p-v2-a10-a9-a6__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T17:59:40.551465+00:00",
+      "elapsed_s": 38.63,
+      "usage": {
+        "prompt_tokens": 1347,
+        "completion_tokens": 962,
+        "total_tokens": 2309,
+        "completion_tokens_details": {
+          "reasoning_tokens": 682
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1347
+      },
+      "response_id": "019fa9e14f83eb809239016f271c7a59",
+      "raw_content": "\n\n{\n  \"bounded_context\": {\n    \"used_context\": [\n      \"Current roadmap says Stage 2 is next.\",\n      \"Existing files: AGENTS.md and research/CONTEXT.md.\"\n    ],\n    \"excluded_context\": [\n      \"old broad-workflow plan\"\n    ]\n  },\n  \"carried_obligations\": [\n    {\n      \"from_atom\": \"A10\",\n      \"obligation\": \"exclude old broad workflow plan\",\n      \"status\": \"preserved\"\n    }\n  ],\n  \"safe_action_plan\": [\n    \"Create research/06_outputs/README.md as missing unprotected file\"\n  ],\n  \"validator_repair\": {\n    \"original_output\": {\n      \"title\": \"Contract-Driven Harness\"\n    },\n    \"repaired_output\": {\n      \"title\": \"Contract-Driven Harness\",\n      \"evidence_ids\": [\n        \"atom-a6-e01\"\n      ]\n    }\n  },\n  \"composition_trace\": [\n    \"A10: Bounded context recall with explicit exclusion of old broad-workflow plan\",\n    \"A9: No-overwrite action planning preserving AGENTS.md and creating research/06_outputs/README.md\",\n    \"A6: Validator repair maintaining existing valid fields and adding evidence_id: atom-a6-e01\"\n  ],\n  \"boundary\": \"local_snapshot\"\n}",
+      "parsed_output": {
+        "bounded_context": {
+          "used_context": [
+            "Current roadmap says Stage 2 is next.",
+            "Existing files: AGENTS.md and research/CONTEXT.md."
+          ],
+          "excluded_context": [
+            "old broad-workflow plan"
+          ]
+        },
+        "carried_obligations": [
+          {
+            "from_atom": "A10",
+            "obligation": "exclude old broad workflow plan",
+            "status": "preserved"
+          }
+        ],
+        "safe_action_plan": [
+          "Create research/06_outputs/README.md as missing unprotected file"
+        ],
+        "validator_repair": {
+          "original_output": {
+            "title": "Contract-Driven Harness"
+          },
+          "repaired_output": {
+            "title": "Contract-Driven Harness",
+            "evidence_ids": [
+              "atom-a6-e01"
+            ]
+          }
+        },
+        "composition_trace": [
+          "A10: Bounded context recall with explicit exclusion of old broad-workflow plan",
+          "A9: No-overwrite action planning preserving AGENTS.md and creating research/06_outputs/README.md",
+          "A6: Validator repair maintaining existing valid fields and adding evidence_id: atom-a6-e01"
+        ],
+        "boundary": "local_snapshot"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2453
+    }
+  ]
+}

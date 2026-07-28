@@ -1,0 +1,18 @@
+[
+  {
+    "stage": "stage7r-revised-atoms",
+    "total_runs": 36,
+    "json_parsed": 31,
+    "matched_frozen_high_similarity": 4,
+    "frozen_task_success_1_count": 0,
+    "timestamp": "2026-07-28T18:40:19.618049+00:00"
+  },
+  {
+    "stage": "stage7r1-a2r-a7r-targeted",
+    "total_runs": 8,
+    "json_parsed": 7,
+    "matched_frozen_high_similarity": 2,
+    "frozen_task_success_1_count": 0,
+    "timestamp": "2026-07-28T18:55:02.835358+00:00"
+  }
+]

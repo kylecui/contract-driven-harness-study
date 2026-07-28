@@ -1,0 +1,2928 @@
+{
+  "stage": "stage-b-v52-evidence-binding-ablation",
+  "total_runs": 30,
+  "json_parsed": 26,
+  "matched_frozen_high_similarity": 25,
+  "frozen_task_success_1_count": 0,
+  "timestamp": "2026-07-28T16:38:05.772110+00:00",
+  "runs": [
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r1--canonical__budget_model__G9__r1",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r1--canonical__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:57:45.675191+00:00",
+      "elapsed_s": 60.09,
+      "usage": {
+        "prompt_tokens": 1993,
+        "completion_tokens": 1560,
+        "total_tokens": 3553,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1002
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1993
+      },
+      "response_id": "019fa9715cb1eaa7f50f623376c27013",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\"\n    ]\n  },\n  \"grounded_claims\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"claim\": \"Stage B v4-local passed all local gates.\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"claim\": \"Stage B v4 isolated smoke passed all eight runs.\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"claim\": \"The bounded recomposition smoke passed all four runs.\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"claim\": \"Within the fixture, the supplied event approves provider execution.\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"grounded_claims[].slot_id\",\n      \"grounded_claims[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status"
+          ]
+        },
+        "grounded_claims": [
+          {
+            "slot_id": "claim_alpha",
+            "claim": "Stage B v4-local passed all local gates.",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "claim": "Stage B v4 isolated smoke passed all eight runs.",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "claim": "The bounded recomposition smoke passed all four runs.",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "claim": "Within the fixture, the supplied event approves provider execution.",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "grounded_claims[].slot_id",
+            "grounded_claims[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.9535
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r1--canonical__budget_model__G9__r2",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r1--canonical__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:58:49.689938+00:00",
+      "elapsed_s": 63.71,
+      "usage": {
+        "prompt_tokens": 1993,
+        "completion_tokens": 1656,
+        "total_tokens": 3649,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1097
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1993
+      },
+      "response_id": "019fa972487fe482953ab05d12336618",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\"\n    ]\n  },\n  \"grounded_claims\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"claim\": \"Stage B v4-local passed before provider execution.\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"claim\": \"The isolated Stage B v4 smoke passed all eight runs.\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"claim\": \"The bounded recomposition smoke passed all four runs.\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"claim\": \"Within the fixture, the supplied event approves provider execution.\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"grounded_claims[].slot_id\",\n      \"grounded_claims[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status"
+          ]
+        },
+        "grounded_claims": [
+          {
+            "slot_id": "claim_alpha",
+            "claim": "Stage B v4-local passed before provider execution.",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "claim": "The bounded recomposition smoke passed all four runs.",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "claim": "Within the fixture, the supplied event approves provider execution.",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "grounded_claims[].slot_id",
+            "grounded_claims[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r1--canonical__budget_model__G9__r3",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r1--canonical__budget_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "error": "The read operation timed out",
+      "elapsed_s": 242.1
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r1--distractor-evidence__budget_model__G9__r1",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r1--distractor-evidence__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:04:08.947133+00:00",
+      "elapsed_s": 76.55,
+      "usage": {
+        "prompt_tokens": 2125,
+        "completion_tokens": 2093,
+        "total_tokens": 4218,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1524
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 2093
+      },
+      "response_id": "019fa976f5c7830eef9372ea2d048c67",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\",\n      \"do_not_infer_network_api_approval\"\n    ]\n  },\n  \"grounded_claims\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"claim\": \"Stage B v4-local passed before provider execution.\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"claim\": \"The isolated Stage B v4 smoke passed all eight runs.\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"claim\": \"The bounded recomposition smoke passed all four runs.\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"claim\": \"Within the fixture, the supplied event approves provider execution.\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"grounded_claims[].slot_id\",\n      \"grounded_claims[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status",
+            "do_not_infer_network_api_approval"
+          ]
+        },
+        "grounded_claims": [
+          {
+            "slot_id": "claim_alpha",
+            "claim": "Stage B v4-local passed before provider execution.",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "claim": "The bounded recomposition smoke passed all four runs.",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "claim": "Within the fixture, the supplied event approves provider execution.",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "grounded_claims[].slot_id",
+            "grounded_claims[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.7553
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r1--distractor-evidence__budget_model__G9__r2",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r1--distractor-evidence__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:05:04.123560+00:00",
+      "elapsed_s": 54.87,
+      "usage": {
+        "prompt_tokens": 2125,
+        "completion_tokens": 1532,
+        "total_tokens": 3657,
+        "completion_tokens_details": {
+          "reasoning_tokens": 973
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2125
+      },
+      "response_id": "019fa97821bb87089caafdfe6e6f2e2c",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\"\n    ]\n  },\n  \"grounded_claims\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"claim\": \"Stage B v4-local passed before provider execution.\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"claim\": \"The isolated Stage B v4 smoke passed all eight runs.\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"claim\": \"The bounded recomposition smoke passed all four runs.\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"claim\": \"Within the fixture, the supplied event approves provider execution.\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"grounded_claims[].slot_id\",\n      \"grounded_claims[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status"
+          ]
+        },
+        "grounded_claims": [
+          {
+            "slot_id": "claim_alpha",
+            "claim": "Stage B v4-local passed before provider execution.",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "claim": "The bounded recomposition smoke passed all four runs.",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "claim": "Within the fixture, the supplied event approves provider execution.",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "grounded_claims[].slot_id",
+            "grounded_claims[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r1--distractor-evidence__budget_model__G9__r3",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r1--distractor-evidence__budget_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:06:11.218583+00:00",
+      "elapsed_s": 66.79,
+      "usage": {
+        "prompt_tokens": 2125,
+        "completion_tokens": 1845,
+        "total_tokens": 3970,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1286
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 2093
+      },
+      "response_id": "019fa978f95188d50e5a383c9684ebc9",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\"\n    ]\n  },\n  \"grounded_claims\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"claim\": \"Stage B v4-local passed before provider execution.\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"claim\": \"The isolated Stage B v4 smoke passed all eight runs.\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"claim\": \"The bounded recomposition smoke passed all four runs.\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"claim\": \"Within the fixture, the supplied event approves provider execution.\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"grounded_claims[].slot_id\",\n      \"grounded_claims[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status"
+          ]
+        },
+        "grounded_claims": [
+          {
+            "slot_id": "claim_alpha",
+            "claim": "Stage B v4-local passed before provider execution.",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "claim": "The bounded recomposition smoke passed all four runs.",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "claim": "Within the fixture, the supplied event approves provider execution.",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "grounded_claims[].slot_id",
+            "grounded_claims[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r1",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:07:11.327893+00:00",
+      "elapsed_s": 59.81,
+      "usage": {
+        "prompt_tokens": 2024,
+        "completion_tokens": 1668,
+        "total_tokens": 3692,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1109
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2024
+      },
+      "response_id": "019fa979ff6cdf9602bcf00869456fa7",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\"\n    ]\n  },\n  \"grounded_claims\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"claim\": \"Stage B v4-local passed before provider execution.\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"claim\": \"The isolated Stage B v4 smoke passed all eight runs.\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"claim\": \"The bounded recomposition smoke passed all four runs.\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"claim\": \"Within the fixture, the supplied event approves provider execution.\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"grounded_claims[].slot_id\",\n      \"grounded_claims[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status"
+          ]
+        },
+        "grounded_claims": [
+          {
+            "slot_id": "claim_alpha",
+            "claim": "Stage B v4-local passed before provider execution.",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "claim": "The bounded recomposition smoke passed all four runs.",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "claim": "Within the fixture, the supplied event approves provider execution.",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "grounded_claims[].slot_id",
+            "grounded_claims[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r2",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "error": "The read operation timed out",
+      "elapsed_s": 242.08
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r3",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r1--evidence-order-shuffled__budget_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "error": "The read operation timed out",
+      "elapsed_s": 242.12
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r1--field-alias__budget_model__G9__r1",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r1--field-alias__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "error": "The read operation timed out",
+      "elapsed_s": 242.12
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r1--field-alias__budget_model__G9__r2",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r1--field-alias__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:20:04.482589+00:00",
+      "elapsed_s": 45.63,
+      "usage": {
+        "prompt_tokens": 1995,
+        "completion_tokens": 1306,
+        "total_tokens": 3301,
+        "completion_tokens_details": {
+          "reasoning_tokens": 756
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1995
+      },
+      "response_id": "019fa986033230472a9d63c00a62ea72",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"source_references\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\"\n    ]\n  },\n  \"grounded_claims\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"claim\": \"Stage B v4-local passed all local gates.\",\n      \"source_references\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"claim\": \"The isolated Stage B v4 smoke passed all eight runs.\",\n      \"source_references\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"claim\": \"The bounded recomposition smoke passed all four runs.\",\n      \"source_references\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"claim\": \"Within the fixture, the supplied event approves provider execution.\",\n      \"source_references\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"source_references\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"grounded_claims[].slot_id\",\n      \"grounded_claims[].source_references\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].source_references\",\n      \"transition_record.event_id\",\n      \"transition_record.source_references\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status"
+          ]
+        },
+        "grounded_claims": [
+          {
+            "slot_id": "claim_alpha",
+            "claim": "Stage B v4-local passed all local gates.",
+            "source_references": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+            "source_references": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "claim": "The bounded recomposition smoke passed all four runs.",
+            "source_references": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "claim": "Within the fixture, the supplied event approves provider execution.",
+            "source_references": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "source_references": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "grounded_claims[].slot_id",
+            "grounded_claims[].source_references",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].source_references",
+            "transition_record.event_id",
+            "transition_record.source_references"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.9655
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r1--field-alias__budget_model__G9__r3",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r1--field-alias__budget_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:21:20.378270+00:00",
+      "elapsed_s": 75.59,
+      "usage": {
+        "prompt_tokens": 1995,
+        "completion_tokens": 1722,
+        "total_tokens": 3717,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1172
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1995
+      },
+      "response_id": "019fa987de45d449f088412eccf8dfe1",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"source_references\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\"\n    ]\n  },\n  \"grounded_claims\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"claim\": \"Stage B v4-local passed before provider execution.\",\n      \"source_references\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"claim\": \"The isolated Stage B v4 smoke passed all eight runs.\",\n      \"source_references\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"claim\": \"The bounded recomposition smoke passed all four runs.\",\n      \"source_references\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"claim\": \"Within the fixture, the supplied event approves provider execution.\",\n      \"source_references\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"source_references\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"grounded_claims[].slot_id\",\n      \"grounded_claims[].source_references\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].source_references\",\n      \"transition_record.event_id\",\n      \"transition_record.source_references\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status"
+          ]
+        },
+        "grounded_claims": [
+          {
+            "slot_id": "claim_alpha",
+            "claim": "Stage B v4-local passed before provider execution.",
+            "source_references": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+            "source_references": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "claim": "The bounded recomposition smoke passed all four runs.",
+            "source_references": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "claim": "Within the fixture, the supplied event approves provider execution.",
+            "source_references": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "source_references": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "grounded_claims[].slot_id",
+            "grounded_claims[].source_references",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].source_references",
+            "transition_record.event_id",
+            "transition_record.source_references"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.9651
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r1",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:24:17.457835+00:00",
+      "elapsed_s": 176.78,
+      "usage": {
+        "prompt_tokens": 2050,
+        "completion_tokens": 1450,
+        "total_tokens": 3500,
+        "completion_tokens_details": {
+          "reasoning_tokens": 878
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2050
+      },
+      "response_id": "019fa989bbe81ea5d34652fc5f12016a",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"permission_to_use_external_model_api\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"branch_currently_checked_out\",\n      \"continuous_integration_result\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_guess_branch_currently_checked_out\",\n      \"do_not_guess_continuous_integration_result\"\n    ]\n  },\n  \"grounded_claims\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"claim\": \"Stage B v4-local passed before provider execution.\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"claim\": \"The isolated Stage B v4 smoke passed all eight runs.\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"claim\": \"The bounded recomposition smoke passed all four runs.\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"claim\": \"Within the fixture, the supplied event approves provider execution.\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"permission_to_use_external_model_api\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"permission_to_use_external_model_api\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"grounded_claims[].slot_id\",\n      \"grounded_claims[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "permission_to_use_external_model_api",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "branch_currently_checked_out",
+            "continuous_integration_result"
+          ],
+          "forbidden_inferences": [
+            "do_not_guess_branch_currently_checked_out",
+            "do_not_guess_continuous_integration_result"
+          ]
+        },
+        "grounded_claims": [
+          {
+            "slot_id": "claim_alpha",
+            "claim": "Stage B v4-local passed before provider execution.",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "claim": "The bounded recomposition smoke passed all four runs.",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "claim": "Within the fixture, the supplied event approves provider execution.",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "permission_to_use_external_model_api",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "permission_to_use_external_model_api",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "grounded_claims[].slot_id",
+            "grounded_claims[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.9651
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r2",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:25:11.210568+00:00",
+      "elapsed_s": 53.45,
+      "usage": {
+        "prompt_tokens": 2050,
+        "completion_tokens": 1356,
+        "total_tokens": 3406,
+        "completion_tokens_details": {
+          "reasoning_tokens": 784
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 2018
+      },
+      "response_id": "019fa98a92c767a3439e45771d1d4f3e",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"permission_to_use_external_model_api\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"branch_currently_checked_out\",\n      \"continuous_integration_result\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_guess_branch_currently_checked_out\",\n      \"do_not_guess_continuous_integration_result\"\n    ]\n  },\n  \"grounded_claims\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"claim\": \"Stage B v4-local passed before provider execution.\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"claim\": \"The isolated Stage B v4 smoke passed all eight runs.\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"claim\": \"The bounded recomposition smoke passed all four runs.\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"claim\": \"Within the fixture, the supplied event approves provider execution.\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"permission_to_use_external_model_api\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"permission_to_use_external_model_api\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"grounded_claims[].slot_id\",\n      \"grounded_claims[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "permission_to_use_external_model_api",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "branch_currently_checked_out",
+            "continuous_integration_result"
+          ],
+          "forbidden_inferences": [
+            "do_not_guess_branch_currently_checked_out",
+            "do_not_guess_continuous_integration_result"
+          ]
+        },
+        "grounded_claims": [
+          {
+            "slot_id": "claim_alpha",
+            "claim": "Stage B v4-local passed before provider execution.",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "claim": "The bounded recomposition smoke passed all four runs.",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "claim": "Within the fixture, the supplied event approves provider execution.",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "permission_to_use_external_model_api",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "permission_to_use_external_model_api",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "grounded_claims[].slot_id",
+            "grounded_claims[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.9651
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r3",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r1--unknown-state-paraphrase__budget_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:26:04.518803+00:00",
+      "elapsed_s": 53.01,
+      "usage": {
+        "prompt_tokens": 2050,
+        "completion_tokens": 1378,
+        "total_tokens": 3428,
+        "completion_tokens_details": {
+          "reasoning_tokens": 806
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2050
+      },
+      "response_id": "019fa98b64f7f6b58286577aa6a132a4",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"permission_to_use_external_model_api\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"branch_currently_checked_out\",\n      \"continuous_integration_result\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_guess_branch_currently_checked_out\",\n      \"do_not_guess_continuous_integration_result\"\n    ]\n  },\n  \"grounded_claims\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"claim\": \"Stage B v4-local passed before provider execution.\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"claim\": \"The isolated Stage B v4 smoke passed all eight runs.\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"claim\": \"The bounded recomposition smoke passed all four runs.\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"claim\": \"Within the fixture, the supplied event approves provider execution.\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"permission_to_use_external_model_api\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"permission_to_use_external_model_api\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"grounded_claims[].slot_id\",\n      \"grounded_claims[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "permission_to_use_external_model_api",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "branch_currently_checked_out",
+            "continuous_integration_result"
+          ],
+          "forbidden_inferences": [
+            "do_not_guess_branch_currently_checked_out",
+            "do_not_guess_continuous_integration_result"
+          ]
+        },
+        "grounded_claims": [
+          {
+            "slot_id": "claim_alpha",
+            "claim": "Stage B v4-local passed before provider execution.",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "claim": "The isolated Stage B v4 smoke passed all eight runs.",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "claim": "The bounded recomposition smoke passed all four runs.",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "claim": "Within the fixture, the supplied event approves provider execution.",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "permission_to_use_external_model_api",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "permission_to_use_external_model_api",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "grounded_claims[].slot_id",
+            "grounded_claims[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.9651
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r2--canonical__budget_model__G9__r1",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r2--canonical__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:26:56.792984+00:00",
+      "elapsed_s": 51.97,
+      "usage": {
+        "prompt_tokens": 1904,
+        "completion_tokens": 1404,
+        "total_tokens": 3308,
+        "completion_tokens_details": {
+          "reasoning_tokens": 901
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 1872
+      },
+      "response_id": "019fa98c35043351f035e2dc618f53ba",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\",\n      \"do_not_infer_network_api_approval\"\n    ]\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"evidence_bindings[].slot_id\",\n      \"evidence_bindings[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status",
+            "do_not_infer_network_api_approval"
+          ]
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "claim_alpha",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "evidence_bindings[].slot_id",
+            "evidence_bindings[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.9508
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r2--canonical__budget_model__G9__r2",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r2--canonical__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:27:40.286191+00:00",
+      "elapsed_s": 43.19,
+      "usage": {
+        "prompt_tokens": 1904,
+        "completion_tokens": 1287,
+        "total_tokens": 3191,
+        "completion_tokens_details": {
+          "reasoning_tokens": 784
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1904
+      },
+      "response_id": "019fa98d0141d2f63ce9ac198ce96abb",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\",\n      \"do_not_infer_network_api_approval\"\n    ]\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"evidence_bindings[].slot_id\",\n      \"evidence_bindings[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status",
+            "do_not_infer_network_api_approval"
+          ]
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "claim_alpha",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "evidence_bindings[].slot_id",
+            "evidence_bindings[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r2--canonical__budget_model__G9__r3",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r2--canonical__budget_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:28:17.785105+00:00",
+      "elapsed_s": 37.19,
+      "usage": {
+        "prompt_tokens": 1904,
+        "completion_tokens": 1025,
+        "total_tokens": 2929,
+        "completion_tokens_details": {
+          "reasoning_tokens": 522
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1904
+      },
+      "response_id": "019fa98dab03da0abe0ffbc5a4298ede",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\",\n      \"do_not_infer_network_api_approval\"\n    ]\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"evidence_bindings[].slot_id\",\n      \"evidence_bindings[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status",
+            "do_not_infer_network_api_approval"
+          ]
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "claim_alpha",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "evidence_bindings[].slot_id",
+            "evidence_bindings[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.9508
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r2--distractor-evidence__budget_model__G9__r1",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r2--distractor-evidence__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:29:06.472995+00:00",
+      "elapsed_s": 48.39,
+      "usage": {
+        "prompt_tokens": 2036,
+        "completion_tokens": 1294,
+        "total_tokens": 3330,
+        "completion_tokens_details": {
+          "reasoning_tokens": 801
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2036
+      },
+      "response_id": "019fa98e3dce4a79b85aede800014f93",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\"\n    ]\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"evidence_bindings[].slot_id\",\n      \"evidence_bindings[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status"
+          ]
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "claim_alpha",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "evidence_bindings[].slot_id",
+            "evidence_bindings[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r2--distractor-evidence__budget_model__G9__r2",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r2--distractor-evidence__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:29:56.138992+00:00",
+      "elapsed_s": 49.36,
+      "usage": {
+        "prompt_tokens": 2036,
+        "completion_tokens": 1291,
+        "total_tokens": 3327,
+        "completion_tokens_details": {
+          "reasoning_tokens": 788
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2036
+      },
+      "response_id": "019fa98efbc78f1e954a53f1c98b7254",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\",\n      \"do_not_infer_network_api_approval\"\n    ]\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"evidence_bindings[].slot_id\",\n      \"evidence_bindings[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status",
+            "do_not_infer_network_api_approval"
+          ]
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "claim_alpha",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "evidence_bindings[].slot_id",
+            "evidence_bindings[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.9508
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r2--distractor-evidence__budget_model__G9__r3",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r2--distractor-evidence__budget_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:31:20.477421+00:00",
+      "elapsed_s": 84.04,
+      "usage": {
+        "prompt_tokens": 2036,
+        "completion_tokens": 2263,
+        "total_tokens": 4299,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1770
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2036
+      },
+      "response_id": "019fa98fbdd997f5bbfc0e110fd7707e",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\"\n    ]\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"evidence_bindings[].slot_id\",\n      \"evidence_bindings[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status"
+          ]
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "claim_alpha",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "evidence_bindings[].slot_id",
+            "evidence_bindings[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r1",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:31:49.806398+00:00",
+      "elapsed_s": 29.02,
+      "usage": {
+        "prompt_tokens": 1935,
+        "completion_tokens": 1009,
+        "total_tokens": 2944,
+        "completion_tokens_details": {
+          "reasoning_tokens": 516
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 1903
+      },
+      "response_id": "019fa9910757887d3d58855c8942f166",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\"\n    ]\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"evidence_bindings[].slot_id\",\n      \"evidence_bindings[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status"
+          ]
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "claim_alpha",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "evidence_bindings[].slot_id",
+            "evidence_bindings[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r2",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:32:36.179895+00:00",
+      "elapsed_s": 46.07,
+      "usage": {
+        "prompt_tokens": 1935,
+        "completion_tokens": 1270,
+        "total_tokens": 3205,
+        "completion_tokens_details": {
+          "reasoning_tokens": 777
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1935
+      },
+      "response_id": "019fa9917a99ae4c3462e9b848908e5c",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\"\n    ]\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"evidence_bindings[].slot_id\",\n      \"evidence_bindings[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status"
+          ]
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "claim_alpha",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "evidence_bindings[].slot_id",
+            "evidence_bindings[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.9508
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r3",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r2--evidence-order-shuffled__budget_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:33:23.528954+00:00",
+      "elapsed_s": 47.04,
+      "usage": {
+        "prompt_tokens": 1935,
+        "completion_tokens": 1316,
+        "total_tokens": 3251,
+        "completion_tokens_details": {
+          "reasoning_tokens": 813
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1935
+      },
+      "response_id": "019fa9922f2b5633f488d995bc2d942e",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\",\n      \"do_not_infer_network_api_approval\"\n    ]\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"evidence_bindings[].slot_id\",\n      \"evidence_bindings[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status",
+            "do_not_infer_network_api_approval"
+          ]
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "claim_alpha",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "evidence_bindings[].slot_id",
+            "evidence_bindings[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.9508
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r2--field-alias__budget_model__G9__r1",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r2--field-alias__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:34:12.337750+00:00",
+      "elapsed_s": 48.51,
+      "usage": {
+        "prompt_tokens": 1906,
+        "completion_tokens": 1234,
+        "total_tokens": 3140,
+        "completion_tokens_details": {
+          "reasoning_tokens": 750
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1906
+      },
+      "response_id": "019fa992e803d428676f32411a42d8f9",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"source_references\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\"\n    ]\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"source_references\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"source_references\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"source_references\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"source_references\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"source_references\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"evidence_bindings[].slot_id\",\n      \"evidence_bindings[].source_references\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].source_references\",\n      \"transition_record.event_id\",\n      \"transition_record.source_references\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status"
+          ]
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "claim_alpha",
+            "source_references": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "source_references": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "source_references": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "source_references": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "source_references": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "evidence_bindings[].slot_id",
+            "evidence_bindings[].source_references",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].source_references",
+            "transition_record.event_id",
+            "transition_record.source_references"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.9508
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r2--field-alias__budget_model__G9__r2",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r2--field-alias__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:34:56.896479+00:00",
+      "elapsed_s": 44.26,
+      "usage": {
+        "prompt_tokens": 1906,
+        "completion_tokens": 1281,
+        "total_tokens": 3187,
+        "completion_tokens_details": {
+          "reasoning_tokens": 797
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1906
+      },
+      "response_id": "019fa994ce7234e38427bb3e78bd9b45",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"source_references\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\"\n    ]\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"source_references\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"source_references\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"source_references\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"source_references\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"source_references\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"evidence_bindings[].slot_id\",\n      \"evidence_bindings[].source_references\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].source_references\",\n      \"transition_record.event_id\",\n      \"transition_record.source_references\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status"
+          ]
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "claim_alpha",
+            "source_references": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "source_references": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "source_references": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "source_references": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "source_references": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "evidence_bindings[].slot_id",
+            "evidence_bindings[].source_references",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].source_references",
+            "transition_record.event_id",
+            "transition_record.source_references"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.9508
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r2--field-alias__budget_model__G9__r3",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r2--field-alias__budget_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:35:42.330608+00:00",
+      "elapsed_s": 45.13,
+      "usage": {
+        "prompt_tokens": 1906,
+        "completion_tokens": 1173,
+        "total_tokens": 3079,
+        "completion_tokens_details": {
+          "reasoning_tokens": 689
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 1874
+      },
+      "response_id": "019fa99454bc2a7d8b04ccfdc286e689",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"source_references\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\"\n    ]\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"source_references\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"source_references\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"source_references\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"source_references\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"source_references\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"evidence_bindings[].slot_id\",\n      \"evidence_bindings[].source_references\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].source_references\",\n      \"transition_record.event_id\",\n      \"transition_record.source_references\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status"
+          ]
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "claim_alpha",
+            "source_references": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "source_references": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "source_references": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "source_references": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "source_references": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "evidence_bindings[].slot_id",
+            "evidence_bindings[].source_references",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].source_references",
+            "transition_record.event_id",
+            "transition_record.source_references"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r1",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:36:32.703062+00:00",
+      "elapsed_s": 50.07,
+      "usage": {
+        "prompt_tokens": 1961,
+        "completion_tokens": 1355,
+        "total_tokens": 3316,
+        "completion_tokens_details": {
+          "reasoning_tokens": 849
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1961
+      },
+      "response_id": "019fa99506447303357c03cb701ec091",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"permission_to_use_external_model_api\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"branch_currently_checked_out\",\n      \"continuous_integration_result\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_guess_branch_currently_checked_out\",\n      \"do_not_guess_continuous_integration_result\"\n    ]\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"permission_to_use_external_model_api\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"permission_to_use_external_model_api\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"evidence_bindings[].slot_id\",\n      \"evidence_bindings[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "permission_to_use_external_model_api",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "branch_currently_checked_out",
+            "continuous_integration_result"
+          ],
+          "forbidden_inferences": [
+            "do_not_guess_branch_currently_checked_out",
+            "do_not_guess_continuous_integration_result"
+          ]
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "claim_alpha",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "permission_to_use_external_model_api",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "permission_to_use_external_model_api",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "evidence_bindings[].slot_id",
+            "evidence_bindings[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r2",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:37:20.732003+00:00",
+      "elapsed_s": 47.73,
+      "usage": {
+        "prompt_tokens": 1961,
+        "completion_tokens": 1416,
+        "total_tokens": 3377,
+        "completion_tokens_details": {
+          "reasoning_tokens": 898
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1961
+      },
+      "response_id": "019fa995caee09ecdf520c58b290a688",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"permission_to_use_external_model_api\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"branch_currently_checked_out\",\n      \"continuous_integration_result\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_guess_branch_currently_checked_out\",\n      \"do_not_guess_continuous_integration_result\",\n      \"do_not_guess_permission_to_use_external_model_api\"\n    ]\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"permission_to_use_external_model_api\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"permission_to_use_external_model_api\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"evidence_bindings[].slot_id\",\n      \"evidence_bindings[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "permission_to_use_external_model_api",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "branch_currently_checked_out",
+            "continuous_integration_result"
+          ],
+          "forbidden_inferences": [
+            "do_not_guess_branch_currently_checked_out",
+            "do_not_guess_continuous_integration_result",
+            "do_not_guess_permission_to_use_external_model_api"
+          ]
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "claim_alpha",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "permission_to_use_external_model_api",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "permission_to_use_external_model_api",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "evidence_bindings[].slot_id",
+            "evidence_bindings[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "stage-b-v52-evidence-binding-ablation__stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r3",
+      "stage": "stage-b-v52-evidence-binding-ablation",
+      "frozen_run_name": "stage-b-v52-r2--unknown-state-paraphrase__budget_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T16:38:05.470423+00:00",
+      "elapsed_s": 44.44,
+      "usage": {
+        "prompt_tokens": 1961,
+        "completion_tokens": 1247,
+        "total_tokens": 3208,
+        "completion_tokens_details": {
+          "reasoning_tokens": 729
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1961
+      },
+      "response_id": "019fa99686840bd24f1aaa43b23fa53d",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"permission_to_use_external_model_api\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"branch_currently_checked_out\",\n      \"continuous_integration_result\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_guess_branch_currently_checked_out\",\n      \"do_not_guess_continuous_integration_result\",\n      \"do_not_guess_permission_to_use_external_model_api\"\n    ]\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"permission_to_use_external_model_api\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"permission_to_use_external_model_api\",\n    \"next_action\": \"complete_stage_b_v52_evidence_binding_ablation\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"evidence_bindings[].slot_id\",\n      \"evidence_bindings[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "permission_to_use_external_model_api",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "branch_currently_checked_out",
+            "continuous_integration_result"
+          ],
+          "forbidden_inferences": [
+            "do_not_guess_branch_currently_checked_out",
+            "do_not_guess_continuous_integration_result",
+            "do_not_guess_permission_to_use_external_model_api"
+          ]
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "claim_alpha",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "permission_to_use_external_model_api",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "permission_to_use_external_model_api",
+          "next_action": "complete_stage_b_v52_evidence_binding_ablation",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "evidence_bindings[].slot_id",
+            "evidence_bindings[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.9508
+    }
+  ]
+}

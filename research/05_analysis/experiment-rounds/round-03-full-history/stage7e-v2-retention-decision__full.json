@@ -1,0 +1,985 @@
+{
+  "stage": "stage7e-v2-retention-decision",
+  "total_runs": 4,
+  "json_parsed": 4,
+  "matched_frozen_high_similarity": 0,
+  "frozen_task_success_1_count": 0,
+  "timestamp": "2026-07-28T17:30:05.831805+00:00",
+  "runs": [
+    {
+      "run_id": "stage7e-v2-retention-decision__stage7e-v2-retention-decision__budget_model__G8__r1",
+      "stage": "stage7e-v2-retention-decision",
+      "frozen_run_name": "stage7e-v2-retention-decision__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T17:26:16.781332+00:00",
+      "elapsed_s": 94.45,
+      "usage": {
+        "prompt_tokens": 2938,
+        "completion_tokens": 3239,
+        "total_tokens": 6177,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1551
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2938
+      },
+      "response_id": "019fa9c1e1edeaaf6073a96b90166b97",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      \"Stage 7r.1 targeted smoke completed 8/8 and passed 8/8\",\n      \"Stage 7r.2 admits only a narrow evidence-bound decision macro\",\n      \"Stage 7e v1 low-cost-model G8 passed\",\n      \"Stage 7e v1 low-cost-model G9 missed stage-gate and trace retention\",\n      \"final_recommendation: blocked\",\n      \"full_project_initialization: blocked\",\n      \"full_research_workflow: blocked\"\n    ],\n    \"unknown_state\": [\n      \"Stage 7e v2 macro fixture status\",\n      \"Stage 7e v2 local gate status\",\n      \"Stage 7e v2 smoke status\"\n    ],\n    \"forbidden_inferences\": [\n      \"old universal gap-closure note\",\n      \"old production-readiness note\"\n    ]\n  },\n  \"grounded_claims\": [\n    {\n      \"claim\": \"Mechanism-bound evidence decision workflows are ready for a narrow retention-focused v2 smoke under the harness\",\n      \"evidence_ids\": [\"stage7e-e01\", \"stage7e-e02\", \"stage7e-e04\", \"stage7e-e07\"]\n    }\n  ],\n  \"unsupported_claims\": [\n    {\n      \"claim\": \"The harness universally closes the performance gap between strong and low-cost models\",\n      \"reason\": \"No evidence supports universal model-gap closure\",\n      \"evidence_ids\": [\"stage7e-e05\"]\n    },\n    {\n      \"claim\": \"The harness is production ready\",\n      \"reason\": \"No evidence supports production readiness\",\n      \"evidence_ids\": [\"stage7e-e05\"]\n    }\n  ],\n  \"typed_evidence\": [\n    {\n      \"evidence_id\": \"stage7e-e01\",\n      \"type\": \"EXTRACTED\",\n      \"claim\": \"Stage 7r.1 completed an 8-run SiliconFlow targeted smoke for A2R1 and A7R1 using Qwen/Qwen3-8B under G8/G9; final evaluation collected 8/8 completed and 8/8 passed runs with task_success=1.000 and atom_primary_metric=1.000 for every run.\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e02\",\n      \"type\": \"INFERRED\",\n      \"claim\": \"Stage 7r.1 supports the mechanism-first repair hypothesis for low-cost-model failures on A2R claim grounding and A7R decision trace completeness.\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e03\",\n      \"type\": \"AMBIGUOUS\",\n      \"claim\": \"Stage 7r had one unresolved A8R low-cost G8 provider timeout, while A8R low-cost G9 and strong G8/G9 completed and passed.\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e04\",\n      \"type\": \"EXTRACTED\",\n      \"claim\": \"Stage 7r.2 admits a narrow evidence-bound decision macro and continues to block full project initialization and full research workflow composition.\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e05\",\n      \"type\": \"EXTRACTED\",\n      \"claim\": \"No supplied evidence shows production readiness or universal model-gap closure.\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e06\",\n      \"type\": \"PROPOSED\",\n      \"claim\": \"Run Stage 7e v2 local golden/bad checks followed by a targeted low-cost-model smoke.\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e07\",\n      \"type\": \"EXTRACTED\",\n      \"claim\": \"Stage 7e v1 passed under low-cost-model G8 but low-cost-model G9 partially failed by missing complete stage-gate and decision-trace retention.\"\n    }\n  ],\n  \"selected_claim\": {\n    \"option_id\": \"C2\",\n    \"claim\": \"Mechanism-bound evidence decision workflows are ready for a narrow retention-focused v2 smoke under the harness\",\n    \"evidence_ids\": [\"stage7e-e01\", \"stage7e-e02\", \"stage7e-e04\", \"stage7e-e07\"]\n  },\n  \"rejected_options\": [\n    {\n      \"option_id\": \"C1\",\n      \"reason\": \"No evidence supports universal model-gap closure\",\n      \"evidence_ids\": [\"stage7e-e05\"]\n    },\n    {\n      \"option_id\": \"C3\",\n      \"reason\": \"No evidence supports production readiness\",\n      \"evidence_ids\": [\"stage7e-e05\"]\n    }\n  ],\n  \"decision_trace\": [\n    {\n      \"option_id\": \"C2\",\n      \"decision\": \"support\",\n      \"evidence_ids\": [\"stage7e-e01\", \"stage7e-e02\", \"stage7e-e04\", \"stage7e-e07\"],\n      \"carried_obligations\": [\n        {\n          \"obligation\": \"exclude stale universal-gap-closure and production-readiness note\",\n          \"status\": \"active\",\n          \"evidence_ids\": [\"stage7e-e05\"]\n        },\n        {\n          \"obligation\": \"do not claim production readiness\",\n          \"status\": \"active\",\n          \"evidence_ids\": [\"stage7e-e05\"]\n        },\n        {\n          \"obligation\": \"do not claim universal model-gap closure\",\n          \"status\": \"active\",\n          \"evidence_ids\": [\"stage7e-e05\"]\n        },\n        {\n          \"obligation\": \"do not claim full project initialization or full research workflow readiness\",\n          \"status\": \"active\",\n          \"evidence_ids\": [\"stage7e-e04\"]\n        }\n      ]\n    },\n    {\n      \"option_id\": \"C1\",\n      \"decision\": \"reject\",\n      \"evidence_ids\": [\"stage7e-e05\"],\n      \"carried_obligations\": [\n        {\n          \"obligation\": \"exclude stale universal-gap-closure and production-readiness note\",\n          \"status\": \"active\",\n          \"evidence_ids\": [\"stage7e-e05\"]\n        }\n      ]\n    },\n    {\n      \"option_id\": \"C3\",\n      \"decision\": \"reject\",\n      \"evidence_ids\": [\"stage7e-e05\"],\n      \"carried_obligations\": [\n        {\n          \"obligation\": \"exclude stale universal-gap-closure and production-readiness note\",\n          \"status\": \"active\",\n          \"evidence_ids\": [\"stage7e-e05\"]\n        }\n      ]\n    }\n  ],\n  \"stage_gate\": {\n    \"status\": \"blocked\",\n    \"blocked_outputs\": [\"final_recommendation\", \"full_project_initialization\", \"full_research_workflow\"],\n    \"missing_prerequisites\": [\"stage7e_v2_local_gate\", \"stage7e_v2_smoke\"],\n    \"next_required_actions\": [\"Stage 7e v2 local golden/bad checks\", \"targeted low-cost-model smoke\"]\n  },\n  \"carried_obligations\": [\n    {\n      \"obligation\": \"exclude stale universal-gap-closure and production-readiness note\",\n      \"status\": \"active\",\n      \"evidence_ids\": [\"stage7e-e05\"]\n    },\n    {\n      \"obligation\": \"do not claim production readiness\",\n      \"status\": \"active\",\n      \"evidence_ids\": [\"stage7e-e05\"]\n    },\n    {\n      \"obligation\": \"do not claim universal model-gap closure\",\n      \"status\": \"active\",\n      \"evidence_ids\": [\"stage7e-e05\"]\n    },\n    {\n      \"obligation\": \"do not claim full project initialization or full research workflow readiness\",\n      \"status\": \"active\",\n      \"evidence_ids\": [\"stage7e-e04\"]\n    }\n  ]\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "Stage 7r.1 targeted smoke completed 8/8 and passed 8/8",
+            "Stage 7r.2 admits only a narrow evidence-bound decision macro",
+            "Stage 7e v1 low-cost-model G8 passed",
+            "Stage 7e v1 low-cost-model G9 missed stage-gate and trace retention",
+            "final_recommendation: blocked",
+            "full_project_initialization: blocked",
+            "full_research_workflow: blocked"
+          ],
+          "unknown_state": [
+            "Stage 7e v2 macro fixture status",
+            "Stage 7e v2 local gate status",
+            "Stage 7e v2 smoke status"
+          ],
+          "forbidden_inferences": [
+            "old universal gap-closure note",
+            "old production-readiness note"
+          ]
+        },
+        "grounded_claims": [
+          {
+            "claim": "Mechanism-bound evidence decision workflows are ready for a narrow retention-focused v2 smoke under the harness",
+            "evidence_ids": [
+              "stage7e-e01",
+              "stage7e-e02",
+              "stage7e-e04",
+              "stage7e-e07"
+            ]
+          }
+        ],
+        "unsupported_claims": [
+          {
+            "claim": "The harness universally closes the performance gap between strong and low-cost models",
+            "reason": "No evidence supports universal model-gap closure",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          },
+          {
+            "claim": "The harness is production ready",
+            "reason": "No evidence supports production readiness",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          }
+        ],
+        "typed_evidence": [
+          {
+            "evidence_id": "stage7e-e01",
+            "type": "EXTRACTED",
+            "claim": "Stage 7r.1 completed an 8-run SiliconFlow targeted smoke for A2R1 and A7R1 using Qwen/Qwen3-8B under G8/G9; final evaluation collected 8/8 completed and 8/8 passed runs with task_success=1.000 and atom_primary_metric=1.000 for every run."
+          },
+          {
+            "evidence_id": "stage7e-e02",
+            "type": "INFERRED",
+            "claim": "Stage 7r.1 supports the mechanism-first repair hypothesis for low-cost-model failures on A2R claim grounding and A7R decision trace completeness."
+          },
+          {
+            "evidence_id": "stage7e-e03",
+            "type": "AMBIGUOUS",
+            "claim": "Stage 7r had one unresolved A8R low-cost G8 provider timeout, while A8R low-cost G9 and strong G8/G9 completed and passed."
+          },
+          {
+            "evidence_id": "stage7e-e04",
+            "type": "EXTRACTED",
+            "claim": "Stage 7r.2 admits a narrow evidence-bound decision macro and continues to block full project initialization and full research workflow composition."
+          },
+          {
+            "evidence_id": "stage7e-e05",
+            "type": "EXTRACTED",
+            "claim": "No supplied evidence shows production readiness or universal model-gap closure."
+          },
+          {
+            "evidence_id": "stage7e-e06",
+            "type": "PROPOSED",
+            "claim": "Run Stage 7e v2 local golden/bad checks followed by a targeted low-cost-model smoke."
+          },
+          {
+            "evidence_id": "stage7e-e07",
+            "type": "EXTRACTED",
+            "claim": "Stage 7e v1 passed under low-cost-model G8 but low-cost-model G9 partially failed by missing complete stage-gate and decision-trace retention."
+          }
+        ],
+        "selected_claim": {
+          "option_id": "C2",
+          "claim": "Mechanism-bound evidence decision workflows are ready for a narrow retention-focused v2 smoke under the harness",
+          "evidence_ids": [
+            "stage7e-e01",
+            "stage7e-e02",
+            "stage7e-e04",
+            "stage7e-e07"
+          ]
+        },
+        "rejected_options": [
+          {
+            "option_id": "C1",
+            "reason": "No evidence supports universal model-gap closure",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          },
+          {
+            "option_id": "C3",
+            "reason": "No evidence supports production readiness",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          }
+        ],
+        "decision_trace": [
+          {
+            "option_id": "C2",
+            "decision": "support",
+            "evidence_ids": [
+              "stage7e-e01",
+              "stage7e-e02",
+              "stage7e-e04",
+              "stage7e-e07"
+            ],
+            "carried_obligations": [
+              {
+                "obligation": "exclude stale universal-gap-closure and production-readiness note",
+                "status": "active",
+                "evidence_ids": [
+                  "stage7e-e05"
+                ]
+              },
+              {
+                "obligation": "do not claim production readiness",
+                "status": "active",
+                "evidence_ids": [
+                  "stage7e-e05"
+                ]
+              },
+              {
+                "obligation": "do not claim universal model-gap closure",
+                "status": "active",
+                "evidence_ids": [
+                  "stage7e-e05"
+                ]
+              },
+              {
+                "obligation": "do not claim full project initialization or full research workflow readiness",
+                "status": "active",
+                "evidence_ids": [
+                  "stage7e-e04"
+                ]
+              }
+            ]
+          },
+          {
+            "option_id": "C1",
+            "decision": "reject",
+            "evidence_ids": [
+              "stage7e-e05"
+            ],
+            "carried_obligations": [
+              {
+                "obligation": "exclude stale universal-gap-closure and production-readiness note",
+                "status": "active",
+                "evidence_ids": [
+                  "stage7e-e05"
+                ]
+              }
+            ]
+          },
+          {
+            "option_id": "C3",
+            "decision": "reject",
+            "evidence_ids": [
+              "stage7e-e05"
+            ],
+            "carried_obligations": [
+              {
+                "obligation": "exclude stale universal-gap-closure and production-readiness note",
+                "status": "active",
+                "evidence_ids": [
+                  "stage7e-e05"
+                ]
+              }
+            ]
+          }
+        ],
+        "stage_gate": {
+          "status": "blocked",
+          "blocked_outputs": [
+            "final_recommendation",
+            "full_project_initialization",
+            "full_research_workflow"
+          ],
+          "missing_prerequisites": [
+            "stage7e_v2_local_gate",
+            "stage7e_v2_smoke"
+          ],
+          "next_required_actions": [
+            "Stage 7e v2 local golden/bad checks",
+            "targeted low-cost-model smoke"
+          ]
+        },
+        "carried_obligations": [
+          {
+            "obligation": "exclude stale universal-gap-closure and production-readiness note",
+            "status": "active",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          },
+          {
+            "obligation": "do not claim production readiness",
+            "status": "active",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          },
+          {
+            "obligation": "do not claim universal model-gap closure",
+            "status": "active",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          },
+          {
+            "obligation": "do not claim full project initialization or full research workflow readiness",
+            "status": "active",
+            "evidence_ids": [
+              "stage7e-e04"
+            ]
+          }
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.616
+    },
+    {
+      "run_id": "stage7e-v2-retention-decision__stage7e-v2-retention-decision__budget_model__G8__r2",
+      "stage": "stage7e-v2-retention-decision",
+      "frozen_run_name": "stage7e-v2-retention-decision__budget_model__G8__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T17:27:44.912663+00:00",
+      "elapsed_s": 87.83,
+      "usage": {
+        "prompt_tokens": 2938,
+        "completion_tokens": 3204,
+        "total_tokens": 6142,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1623
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2938
+      },
+      "response_id": "019fa9c354088fc7e0fe12c06a461d58",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      \"Stage 7r.1 targeted smoke completed 8/8 and passed 8/8\",\n      \"Stage 7r.2 admits only a narrow evidence-bound decision macro\",\n      \"Stage 7e v1 low-cost-model G8 passed\",\n      \"Stage 7e v1 low-cost-model G9 missed stage-gate and trace retention\",\n      \"full project initialization remains blocked\",\n      \"full research workflow remains blocked\"\n    ],\n    \"unknown_state\": [\n      \"stage7e_v2_local_gate status\",\n      \"stage7e_v2_smoke status\"\n    ],\n    \"forbidden_inferences\": [\n      \"universal model-gap closure\",\n      \"production readiness\"\n    ]\n  },\n  \"grounded_claims\": [\n    {\n      \"claim\": \"Stage 7r.1 completed 8/8 targeted smoke runs and passed 8/8 under low-cost-model G8/G9\",\n      \"evidence_ids\": [\"stage7e-e01\"]\n    },\n    {\n      \"claim\": \"Stage 7r.2 admits a narrow evidence-bound decision macro and blocks full project initialization and full research workflow\",\n      \"evidence_ids\": [\"stage7e-e04\"]\n    },\n    {\n      \"claim\": \"No supplied evidence supports production readiness or universal model-gap closure\",\n      \"evidence_ids\": [\"stage7e-e05\"]\n    }\n  ],\n  \"unsupported_claims\": [\n    {\n      \"claim\": \"The harness universally closes the performance gap between strong and low-cost models\",\n      \"reason\": \"No evidence supports universal model-gap closure\",\n      \"evidence_ids\": [\"stage7e-e05\"]\n    },\n    {\n      \"claim\": \"The harness is production ready\",\n      \"reason\": \"No evidence supports production readiness\",\n      \"evidence_ids\": [\"stage7e-e05\"]\n    }\n  ],\n  \"typed_evidence\": [\n    {\n      \"evidence_id\": \"stage7e-e01\",\n      \"type\": \"EXTRACTED\",\n      \"claim\": \"Stage 7r.1 completed 8/8 targeted smoke runs and passed 8/8 under low-cost-model G8/G9\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e02\",\n      \"type\": \"INFERRED\",\n      \"claim\": \"Stage 7r.1 supports mechanism-first repair hypothesis for low-cost-model failures\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e03\",\n      \"type\": \"AMBIGUOUS\",\n      \"claim\": \"A8R has mixed execution evidence due to low-cost G8 timeout while G9 passed\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e04\",\n      \"type\": \"EXTRACTED\",\n      \"claim\": \"Stage 7r.2 admits narrow evidence-bound decision macro and blocks full project initialization\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e05\",\n      \"type\": \"EXTRACTED\",\n      \"claim\": \"No evidence supports production readiness or universal model-gap closure\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e06\",\n      \"type\": \"PROPOSED\",\n      \"claim\": \"Proposed next step: Stage 7e v2 local golden/bad checks followed by targeted low-cost-model smoke\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e07\",\n      \"type\": \"EXTRACTED\",\n      \"claim\": \"Stage 7e v1 passed under G8 but G9 failed due to missing stage-gate and trace retention\"\n    }\n  ],\n  \"selected_claim\": {\n    \"option_id\": \"C2\",\n    \"claim\": \"Mechanism-bound evidence decision workflows are ready for narrow retention-focused v2 smoke under the harness\",\n    \"evidence_ids\": [\"stage7e-e06\", \"stage7e-e01\", \"stage7e-e04\"]\n  },\n  \"rejected_options\": [\n    {\n      \"option_id\": \"C1\",\n      \"reason\": \"No evidence supports universal model-gap closure\",\n      \"evidence_ids\": [\"stage7e-e05\"]\n    },\n    {\n      \"option_id\": \"C3\",\n      \"reason\": \"No evidence supports production readiness\",\n      \"evidence_ids\": [\"stage7e-e05\"]\n    }\n  ],\n  \"decision_trace\": [\n    {\n      \"option_id\": \"C2\",\n      \"decision\": \"Support\",\n      \"evidence_ids\": [\"stage7e-e06\", \"stage7e-e01\", \"stage7e-e04\"],\n      \"carried_obligations\": [\n        {\n          \"obligation\": \"exclude stale universal-gap-closure and production-readiness note\",\n          \"status\": \"active\",\n          \"evidence_ids\": [\"stage7e-e05\"]\n        },\n        {\n          \"obligation\": \"do not claim production readiness\",\n          \"status\": \"active\",\n          \"evidence_ids\": [\"stage7e-e05\"]\n        },\n        {\n          \"obligation\": \"do not claim universal model-gap closure\",\n          \"status\": \"active\",\n          \"evidence_ids\": [\"stage7e-e05\"]\n        }\n      ]\n    },\n    {\n      \"option_id\": \"C1\",\n      \"decision\": \"Reject\",\n      \"evidence_ids\": [\"stage7e-e05\"],\n      \"carried_obligations\": [\n        {\n          \"obligation\": \"exclude stale universal-gap-closure and production-readiness note\",\n          \"status\": \"active\",\n          \"evidence_ids\": [\"stage7e-e05\"]\n        }\n      ]\n    },\n    {\n      \"option_id\": \"C3\",\n      \"decision\": \"Reject\",\n      \"evidence_ids\": [\"stage7e-e05\"],\n      \"carried_obligations\": [\n        {\n          \"obligation\": \"do not claim production readiness\",\n          \"status\": \"active\",\n          \"evidence_ids\": [\"stage7e-e05\"]\n        }\n      ]\n    }\n  ],\n  \"stage_gate\": {\n    \"status\": \"blocked\",\n    \"blocked_outputs\": [\n      \"final_recommendation\",\n      \"full_project_initialization\",\n      \"full_research_workflow\"\n    ],\n    \"missing_prerequisites\": [\n      \"stage7e_v2_local_gate\",\n      \"stage7e_v2_smoke\"\n    ],\n    \"next_required_actions\": [\n      \"Stage 7e v2 local golden/bad checks\",\n      \"Targeted low-cost-model smoke\"\n    ]\n  },\n  \"carried_obligations\": [\n    {\n      \"obligation\": \"exclude stale universal-gap-closure and production-readiness note\",\n      \"status\": \"active\",\n      \"evidence_ids\": [\"stage7e-e05\"]\n    },\n    {\n      \"obligation\": \"do not claim production readiness\",\n      \"status\": \"active\",\n      \"evidence_ids\": [\"stage7e-e05\"]\n    },\n    {\n      \"obligation\": \"do not claim universal model-gap closure\",\n      \"status\": \"active\",\n      \"evidence_ids\": [\"stage7e-e05\"]\n    },\n    {\n      \"obligation\": \"do not claim full project initialization or full research workflow readiness\",\n      \"status\": \"active\",\n      \"evidence_ids\": [\"stage7e-e04\"]\n    }\n  ]\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "Stage 7r.1 targeted smoke completed 8/8 and passed 8/8",
+            "Stage 7r.2 admits only a narrow evidence-bound decision macro",
+            "Stage 7e v1 low-cost-model G8 passed",
+            "Stage 7e v1 low-cost-model G9 missed stage-gate and trace retention",
+            "full project initialization remains blocked",
+            "full research workflow remains blocked"
+          ],
+          "unknown_state": [
+            "stage7e_v2_local_gate status",
+            "stage7e_v2_smoke status"
+          ],
+          "forbidden_inferences": [
+            "universal model-gap closure",
+            "production readiness"
+          ]
+        },
+        "grounded_claims": [
+          {
+            "claim": "Stage 7r.1 completed 8/8 targeted smoke runs and passed 8/8 under low-cost-model G8/G9",
+            "evidence_ids": [
+              "stage7e-e01"
+            ]
+          },
+          {
+            "claim": "Stage 7r.2 admits a narrow evidence-bound decision macro and blocks full project initialization and full research workflow",
+            "evidence_ids": [
+              "stage7e-e04"
+            ]
+          },
+          {
+            "claim": "No supplied evidence supports production readiness or universal model-gap closure",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          }
+        ],
+        "unsupported_claims": [
+          {
+            "claim": "The harness universally closes the performance gap between strong and low-cost models",
+            "reason": "No evidence supports universal model-gap closure",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          },
+          {
+            "claim": "The harness is production ready",
+            "reason": "No evidence supports production readiness",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          }
+        ],
+        "typed_evidence": [
+          {
+            "evidence_id": "stage7e-e01",
+            "type": "EXTRACTED",
+            "claim": "Stage 7r.1 completed 8/8 targeted smoke runs and passed 8/8 under low-cost-model G8/G9"
+          },
+          {
+            "evidence_id": "stage7e-e02",
+            "type": "INFERRED",
+            "claim": "Stage 7r.1 supports mechanism-first repair hypothesis for low-cost-model failures"
+          },
+          {
+            "evidence_id": "stage7e-e03",
+            "type": "AMBIGUOUS",
+            "claim": "A8R has mixed execution evidence due to low-cost G8 timeout while G9 passed"
+          },
+          {
+            "evidence_id": "stage7e-e04",
+            "type": "EXTRACTED",
+            "claim": "Stage 7r.2 admits narrow evidence-bound decision macro and blocks full project initialization"
+          },
+          {
+            "evidence_id": "stage7e-e05",
+            "type": "EXTRACTED",
+            "claim": "No evidence supports production readiness or universal model-gap closure"
+          },
+          {
+            "evidence_id": "stage7e-e06",
+            "type": "PROPOSED",
+            "claim": "Proposed next step: Stage 7e v2 local golden/bad checks followed by targeted low-cost-model smoke"
+          },
+          {
+            "evidence_id": "stage7e-e07",
+            "type": "EXTRACTED",
+            "claim": "Stage 7e v1 passed under G8 but G9 failed due to missing stage-gate and trace retention"
+          }
+        ],
+        "selected_claim": {
+          "option_id": "C2",
+          "claim": "Mechanism-bound evidence decision workflows are ready for narrow retention-focused v2 smoke under the harness",
+          "evidence_ids": [
+            "stage7e-e06",
+            "stage7e-e01",
+            "stage7e-e04"
+          ]
+        },
+        "rejected_options": [
+          {
+            "option_id": "C1",
+            "reason": "No evidence supports universal model-gap closure",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          },
+          {
+            "option_id": "C3",
+            "reason": "No evidence supports production readiness",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          }
+        ],
+        "decision_trace": [
+          {
+            "option_id": "C2",
+            "decision": "Support",
+            "evidence_ids": [
+              "stage7e-e06",
+              "stage7e-e01",
+              "stage7e-e04"
+            ],
+            "carried_obligations": [
+              {
+                "obligation": "exclude stale universal-gap-closure and production-readiness note",
+                "status": "active",
+                "evidence_ids": [
+                  "stage7e-e05"
+                ]
+              },
+              {
+                "obligation": "do not claim production readiness",
+                "status": "active",
+                "evidence_ids": [
+                  "stage7e-e05"
+                ]
+              },
+              {
+                "obligation": "do not claim universal model-gap closure",
+                "status": "active",
+                "evidence_ids": [
+                  "stage7e-e05"
+                ]
+              }
+            ]
+          },
+          {
+            "option_id": "C1",
+            "decision": "Reject",
+            "evidence_ids": [
+              "stage7e-e05"
+            ],
+            "carried_obligations": [
+              {
+                "obligation": "exclude stale universal-gap-closure and production-readiness note",
+                "status": "active",
+                "evidence_ids": [
+                  "stage7e-e05"
+                ]
+              }
+            ]
+          },
+          {
+            "option_id": "C3",
+            "decision": "Reject",
+            "evidence_ids": [
+              "stage7e-e05"
+            ],
+            "carried_obligations": [
+              {
+                "obligation": "do not claim production readiness",
+                "status": "active",
+                "evidence_ids": [
+                  "stage7e-e05"
+                ]
+              }
+            ]
+          }
+        ],
+        "stage_gate": {
+          "status": "blocked",
+          "blocked_outputs": [
+            "final_recommendation",
+            "full_project_initialization",
+            "full_research_workflow"
+          ],
+          "missing_prerequisites": [
+            "stage7e_v2_local_gate",
+            "stage7e_v2_smoke"
+          ],
+          "next_required_actions": [
+            "Stage 7e v2 local golden/bad checks",
+            "Targeted low-cost-model smoke"
+          ]
+        },
+        "carried_obligations": [
+          {
+            "obligation": "exclude stale universal-gap-closure and production-readiness note",
+            "status": "active",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          },
+          {
+            "obligation": "do not claim production readiness",
+            "status": "active",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          },
+          {
+            "obligation": "do not claim universal model-gap closure",
+            "status": "active",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          },
+          {
+            "obligation": "do not claim full project initialization or full research workflow readiness",
+            "status": "active",
+            "evidence_ids": [
+              "stage7e-e04"
+            ]
+          }
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.6552
+    },
+    {
+      "run_id": "stage7e-v2-retention-decision__stage7e-v2-retention-decision__budget_model__G9__r1",
+      "stage": "stage7e-v2-retention-decision",
+      "frozen_run_name": "stage7e-v2-retention-decision__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T17:28:45.569225+00:00",
+      "elapsed_s": 60.35,
+      "usage": {
+        "prompt_tokens": 2958,
+        "completion_tokens": 2196,
+        "total_tokens": 5154,
+        "completion_tokens_details": {
+          "reasoning_tokens": 911
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2958
+      },
+      "response_id": "019fa9c4ac43e1328de5cbd0815993ae",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      \"Stage 7r.1 targeted smoke completed 8/8 and passed 8/8\",\n      \"Stage 7r.2 admits only a narrow evidence-bound decision macro\",\n      \"Stage 7e v1 low-cost-model G8 passed the narrow macro\",\n      \"Stage 7e v1 low-cost-model G9 missed stage-gate and trace retention\"\n    ],\n    \"unknown_state\": [\n      \"Stage 7e v2 macro fixture status\",\n      \"Stage 7e v2 local gate status\",\n      \"Stage 7e v2 smoke status\"\n    ],\n    \"forbidden_inferences\": [\n      \"old universal gap-closure note\",\n      \"old production-readiness note\"\n    ]\n  },\n  \"grounded_claims\": {\n    \"claim\": \"Stage 7r.1 completed 8/8 targeted smoke runs and passed 8/8 under low-cost-model G8/G9\",\n    \"evidence_ids\": [\"stage7e-e01\"]\n  },\n  \"unsupported_claims\": [\n    {\n      \"claim\": \"The harness universally closes the performance gap between strong and low-cost models\",\n      \"reason\": \"No evidence supports universal model-gap closure; evidence explicitly excludes this claim\"\n    },\n    {\n      \"claim\": \"The harness is production ready\",\n      \"reason\": \"No supplied evidence supports production readiness\"\n    }\n  ],\n  \"typed_evidence\": [\n    {\n      \"evidence_id\": \"stage7e-e01\",\n      \"type\": \"EXTRACTED\",\n      \"claim\": \"Stage 7r.1 completed 8/8 targeted smoke runs and passed 8/8 under low-cost-model G8/G9\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e02\",\n      \"type\": \"INFERRED\",\n      \"claim\": \"Stage 7r.1 supports mechanism-first repair hypothesis for low-cost-model failures\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e03\",\n      \"type\": \"AMBIGUOUS\",\n      \"claim\": \"A8R has mixed execution evidence due to G8 timeout and G9/strong passes\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e04\",\n      \"type\": \"EXTRACTED\",\n      \"claim\": \"Stage 7r.2 admits narrow evidence-bound decision macro and blocks full project initialization\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e05\",\n      \"type\": \"EXTRACTED\",\n      \"claim\": \"No evidence supports production readiness or universal model-gap closure\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e06\",\n      \"type\": \"PROPOSED\",\n      \"claim\": \"Proposed next action: Stage 7e v2 local golden/bad checks followed by targeted low-cost smoke\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e07\",\n      \"type\": \"EXTRACTED\",\n      \"claim\": \"Stage 7e v1 G8 passed but G9 missed stage-gate and trace retention\"\n    }\n  ],\n  \"selected_claim\": {\n    \"option_id\": \"C2\",\n    \"claim\": \"Mechanism-bound evidence decision workflows are ready for narrow retention-focused v2 smoke\",\n    \"evidence_ids\": [\"stage7e-e01\", \"stage7e-e04\"]\n  },\n  \"rejected_options\": [\n    {\n      \"option_id\": \"C1\",\n      \"reason\": \"No evidence supports universal model-gap closure\",\n      \"evidence_ids\": [\"stage7e-e05\"]\n    },\n    {\n      \"option_id\": \"C3\",\n      \"reason\": \"No evidence supports production readiness\",\n      \"evidence_ids\": [\"stage7e-e05\"]\n    }\n  ],\n  \"decision_trace\": [\n    {\n      \"option_id\": \"C2\",\n      \"decision\": \"Support\",\n      \"evidence_ids\": [\"stage7e-e01\", \"stage7e-e04\"],\n      \"carried_obligations\": [\"exclude stale universal-gap-closure and production-readiness note\"]\n    },\n    {\n      \"option_id\": \"C1\",\n      \"decision\": \"Reject\",\n      \"evidence_ids\": [\"stage7e-e05\"],\n      \"carried_obligations\": [\"exclude stale universal-gap-closure and production-readiness note\"]\n    },\n    {\n      \"option_id\": \"C3\",\n      \"decision\": \"Reject\",\n      \"evidence_ids\": [\"stage7e-e05\"],\n      \"carried_obligations\": [\"exclude stale universal-gap-closure and production-readiness note\"]\n    }\n  ],\n  \"stage_gate\": {\n    \"status\": \"blocked\",\n    \"blocked_outputs\": [\n      \"final_recommendation\",\n      \"full_project_initialization\",\n      \"full_research_workflow\"\n    ],\n    \"missing_prerequisites\": [\n      \"stage7e_v2_local_gate\",\n      \"stage7e_v2_smoke\"\n    ],\n    \"next_required_actions\": [\n      \"Stage 7e v2 local golden/bad checks\",\n      \"Targeted low-cost-model smoke\"\n    ]\n  },\n  \"carried_obligations\": [\n    {\n      \"obligation\": \"exclude stale universal-gap-closure and production-readiness note\",\n      \"status\": \"active\",\n      \"evidence_ids\": [\"stage7e-e05\"]\n    },\n    {\n      \"obligation\": \"do not claim production readiness\",\n      \"status\": \"enforced\",\n      \"evidence_ids\": [\"stage7e-e05\"]\n    },\n    {\n      \"obligation\": \"do not claim universal model-gap closure\",\n      \"status\": \"enforced\",\n      \"evidence_ids\": [\"stage7e-e05\"]\n    },\n    {\n      \"obligation\": \"do not claim full project initialization or full research workflow readiness\",\n      \"status\": \"enforced\",\n      \"evidence_ids\": [\"stage7e-e04\"]\n    }\n  ]\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "Stage 7r.1 targeted smoke completed 8/8 and passed 8/8",
+            "Stage 7r.2 admits only a narrow evidence-bound decision macro",
+            "Stage 7e v1 low-cost-model G8 passed the narrow macro",
+            "Stage 7e v1 low-cost-model G9 missed stage-gate and trace retention"
+          ],
+          "unknown_state": [
+            "Stage 7e v2 macro fixture status",
+            "Stage 7e v2 local gate status",
+            "Stage 7e v2 smoke status"
+          ],
+          "forbidden_inferences": [
+            "old universal gap-closure note",
+            "old production-readiness note"
+          ]
+        },
+        "grounded_claims": {
+          "claim": "Stage 7r.1 completed 8/8 targeted smoke runs and passed 8/8 under low-cost-model G8/G9",
+          "evidence_ids": [
+            "stage7e-e01"
+          ]
+        },
+        "unsupported_claims": [
+          {
+            "claim": "The harness universally closes the performance gap between strong and low-cost models",
+            "reason": "No evidence supports universal model-gap closure; evidence explicitly excludes this claim"
+          },
+          {
+            "claim": "The harness is production ready",
+            "reason": "No supplied evidence supports production readiness"
+          }
+        ],
+        "typed_evidence": [
+          {
+            "evidence_id": "stage7e-e01",
+            "type": "EXTRACTED",
+            "claim": "Stage 7r.1 completed 8/8 targeted smoke runs and passed 8/8 under low-cost-model G8/G9"
+          },
+          {
+            "evidence_id": "stage7e-e02",
+            "type": "INFERRED",
+            "claim": "Stage 7r.1 supports mechanism-first repair hypothesis for low-cost-model failures"
+          },
+          {
+            "evidence_id": "stage7e-e03",
+            "type": "AMBIGUOUS",
+            "claim": "A8R has mixed execution evidence due to G8 timeout and G9/strong passes"
+          },
+          {
+            "evidence_id": "stage7e-e04",
+            "type": "EXTRACTED",
+            "claim": "Stage 7r.2 admits narrow evidence-bound decision macro and blocks full project initialization"
+          },
+          {
+            "evidence_id": "stage7e-e05",
+            "type": "EXTRACTED",
+            "claim": "No evidence supports production readiness or universal model-gap closure"
+          },
+          {
+            "evidence_id": "stage7e-e06",
+            "type": "PROPOSED",
+            "claim": "Proposed next action: Stage 7e v2 local golden/bad checks followed by targeted low-cost smoke"
+          },
+          {
+            "evidence_id": "stage7e-e07",
+            "type": "EXTRACTED",
+            "claim": "Stage 7e v1 G8 passed but G9 missed stage-gate and trace retention"
+          }
+        ],
+        "selected_claim": {
+          "option_id": "C2",
+          "claim": "Mechanism-bound evidence decision workflows are ready for narrow retention-focused v2 smoke",
+          "evidence_ids": [
+            "stage7e-e01",
+            "stage7e-e04"
+          ]
+        },
+        "rejected_options": [
+          {
+            "option_id": "C1",
+            "reason": "No evidence supports universal model-gap closure",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          },
+          {
+            "option_id": "C3",
+            "reason": "No evidence supports production readiness",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          }
+        ],
+        "decision_trace": [
+          {
+            "option_id": "C2",
+            "decision": "Support",
+            "evidence_ids": [
+              "stage7e-e01",
+              "stage7e-e04"
+            ],
+            "carried_obligations": [
+              "exclude stale universal-gap-closure and production-readiness note"
+            ]
+          },
+          {
+            "option_id": "C1",
+            "decision": "Reject",
+            "evidence_ids": [
+              "stage7e-e05"
+            ],
+            "carried_obligations": [
+              "exclude stale universal-gap-closure and production-readiness note"
+            ]
+          },
+          {
+            "option_id": "C3",
+            "decision": "Reject",
+            "evidence_ids": [
+              "stage7e-e05"
+            ],
+            "carried_obligations": [
+              "exclude stale universal-gap-closure and production-readiness note"
+            ]
+          }
+        ],
+        "stage_gate": {
+          "status": "blocked",
+          "blocked_outputs": [
+            "final_recommendation",
+            "full_project_initialization",
+            "full_research_workflow"
+          ],
+          "missing_prerequisites": [
+            "stage7e_v2_local_gate",
+            "stage7e_v2_smoke"
+          ],
+          "next_required_actions": [
+            "Stage 7e v2 local golden/bad checks",
+            "Targeted low-cost-model smoke"
+          ]
+        },
+        "carried_obligations": [
+          {
+            "obligation": "exclude stale universal-gap-closure and production-readiness note",
+            "status": "active",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          },
+          {
+            "obligation": "do not claim production readiness",
+            "status": "enforced",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          },
+          {
+            "obligation": "do not claim universal model-gap closure",
+            "status": "enforced",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          },
+          {
+            "obligation": "do not claim full project initialization or full research workflow readiness",
+            "status": "enforced",
+            "evidence_ids": [
+              "stage7e-e04"
+            ]
+          }
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.7232
+    },
+    {
+      "run_id": "stage7e-v2-retention-decision__stage7e-v2-retention-decision__budget_model__G9__r2",
+      "stage": "stage7e-v2-retention-decision",
+      "frozen_run_name": "stage7e-v2-retention-decision__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T17:30:05.531346+00:00",
+      "elapsed_s": 79.66,
+      "usage": {
+        "prompt_tokens": 2958,
+        "completion_tokens": 2839,
+        "total_tokens": 5797,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1205
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 2926
+      },
+      "response_id": "019fa9c5993a59550fd46b5120e0ffff",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      \"Stage 7r.1 targeted smoke completed 8/8 and passed 8/8\",\n      \"Stage 7r.2 admits only a narrow evidence-bound decision macro\",\n      \"Stage 7e v1 low-cost-model G8 passed\",\n      \"Stage 7e v1 low-cost-model G9 missed stage-gate and trace retention\",\n      \"full project initialization remains blocked\",\n      \"full research workflow remains blocked\"\n    ],\n    \"unknown_state\": [\n      \"Stage 7e v2 macro fixture status\",\n      \"Stage 7e v2 local gate completion\",\n      \"Stage 7e v2 smoke run outcome\"\n    ],\n    \"forbidden_inferences\": [\n      \"old universal gap-closure note\",\n      \"old production-readiness note\",\n      \"current Git branch\",\n      \"CI status\",\n      \"network/API approval\"\n    ]\n  },\n  \"grounded_claims\": {\n    \"claim\": \"Mechanism-bound evidence decision workflows are ready for a narrow retention-focused v2 smoke under the harness\",\n    \"evidence_ids\": [\n      \"stage7e-e01\",\n      \"stage7e-e02\",\n      \"stage7e-e04\",\n      \"stage7e-e06\",\n      \"stage7e-e07\"\n    ]\n  },\n  \"unsupported_claims\": [\n    {\n      \"claim\": \"The harness universally closes the performance gap between strong and low-cost models\",\n      \"reason\": \"No evidence supports universal model-gap closure; evidence indicates mixed execution outcomes for A8R\"\n    },\n    {\n      \"claim\": \"The harness is production ready\",\n      \"reason\": \"Explicitly excluded stale context; no evidence supports production readiness\"\n    }\n  ],\n  \"typed_evidence\": [\n    {\n      \"evidence_id\": \"stage7e-e01\",\n      \"type\": \"EXTRACTED\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e02\",\n      \"type\": \"INFERRED\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e03\",\n      \"type\": \"AMBIGUOUS\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e04\",\n      \"type\": \"EXTRACTED\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e05\",\n      \"type\": \"EXTRACTED\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e06\",\n      \"type\": \"PROPOSED\"\n    },\n    {\n      \"evidence_id\": \"stage7e-e07\",\n      \"type\": \"EXTRACTED\"\n    }\n  ],\n  \"selected_claim\": {\n    \"option_id\": \"C2\",\n    \"claim\": \"Mechanism-bound evidence decision workflows are ready for a narrow retention-focused v2 smoke under the harness\",\n    \"evidence_ids\": [\n      \"stage7e-e01\",\n      \"stage7e-e02\",\n      \"stage7e-e04\",\n      \"stage7e-e06\",\n      \"stage7e-e07\"\n    ]\n  },\n  \"rejected_options\": [\n    {\n      \"option_id\": \"C1\",\n      \"reason\": \"No evidence supports universal model-gap closure; evidence indicates mixed execution outcomes for A8R\",\n      \"evidence_ids\": [\n        \"stage7e-e03\",\n        \"stage7e-e05\"\n      ]\n    },\n    {\n      \"option_id\": \"C3\",\n      \"reason\": \"Explicitly excluded stale context; no evidence supports production readiness\",\n      \"evidence_ids\": [\n        \"stage7e-e05\"\n      ]\n    }\n  ],\n  \"decision_trace\": [\n    {\n      \"option_id\": \"C2\",\n      \"decision\": \"supported\",\n      \"evidence_ids\": [\n        \"stage7e-e01\",\n        \"stage7e-e02\",\n        \"stage7e-e04\",\n        \"stage7e-e06\",\n        \"stage7e-e07\"\n      ],\n      \"carried_obligations\": [\n        {\n          \"obligation\": \"exclude stale universal-gap-closure and production-readiness note\",\n          \"status\": \"active\",\n          \"evidence_ids\": [\n            \"stage7e-e05\"\n          ]\n        },\n        {\n          \"obligation\": \"do not claim production readiness\",\n          \"status\": \"active\",\n          \"evidence_ids\": [\n            \"stage7e-e05\"\n          ]\n        },\n        {\n          \"obligation\": \"do not claim universal model-gap closure\",\n          \"status\": \"active\",\n          \"evidence_ids\": [\n            \"stage7e-e03\",\n            \"stage7e-e05\"\n          ]\n        },\n        {\n          \"obligation\": \"do not claim full project initialization or full research workflow readiness\",\n          \"status\": \"active\",\n          \"evidence_ids\": [\n            \"stage7e-e04\"\n          ]\n        }\n      ]\n    },\n    {\n      \"option_id\": \"C1\",\n      \"decision\": \"rejected\",\n      \"evidence_ids\": [\n        \"stage7e-e03\",\n        \"stage7e-e05\"\n      ],\n      \"carried_obligations\": [\n        {\n          \"obligation\": \"exclude stale universal-gap-closure and production-readiness note\",\n          \"status\": \"active\",\n          \"evidence_ids\": [\n            \"stage7e-e05\"\n          ]\n        },\n        {\n          \"obligation\": \"do not claim universal model-gap closure\",\n          \"status\": \"active\",\n          \"evidence_ids\": [\n            \"stage7e-e03\",\n            \"stage7e-e05\"\n          ]\n        }\n      ]\n    },\n    {\n      \"option_id\": \"C3\",\n      \"decision\": \"rejected\",\n      \"evidence_ids\": [\n        \"stage7e-e05\"\n      ],\n      \"carried_obligations\": [\n        {\n          \"obligation\": \"exclude stale universal-gap-closure and production-readiness note\",\n          \"status\": \"active\",\n          \"evidence_ids\": [\n            \"stage7e-e05\"\n          ]\n        }\n      ]\n    }\n  ],\n  \"stage_gate\": {\n    \"status\": \"blocked\",\n    \"blocked_outputs\": [\n      \"final_recommendation\",\n      \"full_project_initialization\",\n      \"full_research_workflow\"\n    ],\n    \"missing_prerequisites\": [\n      \"stage7e_v2_local_gate\",\n      \"stage7e_v2_smoke\"\n    ],\n    \"next_required_actions\": [\n      \"Stage 7e v2 local golden/bad checks\",\n      \"Targeted low-cost-model smoke\"\n    ]\n  },\n  \"carried_obligations\": [\n    {\n      \"obligation\": \"exclude stale universal-gap-closure and production-readiness note\",\n      \"status\": \"active\",\n      \"evidence_ids\": [\n        \"stage7e-e05\"\n      ]\n    },\n    {\n      \"obligation\": \"do not claim production readiness\",\n      \"status\": \"active\",\n      \"evidence_ids\": [\n        \"stage7e-e05\"\n      ]\n    },\n    {\n      \"obligation\": \"do not claim universal model-gap closure\",\n      \"status\": \"active\",\n      \"evidence_ids\": [\n        \"stage7e-e03\",\n        \"stage7e-e05\"\n      ]\n    },\n    {\n      \"obligation\": \"do not claim full project initialization or full research workflow readiness\",\n      \"status\": \"active\",\n      \"evidence_ids\": [\n        \"stage7e-e04\"\n      ]\n    }\n  ]\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "Stage 7r.1 targeted smoke completed 8/8 and passed 8/8",
+            "Stage 7r.2 admits only a narrow evidence-bound decision macro",
+            "Stage 7e v1 low-cost-model G8 passed",
+            "Stage 7e v1 low-cost-model G9 missed stage-gate and trace retention",
+            "full project initialization remains blocked",
+            "full research workflow remains blocked"
+          ],
+          "unknown_state": [
+            "Stage 7e v2 macro fixture status",
+            "Stage 7e v2 local gate completion",
+            "Stage 7e v2 smoke run outcome"
+          ],
+          "forbidden_inferences": [
+            "old universal gap-closure note",
+            "old production-readiness note",
+            "current Git branch",
+            "CI status",
+            "network/API approval"
+          ]
+        },
+        "grounded_claims": {
+          "claim": "Mechanism-bound evidence decision workflows are ready for a narrow retention-focused v2 smoke under the harness",
+          "evidence_ids": [
+            "stage7e-e01",
+            "stage7e-e02",
+            "stage7e-e04",
+            "stage7e-e06",
+            "stage7e-e07"
+          ]
+        },
+        "unsupported_claims": [
+          {
+            "claim": "The harness universally closes the performance gap between strong and low-cost models",
+            "reason": "No evidence supports universal model-gap closure; evidence indicates mixed execution outcomes for A8R"
+          },
+          {
+            "claim": "The harness is production ready",
+            "reason": "Explicitly excluded stale context; no evidence supports production readiness"
+          }
+        ],
+        "typed_evidence": [
+          {
+            "evidence_id": "stage7e-e01",
+            "type": "EXTRACTED"
+          },
+          {
+            "evidence_id": "stage7e-e02",
+            "type": "INFERRED"
+          },
+          {
+            "evidence_id": "stage7e-e03",
+            "type": "AMBIGUOUS"
+          },
+          {
+            "evidence_id": "stage7e-e04",
+            "type": "EXTRACTED"
+          },
+          {
+            "evidence_id": "stage7e-e05",
+            "type": "EXTRACTED"
+          },
+          {
+            "evidence_id": "stage7e-e06",
+            "type": "PROPOSED"
+          },
+          {
+            "evidence_id": "stage7e-e07",
+            "type": "EXTRACTED"
+          }
+        ],
+        "selected_claim": {
+          "option_id": "C2",
+          "claim": "Mechanism-bound evidence decision workflows are ready for a narrow retention-focused v2 smoke under the harness",
+          "evidence_ids": [
+            "stage7e-e01",
+            "stage7e-e02",
+            "stage7e-e04",
+            "stage7e-e06",
+            "stage7e-e07"
+          ]
+        },
+        "rejected_options": [
+          {
+            "option_id": "C1",
+            "reason": "No evidence supports universal model-gap closure; evidence indicates mixed execution outcomes for A8R",
+            "evidence_ids": [
+              "stage7e-e03",
+              "stage7e-e05"
+            ]
+          },
+          {
+            "option_id": "C3",
+            "reason": "Explicitly excluded stale context; no evidence supports production readiness",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          }
+        ],
+        "decision_trace": [
+          {
+            "option_id": "C2",
+            "decision": "supported",
+            "evidence_ids": [
+              "stage7e-e01",
+              "stage7e-e02",
+              "stage7e-e04",
+              "stage7e-e06",
+              "stage7e-e07"
+            ],
+            "carried_obligations": [
+              {
+                "obligation": "exclude stale universal-gap-closure and production-readiness note",
+                "status": "active",
+                "evidence_ids": [
+                  "stage7e-e05"
+                ]
+              },
+              {
+                "obligation": "do not claim production readiness",
+                "status": "active",
+                "evidence_ids": [
+                  "stage7e-e05"
+                ]
+              },
+              {
+                "obligation": "do not claim universal model-gap closure",
+                "status": "active",
+                "evidence_ids": [
+                  "stage7e-e03",
+                  "stage7e-e05"
+                ]
+              },
+              {
+                "obligation": "do not claim full project initialization or full research workflow readiness",
+                "status": "active",
+                "evidence_ids": [
+                  "stage7e-e04"
+                ]
+              }
+            ]
+          },
+          {
+            "option_id": "C1",
+            "decision": "rejected",
+            "evidence_ids": [
+              "stage7e-e03",
+              "stage7e-e05"
+            ],
+            "carried_obligations": [
+              {
+                "obligation": "exclude stale universal-gap-closure and production-readiness note",
+                "status": "active",
+                "evidence_ids": [
+                  "stage7e-e05"
+                ]
+              },
+              {
+                "obligation": "do not claim universal model-gap closure",
+                "status": "active",
+                "evidence_ids": [
+                  "stage7e-e03",
+                  "stage7e-e05"
+                ]
+              }
+            ]
+          },
+          {
+            "option_id": "C3",
+            "decision": "rejected",
+            "evidence_ids": [
+              "stage7e-e05"
+            ],
+            "carried_obligations": [
+              {
+                "obligation": "exclude stale universal-gap-closure and production-readiness note",
+                "status": "active",
+                "evidence_ids": [
+                  "stage7e-e05"
+                ]
+              }
+            ]
+          }
+        ],
+        "stage_gate": {
+          "status": "blocked",
+          "blocked_outputs": [
+            "final_recommendation",
+            "full_project_initialization",
+            "full_research_workflow"
+          ],
+          "missing_prerequisites": [
+            "stage7e_v2_local_gate",
+            "stage7e_v2_smoke"
+          ],
+          "next_required_actions": [
+            "Stage 7e v2 local golden/bad checks",
+            "Targeted low-cost-model smoke"
+          ]
+        },
+        "carried_obligations": [
+          {
+            "obligation": "exclude stale universal-gap-closure and production-readiness note",
+            "status": "active",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          },
+          {
+            "obligation": "do not claim production readiness",
+            "status": "active",
+            "evidence_ids": [
+              "stage7e-e05"
+            ]
+          },
+          {
+            "obligation": "do not claim universal model-gap closure",
+            "status": "active",
+            "evidence_ids": [
+              "stage7e-e03",
+              "stage7e-e05"
+            ]
+          },
+          {
+            "obligation": "do not claim full project initialization or full research workflow readiness",
+            "status": "active",
+            "evidence_ids": [
+              "stage7e-e04"
+            ]
+          }
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.6029
+    }
+  ]
+}

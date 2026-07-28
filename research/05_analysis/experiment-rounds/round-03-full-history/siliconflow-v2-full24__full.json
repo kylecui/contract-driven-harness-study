@@ -1,0 +1,840 @@
+{
+  "stage": "siliconflow-v2-full24",
+  "total_runs": 24,
+  "json_parsed": 24,
+  "matched_frozen_high_similarity": 14,
+  "frozen_task_success_1_count": 0,
+  "timestamp": "2026-07-28T15:12:34.823209+00:00",
+  "runs": [
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction-hard__budget_model__G0__r1",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction-hard__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:02:12.490431+00:00",
+      "elapsed_s": 91.67,
+      "usage": {
+        "prompt_tokens": 611,
+        "completion_tokens": 2498,
+        "total_tokens": 3109,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2456
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 611
+      },
+      "response_id": "019fa93e04ab0c5fd421a75df9196b79",
+      "raw_content": "\n\n{\n  \"primary_venue\": \"ACL 2026 Findings\",\n  \"primary_metric\": \"cross-model gap compression\",\n  \"fallback_venue\": \"COLM systems workshop\"\n}",
+      "parsed_output": {
+        "primary_venue": "ACL 2026 Findings",
+        "primary_metric": "cross-model gap compression",
+        "fallback_venue": "COLM systems workshop"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.5909
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction-hard__budget_model__G0__r2",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction-hard__budget_model__G0__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:02:54.245356+00:00",
+      "elapsed_s": 41.45,
+      "usage": {
+        "prompt_tokens": 611,
+        "completion_tokens": 1142,
+        "total_tokens": 1753,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1100
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 611
+      },
+      "response_id": "019fa93f6be3b4aca0fda088738d5efd",
+      "raw_content": "\n\n{\n  \"primary_venue\": \"ACL 2026 Findings\",\n  \"primary_metric\": \"cross-model gap compression\",\n  \"fallback_venue\": \"COLM systems workshop\"\n}",
+      "parsed_output": {
+        "primary_venue": "ACL 2026 Findings",
+        "primary_metric": "cross-model gap compression",
+        "fallback_venue": "COLM systems workshop"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.4483
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction-hard__budget_model__G0__r3",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction-hard__budget_model__G0__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:03:18.889993+00:00",
+      "elapsed_s": 24.34,
+      "usage": {
+        "prompt_tokens": 611,
+        "completion_tokens": 557,
+        "total_tokens": 1168,
+        "completion_tokens_details": {
+          "reasoning_tokens": 477
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 611
+      },
+      "response_id": "019fa9400f252f4e534e2f2e908bd319",
+      "raw_content": "\n\n{\n  \"active_proposal\": \"Contract-Driven Agent Harness Engineering\",\n  \"primary_venue\": \"ACL 2026 Findings\",\n  \"fallback_venue\": \"COLM systems workshop\",\n  \"primary_metric\": \"cross-model gap compression\",\n  \"secondary_metric\": null,\n  \"target_audience\": null,\n  \"submission_deadline\": null\n}",
+      "parsed_output": {
+        "active_proposal": "Contract-Driven Agent Harness Engineering",
+        "primary_venue": "ACL 2026 Findings",
+        "fallback_venue": "COLM systems workshop",
+        "primary_metric": "cross-model gap compression",
+        "secondary_metric": null,
+        "target_audience": null,
+        "submission_deadline": null
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.52
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction-hard__budget_model__G9__r1",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction-hard__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:03:39.566567+00:00",
+      "elapsed_s": 20.37,
+      "usage": {
+        "prompt_tokens": 1337,
+        "completion_tokens": 649,
+        "total_tokens": 1986,
+        "completion_tokens_details": {
+          "reasoning_tokens": 552
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 1305
+      },
+      "response_id": "019fa9406f1f496c22143a3ff748d7cb",
+      "raw_content": "\n\n{\n  \"title\": \"Contract-Driven Agent Harness Engineering\",\n  \"target_venue\": \"ACL 2026 Findings\",\n  \"fallback_venue\": \"COLM systems workshop\",\n  \"primary_metric\": \"cross-model gap compression\",\n  \"blocker\": \"proving a nonzero baseline model gap before running the full benchmark\",\n  \"evidence_ids\": [\"hard-e02\", \"hard-e03\", \"hard-e04\"]\n}",
+      "parsed_output": {
+        "title": "Contract-Driven Agent Harness Engineering",
+        "target_venue": "ACL 2026 Findings",
+        "fallback_venue": "COLM systems workshop",
+        "primary_metric": "cross-model gap compression",
+        "blocker": "proving a nonzero baseline model gap before running the full benchmark",
+        "evidence_ids": [
+          "hard-e02",
+          "hard-e03",
+          "hard-e04"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction-hard__budget_model__G9__r2",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction-hard__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:04:17.883142+00:00",
+      "elapsed_s": 38.02,
+      "usage": {
+        "prompt_tokens": 1337,
+        "completion_tokens": 1014,
+        "total_tokens": 2351,
+        "completion_tokens_details": {
+          "reasoning_tokens": 917
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1337
+      },
+      "response_id": "019fa940bff37d81ef0c147cb73182f8",
+      "raw_content": "\n\n{\n  \"title\": \"Contract-Driven Agent Harness Engineering\",\n  \"target_venue\": \"ACL 2026 Findings\",\n  \"fallback_venue\": \"COLM systems workshop\",\n  \"primary_metric\": \"cross-model gap compression\",\n  \"blocker\": \"proving a nonzero baseline model gap before running the full benchmark\",\n  \"evidence_ids\": [\"hard-e02\", \"hard-e03\", \"hard-e04\"]\n}",
+      "parsed_output": {
+        "title": "Contract-Driven Agent Harness Engineering",
+        "target_venue": "ACL 2026 Findings",
+        "fallback_venue": "COLM systems workshop",
+        "primary_metric": "cross-model gap compression",
+        "blocker": "proving a nonzero baseline model gap before running the full benchmark",
+        "evidence_ids": [
+          "hard-e02",
+          "hard-e03",
+          "hard-e04"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.8286
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction-hard__budget_model__G9__r3",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction-hard__budget_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:04:42.692315+00:00",
+      "elapsed_s": 24.51,
+      "usage": {
+        "prompt_tokens": 1337,
+        "completion_tokens": 607,
+        "total_tokens": 1944,
+        "completion_tokens_details": {
+          "reasoning_tokens": 510
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 1305
+      },
+      "response_id": "019fa941566fb226f813cc8b98c4e745",
+      "raw_content": "\n\n{\n  \"title\": \"Contract-Driven Agent Harness Engineering\",\n  \"target_venue\": \"ACL 2026 Findings\",\n  \"fallback_venue\": \"COLM systems workshop\",\n  \"primary_metric\": \"cross-model gap compression\",\n  \"blocker\": \"proving a nonzero baseline model gap before running the full benchmark\",\n  \"evidence_ids\": [\"hard-e02\", \"hard-e03\", \"hard-e04\"]\n}",
+      "parsed_output": {
+        "title": "Contract-Driven Agent Harness Engineering",
+        "target_venue": "ACL 2026 Findings",
+        "fallback_venue": "COLM systems workshop",
+        "primary_metric": "cross-model gap compression",
+        "blocker": "proving a nonzero baseline model gap before running the full benchmark",
+        "evidence_ids": [
+          "hard-e02",
+          "hard-e03",
+          "hard-e04"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction-hard__strong_model__G0__r1",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction-hard__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:05:13.122304+00:00",
+      "elapsed_s": 30.13,
+      "usage": {
+        "prompt_tokens": 611,
+        "completion_tokens": 745,
+        "total_tokens": 1356,
+        "completion_tokens_details": {
+          "reasoning_tokens": 692
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 611
+      },
+      "response_id": "019fa941b69892311aa55e9fbd6855e1",
+      "raw_content": "\n\n{\n  \"proposal_id\": \"hard-e02\",\n  \"primary_venue\": \"ACL 2026 Findings\",\n  \"fallback_venue\": \"COLM systems workshop\",\n  \"primary_metric\": \"cross-model gap compression\"\n}",
+      "parsed_output": {
+        "proposal_id": "hard-e02",
+        "primary_venue": "ACL 2026 Findings",
+        "fallback_venue": "COLM systems workshop",
+        "primary_metric": "cross-model gap compression"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0455
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction-hard__strong_model__G0__r2",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction-hard__strong_model__G0__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:06:00.188014+00:00",
+      "elapsed_s": 46.76,
+      "usage": {
+        "prompt_tokens": 611,
+        "completion_tokens": 1117,
+        "total_tokens": 1728,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1048
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 579
+      },
+      "response_id": "019fa9422d560856ea3260501ed3acd9",
+      "raw_content": "\n\n{\n  \"proposal_name\": \"Contract-Driven Agent Harness Engineering\",\n  \"primary_venue\": \"ACL 2026 Findings\",\n  \"primary_metric\": \"cross-model gap compression\",\n  \"fallback_venue\": \"COLM systems workshop\",\n  \"status\": \"NEXT\",\n  \"blocker\": null\n}",
+      "parsed_output": {
+        "proposal_name": "Contract-Driven Agent Harness Engineering",
+        "primary_venue": "ACL 2026 Findings",
+        "primary_metric": "cross-model gap compression",
+        "fallback_venue": "COLM systems workshop",
+        "status": "NEXT",
+        "blocker": null
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0521
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction-hard__strong_model__G0__r3",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction-hard__strong_model__G0__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:06:22.140810+00:00",
+      "elapsed_s": 21.65,
+      "usage": {
+        "prompt_tokens": 611,
+        "completion_tokens": 638,
+        "total_tokens": 1249,
+        "completion_tokens_details": {
+          "reasoning_tokens": 596
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 611
+      },
+      "response_id": "019fa9440cb7f91e137cc73a340867ba",
+      "raw_content": "\n\n{\n  \"primary_venue\": \"ACL 2026 Findings\",\n  \"fallback_venue\": \"COLM systems workshop\",\n  \"primary_metric\": \"cross-model gap compression\"\n}",
+      "parsed_output": {
+        "primary_venue": "ACL 2026 Findings",
+        "fallback_venue": "COLM systems workshop",
+        "primary_metric": "cross-model gap compression"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0366
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction-hard__strong_model__G9__r1",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction-hard__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:06:58.668957+00:00",
+      "elapsed_s": 36.23,
+      "usage": {
+        "prompt_tokens": 1337,
+        "completion_tokens": 922,
+        "total_tokens": 2259,
+        "completion_tokens_details": {
+          "reasoning_tokens": 825
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1337
+      },
+      "response_id": "019fa9433b0a0b2466c765bf254cf377",
+      "raw_content": "\n\n{\n  \"title\": \"Contract-Driven Agent Harness Engineering\",\n  \"target_venue\": \"ACL 2026 Findings\",\n  \"fallback_venue\": \"COLM systems workshop\",\n  \"primary_metric\": \"cross-model gap compression\",\n  \"blocker\": \"proving a nonzero baseline model gap before running the full benchmark\",\n  \"evidence_ids\": [\"hard-e02\", \"hard-e03\", \"hard-e04\"]\n}",
+      "parsed_output": {
+        "title": "Contract-Driven Agent Harness Engineering",
+        "target_venue": "ACL 2026 Findings",
+        "fallback_venue": "COLM systems workshop",
+        "primary_metric": "cross-model gap compression",
+        "blocker": "proving a nonzero baseline model gap before running the full benchmark",
+        "evidence_ids": [
+          "hard-e02",
+          "hard-e03",
+          "hard-e04"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.9444
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction-hard__strong_model__G9__r2",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction-hard__strong_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:07:54.822983+00:00",
+      "elapsed_s": 55.85,
+      "usage": {
+        "prompt_tokens": 1337,
+        "completion_tokens": 1295,
+        "total_tokens": 2632,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1203
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 1305
+      },
+      "response_id": "019fa943c9b353b684e929386b5dec09",
+      "raw_content": "\n\n{\n  \"title\": \"Contract-Driven Agent Harness Engineering\",\n  \"target_venue\": \"ACL 2026 Findings\",\n  \"fallback_venue\": \"COLM systems workshop\",\n  \"primary_metric\": \"cross-model gap compression\",\n  \"blocker\": \"proving a nonzero baseline model gap\",\n  \"evidence_ids\": [\"hard-e02\", \"hard-e03\", \"hard-e04\"]\n}",
+      "parsed_output": {
+        "title": "Contract-Driven Agent Harness Engineering",
+        "target_venue": "ACL 2026 Findings",
+        "fallback_venue": "COLM systems workshop",
+        "primary_metric": "cross-model gap compression",
+        "blocker": "proving a nonzero baseline model gap",
+        "evidence_ids": [
+          "hard-e02",
+          "hard-e03",
+          "hard-e04"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.7838
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction-hard__strong_model__G9__r3",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction-hard__strong_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:08:24.757992+00:00",
+      "elapsed_s": 29.63,
+      "usage": {
+        "prompt_tokens": 1337,
+        "completion_tokens": 821,
+        "total_tokens": 2158,
+        "completion_tokens_details": {
+          "reasoning_tokens": 724
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 1305
+      },
+      "response_id": "019fa944a4ff8191ed875e92f0208050",
+      "raw_content": "\n\n{\n  \"title\": \"Contract-Driven Agent Harness Engineering\",\n  \"target_venue\": \"ACL 2026 Findings\",\n  \"fallback_venue\": \"COLM systems workshop\",\n  \"primary_metric\": \"cross-model gap compression\",\n  \"blocker\": \"proving a nonzero baseline model gap before running the full benchmark\",\n  \"evidence_ids\": [\"hard-e02\", \"hard-e03\", \"hard-e04\"]\n}",
+      "parsed_output": {
+        "title": "Contract-Driven Agent Harness Engineering",
+        "target_venue": "ACL 2026 Findings",
+        "fallback_venue": "COLM systems workshop",
+        "primary_metric": "cross-model gap compression",
+        "blocker": "proving a nonzero baseline model gap before running the full benchmark",
+        "evidence_ids": [
+          "hard-e02",
+          "hard-e03",
+          "hard-e04"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.9444
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction__budget_model__G0__r1",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:08:38.270320+00:00",
+      "elapsed_s": 13.21,
+      "usage": {
+        "prompt_tokens": 385,
+        "completion_tokens": 352,
+        "total_tokens": 737,
+        "completion_tokens_details": {
+          "reasoning_tokens": 305
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 353
+      },
+      "response_id": "019fa9451a088b7e1d3111abfdd4afed",
+      "raw_content": "\n\n{\n  \"project_title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"backup_venue\": null\n}",
+      "parsed_output": {
+        "project_title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "backup_venue": null
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction__budget_model__G0__r2",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction__budget_model__G0__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:08:51.680839+00:00",
+      "elapsed_s": 13.11,
+      "usage": {
+        "prompt_tokens": 385,
+        "completion_tokens": 385,
+        "total_tokens": 770,
+        "completion_tokens_details": {
+          "reasoning_tokens": 338
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 385
+      },
+      "response_id": "019fa94676422e95e504b72ff6983a6d",
+      "raw_content": "\n\n{\n  \"project_title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"backup_venue\": null\n}",
+      "parsed_output": {
+        "project_title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "backup_venue": null
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction__budget_model__G0__r3",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction__budget_model__G0__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:09:07.792509+00:00",
+      "elapsed_s": 15.81,
+      "usage": {
+        "prompt_tokens": 385,
+        "completion_tokens": 412,
+        "total_tokens": 797,
+        "completion_tokens_details": {
+          "reasoning_tokens": 365
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 385
+      },
+      "response_id": "019fa9458327e890cb31362ac2732799",
+      "raw_content": "\n\n{\n  \"project_title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"backup_venue\": null\n}",
+      "parsed_output": {
+        "project_title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "backup_venue": null
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.7143
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction__budget_model__G9__r1",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:09:26.323098+00:00",
+      "elapsed_s": 18.23,
+      "usage": {
+        "prompt_tokens": 873,
+        "completion_tokens": 499,
+        "total_tokens": 1372,
+        "completion_tokens_details": {
+          "reasoning_tokens": 437
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 873
+      },
+      "response_id": "019fa945c21a76ee770537f49f8496e0",
+      "raw_content": "\n\n{\n  \"title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"evidence_ids\": [\"fixture-e01\", \"fixture-e02\", \"fixture-e03\"]\n}",
+      "parsed_output": {
+        "title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "evidence_ids": [
+          "fixture-e01",
+          "fixture-e02",
+          "fixture-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction__budget_model__G9__r2",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:09:47.852196+00:00",
+      "elapsed_s": 21.23,
+      "usage": {
+        "prompt_tokens": 873,
+        "completion_tokens": 557,
+        "total_tokens": 1430,
+        "completion_tokens_details": {
+          "reasoning_tokens": 495
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 841
+      },
+      "response_id": "019fa9460a90a0b3ed9a16c6238890d0",
+      "raw_content": "\n\n{\n  \"title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"evidence_ids\": [\"fixture-e01\", \"fixture-e02\", \"fixture-e03\"]\n}",
+      "parsed_output": {
+        "title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "evidence_ids": [
+          "fixture-e01",
+          "fixture-e02",
+          "fixture-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction__budget_model__G9__r3",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction__budget_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:10:09.896032+00:00",
+      "elapsed_s": 21.74,
+      "usage": {
+        "prompt_tokens": 873,
+        "completion_tokens": 615,
+        "total_tokens": 1488,
+        "completion_tokens_details": {
+          "reasoning_tokens": 553
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 841
+      },
+      "response_id": "019fa94785f065115f0ceabe64a6b6cf",
+      "raw_content": "\n\n{\n  \"title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"evidence_ids\": [\"fixture-e01\", \"fixture-e02\", \"fixture-e03\"]\n}",
+      "parsed_output": {
+        "title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "evidence_ids": [
+          "fixture-e01",
+          "fixture-e02",
+          "fixture-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction__strong_model__G0__r1",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:10:35.565126+00:00",
+      "elapsed_s": 25.37,
+      "usage": {
+        "prompt_tokens": 385,
+        "completion_tokens": 649,
+        "total_tokens": 1034,
+        "completion_tokens_details": {
+          "reasoning_tokens": 602
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 385
+      },
+      "response_id": "019fa946b49a7b5f9bba6835f903380f",
+      "raw_content": "\n\n{\n  \"project_title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"backup_venue\": null\n}",
+      "parsed_output": {
+        "project_title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "backup_venue": null
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction__strong_model__G0__r2",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction__strong_model__G0__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:10:58.759834+00:00",
+      "elapsed_s": 22.89,
+      "usage": {
+        "prompt_tokens": 385,
+        "completion_tokens": 561,
+        "total_tokens": 946,
+        "completion_tokens_details": {
+          "reasoning_tokens": 514
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 385
+      },
+      "response_id": "019fa94718d6e21e3da31f45f571abbd",
+      "raw_content": "\n\n{\n  \"project_title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"backup_venue\": null\n}",
+      "parsed_output": {
+        "project_title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "backup_venue": null
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction__strong_model__G0__r3",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction__strong_model__G0__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:11:16.200125+00:00",
+      "elapsed_s": 17.14,
+      "usage": {
+        "prompt_tokens": 385,
+        "completion_tokens": 425,
+        "total_tokens": 810,
+        "completion_tokens_details": {
+          "reasoning_tokens": 378
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 385
+      },
+      "response_id": "019fa94773b0db2cde7b1dfa9334487f",
+      "raw_content": "\n\n{\n  \"project_title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"backup_venue\": null\n}",
+      "parsed_output": {
+        "project_title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "backup_venue": null
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction__strong_model__G9__r1",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:11:44.707635+00:00",
+      "elapsed_s": 28.21,
+      "usage": {
+        "prompt_tokens": 873,
+        "completion_tokens": 728,
+        "total_tokens": 1601,
+        "completion_tokens_details": {
+          "reasoning_tokens": 666
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 873
+      },
+      "response_id": "019fa947b7c3f2b5ff8f8e713abcc22c",
+      "raw_content": "\n\n{\n  \"title\": \"Topic-Aware Compaction.\",\n  \"target_venue\": \"COLM 2026.\",\n  \"primary_metric\": \"token savings.\",\n  \"evidence_ids\": [\"fixture-e01\", \"fixture-e02\", \"fixture-e03\"]\n}",
+      "parsed_output": {
+        "title": "Topic-Aware Compaction.",
+        "target_venue": "COLM 2026.",
+        "primary_metric": "token savings.",
+        "evidence_ids": [
+          "fixture-e01",
+          "fixture-e02",
+          "fixture-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction__strong_model__G9__r2",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction__strong_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:12:09.630972+00:00",
+      "elapsed_s": 24.62,
+      "usage": {
+        "prompt_tokens": 873,
+        "completion_tokens": 668,
+        "total_tokens": 1541,
+        "completion_tokens_details": {
+          "reasoning_tokens": 606
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 873
+      },
+      "response_id": "019fa948270d0c24e7eb8efbec0db730",
+      "raw_content": "\n\n{\n  \"title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"evidence_ids\": [\"fixture-e01\", \"fixture-e02\", \"fixture-e03\"]\n}",
+      "parsed_output": {
+        "title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "evidence_ids": [
+          "fixture-e01",
+          "fixture-e02",
+          "fixture-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.6667
+    },
+    {
+      "run_id": "siliconflow-v2-full24__structured-extraction__strong_model__G9__r3",
+      "stage": "siliconflow-v2-full24",
+      "frozen_run_name": "structured-extraction__strong_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:12:34.522649+00:00",
+      "elapsed_s": 24.59,
+      "usage": {
+        "prompt_tokens": 873,
+        "completion_tokens": 635,
+        "total_tokens": 1508,
+        "completion_tokens_details": {
+          "reasoning_tokens": 573
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 873
+      },
+      "response_id": "019fa9488857c7deb89cd43ef254632c",
+      "raw_content": "\n\n{\n  \"title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"evidence_ids\": [\"fixture-e01\", \"fixture-e02\", \"fixture-e03\"]\n}",
+      "parsed_output": {
+        "title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "evidence_ids": [
+          "fixture-e01",
+          "fixture-e02",
+          "fixture-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.6667
+    }
+  ]
+}

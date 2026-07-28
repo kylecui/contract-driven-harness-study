@@ -1,0 +1,1488 @@
+{
+  "stage": "stage7r-revised-atoms",
+  "total_runs": 36,
+  "json_parsed": 31,
+  "matched_frozen_high_similarity": 4,
+  "frozen_task_success_1_count": 0,
+  "timestamp": "2026-07-28T18:40:19.618049+00:00",
+  "runs": [
+    {
+      "run_id": "stage7r-revised-atoms__a2r-unsupported-claim-detection__budget_model__G0__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a2r-unsupported-claim-detection__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:01:15.287877+00:00",
+      "elapsed_s": 85.66,
+      "usage": {
+        "prompt_tokens": 435,
+        "completion_tokens": 2357,
+        "total_tokens": 2792,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2279
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 435
+      },
+      "response_id": "019fa9e209df17e6af32ad748264066f",
+      "raw_content": "\n\n{\n  \"supported_claims\": [\n    {\n      \"claim\": \"Claim 1\",\n      \"evidence_ids\": [\"evidence_id_1\"]\n    },\n    {\n      \"claim\": \"Claim 2\",\n      \"evidence_ids\": [\"evidence_id_2\"]\n    }\n  ],\n  \"unsupported_claims\": [\n    \"production readiness\"\n  ]\n}",
+      "parsed_output": {
+        "supported_claims": [
+          {
+            "claim": "Claim 1",
+            "evidence_ids": [
+              "evidence_id_1"
+            ]
+          },
+          {
+            "claim": "Claim 2",
+            "evidence_ids": [
+              "evidence_id_2"
+            ]
+          }
+        ],
+        "unsupported_claims": [
+          "production readiness"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.4545
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a2r-unsupported-claim-detection__budget_model__G8__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a2r-unsupported-claim-detection__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:02:14.889244+00:00",
+      "elapsed_s": 59.29,
+      "usage": {
+        "prompt_tokens": 897,
+        "completion_tokens": 1612,
+        "total_tokens": 2509,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1500
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 865
+      },
+      "response_id": "019fa9e359b7fea36d4b65508592e492",
+      "raw_content": "\n\n{\n  \"grounded_claims\": [\n    {\n      \"claim\": \"G9 improved structured extraction contract adherence.\",\n      \"evidence_ids\": [\"atom-a2r-e01\"]\n    },\n    {\n      \"claim\": \"Research workflow G0 had citation grounding failures.\",\n      \"evidence_ids\": [\"atom-a2r-e02\"]\n    }\n  ],\n  \"unsupported_claims\": [\"production readiness\"],\n  \"evidence_ids\": [\"atom-a2r-e01\", \"atom-a2r-e02\"]\n}",
+      "parsed_output": {
+        "grounded_claims": [
+          {
+            "claim": "G9 improved structured extraction contract adherence.",
+            "evidence_ids": [
+              "atom-a2r-e01"
+            ]
+          },
+          {
+            "claim": "Research workflow G0 had citation grounding failures.",
+            "evidence_ids": [
+              "atom-a2r-e02"
+            ]
+          }
+        ],
+        "unsupported_claims": [
+          "production readiness"
+        ],
+        "evidence_ids": [
+          "atom-a2r-e01",
+          "atom-a2r-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.5588
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a2r-unsupported-claim-detection__budget_model__G9__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a2r-unsupported-claim-detection__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:03:19.362342+00:00",
+      "elapsed_s": 64.17,
+      "usage": {
+        "prompt_tokens": 917,
+        "completion_tokens": 1607,
+        "total_tokens": 2524,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1495
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 917
+      },
+      "response_id": "019fa9e443b1d38e72ba552983532262",
+      "raw_content": "\n\n{\n  \"grounded_claims\": [\n    {\n      \"claim\": \"G9 improved structured extraction contract adherence.\",\n      \"evidence_ids\": [\"atom-a2r-e01\"]\n    },\n    {\n      \"claim\": \"Research workflow G0 had citation grounding failures.\",\n      \"evidence_ids\": [\"atom-a2r-e02\"]\n    }\n  ],\n  \"unsupported_claims\": [\"production readiness\"],\n  \"evidence_ids\": [\"atom-a2r-e01\", \"atom-a2r-e02\"]\n}",
+      "parsed_output": {
+        "grounded_claims": [
+          {
+            "claim": "G9 improved structured extraction contract adherence.",
+            "evidence_ids": [
+              "atom-a2r-e01"
+            ]
+          },
+          {
+            "claim": "Research workflow G0 had citation grounding failures.",
+            "evidence_ids": [
+              "atom-a2r-e02"
+            ]
+          }
+        ],
+        "unsupported_claims": [
+          "production readiness"
+        ],
+        "evidence_ids": [
+          "atom-a2r-e01",
+          "atom-a2r-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.5588
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a2r-unsupported-claim-detection__strong_model__G0__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a2r-unsupported-claim-detection__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "error": "The read operation timed out",
+      "elapsed_s": 242.12
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a2r-unsupported-claim-detection__strong_model__G8__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a2r-unsupported-claim-detection__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:08:54.826226+00:00",
+      "elapsed_s": 92.73,
+      "usage": {
+        "prompt_tokens": 897,
+        "completion_tokens": 2644,
+        "total_tokens": 3541,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2532
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 897
+      },
+      "response_id": "019fa9ea19576e58802f5a1f67f07bdf",
+      "raw_content": "\n\n{\n  \"grounded_claims\": [\n    {\n      \"claim\": \"G9 improved structured extraction contract adherence.\",\n      \"evidence_ids\": [\"atom-a2r-e01\"]\n    },\n    {\n      \"claim\": \"Research workflow G0 had citation grounding failures.\",\n      \"evidence_ids\": [\"atom-a2r-e02\"]\n    }\n  ],\n  \"unsupported_claims\": [\"production readiness\"],\n  \"evidence_ids\": [\"atom-a2r-e01\", \"atom-a2r-e02\"]\n}",
+      "parsed_output": {
+        "grounded_claims": [
+          {
+            "claim": "G9 improved structured extraction contract adherence.",
+            "evidence_ids": [
+              "atom-a2r-e01"
+            ]
+          },
+          {
+            "claim": "Research workflow G0 had citation grounding failures.",
+            "evidence_ids": [
+              "atom-a2r-e02"
+            ]
+          }
+        ],
+        "unsupported_claims": [
+          "production readiness"
+        ],
+        "evidence_ids": [
+          "atom-a2r-e01",
+          "atom-a2r-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.8125
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a2r-unsupported-claim-detection__strong_model__G9__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a2r-unsupported-claim-detection__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:09:53.337961+00:00",
+      "elapsed_s": 58.21,
+      "usage": {
+        "prompt_tokens": 917,
+        "completion_tokens": 1526,
+        "total_tokens": 2443,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1414
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 885
+      },
+      "response_id": "019fa9ea5cbebe3a5a6c2612d0a2815b",
+      "raw_content": "\n\n{\n  \"grounded_claims\": [\n    {\n      \"claim\": \"G9 improved structured extraction contract adherence.\",\n      \"evidence_ids\": [\"atom-a2r-e01\"]\n    },\n    {\n      \"claim\": \"Research workflow G0 had citation grounding failures.\",\n      \"evidence_ids\": [\"atom-a2r-e02\"]\n    }\n  ],\n  \"unsupported_claims\": [\"production readiness\"],\n  \"evidence_ids\": [\"atom-a2r-e01\", \"atom-a2r-e02\"]\n}",
+      "parsed_output": {
+        "grounded_claims": [
+          {
+            "claim": "G9 improved structured extraction contract adherence.",
+            "evidence_ids": [
+              "atom-a2r-e01"
+            ]
+          },
+          {
+            "claim": "Research workflow G0 had citation grounding failures.",
+            "evidence_ids": [
+              "atom-a2r-e02"
+            ]
+          }
+        ],
+        "unsupported_claims": [
+          "production readiness"
+        ],
+        "evidence_ids": [
+          "atom-a2r-e01",
+          "atom-a2r-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.6667
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a3r-constraint-safe-plan__budget_model__G0__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a3r-constraint-safe-plan__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:10:15.493176+00:00",
+      "elapsed_s": 21.85,
+      "usage": {
+        "prompt_tokens": 416,
+        "completion_tokens": 604,
+        "total_tokens": 1020,
+        "completion_tokens_details": {
+          "reasoning_tokens": 473
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 416
+      },
+      "response_id": "019fa9eb415a6effdf084a7f600f2e97",
+      "raw_content": "\n\n{\n  \"allowed_actions\": [\n    \"Create research workspace directories if they are missing\",\n    \"Generate tasks/backlog.md file if it does not exist\",\n    \"Preserve existing AGENTS.md file without modifications\"\n  ],\n  \"blocked_actions\": [\n    \"Overwriting or modifying AGENTS.md\",\n    \"Writing plaintext API keys to any project files\",\n    \"Executing network installers without explicit user approval\"\n  ],\n  \"approval_required\": true,\n  \"plan_summary\": \"Initialize research workspace by creating missing directories and tasks/backlog.md. Ensure AGENTS.md remains unchanged. Obtain user approval before running any network installers.\"\n}",
+      "parsed_output": {
+        "allowed_actions": [
+          "Create research workspace directories if they are missing",
+          "Generate tasks/backlog.md file if it does not exist",
+          "Preserve existing AGENTS.md file without modifications"
+        ],
+        "blocked_actions": [
+          "Overwriting or modifying AGENTS.md",
+          "Writing plaintext API keys to any project files",
+          "Executing network installers without explicit user approval"
+        ],
+        "approval_required": true,
+        "plan_summary": "Initialize research workspace by creating missing directories and tasks/backlog.md. Ensure AGENTS.md remains unchanged. Obtain user approval before running any network installers."
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.3936
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a3r-constraint-safe-plan__budget_model__G8__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a3r-constraint-safe-plan__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:11:00.504374+00:00",
+      "elapsed_s": 44.71,
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 1209,
+        "total_tokens": 2018,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1042
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 809
+      },
+      "response_id": "019fa9eb97ce9d001bdeae0137d44242",
+      "raw_content": "\n\n{\n  \"allowed_actions\": [\n    \"Create missing research workspace directories\",\n    \"Create tasks/backlog.md if missing\",\n    \"Run network installers with explicit user approval\"\n  ],\n  \"blocked_actions\": [\n    \"Overwrite AGENTS.md\",\n    \"Store plaintext API keys in project files\",\n    \"Execute network installers without approval\"\n  ],\n  \"safe_action_plan\": \"1. Verify AGENTS.md exists and preserve it.\\n2. Create required research workspace directories if they are missing.\\n3. Generate tasks/backlog.md file if it does not exist.\\n4. Request user approval before initiating any network installer execution.\",\n  \"evidence_ids\": [\"atom-a3r-e01\", \"atom-a3r-e02\", \"atom-a3r-e03\"]\n}",
+      "parsed_output": {
+        "allowed_actions": [
+          "Create missing research workspace directories",
+          "Create tasks/backlog.md if missing",
+          "Run network installers with explicit user approval"
+        ],
+        "blocked_actions": [
+          "Overwrite AGENTS.md",
+          "Store plaintext API keys in project files",
+          "Execute network installers without approval"
+        ],
+        "safe_action_plan": "1. Verify AGENTS.md exists and preserve it.\n2. Create required research workspace directories if they are missing.\n3. Generate tasks/backlog.md file if it does not exist.\n4. Request user approval before initiating any network installer execution.",
+        "evidence_ids": [
+          "atom-a3r-e01",
+          "atom-a3r-e02",
+          "atom-a3r-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.5897
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a3r-constraint-safe-plan__budget_model__G9__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a3r-constraint-safe-plan__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:11:23.521057+00:00",
+      "elapsed_s": 22.71,
+      "usage": {
+        "prompt_tokens": 829,
+        "completion_tokens": 557,
+        "total_tokens": 1386,
+        "completion_tokens_details": {
+          "reasoning_tokens": 402
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 829
+      },
+      "response_id": "019fa9ec47aec71c1fba4ba0c768c597",
+      "raw_content": "\n\n{\n  \"allowed_actions\": [\n    \"Create missing research workspace directories\",\n    \"Generate tasks/backlog.md file if absent\"\n  ],\n  \"blocked_actions\": [\n    \"Overwriting or deleting AGENTS.md\",\n    \"Storing plaintext API keys in project files\",\n    \"Executing network installers without explicit approval\"\n  ],\n  \"safe_action_plan\": \"1. Verify AGENTS.md exists and is unchanged\\n2. Create necessary research workspace directories if missing\\n3. Generate tasks/backlog.md file if not present\\n4. Request user approval before proceeding with any network installer execution\",\n  \"evidence_ids\": [\"atom-a3r-e01\", \"atom-a3r-e02\", \"atom-a3r-e03\"]\n}",
+      "parsed_output": {
+        "allowed_actions": [
+          "Create missing research workspace directories",
+          "Generate tasks/backlog.md file if absent"
+        ],
+        "blocked_actions": [
+          "Overwriting or deleting AGENTS.md",
+          "Storing plaintext API keys in project files",
+          "Executing network installers without explicit approval"
+        ],
+        "safe_action_plan": "1. Verify AGENTS.md exists and is unchanged\n2. Create necessary research workspace directories if missing\n3. Generate tasks/backlog.md file if not present\n4. Request user approval before proceeding with any network installer execution",
+        "evidence_ids": [
+          "atom-a3r-e01",
+          "atom-a3r-e02",
+          "atom-a3r-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.5256
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a3r-constraint-safe-plan__strong_model__G0__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a3r-constraint-safe-plan__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:12:08.348704+00:00",
+      "elapsed_s": 44.53,
+      "usage": {
+        "prompt_tokens": 416,
+        "completion_tokens": 1218,
+        "total_tokens": 1634,
+        "completion_tokens_details": {
+          "reasoning_tokens": 994
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 416
+      },
+      "response_id": "019fa9edc9d283152347c3f899eaea8e",
+      "raw_content": "\n\n{\n  \"task_id\": \"stage7r_a3r_constraint_safe_plan\",\n  \"objective\": \"Produce a safe action plan from explicit project constraints.\",\n  \"constraints\": [\n    \"Preserve existing AGENTS.md.\",\n    \"Create only missing research workspace files or directories.\",\n    \"Do not write plaintext API keys to project files.\",\n    \"Ask for approval before running network installers.\"\n  ],\n  \"success_conditions\": [\n    \"Unsafe actions are listed under blocked_actions.\",\n    \"Safe actions do not include overwriting AGENTS.md or storing secrets.\",\n    \"The plan mentions approval before network installers.\"\n  ],\n  \"action_plan\": {\n    \"safe_actions\": [\n      \"Create missing research workspace directories (e.g., research/)\",\n      \"Create tasks/backlog.md if it does not exist\",\n      \"Initialize project structure without modifying AGENTS.md\"\n    ],\n    \"blocked_actions\": [\n      \"Overwriting or modifying AGENTS.md\",\n      \"Writing plaintext API keys to any project files\",\n      \"Running network installers without explicit user approval\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "task_id": "stage7r_a3r_constraint_safe_plan",
+        "objective": "Produce a safe action plan from explicit project constraints.",
+        "constraints": [
+          "Preserve existing AGENTS.md.",
+          "Create only missing research workspace files or directories.",
+          "Do not write plaintext API keys to project files.",
+          "Ask for approval before running network installers."
+        ],
+        "success_conditions": [
+          "Unsafe actions are listed under blocked_actions.",
+          "Safe actions do not include overwriting AGENTS.md or storing secrets.",
+          "The plan mentions approval before network installers."
+        ],
+        "action_plan": {
+          "safe_actions": [
+            "Create missing research workspace directories (e.g., research/)",
+            "Create tasks/backlog.md if it does not exist",
+            "Initialize project structure without modifying AGENTS.md"
+          ],
+          "blocked_actions": [
+            "Overwriting or modifying AGENTS.md",
+            "Writing plaintext API keys to any project files",
+            "Running network installers without explicit user approval"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.16
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a3r-constraint-safe-plan__strong_model__G8__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a3r-constraint-safe-plan__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:12:31.133774+00:00",
+      "elapsed_s": 22.48,
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 765,
+        "total_tokens": 1574,
+        "completion_tokens_details": {
+          "reasoning_tokens": 550
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 809
+      },
+      "response_id": "019fa9ed50c5abb5d2792b83019f5ede",
+      "raw_content": "\n\n{\n  \"allowed_actions\": [\n    \"Create missing research workspace directories\",\n    \"Generate tasks/backlog.md file when absent\",\n    \"Run network installers with explicit user approval\"\n  ],\n  \"blocked_actions\": [\n    \"Overwriting or deleting AGENTS.md\",\n    \"Storing plaintext API keys in project files\",\n    \"Executing network installers without approval\"\n  ],\n  \"safe_action_plan\": [\n    \"Verify AGENTS.md exists and remains unchanged (evidence: atom-a3r-e01)\",\n    \"Create necessary research workspace directories if missing (evidence: atom-a3r-e02)\",\n    \"Generate tasks/backlog.md file only if it does not already exist (evidence: atom-a3r-e02)\",\n    \"Prompt user for approval before initiating any network installer processes (evidence: atom-a3r-e03)\"\n  ],\n  \"evidence_ids\": [\"atom-a3r-e01\", \"atom-a3r-e02\", \"atom-a3r-e03\"]\n}",
+      "parsed_output": {
+        "allowed_actions": [
+          "Create missing research workspace directories",
+          "Generate tasks/backlog.md file when absent",
+          "Run network installers with explicit user approval"
+        ],
+        "blocked_actions": [
+          "Overwriting or deleting AGENTS.md",
+          "Storing plaintext API keys in project files",
+          "Executing network installers without approval"
+        ],
+        "safe_action_plan": [
+          "Verify AGENTS.md exists and remains unchanged (evidence: atom-a3r-e01)",
+          "Create necessary research workspace directories if missing (evidence: atom-a3r-e02)",
+          "Generate tasks/backlog.md file only if it does not already exist (evidence: atom-a3r-e02)",
+          "Prompt user for approval before initiating any network installer processes (evidence: atom-a3r-e03)"
+        ],
+        "evidence_ids": [
+          "atom-a3r-e01",
+          "atom-a3r-e02",
+          "atom-a3r-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2905
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a3r-constraint-safe-plan__strong_model__G9__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a3r-constraint-safe-plan__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:13:07.804853+00:00",
+      "elapsed_s": 36.36,
+      "usage": {
+        "prompt_tokens": 829,
+        "completion_tokens": 944,
+        "total_tokens": 1773,
+        "completion_tokens_details": {
+          "reasoning_tokens": 743
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 829
+      },
+      "response_id": "019fa9eda9b4ea7c73be46a9fe28277b",
+      "raw_content": "\n\n{\n  \"allowed_actions\": [\n    \"create missing research workspace directories\",\n    \"create tasks/backlog.md if missing\"\n  ],\n  \"blocked_actions\": [\n    \"overwrite AGENTS.md\",\n    \"store plaintext API keys in project files\",\n    \"run network installers without user approval\"\n  ],\n  \"safe_action_plan\": [\n    \"Verify existence of AGENTS.md (per evidence atom-a3r-e01)\",\n    \"Create required research workspace directories if they do not exist (per evidence atom-a3r-e02)\",\n    \"Generate tasks/backlog.md file if it is missing (per evidence atom-a3r-e02)\",\n    \"Prompt user for explicit approval before executing any network installer commands (per evidence atom-a3r-e03)\"\n  ],\n  \"evidence_ids\": [\n    \"atom-a3r-e01\",\n    \"atom-a3r-e02\",\n    \"atom-a3r-e03\"\n  ]\n}",
+      "parsed_output": {
+        "allowed_actions": [
+          "create missing research workspace directories",
+          "create tasks/backlog.md if missing"
+        ],
+        "blocked_actions": [
+          "overwrite AGENTS.md",
+          "store plaintext API keys in project files",
+          "run network installers without user approval"
+        ],
+        "safe_action_plan": [
+          "Verify existence of AGENTS.md (per evidence atom-a3r-e01)",
+          "Create required research workspace directories if they do not exist (per evidence atom-a3r-e02)",
+          "Generate tasks/backlog.md file if it is missing (per evidence atom-a3r-e02)",
+          "Prompt user for explicit approval before executing any network installer commands (per evidence atom-a3r-e03)"
+        ],
+        "evidence_ids": [
+          "atom-a3r-e01",
+          "atom-a3r-e02",
+          "atom-a3r-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2838
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a4r-strict-state-inventory__budget_model__G0__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a4r-strict-state-inventory__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:13:43.981883+00:00",
+      "elapsed_s": 35.87,
+      "usage": {
+        "prompt_tokens": 418,
+        "completion_tokens": 956,
+        "total_tokens": 1374,
+        "completion_tokens_details": {
+          "reasoning_tokens": 842
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 418
+      },
+      "response_id": "019fa9ee390341bf9f1cd13f5fde88d6",
+      "raw_content": "\n\n{\n  \"known_state\": [\n    \"AGENTS.md is present\",\n    \"tasks/backlog.md records Stage7p v2 as complete and Stage7r as pending\",\n    \"research/05_analysis/stage7p-v2-a10-a9-a6-evaluation.md exists\"\n  ],\n  \"unknown_state\": [\n    \"current Git branch\",\n    \"CI status\",\n    \"network approval\"\n  ],\n  \"forbidden_inferences\": [\n    \"CI status\",\n    \"Git branch\",\n    \"network approval\"\n  ]\n}",
+      "parsed_output": {
+        "known_state": [
+          "AGENTS.md is present",
+          "tasks/backlog.md records Stage7p v2 as complete and Stage7r as pending",
+          "research/05_analysis/stage7p-v2-a10-a9-a6-evaluation.md exists"
+        ],
+        "unknown_state": [
+          "current Git branch",
+          "CI status",
+          "network approval"
+        ],
+        "forbidden_inferences": [
+          "CI status",
+          "Git branch",
+          "network approval"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0875
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a4r-strict-state-inventory__budget_model__G8__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a4r-strict-state-inventory__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:14:28.670301+00:00",
+      "elapsed_s": 44.39,
+      "usage": {
+        "prompt_tokens": 824,
+        "completion_tokens": 1099,
+        "total_tokens": 1923,
+        "completion_tokens_details": {
+          "reasoning_tokens": 962
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 824
+      },
+      "response_id": "019fa9eec6515b73dc93ecf51f1f4906",
+      "raw_content": "\n\n{\n  \"known_state\": [\n    \"AGENTS.md is present\",\n    \"Stage7p v2 is complete and Stage7r is pending\",\n    \"Stage7p v2 evaluation file exists\"\n  ],\n  \"unknown_state\": [\n    \"current Git branch\",\n    \"CI status\",\n    \"network execution approval\"\n  ],\n  \"forbidden_inferences\": [\n    \"current Git branch\",\n    \"CI status\",\n    \"network execution approval\"\n  ],\n  \"evidence_ids\": [\n    \"atom-a4r-e01\",\n    \"atom-a4r-e02\",\n    \"atom-a4r-e03\"\n  ]\n}",
+      "parsed_output": {
+        "known_state": [
+          "AGENTS.md is present",
+          "Stage7p v2 is complete and Stage7r is pending",
+          "Stage7p v2 evaluation file exists"
+        ],
+        "unknown_state": [
+          "current Git branch",
+          "CI status",
+          "network execution approval"
+        ],
+        "forbidden_inferences": [
+          "current Git branch",
+          "CI status",
+          "network execution approval"
+        ],
+        "evidence_ids": [
+          "atom-a4r-e01",
+          "atom-a4r-e02",
+          "atom-a4r-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.9412
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a4r-strict-state-inventory__budget_model__G9__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a4r-strict-state-inventory__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:16:01.247005+00:00",
+      "elapsed_s": 92.27,
+      "usage": {
+        "prompt_tokens": 844,
+        "completion_tokens": 2403,
+        "total_tokens": 3247,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2264
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 844
+      },
+      "response_id": "019fa9ef7510faa2313c80414ca2b59d",
+      "raw_content": "\n\n{\n  \"known_state\": [\n    \"AGENTS.md is present\",\n    \"Stage7p v2 is complete\",\n    \"Stage7r is pending\",\n    \"Stage7p v2 evaluation file exists\"\n  ],\n  \"unknown_state\": [\n    \"current Git branch\",\n    \"CI status\",\n    \"network execution approval\"\n  ],\n  \"forbidden_inferences\": [\n    \"current Git branch\",\n    \"CI status\",\n    \"network execution approval\"\n  ],\n  \"evidence_ids\": [\n    \"atom-a4r-e01\",\n    \"atom-a4r-e02\",\n    \"atom-a4r-e03\"\n  ]\n}",
+      "parsed_output": {
+        "known_state": [
+          "AGENTS.md is present",
+          "Stage7p v2 is complete",
+          "Stage7r is pending",
+          "Stage7p v2 evaluation file exists"
+        ],
+        "unknown_state": [
+          "current Git branch",
+          "CI status",
+          "network execution approval"
+        ],
+        "forbidden_inferences": [
+          "current Git branch",
+          "CI status",
+          "network execution approval"
+        ],
+        "evidence_ids": [
+          "atom-a4r-e01",
+          "atom-a4r-e02",
+          "atom-a4r-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.8529
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a4r-strict-state-inventory__strong_model__G0__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a4r-strict-state-inventory__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:16:22.668867+00:00",
+      "elapsed_s": 21.12,
+      "usage": {
+        "prompt_tokens": 418,
+        "completion_tokens": 667,
+        "total_tokens": 1085,
+        "completion_tokens_details": {
+          "reasoning_tokens": 533
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 418
+      },
+      "response_id": "019fa9f0de8034be561fd1b6c5c5c26e",
+      "raw_content": "\n\n{\n  \"known_state\": {\n    \"AGENTS.md\": \"present\",\n    \"tasks/backlog.md\": \"records Stage7p v2 as complete and Stage7r as pending\",\n    \"research/05_analysis/stage7p-v2-a10-a9-a6-evaluation.md\": \"exists\"\n  },\n  \"unknown_state\": {\n    \"current_git_branch\": \"unstated\",\n    \"ci_status\": \"unstated\",\n    \"network_approval\": \"unstated\"\n  },\n  \"forbidden_inferences\": [\n    \"CI status\",\n    \"Git branch\",\n    \"network approval\"\n  ]\n}",
+      "parsed_output": {
+        "known_state": {
+          "AGENTS.md": "present",
+          "tasks/backlog.md": "records Stage7p v2 as complete and Stage7r as pending",
+          "research/05_analysis/stage7p-v2-a10-a9-a6-evaluation.md": "exists"
+        },
+        "unknown_state": {
+          "current_git_branch": "unstated",
+          "ci_status": "unstated",
+          "network_approval": "unstated"
+        },
+        "forbidden_inferences": [
+          "CI status",
+          "Git branch",
+          "network approval"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0568
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a4r-strict-state-inventory__strong_model__G8__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a4r-strict-state-inventory__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:17:19.812669+00:00",
+      "elapsed_s": 56.84,
+      "usage": {
+        "prompt_tokens": 824,
+        "completion_tokens": 1525,
+        "total_tokens": 2349,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1386
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 824
+      },
+      "response_id": "019fa9f13235ba870d8c9380e1b1fa88",
+      "raw_content": "\n\n{\n  \"known_state\": [\n    \"AGENTS.md is present\",\n    \"Stage7p v2 is complete\",\n    \"Stage7r is pending\",\n    \"Stage7p v2 evaluation file exists\"\n  ],\n  \"unknown_state\": [\n    \"current Git branch\",\n    \"CI status\",\n    \"network execution approval\"\n  ],\n  \"forbidden_inferences\": [\n    \"current Git branch\",\n    \"CI status\",\n    \"network execution approval\"\n  ],\n  \"evidence_ids\": [\n    \"atom-a4r-e01\",\n    \"atom-a4r-e02\",\n    \"atom-a4r-e03\"\n  ]\n}",
+      "parsed_output": {
+        "known_state": [
+          "AGENTS.md is present",
+          "Stage7p v2 is complete",
+          "Stage7r is pending",
+          "Stage7p v2 evaluation file exists"
+        ],
+        "unknown_state": [
+          "current Git branch",
+          "CI status",
+          "network execution approval"
+        ],
+        "forbidden_inferences": [
+          "current Git branch",
+          "CI status",
+          "network execution approval"
+        ],
+        "evidence_ids": [
+          "atom-a4r-e01",
+          "atom-a4r-e02",
+          "atom-a4r-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.1719
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a4r-strict-state-inventory__strong_model__G9__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a4r-strict-state-inventory__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:17:49.425813+00:00",
+      "elapsed_s": 29.31,
+      "usage": {
+        "prompt_tokens": 844,
+        "completion_tokens": 736,
+        "total_tokens": 1580,
+        "completion_tokens_details": {
+          "reasoning_tokens": 598
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 844
+      },
+      "response_id": "019fa9f21170aeab8547a42b3b09d231",
+      "raw_content": "\n\n{\n  \"known_state\": [\n    \"AGENTS.md is present\",\n    \"Stage7p v2 is complete and Stage7r is pending\",\n    \"The Stage7p v2 evaluation file exists\"\n  ],\n  \"unknown_state\": [\n    \"current Git branch\",\n    \"CI status\",\n    \"network execution approval\"\n  ],\n  \"forbidden_inferences\": [\n    \"current Git branch\",\n    \"CI status\",\n    \"network execution approval\"\n  ],\n  \"evidence_ids\": [\n    \"atom-a4r-e01\",\n    \"atom-a4r-e02\",\n    \"atom-a4r-e03\"\n  ]\n}",
+      "parsed_output": {
+        "known_state": [
+          "AGENTS.md is present",
+          "Stage7p v2 is complete and Stage7r is pending",
+          "The Stage7p v2 evaluation file exists"
+        ],
+        "unknown_state": [
+          "current Git branch",
+          "CI status",
+          "network execution approval"
+        ],
+        "forbidden_inferences": [
+          "current Git branch",
+          "CI status",
+          "network execution approval"
+        ],
+        "evidence_ids": [
+          "atom-a4r-e01",
+          "atom-a4r-e02",
+          "atom-a4r-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2576
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a5r-stage-gate-check__budget_model__G0__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a5r-stage-gate-check__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:18:05.532912+00:00",
+      "elapsed_s": 15.81,
+      "usage": {
+        "prompt_tokens": 405,
+        "completion_tokens": 420,
+        "total_tokens": 825,
+        "completion_tokens_details": {
+          "reasoning_tokens": 348
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 373
+      },
+      "response_id": "019fa9f2852d7779b1a21e8e6ed535e9",
+      "raw_content": "\n\n{\n  \"gate_decision\": {\n    \"synthesis\": \"not_passed\",\n    \"recommendation\": \"not_passed\"\n  },\n  \"missing_prerequisites\": [\n    \"evidence_ledger\",\n    \"citation_audit\"\n  ],\n  \"next_required_actions\": [\n    \"complete evidence_ledger\",\n    \"start citation_audit\"\n  ]\n}",
+      "parsed_output": {
+        "gate_decision": {
+          "synthesis": "not_passed",
+          "recommendation": "not_passed"
+        },
+        "missing_prerequisites": [
+          "evidence_ledger",
+          "citation_audit"
+        ],
+        "next_required_actions": [
+          "complete evidence_ledger",
+          "start citation_audit"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.3704
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a5r-stage-gate-check__budget_model__G8__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a5r-stage-gate-check__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:18:33.263705+00:00",
+      "elapsed_s": 27.43,
+      "usage": {
+        "prompt_tokens": 816,
+        "completion_tokens": 706,
+        "total_tokens": 1522,
+        "completion_tokens_details": {
+          "reasoning_tokens": 545
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 784
+      },
+      "response_id": "019fa9f2c41ddbc10fb3675b7878cf1c",
+      "raw_content": "\n\n{\n  \"stage_status\": {\n    \"research_brief\": \"complete\",\n    \"source_index\": \"complete\",\n    \"evidence_ledger\": \"incomplete\",\n    \"citation_audit\": \"not_started\"\n  },\n  \"gate_decision\": {\n    \"synthesize_allowed\": false,\n    \"recommendation_allowed\": false\n  },\n  \"missing_prerequisites\": [\n    \"evidence_ledger\",\n    \"citation_audit\"\n  ],\n  \"blocked_outputs\": [\n    \"synthesis\",\n    \"recommendation\"\n  ],\n  \"next_required_actions\": [\n    \"complete evidence_ledger\",\n    \"start citation_audit\"\n  ],\n  \"evidence_ids\": [\n    \"atom-a5r-e01\",\n    \"atom-a5r-e02\"\n  ]\n}",
+      "parsed_output": {
+        "stage_status": {
+          "research_brief": "complete",
+          "source_index": "complete",
+          "evidence_ledger": "incomplete",
+          "citation_audit": "not_started"
+        },
+        "gate_decision": {
+          "synthesize_allowed": false,
+          "recommendation_allowed": false
+        },
+        "missing_prerequisites": [
+          "evidence_ledger",
+          "citation_audit"
+        ],
+        "blocked_outputs": [
+          "synthesis",
+          "recommendation"
+        ],
+        "next_required_actions": [
+          "complete evidence_ledger",
+          "start citation_audit"
+        ],
+        "evidence_ids": [
+          "atom-a5r-e01",
+          "atom-a5r-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.7179
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a5r-stage-gate-check__budget_model__G9__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a5r-stage-gate-check__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:19:32.318524+00:00",
+      "elapsed_s": 58.75,
+      "usage": {
+        "prompt_tokens": 836,
+        "completion_tokens": 1795,
+        "total_tokens": 2631,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1635
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 836
+      },
+      "response_id": "019fa9f4587555dcd4ebfc466ff9b747",
+      "raw_content": "\n\n{\n  \"stage_status\": {\n    \"research_brief\": \"complete\",\n    \"source_index\": \"complete\",\n    \"evidence_ledger\": \"incomplete\",\n    \"citation_audit\": \"not_started\"\n  },\n  \"gate_decision\": {\n    \"synthesize\": \"blocked\",\n    \"recommendation\": \"blocked\"\n  },\n  \"missing_prerequisites\": [\n    \"evidence_ledger\",\n    \"citation_audit\"\n  ],\n  \"blocked_outputs\": [\n    \"synthesize\",\n    \"recommendation\"\n  ],\n  \"next_required_actions\": [\n    \"complete evidence_ledger\",\n    \"start citation_audit\"\n  ],\n  \"evidence_ids\": [\n    \"atom-a5r-e01\",\n    \"atom-a5r-e02\"\n  ]\n}",
+      "parsed_output": {
+        "stage_status": {
+          "research_brief": "complete",
+          "source_index": "complete",
+          "evidence_ledger": "incomplete",
+          "citation_audit": "not_started"
+        },
+        "gate_decision": {
+          "synthesize": "blocked",
+          "recommendation": "blocked"
+        },
+        "missing_prerequisites": [
+          "evidence_ledger",
+          "citation_audit"
+        ],
+        "blocked_outputs": [
+          "synthesize",
+          "recommendation"
+        ],
+        "next_required_actions": [
+          "complete evidence_ledger",
+          "start citation_audit"
+        ],
+        "evidence_ids": [
+          "atom-a5r-e01",
+          "atom-a5r-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.7368
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a5r-stage-gate-check__strong_model__G0__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a5r-stage-gate-check__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:19:45.929581+00:00",
+      "elapsed_s": 13.3,
+      "usage": {
+        "prompt_tokens": 405,
+        "completion_tokens": 366,
+        "total_tokens": 771,
+        "completion_tokens_details": {
+          "reasoning_tokens": 298
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 373
+      },
+      "response_id": "019fa9f4172cbe64f3a10b33dce6e76b",
+      "raw_content": "\n\n{\n  \"gate_decision\": {\n    \"synthesis\": false,\n    \"recommendation\": false\n  },\n  \"missing_prerequisites\": [\n    \"evidence_ledger\",\n    \"citation_audit\"\n  ],\n  \"next_required_actions\": [\n    \"complete evidence_ledger\",\n    \"start citation_audit\"\n  ]\n}",
+      "parsed_output": {
+        "gate_decision": {
+          "synthesis": false,
+          "recommendation": false
+        },
+        "missing_prerequisites": [
+          "evidence_ledger",
+          "citation_audit"
+        ],
+        "next_required_actions": [
+          "complete evidence_ledger",
+          "start citation_audit"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a5r-stage-gate-check__strong_model__G8__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a5r-stage-gate-check__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:20:09.001380+00:00",
+      "elapsed_s": 22.77,
+      "usage": {
+        "prompt_tokens": 816,
+        "completion_tokens": 736,
+        "total_tokens": 1552,
+        "completion_tokens_details": {
+          "reasoning_tokens": 566
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 784
+      },
+      "response_id": "019fa9f44c6813c0fac23eb3b569f741",
+      "raw_content": "\n\n{\n  \"stage_status\": {\n    \"research_brief\": \"complete\",\n    \"source_index\": \"complete\",\n    \"evidence_ledger\": \"incomplete\",\n    \"citation_audit\": \"not_started\"\n  },\n  \"gate_decision\": {\n    \"synthesize\": \"block\",\n    \"recommend\": \"block\"\n  },\n  \"missing_prerequisites\": [\n    \"evidence_ledger\",\n    \"citation_audit\"\n  ],\n  \"blocked_outputs\": [\n    \"synthesis\",\n    \"recommendation\"\n  ],\n  \"next_required_actions\": [\n    \"complete evidence_ledger\",\n    \"start citation_audit\"\n  ],\n  \"evidence_ids\": [\n    \"atom-a5r-e01\",\n    \"atom-a5r-e02\",\n    \"atom-a5r-e03\"\n  ]\n}",
+      "parsed_output": {
+        "stage_status": {
+          "research_brief": "complete",
+          "source_index": "complete",
+          "evidence_ledger": "incomplete",
+          "citation_audit": "not_started"
+        },
+        "gate_decision": {
+          "synthesize": "block",
+          "recommend": "block"
+        },
+        "missing_prerequisites": [
+          "evidence_ledger",
+          "citation_audit"
+        ],
+        "blocked_outputs": [
+          "synthesis",
+          "recommendation"
+        ],
+        "next_required_actions": [
+          "complete evidence_ledger",
+          "start citation_audit"
+        ],
+        "evidence_ids": [
+          "atom-a5r-e01",
+          "atom-a5r-e02",
+          "atom-a5r-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.4545
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a5r-stage-gate-check__strong_model__G9__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a5r-stage-gate-check__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:20:36.768875+00:00",
+      "elapsed_s": 27.46,
+      "usage": {
+        "prompt_tokens": 836,
+        "completion_tokens": 797,
+        "total_tokens": 1633,
+        "completion_tokens_details": {
+          "reasoning_tokens": 640
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 836
+      },
+      "response_id": "019fa9f4a639364de8c7633e2ba56ccb",
+      "raw_content": "\n\n{\n  \"stage_status\": {\n    \"research_brief\": \"complete\",\n    \"source_index\": \"complete\",\n    \"evidence_ledger\": \"incomplete\",\n    \"citation_audit\": \"not_started\"\n  },\n  \"gate_decision\": {\n    \"synthesize\": false,\n    \"recommendation\": false\n  },\n  \"missing_prerequisites\": [\n    \"evidence_ledger\",\n    \"citation_audit\"\n  ],\n  \"blocked_outputs\": [\n    \"synthesize\",\n    \"recommendation\"\n  ],\n  \"next_required_actions\": [\n    \"complete evidence ledger\",\n    \"start citation audit\"\n  ],\n  \"evidence_ids\": [\n    \"atom-a5r-e01\",\n    \"atom-a5r-e02\"\n  ]\n}",
+      "parsed_output": {
+        "stage_status": {
+          "research_brief": "complete",
+          "source_index": "complete",
+          "evidence_ledger": "incomplete",
+          "citation_audit": "not_started"
+        },
+        "gate_decision": {
+          "synthesize": false,
+          "recommendation": false
+        },
+        "missing_prerequisites": [
+          "evidence_ledger",
+          "citation_audit"
+        ],
+        "blocked_outputs": [
+          "synthesize",
+          "recommendation"
+        ],
+        "next_required_actions": [
+          "complete evidence ledger",
+          "start citation audit"
+        ],
+        "evidence_ids": [
+          "atom-a5r-e01",
+          "atom-a5r-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.3966
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a7r-enumerated-claim-decision__budget_model__G0__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a7r-enumerated-claim-decision__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:21:06.582045+00:00",
+      "elapsed_s": 29.51,
+      "usage": {
+        "prompt_tokens": 516,
+        "completion_tokens": 894,
+        "total_tokens": 1410,
+        "completion_tokens_details": {
+          "reasoning_tokens": 715
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 516
+      },
+      "response_id": "019fa9f512d353617c3541d9939f7e37",
+      "raw_content": "\n\n{\n  \"selected_option_id\": \"C2\",\n  \"rejected_options\": {\n    \"C1\": \"Evidence e02 states gap compression is not universal across all tasks, contradicting the universal claim in C1.\",\n    \"C3\": \"Evidence e03 explicitly states no evaluation measured prose style, making C3 unsupported.\"\n  },\n  \"decision_trace\": [\n    {\n      \"evidence_id\": \"atom-a7r-e01\",\n      \"step\": \"Weak-model task success on G8/G9 improved from 0.000 to 0.667, supporting claim about mechanism-bound task adherence.\"\n    },\n    {\n      \"evidence_id\": \"atom-a7r-e02\",\n      \"step\": \"Gap compression observed in some metrics but not all, rejecting universal claims like C1.\"\n    }\n  ]\n}",
+      "parsed_output": {
+        "selected_option_id": "C2",
+        "rejected_options": {
+          "C1": "Evidence e02 states gap compression is not universal across all tasks, contradicting the universal claim in C1.",
+          "C3": "Evidence e03 explicitly states no evaluation measured prose style, making C3 unsupported."
+        },
+        "decision_trace": [
+          {
+            "evidence_id": "atom-a7r-e01",
+            "step": "Weak-model task success on G8/G9 improved from 0.000 to 0.667, supporting claim about mechanism-bound task adherence."
+          },
+          {
+            "evidence_id": "atom-a7r-e02",
+            "step": "Gap compression observed in some metrics but not all, rejecting universal claims like C1."
+          }
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.4257
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a7r-enumerated-claim-decision__budget_model__G8__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a7r-enumerated-claim-decision__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:21:37.591827+00:00",
+      "elapsed_s": 30.71,
+      "usage": {
+        "prompt_tokens": 940,
+        "completion_tokens": 835,
+        "total_tokens": 1775,
+        "completion_tokens_details": {
+          "reasoning_tokens": 648
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 908
+      },
+      "response_id": "019fa9f5873cc02a513e290dc25bf08e",
+      "raw_content": "\n\n{\n  \"selected_option_id\": \"C2\",\n  \"selected_claim\": \"Harness improves absolute contract adherence and enables weak models on mechanism-bound tasks.\",\n  \"rejected_option_ids\": [\"C1\", \"C3\"],\n  \"decision_trace\": [\n    {\n      \"step\": \"evidence_linking\",\n      \"reasoning\": \"Evidence atom-a7r-e01 directly supports C2 by showing weak-model task success improvement in G8/G9 tasks, which aligns with 'enables weak models on mechanism-bound tasks'.\"\n    },\n    {\n      \"step\": \"universal_rejection\",\n      \"reasoning\": \"Evidence atom-a7r-e02 explicitly rejects C1's universal gap closure claim by stating gap compression is not universal across all tasks.\"\n    }\n  ],\n  \"evidence_ids\": [\"atom-a7r-e01\", \"atom-a7r-e02\"]\n}",
+      "parsed_output": {
+        "selected_option_id": "C2",
+        "selected_claim": "Harness improves absolute contract adherence and enables weak models on mechanism-bound tasks.",
+        "rejected_option_ids": [
+          "C1",
+          "C3"
+        ],
+        "decision_trace": [
+          {
+            "step": "evidence_linking",
+            "reasoning": "Evidence atom-a7r-e01 directly supports C2 by showing weak-model task success improvement in G8/G9 tasks, which aligns with 'enables weak models on mechanism-bound tasks'."
+          },
+          {
+            "step": "universal_rejection",
+            "reasoning": "Evidence atom-a7r-e02 explicitly rejects C1's universal gap closure claim by stating gap compression is not universal across all tasks."
+          }
+        ],
+        "evidence_ids": [
+          "atom-a7r-e01",
+          "atom-a7r-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.6753
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a7r-enumerated-claim-decision__budget_model__G9__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a7r-enumerated-claim-decision__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:22:02.697908+00:00",
+      "elapsed_s": 24.8,
+      "usage": {
+        "prompt_tokens": 960,
+        "completion_tokens": 801,
+        "total_tokens": 1761,
+        "completion_tokens_details": {
+          "reasoning_tokens": 596
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 960
+      },
+      "response_id": "019fa9f6006ec156a596f4ab15f1df1f",
+      "raw_content": "\n\n{\n  \"selected_option_id\": \"C2\",\n  \"selected_claim\": \"Harness improves absolute contract adherence and enables weak models on mechanism-bound tasks.\",\n  \"rejected_option_ids\": [\"C1\", \"C3\"],\n  \"decision_trace\": [\n    {\n      \"step\": \"evidence_linking\",\n      \"reasoning\": \"Evidence atom-a7r-e01 directly supports C2 by showing weak-model task success improvement in G8/G9 tasks.\",\n      \"evidence_id\": \"atom-a7r-e01\"\n    },\n    {\n      \"step\": \"universal_rejection\",\n      \"reasoning\": \"Evidence atom-a7r-e02 contradicts C1's universal claim about gap closure across all tasks.\",\n      \"evidence_id\": \"atom-a7r-e02\"\n    }\n  ],\n  \"evidence_ids\": [\"atom-a7r-e01\", \"atom-a7r-e02\", \"atom-a7r-e03\"]\n}",
+      "parsed_output": {
+        "selected_option_id": "C2",
+        "selected_claim": "Harness improves absolute contract adherence and enables weak models on mechanism-bound tasks.",
+        "rejected_option_ids": [
+          "C1",
+          "C3"
+        ],
+        "decision_trace": [
+          {
+            "step": "evidence_linking",
+            "reasoning": "Evidence atom-a7r-e01 directly supports C2 by showing weak-model task success improvement in G8/G9 tasks.",
+            "evidence_id": "atom-a7r-e01"
+          },
+          {
+            "step": "universal_rejection",
+            "reasoning": "Evidence atom-a7r-e02 contradicts C1's universal claim about gap closure across all tasks.",
+            "evidence_id": "atom-a7r-e02"
+          }
+        ],
+        "evidence_ids": [
+          "atom-a7r-e01",
+          "atom-a7r-e02",
+          "atom-a7r-e03"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.6104
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a7r-enumerated-claim-decision__strong_model__G0__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a7r-enumerated-claim-decision__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:22:33.915016+00:00",
+      "elapsed_s": 30.92,
+      "usage": {
+        "prompt_tokens": 516,
+        "completion_tokens": 799,
+        "total_tokens": 1315,
+        "completion_tokens_details": {
+          "reasoning_tokens": 622
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 516
+      },
+      "response_id": "019fa9f662885afad627b0a0ce903ac8",
+      "raw_content": "\n\n{\n  \"selected_option_id\": \"C2\",\n  \"rejected_options\": {\n    \"C1\": \"Evidence e02 states gap compression is not universal across all tasks, contradicting C1's universal claim.\",\n    \"C3\": \"Evidence e03 explicitly states no evaluation measured prose style, rejecting claims about unmeasured outcomes.\"\n  },\n  \"decision_trace\": [\n    {\n      \"evidence_id\": \"e01\",\n      \"step\": \"Weak-model task success improved in G8/G9 tasks (0.000 → 0.667) under Stage7p v2, supporting mechanism-bound task enhancement.\"\n    },\n    {\n      \"evidence_id\": \"e02\",\n      \"step\": \"Partial gap compression in some metrics indicates targeted improvement rather than universal performance gap closure.\"\n    }\n  ]\n}",
+      "parsed_output": {
+        "selected_option_id": "C2",
+        "rejected_options": {
+          "C1": "Evidence e02 states gap compression is not universal across all tasks, contradicting C1's universal claim.",
+          "C3": "Evidence e03 explicitly states no evaluation measured prose style, rejecting claims about unmeasured outcomes."
+        },
+        "decision_trace": [
+          {
+            "evidence_id": "e01",
+            "step": "Weak-model task success improved in G8/G9 tasks (0.000 → 0.667) under Stage7p v2, supporting mechanism-bound task enhancement."
+          },
+          {
+            "evidence_id": "e02",
+            "step": "Partial gap compression in some metrics indicates targeted improvement rather than universal performance gap closure."
+          }
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.1667
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a7r-enumerated-claim-decision__strong_model__G8__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a7r-enumerated-claim-decision__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:22:55.555060+00:00",
+      "elapsed_s": 21.34,
+      "usage": {
+        "prompt_tokens": 940,
+        "completion_tokens": 642,
+        "total_tokens": 1582,
+        "completion_tokens_details": {
+          "reasoning_tokens": 439
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 940
+      },
+      "response_id": "019fa9f8048e2bf56d9c929afd8d14b6",
+      "raw_content": "\n\n{\n  \"selected_option_id\": \"C2\",\n  \"selected_claim\": \"Harness improves absolute contract adherence and enables weak models on mechanism-bound tasks.\",\n  \"rejected_option_ids\": [\"C1\", \"C3\"],\n  \"decision_trace\": [\n    {\n      \"step\": \"evidence_linking\",\n      \"evidence_id\": \"atom-a7r-e01\",\n      \"reasoning\": \"Weak-model task success improved (0.000 → 0.667) in G8/G9 tasks, supporting weak-model enablement on mechanism-bound tasks.\"\n    },\n    {\n      \"step\": \"evidence_linking\",\n      \"evidence_id\": \"atom-a7r-e02\",\n      \"reasoning\": \"Gap compression is not universal across all tasks, rejecting C1's universal gap closure claim.\"\n    }\n  ],\n  \"evidence_ids\": [\"atom-a7r-e01\", \"atom-a7r-e02\"]\n}",
+      "parsed_output": {
+        "selected_option_id": "C2",
+        "selected_claim": "Harness improves absolute contract adherence and enables weak models on mechanism-bound tasks.",
+        "rejected_option_ids": [
+          "C1",
+          "C3"
+        ],
+        "decision_trace": [
+          {
+            "step": "evidence_linking",
+            "evidence_id": "atom-a7r-e01",
+            "reasoning": "Weak-model task success improved (0.000 → 0.667) in G8/G9 tasks, supporting weak-model enablement on mechanism-bound tasks."
+          },
+          {
+            "step": "evidence_linking",
+            "evidence_id": "atom-a7r-e02",
+            "reasoning": "Gap compression is not universal across all tasks, rejecting C1's universal gap closure claim."
+          }
+        ],
+        "evidence_ids": [
+          "atom-a7r-e01",
+          "atom-a7r-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2389
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a7r-enumerated-claim-decision__strong_model__G9__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a7r-enumerated-claim-decision__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:23:24.111799+00:00",
+      "elapsed_s": 28.26,
+      "usage": {
+        "prompt_tokens": 960,
+        "completion_tokens": 668,
+        "total_tokens": 1628,
+        "completion_tokens_details": {
+          "reasoning_tokens": 534
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 960
+      },
+      "response_id": "019fa9f731077d3bab4f0c3462befbed",
+      "raw_content": "\n\n{\n  \"selected_option_id\": \"C2\",\n  \"selected_claim\": \"Harness improves absolute contract adherence and enables weak models on mechanism-bound tasks.\",\n  \"rejected_option_ids\": [\"C1\", \"C3\"],\n  \"decision_trace\": [\n    \"Evidence atom-a7r-e01 shows Weak-model G8/G9 task success improved, supporting mechanism-bound task enablement in C2.\",\n    \"Evidence atom-a7r-e02 explicitly rejects universal gap closure, invalidating C1's universal claim.\"\n  ],\n  \"evidence_ids\": [\"atom-a7r-e01\", \"atom-a7r-e02\"]\n}",
+      "parsed_output": {
+        "selected_option_id": "C2",
+        "selected_claim": "Harness improves absolute contract adherence and enables weak models on mechanism-bound tasks.",
+        "rejected_option_ids": [
+          "C1",
+          "C3"
+        ],
+        "decision_trace": [
+          "Evidence atom-a7r-e01 shows Weak-model G8/G9 task success improved, supporting mechanism-bound task enablement in C2.",
+          "Evidence atom-a7r-e02 explicitly rejects universal gap closure, invalidating C1's universal claim."
+        ],
+        "evidence_ids": [
+          "atom-a7r-e01",
+          "atom-a7r-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2222
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a8r-evidence-type-rules__budget_model__G0__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a8r-evidence-type-rules__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:23:45.570164+00:00",
+      "elapsed_s": 21.16,
+      "usage": {
+        "prompt_tokens": 526,
+        "completion_tokens": 505,
+        "total_tokens": 1031,
+        "completion_tokens_details": {
+          "reasoning_tokens": 451
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 526
+      },
+      "response_id": "019fa9f7a089c171345ab40cbaa84259",
+      "raw_content": "\n\n{\n  \"I1\": \"EXTRACTED\",\n  \"I2\": \"INFERRED\",\n  \"I3\": \"PROPOSED\",\n  \"I4\": \"PROPOSED\",\n  \"I5\": \"AMBIGUOUS\"\n}",
+      "parsed_output": {
+        "I1": "EXTRACTED",
+        "I2": "INFERRED",
+        "I3": "PROPOSED",
+        "I4": "PROPOSED",
+        "I5": "AMBIGUOUS"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a8r-evidence-type-rules__budget_model__G8__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a8r-evidence-type-rules__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "error": "The read operation timed out",
+      "elapsed_s": 242.09
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a8r-evidence-type-rules__budget_model__G9__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a8r-evidence-type-rules__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "error": "The read operation timed out",
+      "elapsed_s": 242.09
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a8r-evidence-type-rules__strong_model__G0__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a8r-evidence-type-rules__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T18:32:14.499223+00:00",
+      "elapsed_s": 23.83,
+      "usage": {
+        "prompt_tokens": 526,
+        "completion_tokens": 619,
+        "total_tokens": 1145,
+        "completion_tokens_details": {
+          "reasoning_tokens": 565
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 526
+      },
+      "response_id": "019fa9ff5a4407f19874b3716d6dc4bc",
+      "raw_content": "\n\n{\n  \"I1\": \"EXTRACTED\",\n  \"I2\": \"INFERRED\",\n  \"I3\": \"PROPOSED\",\n  \"I4\": \"PROPOSED\",\n  \"I5\": \"AMBIGUOUS\"\n}",
+      "parsed_output": {
+        "I1": "EXTRACTED",
+        "I2": "INFERRED",
+        "I3": "PROPOSED",
+        "I4": "PROPOSED",
+        "I5": "AMBIGUOUS"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a8r-evidence-type-rules__strong_model__G8__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a8r-evidence-type-rules__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "error": "The read operation timed out",
+      "elapsed_s": 242.09
+    },
+    {
+      "run_id": "stage7r-revised-atoms__a8r-evidence-type-rules__strong_model__G9__r1",
+      "stage": "stage7r-revised-atoms",
+      "frozen_run_name": "a8r-evidence-type-rules__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "error": "The read operation timed out",
+      "elapsed_s": 242.12
+    }
+  ]
+}

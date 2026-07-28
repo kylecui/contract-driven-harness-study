@@ -1,0 +1,249 @@
+{
+  "stage": "mechanism-atoms-stage6c-a6-rerun",
+  "total_runs": 6,
+  "json_parsed": 6,
+  "matched_frozen_high_similarity": 0,
+  "frozen_task_success_1_count": 0,
+  "timestamp": "2026-07-28T11:59:59.868595+00:00",
+  "runs": [
+    {
+      "run_id": "mechanism-atoms-stage6c-a6-rerun__a6-validator-repair__budget_model__G0__r1",
+      "stage": "mechanism-atoms-stage6c-a6-rerun",
+      "frozen_run_name": "a6-validator-repair__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:57:37.189824+00:00",
+      "elapsed_s": 15.62,
+      "usage": {
+        "prompt_tokens": 417,
+        "completion_tokens": 378,
+        "total_tokens": 795,
+        "completion_tokens_details": {
+          "reasoning_tokens": 355
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 417
+      },
+      "response_id": "019fa8962cc413be17eafff4e4e59db9",
+      "raw_content": "\n\n{\"title\": \"Contract-Driven Harness\", \"evidence_ids\": [\"atom-a6-e01\"]}",
+      "parsed_output": {
+        "title": "Contract-Driven Harness",
+        "evidence_ids": [
+          "atom-a6-e01"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.3333
+    },
+    {
+      "run_id": "mechanism-atoms-stage6c-a6-rerun__a6-validator-repair__budget_model__G8__r1",
+      "stage": "mechanism-atoms-stage6c-a6-rerun",
+      "frozen_run_name": "a6-validator-repair__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:58:05.260746+00:00",
+      "elapsed_s": 27.77,
+      "usage": {
+        "prompt_tokens": 879,
+        "completion_tokens": 877,
+        "total_tokens": 1756,
+        "completion_tokens_details": {
+          "reasoning_tokens": 745
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 879
+      },
+      "response_id": "019fa8966b183b72bbd757bec1bc6501",
+      "raw_content": "\n\n{\n  \"repaired_output\": {\n    \"title\": \"Contract-Driven Harness\",\n    \"evidence_ids\": [\"atom-a6-e01\"]\n  },\n  \"repair_trace\": [\n    {\n      \"action\": \"add_evidence_ids\",\n      \"reason\": \"ValidatorGate feedback requested addition of missing evidence_ids field using atom-a6-e01\",\n      \"evidence_used\": \"atom-a6-e01\",\n      \"citation\": \"EvidenceBundle: ev_mechanism_a6_validator_repair_001, item: atom-a6-e01\"\n    }\n  ],\n  \"remaining_warnings\": []\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "title": "Contract-Driven Harness",
+          "evidence_ids": [
+            "atom-a6-e01"
+          ]
+        },
+        "repair_trace": [
+          {
+            "action": "add_evidence_ids",
+            "reason": "ValidatorGate feedback requested addition of missing evidence_ids field using atom-a6-e01",
+            "evidence_used": "atom-a6-e01",
+            "citation": "EvidenceBundle: ev_mechanism_a6_validator_repair_001, item: atom-a6-e01"
+          }
+        ],
+        "remaining_warnings": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.5
+    },
+    {
+      "run_id": "mechanism-atoms-stage6c-a6-rerun__a6-validator-repair__budget_model__G9__r1",
+      "stage": "mechanism-atoms-stage6c-a6-rerun",
+      "frozen_run_name": "a6-validator-repair__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:58:19.875528+00:00",
+      "elapsed_s": 14.31,
+      "usage": {
+        "prompt_tokens": 899,
+        "completion_tokens": 416,
+        "total_tokens": 1315,
+        "completion_tokens_details": {
+          "reasoning_tokens": 290
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 899
+      },
+      "response_id": "019fa896d886d7d6536cec0ad9bcb941",
+      "raw_content": "\n\n{\n  \"repaired_output\": {\n    \"title\": \"Contract-Driven Harness\",\n    \"evidence_ids\": [\"atom-a6-e01\"]\n  },\n  \"repair_trace\": {\n    \"action\": \"add_missing_evidence_ids\",\n    \"reason\": \"Validator feedback required adding evidence_ids using atom-a6-e01 as primary evidence for Validator Repair\",\n    \"sources\": {\n      \"evidence_bundle\": \"ev_mechanism_a6_validator_repair_001\",\n      \"items\": [\"atom-a6-e01\"]\n    }\n  },\n  \"remaining_warnings\": []\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "title": "Contract-Driven Harness",
+          "evidence_ids": [
+            "atom-a6-e01"
+          ]
+        },
+        "repair_trace": {
+          "action": "add_missing_evidence_ids",
+          "reason": "Validator feedback required adding evidence_ids using atom-a6-e01 as primary evidence for Validator Repair",
+          "sources": {
+            "evidence_bundle": "ev_mechanism_a6_validator_repair_001",
+            "items": [
+              "atom-a6-e01"
+            ]
+          }
+        },
+        "remaining_warnings": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.3462
+    },
+    {
+      "run_id": "mechanism-atoms-stage6c-a6-rerun__a6-validator-repair__strong_model__G0__r1",
+      "stage": "mechanism-atoms-stage6c-a6-rerun",
+      "frozen_run_name": "a6-validator-repair__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:58:39.658969+00:00",
+      "elapsed_s": 19.48,
+      "usage": {
+        "prompt_tokens": 417,
+        "completion_tokens": 464,
+        "total_tokens": 881,
+        "completion_tokens_details": {
+          "reasoning_tokens": 441
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 417
+      },
+      "response_id": "019fa89711d00015ef2503020a1fa17f",
+      "raw_content": "\n\n{\"title\": \"Contract-Driven Harness\", \"evidence_ids\": [\"atom-a6-e01\"]}",
+      "parsed_output": {
+        "title": "Contract-Driven Harness",
+        "evidence_ids": [
+          "atom-a6-e01"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.5
+    },
+    {
+      "run_id": "mechanism-atoms-stage6c-a6-rerun__a6-validator-repair__strong_model__G8__r1",
+      "stage": "mechanism-atoms-stage6c-a6-rerun",
+      "frozen_run_name": "a6-validator-repair__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:59:03.686155+00:00",
+      "elapsed_s": 23.73,
+      "usage": {
+        "prompt_tokens": 879,
+        "completion_tokens": 602,
+        "total_tokens": 1481,
+        "completion_tokens_details": {
+          "reasoning_tokens": 498
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 847
+      },
+      "response_id": "019fa8975ef57fe9f35be29ea3be3a22",
+      "raw_content": "\n\n{\n  \"repaired_output\": {\n    \"title\": \"Contract-Driven Harness\",\n    \"evidence_ids\": [\"atom-a6-e01\"]\n  },\n  \"repair_trace\": [\n    {\n      \"action\": \"add_evidence_ids\",\n      \"evidence_id\": \"atom-a6-e01\",\n      \"reason\": \"Validator feedback requested addition of missing evidence_ids field using atom-a6-e01 from the EvidenceBundle\"\n    }\n  ],\n  \"remaining_warnings\": []\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "title": "Contract-Driven Harness",
+          "evidence_ids": [
+            "atom-a6-e01"
+          ]
+        },
+        "repair_trace": [
+          {
+            "action": "add_evidence_ids",
+            "evidence_id": "atom-a6-e01",
+            "reason": "Validator feedback requested addition of missing evidence_ids field using atom-a6-e01 from the EvidenceBundle"
+          }
+        ],
+        "remaining_warnings": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2151
+    },
+    {
+      "run_id": "mechanism-atoms-stage6c-a6-rerun__a6-validator-repair__strong_model__G9__r1",
+      "stage": "mechanism-atoms-stage6c-a6-rerun",
+      "frozen_run_name": "a6-validator-repair__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:59:59.567315+00:00",
+      "elapsed_s": 55.58,
+      "usage": {
+        "prompt_tokens": 899,
+        "completion_tokens": 1430,
+        "total_tokens": 2329,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1320
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 867
+      },
+      "response_id": "019fa897bccf7abb737cf83474e839c9",
+      "raw_content": "\n\n{\n  \"repaired_output\": {\n    \"title\": \"Contract-Driven Harness\",\n    \"evidence_ids\": [\"atom-a6-e01\"]\n  },\n  \"repair_trace\": [\n    {\n      \"action\": \"add_evidence_ids\",\n      \"reason\": \"Validator feedback requested addition of missing evidence_ids field using atom-a6-e01\",\n      \"evidence_used\": [\"atom-a6-e01\"],\n      \"source\": \"a6-fixture\"\n    }\n  ],\n  \"remaining_warnings\": []\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "title": "Contract-Driven Harness",
+          "evidence_ids": [
+            "atom-a6-e01"
+          ]
+        },
+        "repair_trace": [
+          {
+            "action": "add_evidence_ids",
+            "reason": "Validator feedback requested addition of missing evidence_ids field using atom-a6-e01",
+            "evidence_used": [
+              "atom-a6-e01"
+            ],
+            "source": "a6-fixture"
+          }
+        ],
+        "remaining_warnings": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.198
+    }
+  ]
+}

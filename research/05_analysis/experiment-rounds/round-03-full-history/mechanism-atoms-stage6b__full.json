@@ -1,0 +1,1637 @@
+{
+  "stage": "mechanism-atoms-stage6b",
+  "total_runs": 42,
+  "json_parsed": 39,
+  "matched_frozen_high_similarity": 2,
+  "frozen_task_success_1_count": 0,
+  "timestamp": "2026-07-28T11:57:18.569352+00:00",
+  "runs": [
+    {
+      "run_id": "mechanism-atoms-stage6b__a10-bounded-context-recall__budget_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a10-bounded-context-recall__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:16:43.004273+00:00",
+      "elapsed_s": 8.82,
+      "usage": {
+        "prompt_tokens": 431,
+        "completion_tokens": 226,
+        "total_tokens": 657,
+        "completion_tokens_details": {
+          "reasoning_tokens": 204
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 431
+      },
+      "response_id": "019fa870d41a5e93b62086a61fe57e8e",
+      "raw_content": "\n\n{\n  \"answer\": \"Stage 2 is the next work item according to the current roadmap.\"\n}",
+      "parsed_output": {
+        "answer": "Stage 2 is the next work item according to the current roadmap."
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.1296
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a10-bounded-context-recall__budget_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a10-bounded-context-recall__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:17:02.956470+00:00",
+      "elapsed_s": 19.65,
+      "usage": {
+        "prompt_tokens": 893,
+        "completion_tokens": 529,
+        "total_tokens": 1422,
+        "completion_tokens_details": {
+          "reasoning_tokens": 398
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 893
+      },
+      "response_id": "019fa870f7d1fcca90dc81998fa6db5e",
+      "raw_content": "\n\n{\n  \"answer\": \"The next work item is Stage 2 as indicated by the current roadmap.\",\n  \"used_context\": [\n    {\n      \"evidence_id\": \"atom-a10-e01\",\n      \"source_id\": \"a10-fixture\",\n      \"claim\": \"Primary evidence for Bounded Context Recall.\"\n    }\n  ],\n  \"excluded_context\": [\n    {\n      \"evidence_id\": \"atom-a10-e02\",\n      \"source_id\": \"a10-fixture\",\n      \"claim\": \"Supporting evidence for Irrelevant or stale context use.\"\n    }\n  ]\n}",
+      "parsed_output": {
+        "answer": "The next work item is Stage 2 as indicated by the current roadmap.",
+        "used_context": [
+          {
+            "evidence_id": "atom-a10-e01",
+            "source_id": "a10-fixture",
+            "claim": "Primary evidence for Bounded Context Recall."
+          }
+        ],
+        "excluded_context": [
+          {
+            "evidence_id": "atom-a10-e02",
+            "source_id": "a10-fixture",
+            "claim": "Supporting evidence for Irrelevant or stale context use."
+          }
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.22
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a10-bounded-context-recall__budget_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a10-bounded-context-recall__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:17:19.836228+00:00",
+      "elapsed_s": 16.58,
+      "usage": {
+        "prompt_tokens": 913,
+        "completion_tokens": 534,
+        "total_tokens": 1447,
+        "completion_tokens_details": {
+          "reasoning_tokens": 483
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 913
+      },
+      "response_id": "019fa87145d5fec578e871a21cea4f2b",
+      "raw_content": "\n\n{\n  \"answer\": \"The next work is Stage 2 as indicated by the current roadmap.\",\n  \"used_context\": [\"atom-a10-e01\"],\n  \"excluded_context\": [\"atom-a10-e02\"]\n}",
+      "parsed_output": {
+        "answer": "The next work is Stage 2 as indicated by the current roadmap.",
+        "used_context": [
+          "atom-a10-e01"
+        ],
+        "excluded_context": [
+          "atom-a10-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.5152
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a10-bounded-context-recall__strong_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a10-bounded-context-recall__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:17:29.980141+00:00",
+      "elapsed_s": 9.84,
+      "usage": {
+        "prompt_tokens": 431,
+        "completion_tokens": 270,
+        "total_tokens": 701,
+        "completion_tokens_details": {
+          "reasoning_tokens": 250
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 399
+      },
+      "response_id": "019fa872ae40b7eebc6b42509c4f91a5",
+      "raw_content": "\n\n{\"answer\": \"Stage 2 is the next work item according to the current roadmap.\"}",
+      "parsed_output": {
+        "answer": "Stage 2 is the next work item according to the current roadmap."
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.1429
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a10-bounded-context-recall__strong_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a10-bounded-context-recall__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:17:39.595648+00:00",
+      "elapsed_s": 9.31,
+      "usage": {
+        "prompt_tokens": 893,
+        "completion_tokens": 333,
+        "total_tokens": 1226,
+        "completion_tokens_details": {
+          "reasoning_tokens": 282
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 893
+      },
+      "response_id": "019fa871af94fe31db12e130b50341bb",
+      "raw_content": "\n\n{\n  \"answer\": \"The next work is Stage 2 as indicated by the current roadmap.\",\n  \"used_context\": [\"atom-a10-e01\"],\n  \"excluded_context\": [\"atom-a10-e02\"]\n}",
+      "parsed_output": {
+        "answer": "The next work is Stage 2 as indicated by the current roadmap.",
+        "used_context": [
+          "atom-a10-e01"
+        ],
+        "excluded_context": [
+          "atom-a10-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2368
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a10-bounded-context-recall__strong_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a10-bounded-context-recall__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:17:55.822492+00:00",
+      "elapsed_s": 15.92,
+      "usage": {
+        "prompt_tokens": 913,
+        "completion_tokens": 410,
+        "total_tokens": 1323,
+        "completion_tokens_details": {
+          "reasoning_tokens": 304
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 913
+      },
+      "response_id": "019fa871d4ec1bb1ecf2e24fb0a8f2f6",
+      "raw_content": "\n\n{\n  \"answer\": \"The next step is Stage 2 as indicated by the current roadmap.\",\n  \"used_context\": [\n    {\n      \"evidence_id\": \"atom-a10-e01\",\n      \"claim\": \"Primary evidence for Bounded Context Recall.\"\n    }\n  ],\n  \"excluded_context\": [\n    {\n      \"evidence_id\": \"atom-a10-e02\",\n      \"claim\": \"Supporting evidence for Irrelevant or stale context use.\"\n    }\n  ]\n}",
+      "parsed_output": {
+        "answer": "The next step is Stage 2 as indicated by the current roadmap.",
+        "used_context": [
+          {
+            "evidence_id": "atom-a10-e01",
+            "claim": "Primary evidence for Bounded Context Recall."
+          }
+        ],
+        "excluded_context": [
+          {
+            "evidence_id": "atom-a10-e02",
+            "claim": "Supporting evidence for Irrelevant or stale context use."
+          }
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.25
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a2-evidence-grounding__budget_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a2-evidence-grounding__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "error": "The read operation timed out",
+      "elapsed_s": 242.1
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a2-evidence-grounding__budget_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a2-evidence-grounding__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:23:12.705051+00:00",
+      "elapsed_s": 74.18,
+      "usage": {
+        "prompt_tokens": 857,
+        "completion_tokens": 2188,
+        "total_tokens": 3045,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2121
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 857
+      },
+      "response_id": "019fa875c7706b8ee3f99d08caf19ac6",
+      "raw_content": "\n\n{\n  \"grounded_claims\": [\n    \"Primary evidence for Evidence Grounding.\"\n  ],\n  \"unsupported_claims\": [\n    \"Supporting evidence for Unsupported claim.\"\n  ],\n  \"evidence_ids\": [\n    \"atom-a2-e01\",\n    \"atom-a2-e02\"\n  ]\n}",
+      "parsed_output": {
+        "grounded_claims": [
+          "Primary evidence for Evidence Grounding."
+        ],
+        "unsupported_claims": [
+          "Supporting evidence for Unsupported claim."
+        ],
+        "evidence_ids": [
+          "atom-a2-e01",
+          "atom-a2-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.56
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a2-evidence-grounding__budget_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a2-evidence-grounding__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:24:40.188286+00:00",
+      "elapsed_s": 87.18,
+      "usage": {
+        "prompt_tokens": 877,
+        "completion_tokens": 2199,
+        "total_tokens": 3076,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2132
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 877
+      },
+      "response_id": "019fa87810d60bc07187ccb26fd0d553",
+      "raw_content": "\n\n{\n  \"grounded_claims\": [\n    \"Primary evidence for Evidence Grounding.\"\n  ],\n  \"unsupported_claims\": [\n    \"Supporting evidence for Unsupported claim.\"\n  ],\n  \"evidence_ids\": [\n    \"atom-a2-e01\",\n    \"atom-a2-e02\"\n  ]\n}",
+      "parsed_output": {
+        "grounded_claims": [
+          "Primary evidence for Evidence Grounding."
+        ],
+        "unsupported_claims": [
+          "Supporting evidence for Unsupported claim."
+        ],
+        "evidence_ids": [
+          "atom-a2-e01",
+          "atom-a2-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a2-evidence-grounding__strong_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a2-evidence-grounding__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "error": "The read operation timed out",
+      "elapsed_s": 242.1
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a2-evidence-grounding__strong_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a2-evidence-grounding__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:30:24.625993+00:00",
+      "elapsed_s": 101.74,
+      "usage": {
+        "prompt_tokens": 857,
+        "completion_tokens": 2502,
+        "total_tokens": 3359,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2446
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 857
+      },
+      "response_id": "019fa87bf2e75a423dd234b8abb724d6",
+      "raw_content": "\n\n{\n  \"grounded_claims\": [\"Primary evidence for Evidence Grounding.\"],\n  \"unsupported_claims\": [\"Supporting evidence for Unsupported claim.\"],\n  \"evidence_ids\": [\"atom-a2-e01\", \"atom-a2-e02\"]\n}",
+      "parsed_output": {
+        "grounded_claims": [
+          "Primary evidence for Evidence Grounding."
+        ],
+        "unsupported_claims": [
+          "Supporting evidence for Unsupported claim."
+        ],
+        "evidence_ids": [
+          "atom-a2-e01",
+          "atom-a2-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.3793
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a2-evidence-grounding__strong_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a2-evidence-grounding__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:32:17.433894+00:00",
+      "elapsed_s": 112.51,
+      "usage": {
+        "prompt_tokens": 877,
+        "completion_tokens": 3023,
+        "total_tokens": 3900,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2956
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 877
+      },
+      "response_id": "019fa87d823945202b92367022ca2438",
+      "raw_content": "\n\n{\n  \"grounded_claims\": [\n    \"Primary evidence for Evidence Grounding.\"\n  ],\n  \"unsupported_claims\": [\n    \"Supporting evidence for Unsupported claim.\"\n  ],\n  \"evidence_ids\": [\n    \"atom-a2-e01\",\n    \"atom-a2-e02\"\n  ]\n}",
+      "parsed_output": {
+        "grounded_claims": [
+          "Primary evidence for Evidence Grounding."
+        ],
+        "unsupported_claims": [
+          "Supporting evidence for Unsupported claim."
+        ],
+        "evidence_ids": [
+          "atom-a2-e01",
+          "atom-a2-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.4828
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a4-state-inventory__budget_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a4-state-inventory__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:32:59.679920+00:00",
+      "elapsed_s": 41.94,
+      "usage": {
+        "prompt_tokens": 414,
+        "completion_tokens": 1126,
+        "total_tokens": 1540,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1092
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 414
+      },
+      "response_id": "019fa87f3a4092aaf18e0b491642d29e",
+      "raw_content": "\n\n{\n  \"existing_files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n  \"missing_files\": [\"research/06_outputs/README.md\"]\n}",
+      "parsed_output": {
+        "existing_files": [
+          "AGENTS.md",
+          "research/CONTEXT.md"
+        ],
+        "missing_files": [
+          "research/06_outputs/README.md"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a4-state-inventory__budget_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a4-state-inventory__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:33:39.032704+00:00",
+      "elapsed_s": 39.05,
+      "usage": {
+        "prompt_tokens": 868,
+        "completion_tokens": 996,
+        "total_tokens": 1864,
+        "completion_tokens_details": {
+          "reasoning_tokens": 899
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 868
+      },
+      "response_id": "019fa87fdf3006249494491017cf7cad",
+      "raw_content": "\n\n{\n  \"existing_files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n  \"missing_files\": [\"research/06_outputs/README.md\"],\n  \"protected_files\": [\"AGENTS.md\"],\n  \"unknown_state\": [],\n  \"citations\": {\n    \"existing_files\": [\"atom-a4-e01\"],\n    \"missing_files\": [\"atom-a4-e02\"],\n    \"protected_files\": [\"atom-a4-e01\"]\n  }\n}",
+      "parsed_output": {
+        "existing_files": [
+          "AGENTS.md",
+          "research/CONTEXT.md"
+        ],
+        "missing_files": [
+          "research/06_outputs/README.md"
+        ],
+        "protected_files": [
+          "AGENTS.md"
+        ],
+        "unknown_state": [],
+        "citations": {
+          "existing_files": [
+            "atom-a4-e01"
+          ],
+          "missing_files": [
+            "atom-a4-e02"
+          ],
+          "protected_files": [
+            "atom-a4-e01"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2727
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a4-state-inventory__budget_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a4-state-inventory__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:35:01.920461+00:00",
+      "elapsed_s": 82.59,
+      "usage": {
+        "prompt_tokens": 888,
+        "completion_tokens": 2206,
+        "total_tokens": 3094,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2156
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 888
+      },
+      "response_id": "019fa88079d41e71e496f2f8ede10309",
+      "raw_content": "\n\n{\n  \"existing_files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n  \"missing_files\": [\"research/06_outputs/README.md\"],\n  \"protected_files\": [\"AGENTS.md\"],\n  \"unknown_state\": []\n}",
+      "parsed_output": {
+        "existing_files": [
+          "AGENTS.md",
+          "research/CONTEXT.md"
+        ],
+        "missing_files": [
+          "research/06_outputs/README.md"
+        ],
+        "protected_files": [
+          "AGENTS.md"
+        ],
+        "unknown_state": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a4-state-inventory__strong_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a4-state-inventory__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:35:20.760861+00:00",
+      "elapsed_s": 18.54,
+      "usage": {
+        "prompt_tokens": 414,
+        "completion_tokens": 543,
+        "total_tokens": 957,
+        "completion_tokens_details": {
+          "reasoning_tokens": 508
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 414
+      },
+      "response_id": "019fa881bcc5c852ec1b1115af2dcab3",
+      "raw_content": "\n\n{\n  \"state\": {\n    \"files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n    \"protected_files\": [\"AGENTS.md\"]\n  }\n}",
+      "parsed_output": {
+        "state": {
+          "files": [
+            "AGENTS.md",
+            "research/CONTEXT.md"
+          ],
+          "protected_files": [
+            "AGENTS.md"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a4-state-inventory__strong_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a4-state-inventory__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:35:50.940370+00:00",
+      "elapsed_s": 29.88,
+      "usage": {
+        "prompt_tokens": 868,
+        "completion_tokens": 747,
+        "total_tokens": 1615,
+        "completion_tokens_details": {
+          "reasoning_tokens": 650
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 868
+      },
+      "response_id": "019fa88206556859f9043e82ab7de7ef",
+      "raw_content": "\n\n{\n  \"existing_files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n  \"missing_files\": [\"research/06_outputs/README.md\"],\n  \"protected_files\": [\"AGENTS.md\"],\n  \"unknown_state\": [],\n  \"citations\": {\n    \"existing_files\": [\"atom-a4-e01\"],\n    \"missing_files\": [\"atom-a4-e01\"],\n    \"protected_files\": [\"atom-a4-e01\"]\n  }\n}",
+      "parsed_output": {
+        "existing_files": [
+          "AGENTS.md",
+          "research/CONTEXT.md"
+        ],
+        "missing_files": [
+          "research/06_outputs/README.md"
+        ],
+        "protected_files": [
+          "AGENTS.md"
+        ],
+        "unknown_state": [],
+        "citations": {
+          "existing_files": [
+            "atom-a4-e01"
+          ],
+          "missing_files": [
+            "atom-a4-e01"
+          ],
+          "protected_files": [
+            "atom-a4-e01"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2439
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a4-state-inventory__strong_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a4-state-inventory__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:36:27.915277+00:00",
+      "elapsed_s": 36.67,
+      "usage": {
+        "prompt_tokens": 888,
+        "completion_tokens": 882,
+        "total_tokens": 1770,
+        "completion_tokens_details": {
+          "reasoning_tokens": 785
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 888
+      },
+      "response_id": "019fa8827c1d234fdb84d5222536766f",
+      "raw_content": "\n\n{\n  \"existing_files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n  \"missing_files\": [\"research/06_outputs/README.md\"],\n  \"protected_files\": [\"AGENTS.md\"],\n  \"unknown_state\": [],\n  \"citations\": {\n    \"existing_files\": [\"atom-a4-e01\"],\n    \"missing_files\": [\"atom-a4-e01\"],\n    \"protected_files\": [\"atom-a4-e01\"]\n  }\n}",
+      "parsed_output": {
+        "existing_files": [
+          "AGENTS.md",
+          "research/CONTEXT.md"
+        ],
+        "missing_files": [
+          "research/06_outputs/README.md"
+        ],
+        "protected_files": [
+          "AGENTS.md"
+        ],
+        "unknown_state": [],
+        "citations": {
+          "existing_files": [
+            "atom-a4-e01"
+          ],
+          "missing_files": [
+            "atom-a4-e01"
+          ],
+          "protected_files": [
+            "atom-a4-e01"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.1364
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a5-stage-gated-synthesis__budget_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a5-stage-gated-synthesis__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:37:31.697241+00:00",
+      "elapsed_s": 63.48,
+      "usage": {
+        "prompt_tokens": 421,
+        "completion_tokens": 1815,
+        "total_tokens": 2236,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1751
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 421
+      },
+      "response_id": "019fa884335b87ee1c45f6c7bda975cf",
+      "raw_content": "\n\n{\n  \"decision\": \"tracks should remain separate\",\n  \"stage_status\": {\n    \"brief\": \"complete\",\n    \"evidence\": \"not_ready\",\n    \"synthesis\": \"not_ready\",\n    \"recommendation\": \"not_ready\",\n    \"risks\": \"not_ready\"\n  }\n}",
+      "parsed_output": {
+        "decision": "tracks should remain separate",
+        "stage_status": {
+          "brief": "complete",
+          "evidence": "not_ready",
+          "synthesis": "not_ready",
+          "recommendation": "not_ready",
+          "risks": "not_ready"
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.1579
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a5-stage-gated-synthesis__budget_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a5-stage-gated-synthesis__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:38:14.302006+00:00",
+      "elapsed_s": 42.3,
+      "usage": {
+        "prompt_tokens": 913,
+        "completion_tokens": 1031,
+        "total_tokens": 1944,
+        "completion_tokens_details": {
+          "reasoning_tokens": 682
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 913
+      },
+      "response_id": "019fa88405e7c561a36d87f69af99aae",
+      "raw_content": "\n\n{\n  \"brief\": \"The analysis evaluates whether two proposal tracks should remain separate based on stage-gated synthesis requirements, ensuring no intermediate stages are skipped. This follows the primary evidence (atom-a5-e01) and addresses the risk of stage skipping (atom-a5-e02).\",\n  \"evidence_summary\": [\n    {\n      \"claim\": \"Primary evidence for Stage-Gated Synthesis\",\n      \"citation\": \"atom-a5-e01\"\n    },\n    {\n      \"claim\": \"Supporting evidence for Stage skipping\",\n      \"citation\": \"atom-a5-e02\"\n    }\n  ],\n  \"synthesis\": \"The primary evidence (atom-a5-e01) establishes that staged research synthesis requires sequential completion of all stages. The inferred evidence (atom-a5-e02) highlights risks associated with stage skipping, which could compromise the integrity of the synthesis process. These findings collectively support maintaining separate tracks to ensure adherence to the stage-gated workflow.\",\n  \"recommendation\": \"Two proposal tracks should remain separate to uphold the stage-gated synthesis process, as skipping stages (atom-a5-e02) could invalidate the evidence (atom-a5-e01) and lead to incomplete or unreliable conclusions.\",\n  \"risks\": \"Stage skipping (atom-a5-e02) risks undermining the staged synthesis process, potentially leading to gaps in evidence evaluation or premature recommendations. Maintaining separate tracks requires careful coordination to avoid redundancy or delays.\",\n  \"stage_status\": {\n    \"brief\": \"completed\",\n    \"evidence\": \"completed\",\n    \"synthesis\": \"completed\",\n    \"recommendation\": \"completed\",\n    \"risks\": \"completed\"\n  }\n}",
+      "parsed_output": {
+        "brief": "The analysis evaluates whether two proposal tracks should remain separate based on stage-gated synthesis requirements, ensuring no intermediate stages are skipped. This follows the primary evidence (atom-a5-e01) and addresses the risk of stage skipping (atom-a5-e02).",
+        "evidence_summary": [
+          {
+            "claim": "Primary evidence for Stage-Gated Synthesis",
+            "citation": "atom-a5-e01"
+          },
+          {
+            "claim": "Supporting evidence for Stage skipping",
+            "citation": "atom-a5-e02"
+          }
+        ],
+        "synthesis": "The primary evidence (atom-a5-e01) establishes that staged research synthesis requires sequential completion of all stages. The inferred evidence (atom-a5-e02) highlights risks associated with stage skipping, which could compromise the integrity of the synthesis process. These findings collectively support maintaining separate tracks to ensure adherence to the stage-gated workflow.",
+        "recommendation": "Two proposal tracks should remain separate to uphold the stage-gated synthesis process, as skipping stages (atom-a5-e02) could invalidate the evidence (atom-a5-e01) and lead to incomplete or unreliable conclusions.",
+        "risks": "Stage skipping (atom-a5-e02) risks undermining the staged synthesis process, potentially leading to gaps in evidence evaluation or premature recommendations. Maintaining separate tracks requires careful coordination to avoid redundancy or delays.",
+        "stage_status": {
+          "brief": "completed",
+          "evidence": "completed",
+          "synthesis": "completed",
+          "recommendation": "completed",
+          "risks": "completed"
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2935
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a5-stage-gated-synthesis__budget_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a5-stage-gated-synthesis__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:39:06.184404+00:00",
+      "elapsed_s": 51.58,
+      "usage": {
+        "prompt_tokens": 933,
+        "completion_tokens": 1436,
+        "total_tokens": 2369,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1106
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 901
+      },
+      "response_id": "019fa885d2d7257c5ca8819ae01a3c1e",
+      "raw_content": "\n\n{\n  \"brief\": \"Analyzing whether two proposal tracks should remain separate based on evidence of stage skipping risks in the Stage-Gated Synthesis workflow.\",\n  \"evidence_summary\": [\n    {\n      \"claim\": \"Primary evidence for Stage-Gated Synthesis.\",\n      \"evidence_id\": \"atom-a5-e01\",\n      \"source_id\": \"a5-fixture\"\n    },\n    {\n      \"claim\": \"Supporting evidence for Stage skipping.\",\n      \"evidence_id\": \"atom-a5-e02\",\n      \"source_id\": \"a5-fixture\"\n    }\n  ],\n  \"synthesis\": \"The evidence indicates a potential risk of stage skipping (atom-a5-e02) but confirms the necessity of adhering to the Stage-Gated Synthesis framework (atom-a5-e01). The analysis must ensure intermediate stages are not bypassed, reinforcing the separation of tracks to maintain rigorous synthesis processes.\",\n  \"recommendation\": \"Maintain separate tracks for the proposals to prevent stage skipping. Implement explicit gatekeeping at each phase to ensure compliance with the Stage-Gated Synthesis workflow.\",\n  \"risks\": \"Stage skipping (atom-a5-e02) could compromise the integrity of the synthesis process, leading to incomplete or biased outcomes. Separating tracks mitigates this risk by enforcing sequential stage completion.\",\n  \"stage_status\": {\n    \"brief\": \"completed\",\n    \"evidence\": \"in_progress\",\n    \"synthesis\": \"completed\",\n    \"recommendation\": \"pending\",\n    \"risks\": \"pending\"\n  },\n  \"tool_trace\": []\n}",
+      "parsed_output": {
+        "brief": "Analyzing whether two proposal tracks should remain separate based on evidence of stage skipping risks in the Stage-Gated Synthesis workflow.",
+        "evidence_summary": [
+          {
+            "claim": "Primary evidence for Stage-Gated Synthesis.",
+            "evidence_id": "atom-a5-e01",
+            "source_id": "a5-fixture"
+          },
+          {
+            "claim": "Supporting evidence for Stage skipping.",
+            "evidence_id": "atom-a5-e02",
+            "source_id": "a5-fixture"
+          }
+        ],
+        "synthesis": "The evidence indicates a potential risk of stage skipping (atom-a5-e02) but confirms the necessity of adhering to the Stage-Gated Synthesis framework (atom-a5-e01). The analysis must ensure intermediate stages are not bypassed, reinforcing the separation of tracks to maintain rigorous synthesis processes.",
+        "recommendation": "Maintain separate tracks for the proposals to prevent stage skipping. Implement explicit gatekeeping at each phase to ensure compliance with the Stage-Gated Synthesis workflow.",
+        "risks": "Stage skipping (atom-a5-e02) could compromise the integrity of the synthesis process, leading to incomplete or biased outcomes. Separating tracks mitigates this risk by enforcing sequential stage completion.",
+        "stage_status": {
+          "brief": "completed",
+          "evidence": "in_progress",
+          "synthesis": "completed",
+          "recommendation": "pending",
+          "risks": "pending"
+        },
+        "tool_trace": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.3262
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a5-stage-gated-synthesis__strong_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a5-stage-gated-synthesis__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:39:41.081583+00:00",
+      "elapsed_s": 34.6,
+      "usage": {
+        "prompt_tokens": 421,
+        "completion_tokens": 901,
+        "total_tokens": 1322,
+        "completion_tokens_details": {
+          "reasoning_tokens": 846
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 421
+      },
+      "response_id": "019fa88576d4d9866e830a062238c660",
+      "raw_content": "\n\n{\n  \"stages\": {\n    \"brief\": \"not_supported\",\n    \"evidence\": \"not_supported\",\n    \"synthesis\": \"not_supported\",\n    \"recommendation\": \"not_supported\",\n    \"risks\": \"not_supported\"\n  }\n}",
+      "parsed_output": {
+        "stages": {
+          "brief": "not_supported",
+          "evidence": "not_supported",
+          "synthesis": "not_supported",
+          "recommendation": "not_supported",
+          "risks": "not_supported"
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a5-stage-gated-synthesis__strong_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a5-stage-gated-synthesis__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:40:47.502603+00:00",
+      "elapsed_s": 66.12,
+      "usage": {
+        "prompt_tokens": 913,
+        "completion_tokens": 1632,
+        "total_tokens": 2545,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1300
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 881
+      },
+      "response_id": "019fa88725e166fdfdf8d4673b7089b7",
+      "raw_content": "\n\n{\n  \"brief\": \"Assessing whether two proposal tracks should remain separate based on stage-gated synthesis requirements. The analysis ensures all intermediate evidence stages are completed before synthesis and recommendation.\",\n  \"evidence_summary\": [\n    {\n      \"claim\": \"Primary evidence for Stage-Gated Synthesis\",\n      \"evidence_id\": \"atom-a5-e01\",\n      \"source\": \"a5-fixture\"\n    },\n    {\n      \"claim\": \"Supporting evidence for Stage skipping\",\n      \"evidence_id\": \"atom-a5-e02\",\n      \"source\": \"a5-fixture\"\n    }\n  ],\n  \"synthesis\": \"The primary evidence (atom-a5-e01) establishes that Stage-Gated Synthesis requires sequential completion of all stages. The supporting evidence (atom-a5-e02) highlights risks associated with stage skipping, reinforcing the necessity of maintaining separation between tracks until all stages are validated.\",\n  \"recommendation\": \"The two proposal tracks should remain separate until all evidence stages are conclusively completed. This aligns with the stage-gated synthesis workflow to prevent premature synthesis or recommendation.\",\n  \"risks\": \"Stage skipping (atom-a5-e02) could lead to incomplete evidence evaluation, compromising the validity of synthesis outcomes. Separating tracks ensures each stage's requirements are met before progressing.\",\n  \"stage_status\": {\n    \"brief\": \"completed\",\n    \"evidence\": \"completed\",\n    \"synthesis\": \"in_progress\",\n    \"recommendation\": \"in_progress\",\n    \"risks\": \"in_progress\"\n  },\n  \"tool_trace\": []\n}",
+      "parsed_output": {
+        "brief": "Assessing whether two proposal tracks should remain separate based on stage-gated synthesis requirements. The analysis ensures all intermediate evidence stages are completed before synthesis and recommendation.",
+        "evidence_summary": [
+          {
+            "claim": "Primary evidence for Stage-Gated Synthesis",
+            "evidence_id": "atom-a5-e01",
+            "source": "a5-fixture"
+          },
+          {
+            "claim": "Supporting evidence for Stage skipping",
+            "evidence_id": "atom-a5-e02",
+            "source": "a5-fixture"
+          }
+        ],
+        "synthesis": "The primary evidence (atom-a5-e01) establishes that Stage-Gated Synthesis requires sequential completion of all stages. The supporting evidence (atom-a5-e02) highlights risks associated with stage skipping, reinforcing the necessity of maintaining separation between tracks until all stages are validated.",
+        "recommendation": "The two proposal tracks should remain separate until all evidence stages are conclusively completed. This aligns with the stage-gated synthesis workflow to prevent premature synthesis or recommendation.",
+        "risks": "Stage skipping (atom-a5-e02) could lead to incomplete evidence evaluation, compromising the validity of synthesis outcomes. Separating tracks ensures each stage's requirements are met before progressing.",
+        "stage_status": {
+          "brief": "completed",
+          "evidence": "completed",
+          "synthesis": "in_progress",
+          "recommendation": "in_progress",
+          "risks": "in_progress"
+        },
+        "tool_trace": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2377
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a5-stage-gated-synthesis__strong_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a5-stage-gated-synthesis__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:41:34.788312+00:00",
+      "elapsed_s": 46.98,
+      "usage": {
+        "prompt_tokens": 933,
+        "completion_tokens": 1234,
+        "total_tokens": 2167,
+        "completion_tokens_details": {
+          "reasoning_tokens": 898
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 933
+      },
+      "response_id": "019fa88702a78cb10f1b8f7538ac52d5",
+      "raw_content": "\n\n{\n  \"brief\": \"Analysis of whether two proposal tracks should remain separate based on evidence of Stage-Gated Synthesis and Stage skipping risks.\",\n  \"evidence_summary\": [\n    {\n      \"evidence_id\": \"atom-a5-e01\",\n      \"claim\": \"Primary evidence for Stage-Gated Synthesis.\",\n      \"freshness\": \"local_snapshot\",\n      \"authority\": \"fixture\"\n    },\n    {\n      \"evidence_id\": \"atom-a5-e02\",\n      \"claim\": \"Supporting evidence for Stage skipping.\",\n      \"freshness\": \"local_snapshot\",\n      \"authority\": \"fixture\"\n    }\n  ],\n  \"synthesis\": \"The primary evidence (atom-a5-e01) establishes the necessity of Stage-Gated Synthesis, while the supporting evidence (atom-a5-e02) highlights risks associated with stage skipping. These findings indicate that the two proposal tracks must remain separate to ensure adherence to the staged process and mitigate risks of bypassing critical evidence steps.\",\n  \"recommendation\": \"Maintain separate tracks for the proposals to enforce staged synthesis and prevent stage skipping, as supported by atom-a5-e01 and atom-a5-e02.\",\n  \"risks\": \"Stage skipping (atom-a5-e02) could compromise the integrity of the synthesis process, leading to incomplete or flawed outcomes. Separating tracks ensures all stages are properly addressed.\",\n  \"stage_status\": {\n    \"brief\": \"completed\",\n    \"evidence\": \"completed\",\n    \"synthesis\": \"completed\",\n    \"recommendation\": \"completed\",\n    \"risks\": \"completed\"\n  }\n}",
+      "parsed_output": {
+        "brief": "Analysis of whether two proposal tracks should remain separate based on evidence of Stage-Gated Synthesis and Stage skipping risks.",
+        "evidence_summary": [
+          {
+            "evidence_id": "atom-a5-e01",
+            "claim": "Primary evidence for Stage-Gated Synthesis.",
+            "freshness": "local_snapshot",
+            "authority": "fixture"
+          },
+          {
+            "evidence_id": "atom-a5-e02",
+            "claim": "Supporting evidence for Stage skipping.",
+            "freshness": "local_snapshot",
+            "authority": "fixture"
+          }
+        ],
+        "synthesis": "The primary evidence (atom-a5-e01) establishes the necessity of Stage-Gated Synthesis, while the supporting evidence (atom-a5-e02) highlights risks associated with stage skipping. These findings indicate that the two proposal tracks must remain separate to ensure adherence to the staged process and mitigate risks of bypassing critical evidence steps.",
+        "recommendation": "Maintain separate tracks for the proposals to enforce staged synthesis and prevent stage skipping, as supported by atom-a5-e01 and atom-a5-e02.",
+        "risks": "Stage skipping (atom-a5-e02) could compromise the integrity of the synthesis process, leading to incomplete or flawed outcomes. Separating tracks ensures all stages are properly addressed.",
+        "stage_status": {
+          "brief": "completed",
+          "evidence": "completed",
+          "synthesis": "completed",
+          "recommendation": "completed",
+          "risks": "completed"
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2336
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a6-validator-repair__budget_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a6-validator-repair__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:43:23.366087+00:00",
+      "elapsed_s": 108.28,
+      "usage": {
+        "prompt_tokens": 410,
+        "completion_tokens": 1529,
+        "total_tokens": 1939,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1515
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 410
+      },
+      "response_id": "019fa887bb73cdd47e3f31ed5994511d",
+      "raw_content": "\n\n{\"evidence_ids\": \"atom-a6-e01\"}",
+      "parsed_output": {
+        "evidence_ids": "atom-a6-e01"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a6-validator-repair__budget_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a6-validator-repair__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:44:06.571719+00:00",
+      "elapsed_s": 42.9,
+      "usage": {
+        "prompt_tokens": 864,
+        "completion_tokens": 1119,
+        "total_tokens": 1983,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1034
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 864
+      },
+      "response_id": "019fa88963b1327c63d90160d17002ea",
+      "raw_content": "\n\n{\n  \"repaired_output\": {\n    \"evidence_ids\": [\"atom-a6-e01\"]\n  },\n  \"repair_trace\": [\n    {\n      \"action\": \"Add evidence_ids field\",\n      \"reason\": \"Validator feedback requested adding evidence_ids using atom-a6-e01\",\n      \"citation\": \"atom-a6-e01\"\n    }\n  ],\n  \"remaining_warnings\": []\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "evidence_ids": [
+            "atom-a6-e01"
+          ]
+        },
+        "repair_trace": [
+          {
+            "action": "Add evidence_ids field",
+            "reason": "Validator feedback requested adding evidence_ids using atom-a6-e01",
+            "citation": "atom-a6-e01"
+          }
+        ],
+        "remaining_warnings": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.4595
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a6-validator-repair__budget_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a6-validator-repair__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:44:42.216454+00:00",
+      "elapsed_s": 35.34,
+      "usage": {
+        "prompt_tokens": 884,
+        "completion_tokens": 810,
+        "total_tokens": 1694,
+        "completion_tokens_details": {
+          "reasoning_tokens": 682
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 884
+      },
+      "response_id": "019fa88a0c72fea5c15f89c3d085ca9c",
+      "raw_content": "\n\n{\n  \"repaired_output\": {\n    \"evidence_ids\": [\"atom-a6-e01\"]\n  },\n  \"repair_trace\": [\n    {\n      \"action\": \"add_evidence_ids\",\n      \"reason\": \"Validator feedback required evidence_ids field using atom-a6-e01\",\n      \"evidence_used\": \"atom-a6-e01\",\n      \"source\": \"a6-fixture\"\n    }\n  ],\n  \"remaining_warnings\": [\n    \"Original output omitted evidence_ids. Validator feedback: add evidence_ids using atom-a6-e01 and keep all existing valid fields unchanged.\"\n  ]\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "evidence_ids": [
+            "atom-a6-e01"
+          ]
+        },
+        "repair_trace": [
+          {
+            "action": "add_evidence_ids",
+            "reason": "Validator feedback required evidence_ids field using atom-a6-e01",
+            "evidence_used": "atom-a6-e01",
+            "source": "a6-fixture"
+          }
+        ],
+        "remaining_warnings": [
+          "Original output omitted evidence_ids. Validator feedback: add evidence_ids using atom-a6-e01 and keep all existing valid fields unchanged."
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.3016
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a6-validator-repair__strong_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a6-validator-repair__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "error": "The read operation timed out",
+      "elapsed_s": 242.1
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a6-validator-repair__strong_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a6-validator-repair__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:49:12.648471+00:00",
+      "elapsed_s": 27.73,
+      "usage": {
+        "prompt_tokens": 864,
+        "completion_tokens": 757,
+        "total_tokens": 1621,
+        "completion_tokens_details": {
+          "reasoning_tokens": 603
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 864
+      },
+      "response_id": "019fa88f7152f4c08a43ff05590bb553",
+      "raw_content": "\n\n{\n  \"repaired_output\": {\n    \"evidence_ids\": [\"atom-a6-e01\"],\n    \"other_valid_fields\": {\n      \"composition_role\": \"Shared\"\n    }\n  },\n  \"repair_trace\": [\n    {\n      \"action\": \"add_evidence_ids\",\n      \"reason\": \"Validator feedback required evidence_ids field using atom-a6-e01\",\n      \"evidence_used\": \"atom-a6-e01\",\n      \"source\": \"a6-fixture\"\n    },\n    {\n      \"action\": \"preserve_existing_fields\",\n      \"reason\": \"All existing valid fields must remain unchanged per validator instructions\",\n      \"fields_preserved\": [\"other_valid_fields\"]\n    }\n  ],\n  \"remaining_warnings\": []\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "evidence_ids": [
+            "atom-a6-e01"
+          ],
+          "other_valid_fields": {
+            "composition_role": "Shared"
+          }
+        },
+        "repair_trace": [
+          {
+            "action": "add_evidence_ids",
+            "reason": "Validator feedback required evidence_ids field using atom-a6-e01",
+            "evidence_used": "atom-a6-e01",
+            "source": "a6-fixture"
+          },
+          {
+            "action": "preserve_existing_fields",
+            "reason": "All existing valid fields must remain unchanged per validator instructions",
+            "fields_preserved": [
+              "other_valid_fields"
+            ]
+          }
+        ],
+        "remaining_warnings": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2024
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a6-validator-repair__strong_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a6-validator-repair__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:50:40.124512+00:00",
+      "elapsed_s": 87.17,
+      "usage": {
+        "prompt_tokens": 884,
+        "completion_tokens": 1977,
+        "total_tokens": 2861,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1883
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 884
+      },
+      "response_id": "019fa88eb814013c06d69ae8af9a25ff",
+      "raw_content": "\n\n{\n  \"repaired_output\": {\n    \"evidence_ids\": [\"atom-a6-e01\", \"atom-a6-e02\"]\n  },\n  \"repair_trace\": [\n    \"ValidatorGate identified missing evidence_ids field in original output. Added evidence_ids using atom-a6-e01 (primary evidence) and atom-a6-e02 (supporting evidence) from the evidence bundle as instructed.\"\n  ],\n  \"remaining_warnings\": []\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "evidence_ids": [
+            "atom-a6-e01",
+            "atom-a6-e02"
+          ]
+        },
+        "repair_trace": [
+          "ValidatorGate identified missing evidence_ids field in original output. Added evidence_ids using atom-a6-e01 (primary evidence) and atom-a6-e02 (supporting evidence) from the evidence bundle as instructed."
+        ],
+        "remaining_warnings": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2233
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a7-traceable-decision__budget_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a7-traceable-decision__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:51:00.597726+00:00",
+      "elapsed_s": 20.17,
+      "usage": {
+        "prompt_tokens": 418,
+        "completion_tokens": 420,
+        "total_tokens": 838,
+        "completion_tokens_details": {
+          "reasoning_tokens": 290
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 418
+      },
+      "response_id": "019fa8900e3cd1aa96e9371a53643ee8",
+      "raw_content": "\n\n{\n  \"claim_level\": \"weak-model enablement\",\n  \"decision_trace\": [\n    {\n      \"evidence\": \"baseline gap is n/a\",\n      \"consideration\": \"No baseline gap to compress, indicating the budget model operates without prior gap constraints\",\n      \"outcome\": \"Budget model improvements are not limited by gap compression requirements\"\n    },\n    {\n      \"evidence\": \"budget model improves strongly\",\n      \"consideration\": \"Strong improvement suggests effective implementation of weak-model enablement techniques\",\n      \"outcome\": \"Weak-model enablement is the primary mechanism driving the budget model's performance gains\"\n    }\n  ]\n}",
+      "parsed_output": {
+        "claim_level": "weak-model enablement",
+        "decision_trace": [
+          {
+            "evidence": "baseline gap is n/a",
+            "consideration": "No baseline gap to compress, indicating the budget model operates without prior gap constraints",
+            "outcome": "Budget model improvements are not limited by gap compression requirements"
+          },
+          {
+            "evidence": "budget model improves strongly",
+            "consideration": "Strong improvement suggests effective implementation of weak-model enablement techniques",
+            "outcome": "Weak-model enablement is the primary mechanism driving the budget model's performance gains"
+          }
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2283
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a7-traceable-decision__budget_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a7-traceable-decision__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:51:37.114457+00:00",
+      "elapsed_s": 36.22,
+      "usage": {
+        "prompt_tokens": 881,
+        "completion_tokens": 807,
+        "total_tokens": 1688,
+        "completion_tokens_details": {
+          "reasoning_tokens": 584
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 881
+      },
+      "response_id": "019fa8905dbacd6b7038afbadf4ddeb0",
+      "raw_content": "\n\n{\n  \"decision\": \"Select the budget model due to strong improvement over baseline gap (n/a).\",\n  \"criteria_used\": [\n    \"Baseline gap is not applicable (n/a).\",\n    \"Budget model demonstrates strong improvement.\",\n    \"TraceLog mechanism ensures observable reasoning through structured evidence tracking.\"\n  ],\n  \"evidence_ids\": [\"atom-a7-e01\", \"atom-a7-e02\"],\n  \"trace\": {\n    \"step_1\": \"Identify options: gap compression, weak-model enablement, composition-boundary framing\",\n    \"step_2\": \"Reference evidence atom-a7-e01 (primary evidence for Traceable Decision)\",\n    \"step_3\": \"Note evidence atom-a7-e02 indicates non-observable reasoning failure mode\",\n    \"step_4\": \"Determine baseline gap status is 'n/a' from evidence\",\n    \"step_5\": \"Conclude budget model provides necessary improvement based on evidence\",\n    \"step_6\": \"Apply TraceLog mechanism to ensure decision criteria are observable and traceable\"\n  }\n}",
+      "parsed_output": {
+        "decision": "Select the budget model due to strong improvement over baseline gap (n/a).",
+        "criteria_used": [
+          "Baseline gap is not applicable (n/a).",
+          "Budget model demonstrates strong improvement.",
+          "TraceLog mechanism ensures observable reasoning through structured evidence tracking."
+        ],
+        "evidence_ids": [
+          "atom-a7-e01",
+          "atom-a7-e02"
+        ],
+        "trace": {
+          "step_1": "Identify options: gap compression, weak-model enablement, composition-boundary framing",
+          "step_2": "Reference evidence atom-a7-e01 (primary evidence for Traceable Decision)",
+          "step_3": "Note evidence atom-a7-e02 indicates non-observable reasoning failure mode",
+          "step_4": "Determine baseline gap status is 'n/a' from evidence",
+          "step_5": "Conclude budget model provides necessary improvement based on evidence",
+          "step_6": "Apply TraceLog mechanism to ensure decision criteria are observable and traceable"
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.3043
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a7-traceable-decision__budget_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a7-traceable-decision__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:52:08.043791+00:00",
+      "elapsed_s": 30.63,
+      "usage": {
+        "prompt_tokens": 901,
+        "completion_tokens": 768,
+        "total_tokens": 1669,
+        "completion_tokens_details": {
+          "reasoning_tokens": 664
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 901
+      },
+      "response_id": "019fa890ec69b7e628ef51bd7a3c104a",
+      "raw_content": "\n\n{\n  \"decision\": \"budget_model\",\n  \"criteria_used\": [\"gap compression\", \"weak-model enablement\", \"composition-boundary framing\"],\n  \"evidence_ids\": [\"atom-a7-e01\", \"atom-a7-e02\"],\n  \"trace\": \"Selected budget_model due to strong improvement over baseline gap (n/a). Applied gap compression to address missing baseline data, utilized weak-model enablement for traceability, and framed composition boundaries as shared to ensure consistency with evidence claims.\"\n}",
+      "parsed_output": {
+        "decision": "budget_model",
+        "criteria_used": [
+          "gap compression",
+          "weak-model enablement",
+          "composition-boundary framing"
+        ],
+        "evidence_ids": [
+          "atom-a7-e01",
+          "atom-a7-e02"
+        ],
+        "trace": "Selected budget_model due to strong improvement over baseline gap (n/a). Applied gap compression to address missing baseline data, utilized weak-model enablement for traceability, and framed composition boundaries as shared to ensure consistency with evidence claims."
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2537
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a7-traceable-decision__strong_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a7-traceable-decision__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:52:59.863083+00:00",
+      "elapsed_s": 51.52,
+      "usage": {
+        "prompt_tokens": 418,
+        "completion_tokens": 1498,
+        "total_tokens": 1916,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1444
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 418
+      },
+      "response_id": "019fa8928be4ecaec32c0e73e57ca72e",
+      "raw_content": "\n\n{\n  \"claim_level\": \"composition-boundary framing\",\n  \"trace\": \"Evidence indicates baseline gap is n/a, but budget model shows strong improvement. Therefore, composition-boundary framing is selected as the decision criterion with observable trace of strong model enhancement.\"\n}",
+      "parsed_output": {
+        "claim_level": "composition-boundary framing",
+        "trace": "Evidence indicates baseline gap is n/a, but budget model shows strong improvement. Therefore, composition-boundary framing is selected as the decision criterion with observable trace of strong model enhancement."
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0909
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a7-traceable-decision__strong_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a7-traceable-decision__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:53:34.267414+00:00",
+      "elapsed_s": 34.1,
+      "usage": {
+        "prompt_tokens": 881,
+        "completion_tokens": 849,
+        "total_tokens": 1730,
+        "completion_tokens_details": {
+          "reasoning_tokens": 637
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 881
+      },
+      "response_id": "019fa8922fc50652d879d65d1c386c4b",
+      "raw_content": "\n\n{\n  \"decision\": \"budget model\",\n  \"criteria_used\": [\n    \"baseline gap is n/a\",\n    \"budget model improves strongly\"\n  ],\n  \"evidence_ids\": [\n    \"atom-a7-e01\",\n    \"atom-a7-e02\"\n  ],\n  \"trace\": [\n    {\n      \"step\": \"1\",\n      \"action\": \"evaluate baseline gap\",\n      \"evidence\": \"atom-a7-e01\",\n      \"reasoning\": \"baseline gap is n/a as per evidence\"\n    },\n    {\n      \"step\": \"2\",\n      \"action\": \"assess model improvements\",\n      \"evidence\": \"atom-a7-e02\",\n      \"reasoning\": \"budget model demonstrates strong improvement\"\n    },\n    {\n      \"step\": \"3\",\n      \"action\": \"select optimal model\",\n      \"evidence\": \"atom-a7-e02\",\n      \"reasoning\": \"strong improvement in budget model outweighs baseline gap absence\"\n    }\n  ]\n}",
+      "parsed_output": {
+        "decision": "budget model",
+        "criteria_used": [
+          "baseline gap is n/a",
+          "budget model improves strongly"
+        ],
+        "evidence_ids": [
+          "atom-a7-e01",
+          "atom-a7-e02"
+        ],
+        "trace": [
+          {
+            "step": "1",
+            "action": "evaluate baseline gap",
+            "evidence": "atom-a7-e01",
+            "reasoning": "baseline gap is n/a as per evidence"
+          },
+          {
+            "step": "2",
+            "action": "assess model improvements",
+            "evidence": "atom-a7-e02",
+            "reasoning": "budget model demonstrates strong improvement"
+          },
+          {
+            "step": "3",
+            "action": "select optimal model",
+            "evidence": "atom-a7-e02",
+            "reasoning": "strong improvement in budget model outweighs baseline gap absence"
+          }
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.1613
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a7-traceable-decision__strong_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a7-traceable-decision__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:54:06.844546+00:00",
+      "elapsed_s": 32.28,
+      "usage": {
+        "prompt_tokens": 901,
+        "completion_tokens": 777,
+        "total_tokens": 1678,
+        "completion_tokens_details": {
+          "reasoning_tokens": 632
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 901
+      },
+      "response_id": "019fa892b6209cf3d3af93e030f7d686",
+      "raw_content": "\n\n{\n  \"decision\": \"budget model improves strongly\",\n  \"criteria_used\": [\n    \"baseline gap is n/a\",\n    \"budget model improves strongly\"\n  ],\n  \"evidence_ids\": [\n    \"atom-a7-e01\",\n    \"atom-a7-e02\"\n  ],\n  \"trace\": [\n    {\n      \"step\": \"evaluate baseline gap\",\n      \"evidence_id\": \"atom-a7-e01\",\n      \"reason\": \"baseline gap is n/a\"\n    },\n    {\n      \"step\": \"select budget model\",\n      \"evidence_id\": \"atom-a7-e02\",\n      \"reason\": \"budget model improves strongly\"\n    }\n  ]\n}",
+      "parsed_output": {
+        "decision": "budget model improves strongly",
+        "criteria_used": [
+          "baseline gap is n/a",
+          "budget model improves strongly"
+        ],
+        "evidence_ids": [
+          "atom-a7-e01",
+          "atom-a7-e02"
+        ],
+        "trace": [
+          {
+            "step": "evaluate baseline gap",
+            "evidence_id": "atom-a7-e01",
+            "reason": "baseline gap is n/a"
+          },
+          {
+            "step": "select budget model",
+            "evidence_id": "atom-a7-e02",
+            "reason": "budget model improves strongly"
+          }
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.1071
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a9-no-overwrite-action-plan__budget_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a9-no-overwrite-action-plan__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:54:29.013046+00:00",
+      "elapsed_s": 21.87,
+      "usage": {
+        "prompt_tokens": 427,
+        "completion_tokens": 532,
+        "total_tokens": 959,
+        "completion_tokens_details": {
+          "reasoning_tokens": 492
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 427
+      },
+      "response_id": "019fa8933540a43a12878099c547d7a0",
+      "raw_content": "\n\n{\n  \"create\": [\"README.md\", \"research/04_methods/new.md\"],\n  \"skip\": [],\n  \"blocked\": [\"AGENTS.md\"],\n  \"ask-first\": []\n}",
+      "parsed_output": {
+        "create": [
+          "README.md",
+          "research/04_methods/new.md"
+        ],
+        "skip": [],
+        "blocked": [
+          "AGENTS.md"
+        ],
+        "ask-first": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.7692
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a9-no-overwrite-action-plan__budget_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a9-no-overwrite-action-plan__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:55:21.454572+00:00",
+      "elapsed_s": 52.14,
+      "usage": {
+        "prompt_tokens": 884,
+        "completion_tokens": 1304,
+        "total_tokens": 2188,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1244
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 884
+      },
+      "response_id": "019fa8938bcf9e35f80815d88f741fa4",
+      "raw_content": "\n\n{\n  \"create\": [\"README.md\", \"research/04_methods/new.md\"],\n  \"skip\": [],\n  \"blocked\": [\"AGENTS.md\"],\n  \"ask_first\": [],\n  \"citations\": {\n    \"blocked\": [\"atom-a9-e02\"]\n  }\n}",
+      "parsed_output": {
+        "create": [
+          "README.md",
+          "research/04_methods/new.md"
+        ],
+        "skip": [],
+        "blocked": [
+          "AGENTS.md"
+        ],
+        "ask_first": [],
+        "citations": {
+          "blocked": [
+            "atom-a9-e02"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.7857
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a9-no-overwrite-action-plan__budget_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a9-no-overwrite-action-plan__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:55:50.021977+00:00",
+      "elapsed_s": 28.27,
+      "usage": {
+        "prompt_tokens": 904,
+        "completion_tokens": 686,
+        "total_tokens": 1590,
+        "completion_tokens_details": {
+          "reasoning_tokens": 626
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 872
+      },
+      "response_id": "019fa89458ddb55a1c040abae18da730",
+      "raw_content": "\n\n{\n  \"create\": [\"README.md\", \"research/04_methods/new.md\"],\n  \"skip\": [],\n  \"blocked\": [\"AGENTS.md\"],\n  \"ask_first\": [],\n  \"citations\": {\n    \"blocked\": [\"atom-a9-e01\"]\n  }\n}",
+      "parsed_output": {
+        "create": [
+          "README.md",
+          "research/04_methods/new.md"
+        ],
+        "skip": [],
+        "blocked": [
+          "AGENTS.md"
+        ],
+        "ask_first": [],
+        "citations": {
+          "blocked": [
+            "atom-a9-e01"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.5882
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a9-no-overwrite-action-plan__strong_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a9-no-overwrite-action-plan__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:56:20.820371+00:00",
+      "elapsed_s": 30.5,
+      "usage": {
+        "prompt_tokens": 427,
+        "completion_tokens": 740,
+        "total_tokens": 1167,
+        "completion_tokens_details": {
+          "reasoning_tokens": 700
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 427
+      },
+      "response_id": "019fa894c87684705299d5348cc5c89e",
+      "raw_content": "\n\n{\n  \"create\": [\"README.md\", \"research/04_methods/new.md\"],\n  \"blocked\": [\"AGENTS.md\"],\n  \"skip\": [],\n  \"ask_first\": []\n}",
+      "parsed_output": {
+        "create": [
+          "README.md",
+          "research/04_methods/new.md"
+        ],
+        "blocked": [
+          "AGENTS.md"
+        ],
+        "skip": [],
+        "ask_first": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a9-no-overwrite-action-plan__strong_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a9-no-overwrite-action-plan__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:56:47.284482+00:00",
+      "elapsed_s": 26.16,
+      "usage": {
+        "prompt_tokens": 884,
+        "completion_tokens": 656,
+        "total_tokens": 1540,
+        "completion_tokens_details": {
+          "reasoning_tokens": 589
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 884
+      },
+      "response_id": "019fa89540a736300cd2d75f5f1e94cb",
+      "raw_content": "\n\n{\n  \"create\": [\"README.md\", \"research/04_methods/new.md\"],\n  \"skip\": [],\n  \"blocked\": [\"AGENTS.md\"],\n  \"ask_first\": [],\n  \"citations\": {\n    \"blocked\": \"atom-a9-e02: Supporting evidence for Unsafe overwrite proposal.\"\n  }\n}",
+      "parsed_output": {
+        "create": [
+          "README.md",
+          "research/04_methods/new.md"
+        ],
+        "skip": [],
+        "blocked": [
+          "AGENTS.md"
+        ],
+        "ask_first": [],
+        "citations": {
+          "blocked": "atom-a9-e02: Supporting evidence for Unsafe overwrite proposal."
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.1667
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a9-no-overwrite-action-plan__strong_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a9-no-overwrite-action-plan__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T11:57:18.268425+00:00",
+      "elapsed_s": 30.68,
+      "usage": {
+        "prompt_tokens": 904,
+        "completion_tokens": 727,
+        "total_tokens": 1631,
+        "completion_tokens_details": {
+          "reasoning_tokens": 678
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 872
+      },
+      "response_id": "019fa895a8ba1227ee925ee47ac9748c",
+      "raw_content": "\n\n{\n  \"create\": [\n    \"README.md\",\n    \"research/04_methods/new.md\"\n  ],\n  \"skip\": [],\n  \"blocked\": [\n    \"AGENTS.md\"\n  ],\n  \"ask_first\": []\n}",
+      "parsed_output": {
+        "create": [
+          "README.md",
+          "research/04_methods/new.md"
+        ],
+        "skip": [],
+        "blocked": [
+          "AGENTS.md"
+        ],
+        "ask_first": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2381
+    }
+  ]
+}

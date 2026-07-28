@@ -1,0 +1,515 @@
+{
+  "stage": "stage-b-v3-shape-repair-smoke-retries",
+  "total_runs": 2,
+  "json_parsed": 2,
+  "matched_frozen_high_similarity": 2,
+  "frozen_task_success_1_count": 0,
+  "timestamp": "2026-07-28T15:32:24.427516+00:00",
+  "runs": [
+    {
+      "run_id": "stage-b-v3-shape-repair-smoke-retries__stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2__retry1",
+      "stage": "stage-b-v3-shape-repair-smoke-retries",
+      "frozen_run_name": "stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r2__retry1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:32:02.535046+00:00",
+      "elapsed_s": 27.18,
+      "usage": {
+        "prompt_tokens": 6380,
+        "completion_tokens": 1758,
+        "total_tokens": 8138,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "response_id": "019fa95a51268763b5ce812785981ed9",
+      "raw_content": "{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"stage7e_v4_macro_passed\",\n        \"fact\": \"Stage 7e v4 completed a targeted low-cost-model G8/G9 smoke with 4/4 completed and passed runs after retrying one provider timeout.\",\n        \"evidence_ids\": [\n          \"stage7next-e01\"\n        ]\n      },\n      {\n        \"state_id\": \"claim_boundary_updated\",\n        \"fact\": \"The claim-boundary memo was updated to separate task-slice claims, mechanism-composition claims, and unsupported claims.\",\n        \"evidence_ids\": [\n          \"stage7next-e04\"\n        ]\n      },\n      {\n        \"state_id\": \"methodology_outline_updated\",\n        \"fact\": \"The methodology outline defines next macro admission criteria: reuse Stage 7e v4 obligations, add at most one new stressor, run local golden/bad gates first, and declare non-claims.\",\n        \"evidence_ids\": [\n          \"stage7next-e07\"\n        ]\n      },\n      {\n        \"state_id\": \"backlog_stage7next_open\",\n        \"fact\": \"The backlog marks Stage 7-next as open and keeps full project initialization and full research workflow blocked until the next macro passes local gates and a targeted real-model slice.\",\n        \"evidence_ids\": [\n          \"stage7next-e08\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\",\n      \"network_api_approval\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\",\n      \"do_not_infer_network_api_approval\",\n      \"do_not_infer_production_readiness\",\n      \"do_not_infer_universal_model_gap_closure\"\n    ]\n  },\n  \"grounded_claims\": [\n    {\n      \"claim\": \"Stage 7e v4 completed a targeted low-cost-model G8/G9 smoke with 4/4 completed and passed runs after retrying one provider timeout.\",\n      \"evidence_ids\": [\n        \"stage7next-e01\"\n      ]\n    },\n    {\n      \"claim\": \"The claim-boundary memo was updated to separate task-slice claims, mechanism-composition claims, and unsupported claims.\",\n      \"evidence_ids\": [\n        \"stage7next-e04\"\n      ]\n    },\n    {\n      \"claim\": \"The methodology outline defines next macro admission criteria: reuse Stage 7e v4 obligations, add at most one new stressor, run local golden/bad gates first, and declare non-claims.\",\n      \"evidence_ids\": [\n        \"stage7next-e07\"\n      ]\n    },\n    {\n      \"claim\": \"The backlog marks Stage 7-next as open and keeps full project initialization and full research workflow blocked until the next macro passes local gates and a targeted real-model slice.\",\n      \"evidence_ids\": [\n        \"stage7next-e08\"\n      ]\n    }\n  ],\n  \"unsupported_claims\": [\n    {\n      \"claim\": \"Stage 7e v4 proves the harness universally closes the model gap and is production ready.\",\n      \"reason\": \"No supplied evidence supports production readiness, universal model-gap closure, or immediate full workflow expansion.\",\n      \"evidence_ids\": [\n        \"stage7next-e05\"\n      ]\n    }\n  ],\n  \"typed_evidence\": {\n    \"extracted\": [\n      \"stage7next-e01\",\n      \"stage7next-e04\",\n      \"stage7next-e05\",\n      \"stage7next-e07\",\n      \"stage7next-e08\"\n    ],\n    \"inferred\": [\n      \"stage7next-e02\"\n    ],\n    \"ambiguous\": [\n      \"stage7next-e03\"\n    ],\n    \"proposed\": [\n      \"stage7next-e06\"\n    ]\n  },\n  \"selected_claim\": {\n    \"option_id\": \"C2\",\n    \"claim\": \"The next admitted macro should be an evidence-bound method-plan update that reuses Stage 7e v4 obligations and remains blocked from real-model execution until local gates pass.\",\n    \"evidence_ids\": [\n      \"stage7next-e01\",\n      \"stage7next-e06\",\n      \"stage7next-e07\",\n      \"stage7next-e08\"\n    ]\n  },\n  \"rejected_options\": [\n    {\n      \"option_id\": \"C1\",\n      \"reason\": \"No supplied evidence supports production readiness, universal model-gap closure, or immediate full workflow expansion.\",\n      \"evidence_ids\": [\n        \"stage7next-e05\"\n      ]\n    },\n    {\n      \"option_id\": \"C3\",\n      \"reason\": \"No supplied evidence supports production readiness, universal model-gap closure, or immediate full workflow expansion.\",\n      \"evidence_ids\": [\n        \"stage7next-e05\"\n      ]\n    }\n  ],\n  \"decision_trace\": [\n    {\n      \"option_id\": \"C2\",\n      \"decision\": \"support\",\n      \"evidence_ids\": [\n        \"stage7next-e01\",\n        \"stage7next-e06\",\n        \"stage7next-e07\",\n        \"stage7next-e08\"\n      ],\n      \"carried_obligations\": [\n        \"exclude stale universal-gap-closure and production-readiness note\"\n      ]\n    },\n    {\n      \"option_id\": \"C1\",\n      \"decision\": \"reject\",\n      \"evidence_ids\": [\n        \"stage7next-e05\"\n      ],\n      \"carried_obligations\": [\n        \"exclude stale universal-gap-closure and production-readiness note\"\n      ]\n    },\n    {\n      \"option_id\": \"C3\",\n      \"decision\": \"reject\",\n      \"evidence_ids\": [\n        \"stage7next-e05\"\n      ],\n      \"carried_obligations\": [\n        \"exclude stale universal-gap-closure and production-readiness note\"\n      ]\n    }\n  ],\n  \"stage_gate\": {\n    \"status\": \"blocked\",\n    \"blocked_outputs\": [\n      \"real_model_execution\",\n      \"broader_workflow_expansion\",\n      \"production_or_universal_claim\"\n    ],\n    \"missing_prerequisites\": [\n      \"stage7_next_local_gate\",\n      \"stage7_next_targeted_smoke\"\n    ],\n    \"next_required_actions\": [\n      \"local golden output pass\",\n      \"known-bad rejection\"\n    ],\n    \"evidence_ids\": [\n      \"stage7next-e01\",\n      \"stage7next-e05\",\n      \"stage7next-e07\",\n      \"stage7next-e08\"\n    ]\n  },\n  \"method_plan_update\": {\n    \"selected_next_macro\": \"evidence_bound_method_plan_update\",\n    \"admission_criteria\": [\n      \"reuse Stage 7e v4 obligations\",\n      \"add at most one new stressor\"\n    ],\n    \"local_gates\": [\n      \"golden output pass\",\n      \"known-bad rejection\"\n    ],\n    \"real_model_gate\": \"local gates pass\",\n    \"non_claims\": [\n      \"production readiness\",\n      \"universal model-gap closure\",\n      \"broader workflow readiness\"\n    ],\n    \"evidence_ids\": [\n      \"stage7next-e01\",\n      \"stage7next-e06\",\n      \"stage7next-e07\",\n      \"stage7next-e08\"\n    ]\n  },\n  \"carried_obligations\": [\n    {\n      \"obligation\": \"exclude stale universal-gap-closure and production-readiness note\",\n      \"status\": \"preserved\",\n      \"evidence_ids\": [\n        \"stage7next-e05\"\n      ]\n    },\n    {\n      \"obligation\": \"do not claim production readiness\",\n      \"status\": \"preserved\",\n      \"evidence_ids\": [\n        \"stage7next-e05\"\n      ]\n    },\n    {\n      \"obligation\": \"do not claim universal model-gap closure\",\n      \"status\": \"preserved\",\n      \"evidence_ids\": [\n        \"stage7next-e05\"\n      ]\n    },\n    {\n      \"obligation\": \"do not claim broader workflow readiness\",\n      \"status\": \"preserved\",\n      \"evidence_ids\": [\n        \"stage7next-e05\"\n      ]\n    }\n  ]\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "stage7e_v4_macro_passed",
+              "fact": "Stage 7e v4 completed a targeted low-cost-model G8/G9 smoke with 4/4 completed and passed runs after retrying one provider timeout.",
+              "evidence_ids": [
+                "stage7next-e01"
+              ]
+            },
+            {
+              "state_id": "claim_boundary_updated",
+              "fact": "The claim-boundary memo was updated to separate task-slice claims, mechanism-composition claims, and unsupported claims.",
+              "evidence_ids": [
+                "stage7next-e04"
+              ]
+            },
+            {
+              "state_id": "methodology_outline_updated",
+              "fact": "The methodology outline defines next macro admission criteria: reuse Stage 7e v4 obligations, add at most one new stressor, run local golden/bad gates first, and declare non-claims.",
+              "evidence_ids": [
+                "stage7next-e07"
+              ]
+            },
+            {
+              "state_id": "backlog_stage7next_open",
+              "fact": "The backlog marks Stage 7-next as open and keeps full project initialization and full research workflow blocked until the next macro passes local gates and a targeted real-model slice.",
+              "evidence_ids": [
+                "stage7next-e08"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status",
+            "network_api_approval"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status",
+            "do_not_infer_network_api_approval",
+            "do_not_infer_production_readiness",
+            "do_not_infer_universal_model_gap_closure"
+          ]
+        },
+        "grounded_claims": [
+          {
+            "claim": "Stage 7e v4 completed a targeted low-cost-model G8/G9 smoke with 4/4 completed and passed runs after retrying one provider timeout.",
+            "evidence_ids": [
+              "stage7next-e01"
+            ]
+          },
+          {
+            "claim": "The claim-boundary memo was updated to separate task-slice claims, mechanism-composition claims, and unsupported claims.",
+            "evidence_ids": [
+              "stage7next-e04"
+            ]
+          },
+          {
+            "claim": "The methodology outline defines next macro admission criteria: reuse Stage 7e v4 obligations, add at most one new stressor, run local golden/bad gates first, and declare non-claims.",
+            "evidence_ids": [
+              "stage7next-e07"
+            ]
+          },
+          {
+            "claim": "The backlog marks Stage 7-next as open and keeps full project initialization and full research workflow blocked until the next macro passes local gates and a targeted real-model slice.",
+            "evidence_ids": [
+              "stage7next-e08"
+            ]
+          }
+        ],
+        "unsupported_claims": [
+          {
+            "claim": "Stage 7e v4 proves the harness universally closes the model gap and is production ready.",
+            "reason": "No supplied evidence supports production readiness, universal model-gap closure, or immediate full workflow expansion.",
+            "evidence_ids": [
+              "stage7next-e05"
+            ]
+          }
+        ],
+        "typed_evidence": {
+          "extracted": [
+            "stage7next-e01",
+            "stage7next-e04",
+            "stage7next-e05",
+            "stage7next-e07",
+            "stage7next-e08"
+          ],
+          "inferred": [
+            "stage7next-e02"
+          ],
+          "ambiguous": [
+            "stage7next-e03"
+          ],
+          "proposed": [
+            "stage7next-e06"
+          ]
+        },
+        "selected_claim": {
+          "option_id": "C2",
+          "claim": "The next admitted macro should be an evidence-bound method-plan update that reuses Stage 7e v4 obligations and remains blocked from real-model execution until local gates pass.",
+          "evidence_ids": [
+            "stage7next-e01",
+            "stage7next-e06",
+            "stage7next-e07",
+            "stage7next-e08"
+          ]
+        },
+        "rejected_options": [
+          {
+            "option_id": "C1",
+            "reason": "No supplied evidence supports production readiness, universal model-gap closure, or immediate full workflow expansion.",
+            "evidence_ids": [
+              "stage7next-e05"
+            ]
+          },
+          {
+            "option_id": "C3",
+            "reason": "No supplied evidence supports production readiness, universal model-gap closure, or immediate full workflow expansion.",
+            "evidence_ids": [
+              "stage7next-e05"
+            ]
+          }
+        ],
+        "decision_trace": [
+          {
+            "option_id": "C2",
+            "decision": "support",
+            "evidence_ids": [
+              "stage7next-e01",
+              "stage7next-e06",
+              "stage7next-e07",
+              "stage7next-e08"
+            ],
+            "carried_obligations": [
+              "exclude stale universal-gap-closure and production-readiness note"
+            ]
+          },
+          {
+            "option_id": "C1",
+            "decision": "reject",
+            "evidence_ids": [
+              "stage7next-e05"
+            ],
+            "carried_obligations": [
+              "exclude stale universal-gap-closure and production-readiness note"
+            ]
+          },
+          {
+            "option_id": "C3",
+            "decision": "reject",
+            "evidence_ids": [
+              "stage7next-e05"
+            ],
+            "carried_obligations": [
+              "exclude stale universal-gap-closure and production-readiness note"
+            ]
+          }
+        ],
+        "stage_gate": {
+          "status": "blocked",
+          "blocked_outputs": [
+            "real_model_execution",
+            "broader_workflow_expansion",
+            "production_or_universal_claim"
+          ],
+          "missing_prerequisites": [
+            "stage7_next_local_gate",
+            "stage7_next_targeted_smoke"
+          ],
+          "next_required_actions": [
+            "local golden output pass",
+            "known-bad rejection"
+          ],
+          "evidence_ids": [
+            "stage7next-e01",
+            "stage7next-e05",
+            "stage7next-e07",
+            "stage7next-e08"
+          ]
+        },
+        "method_plan_update": {
+          "selected_next_macro": "evidence_bound_method_plan_update",
+          "admission_criteria": [
+            "reuse Stage 7e v4 obligations",
+            "add at most one new stressor"
+          ],
+          "local_gates": [
+            "golden output pass",
+            "known-bad rejection"
+          ],
+          "real_model_gate": "local gates pass",
+          "non_claims": [
+            "production readiness",
+            "universal model-gap closure",
+            "broader workflow readiness"
+          ],
+          "evidence_ids": [
+            "stage7next-e01",
+            "stage7next-e06",
+            "stage7next-e07",
+            "stage7next-e08"
+          ]
+        },
+        "carried_obligations": [
+          {
+            "obligation": "exclude stale universal-gap-closure and production-readiness note",
+            "status": "preserved",
+            "evidence_ids": [
+              "stage7next-e05"
+            ]
+          },
+          {
+            "obligation": "do not claim production readiness",
+            "status": "preserved",
+            "evidence_ids": [
+              "stage7next-e05"
+            ]
+          },
+          {
+            "obligation": "do not claim universal model-gap closure",
+            "status": "preserved",
+            "evidence_ids": [
+              "stage7next-e05"
+            ]
+          },
+          {
+            "obligation": "do not claim broader workflow readiness",
+            "status": "preserved",
+            "evidence_ids": [
+              "stage7next-e05"
+            ]
+          }
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.9541
+    },
+    {
+      "run_id": "stage-b-v3-shape-repair-smoke-retries__stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3__retry1",
+      "stage": "stage-b-v3-shape-repair-smoke-retries",
+      "frozen_run_name": "stage7-next-method-plan-update-v3--canonical-shape-repair__budget_model__G9__r3__retry1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:32:24.126329+00:00",
+      "elapsed_s": 21.29,
+      "usage": {
+        "prompt_tokens": 6380,
+        "completion_tokens": 1703,
+        "total_tokens": 8083,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "response_id": "019fa95abc84c70e6e17713386506134",
+      "raw_content": "{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"stage7e_v4_macro_passed\",\n        \"fact\": \"Stage 7e v4 completed a targeted low-cost-model G8/G9 smoke with 4/4 completed and passed runs after retrying one provider timeout.\",\n        \"evidence_ids\": [\n          \"stage7next-e01\"\n        ]\n      },\n      {\n        \"state_id\": \"claim_boundary_updated\",\n        \"fact\": \"The claim-boundary memo was updated to separate task-slice claims, mechanism-composition claims, and unsupported claims.\",\n        \"evidence_ids\": [\n          \"stage7next-e04\"\n        ]\n      },\n      {\n        \"state_id\": \"methodology_outline_updated\",\n        \"fact\": \"The methodology outline defines next macro admission criteria: reuse Stage 7e v4 obligations, add at most one new stressor, run local golden/bad gates first, and declare non-claims.\",\n        \"evidence_ids\": [\n          \"stage7next-e07\"\n        ]\n      },\n      {\n        \"state_id\": \"backlog_stage7next_open\",\n        \"fact\": \"The backlog marks Stage 7-next as open and keeps full project initialization and full research workflow blocked until the next macro passes local gates and a targeted real-model slice.\",\n        \"evidence_ids\": [\n          \"stage7next-e08\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\",\n      \"network_api_approval\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\",\n      \"do_not_infer_network_api_approval\",\n      \"do_not_infer_production_readiness\",\n      \"do_not_infer_universal_model_gap_closure\"\n    ]\n  },\n  \"grounded_claims\": [\n    {\n      \"claim\": \"Stage 7e v4 completed a targeted low-cost-model G8/G9 smoke with 4/4 completed and passed runs after retrying one provider timeout.\",\n      \"evidence_ids\": [\n        \"stage7next-e01\"\n      ]\n    },\n    {\n      \"claim\": \"The methodology outline defines next macro admission criteria: reuse Stage 7e v4 obligations, add at most one new stressor, run local golden/bad gates first, and declare non-claims.\",\n      \"evidence_ids\": [\n        \"stage7next-e07\"\n      ]\n    },\n    {\n      \"claim\": \"The next admitted macro should be an evidence-bound method-plan update that reuses Stage 7e v4 obligations and remains blocked from real-model execution until local gates pass.\",\n      \"evidence_ids\": [\n        \"stage7next-e06\"\n      ]\n    }\n  ],\n  \"unsupported_claims\": [\n    {\n      \"claim\": \"Stage 7e v4 proves the harness universally closes the model gap and is production ready.\",\n      \"reason\": \"No supplied evidence supports production readiness, universal model-gap closure, or immediate full workflow expansion.\",\n      \"evidence_ids\": [\n        \"stage7next-e05\"\n      ]\n    }\n  ],\n  \"typed_evidence\": {\n    \"extracted\": [\n      \"stage7next-e01\",\n      \"stage7next-e04\",\n      \"stage7next-e05\",\n      \"stage7next-e07\",\n      \"stage7next-e08\"\n    ],\n    \"inferred\": [\n      \"stage7next-e02\"\n    ],\n    \"ambiguous\": [\n      \"stage7next-e03\"\n    ],\n    \"proposed\": [\n      \"stage7next-e06\"\n    ]\n  },\n  \"selected_claim\": {\n    \"option_id\": \"C2\",\n    \"claim\": \"The next admitted macro should be an evidence-bound method-plan update that reuses Stage 7e v4 obligations and remains blocked from real-model execution until local gates pass.\",\n    \"evidence_ids\": [\n      \"stage7next-e01\",\n      \"stage7next-e06\",\n      \"stage7next-e07\",\n      \"stage7next-e08\"\n    ]\n  },\n  \"rejected_options\": [\n    {\n      \"option_id\": \"C1\",\n      \"reason\": \"No supplied evidence supports production readiness, universal model-gap closure, or immediate full workflow expansion.\",\n      \"evidence_ids\": [\n        \"stage7next-e05\"\n      ]\n    },\n    {\n      \"option_id\": \"C3\",\n      \"reason\": \"No supplied evidence supports production readiness, universal model-gap closure, or immediate full workflow expansion.\",\n      \"evidence_ids\": [\n        \"stage7next-e05\"\n      ]\n    }\n  ],\n  \"decision_trace\": [\n    {\n      \"option_id\": \"C2\",\n      \"decision\": \"support\",\n      \"evidence_ids\": [\n        \"stage7next-e01\",\n        \"stage7next-e06\",\n        \"stage7next-e07\",\n        \"stage7next-e08\"\n      ],\n      \"carried_obligations\": [\n        \"exclude stale universal-gap-closure and production-readiness note\"\n      ]\n    },\n    {\n      \"option_id\": \"C1\",\n      \"decision\": \"reject\",\n      \"evidence_ids\": [\n        \"stage7next-e05\"\n      ],\n      \"carried_obligations\": [\n        \"exclude stale universal-gap-closure and production-readiness note\"\n      ]\n    },\n    {\n      \"option_id\": \"C3\",\n      \"decision\": \"reject\",\n      \"evidence_ids\": [\n        \"stage7next-e05\"\n      ],\n      \"carried_obligations\": [\n        \"exclude stale universal-gap-closure and production-readiness note\"\n      ]\n    }\n  ],\n  \"stage_gate\": {\n    \"status\": \"blocked\",\n    \"blocked_outputs\": [\n      \"real_model_execution\",\n      \"broader_workflow_expansion\",\n      \"production_or_universal_claim\"\n    ],\n    \"missing_prerequisites\": [\n      \"stage7_next_local_gate\",\n      \"stage7_next_targeted_smoke\"\n    ],\n    \"next_required_actions\": [\n      \"local golden output pass\",\n      \"known-bad rejection\"\n    ],\n    \"evidence_ids\": [\n      \"stage7next-e01\",\n      \"stage7next-e05\",\n      \"stage7next-e07\"\n    ]\n  },\n  \"method_plan_update\": {\n    \"selected_next_macro\": \"evidence_bound_method_plan_update\",\n    \"admission_criteria\": [\n      \"reuse Stage 7e v4 obligations\",\n      \"add at most one new stressor\"\n    ],\n    \"local_gates\": [\n      \"golden output pass\",\n      \"known-bad rejection\"\n    ],\n    \"real_model_gate\": \"local gates to pass before execution\",\n    \"non_claims\": [\n      \"production readiness\",\n      \"universal model-gap closure\",\n      \"broader workflow readiness\"\n    ],\n    \"evidence_ids\": [\n      \"stage7next-e01\",\n      \"stage7next-e06\",\n      \"stage7next-e07\",\n      \"stage7next-e08\"\n    ]\n  },\n  \"carried_obligations\": [\n    {\n      \"obligation\": \"exclude stale universal-gap-closure and production-readiness note\",\n      \"status\": \"preserved\",\n      \"evidence_ids\": [\n        \"stage7next-e05\"\n      ]\n    },\n    {\n      \"obligation\": \"do not claim production readiness\",\n      \"status\": \"preserved\",\n      \"evidence_ids\": [\n        \"stage7next-e05\"\n      ]\n    },\n    {\n      \"obligation\": \"do not claim universal model-gap closure\",\n      \"status\": \"preserved\",\n      \"evidence_ids\": [\n        \"stage7next-e05\"\n      ]\n    },\n    {\n      \"obligation\": \"do not claim broader workflow readiness\",\n      \"status\": \"preserved\",\n      \"evidence_ids\": [\n        \"stage7next-e05\"\n      ]\n    }\n  ]\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "stage7e_v4_macro_passed",
+              "fact": "Stage 7e v4 completed a targeted low-cost-model G8/G9 smoke with 4/4 completed and passed runs after retrying one provider timeout.",
+              "evidence_ids": [
+                "stage7next-e01"
+              ]
+            },
+            {
+              "state_id": "claim_boundary_updated",
+              "fact": "The claim-boundary memo was updated to separate task-slice claims, mechanism-composition claims, and unsupported claims.",
+              "evidence_ids": [
+                "stage7next-e04"
+              ]
+            },
+            {
+              "state_id": "methodology_outline_updated",
+              "fact": "The methodology outline defines next macro admission criteria: reuse Stage 7e v4 obligations, add at most one new stressor, run local golden/bad gates first, and declare non-claims.",
+              "evidence_ids": [
+                "stage7next-e07"
+              ]
+            },
+            {
+              "state_id": "backlog_stage7next_open",
+              "fact": "The backlog marks Stage 7-next as open and keeps full project initialization and full research workflow blocked until the next macro passes local gates and a targeted real-model slice.",
+              "evidence_ids": [
+                "stage7next-e08"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status",
+            "network_api_approval"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status",
+            "do_not_infer_network_api_approval",
+            "do_not_infer_production_readiness",
+            "do_not_infer_universal_model_gap_closure"
+          ]
+        },
+        "grounded_claims": [
+          {
+            "claim": "Stage 7e v4 completed a targeted low-cost-model G8/G9 smoke with 4/4 completed and passed runs after retrying one provider timeout.",
+            "evidence_ids": [
+              "stage7next-e01"
+            ]
+          },
+          {
+            "claim": "The methodology outline defines next macro admission criteria: reuse Stage 7e v4 obligations, add at most one new stressor, run local golden/bad gates first, and declare non-claims.",
+            "evidence_ids": [
+              "stage7next-e07"
+            ]
+          },
+          {
+            "claim": "The next admitted macro should be an evidence-bound method-plan update that reuses Stage 7e v4 obligations and remains blocked from real-model execution until local gates pass.",
+            "evidence_ids": [
+              "stage7next-e06"
+            ]
+          }
+        ],
+        "unsupported_claims": [
+          {
+            "claim": "Stage 7e v4 proves the harness universally closes the model gap and is production ready.",
+            "reason": "No supplied evidence supports production readiness, universal model-gap closure, or immediate full workflow expansion.",
+            "evidence_ids": [
+              "stage7next-e05"
+            ]
+          }
+        ],
+        "typed_evidence": {
+          "extracted": [
+            "stage7next-e01",
+            "stage7next-e04",
+            "stage7next-e05",
+            "stage7next-e07",
+            "stage7next-e08"
+          ],
+          "inferred": [
+            "stage7next-e02"
+          ],
+          "ambiguous": [
+            "stage7next-e03"
+          ],
+          "proposed": [
+            "stage7next-e06"
+          ]
+        },
+        "selected_claim": {
+          "option_id": "C2",
+          "claim": "The next admitted macro should be an evidence-bound method-plan update that reuses Stage 7e v4 obligations and remains blocked from real-model execution until local gates pass.",
+          "evidence_ids": [
+            "stage7next-e01",
+            "stage7next-e06",
+            "stage7next-e07",
+            "stage7next-e08"
+          ]
+        },
+        "rejected_options": [
+          {
+            "option_id": "C1",
+            "reason": "No supplied evidence supports production readiness, universal model-gap closure, or immediate full workflow expansion.",
+            "evidence_ids": [
+              "stage7next-e05"
+            ]
+          },
+          {
+            "option_id": "C3",
+            "reason": "No supplied evidence supports production readiness, universal model-gap closure, or immediate full workflow expansion.",
+            "evidence_ids": [
+              "stage7next-e05"
+            ]
+          }
+        ],
+        "decision_trace": [
+          {
+            "option_id": "C2",
+            "decision": "support",
+            "evidence_ids": [
+              "stage7next-e01",
+              "stage7next-e06",
+              "stage7next-e07",
+              "stage7next-e08"
+            ],
+            "carried_obligations": [
+              "exclude stale universal-gap-closure and production-readiness note"
+            ]
+          },
+          {
+            "option_id": "C1",
+            "decision": "reject",
+            "evidence_ids": [
+              "stage7next-e05"
+            ],
+            "carried_obligations": [
+              "exclude stale universal-gap-closure and production-readiness note"
+            ]
+          },
+          {
+            "option_id": "C3",
+            "decision": "reject",
+            "evidence_ids": [
+              "stage7next-e05"
+            ],
+            "carried_obligations": [
+              "exclude stale universal-gap-closure and production-readiness note"
+            ]
+          }
+        ],
+        "stage_gate": {
+          "status": "blocked",
+          "blocked_outputs": [
+            "real_model_execution",
+            "broader_workflow_expansion",
+            "production_or_universal_claim"
+          ],
+          "missing_prerequisites": [
+            "stage7_next_local_gate",
+            "stage7_next_targeted_smoke"
+          ],
+          "next_required_actions": [
+            "local golden output pass",
+            "known-bad rejection"
+          ],
+          "evidence_ids": [
+            "stage7next-e01",
+            "stage7next-e05",
+            "stage7next-e07"
+          ]
+        },
+        "method_plan_update": {
+          "selected_next_macro": "evidence_bound_method_plan_update",
+          "admission_criteria": [
+            "reuse Stage 7e v4 obligations",
+            "add at most one new stressor"
+          ],
+          "local_gates": [
+            "golden output pass",
+            "known-bad rejection"
+          ],
+          "real_model_gate": "local gates to pass before execution",
+          "non_claims": [
+            "production readiness",
+            "universal model-gap closure",
+            "broader workflow readiness"
+          ],
+          "evidence_ids": [
+            "stage7next-e01",
+            "stage7next-e06",
+            "stage7next-e07",
+            "stage7next-e08"
+          ]
+        },
+        "carried_obligations": [
+          {
+            "obligation": "exclude stale universal-gap-closure and production-readiness note",
+            "status": "preserved",
+            "evidence_ids": [
+              "stage7next-e05"
+            ]
+          },
+          {
+            "obligation": "do not claim production readiness",
+            "status": "preserved",
+            "evidence_ids": [
+              "stage7next-e05"
+            ]
+          },
+          {
+            "obligation": "do not claim universal model-gap closure",
+            "status": "preserved",
+            "evidence_ids": [
+              "stage7next-e05"
+            ]
+          },
+          {
+            "obligation": "do not claim broader workflow readiness",
+            "status": "preserved",
+            "evidence_ids": [
+              "stage7next-e05"
+            ]
+          }
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.9633
+    }
+  ]
+}

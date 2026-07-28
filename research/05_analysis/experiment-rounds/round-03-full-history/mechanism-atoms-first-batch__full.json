@@ -1,0 +1,1595 @@
+{
+  "stage": "mechanism-atoms-first-batch",
+  "total_runs": 40,
+  "json_parsed": 37,
+  "matched_frozen_high_similarity": 0,
+  "frozen_task_success_1_count": 0,
+  "timestamp": "2026-07-28T10:19:51.188835+00:00",
+  "runs": [
+    {
+      "run_id": "mechanism-atoms-first-batch__a1-schema-bound-extraction__budget_model__G0__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a1-schema-bound-extraction__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:40:09.336406+00:00",
+      "elapsed_s": 94.97,
+      "usage": {
+        "prompt_tokens": 437,
+        "completion_tokens": 2300,
+        "total_tokens": 2737,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2088
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 437
+      },
+      "response_id": "019fa8171b490c030df4e7848cac1b61",
+      "raw_content": "\n\n{\n  \"task_spec_version\": \"0.1.0\",\n  \"task_id\": \"mechanism_a1_schema_bound_extraction_001\",\n  \"task_type\": \"mechanism_atom\",\n  \"intent\": {\n    \"goal\": \"Return a valid JSON object with required planning fields and supported evidence IDs.\",\n    \"language\": \"en\",\n    \"freshness\": \"local_snapshot\"\n  },\n  \"constraints\": [\n    \"Primary mechanism under test: OutputContract.\",\n    \"Dominant failure mode: Missing required structure.\",\n    \"Return only information supported by the fixture.\"\n  ],\n  \"memory_slice_id\": \"mem_mechanism_a1_schema_bound_extraction_001\",\n  \"evidence_bundle_id\": \"ev_mechanism_a1_schema_bound_extraction_001\",\n  \"output_contract_id\": \"out_mechanism_a1_schema_bound_extraction_001\",\n  \"evidence_ids\": [\"atom-a1-e01\", \"atom-a1-e02\"]\n}",
+      "parsed_output": {
+        "task_spec_version": "0.1.0",
+        "task_id": "mechanism_a1_schema_bound_extraction_001",
+        "task_type": "mechanism_atom",
+        "intent": {
+          "goal": "Return a valid JSON object with required planning fields and supported evidence IDs.",
+          "language": "en",
+          "freshness": "local_snapshot"
+        },
+        "constraints": [
+          "Primary mechanism under test: OutputContract.",
+          "Dominant failure mode: Missing required structure.",
+          "Return only information supported by the fixture."
+        ],
+        "memory_slice_id": "mem_mechanism_a1_schema_bound_extraction_001",
+        "evidence_bundle_id": "ev_mechanism_a1_schema_bound_extraction_001",
+        "output_contract_id": "out_mechanism_a1_schema_bound_extraction_001",
+        "evidence_ids": [
+          "atom-a1-e01",
+          "atom-a1-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0294
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a1-schema-bound-extraction__budget_model__G2__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a1-schema-bound-extraction__budget_model__G2__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:40:28.266910+00:00",
+      "elapsed_s": 18.63,
+      "usage": {
+        "prompt_tokens": 534,
+        "completion_tokens": 475,
+        "total_tokens": 1009,
+        "completion_tokens_details": {
+          "reasoning_tokens": 419
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 534
+      },
+      "response_id": "019fa8188f4b1ef474366838bd0dbf6b",
+      "raw_content": "\n\n{\n  \"title\": \"Proposal NEXT\",\n  \"target_venue\": \"ACL Findings\",\n  \"primary_metric\": \"weak-model enablement lift\",\n  \"evidence_ids\": [\"atom-a1-e01\", \"atom-a1-e02\"]\n}",
+      "parsed_output": {
+        "title": "Proposal NEXT",
+        "target_venue": "ACL Findings",
+        "primary_metric": "weak-model enablement lift",
+        "evidence_ids": [
+          "atom-a1-e01",
+          "atom-a1-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a1-schema-bound-extraction__budget_model__G8__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a1-schema-bound-extraction__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:41:02.886486+00:00",
+      "elapsed_s": 34.32,
+      "usage": {
+        "prompt_tokens": 910,
+        "completion_tokens": 867,
+        "total_tokens": 1777,
+        "completion_tokens_details": {
+          "reasoning_tokens": 805
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 878
+      },
+      "response_id": "019fa818d9851fc68bab238c001dddf2",
+      "raw_content": "\n\n{\n  \"title\": \"Mechanism A1 Schema-Bound Extraction\",\n  \"target_venue\": \"ACL Findings\",\n  \"primary_metric\": \"weak-model enablement lift\",\n  \"evidence_ids\": [\"atom-a1-e01\", \"atom-a1-e02\"]\n}",
+      "parsed_output": {
+        "title": "Mechanism A1 Schema-Bound Extraction",
+        "target_venue": "ACL Findings",
+        "primary_metric": "weak-model enablement lift",
+        "evidence_ids": [
+          "atom-a1-e01",
+          "atom-a1-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a1-schema-bound-extraction__budget_model__G9__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a1-schema-bound-extraction__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:41:38.205306+00:00",
+      "elapsed_s": 35.02,
+      "usage": {
+        "prompt_tokens": 930,
+        "completion_tokens": 834,
+        "total_tokens": 1764,
+        "completion_tokens_details": {
+          "reasoning_tokens": 768
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 930
+      },
+      "response_id": "019fa81a86b34d536d3b8505fe55afba",
+      "raw_content": "\n\n{\n  \"title\": \"mechanism_a1_schema_bound_extraction_001\",\n  \"target_venue\": \"ACL Findings\",\n  \"primary_metric\": \"weak-model enablement lift\",\n  \"evidence_ids\": [\"atom-a1-e01\", \"atom-a1-e02\"]\n}",
+      "parsed_output": {
+        "title": "mechanism_a1_schema_bound_extraction_001",
+        "target_venue": "ACL Findings",
+        "primary_metric": "weak-model enablement lift",
+        "evidence_ids": [
+          "atom-a1-e01",
+          "atom-a1-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a1-schema-bound-extraction__strong_model__G0__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a1-schema-bound-extraction__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:42:17.987748+00:00",
+      "elapsed_s": 39.48,
+      "usage": {
+        "prompt_tokens": 437,
+        "completion_tokens": 904,
+        "total_tokens": 1341,
+        "completion_tokens_details": {
+          "reasoning_tokens": 845
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 437
+      },
+      "response_id": "019fa819ea8180b10e8772bc319f1cac",
+      "raw_content": "\n\n{\n  \"planning\": {\n    \"proposal\": \"NEXT\",\n    \"venue\": \"ACL Findings\",\n    \"metric\": \"weak-model enablement lift\"\n  },\n  \"evidence\": [\"atom-a1-e01\", \"atom-a1-e02\"]\n}",
+      "parsed_output": {
+        "planning": {
+          "proposal": "NEXT",
+          "venue": "ACL Findings",
+          "metric": "weak-model enablement lift"
+        },
+        "evidence": [
+          "atom-a1-e01",
+          "atom-a1-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a1-schema-bound-extraction__strong_model__G2__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a1-schema-bound-extraction__strong_model__G2__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:42:56.378624+00:00",
+      "elapsed_s": 38.09,
+      "usage": {
+        "prompt_tokens": 534,
+        "completion_tokens": 907,
+        "total_tokens": 1441,
+        "completion_tokens_details": {
+          "reasoning_tokens": 852
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 502
+      },
+      "response_id": "019fa81a85f711e8697890f28ff885a1",
+      "raw_content": "\n\n{\n  \"title\": \"NEXT\",\n  \"target_venue\": \"ACL Findings\",\n  \"primary_metric\": \"weak-model enablement lift\",\n  \"evidence_ids\": [\"atom-a1-e01\", \"atom-a1-e02\"]\n}",
+      "parsed_output": {
+        "title": "NEXT",
+        "target_venue": "ACL Findings",
+        "primary_metric": "weak-model enablement lift",
+        "evidence_ids": [
+          "atom-a1-e01",
+          "atom-a1-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a1-schema-bound-extraction__strong_model__G8__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a1-schema-bound-extraction__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:43:52.067598+00:00",
+      "elapsed_s": 55.39,
+      "usage": {
+        "prompt_tokens": 910,
+        "completion_tokens": 1547,
+        "total_tokens": 2457,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1484
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 910
+      },
+      "response_id": "019fa81b1bda14f97171ac76ea2a0da5",
+      "raw_content": "\n\n{\n  \"title\": \"Mechanism Atom A1 Schema-Bound Extraction\",\n  \"target_venue\": \"ACL Findings\",\n  \"primary_metric\": \"weak-model enablement lift\",\n  \"evidence_ids\": [\"atom-a1-e01\", \"atom-a1-e02\"]\n}",
+      "parsed_output": {
+        "title": "Mechanism Atom A1 Schema-Bound Extraction",
+        "target_venue": "ACL Findings",
+        "primary_metric": "weak-model enablement lift",
+        "evidence_ids": [
+          "atom-a1-e01",
+          "atom-a1-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a1-schema-bound-extraction__strong_model__G9__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a1-schema-bound-extraction__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:44:35.216444+00:00",
+      "elapsed_s": 42.85,
+      "usage": {
+        "prompt_tokens": 930,
+        "completion_tokens": 1035,
+        "total_tokens": 1965,
+        "completion_tokens_details": {
+          "reasoning_tokens": 977
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 930
+      },
+      "response_id": "019fa81bf5783d1e4b2b6bc2a27cc2ae",
+      "raw_content": "\n\n{\n  \"title\": \"Schema-Bound Extraction\",\n  \"target_venue\": \"ACL Findings\",\n  \"primary_metric\": \"weak-model enablement lift\",\n  \"evidence_ids\": [\"atom-a1-e01\", \"atom-a1-e02\"]\n}",
+      "parsed_output": {
+        "title": "Schema-Bound Extraction",
+        "target_venue": "ACL Findings",
+        "primary_metric": "weak-model enablement lift",
+        "evidence_ids": [
+          "atom-a1-e01",
+          "atom-a1-e02"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a3-constraint-safe-planning__budget_model__G0__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a3-constraint-safe-planning__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:45:01.764650+00:00",
+      "elapsed_s": 26.25,
+      "usage": {
+        "prompt_tokens": 412,
+        "completion_tokens": 603,
+        "total_tokens": 1015,
+        "completion_tokens_details": {
+          "reasoning_tokens": 460
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 412
+      },
+      "response_id": "019fa81c9e08857ddd5c1b662c801aca",
+      "raw_content": "\n\n{\n  \"task_id\": \"mechanism_a3_constraint_safe_planning_001\",\n  \"planned_actions\": [\n    {\n      \"action\": \"create_file\",\n      \"file_path\": \"research/06_outputs/README.md\",\n      \"content\": \"This is the README for the research outputs directory.\"\n    }\n  ],\n  \"protected_files\": [\n    \"AGENTS.md\"\n  ],\n  \"rationale\": \"The existing AGENTS.md file is protected and must not be overwritten. The missing research/06_outputs/README.md can be safely created as it is not a protected file. The plan avoids any operations that would violate the protected-file constraints.\"\n}",
+      "parsed_output": {
+        "task_id": "mechanism_a3_constraint_safe_planning_001",
+        "planned_actions": [
+          {
+            "action": "create_file",
+            "file_path": "research/06_outputs/README.md",
+            "content": "This is the README for the research outputs directory."
+          }
+        ],
+        "protected_files": [
+          "AGENTS.md"
+        ],
+        "rationale": "The existing AGENTS.md file is protected and must not be overwritten. The missing research/06_outputs/README.md can be safely created as it is not a protected file. The plan avoids any operations that would violate the protected-file constraints."
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0469
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a3-constraint-safe-planning__budget_model__G2__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a3-constraint-safe-planning__budget_model__G2__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:45:30.549449+00:00",
+      "elapsed_s": 28.48,
+      "usage": {
+        "prompt_tokens": 510,
+        "completion_tokens": 734,
+        "total_tokens": 1244,
+        "completion_tokens_details": {
+          "reasoning_tokens": 583
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 510
+      },
+      "response_id": "019fa81d066d41d0edf75fb2757d80d4",
+      "raw_content": "\n\n{\n  \"allowed_actions\": [\n    \"Create research/06_outputs/README.md\",\n    \"Add new files to non-protected directories\",\n    \"Modify files not listed as protected\"\n  ],\n  \"blocked_actions\": [\n    \"Overwrite AGENTS.md\",\n    \"Delete protected files\",\n    \"Modify protected files\"\n  ],\n  \"risks\": [\n    \"Risk of unintentional overwrite of AGENTS.md if action boundaries are misinterpreted\",\n    \"Potential for missing protected file dependencies in the project snapshot\"\n  ],\n  \"next_steps\": [\n    \"Generate content for research/06_outputs/README.md\",\n    \"Verify protected file list against project snapshot\",\n    \"Validate action plan against constraint boundaries\"\n  ]\n}",
+      "parsed_output": {
+        "allowed_actions": [
+          "Create research/06_outputs/README.md",
+          "Add new files to non-protected directories",
+          "Modify files not listed as protected"
+        ],
+        "blocked_actions": [
+          "Overwrite AGENTS.md",
+          "Delete protected files",
+          "Modify protected files"
+        ],
+        "risks": [
+          "Risk of unintentional overwrite of AGENTS.md if action boundaries are misinterpreted",
+          "Potential for missing protected file dependencies in the project snapshot"
+        ],
+        "next_steps": [
+          "Generate content for research/06_outputs/README.md",
+          "Verify protected file list against project snapshot",
+          "Validate action plan against constraint boundaries"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0286
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a3-constraint-safe-planning__budget_model__G8__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a3-constraint-safe-planning__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:46:03.541536+00:00",
+      "elapsed_s": 32.69,
+      "usage": {
+        "prompt_tokens": 864,
+        "completion_tokens": 909,
+        "total_tokens": 1773,
+        "completion_tokens_details": {
+          "reasoning_tokens": 730
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 832
+      },
+      "response_id": "019fa81d7669c717f71ef97ed5a53c06",
+      "raw_content": "\n\n{\n  \"allowed_actions\": [\n    \"Create research/06_outputs/README.md if missing\",\n    \"Add new files to non-protected directories\",\n    \"Generate project structure documentation\"\n  ],\n  \"blocked_actions\": [\n    \"Overwrite AGENTS.md\",\n    \"Modify protected files\",\n    \"Delete existing project files\"\n  ],\n  \"risks\": [\n    \"Risk of constraint violation by overwriting protected AGENTS.md (cited: atom-a3-e02)\",\n    \"Risk of incomplete initialization if missing files are not properly created\"\n  ],\n  \"next_steps\": [\n    \"Verify file system constraints using evidence from atom-a3-e01\",\n    \"Create research/06_outputs/README.md in the project snapshot\",\n    \"Validate new files against protected file restrictions\",\n    \"Document the safe planning process in project logs\"\n  ]\n}",
+      "parsed_output": {
+        "allowed_actions": [
+          "Create research/06_outputs/README.md if missing",
+          "Add new files to non-protected directories",
+          "Generate project structure documentation"
+        ],
+        "blocked_actions": [
+          "Overwrite AGENTS.md",
+          "Modify protected files",
+          "Delete existing project files"
+        ],
+        "risks": [
+          "Risk of constraint violation by overwriting protected AGENTS.md (cited: atom-a3-e02)",
+          "Risk of incomplete initialization if missing files are not properly created"
+        ],
+        "next_steps": [
+          "Verify file system constraints using evidence from atom-a3-e01",
+          "Create research/06_outputs/README.md in the project snapshot",
+          "Validate new files against protected file restrictions",
+          "Document the safe planning process in project logs"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0385
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a3-constraint-safe-planning__budget_model__G9__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a3-constraint-safe-planning__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:46:29.539655+00:00",
+      "elapsed_s": 25.7,
+      "usage": {
+        "prompt_tokens": 884,
+        "completion_tokens": 608,
+        "total_tokens": 1492,
+        "completion_tokens_details": {
+          "reasoning_tokens": 399
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 884
+      },
+      "response_id": "019fa81df7d466876bfb6f2ef3e7e0eb",
+      "raw_content": "\n\n{\n  \"allowed_actions\": [\n    \"Create research/06_outputs/README.md if missing\",\n    \"Reference AGENTS.md without modification\",\n    \"Generate new files in unprotected directories\"\n  ],\n  \"blocked_actions\": [\n    \"Overwrite AGENTS.md\",\n    \"Modify any protected-file metadata\",\n    \"Delete existing project files\",\n    \"Execute scripts in protected directories\"\n  ],\n  \"risks\": [\n    \"Medium risk of accidental constraint violation\",\n    \"Potential for workflow disruption if protected files are altered\",\n    \"Incomplete initialization without proper file creation\"\n  ],\n  \"next_steps\": [\n    \"Verify AGENTS.md exists and is not modified\",\n    \"Create research/06_outputs/README.md if not present\",\n    \"Validate file operations against protected-file constraints\",\n    \"Confirm all required files are properly initialized\"\n  ],\n  \"citations\": {\n    \"allowed_actions\": [\"atom-a3-e01\"],\n    \"blocked_actions\": [\"atom-a3-e02\"]\n  }\n}",
+      "parsed_output": {
+        "allowed_actions": [
+          "Create research/06_outputs/README.md if missing",
+          "Reference AGENTS.md without modification",
+          "Generate new files in unprotected directories"
+        ],
+        "blocked_actions": [
+          "Overwrite AGENTS.md",
+          "Modify any protected-file metadata",
+          "Delete existing project files",
+          "Execute scripts in protected directories"
+        ],
+        "risks": [
+          "Medium risk of accidental constraint violation",
+          "Potential for workflow disruption if protected files are altered",
+          "Incomplete initialization without proper file creation"
+        ],
+        "next_steps": [
+          "Verify AGENTS.md exists and is not modified",
+          "Create research/06_outputs/README.md if not present",
+          "Validate file operations against protected-file constraints",
+          "Confirm all required files are properly initialized"
+        ],
+        "citations": {
+          "allowed_actions": [
+            "atom-a3-e01"
+          ],
+          "blocked_actions": [
+            "atom-a3-e02"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0118
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a3-constraint-safe-planning__strong_model__G0__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a3-constraint-safe-planning__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:46:51.075593+00:00",
+      "elapsed_s": 21.23,
+      "usage": {
+        "prompt_tokens": 412,
+        "completion_tokens": 496,
+        "total_tokens": 908,
+        "completion_tokens_details": {
+          "reasoning_tokens": 342
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 412
+      },
+      "response_id": "019fa81f82d0d311b9ff393196782d7d",
+      "raw_content": "\n\n{\n  \"task_id\": \"mechanism_a3_constraint_safe_planning_001\",\n  \"goal\": \"Plan project initialization without violating protected-file constraints.\",\n  \"plan\": [\n    {\n      \"action\": \"create_file\",\n      \"file_path\": \"research/06_outputs/README.md\",\n      \"content\": \"This is the README for the research/06_outputs directory.\\n\\n# Outputs Directory\\nDocumentation for project outputs and artifacts.\"\n    }\n  ],\n  \"protected_files\": [\n    \"AGENTS.md\"\n  ],\n  \"notes\": \"The existing AGENTS.md file is protected and must not be modified. The missing research/06_outputs/README.md was created with minimal content to avoid conflicts.\"\n}",
+      "parsed_output": {
+        "task_id": "mechanism_a3_constraint_safe_planning_001",
+        "goal": "Plan project initialization without violating protected-file constraints.",
+        "plan": [
+          {
+            "action": "create_file",
+            "file_path": "research/06_outputs/README.md",
+            "content": "This is the README for the research/06_outputs directory.\n\n# Outputs Directory\nDocumentation for project outputs and artifacts."
+          }
+        ],
+        "protected_files": [
+          "AGENTS.md"
+        ],
+        "notes": "The existing AGENTS.md file is protected and must not be modified. The missing research/06_outputs/README.md was created with minimal content to avoid conflicts."
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0448
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a3-constraint-safe-planning__strong_model__G2__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a3-constraint-safe-planning__strong_model__G2__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:47:14.435474+00:00",
+      "elapsed_s": 23.06,
+      "usage": {
+        "prompt_tokens": 510,
+        "completion_tokens": 540,
+        "total_tokens": 1050,
+        "completion_tokens_details": {
+          "reasoning_tokens": 391
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 478
+      },
+      "response_id": "019fa81eb0c5bb17a08eec88047d458d",
+      "raw_content": "\n\n{\n  \"allowed_actions\": [\n    \"Create research/06_outputs/README.md\",\n    \"Add new files to non-protected directories\",\n    \"Modify files not in the AGENTS.md path\"\n  ],\n  \"blocked_actions\": [\n    \"Overwrite AGENTS.md\",\n    \"Modify protected files\",\n    \"Create files in protected directories\"\n  ],\n  \"risks\": [\n    \"Accidental overwrite of AGENTS.md if path is misconfigured\",\n    \"Potential conflict with existing protected file constraints\"\n  ],\n  \"next_steps\": [\n    \"Generate content for research/06_outputs/README.md\",\n    \"Verify file paths against protected directories\",\n    \"Review project structure for additional constraints\"\n  ]\n}",
+      "parsed_output": {
+        "allowed_actions": [
+          "Create research/06_outputs/README.md",
+          "Add new files to non-protected directories",
+          "Modify files not in the AGENTS.md path"
+        ],
+        "blocked_actions": [
+          "Overwrite AGENTS.md",
+          "Modify protected files",
+          "Create files in protected directories"
+        ],
+        "risks": [
+          "Accidental overwrite of AGENTS.md if path is misconfigured",
+          "Potential conflict with existing protected file constraints"
+        ],
+        "next_steps": [
+          "Generate content for research/06_outputs/README.md",
+          "Verify file paths against protected directories",
+          "Review project structure for additional constraints"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0312
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a3-constraint-safe-planning__strong_model__G8__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a3-constraint-safe-planning__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:48:27.377082+00:00",
+      "elapsed_s": 72.64,
+      "usage": {
+        "prompt_tokens": 864,
+        "completion_tokens": 1865,
+        "total_tokens": 2729,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1712
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 832
+      },
+      "response_id": "019fa81f0c130fb49b68a6d6f00d11f3",
+      "raw_content": "\n\n{\n  \"allowed_actions\": [\n    \"Create research/06_outputs/README.md\",\n    \"Add README.md to project structure without modifying protected files\"\n  ],\n  \"blocked_actions\": [\n    \"Overwrite AGENTS.md\",\n    \"Modify existing protected files in the project snapshot\"\n  ],\n  \"risks\": [\n    \"Risk of constraint violation by overwriting AGENTS.md (atom-a3-e02)\",\n    \"Incomplete initialization if protected files are inadvertently altered\"\n  ],\n  \"next_steps\": [\n    \"Generate content for research/06_outputs/README.md\",\n    \"Verify file creation does not conflict with protected files (atom-a3-e01)\",\n    \"Audit project structure for compliance with constraints\"\n  ]\n}",
+      "parsed_output": {
+        "allowed_actions": [
+          "Create research/06_outputs/README.md",
+          "Add README.md to project structure without modifying protected files"
+        ],
+        "blocked_actions": [
+          "Overwrite AGENTS.md",
+          "Modify existing protected files in the project snapshot"
+        ],
+        "risks": [
+          "Risk of constraint violation by overwriting AGENTS.md (atom-a3-e02)",
+          "Incomplete initialization if protected files are inadvertently altered"
+        ],
+        "next_steps": [
+          "Generate content for research/06_outputs/README.md",
+          "Verify file creation does not conflict with protected files (atom-a3-e01)",
+          "Audit project structure for compliance with constraints"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0441
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a3-constraint-safe-planning__strong_model__G9__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a3-constraint-safe-planning__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:48:52.975867+00:00",
+      "elapsed_s": 25.3,
+      "usage": {
+        "prompt_tokens": 884,
+        "completion_tokens": 556,
+        "total_tokens": 1440,
+        "completion_tokens_details": {
+          "reasoning_tokens": 394
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 884
+      },
+      "response_id": "019fa8214f3f3b41d794c9bdbad1852a",
+      "raw_content": "\n\n{\n  \"allowed_actions\": [\n    \"Create research/06_outputs/README.md if it does not exist\",\n    \"Modify non-protected files outside the project snapshot\",\n    \"Generate new documentation without overwriting AGENTS.md\"\n  ],\n  \"blocked_actions\": [\n    \"Overwrite AGENTS.md\",\n    \"Delete protected files\",\n    \"Modify existing project structure files\"\n  ],\n  \"risks\": [\n    \"Risk of constraint violation by overwriting protected AGENTS.md (evidence: atom-a3-e02)\"\n  ],\n  \"next_steps\": [\n    \"Verify file protection status of research/06_outputs/README.md\",\n    \"Proceed with creating missing README.md in designated directory\",\n    \"Validate all actions against the constraint-safe planning protocol\"\n  ]\n}",
+      "parsed_output": {
+        "allowed_actions": [
+          "Create research/06_outputs/README.md if it does not exist",
+          "Modify non-protected files outside the project snapshot",
+          "Generate new documentation without overwriting AGENTS.md"
+        ],
+        "blocked_actions": [
+          "Overwrite AGENTS.md",
+          "Delete protected files",
+          "Modify existing project structure files"
+        ],
+        "risks": [
+          "Risk of constraint violation by overwriting protected AGENTS.md (evidence: atom-a3-e02)"
+        ],
+        "next_steps": [
+          "Verify file protection status of research/06_outputs/README.md",
+          "Proceed with creating missing README.md in designated directory",
+          "Validate all actions against the constraint-safe planning protocol"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.039
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a4-state-inventory__budget_model__G0__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a4-state-inventory__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:49:34.412694+00:00",
+      "elapsed_s": 41.14,
+      "usage": {
+        "prompt_tokens": 414,
+        "completion_tokens": 1034,
+        "total_tokens": 1448,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1000
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 414
+      },
+      "response_id": "019fa8208d1f9f4cb579902a4ce4468c",
+      "raw_content": "\n\n{\n  \"existing_files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n  \"missing_files\": [\"research/06_outputs/README.md\"]\n}",
+      "parsed_output": {
+        "existing_files": [
+          "AGENTS.md",
+          "research/CONTEXT.md"
+        ],
+        "missing_files": [
+          "research/06_outputs/README.md"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a4-state-inventory__budget_model__G2__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a4-state-inventory__budget_model__G2__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:49:53.458126+00:00",
+      "elapsed_s": 18.74,
+      "usage": {
+        "prompt_tokens": 510,
+        "completion_tokens": 469,
+        "total_tokens": 979,
+        "completion_tokens_details": {
+          "reasoning_tokens": 419
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 510
+      },
+      "response_id": "019fa8212ecd5177c63de4685cbb8096",
+      "raw_content": "\n\n{\n  \"existing_files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n  \"missing_files\": [\"research/06_outputs/README.md\"],\n  \"protected_files\": [\"AGENTS.md\"],\n  \"unknown_state\": []\n}",
+      "parsed_output": {
+        "existing_files": [
+          "AGENTS.md",
+          "research/CONTEXT.md"
+        ],
+        "missing_files": [
+          "research/06_outputs/README.md"
+        ],
+        "protected_files": [
+          "AGENTS.md"
+        ],
+        "unknown_state": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a4-state-inventory__budget_model__G8__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a4-state-inventory__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:50:30.712746+00:00",
+      "elapsed_s": 36.95,
+      "usage": {
+        "prompt_tokens": 868,
+        "completion_tokens": 996,
+        "total_tokens": 1864,
+        "completion_tokens_details": {
+          "reasoning_tokens": 899
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 836
+      },
+      "response_id": "019fa821793fe4db2fc5242c22771bc4",
+      "raw_content": "\n\n{\n  \"existing_files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n  \"missing_files\": [\"research/06_outputs/README.md\"],\n  \"protected_files\": [\"AGENTS.md\"],\n  \"unknown_state\": [],\n  \"citations\": {\n    \"existing_files\": [\"atom-a4-e01\"],\n    \"missing_files\": [\"atom-a4-e02\"],\n    \"protected_files\": [\"atom-a4-e01\"]\n  }\n}",
+      "parsed_output": {
+        "existing_files": [
+          "AGENTS.md",
+          "research/CONTEXT.md"
+        ],
+        "missing_files": [
+          "research/06_outputs/README.md"
+        ],
+        "protected_files": [
+          "AGENTS.md"
+        ],
+        "unknown_state": [],
+        "citations": {
+          "existing_files": [
+            "atom-a4-e01"
+          ],
+          "missing_files": [
+            "atom-a4-e02"
+          ],
+          "protected_files": [
+            "atom-a4-e01"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a4-state-inventory__budget_model__G9__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a4-state-inventory__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:52:07.779966+00:00",
+      "elapsed_s": 96.76,
+      "usage": {
+        "prompt_tokens": 888,
+        "completion_tokens": 2379,
+        "total_tokens": 3267,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2329
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 888
+      },
+      "response_id": "019fa8220ab2a4000b9b87cd40d2c57e",
+      "raw_content": "\n\n{\n  \"existing_files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n  \"missing_files\": [\"research/06_outputs/README.md\"],\n  \"protected_files\": [\"AGENTS.md\"],\n  \"unknown_state\": []\n}",
+      "parsed_output": {
+        "existing_files": [
+          "AGENTS.md",
+          "research/CONTEXT.md"
+        ],
+        "missing_files": [
+          "research/06_outputs/README.md"
+        ],
+        "protected_files": [
+          "AGENTS.md"
+        ],
+        "unknown_state": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a4-state-inventory__strong_model__G0__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a4-state-inventory__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:52:34.474522+00:00",
+      "elapsed_s": 26.39,
+      "usage": {
+        "prompt_tokens": 414,
+        "completion_tokens": 639,
+        "total_tokens": 1053,
+        "completion_tokens_details": {
+          "reasoning_tokens": 588
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 414
+      },
+      "response_id": "019fa8238611af1582c4f58d4e7172c9",
+      "raw_content": "\n\n{\n  \"state\": {\n    \"existing_files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n    \"missing_files\": [\"research/06_outputs/README.md\"],\n    \"protected_files\": [\"AGENTS.md\"]\n  }\n}",
+      "parsed_output": {
+        "state": {
+          "existing_files": [
+            "AGENTS.md",
+            "research/CONTEXT.md"
+          ],
+          "missing_files": [
+            "research/06_outputs/README.md"
+          ],
+          "protected_files": [
+            "AGENTS.md"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a4-state-inventory__strong_model__G2__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a4-state-inventory__strong_model__G2__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:52:59.928374+00:00",
+      "elapsed_s": 25.15,
+      "usage": {
+        "prompt_tokens": 510,
+        "completion_tokens": 578,
+        "total_tokens": 1088,
+        "completion_tokens_details": {
+          "reasoning_tokens": 528
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 510
+      },
+      "response_id": "019fa823ee52424351c867d2ff6dd8d2",
+      "raw_content": "\n\n{\n  \"existing_files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n  \"missing_files\": [\"research/06_outputs/README.md\"],\n  \"protected_files\": [\"AGENTS.md\"],\n  \"unknown_state\": []\n}",
+      "parsed_output": {
+        "existing_files": [
+          "AGENTS.md",
+          "research/CONTEXT.md"
+        ],
+        "missing_files": [
+          "research/06_outputs/README.md"
+        ],
+        "protected_files": [
+          "AGENTS.md"
+        ],
+        "unknown_state": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a4-state-inventory__strong_model__G8__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a4-state-inventory__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:53:28.402255+00:00",
+      "elapsed_s": 28.17,
+      "usage": {
+        "prompt_tokens": 868,
+        "completion_tokens": 747,
+        "total_tokens": 1615,
+        "completion_tokens_details": {
+          "reasoning_tokens": 650
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 836
+      },
+      "response_id": "019fa82451dd3a46742baa7d4309d249",
+      "raw_content": "\n\n{\n  \"existing_files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n  \"missing_files\": [\"research/06_outputs/README.md\"],\n  \"protected_files\": [\"AGENTS.md\"],\n  \"unknown_state\": [],\n  \"citations\": {\n    \"existing_files\": [\"atom-a4-e01\"],\n    \"missing_files\": [\"atom-a4-e01\"],\n    \"protected_files\": [\"atom-a4-e01\"]\n  }\n}",
+      "parsed_output": {
+        "existing_files": [
+          "AGENTS.md",
+          "research/CONTEXT.md"
+        ],
+        "missing_files": [
+          "research/06_outputs/README.md"
+        ],
+        "protected_files": [
+          "AGENTS.md"
+        ],
+        "unknown_state": [],
+        "citations": {
+          "existing_files": [
+            "atom-a4-e01"
+          ],
+          "missing_files": [
+            "atom-a4-e01"
+          ],
+          "protected_files": [
+            "atom-a4-e01"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a4-state-inventory__strong_model__G9__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a4-state-inventory__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:54:08.540007+00:00",
+      "elapsed_s": 39.84,
+      "usage": {
+        "prompt_tokens": 888,
+        "completion_tokens": 882,
+        "total_tokens": 1770,
+        "completion_tokens_details": {
+          "reasoning_tokens": 785
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 856
+      },
+      "response_id": "019fa824c0cd5a82d300e87c061c0aa1",
+      "raw_content": "\n\n{\n  \"existing_files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n  \"missing_files\": [\"research/06_outputs/README.md\"],\n  \"protected_files\": [\"AGENTS.md\"],\n  \"unknown_state\": [],\n  \"citations\": {\n    \"existing_files\": [\"atom-a4-e01\"],\n    \"missing_files\": [\"atom-a4-e01\"],\n    \"protected_files\": [\"atom-a4-e01\"]\n  }\n}",
+      "parsed_output": {
+        "existing_files": [
+          "AGENTS.md",
+          "research/CONTEXT.md"
+        ],
+        "missing_files": [
+          "research/06_outputs/README.md"
+        ],
+        "protected_files": [
+          "AGENTS.md"
+        ],
+        "unknown_state": [],
+        "citations": {
+          "existing_files": [
+            "atom-a4-e01"
+          ],
+          "missing_files": [
+            "atom-a4-e01"
+          ],
+          "protected_files": [
+            "atom-a4-e01"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a6-validator-repair__budget_model__G0__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a6-validator-repair__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:55:13.388389+00:00",
+      "elapsed_s": 64.55,
+      "usage": {
+        "prompt_tokens": 410,
+        "completion_tokens": 1529,
+        "total_tokens": 1939,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1515
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 410
+      },
+      "response_id": "019fa8255dc5fa5aa572917c979afc35",
+      "raw_content": "\n\n{\"evidence_ids\": \"atom-a6-e01\"}",
+      "parsed_output": {
+        "evidence_ids": "atom-a6-e01"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a6-validator-repair__budget_model__G2__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a6-validator-repair__budget_model__G2__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:55:41.002808+00:00",
+      "elapsed_s": 27.31,
+      "usage": {
+        "prompt_tokens": 515,
+        "completion_tokens": 742,
+        "total_tokens": 1257,
+        "completion_tokens_details": {
+          "reasoning_tokens": 561
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 515
+      },
+      "response_id": "019fa8265ae9a1c45cfdb316917fae49",
+      "raw_content": "\n\n{\n  \"repaired_output\": {\n    \"evidence_ids\": [\"atom-a6-e01\"],\n    \"claim\": \"The system requires evidence_ids for validation.\",\n    \"evidence\": \"ValidatorGate identified missing evidence_ids field.\"\n  },\n  \"repair_trace\": [\n    {\n      \"step\": \"detect\",\n      \"mechanism\": \"ValidatorGate\",\n      \"action\": \"Identified missing 'evidence_ids' field in output\",\n      \"justification\": \"Validator feedback explicitly requested addition of evidence_ids using atom-a6-e01\"\n    },\n    {\n      \"step\": \"repair\",\n      \"mechanism\": \"ValidatorGate\",\n      \"action\": \"Inserted evidence_ids from atom-a6-e01\",\n      \"justification\": \"Preserved existing valid fields while adding required evidence_ids\"\n    }\n  ],\n  \"remaining_warnings\": []\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "evidence_ids": [
+            "atom-a6-e01"
+          ],
+          "claim": "The system requires evidence_ids for validation.",
+          "evidence": "ValidatorGate identified missing evidence_ids field."
+        },
+        "repair_trace": [
+          {
+            "step": "detect",
+            "mechanism": "ValidatorGate",
+            "action": "Identified missing 'evidence_ids' field in output",
+            "justification": "Validator feedback explicitly requested addition of evidence_ids using atom-a6-e01"
+          },
+          {
+            "step": "repair",
+            "mechanism": "ValidatorGate",
+            "action": "Inserted evidence_ids from atom-a6-e01",
+            "justification": "Preserved existing valid fields while adding required evidence_ids"
+          }
+        ],
+        "remaining_warnings": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a6-validator-repair__budget_model__G8__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a6-validator-repair__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:56:52.453612+00:00",
+      "elapsed_s": 71.15,
+      "usage": {
+        "prompt_tokens": 864,
+        "completion_tokens": 1971,
+        "total_tokens": 2835,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1878
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 864
+      },
+      "response_id": "019fa827ed20a22d46e31e44df34ba8c",
+      "raw_content": "\n\n{\n  \"repaired_output\": {\n    \"evidence_ids\": [\n      \"atom-a6-e01\"\n    ]\n  },\n  \"repair_trace\": [\n    {\n      \"step_id\": \"step_1\",\n      \"action\": \"Added evidence_ids field using atom-a6-e01 as per ValidatorGate mechanism feedback\",\n      \"citation\": \"atom-a6-e01\"\n    }\n  ],\n  \"remaining_warnings\": []\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "evidence_ids": [
+            "atom-a6-e01"
+          ]
+        },
+        "repair_trace": [
+          {
+            "step_id": "step_1",
+            "action": "Added evidence_ids field using atom-a6-e01 as per ValidatorGate mechanism feedback",
+            "citation": "atom-a6-e01"
+          }
+        ],
+        "remaining_warnings": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a6-validator-repair__budget_model__G9__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a6-validator-repair__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:57:46.354614+00:00",
+      "elapsed_s": 53.6,
+      "usage": {
+        "prompt_tokens": 884,
+        "completion_tokens": 1355,
+        "total_tokens": 2239,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1229
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 852
+      },
+      "response_id": "019fa827de057fc7c233dae8b27fa940",
+      "raw_content": "\n\n{\n  \"repaired_output\": {\n    \"evidence_ids\": [\"atom-a6-e01\"],\n    \"other_valid_fields\": {\n      \"composition_role\": \"Shared\"\n    }\n  },\n  \"repair_trace\": [\n    {\n      \"action\": \"add_evidence_ids\",\n      \"reason\": \"Validator feedback required evidence_ids for important claims\",\n      \"evidence_used\": [\"atom-a6-e01\"]\n    },\n    {\n      \"action\": \"preserve_fields\",\n      \"reason\": \"Existing valid fields must remain unchanged per validator instructions\"\n    }\n  ],\n  \"remaining_warnings\": []\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "evidence_ids": [
+            "atom-a6-e01"
+          ],
+          "other_valid_fields": {
+            "composition_role": "Shared"
+          }
+        },
+        "repair_trace": [
+          {
+            "action": "add_evidence_ids",
+            "reason": "Validator feedback required evidence_ids for important claims",
+            "evidence_used": [
+              "atom-a6-e01"
+            ]
+          },
+          {
+            "action": "preserve_fields",
+            "reason": "Existing valid fields must remain unchanged per validator instructions"
+          }
+        ],
+        "remaining_warnings": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a6-validator-repair__strong_model__G0__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a6-validator-repair__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:58:16.540115+00:00",
+      "elapsed_s": 29.88,
+      "usage": {
+        "prompt_tokens": 410,
+        "completion_tokens": 1054,
+        "total_tokens": 1464,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1037
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 410
+      },
+      "response_id": "019fa828b0b69bddab15402d16ba3a70",
+      "raw_content": "\n\n{\n  \"evidence_ids\": [\"atom-a6-e01\"]\n}",
+      "parsed_output": {
+        "evidence_ids": [
+          "atom-a6-e01"
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a6-validator-repair__strong_model__G2__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a6-validator-repair__strong_model__G2__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T09:59:06.928690+00:00",
+      "elapsed_s": 50.09,
+      "usage": {
+        "prompt_tokens": 515,
+        "completion_tokens": 1321,
+        "total_tokens": 1836,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1233
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 483
+      },
+      "response_id": "019fa82926758052d816bc1e793f551b",
+      "raw_content": "\n\n{\n  \"repaired_output\": {\n    \"evidence_ids\": \"atom-a6-e01\"\n  },\n  \"repair_trace\": [\n    \"ValidatorGate detected missing 'evidence_ids' field in output\",\n    \"Added 'evidence_ids' field using atom-a6-e01 as specified in feedback\",\n    \"Preserved all existing valid fields from original output\"\n  ],\n  \"remaining_warnings\": []\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "evidence_ids": "atom-a6-e01"
+        },
+        "repair_trace": [
+          "ValidatorGate detected missing 'evidence_ids' field in output",
+          "Added 'evidence_ids' field using atom-a6-e01 as specified in feedback",
+          "Preserved all existing valid fields from original output"
+        ],
+        "remaining_warnings": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a6-validator-repair__strong_model__G8__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a6-validator-repair__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T10:00:29.692685+00:00",
+      "elapsed_s": 82.46,
+      "usage": {
+        "prompt_tokens": 864,
+        "completion_tokens": 2075,
+        "total_tokens": 2939,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1927
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 864
+      },
+      "response_id": "019fa829eb48d94ebd48daf0e153ec5b",
+      "raw_content": "\n\n{\n  \"repaired_output\": {\n    \"evidence_ids\": [\"atom-a6-e01\"],\n    \"claim\": \"Primary evidence for Validator Repair.\"\n  },\n  \"repair_trace\": [\n    {\n      \"action\": \"add_evidence_ids\",\n      \"evidence_used\": \"atom-a6-e01\",\n      \"reason\": \"Validator feedback explicitly requested adding evidence_ids using atom-a6-e01. The EXTRACTED evidence from the bundle provides the necessary identifier for repair.\",\n      \"citation\": \"evidence_bundle_id: ev_mechanism_a6_validator_repair_001, evidence_id: atom-a6-e01\"\n    }\n  ],\n  \"remaining_warnings\": []\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "evidence_ids": [
+            "atom-a6-e01"
+          ],
+          "claim": "Primary evidence for Validator Repair."
+        },
+        "repair_trace": [
+          {
+            "action": "add_evidence_ids",
+            "evidence_used": "atom-a6-e01",
+            "reason": "Validator feedback explicitly requested adding evidence_ids using atom-a6-e01. The EXTRACTED evidence from the bundle provides the necessary identifier for repair.",
+            "citation": "evidence_bundle_id: ev_mechanism_a6_validator_repair_001, evidence_id: atom-a6-e01"
+          }
+        ],
+        "remaining_warnings": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0172
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a6-validator-repair__strong_model__G9__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a6-validator-repair__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T10:01:08.211023+00:00",
+      "elapsed_s": 38.22,
+      "usage": {
+        "prompt_tokens": 884,
+        "completion_tokens": 938,
+        "total_tokens": 1822,
+        "completion_tokens_details": {
+          "reasoning_tokens": 830
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 884
+      },
+      "response_id": "019fa82b2ea709e77617e73d714362f0",
+      "raw_content": "\n\n{\n  \"repaired_output\": {\n    \"evidence_ids\": [\"atom-a6-e01\"],\n    \"claim\": \"Primary evidence for Validator Repair.\"\n  },\n  \"repair_trace\": [\n    {\n      \"action\": \"add_evidence_ids\",\n      \"reason\": \"Validator feedback required adding evidence_ids using atom-a6-e01\",\n      \"evidence_used\": [\"atom-a6-e01\"],\n      \"source\": \"a6-fixture\"\n    }\n  ],\n  \"remaining_warnings\": []\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "evidence_ids": [
+            "atom-a6-e01"
+          ],
+          "claim": "Primary evidence for Validator Repair."
+        },
+        "repair_trace": [
+          {
+            "action": "add_evidence_ids",
+            "reason": "Validator feedback required adding evidence_ids using atom-a6-e01",
+            "evidence_used": [
+              "atom-a6-e01"
+            ],
+            "source": "a6-fixture"
+          }
+        ],
+        "remaining_warnings": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a8-evidence-type-separation__budget_model__G0__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a8-evidence-type-separation__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T10:01:32.583864+00:00",
+      "elapsed_s": 24.07,
+      "usage": {
+        "prompt_tokens": 420,
+        "completion_tokens": 536,
+        "total_tokens": 956,
+        "completion_tokens_details": {
+          "reasoning_tokens": 427
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 420
+      },
+      "response_id": "019fa82bc514a16c49f58383fc58d006",
+      "raw_content": "\n\n{\n  \"classified_claims\": [\n    {\n      \"claim\": \"Directly measured result\",\n      \"evidence_type\": \"direct_measurement\"\n    },\n    {\n      \"claim\": \"Inference from multiple slices\",\n      \"evidence_type\": \"inference\"\n    },\n    {\n      \"claim\": \"Unresolved risk\",\n      \"evidence_type\": \"unresolved_risk\"\n    },\n    {\n      \"claim\": \"Recommended next action\",\n      \"evidence_type\": \"recommendation\"\n    }\n  ]\n}",
+      "parsed_output": {
+        "classified_claims": [
+          {
+            "claim": "Directly measured result",
+            "evidence_type": "direct_measurement"
+          },
+          {
+            "claim": "Inference from multiple slices",
+            "evidence_type": "inference"
+          },
+          {
+            "claim": "Unresolved risk",
+            "evidence_type": "unresolved_risk"
+          },
+          {
+            "claim": "Recommended next action",
+            "evidence_type": "recommendation"
+          }
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a8-evidence-type-separation__budget_model__G2__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a8-evidence-type-separation__budget_model__G2__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T10:02:00.419087+00:00",
+      "elapsed_s": 27.53,
+      "usage": {
+        "prompt_tokens": 515,
+        "completion_tokens": 647,
+        "total_tokens": 1162,
+        "completion_tokens_details": {
+          "reasoning_tokens": 447
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 515
+      },
+      "response_id": "019fa82c24758a7356d5a6444137153c",
+      "raw_content": "\n\n{\n  \"extracted\": [\n    {\n      \"claim\": \"The temperature was measured at 25°C.\",\n      \"citation\": \"mem_mechanism_a8_evidence_type_separation_001\"\n    }\n  ],\n  \"inferred\": [\n    {\n      \"claim\": \"The system is likely experiencing a hardware failure based on multiple error logs.\",\n      \"citation\": \"mem_mechanism_a8_evidence_type_separation_001\"\n    }\n  ],\n  \"ambiguous\": [\n    {\n      \"claim\": \"There is uncertainty regarding the exact cause of the performance degradation.\",\n      \"citation\": \"mem_mechanism_a8_evidence_type_separation_001\"\n    }\n  ],\n  \"proposed\": [\n    {\n      \"claim\": \"Run a diagnostic scan to identify potential hardware issues.\",\n      \"citation\": \"mem_mechanism_a8_evidence_type_separation_001\"\n    }\n  ]\n}",
+      "parsed_output": {
+        "extracted": [
+          {
+            "claim": "The temperature was measured at 25°C.",
+            "citation": "mem_mechanism_a8_evidence_type_separation_001"
+          }
+        ],
+        "inferred": [
+          {
+            "claim": "The system is likely experiencing a hardware failure based on multiple error logs.",
+            "citation": "mem_mechanism_a8_evidence_type_separation_001"
+          }
+        ],
+        "ambiguous": [
+          {
+            "claim": "There is uncertainty regarding the exact cause of the performance degradation.",
+            "citation": "mem_mechanism_a8_evidence_type_separation_001"
+          }
+        ],
+        "proposed": [
+          {
+            "claim": "Run a diagnostic scan to identify potential hardware issues.",
+            "citation": "mem_mechanism_a8_evidence_type_separation_001"
+          }
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0167
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a8-evidence-type-separation__budget_model__G8__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a8-evidence-type-separation__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "error": "The read operation timed out",
+      "elapsed_s": 242.1
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a8-evidence-type-separation__budget_model__G9__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a8-evidence-type-separation__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "error": "The read operation timed out",
+      "elapsed_s": 242.08
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a8-evidence-type-separation__strong_model__G0__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a8-evidence-type-separation__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T10:10:35.934136+00:00",
+      "elapsed_s": 30.43,
+      "usage": {
+        "prompt_tokens": 420,
+        "completion_tokens": 800,
+        "total_tokens": 1220,
+        "completion_tokens_details": {
+          "reasoning_tokens": 684
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 388
+      },
+      "response_id": "019fa8351d083f0910e48992d6df9d30",
+      "raw_content": "\n\n{\n  \"classification\": {\n    \"directly_measured_result\": \"fact\",\n    \"inference_from_multiple_slices\": \"inference\",\n    \"unresolved_risk\": \"risk\",\n    \"recommended_next_action\": \"recommendation\"\n  },\n  \"evidence_types\": {\n    \"fact\": \"Directly measured results are verifiable observations\",\n    \"inference\": \"Conclusions drawn from multiple data slices\",\n    \"risk\": \"Unresolved potential threats or uncertainties\",\n    \"recommendation\": \"Actionable steps suggested based on analysis\"\n  }\n}",
+      "parsed_output": {
+        "classification": {
+          "directly_measured_result": "fact",
+          "inference_from_multiple_slices": "inference",
+          "unresolved_risk": "risk",
+          "recommended_next_action": "recommendation"
+        },
+        "evidence_types": {
+          "fact": "Directly measured results are verifiable observations",
+          "inference": "Conclusions drawn from multiple data slices",
+          "risk": "Unresolved potential threats or uncertainties",
+          "recommendation": "Actionable steps suggested based on analysis"
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a8-evidence-type-separation__strong_model__G2__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a8-evidence-type-separation__strong_model__G2__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T10:12:13.705307+00:00",
+      "elapsed_s": 97.47,
+      "usage": {
+        "prompt_tokens": 515,
+        "completion_tokens": 2379,
+        "total_tokens": 2894,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2252
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 515
+      },
+      "response_id": "019fa8346ee8c7a5d110271a3f8003c6",
+      "raw_content": "\n\n{\n  \"extracted\": [\n    {\n      \"claim\": \"Directly measured result\",\n      \"citation\": \"fixture_direct_measurement\"\n    }\n  ],\n  \"inferred\": [\n    {\n      \"claim\": \"Inference from multiple slices\",\n      \"citation\": \"fixture_slice_analysis\"\n    }\n  ],\n  \"ambiguous\": [\n    {\n      \"claim\": \"Unresolved risk\",\n      \"citation\": \"fixture_risk_unknown\"\n    }\n  ],\n  \"proposed\": [\n    {\n      \"claim\": \"Recommended next action\",\n      \"citation\": \"fixture_action_suggestion\"\n    }\n  ]\n}",
+      "parsed_output": {
+        "extracted": [
+          {
+            "claim": "Directly measured result",
+            "citation": "fixture_direct_measurement"
+          }
+        ],
+        "inferred": [
+          {
+            "claim": "Inference from multiple slices",
+            "citation": "fixture_slice_analysis"
+          }
+        ],
+        "ambiguous": [
+          {
+            "claim": "Unresolved risk",
+            "citation": "fixture_risk_unknown"
+          }
+        ],
+        "proposed": [
+          {
+            "claim": "Recommended next action",
+            "citation": "fixture_action_suggestion"
+          }
+        ]
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a8-evidence-type-separation__strong_model__G8__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a8-evidence-type-separation__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T10:15:48.464412+00:00",
+      "elapsed_s": 214.46,
+      "usage": {
+        "prompt_tokens": 870,
+        "completion_tokens": 2277,
+        "total_tokens": 3147,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2228
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 870
+      },
+      "response_id": "019fa837c9b9b139e7e0a32b602c0757",
+      "raw_content": "\n\n{\n  \"extracted\": [\n    \"Primary evidence for Evidence-Type Separation.\"\n  ],\n  \"inferred\": [\n    \"Supporting evidence for Type leakage.\"\n  ],\n  \"ambiguous\": [],\n  \"proposed\": []\n}",
+      "parsed_output": {
+        "extracted": [
+          "Primary evidence for Evidence-Type Separation."
+        ],
+        "inferred": [
+          "Supporting evidence for Type leakage."
+        ],
+        "ambiguous": [],
+        "proposed": []
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-first-batch__a8-evidence-type-separation__strong_model__G9__r1",
+      "stage": "mechanism-atoms-first-batch",
+      "frozen_run_name": "a8-evidence-type-separation__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "error": "The read operation timed out",
+      "elapsed_s": 242.12
+    }
+  ]
+}

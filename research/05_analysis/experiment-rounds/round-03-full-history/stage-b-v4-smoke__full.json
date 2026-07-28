@@ -1,0 +1,410 @@
+{
+  "stage": "stage-b-v4-smoke",
+  "total_runs": 8,
+  "json_parsed": 8,
+  "matched_frozen_high_similarity": 5,
+  "frozen_task_success_1_count": 0,
+  "timestamp": "2026-07-28T15:44:40.914776+00:00",
+  "runs": [
+    {
+      "run_id": "stage-b-v4-smoke__b4a-evidence-array-immutability--canonical__budget_model__G9__r1",
+      "stage": "stage-b-v4-smoke",
+      "frozen_run_name": "b4a-evidence-array-immutability--canonical__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:41:34.278134+00:00",
+      "elapsed_s": 49.52,
+      "usage": {
+        "prompt_tokens": 1246,
+        "completion_tokens": 1295,
+        "total_tokens": 2541,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1103
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1246
+      },
+      "response_id": "019fa962b338f697f32e3b9b82a2475d",
+      "raw_content": "\n\n{\n  \"grounded_claims\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"claim\": \"The local gate passed before provider execution.\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"claim\": \"The proposed stressor remains blocked pending a targeted smoke.\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"claim\": \"The next decision must preserve both the method rule and the backlog state.\",\n      \"evidence_ids\": [\n        \"ev-07\",\n        \"ev-08\"\n      ]\n    }\n  ],\n  \"immutability_check\": {\n    \"status\": \"preserved\",\n    \"immutable_fields\": [\n      \"slot_id\",\n      \"evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "grounded_claims": [
+          {
+            "slot_id": "claim_alpha",
+            "claim": "The local gate passed before provider execution.",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "claim": "The proposed stressor remains blocked pending a targeted smoke.",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "claim": "The next decision must preserve both the method rule and the backlog state.",
+            "evidence_ids": [
+              "ev-07",
+              "ev-08"
+            ]
+          }
+        ],
+        "immutability_check": {
+          "status": "preserved",
+          "immutable_fields": [
+            "slot_id",
+            "evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "stage-b-v4-smoke__b4a-evidence-array-immutability--canonical__budget_model__G9__r2",
+      "stage": "stage-b-v4-smoke",
+      "frozen_run_name": "b4a-evidence-array-immutability--canonical__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:42:06.597966+00:00",
+      "elapsed_s": 32.02,
+      "usage": {
+        "prompt_tokens": 1246,
+        "completion_tokens": 877,
+        "total_tokens": 2123,
+        "completion_tokens_details": {
+          "reasoning_tokens": 685
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1246
+      },
+      "response_id": "019fa96375d7d28395fe24733cdafaa6",
+      "raw_content": "\n\n{\n  \"grounded_claims\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"claim\": \"The local gate passed before provider execution.\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"claim\": \"The proposed stressor remains blocked pending a targeted smoke.\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"claim\": \"The next decision must preserve both the method rule and the backlog state.\",\n      \"evidence_ids\": [\n        \"ev-07\",\n        \"ev-08\"\n      ]\n    }\n  ],\n  \"immutability_check\": {\n    \"status\": \"preserved\",\n    \"immutable_fields\": [\n      \"slot_id\",\n      \"evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "grounded_claims": [
+          {
+            "slot_id": "claim_alpha",
+            "claim": "The local gate passed before provider execution.",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "claim": "The proposed stressor remains blocked pending a targeted smoke.",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "claim": "The next decision must preserve both the method rule and the backlog state.",
+            "evidence_ids": [
+              "ev-07",
+              "ev-08"
+            ]
+          }
+        ],
+        "immutability_check": {
+          "status": "preserved",
+          "immutable_fields": [
+            "slot_id",
+            "evidence_ids"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "stage-b-v4-smoke__b4a-evidence-array-immutability--declared-field-alias__budget_model__G9__r1",
+      "stage": "stage-b-v4-smoke",
+      "frozen_run_name": "b4a-evidence-array-immutability--declared-field-alias__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:42:50.511945+00:00",
+      "elapsed_s": 43.61,
+      "usage": {
+        "prompt_tokens": 1257,
+        "completion_tokens": 1248,
+        "total_tokens": 2505,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1060
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1257
+      },
+      "response_id": "019fa963f41b56720b4af149d4714bd5",
+      "raw_content": "\n\n{\n  \"grounded_claims\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"claim\": \"The local gate passed before provider execution.\",\n      \"source_references\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"claim\": \"The proposed stressor remains blocked pending a targeted smoke.\",\n      \"source_references\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"claim\": \"The next decision must preserve both the method rule and the backlog state.\",\n      \"source_references\": [\n        \"ev-07\",\n        \"ev-08\"\n      ]\n    }\n  ],\n  \"immutability_check\": {\n    \"status\": \"preserved\",\n    \"immutable_fields\": [\n      \"slot_id\",\n      \"source_references\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "grounded_claims": [
+          {
+            "slot_id": "claim_alpha",
+            "claim": "The local gate passed before provider execution.",
+            "source_references": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "claim": "The proposed stressor remains blocked pending a targeted smoke.",
+            "source_references": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "claim": "The next decision must preserve both the method rule and the backlog state.",
+            "source_references": [
+              "ev-07",
+              "ev-08"
+            ]
+          }
+        ],
+        "immutability_check": {
+          "status": "preserved",
+          "immutable_fields": [
+            "slot_id",
+            "source_references"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "stage-b-v4-smoke__b4a-evidence-array-immutability--declared-field-alias__budget_model__G9__r2",
+      "stage": "stage-b-v4-smoke",
+      "frozen_run_name": "b4a-evidence-array-immutability--declared-field-alias__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:43:25.370272+00:00",
+      "elapsed_s": 34.56,
+      "usage": {
+        "prompt_tokens": 1257,
+        "completion_tokens": 954,
+        "total_tokens": 2211,
+        "completion_tokens_details": {
+          "reasoning_tokens": 766
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1257
+      },
+      "response_id": "019fa9649f9a0bfc8938ee19058dd0f3",
+      "raw_content": "\n\n{\n  \"grounded_claims\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"claim\": \"The local gate passed before provider execution.\",\n      \"source_references\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"claim\": \"The proposed stressor remains blocked pending a targeted smoke.\",\n      \"source_references\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"claim\": \"The next decision must preserve both the method rule and the backlog state.\",\n      \"source_references\": [\n        \"ev-07\",\n        \"ev-08\"\n      ]\n    }\n  ],\n  \"immutability_check\": {\n    \"status\": \"preserved\",\n    \"immutable_fields\": [\n      \"slot_id\",\n      \"source_references\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "grounded_claims": [
+          {
+            "slot_id": "claim_alpha",
+            "claim": "The local gate passed before provider execution.",
+            "source_references": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "claim": "The proposed stressor remains blocked pending a targeted smoke.",
+            "source_references": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "claim": "The next decision must preserve both the method rule and the backlog state.",
+            "source_references": [
+              "ev-07",
+              "ev-08"
+            ]
+          }
+        ],
+        "immutability_check": {
+          "status": "preserved",
+          "immutable_fields": [
+            "slot_id",
+            "source_references"
+          ]
+        }
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "stage-b-v4-smoke__b4b-closed-vocabulary-retention--canonical__budget_model__G9__r1",
+      "stage": "stage-b-v4-smoke",
+      "frozen_run_name": "b4b-closed-vocabulary-retention--canonical__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:43:52.262698+00:00",
+      "elapsed_s": 26.59,
+      "usage": {
+        "prompt_tokens": 871,
+        "completion_tokens": 707,
+        "total_tokens": 1578,
+        "completion_tokens_details": {
+          "reasoning_tokens": 652
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 839
+      },
+      "response_id": "019fa96527c1f9dc62921905826dbf89",
+      "raw_content": "\n\n{\"state_inventory\":{\"unknown_state\":[\"current_git_branch\",\"ci_status\",\"network_api_approval\"],\"forbidden_inferences\":[\"do_not_infer_current_git_branch\",\"do_not_infer_ci_status\",\"do_not_infer_network_api_approval\"]},\"retention_status\":\"preserved\"}",
+      "parsed_output": {
+        "state_inventory": {
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status",
+            "network_api_approval"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status",
+            "do_not_infer_network_api_approval"
+          ]
+        },
+        "retention_status": "preserved"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "stage-b-v4-smoke__b4b-closed-vocabulary-retention--canonical__budget_model__G9__r2",
+      "stage": "stage-b-v4-smoke",
+      "frozen_run_name": "b4b-closed-vocabulary-retention--canonical__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:44:06.949733+00:00",
+      "elapsed_s": 14.39,
+      "usage": {
+        "prompt_tokens": 871,
+        "completion_tokens": 407,
+        "total_tokens": 1278,
+        "completion_tokens_details": {
+          "reasoning_tokens": 352
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 871
+      },
+      "response_id": "019fa966b868ba18e0f660e28cab86ab",
+      "raw_content": "\n\n{\"state_inventory\":{\"unknown_state\":[\"current_git_branch\",\"ci_status\",\"network_api_approval\"],\"forbidden_inferences\":[\"do_not_infer_current_git_branch\",\"do_not_infer_ci_status\",\"do_not_infer_network_api_approval\"]},\"retention_status\":\"preserved\"}",
+      "parsed_output": {
+        "state_inventory": {
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status",
+            "network_api_approval"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status",
+            "do_not_infer_network_api_approval"
+          ]
+        },
+        "retention_status": "preserved"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "stage-b-v4-smoke__b4b-closed-vocabulary-retention--paraphrased__budget_model__G9__r1",
+      "stage": "stage-b-v4-smoke",
+      "frozen_run_name": "b4b-closed-vocabulary-retention--paraphrased__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:44:25.670150+00:00",
+      "elapsed_s": 18.42,
+      "usage": {
+        "prompt_tokens": 904,
+        "completion_tokens": 530,
+        "total_tokens": 1434,
+        "completion_tokens_details": {
+          "reasoning_tokens": 436
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 32,
+        "prompt_cache_miss_tokens": 872
+      },
+      "response_id": "019fa965ca45a87e39d26fb03d97dd80",
+      "raw_content": "\n\n{\n  \"state_inventory\": {\n    \"unknown_state\": [\n      \"branch_currently_checked_out\",\n      \"continuous_integration_result\",\n      \"permission_to_use_external_model_api\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_guess_branch_currently_checked_out\",\n      \"do_not_guess_continuous_integration_result\",\n      \"do_not_guess_permission_to_use_external_model_api\"\n    ]\n  },\n  \"retention_status\": \"preserved\"\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "unknown_state": [
+            "branch_currently_checked_out",
+            "continuous_integration_result",
+            "permission_to_use_external_model_api"
+          ],
+          "forbidden_inferences": [
+            "do_not_guess_branch_currently_checked_out",
+            "do_not_guess_continuous_integration_result",
+            "do_not_guess_permission_to_use_external_model_api"
+          ]
+        },
+        "retention_status": "preserved"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "stage-b-v4-smoke__b4b-closed-vocabulary-retention--paraphrased__budget_model__G9__r2",
+      "stage": "stage-b-v4-smoke",
+      "frozen_run_name": "b4b-closed-vocabulary-retention--paraphrased__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-28T15:44:40.614401+00:00",
+      "elapsed_s": 14.64,
+      "usage": {
+        "prompt_tokens": 904,
+        "completion_tokens": 415,
+        "total_tokens": 1319,
+        "completion_tokens_details": {
+          "reasoning_tokens": 351
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 904
+      },
+      "response_id": "019fa966136c5db5a41dfe589541cdc5",
+      "raw_content": "\n\n{\"state_inventory\":{\"unknown_state\":[\"branch_currently_checked_out\",\"continuous_integration_result\",\"permission_to_use_external_model_api\"],\"forbidden_inferences\":[\"do_not_guess_branch_currently_checked_out\",\"do_not_guess_continuous_integration_result\",\"do_not_guess_permission_to_use_external_model_api\"]},\"retention_status\":\"preserved\"}",
+      "parsed_output": {
+        "state_inventory": {
+          "unknown_state": [
+            "branch_currently_checked_out",
+            "continuous_integration_result",
+            "permission_to_use_external_model_api"
+          ],
+          "forbidden_inferences": [
+            "do_not_guess_branch_currently_checked_out",
+            "do_not_guess_continuous_integration_result",
+            "do_not_guess_permission_to_use_external_model_api"
+          ]
+        },
+        "retention_status": "preserved"
+      },
+      "frozen_task_success": null,
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    }
+  ]
+}
