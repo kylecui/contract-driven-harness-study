@@ -35,3 +35,5 @@ Thumbs.db
 
 # Local temp / scratch
 tmp/
+
+.env
