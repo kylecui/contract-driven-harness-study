@@ -1,0 +1,6 @@
+model_key,model_id,arm,total_runs,strict_passes,pass_rate,wilson_95_low,wilson_95_high
+qwen3-8b,Qwen/Qwen3-8B,G9,40,40,1.0,0.9124,1.0
+glm-4-9b,THUDM/GLM-4-9B-0414,G9,40,29,0.725,0.5716,0.8389
+qwen3-14b,Qwen/Qwen3-14B,G9,40,40,1.0,0.9124,1.0
+deepseek-v3.2,deepseek-ai/DeepSeek-V3.2,G9,40,40,1.0,0.9124,1.0
+qwen2.5-7b,Qwen/Qwen2.5-7B-Instruct,G9,40,0,0.0,0.0,0.0876

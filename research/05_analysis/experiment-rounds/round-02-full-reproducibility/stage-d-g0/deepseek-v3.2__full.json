@@ -1,0 +1,1882 @@
+{
+  "model_key": "deepseek-v3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3.2",
+  "family": "DeepSeek",
+  "arm": "G0",
+  "total_runs": 20,
+  "strict_passes": 0,
+  "pass_rate": 0.0,
+  "wilson_95": [
+    0.0,
+    0.1611
+  ],
+  "conditions": {
+    "canonical": {
+      "passes": 0,
+      "total": 4
+    },
+    "field_alias": {
+      "passes": 0,
+      "total": 4
+    },
+    "evidence_order_shuffled": {
+      "passes": 0,
+      "total": 4
+    },
+    "distractor_evidence": {
+      "passes": 0,
+      "total": 4
+    },
+    "unknown_state_paraphrase": {
+      "passes": 0,
+      "total": 4
+    }
+  },
+  "timestamp": "2026-07-28T06:59:17.642216+00:00",
+  "runs": [
+    {
+      "run_id": "deepseek-v3.2__G0__canonical__r01",
+      "model_key": "deepseek-v3.2",
+      "model_id": "deepseek-ai/DeepSeek-V3.2",
+      "arm": "G0",
+      "condition": "canonical",
+      "rep": 1,
+      "timestamp": "2026-07-28T06:53:57.382213+00:00",
+      "elapsed_s": 11.89,
+      "response_id": "019fa78071316c0f8816efc56d6c9fcb",
+      "usage": {
+        "prompt_tokens": 247,
+        "completion_tokens": 254,
+        "total_tokens": 501,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 247
+      },
+      "prompt_sent": "# Task: State Transition\n\nApply the following state transition and return the result as JSON.\n\n## Context\n- Initial unknown states: current_git_branch, ci_status\n- An event (event-api-approval-001) changes network_api_approval from unknown to approved\n- Evidence supporting this: ev-09\n\n## Output Format\nReturn a JSON object with these fields:\n- state_inventory: {known_state: [...], unknown_state: [...], forbidden_inferences: [...]}\n- evidence_bindings: [{slot_id: \"...\", evidence_ids: [...]}]\n- transition_record: {event_id, state_id, from_status, to_status, evidence_ids, applied}\n- transition_gate: {status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}\n- retention_attestation: {status, immutable_fields: [...]}\n\nCondition: canonical\nReturn only the JSON object. No markdown, no prose.",
+      "raw_content": "{\n  \"state_inventory\": {\n    \"known_state\": [\"network_api_approval\"],\n    \"unknown_state\": [\"current_git_branch\", \"ci_status\"],\n    \"forbidden_inferences\": []\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"network_api_approval\",\n      \"evidence_ids\": [\"ev-09\"]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\"ev-09\"],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"passed\",\n    \"permitted_action\": \"transition\",\n    \"satisfied_prerequisite\": true,\n    \"next_action\": \"proceed\",\n    \"support_slot_ids\": [\"network_api_approval\"]\n  },\n  \"retention_attestation\": {\n    \"status\": \"maintained\",\n    \"immutable_fields\": [\"event_id\", \"state_id\", \"from_status\", \"to_status\", \"evidence_ids\"]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "network_api_approval"
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": []
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "network_api_approval",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "passed",
+          "permitted_action": "transition",
+          "satisfied_prerequisite": true,
+          "next_action": "proceed",
+          "support_slot_ids": [
+            "network_api_approval"
+          ]
+        },
+        "retention_attestation": {
+          "status": "maintained",
+          "immutable_fields": [
+            "event_id",
+            "state_id",
+            "from_status",
+            "to_status",
+            "evidence_ids"
+          ]
+        }
+      },
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0
+      },
+      "strict_pass": false,
+      "failed_checks": [
+        "exact_evidence_array_preservation",
+        "residual_unknown_vocabulary_accuracy",
+        "transition_gate_accuracy",
+        "retention_attestation_accuracy",
+        "controlled_state_mutation_success"
+      ]
+    },
+    {
+      "run_id": "deepseek-v3.2__G0__canonical__r02",
+      "model_key": "deepseek-v3.2",
+      "model_id": "deepseek-ai/DeepSeek-V3.2",
+      "arm": "G0",
+      "condition": "canonical",
+      "rep": 2,
+      "timestamp": "2026-07-28T06:54:09.571967+00:00",
+      "elapsed_s": 11.9,
+      "response_id": "019fa780a0bc436e48b5f1f638abcead",
+      "usage": {
+        "prompt_tokens": 247,
+        "completion_tokens": 250,
+        "total_tokens": 497,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 247
+      },
+      "prompt_sent": "# Task: State Transition\n\nApply the following state transition and return the result as JSON.\n\n## Context\n- Initial unknown states: current_git_branch, ci_status\n- An event (event-api-approval-001) changes network_api_approval from unknown to approved\n- Evidence supporting this: ev-09\n\n## Output Format\nReturn a JSON object with these fields:\n- state_inventory: {known_state: [...], unknown_state: [...], forbidden_inferences: [...]}\n- evidence_bindings: [{slot_id: \"...\", evidence_ids: [...]}]\n- transition_record: {event_id, state_id, from_status, to_status, evidence_ids, applied}\n- transition_gate: {status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}\n- retention_attestation: {status, immutable_fields: [...]}\n\nCondition: canonical\nReturn only the JSON object. No markdown, no prose.",
+      "raw_content": "{\n  \"state_inventory\": {\n    \"known_state\": [\"network_api_approval\"],\n    \"unknown_state\": [\"current_git_branch\", \"ci_status\"],\n    \"forbidden_inferences\": []\n  },\n  \"evidence_bindings\": [\n    {\"slot_id\": \"network_api_approval\", \"evidence_ids\": [\"ev-09\"]}\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\"ev-09\"],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"passed\",\n    \"permitted_action\": \"transition\",\n    \"satisfied_prerequisite\": true,\n    \"next_action\": \"proceed\",\n    \"support_slot_ids\": [\"network_api_approval\"]\n  },\n  \"retention_attestation\": {\n    \"status\": \"maintained\",\n    \"immutable_fields\": [\"event_id\", \"state_id\", \"from_status\", \"to_status\", \"evidence_ids\"]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "network_api_approval"
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": []
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "network_api_approval",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "passed",
+          "permitted_action": "transition",
+          "satisfied_prerequisite": true,
+          "next_action": "proceed",
+          "support_slot_ids": [
+            "network_api_approval"
+          ]
+        },
+        "retention_attestation": {
+          "status": "maintained",
+          "immutable_fields": [
+            "event_id",
+            "state_id",
+            "from_status",
+            "to_status",
+            "evidence_ids"
+          ]
+        }
+      },
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0
+      },
+      "strict_pass": false,
+      "failed_checks": [
+        "exact_evidence_array_preservation",
+        "residual_unknown_vocabulary_accuracy",
+        "transition_gate_accuracy",
+        "retention_attestation_accuracy",
+        "controlled_state_mutation_success"
+      ]
+    },
+    {
+      "run_id": "deepseek-v3.2__G0__canonical__r03",
+      "model_key": "deepseek-v3.2",
+      "model_id": "deepseek-ai/DeepSeek-V3.2",
+      "arm": "G0",
+      "condition": "canonical",
+      "rep": 3,
+      "timestamp": "2026-07-28T06:54:21.770483+00:00",
+      "elapsed_s": 13.06,
+      "response_id": "019fa780d077aa090a830d921a2b485e",
+      "usage": {
+        "prompt_tokens": 247,
+        "completion_tokens": 254,
+        "total_tokens": 501,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 247
+      },
+      "prompt_sent": "# Task: State Transition\n\nApply the following state transition and return the result as JSON.\n\n## Context\n- Initial unknown states: current_git_branch, ci_status\n- An event (event-api-approval-001) changes network_api_approval from unknown to approved\n- Evidence supporting this: ev-09\n\n## Output Format\nReturn a JSON object with these fields:\n- state_inventory: {known_state: [...], unknown_state: [...], forbidden_inferences: [...]}\n- evidence_bindings: [{slot_id: \"...\", evidence_ids: [...]}]\n- transition_record: {event_id, state_id, from_status, to_status, evidence_ids, applied}\n- transition_gate: {status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}\n- retention_attestation: {status, immutable_fields: [...]}\n\nCondition: canonical\nReturn only the JSON object. No markdown, no prose.",
+      "raw_content": "{\n  \"state_inventory\": {\n    \"known_state\": [\"network_api_approval\"],\n    \"unknown_state\": [\"current_git_branch\", \"ci_status\"],\n    \"forbidden_inferences\": []\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"network_api_approval\",\n      \"evidence_ids\": [\"ev-09\"]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\"ev-09\"],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"passed\",\n    \"permitted_action\": \"transition\",\n    \"satisfied_prerequisite\": true,\n    \"next_action\": \"proceed\",\n    \"support_slot_ids\": [\"network_api_approval\"]\n  },\n  \"retention_attestation\": {\n    \"status\": \"maintained\",\n    \"immutable_fields\": [\"event_id\", \"state_id\", \"from_status\", \"to_status\", \"evidence_ids\"]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "network_api_approval"
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": []
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "network_api_approval",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "passed",
+          "permitted_action": "transition",
+          "satisfied_prerequisite": true,
+          "next_action": "proceed",
+          "support_slot_ids": [
+            "network_api_approval"
+          ]
+        },
+        "retention_attestation": {
+          "status": "maintained",
+          "immutable_fields": [
+            "event_id",
+            "state_id",
+            "from_status",
+            "to_status",
+            "evidence_ids"
+          ]
+        }
+      },
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0
+      },
+      "strict_pass": false,
+      "failed_checks": [
+        "exact_evidence_array_preservation",
+        "residual_unknown_vocabulary_accuracy",
+        "transition_gate_accuracy",
+        "retention_attestation_accuracy",
+        "controlled_state_mutation_success"
+      ]
+    },
+    {
+      "run_id": "deepseek-v3.2__G0__canonical__r04",
+      "model_key": "deepseek-v3.2",
+      "model_id": "deepseek-ai/DeepSeek-V3.2",
+      "arm": "G0",
+      "condition": "canonical",
+      "rep": 4,
+      "timestamp": "2026-07-28T06:54:35.129148+00:00",
+      "elapsed_s": 15.22,
+      "response_id": "019fa781048659f6ec40c971a7513529",
+      "usage": {
+        "prompt_tokens": 247,
+        "completion_tokens": 250,
+        "total_tokens": 497,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 247
+      },
+      "prompt_sent": "# Task: State Transition\n\nApply the following state transition and return the result as JSON.\n\n## Context\n- Initial unknown states: current_git_branch, ci_status\n- An event (event-api-approval-001) changes network_api_approval from unknown to approved\n- Evidence supporting this: ev-09\n\n## Output Format\nReturn a JSON object with these fields:\n- state_inventory: {known_state: [...], unknown_state: [...], forbidden_inferences: [...]}\n- evidence_bindings: [{slot_id: \"...\", evidence_ids: [...]}]\n- transition_record: {event_id, state_id, from_status, to_status, evidence_ids, applied}\n- transition_gate: {status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}\n- retention_attestation: {status, immutable_fields: [...]}\n\nCondition: canonical\nReturn only the JSON object. No markdown, no prose.",
+      "raw_content": "{\n  \"state_inventory\": {\n    \"known_state\": [\"network_api_approval\"],\n    \"unknown_state\": [\"current_git_branch\", \"ci_status\"],\n    \"forbidden_inferences\": []\n  },\n  \"evidence_bindings\": [\n    {\"slot_id\": \"network_api_approval\", \"evidence_ids\": [\"ev-09\"]}\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\"ev-09\"],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"passed\",\n    \"permitted_action\": \"transition\",\n    \"satisfied_prerequisite\": true,\n    \"next_action\": \"proceed\",\n    \"support_slot_ids\": [\"network_api_approval\"]\n  },\n  \"retention_attestation\": {\n    \"status\": \"maintained\",\n    \"immutable_fields\": [\"event_id\", \"state_id\", \"from_status\", \"to_status\", \"evidence_ids\"]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "network_api_approval"
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": []
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "network_api_approval",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "passed",
+          "permitted_action": "transition",
+          "satisfied_prerequisite": true,
+          "next_action": "proceed",
+          "support_slot_ids": [
+            "network_api_approval"
+          ]
+        },
+        "retention_attestation": {
+          "status": "maintained",
+          "immutable_fields": [
+            "event_id",
+            "state_id",
+            "from_status",
+            "to_status",
+            "evidence_ids"
+          ]
+        }
+      },
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0
+      },
+      "strict_pass": false,
+      "failed_checks": [
+        "exact_evidence_array_preservation",
+        "residual_unknown_vocabulary_accuracy",
+        "transition_gate_accuracy",
+        "retention_attestation_accuracy",
+        "controlled_state_mutation_success"
+      ]
+    },
+    {
+      "run_id": "deepseek-v3.2__G0__field_alias__r01",
+      "model_key": "deepseek-v3.2",
+      "model_id": "deepseek-ai/DeepSeek-V3.2",
+      "arm": "G0",
+      "condition": "field_alias",
+      "rep": 1,
+      "timestamp": "2026-07-28T06:54:50.655483+00:00",
+      "elapsed_s": 11.85,
+      "response_id": "019fa78141319e1e975050df47820adf",
+      "usage": {
+        "prompt_tokens": 248,
+        "completion_tokens": 247,
+        "total_tokens": 495,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 248
+      },
+      "prompt_sent": "# Task: State Transition\n\nApply the following state transition and return the result as JSON.\n\n## Context\n- Initial unknown states: current_git_branch, ci_status\n- An event (event-api-approval-001) changes network_api_approval from unknown to approved\n- Evidence supporting this: e1\n\n## Output Format\nReturn a JSON object with these fields:\n- state_inventory: {known_state: [...], unknown_state: [...], forbidden_inferences: [...]}\n- evidence_bindings: [{slot_id: \"...\", evidence_ids: [...]}]\n- transition_record: {event_id, state_id, from_status, to_status, evidence_ids, applied}\n- transition_gate: {status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}\n- retention_attestation: {status, immutable_fields: [...]}\n\nCondition: field_alias\nReturn only the JSON object. No markdown, no prose.",
+      "raw_content": "{\n  \"state_inventory\": {\n    \"known_state\": [\"network_api_approval\"],\n    \"unknown_state\": [\"current_git_branch\", \"ci_status\"],\n    \"forbidden_inferences\": []\n  },\n  \"evidence_bindings\": [\n    {\"slot_id\": \"network_api_approval\", \"evidence_ids\": [\"e1\"]}\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\"e1\"],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"passed\",\n    \"permitted_action\": \"transition\",\n    \"satisfied_prerequisite\": true,\n    \"next_action\": \"proceed\",\n    \"support_slot_ids\": [\"network_api_approval\"]\n  },\n  \"retention_attestation\": {\n    \"status\": \"verified\",\n    \"immutable_fields\": [\"event_id\", \"state_id\", \"from_status\", \"to_status\", \"evidence_ids\"]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "network_api_approval"
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": []
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "network_api_approval",
+            "evidence_ids": [
+              "e1"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "e1"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "passed",
+          "permitted_action": "transition",
+          "satisfied_prerequisite": true,
+          "next_action": "proceed",
+          "support_slot_ids": [
+            "network_api_approval"
+          ]
+        },
+        "retention_attestation": {
+          "status": "verified",
+          "immutable_fields": [
+            "event_id",
+            "state_id",
+            "from_status",
+            "to_status",
+            "evidence_ids"
+          ]
+        }
+      },
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 0.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0
+      },
+      "strict_pass": false,
+      "failed_checks": [
+        "exact_evidence_array_preservation",
+        "residual_unknown_vocabulary_accuracy",
+        "state_transition_accuracy",
+        "transition_gate_accuracy",
+        "retention_attestation_accuracy",
+        "controlled_state_mutation_success"
+      ]
+    },
+    {
+      "run_id": "deepseek-v3.2__G0__field_alias__r02",
+      "model_key": "deepseek-v3.2",
+      "model_id": "deepseek-ai/DeepSeek-V3.2",
+      "arm": "G0",
+      "condition": "field_alias",
+      "rep": 2,
+      "timestamp": "2026-07-28T06:55:02.808775+00:00",
+      "elapsed_s": 20.72,
+      "response_id": "019fa78170c1883a7b3053074e84a244",
+      "usage": {
+        "prompt_tokens": 248,
+        "completion_tokens": 247,
+        "total_tokens": 495,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 248
+      },
+      "prompt_sent": "# Task: State Transition\n\nApply the following state transition and return the result as JSON.\n\n## Context\n- Initial unknown states: current_git_branch, ci_status\n- An event (event-api-approval-001) changes network_api_approval from unknown to approved\n- Evidence supporting this: e1\n\n## Output Format\nReturn a JSON object with these fields:\n- state_inventory: {known_state: [...], unknown_state: [...], forbidden_inferences: [...]}\n- evidence_bindings: [{slot_id: \"...\", evidence_ids: [...]}]\n- transition_record: {event_id, state_id, from_status, to_status, evidence_ids, applied}\n- transition_gate: {status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}\n- retention_attestation: {status, immutable_fields: [...]}\n\nCondition: field_alias\nReturn only the JSON object. No markdown, no prose.",
+      "raw_content": "{\n  \"state_inventory\": {\n    \"known_state\": [\"network_api_approval\"],\n    \"unknown_state\": [\"current_git_branch\", \"ci_status\"],\n    \"forbidden_inferences\": []\n  },\n  \"evidence_bindings\": [\n    {\"slot_id\": \"network_api_approval\", \"evidence_ids\": [\"e1\"]}\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\"e1\"],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"passed\",\n    \"permitted_action\": \"transition\",\n    \"satisfied_prerequisite\": true,\n    \"next_action\": \"proceed\",\n    \"support_slot_ids\": [\"network_api_approval\"]\n  },\n  \"retention_attestation\": {\n    \"status\": \"verified\",\n    \"immutable_fields\": [\"event_id\", \"state_id\", \"from_status\", \"to_status\", \"evidence_ids\"]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "network_api_approval"
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": []
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "network_api_approval",
+            "evidence_ids": [
+              "e1"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "e1"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "passed",
+          "permitted_action": "transition",
+          "satisfied_prerequisite": true,
+          "next_action": "proceed",
+          "support_slot_ids": [
+            "network_api_approval"
+          ]
+        },
+        "retention_attestation": {
+          "status": "verified",
+          "immutable_fields": [
+            "event_id",
+            "state_id",
+            "from_status",
+            "to_status",
+            "evidence_ids"
+          ]
+        }
+      },
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 0.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0
+      },
+      "strict_pass": false,
+      "failed_checks": [
+        "exact_evidence_array_preservation",
+        "residual_unknown_vocabulary_accuracy",
+        "state_transition_accuracy",
+        "transition_gate_accuracy",
+        "retention_attestation_accuracy",
+        "controlled_state_mutation_success"
+      ]
+    },
+    {
+      "run_id": "deepseek-v3.2__G0__field_alias__r03",
+      "model_key": "deepseek-v3.2",
+      "model_id": "deepseek-ai/DeepSeek-V3.2",
+      "arm": "G0",
+      "condition": "field_alias",
+      "rep": 3,
+      "timestamp": "2026-07-28T06:55:23.826462+00:00",
+      "elapsed_s": 36.4,
+      "response_id": "019fa781c2ca411735d286bbaf5de61c",
+      "usage": {
+        "prompt_tokens": 248,
+        "completion_tokens": 247,
+        "total_tokens": 495,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 248
+      },
+      "prompt_sent": "# Task: State Transition\n\nApply the following state transition and return the result as JSON.\n\n## Context\n- Initial unknown states: current_git_branch, ci_status\n- An event (event-api-approval-001) changes network_api_approval from unknown to approved\n- Evidence supporting this: e1\n\n## Output Format\nReturn a JSON object with these fields:\n- state_inventory: {known_state: [...], unknown_state: [...], forbidden_inferences: [...]}\n- evidence_bindings: [{slot_id: \"...\", evidence_ids: [...]}]\n- transition_record: {event_id, state_id, from_status, to_status, evidence_ids, applied}\n- transition_gate: {status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}\n- retention_attestation: {status, immutable_fields: [...]}\n\nCondition: field_alias\nReturn only the JSON object. No markdown, no prose.",
+      "raw_content": "{\n  \"state_inventory\": {\n    \"known_state\": [\"network_api_approval\"],\n    \"unknown_state\": [\"current_git_branch\", \"ci_status\"],\n    \"forbidden_inferences\": []\n  },\n  \"evidence_bindings\": [\n    {\"slot_id\": \"network_api_approval\", \"evidence_ids\": [\"e1\"]}\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\"e1\"],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"passed\",\n    \"permitted_action\": \"transition\",\n    \"satisfied_prerequisite\": true,\n    \"next_action\": \"proceed\",\n    \"support_slot_ids\": [\"network_api_approval\"]\n  },\n  \"retention_attestation\": {\n    \"status\": \"verified\",\n    \"immutable_fields\": [\"event_id\", \"state_id\", \"from_status\", \"to_status\", \"evidence_ids\"]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "network_api_approval"
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": []
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "network_api_approval",
+            "evidence_ids": [
+              "e1"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "e1"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "passed",
+          "permitted_action": "transition",
+          "satisfied_prerequisite": true,
+          "next_action": "proceed",
+          "support_slot_ids": [
+            "network_api_approval"
+          ]
+        },
+        "retention_attestation": {
+          "status": "verified",
+          "immutable_fields": [
+            "event_id",
+            "state_id",
+            "from_status",
+            "to_status",
+            "evidence_ids"
+          ]
+        }
+      },
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 0.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0
+      },
+      "strict_pass": false,
+      "failed_checks": [
+        "exact_evidence_array_preservation",
+        "residual_unknown_vocabulary_accuracy",
+        "state_transition_accuracy",
+        "transition_gate_accuracy",
+        "retention_attestation_accuracy",
+        "controlled_state_mutation_success"
+      ]
+    },
+    {
+      "run_id": "deepseek-v3.2__G0__field_alias__r04",
+      "model_key": "deepseek-v3.2",
+      "model_id": "deepseek-ai/DeepSeek-V3.2",
+      "arm": "G0",
+      "condition": "field_alias",
+      "rep": 4,
+      "timestamp": "2026-07-28T06:56:00.523916+00:00",
+      "elapsed_s": 12.08,
+      "response_id": "019fa7825253be4c208f89b9b0912c86",
+      "usage": {
+        "prompt_tokens": 248,
+        "completion_tokens": 252,
+        "total_tokens": 500,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 248
+      },
+      "prompt_sent": "# Task: State Transition\n\nApply the following state transition and return the result as JSON.\n\n## Context\n- Initial unknown states: current_git_branch, ci_status\n- An event (event-api-approval-001) changes network_api_approval from unknown to approved\n- Evidence supporting this: e1\n\n## Output Format\nReturn a JSON object with these fields:\n- state_inventory: {known_state: [...], unknown_state: [...], forbidden_inferences: [...]}\n- evidence_bindings: [{slot_id: \"...\", evidence_ids: [...]}]\n- transition_record: {event_id, state_id, from_status, to_status, evidence_ids, applied}\n- transition_gate: {status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}\n- retention_attestation: {status, immutable_fields: [...]}\n\nCondition: field_alias\nReturn only the JSON object. No markdown, no prose.",
+      "raw_content": "{\n  \"state_inventory\": {\n    \"known_state\": [\"network_api_approval\"],\n    \"unknown_state\": [\"current_git_branch\", \"ci_status\"],\n    \"forbidden_inferences\": []\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"network_api_approval\",\n      \"evidence_ids\": [\"e1\"]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\"e1\"],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"passed\",\n    \"permitted_action\": \"transition\",\n    \"satisfied_prerequisite\": true,\n    \"next_action\": \"proceed\",\n    \"support_slot_ids\": [\"network_api_approval\"]\n  },\n  \"retention_attestation\": {\n    \"status\": \"maintained\",\n    \"immutable_fields\": [\"event_id\", \"state_id\", \"from_status\", \"to_status\", \"evidence_ids\"]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "network_api_approval"
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": []
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "network_api_approval",
+            "evidence_ids": [
+              "e1"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "e1"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "passed",
+          "permitted_action": "transition",
+          "satisfied_prerequisite": true,
+          "next_action": "proceed",
+          "support_slot_ids": [
+            "network_api_approval"
+          ]
+        },
+        "retention_attestation": {
+          "status": "maintained",
+          "immutable_fields": [
+            "event_id",
+            "state_id",
+            "from_status",
+            "to_status",
+            "evidence_ids"
+          ]
+        }
+      },
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 0.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0
+      },
+      "strict_pass": false,
+      "failed_checks": [
+        "exact_evidence_array_preservation",
+        "residual_unknown_vocabulary_accuracy",
+        "state_transition_accuracy",
+        "transition_gate_accuracy",
+        "retention_attestation_accuracy",
+        "controlled_state_mutation_success"
+      ]
+    },
+    {
+      "run_id": "deepseek-v3.2__G0__evidence_order_shuffled__r01",
+      "model_key": "deepseek-v3.2",
+      "model_id": "deepseek-ai/DeepSeek-V3.2",
+      "arm": "G0",
+      "condition": "evidence_order_shuffled",
+      "rep": 1,
+      "timestamp": "2026-07-28T06:56:12.904739+00:00",
+      "elapsed_s": 11.66,
+      "response_id": "019fa782829b3729b2d370417e6ddb1d",
+      "usage": {
+        "prompt_tokens": 251,
+        "completion_tokens": 250,
+        "total_tokens": 501,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 251
+      },
+      "prompt_sent": "# Task: State Transition\n\nApply the following state transition and return the result as JSON.\n\n## Context\n- Initial unknown states: current_git_branch, ci_status\n- An event (event-api-approval-001) changes network_api_approval from unknown to approved\n- Evidence supporting this: ev-09\n\n## Output Format\nReturn a JSON object with these fields:\n- state_inventory: {known_state: [...], unknown_state: [...], forbidden_inferences: [...]}\n- evidence_bindings: [{slot_id: \"...\", evidence_ids: [...]}]\n- transition_record: {event_id, state_id, from_status, to_status, evidence_ids, applied}\n- transition_gate: {status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}\n- retention_attestation: {status, immutable_fields: [...]}\n\nCondition: evidence_order_shuffled\nReturn only the JSON object. No markdown, no prose.",
+      "raw_content": "{\n  \"state_inventory\": {\n    \"known_state\": [\"network_api_approval\"],\n    \"unknown_state\": [\"current_git_branch\", \"ci_status\"],\n    \"forbidden_inferences\": []\n  },\n  \"evidence_bindings\": [\n    {\"slot_id\": \"network_api_approval\", \"evidence_ids\": [\"ev-09\"]}\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\"ev-09\"],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"passed\",\n    \"permitted_action\": \"transition\",\n    \"satisfied_prerequisite\": true,\n    \"next_action\": \"proceed\",\n    \"support_slot_ids\": [\"network_api_approval\"]\n  },\n  \"retention_attestation\": {\n    \"status\": \"maintained\",\n    \"immutable_fields\": [\"event_id\", \"state_id\", \"from_status\", \"to_status\", \"evidence_ids\"]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "network_api_approval"
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": []
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "network_api_approval",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "passed",
+          "permitted_action": "transition",
+          "satisfied_prerequisite": true,
+          "next_action": "proceed",
+          "support_slot_ids": [
+            "network_api_approval"
+          ]
+        },
+        "retention_attestation": {
+          "status": "maintained",
+          "immutable_fields": [
+            "event_id",
+            "state_id",
+            "from_status",
+            "to_status",
+            "evidence_ids"
+          ]
+        }
+      },
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0
+      },
+      "strict_pass": false,
+      "failed_checks": [
+        "exact_evidence_array_preservation",
+        "residual_unknown_vocabulary_accuracy",
+        "transition_gate_accuracy",
+        "retention_attestation_accuracy",
+        "controlled_state_mutation_success"
+      ]
+    },
+    {
+      "run_id": "deepseek-v3.2__G0__evidence_order_shuffled__r02",
+      "model_key": "deepseek-v3.2",
+      "model_id": "deepseek-ai/DeepSeek-V3.2",
+      "arm": "G0",
+      "condition": "evidence_order_shuffled",
+      "rep": 2,
+      "timestamp": "2026-07-28T06:56:24.864202+00:00",
+      "elapsed_s": 12.16,
+      "response_id": "019fa782b14c890a1d0f4f009b79d011",
+      "usage": {
+        "prompt_tokens": 251,
+        "completion_tokens": 254,
+        "total_tokens": 505,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 251
+      },
+      "prompt_sent": "# Task: State Transition\n\nApply the following state transition and return the result as JSON.\n\n## Context\n- Initial unknown states: current_git_branch, ci_status\n- An event (event-api-approval-001) changes network_api_approval from unknown to approved\n- Evidence supporting this: ev-09\n\n## Output Format\nReturn a JSON object with these fields:\n- state_inventory: {known_state: [...], unknown_state: [...], forbidden_inferences: [...]}\n- evidence_bindings: [{slot_id: \"...\", evidence_ids: [...]}]\n- transition_record: {event_id, state_id, from_status, to_status, evidence_ids, applied}\n- transition_gate: {status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}\n- retention_attestation: {status, immutable_fields: [...]}\n\nCondition: evidence_order_shuffled\nReturn only the JSON object. No markdown, no prose.",
+      "raw_content": "{\n  \"state_inventory\": {\n    \"known_state\": [\"network_api_approval\"],\n    \"unknown_state\": [\"current_git_branch\", \"ci_status\"],\n    \"forbidden_inferences\": []\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"network_api_approval\",\n      \"evidence_ids\": [\"ev-09\"]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\"ev-09\"],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"passed\",\n    \"permitted_action\": \"transition\",\n    \"satisfied_prerequisite\": true,\n    \"next_action\": \"proceed\",\n    \"support_slot_ids\": [\"network_api_approval\"]\n  },\n  \"retention_attestation\": {\n    \"status\": \"maintained\",\n    \"immutable_fields\": [\"event_id\", \"state_id\", \"from_status\", \"to_status\", \"evidence_ids\"]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "network_api_approval"
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": []
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "network_api_approval",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "passed",
+          "permitted_action": "transition",
+          "satisfied_prerequisite": true,
+          "next_action": "proceed",
+          "support_slot_ids": [
+            "network_api_approval"
+          ]
+        },
+        "retention_attestation": {
+          "status": "maintained",
+          "immutable_fields": [
+            "event_id",
+            "state_id",
+            "from_status",
+            "to_status",
+            "evidence_ids"
+          ]
+        }
+      },
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0
+      },
+      "strict_pass": false,
+      "failed_checks": [
+        "exact_evidence_array_preservation",
+        "residual_unknown_vocabulary_accuracy",
+        "transition_gate_accuracy",
+        "retention_attestation_accuracy",
+        "controlled_state_mutation_success"
+      ]
+    },
+    {
+      "run_id": "deepseek-v3.2__G0__evidence_order_shuffled__r03",
+      "model_key": "deepseek-v3.2",
+      "model_id": "deepseek-ai/DeepSeek-V3.2",
+      "arm": "G0",
+      "condition": "evidence_order_shuffled",
+      "rep": 3,
+      "timestamp": "2026-07-28T06:56:37.323121+00:00",
+      "elapsed_s": 22.62,
+      "response_id": "019fa782e1f0072a4995cdab3cf40de8",
+      "usage": {
+        "prompt_tokens": 251,
+        "completion_tokens": 254,
+        "total_tokens": 505,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 251
+      },
+      "prompt_sent": "# Task: State Transition\n\nApply the following state transition and return the result as JSON.\n\n## Context\n- Initial unknown states: current_git_branch, ci_status\n- An event (event-api-approval-001) changes network_api_approval from unknown to approved\n- Evidence supporting this: ev-09\n\n## Output Format\nReturn a JSON object with these fields:\n- state_inventory: {known_state: [...], unknown_state: [...], forbidden_inferences: [...]}\n- evidence_bindings: [{slot_id: \"...\", evidence_ids: [...]}]\n- transition_record: {event_id, state_id, from_status, to_status, evidence_ids, applied}\n- transition_gate: {status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}\n- retention_attestation: {status, immutable_fields: [...]}\n\nCondition: evidence_order_shuffled\nReturn only the JSON object. No markdown, no prose.",
+      "raw_content": "{\n  \"state_inventory\": {\n    \"known_state\": [\"network_api_approval\"],\n    \"unknown_state\": [\"current_git_branch\", \"ci_status\"],\n    \"forbidden_inferences\": []\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"network_api_approval\",\n      \"evidence_ids\": [\"ev-09\"]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\"ev-09\"],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"passed\",\n    \"permitted_action\": \"transition\",\n    \"satisfied_prerequisite\": true,\n    \"next_action\": \"proceed\",\n    \"support_slot_ids\": [\"network_api_approval\"]\n  },\n  \"retention_attestation\": {\n    \"status\": \"maintained\",\n    \"immutable_fields\": [\"event_id\", \"state_id\", \"from_status\", \"to_status\", \"evidence_ids\"]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "network_api_approval"
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": []
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "network_api_approval",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "passed",
+          "permitted_action": "transition",
+          "satisfied_prerequisite": true,
+          "next_action": "proceed",
+          "support_slot_ids": [
+            "network_api_approval"
+          ]
+        },
+        "retention_attestation": {
+          "status": "maintained",
+          "immutable_fields": [
+            "event_id",
+            "state_id",
+            "from_status",
+            "to_status",
+            "evidence_ids"
+          ]
+        }
+      },
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0
+      },
+      "strict_pass": false,
+      "failed_checks": [
+        "exact_evidence_array_preservation",
+        "residual_unknown_vocabulary_accuracy",
+        "transition_gate_accuracy",
+        "retention_attestation_accuracy",
+        "controlled_state_mutation_success"
+      ]
+    },
+    {
+      "run_id": "deepseek-v3.2__G0__evidence_order_shuffled__r04",
+      "model_key": "deepseek-v3.2",
+      "model_id": "deepseek-ai/DeepSeek-V3.2",
+      "arm": "G0",
+      "condition": "evidence_order_shuffled",
+      "rep": 4,
+      "timestamp": "2026-07-28T06:57:00.242862+00:00",
+      "elapsed_s": 11.62,
+      "response_id": "019fa7833b6a48df0a2656d87f836605",
+      "usage": {
+        "prompt_tokens": 251,
+        "completion_tokens": 250,
+        "total_tokens": 501,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 251
+      },
+      "prompt_sent": "# Task: State Transition\n\nApply the following state transition and return the result as JSON.\n\n## Context\n- Initial unknown states: current_git_branch, ci_status\n- An event (event-api-approval-001) changes network_api_approval from unknown to approved\n- Evidence supporting this: ev-09\n\n## Output Format\nReturn a JSON object with these fields:\n- state_inventory: {known_state: [...], unknown_state: [...], forbidden_inferences: [...]}\n- evidence_bindings: [{slot_id: \"...\", evidence_ids: [...]}]\n- transition_record: {event_id, state_id, from_status, to_status, evidence_ids, applied}\n- transition_gate: {status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}\n- retention_attestation: {status, immutable_fields: [...]}\n\nCondition: evidence_order_shuffled\nReturn only the JSON object. No markdown, no prose.",
+      "raw_content": "{\n  \"state_inventory\": {\n    \"known_state\": [\"network_api_approval\"],\n    \"unknown_state\": [\"current_git_branch\", \"ci_status\"],\n    \"forbidden_inferences\": []\n  },\n  \"evidence_bindings\": [\n    {\"slot_id\": \"network_api_approval\", \"evidence_ids\": [\"ev-09\"]}\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\"ev-09\"],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"passed\",\n    \"permitted_action\": \"transition\",\n    \"satisfied_prerequisite\": true,\n    \"next_action\": \"proceed\",\n    \"support_slot_ids\": [\"network_api_approval\"]\n  },\n  \"retention_attestation\": {\n    \"status\": \"maintained\",\n    \"immutable_fields\": [\"event_id\", \"state_id\", \"from_status\", \"to_status\", \"evidence_ids\"]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "network_api_approval"
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": []
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "network_api_approval",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "passed",
+          "permitted_action": "transition",
+          "satisfied_prerequisite": true,
+          "next_action": "proceed",
+          "support_slot_ids": [
+            "network_api_approval"
+          ]
+        },
+        "retention_attestation": {
+          "status": "maintained",
+          "immutable_fields": [
+            "event_id",
+            "state_id",
+            "from_status",
+            "to_status",
+            "evidence_ids"
+          ]
+        }
+      },
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0
+      },
+      "strict_pass": false,
+      "failed_checks": [
+        "exact_evidence_array_preservation",
+        "residual_unknown_vocabulary_accuracy",
+        "transition_gate_accuracy",
+        "retention_attestation_accuracy",
+        "controlled_state_mutation_success"
+      ]
+    },
+    {
+      "run_id": "deepseek-v3.2__G0__distractor_evidence__r01",
+      "model_key": "deepseek-v3.2",
+      "model_id": "deepseek-ai/DeepSeek-V3.2",
+      "arm": "G0",
+      "condition": "distractor_evidence",
+      "rep": 1,
+      "timestamp": "2026-07-28T06:57:12.160237+00:00",
+      "elapsed_s": 11.91,
+      "response_id": "019fa78369f14e7ed18fc71b8317350a",
+      "usage": {
+        "prompt_tokens": 250,
+        "completion_tokens": 250,
+        "total_tokens": 500,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 250
+      },
+      "prompt_sent": "# Task: State Transition\n\nApply the following state transition and return the result as JSON.\n\n## Context\n- Initial unknown states: current_git_branch, ci_status\n- An event (event-api-approval-001) changes network_api_approval from unknown to approved\n- Evidence supporting this: ev-09\n\n## Output Format\nReturn a JSON object with these fields:\n- state_inventory: {known_state: [...], unknown_state: [...], forbidden_inferences: [...]}\n- evidence_bindings: [{slot_id: \"...\", evidence_ids: [...]}]\n- transition_record: {event_id, state_id, from_status, to_status, evidence_ids, applied}\n- transition_gate: {status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}\n- retention_attestation: {status, immutable_fields: [...]}\n\nCondition: distractor_evidence\nReturn only the JSON object. No markdown, no prose.",
+      "raw_content": "{\n  \"state_inventory\": {\n    \"known_state\": [\"network_api_approval\"],\n    \"unknown_state\": [\"current_git_branch\", \"ci_status\"],\n    \"forbidden_inferences\": []\n  },\n  \"evidence_bindings\": [\n    {\"slot_id\": \"network_api_approval\", \"evidence_ids\": [\"ev-09\"]}\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\"ev-09\"],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"passed\",\n    \"permitted_action\": \"transition\",\n    \"satisfied_prerequisite\": true,\n    \"next_action\": \"proceed\",\n    \"support_slot_ids\": [\"network_api_approval\"]\n  },\n  \"retention_attestation\": {\n    \"status\": \"maintained\",\n    \"immutable_fields\": [\"event_id\", \"state_id\", \"from_status\", \"to_status\", \"evidence_ids\"]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "network_api_approval"
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": []
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "network_api_approval",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "passed",
+          "permitted_action": "transition",
+          "satisfied_prerequisite": true,
+          "next_action": "proceed",
+          "support_slot_ids": [
+            "network_api_approval"
+          ]
+        },
+        "retention_attestation": {
+          "status": "maintained",
+          "immutable_fields": [
+            "event_id",
+            "state_id",
+            "from_status",
+            "to_status",
+            "evidence_ids"
+          ]
+        }
+      },
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0
+      },
+      "strict_pass": false,
+      "failed_checks": [
+        "exact_evidence_array_preservation",
+        "residual_unknown_vocabulary_accuracy",
+        "transition_gate_accuracy",
+        "retention_attestation_accuracy",
+        "controlled_state_mutation_success"
+      ]
+    },
+    {
+      "run_id": "deepseek-v3.2__G0__distractor_evidence__r02",
+      "model_key": "deepseek-v3.2",
+      "model_id": "deepseek-ai/DeepSeek-V3.2",
+      "arm": "G0",
+      "condition": "distractor_evidence",
+      "rep": 2,
+      "timestamp": "2026-07-28T06:57:24.366709+00:00",
+      "elapsed_s": 11.29,
+      "response_id": "019fa78399a13f984fe3256c2b31d2ef",
+      "usage": {
+        "prompt_tokens": 250,
+        "completion_tokens": 250,
+        "total_tokens": 500,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 250
+      },
+      "prompt_sent": "# Task: State Transition\n\nApply the following state transition and return the result as JSON.\n\n## Context\n- Initial unknown states: current_git_branch, ci_status\n- An event (event-api-approval-001) changes network_api_approval from unknown to approved\n- Evidence supporting this: ev-09\n\n## Output Format\nReturn a JSON object with these fields:\n- state_inventory: {known_state: [...], unknown_state: [...], forbidden_inferences: [...]}\n- evidence_bindings: [{slot_id: \"...\", evidence_ids: [...]}]\n- transition_record: {event_id, state_id, from_status, to_status, evidence_ids, applied}\n- transition_gate: {status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}\n- retention_attestation: {status, immutable_fields: [...]}\n\nCondition: distractor_evidence\nReturn only the JSON object. No markdown, no prose.",
+      "raw_content": "{\n  \"state_inventory\": {\n    \"known_state\": [\"network_api_approval\"],\n    \"unknown_state\": [\"current_git_branch\", \"ci_status\"],\n    \"forbidden_inferences\": []\n  },\n  \"evidence_bindings\": [\n    {\"slot_id\": \"network_api_approval\", \"evidence_ids\": [\"ev-09\"]}\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\"ev-09\"],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"passed\",\n    \"permitted_action\": \"transition\",\n    \"satisfied_prerequisite\": true,\n    \"next_action\": \"proceed\",\n    \"support_slot_ids\": [\"network_api_approval\"]\n  },\n  \"retention_attestation\": {\n    \"status\": \"maintained\",\n    \"immutable_fields\": [\"event_id\", \"state_id\", \"from_status\", \"to_status\", \"evidence_ids\"]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "network_api_approval"
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": []
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "network_api_approval",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "passed",
+          "permitted_action": "transition",
+          "satisfied_prerequisite": true,
+          "next_action": "proceed",
+          "support_slot_ids": [
+            "network_api_approval"
+          ]
+        },
+        "retention_attestation": {
+          "status": "maintained",
+          "immutable_fields": [
+            "event_id",
+            "state_id",
+            "from_status",
+            "to_status",
+            "evidence_ids"
+          ]
+        }
+      },
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0
+      },
+      "strict_pass": false,
+      "failed_checks": [
+        "exact_evidence_array_preservation",
+        "residual_unknown_vocabulary_accuracy",
+        "transition_gate_accuracy",
+        "retention_attestation_accuracy",
+        "controlled_state_mutation_success"
+      ]
+    },
+    {
+      "run_id": "deepseek-v3.2__G0__distractor_evidence__r03",
+      "model_key": "deepseek-v3.2",
+      "model_id": "deepseek-ai/DeepSeek-V3.2",
+      "arm": "G0",
+      "condition": "distractor_evidence",
+      "rep": 3,
+      "timestamp": "2026-07-28T06:57:35.960048+00:00",
+      "elapsed_s": 11.52,
+      "response_id": "019fa783c6f9d8d576f6feaa5147afb7",
+      "usage": {
+        "prompt_tokens": 250,
+        "completion_tokens": 250,
+        "total_tokens": 500,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 250
+      },
+      "prompt_sent": "# Task: State Transition\n\nApply the following state transition and return the result as JSON.\n\n## Context\n- Initial unknown states: current_git_branch, ci_status\n- An event (event-api-approval-001) changes network_api_approval from unknown to approved\n- Evidence supporting this: ev-09\n\n## Output Format\nReturn a JSON object with these fields:\n- state_inventory: {known_state: [...], unknown_state: [...], forbidden_inferences: [...]}\n- evidence_bindings: [{slot_id: \"...\", evidence_ids: [...]}]\n- transition_record: {event_id, state_id, from_status, to_status, evidence_ids, applied}\n- transition_gate: {status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}\n- retention_attestation: {status, immutable_fields: [...]}\n\nCondition: distractor_evidence\nReturn only the JSON object. No markdown, no prose.",
+      "raw_content": "{\n  \"state_inventory\": {\n    \"known_state\": [\"network_api_approval\"],\n    \"unknown_state\": [\"current_git_branch\", \"ci_status\"],\n    \"forbidden_inferences\": []\n  },\n  \"evidence_bindings\": [\n    {\"slot_id\": \"network_api_approval\", \"evidence_ids\": [\"ev-09\"]}\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\"ev-09\"],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"passed\",\n    \"permitted_action\": \"transition\",\n    \"satisfied_prerequisite\": true,\n    \"next_action\": \"proceed\",\n    \"support_slot_ids\": [\"network_api_approval\"]\n  },\n  \"retention_attestation\": {\n    \"status\": \"maintained\",\n    \"immutable_fields\": [\"event_id\", \"state_id\", \"from_status\", \"to_status\", \"evidence_ids\"]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "network_api_approval"
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": []
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "network_api_approval",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "passed",
+          "permitted_action": "transition",
+          "satisfied_prerequisite": true,
+          "next_action": "proceed",
+          "support_slot_ids": [
+            "network_api_approval"
+          ]
+        },
+        "retention_attestation": {
+          "status": "maintained",
+          "immutable_fields": [
+            "event_id",
+            "state_id",
+            "from_status",
+            "to_status",
+            "evidence_ids"
+          ]
+        }
+      },
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0
+      },
+      "strict_pass": false,
+      "failed_checks": [
+        "exact_evidence_array_preservation",
+        "residual_unknown_vocabulary_accuracy",
+        "transition_gate_accuracy",
+        "retention_attestation_accuracy",
+        "controlled_state_mutation_success"
+      ]
+    },
+    {
+      "run_id": "deepseek-v3.2__G0__distractor_evidence__r04",
+      "model_key": "deepseek-v3.2",
+      "model_id": "deepseek-ai/DeepSeek-V3.2",
+      "arm": "G0",
+      "condition": "distractor_evidence",
+      "rep": 4,
+      "timestamp": "2026-07-28T06:57:47.776880+00:00",
+      "elapsed_s": 34.1,
+      "response_id": "019fa783f51452d5d1a255b6bc35e00f",
+      "usage": {
+        "prompt_tokens": 250,
+        "completion_tokens": 250,
+        "total_tokens": 500,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 250
+      },
+      "prompt_sent": "# Task: State Transition\n\nApply the following state transition and return the result as JSON.\n\n## Context\n- Initial unknown states: current_git_branch, ci_status\n- An event (event-api-approval-001) changes network_api_approval from unknown to approved\n- Evidence supporting this: ev-09\n\n## Output Format\nReturn a JSON object with these fields:\n- state_inventory: {known_state: [...], unknown_state: [...], forbidden_inferences: [...]}\n- evidence_bindings: [{slot_id: \"...\", evidence_ids: [...]}]\n- transition_record: {event_id, state_id, from_status, to_status, evidence_ids, applied}\n- transition_gate: {status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}\n- retention_attestation: {status, immutable_fields: [...]}\n\nCondition: distractor_evidence\nReturn only the JSON object. No markdown, no prose.",
+      "raw_content": "{\n  \"state_inventory\": {\n    \"known_state\": [\"network_api_approval\"],\n    \"unknown_state\": [\"current_git_branch\", \"ci_status\"],\n    \"forbidden_inferences\": []\n  },\n  \"evidence_bindings\": [\n    {\"slot_id\": \"network_api_approval\", \"evidence_ids\": [\"ev-09\"]}\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\"ev-09\"],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"passed\",\n    \"permitted_action\": \"transition\",\n    \"satisfied_prerequisite\": true,\n    \"next_action\": \"proceed\",\n    \"support_slot_ids\": [\"network_api_approval\"]\n  },\n  \"retention_attestation\": {\n    \"status\": \"maintained\",\n    \"immutable_fields\": [\"event_id\", \"state_id\", \"from_status\", \"to_status\", \"evidence_ids\"]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "network_api_approval"
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": []
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "network_api_approval",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "passed",
+          "permitted_action": "transition",
+          "satisfied_prerequisite": true,
+          "next_action": "proceed",
+          "support_slot_ids": [
+            "network_api_approval"
+          ]
+        },
+        "retention_attestation": {
+          "status": "maintained",
+          "immutable_fields": [
+            "event_id",
+            "state_id",
+            "from_status",
+            "to_status",
+            "evidence_ids"
+          ]
+        }
+      },
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0
+      },
+      "strict_pass": false,
+      "failed_checks": [
+        "exact_evidence_array_preservation",
+        "residual_unknown_vocabulary_accuracy",
+        "transition_gate_accuracy",
+        "retention_attestation_accuracy",
+        "controlled_state_mutation_success"
+      ]
+    },
+    {
+      "run_id": "deepseek-v3.2__G0__unknown_state_paraphrase__r01",
+      "model_key": "deepseek-v3.2",
+      "model_id": "deepseek-ai/DeepSeek-V3.2",
+      "arm": "G0",
+      "condition": "unknown_state_paraphrase",
+      "rep": 1,
+      "timestamp": "2026-07-28T06:58:22.179975+00:00",
+      "elapsed_s": 13.76,
+      "response_id": "019fa7847b896045a631be2bdce1dfc2",
+      "usage": {
+        "prompt_tokens": 260,
+        "completion_tokens": 274,
+        "total_tokens": 534,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 260
+      },
+      "prompt_sent": "# Task: State Transition\n\nApply the following state transition and return the result as JSON.\n\n## Context\n- Initial unknown states: branch_currently_checked_out, continuous_integration_result\n- An event (event-api-approval-001) changes permission_to_use_external_model_api from unknown to approved\n- Evidence supporting this: ev-09\n\n## Output Format\nReturn a JSON object with these fields:\n- state_inventory: {known_state: [...], unknown_state: [...], forbidden_inferences: [...]}\n- evidence_bindings: [{slot_id: \"...\", evidence_ids: [...]}]\n- transition_record: {event_id, state_id, from_status, to_status, evidence_ids, applied}\n- transition_gate: {status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}\n- retention_attestation: {status, immutable_fields: [...]}\n\nCondition: unknown_state_paraphrase\nReturn only the JSON object. No markdown, no prose.",
+      "raw_content": "{\n    \"state_inventory\": {\n        \"known_state\": [\"permission_to_use_external_model_api\"],\n        \"unknown_state\": [\"branch_currently_checked_out\", \"continuous_integration_result\"],\n        \"forbidden_inferences\": []\n    },\n    \"evidence_bindings\": [\n        {\n            \"slot_id\": \"permission_to_use_external_model_api\",\n            \"evidence_ids\": [\"ev-09\"]\n        }\n    ],\n    \"transition_record\": {\n        \"event_id\": \"event-api-approval-001\",\n        \"state_id\": \"permission_to_use_external_model_api\",\n        \"from_status\": \"unknown\",\n        \"to_status\": \"approved\",\n        \"evidence_ids\": [\"ev-09\"],\n        \"applied\": true\n    },\n    \"transition_gate\": {\n        \"status\": \"passed\",\n        \"permitted_action\": \"transition\",\n        \"satisfied_prerequisite\": true,\n        \"next_action\": \"proceed\",\n        \"support_slot_ids\": [\"permission_to_use_external_model_api\"]\n    },\n    \"retention_attestation\": {\n        \"status\": \"maintained\",\n        \"immutable_fields\": [\"event_id\", \"state_id\", \"from_status\", \"to_status\", \"evidence_ids\"]\n    }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "permission_to_use_external_model_api"
+          ],
+          "unknown_state": [
+            "branch_currently_checked_out",
+            "continuous_integration_result"
+          ],
+          "forbidden_inferences": []
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "permission_to_use_external_model_api",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "permission_to_use_external_model_api",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "passed",
+          "permitted_action": "transition",
+          "satisfied_prerequisite": true,
+          "next_action": "proceed",
+          "support_slot_ids": [
+            "permission_to_use_external_model_api"
+          ]
+        },
+        "retention_attestation": {
+          "status": "maintained",
+          "immutable_fields": [
+            "event_id",
+            "state_id",
+            "from_status",
+            "to_status",
+            "evidence_ids"
+          ]
+        }
+      },
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0
+      },
+      "strict_pass": false,
+      "failed_checks": [
+        "exact_evidence_array_preservation",
+        "residual_unknown_vocabulary_accuracy",
+        "transition_gate_accuracy",
+        "retention_attestation_accuracy",
+        "controlled_state_mutation_success"
+      ]
+    },
+    {
+      "run_id": "deepseek-v3.2__G0__unknown_state_paraphrase__r02",
+      "model_key": "deepseek-v3.2",
+      "model_id": "deepseek-ai/DeepSeek-V3.2",
+      "arm": "G0",
+      "condition": "unknown_state_paraphrase",
+      "rep": 2,
+      "timestamp": "2026-07-28T06:58:36.241557+00:00",
+      "elapsed_s": 12.79,
+      "response_id": "019fa784b262d58ef693e6f9dedb8c3a",
+      "usage": {
+        "prompt_tokens": 260,
+        "completion_tokens": 274,
+        "total_tokens": 534,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 260
+      },
+      "prompt_sent": "# Task: State Transition\n\nApply the following state transition and return the result as JSON.\n\n## Context\n- Initial unknown states: branch_currently_checked_out, continuous_integration_result\n- An event (event-api-approval-001) changes permission_to_use_external_model_api from unknown to approved\n- Evidence supporting this: ev-09\n\n## Output Format\nReturn a JSON object with these fields:\n- state_inventory: {known_state: [...], unknown_state: [...], forbidden_inferences: [...]}\n- evidence_bindings: [{slot_id: \"...\", evidence_ids: [...]}]\n- transition_record: {event_id, state_id, from_status, to_status, evidence_ids, applied}\n- transition_gate: {status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}\n- retention_attestation: {status, immutable_fields: [...]}\n\nCondition: unknown_state_paraphrase\nReturn only the JSON object. No markdown, no prose.",
+      "raw_content": "{\n  \"state_inventory\": {\n    \"known_state\": [\"permission_to_use_external_model_api\"],\n    \"unknown_state\": [\"branch_currently_checked_out\", \"continuous_integration_result\"],\n    \"forbidden_inferences\": []\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"permission_to_use_external_model_api\",\n      \"evidence_ids\": [\"ev-09\"]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"permission_to_use_external_model_api\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\"ev-09\"],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"passed\",\n    \"permitted_action\": \"transition\",\n    \"satisfied_prerequisite\": true,\n    \"next_action\": \"proceed\",\n    \"support_slot_ids\": [\"permission_to_use_external_model_api\"]\n  },\n  \"retention_attestation\": {\n    \"status\": \"maintained\",\n    \"immutable_fields\": [\"event_id\", \"state_id\", \"from_status\", \"to_status\", \"evidence_ids\"]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "permission_to_use_external_model_api"
+          ],
+          "unknown_state": [
+            "branch_currently_checked_out",
+            "continuous_integration_result"
+          ],
+          "forbidden_inferences": []
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "permission_to_use_external_model_api",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "permission_to_use_external_model_api",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "passed",
+          "permitted_action": "transition",
+          "satisfied_prerequisite": true,
+          "next_action": "proceed",
+          "support_slot_ids": [
+            "permission_to_use_external_model_api"
+          ]
+        },
+        "retention_attestation": {
+          "status": "maintained",
+          "immutable_fields": [
+            "event_id",
+            "state_id",
+            "from_status",
+            "to_status",
+            "evidence_ids"
+          ]
+        }
+      },
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0
+      },
+      "strict_pass": false,
+      "failed_checks": [
+        "exact_evidence_array_preservation",
+        "residual_unknown_vocabulary_accuracy",
+        "transition_gate_accuracy",
+        "retention_attestation_accuracy",
+        "controlled_state_mutation_success"
+      ]
+    },
+    {
+      "run_id": "deepseek-v3.2__G0__unknown_state_paraphrase__r03",
+      "model_key": "deepseek-v3.2",
+      "model_id": "deepseek-ai/DeepSeek-V3.2",
+      "arm": "G0",
+      "condition": "unknown_state_paraphrase",
+      "rep": 3,
+      "timestamp": "2026-07-28T06:58:49.329947+00:00",
+      "elapsed_s": 14.81,
+      "response_id": "019fa784e57879ef7a9e271cb35938b4",
+      "usage": {
+        "prompt_tokens": 260,
+        "completion_tokens": 274,
+        "total_tokens": 534,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 260
+      },
+      "prompt_sent": "# Task: State Transition\n\nApply the following state transition and return the result as JSON.\n\n## Context\n- Initial unknown states: branch_currently_checked_out, continuous_integration_result\n- An event (event-api-approval-001) changes permission_to_use_external_model_api from unknown to approved\n- Evidence supporting this: ev-09\n\n## Output Format\nReturn a JSON object with these fields:\n- state_inventory: {known_state: [...], unknown_state: [...], forbidden_inferences: [...]}\n- evidence_bindings: [{slot_id: \"...\", evidence_ids: [...]}]\n- transition_record: {event_id, state_id, from_status, to_status, evidence_ids, applied}\n- transition_gate: {status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}\n- retention_attestation: {status, immutable_fields: [...]}\n\nCondition: unknown_state_paraphrase\nReturn only the JSON object. No markdown, no prose.",
+      "raw_content": "{\n  \"state_inventory\": {\n    \"known_state\": [\"permission_to_use_external_model_api\"],\n    \"unknown_state\": [\"branch_currently_checked_out\", \"continuous_integration_result\"],\n    \"forbidden_inferences\": []\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"permission_to_use_external_model_api\",\n      \"evidence_ids\": [\"ev-09\"]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"permission_to_use_external_model_api\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\"ev-09\"],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"passed\",\n    \"permitted_action\": \"transition\",\n    \"satisfied_prerequisite\": true,\n    \"next_action\": \"proceed\",\n    \"support_slot_ids\": [\"permission_to_use_external_model_api\"]\n  },\n  \"retention_attestation\": {\n    \"status\": \"maintained\",\n    \"immutable_fields\": [\"event_id\", \"state_id\", \"from_status\", \"to_status\", \"evidence_ids\"]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "permission_to_use_external_model_api"
+          ],
+          "unknown_state": [
+            "branch_currently_checked_out",
+            "continuous_integration_result"
+          ],
+          "forbidden_inferences": []
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "permission_to_use_external_model_api",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "permission_to_use_external_model_api",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "passed",
+          "permitted_action": "transition",
+          "satisfied_prerequisite": true,
+          "next_action": "proceed",
+          "support_slot_ids": [
+            "permission_to_use_external_model_api"
+          ]
+        },
+        "retention_attestation": {
+          "status": "maintained",
+          "immutable_fields": [
+            "event_id",
+            "state_id",
+            "from_status",
+            "to_status",
+            "evidence_ids"
+          ]
+        }
+      },
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0
+      },
+      "strict_pass": false,
+      "failed_checks": [
+        "exact_evidence_array_preservation",
+        "residual_unknown_vocabulary_accuracy",
+        "transition_gate_accuracy",
+        "retention_attestation_accuracy",
+        "controlled_state_mutation_success"
+      ]
+    },
+    {
+      "run_id": "deepseek-v3.2__G0__unknown_state_paraphrase__r04",
+      "model_key": "deepseek-v3.2",
+      "model_id": "deepseek-ai/DeepSeek-V3.2",
+      "arm": "G0",
+      "condition": "unknown_state_paraphrase",
+      "rep": 4,
+      "timestamp": "2026-07-28T06:59:04.439118+00:00",
+      "elapsed_s": 12.9,
+      "response_id": "019fa785209457f0d3aa6e67aec764f9",
+      "usage": {
+        "prompt_tokens": 260,
+        "completion_tokens": 274,
+        "total_tokens": 534,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 260
+      },
+      "prompt_sent": "# Task: State Transition\n\nApply the following state transition and return the result as JSON.\n\n## Context\n- Initial unknown states: branch_currently_checked_out, continuous_integration_result\n- An event (event-api-approval-001) changes permission_to_use_external_model_api from unknown to approved\n- Evidence supporting this: ev-09\n\n## Output Format\nReturn a JSON object with these fields:\n- state_inventory: {known_state: [...], unknown_state: [...], forbidden_inferences: [...]}\n- evidence_bindings: [{slot_id: \"...\", evidence_ids: [...]}]\n- transition_record: {event_id, state_id, from_status, to_status, evidence_ids, applied}\n- transition_gate: {status, permitted_action, satisfied_prerequisite, next_action, support_slot_ids}\n- retention_attestation: {status, immutable_fields: [...]}\n\nCondition: unknown_state_paraphrase\nReturn only the JSON object. No markdown, no prose.",
+      "raw_content": "{\n  \"state_inventory\": {\n    \"known_state\": [\"permission_to_use_external_model_api\"],\n    \"unknown_state\": [\"branch_currently_checked_out\", \"continuous_integration_result\"],\n    \"forbidden_inferences\": []\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"permission_to_use_external_model_api\",\n      \"evidence_ids\": [\"ev-09\"]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"permission_to_use_external_model_api\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\"ev-09\"],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"passed\",\n    \"permitted_action\": \"transition\",\n    \"satisfied_prerequisite\": true,\n    \"next_action\": \"proceed\",\n    \"support_slot_ids\": [\"permission_to_use_external_model_api\"]\n  },\n  \"retention_attestation\": {\n    \"status\": \"maintained\",\n    \"immutable_fields\": [\"event_id\", \"state_id\", \"from_status\", \"to_status\", \"evidence_ids\"]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            "permission_to_use_external_model_api"
+          ],
+          "unknown_state": [
+            "branch_currently_checked_out",
+            "continuous_integration_result"
+          ],
+          "forbidden_inferences": []
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "permission_to_use_external_model_api",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "permission_to_use_external_model_api",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "passed",
+          "permitted_action": "transition",
+          "satisfied_prerequisite": true,
+          "next_action": "proceed",
+          "support_slot_ids": [
+            "permission_to_use_external_model_api"
+          ]
+        },
+        "retention_attestation": {
+          "status": "maintained",
+          "immutable_fields": [
+            "event_id",
+            "state_id",
+            "from_status",
+            "to_status",
+            "evidence_ids"
+          ]
+        }
+      },
+      "metrics": {
+        "schema_validity": 1.0,
+        "exact_evidence_array_preservation": 0.0,
+        "residual_unknown_vocabulary_accuracy": 0.0,
+        "state_transition_accuracy": 1.0,
+        "transition_gate_accuracy": 0.0,
+        "retention_attestation_accuracy": 0.0,
+        "controlled_state_mutation_success": 0.0
+      },
+      "strict_pass": false,
+      "failed_checks": [
+        "exact_evidence_array_preservation",
+        "residual_unknown_vocabulary_accuracy",
+        "transition_gate_accuracy",
+        "retention_attestation_accuracy",
+        "controlled_state_mutation_success"
+      ]
+    }
+  ]
+}
