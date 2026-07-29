@@ -1,0 +1,167 @@
+{
+  "stage": "smoke-v2",
+  "total_runs": 8,
+  "json_valid": 8,
+  "high_similarity": 6,
+  "errors": 0,
+  "timestamp": "2026-07-29T07:44:18.477995+00:00",
+  "runs": [
+    {
+      "run_id": "smoke-v2__structured-extraction-hard__budget_model__G0__r1",
+      "stage": "smoke-v2",
+      "frozen_run_name": "structured-extraction-hard__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T07:41:27.753317+00:00",
+      "elapsed_s": 46.75,
+      "raw_answer": "\n\n{\n  \"primary_venue\": \"ACL 2026 Findings\",\n  \"fallback_venue\": \"COLM systems workshop\",\n  \"primary_metric\": \"cross-model gap compression\"\n}",
+      "parsed_output": {
+        "primary_venue": "ACL 2026 Findings",
+        "fallback_venue": "COLM systems workshop",
+        "primary_metric": "cross-model gap compression"
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.5909
+    },
+    {
+      "run_id": "smoke-v2__structured-extraction-hard__budget_model__G9__r1",
+      "stage": "smoke-v2",
+      "frozen_run_name": "structured-extraction-hard__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T07:42:07.257821+00:00",
+      "elapsed_s": 38.76,
+      "raw_answer": "\n\n{\n  \"title\": \"Contract-Driven Agent Harness Engineering\",\n  \"target_venue\": \"ACL 2026 Findings\",\n  \"fallback_venue\": \"COLM systems workshop\",\n  \"primary_metric\": \"cross-model gap compression\",\n  \"blocker\": \"proving a nonzero baseline model gap before running the full benchmark\",\n  \"evidence_ids\": [\"hard-e02\", \"hard-e03\", \"hard-e04\"]\n}",
+      "parsed_output": {
+        "title": "Contract-Driven Agent Harness Engineering",
+        "target_venue": "ACL 2026 Findings",
+        "fallback_venue": "COLM systems workshop",
+        "primary_metric": "cross-model gap compression",
+        "blocker": "proving a nonzero baseline model gap before running the full benchmark",
+        "evidence_ids": [
+          "hard-e02",
+          "hard-e03",
+          "hard-e04"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "smoke-v2__structured-extraction-hard__strong_model__G0__r1",
+      "stage": "smoke-v2",
+      "frozen_run_name": "structured-extraction-hard__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T07:42:45.935162+00:00",
+      "elapsed_s": 37.94,
+      "raw_answer": "\n\n{\n  \"proposal_name\": \"Contract-Driven Agent Harness Engineering\",\n  \"primary_venue\": \"ACL 2026 Findings\",\n  \"fallback_venue\": \"COLM systems workshop\",\n  \"primary_metric\": \"cross-model gap compression\",\n  \"secondary_metric\": null,\n  \"blocker\": null\n}",
+      "parsed_output": {
+        "proposal_name": "Contract-Driven Agent Harness Engineering",
+        "primary_venue": "ACL 2026 Findings",
+        "fallback_venue": "COLM systems workshop",
+        "primary_metric": "cross-model gap compression",
+        "secondary_metric": null,
+        "blocker": null
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0319
+    },
+    {
+      "run_id": "smoke-v2__structured-extraction-hard__strong_model__G9__r1",
+      "stage": "smoke-v2",
+      "frozen_run_name": "structured-extraction-hard__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T07:43:14.214889+00:00",
+      "elapsed_s": 27.53,
+      "raw_answer": "\n\n{\n  \"title\": \"Contract-Driven Agent Harness Engineering\",\n  \"target_venue\": \"ACL 2026 Findings\",\n  \"fallback_venue\": \"COLM systems workshop\",\n  \"primary_metric\": \"cross-model gap compression\",\n  \"blocker\": \"proving a nonzero baseline model gap before running the full benchmark\",\n  \"evidence_ids\": [\"hard-e02\", \"hard-e03\", \"hard-e04\"]\n}",
+      "parsed_output": {
+        "title": "Contract-Driven Agent Harness Engineering",
+        "target_venue": "ACL 2026 Findings",
+        "fallback_venue": "COLM systems workshop",
+        "primary_metric": "cross-model gap compression",
+        "blocker": "proving a nonzero baseline model gap before running the full benchmark",
+        "evidence_ids": [
+          "hard-e02",
+          "hard-e03",
+          "hard-e04"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.9444
+    },
+    {
+      "run_id": "smoke-v2__structured-extraction__budget_model__G0__r1",
+      "stage": "smoke-v2",
+      "frozen_run_name": "structured-extraction__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T07:43:28.412118+00:00",
+      "elapsed_s": 13.46,
+      "raw_answer": "\n\n{\n  \"project_title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"backup_venue\": null\n}",
+      "parsed_output": {
+        "project_title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "backup_venue": null
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "smoke-v2__structured-extraction__budget_model__G9__r1",
+      "stage": "smoke-v2",
+      "frozen_run_name": "structured-extraction__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T07:43:52.113258+00:00",
+      "elapsed_s": 22.96,
+      "raw_answer": "\n\n{\n  \"title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"evidence_ids\": [\"fixture-e01\", \"fixture-e02\", \"fixture-e03\"]\n}",
+      "parsed_output": {
+        "title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "evidence_ids": [
+          "fixture-e01",
+          "fixture-e02",
+          "fixture-e03"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "smoke-v2__structured-extraction__strong_model__G0__r1",
+      "stage": "smoke-v2",
+      "frozen_run_name": "structured-extraction__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T07:44:00.780433+00:00",
+      "elapsed_s": 7.93,
+      "raw_answer": "\n\n{\n  \"project_title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"backup_venue\": null\n}",
+      "parsed_output": {
+        "project_title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "backup_venue": null
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "smoke-v2__structured-extraction__strong_model__G9__r1",
+      "stage": "smoke-v2",
+      "frozen_run_name": "structured-extraction__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T07:44:17.977594+00:00",
+      "elapsed_s": 16.45,
+      "raw_answer": "\n\n{\n  \"title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"evidence_ids\": [\"fixture-e01\", \"fixture-e02\", \"fixture-e03\"]\n}",
+      "parsed_output": {
+        "title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "evidence_ids": [
+          "fixture-e01",
+          "fixture-e02",
+          "fixture-e03"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.8824
+    }
+  ]
+}

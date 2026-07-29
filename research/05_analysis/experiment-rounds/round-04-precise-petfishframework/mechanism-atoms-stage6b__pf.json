@@ -1,0 +1,945 @@
+{
+  "stage": "mechanism-atoms-stage6b",
+  "total_runs": 42,
+  "json_valid": 29,
+  "high_similarity": 2,
+  "errors": 0,
+  "timestamp": "2026-07-29T03:54:57.747373+00:00",
+  "runs": [
+    {
+      "run_id": "mechanism-atoms-stage6b__a10-bounded-context-recall__budget_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a10-bounded-context-recall__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:19:00.455603+00:00",
+      "elapsed_s": 12.29,
+      "raw_answer": "\n\nThe next work to be done is Stage 2, as indicated by the current roadmap. The old plan mentioning a broad workflow slice is explicitly excluded per the constraints. \n\n**Answer:** Stage 2 is the next work.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.434
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a10-bounded-context-recall__budget_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a10-bounded-context-recall__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:19:36.715698+00:00",
+      "elapsed_s": 35.52,
+      "raw_answer": "\n\n{\n  \"answer\": \"Stage 2 is next.\",\n  \"used_context\": [\n    \"Primary evidence for Bounded Context Recall (atom-a10-e01)\"\n  ],\n  \"excluded_context\": [\n    \"Supporting evidence for Irrelevant or stale context use (atom-a10-e02)\",\n    \"Old plan says run another broad workflow slice (must_not_load)\"\n  ]\n}",
+      "parsed_output": {
+        "answer": "Stage 2 is next.",
+        "used_context": [
+          "Primary evidence for Bounded Context Recall (atom-a10-e01)"
+        ],
+        "excluded_context": [
+          "Supporting evidence for Irrelevant or stale context use (atom-a10-e02)",
+          "Old plan says run another broad workflow slice (must_not_load)"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.4615
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a10-bounded-context-recall__budget_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a10-bounded-context-recall__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:19:52.720201+00:00",
+      "elapsed_s": 15.27,
+      "raw_answer": "\n\n{\n  \"answer\": \"The next work is Stage 2 of the roadmap.\",\n  \"used_context\": [\n    \"atom-a10-e01\"\n  ],\n  \"excluded_context\": [\n    \"atom-a10-e02\"\n  ]\n}",
+      "parsed_output": {
+        "answer": "The next work is Stage 2 of the roadmap.",
+        "used_context": [
+          "atom-a10-e01"
+        ],
+        "excluded_context": [
+          "atom-a10-e02"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.4706
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a10-bounded-context-recall__strong_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a10-bounded-context-recall__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:20:09.176628+00:00",
+      "elapsed_s": 15.72,
+      "raw_answer": "\n\nThe next work is Stage 2, as indicated by the current roadmap. The old plan mentioning a broad workflow slice is explicitly excluded. \n\n**Answer:** Stage 2 is the next step according to the current roadmap.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.1111
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a10-bounded-context-recall__strong_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a10-bounded-context-recall__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:20:29.501447+00:00",
+      "elapsed_s": 19.59,
+      "raw_answer": "\n\n{\n  \"answer\": \"The next work is Stage 2 as indicated by the current roadmap.\",\n  \"used_context\": [\n    \"Primary evidence for Bounded Context Recall.\"\n  ],\n  \"excluded_context\": [\n    \"Old broad workflow plans that bypass mechanism atoms.\"\n  ]\n}",
+      "parsed_output": {
+        "answer": "The next work is Stage 2 as indicated by the current roadmap.",
+        "used_context": [
+          "Primary evidence for Bounded Context Recall."
+        ],
+        "excluded_context": [
+          "Old broad workflow plans that bypass mechanism atoms."
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.3478
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a10-bounded-context-recall__strong_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a10-bounded-context-recall__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:20:46.444165+00:00",
+      "elapsed_s": 16.2,
+      "raw_answer": "\n\n{\n  \"answer\": \"The next work is Stage 2 as indicated by the current roadmap.\",\n  \"used_context\": [\n    \"current roadmap says Stage 2 is next\"\n  ],\n  \"excluded_context\": [\n    \"old plan says run another broad workflow slice\"\n  ]\n}",
+      "parsed_output": {
+        "answer": "The next work is Stage 2 as indicated by the current roadmap.",
+        "used_context": [
+          "current roadmap says Stage 2 is next"
+        ],
+        "excluded_context": [
+          "old plan says run another broad workflow slice"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.4167
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a2-evidence-grounding__budget_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a2-evidence-grounding__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:22:35.850121+00:00",
+      "elapsed_s": 108.67,
+      "raw_answer": "\n\nThe evidence-grounded claim table includes two claims related to G9, as these are supported by the provided evidence. The third claim about production readiness is unsupported and excluded. \n\n**Grounded Claims:**\n1. **Claim ID:** [Evidence ID 1]  \n   **Claim Text:** [Claim about G9 from evidence]  \n\n2. **Claim ID:** [Evidence ID 2]  \n   **Claim Text:** [Another claim about G9 from evidence]  \n\n**Unsupported Claim:**  \n- **Claim ID:** [Tempting Evidence ID]  \n- **Claim Text:** [Claim about production readiness, not grounded]  \n\nFinal Answer: Two evidence-grounded claims about G9 are reported, excluding the unsupported production readiness claim.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.3261
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a2-evidence-grounding__budget_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a2-evidence-grounding__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:24:04.709304+00:00",
+      "elapsed_s": 88.12,
+      "raw_answer": "\n\n{\n  \"grounded_claims\": [\n    \"Primary evidence for Evidence Grounding.\"\n  ],\n  \"unsupported_claims\": [\n    \"Supporting evidence for Unsupported claim.\"\n  ],\n  \"evidence_ids\": [\n    \"atom-a2-e01\",\n    \"atom-a2-e02\"\n  ]\n}",
+      "parsed_output": {
+        "grounded_claims": [
+          "Primary evidence for Evidence Grounding."
+        ],
+        "unsupported_claims": [
+          "Supporting evidence for Unsupported claim."
+        ],
+        "evidence_ids": [
+          "atom-a2-e01",
+          "atom-a2-e02"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.56
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a2-evidence-grounding__budget_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a2-evidence-grounding__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:26:43.770847+00:00",
+      "elapsed_s": 158.32,
+      "raw_answer": "\n\n{\n  \"grounded_claims\": [\n    \"Primary evidence for Evidence Grounding.\"\n  ],\n  \"unsupported_claims\": [\n    \"Supporting evidence for Unsupported claim.\"\n  ],\n  \"evidence_ids\": [\n    \"atom-a2-e01\",\n    \"atom-a2-e02\"\n  ]\n}",
+      "parsed_output": {
+        "grounded_claims": [
+          "Primary evidence for Evidence Grounding."
+        ],
+        "unsupported_claims": [
+          "Supporting evidence for Unsupported claim."
+        ],
+        "evidence_ids": [
+          "atom-a2-e01",
+          "atom-a2-e02"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a2-evidence-grounding__strong_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a2-evidence-grounding__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:28:06.323197+00:00",
+      "elapsed_s": 81.81,
+      "raw_answer": "\n\nThe evidence bundle contains two grounded claims about G9 and one unsupported claim regarding production readiness. Based on the task constraints, only the two supported claims are reported. Here is the evidence-grounded claim table:\n\n| Evidence ID | Claim |\n|-------------|-------|\n| [Evidence ID 1] | [Claim about G9, supported by evidence] |\n| [Evidence ID 2] | [Another claim about G9, supported by evidence] |\n\nNote: Specific evidence IDs and claim details are not provided in the task input, so the table includes placeholders. The unsupported claim about production readiness is excluded as per instructions.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.2135
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a2-evidence-grounding__strong_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a2-evidence-grounding__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:31:56.736137+00:00",
+      "elapsed_s": 229.67,
+      "raw_answer": "\n\n{\n  \"grounded_claims\": [\"atom-a2-e01\"],\n  \"unsupported_claims\": [\"atom-a2-e02\"],\n  \"evidence_ids\": [\"atom-a2-e01\", \"atom-a2-e02\"]\n}",
+      "parsed_output": {
+        "grounded_claims": [
+          "atom-a2-e01"
+        ],
+        "unsupported_claims": [
+          "atom-a2-e02"
+        ],
+        "evidence_ids": [
+          "atom-a2-e01",
+          "atom-a2-e02"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2593
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a2-evidence-grounding__strong_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a2-evidence-grounding__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:34:11.770763+00:00",
+      "elapsed_s": 134.3,
+      "raw_answer": "\n\n{\n  \"grounded_claims\": [\n    \"Primary evidence for Evidence Grounding.\"\n  ],\n  \"unsupported_claims\": [\n    \"Supporting evidence for Unsupported claim.\"\n  ],\n  \"evidence_ids\": [\"atom-a2-e01\", \"atom-a2-e02\"]\n}",
+      "parsed_output": {
+        "grounded_claims": [
+          "Primary evidence for Evidence Grounding."
+        ],
+        "unsupported_claims": [
+          "Supporting evidence for Unsupported claim."
+        ],
+        "evidence_ids": [
+          "atom-a2-e01",
+          "atom-a2-e02"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.5556
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a4-state-inventory__budget_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a4-state-inventory__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:34:43.243995+00:00",
+      "elapsed_s": 30.72,
+      "raw_answer": "\n\nThe project's current state includes the following existing files:  \n- `AGENTS.md` (protected)  \n- `research/CONTEXT.md`  \n\nThe file `research/06_outputs/README.md` is missing and should not be included. No other files are present or inferred based on the provided snapshot.  \n\n**Answer:**  \nExisting files: `AGENTS.md`, `research/CONTEXT.md`.  \nMissing file: `research/06_outputs/README.md`.  \nProtected file: `AGENTS.md`.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.1974
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a4-state-inventory__budget_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a4-state-inventory__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:35:21.981850+00:00",
+      "elapsed_s": 37.98,
+      "raw_answer": "\n\n{\n  \"existing_files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n  \"missing_files\": [\"research/06_outputs/README.md\"],\n  \"protected_files\": [\"AGENTS.md\"],\n  \"unknown_state\": []\n}",
+      "parsed_output": {
+        "existing_files": [
+          "AGENTS.md",
+          "research/CONTEXT.md"
+        ],
+        "missing_files": [
+          "research/06_outputs/README.md"
+        ],
+        "protected_files": [
+          "AGENTS.md"
+        ],
+        "unknown_state": []
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.4118
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a4-state-inventory__budget_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a4-state-inventory__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:35:54.795342+00:00",
+      "elapsed_s": 32.07,
+      "raw_answer": "\n\n{\n  \"existing_files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n  \"missing_files\": [\"research/06_outputs/README.md\"],\n  \"protected_files\": [\"AGENTS.md\"],\n  \"unknown_state\": []\n}",
+      "parsed_output": {
+        "existing_files": [
+          "AGENTS.md",
+          "research/CONTEXT.md"
+        ],
+        "missing_files": [
+          "research/06_outputs/README.md"
+        ],
+        "protected_files": [
+          "AGENTS.md"
+        ],
+        "unknown_state": []
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a4-state-inventory__strong_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a4-state-inventory__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:36:13.673605+00:00",
+      "elapsed_s": 18.13,
+      "raw_answer": "\n\nThe project's current state includes the following files:  \n- **Existing files**: `AGENTS.md` (protected), `research/CONTEXT.md`.  \n- **Missing file**: `research/06_outputs/README.md`.  \n\nNo additional files or details beyond the provided snapshot are inferred or included.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.1489
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a4-state-inventory__strong_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a4-state-inventory__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:36:55.006888+00:00",
+      "elapsed_s": 40.57,
+      "raw_answer": "\n\n{\n  \"existing_files\": [\"AGENTS.md\", \"research/CONTEXT.md\"],\n  \"missing_files\": [\"research/06_outputs/README.md\"],\n  \"protected_files\": [\"AGENTS.md\"],\n  \"unknown_state\": []\n}",
+      "parsed_output": {
+        "existing_files": [
+          "AGENTS.md",
+          "research/CONTEXT.md"
+        ],
+        "missing_files": [
+          "research/06_outputs/README.md"
+        ],
+        "protected_files": [
+          "AGENTS.md"
+        ],
+        "unknown_state": []
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2632
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a4-state-inventory__strong_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a4-state-inventory__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:37:25.025201+00:00",
+      "elapsed_s": 29.26,
+      "raw_answer": "\n\n{\n  \"existing_files\": [\n    \"AGENTS.md\",\n    \"research/CONTEXT.md\"\n  ],\n  \"missing_files\": [\n    \"research/06_outputs/README.md\"\n  ],\n  \"protected_files\": [\n    \"AGENTS.md\"\n  ],\n  \"unknown_state\": []\n}",
+      "parsed_output": {
+        "existing_files": [
+          "AGENTS.md",
+          "research/CONTEXT.md"
+        ],
+        "missing_files": [
+          "research/06_outputs/README.md"
+        ],
+        "protected_files": [
+          "AGENTS.md"
+        ],
+        "unknown_state": []
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.225
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a5-stage-gated-synthesis__budget_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a5-stage-gated-synthesis__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:38:15.751546+00:00",
+      "elapsed_s": 49.98,
+      "raw_answer": "\n\nThe task requires evaluating whether two proposal tracks should remain separate based on supplied evidence. However, no evidence is provided in the input, making it impossible to justify merging the tracks. \n\n**Stage Status:**\n- **Brief:** Complete (initial stage requires no evidence).  \n- **Evidence:** Not Available (no evidence provided to support analysis).  \n- **Synthesis:** Blocked (synthesis depends on evidence completion).  \n- **Recommendation:** Pending (cannot proceed without synthesis).  \n- **Risks:** Unassessed (risks require evidence and synthesis for evaluation).  \n\n**Conclusion:** The tracks should remain separate due to insufficient evidence to support synthesis or recommendation.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.1132
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a5-stage-gated-synthesis__budget_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a5-stage-gated-synthesis__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:38:51.776297+00:00",
+      "elapsed_s": 35.28,
+      "raw_answer": "\n\n{\n  \"brief\": \"The task requires evaluating two proposal tracks to determine if they should remain separate based on staged research synthesis evidence, ensuring no intermediate stages are skipped.\",\n  \"evidence_summary\": [\n    {\n      \"evidence_id\": \"atom-a5-e01\",\n      \"claim\": \"Primary evidence for Stage-Gated Synthesis\",\n      \"type\": \"EXTRACTED\",\n      \"freshness\": \"local_snapshot\",\n      \"authority\": \"fixture\"\n    },\n    {\n      \"evidence_id\": \"atom-a5-e02\",\n      \"claim\": \"Supporting evidence for Stage skipping\",\n      \"type\": \"INFERRED\",\n      \"freshness\": \"local_snapshot\",\n      \"authority\": \"fixture\"\n    }\n  ],\n  \"synthesis\": \"The primary evidence (atom-a5-e01) establishes that Stage-Gated Synthesis requires sequential completion of stages. The supporting evidence (atom-a5-e02) indicates that skipping stages risks incomplete analysis. Since the task explicitly prohibits skipping intermediate evidence work, the two proposal tracks must remain separate to ensure all stages are rigorously addressed.\",\n  \"recommendation\": \"Maintain separate tracks for both proposals to adhere to the staged synthesis process. Merge only after all stages (evidence collection, analysis, synthesis, risk assessment) are sequentially completed and validated.\",\n  \"risks\": \"Stage skipping (atom-a5-e02) could lead to premature conclusions, undermining the integrity of the synthesis process. Separating tracks ensures each stage's requirements are met, reducing this risk.\",\n  \"stage_status\": {\n    \"brief\": \"completed\",\n    \"evidence\": \"completed\",\n    \"synthesis\": \"completed\",\n    \"recommendation\": \"completed\",\n    \"risks\": \"completed\"\n  }\n}",
+      "parsed_output": {
+        "brief": "The task requires evaluating two proposal tracks to determine if they should remain separate based on staged research synthesis evidence, ensuring no intermediate stages are skipped.",
+        "evidence_summary": [
+          {
+            "evidence_id": "atom-a5-e01",
+            "claim": "Primary evidence for Stage-Gated Synthesis",
+            "type": "EXTRACTED",
+            "freshness": "local_snapshot",
+            "authority": "fixture"
+          },
+          {
+            "evidence_id": "atom-a5-e02",
+            "claim": "Supporting evidence for Stage skipping",
+            "type": "INFERRED",
+            "freshness": "local_snapshot",
+            "authority": "fixture"
+          }
+        ],
+        "synthesis": "The primary evidence (atom-a5-e01) establishes that Stage-Gated Synthesis requires sequential completion of stages. The supporting evidence (atom-a5-e02) indicates that skipping stages risks incomplete analysis. Since the task explicitly prohibits skipping intermediate evidence work, the two proposal tracks must remain separate to ensure all stages are rigorously addressed.",
+        "recommendation": "Maintain separate tracks for both proposals to adhere to the staged synthesis process. Merge only after all stages (evidence collection, analysis, synthesis, risk assessment) are sequentially completed and validated.",
+        "risks": "Stage skipping (atom-a5-e02) could lead to premature conclusions, undermining the integrity of the synthesis process. Separating tracks ensures each stage's requirements are met, reducing this risk.",
+        "stage_status": {
+          "brief": "completed",
+          "evidence": "completed",
+          "synthesis": "completed",
+          "recommendation": "completed",
+          "risks": "completed"
+        }
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.325
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a5-stage-gated-synthesis__budget_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a5-stage-gated-synthesis__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:39:22.131972+00:00",
+      "elapsed_s": 29.61,
+      "raw_answer": "\n\n{\n  \"brief\": \"The two proposal tracks should remain separate as the evidence confirms adherence to staged synthesis without skipping intermediate stages.\",\n  \"evidence_summary\": {\n    \"atom-a5-e01\": \"Primary evidence for Stage-Gated Synthesis confirms structured, sequential stages are followed.\",\n    \"atom-a5-e02\": \"Supporting evidence for Stage skipping indicates no instances of skipped stages were detected in the analysis.\"\n  },\n  \"synthesis\": \"Stage-Gated Synthesis requires sequential completion of stages. The evidence (atom-a5-e01) confirms all stages are executed in order, while atom-a5-e02 explicitly states no stage skipping occurred. This validates the integrity of the process.\",\n  \"recommendation\": \"Maintain separate tracks for both proposals to ensure compliance with the staged synthesis protocol.\",\n  \"risks\": \"Risk of stage skipping remains low due to evidence (atom-a5-e02) confirming proper sequencing. However, continuous monitoring is advised to prevent future deviations.\",\n  \"stage_status\": {\n    \"brief\": \"complete\",\n    \"evidence\": \"complete\",\n    \"synthesis\": \"complete\",\n    \"recommendation\": \"complete\",\n    \"risks\": \"complete\"\n  }\n}",
+      "parsed_output": {
+        "brief": "The two proposal tracks should remain separate as the evidence confirms adherence to staged synthesis without skipping intermediate stages.",
+        "evidence_summary": {
+          "atom-a5-e01": "Primary evidence for Stage-Gated Synthesis confirms structured, sequential stages are followed.",
+          "atom-a5-e02": "Supporting evidence for Stage skipping indicates no instances of skipped stages were detected in the analysis."
+        },
+        "synthesis": "Stage-Gated Synthesis requires sequential completion of stages. The evidence (atom-a5-e01) confirms all stages are executed in order, while atom-a5-e02 explicitly states no stage skipping occurred. This validates the integrity of the process.",
+        "recommendation": "Maintain separate tracks for both proposals to ensure compliance with the staged synthesis protocol.",
+        "risks": "Risk of stage skipping remains low due to evidence (atom-a5-e02) confirming proper sequencing. However, continuous monitoring is advised to prevent future deviations.",
+        "stage_status": {
+          "brief": "complete",
+          "evidence": "complete",
+          "synthesis": "complete",
+          "recommendation": "complete",
+          "risks": "complete"
+        }
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2688
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a5-stage-gated-synthesis__strong_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a5-stage-gated-synthesis__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:40:40.906833+00:00",
+      "elapsed_s": 78.03,
+      "raw_answer": "\n\nThe evidence required to evaluate whether the two proposal tracks should remain separate is not provided in the task input. Without access to the evidence bundle or additional data, it is impossible to determine the stage statuses for brief, evidence, synthesis, recommendation, or risks. The task constraints emphasize using only the supplied information, and since the evidence is absent, no valid assessment can be made. \n\n**Answer:**  \nThe evidence necessary for this decision is missing. Therefore, the stage statuses cannot be determined.  \n- **Brief:** Not applicable (evidence missing)  \n- **Evidence:** Not available  \n- **Synthesis:** Incomplete  \n- **Recommendation:** Cannot be made  \n- **Risks:** Undetermined",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.1346
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a5-stage-gated-synthesis__strong_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a5-stage-gated-synthesis__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:42:50.819748+00:00",
+      "elapsed_s": 129.17,
+      "raw_answer": "\n\n{\n  \"brief\": \"The task requires evaluating whether two proposal tracks should remain separate based on evidence for staged research synthesis, ensuring no intermediate stages are skipped. The primary evidence (atom-a5-e01) supports the Stage-Gated Synthesis framework, while inferred evidence (atom-a5-e02) highlights risks of stage skipping.\",\n  \"evidence_summary\": {\n    \"atom-a5-e01\": \"Primary evidence for Stage-Gated Synthesis, confirming the necessity of sequential stages.\",\n    \"atom-a5-e02\": \"Supporting evidence indicating potential stage skipping, which could compromise the synthesis process.\"\n  },\n  \"synthesis\": \"The primary evidence (atom-a5-e01) establishes that staged synthesis requires adherence to sequential phases. The inferred evidence (atom-a5-e02) suggests a risk of skipping stages, but the task constraints explicitly prohibit this. Thus, the synthesis process must strictly follow all stages, ensuring intermediate evidence is fully addressed before progressing.\",\n  \"recommendation\": \"Maintain separate tracks for the two proposals to uphold the integrity of the staged synthesis process. This aligns with the primary evidence (atom-a5-e01) and mitigates risks identified by the inferred evidence (atom-a5-e02).\",\n  \"risks\": \"Stage skipping (atom-a5-e02) may lead to incomplete or unreliable synthesis outcomes. Separating tracks ensures each stage is completed, reducing this risk.\",\n  \"stage_status\": {\n    \"brief\": \"completed\",\n    \"evidence\": \"completed\",\n    \"synthesis\": \"completed\",\n    \"recommendation\": \"completed\",\n    \"risks\": \"completed\"\n  }\n}",
+      "parsed_output": {
+        "brief": "The task requires evaluating whether two proposal tracks should remain separate based on evidence for staged research synthesis, ensuring no intermediate stages are skipped. The primary evidence (atom-a5-e01) supports the Stage-Gated Synthesis framework, while inferred evidence (atom-a5-e02) highlights risks of stage skipping.",
+        "evidence_summary": {
+          "atom-a5-e01": "Primary evidence for Stage-Gated Synthesis, confirming the necessity of sequential stages.",
+          "atom-a5-e02": "Supporting evidence indicating potential stage skipping, which could compromise the synthesis process."
+        },
+        "synthesis": "The primary evidence (atom-a5-e01) establishes that staged synthesis requires adherence to sequential phases. The inferred evidence (atom-a5-e02) suggests a risk of skipping stages, but the task constraints explicitly prohibit this. Thus, the synthesis process must strictly follow all stages, ensuring intermediate evidence is fully addressed before progressing.",
+        "recommendation": "Maintain separate tracks for the two proposals to uphold the integrity of the staged synthesis process. This aligns with the primary evidence (atom-a5-e01) and mitigates risks identified by the inferred evidence (atom-a5-e02).",
+        "risks": "Stage skipping (atom-a5-e02) may lead to incomplete or unreliable synthesis outcomes. Separating tracks ensures each stage is completed, reducing this risk.",
+        "stage_status": {
+          "brief": "completed",
+          "evidence": "completed",
+          "synthesis": "completed",
+          "recommendation": "completed",
+          "risks": "completed"
+        }
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2091
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a5-stage-gated-synthesis__strong_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a5-stage-gated-synthesis__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:44:39.465430+00:00",
+      "elapsed_s": 107.85,
+      "raw_answer": "\n\n{\n  \"brief\": \"The task requires evaluating whether two proposal tracks should remain separate based on staged research synthesis evidence, ensuring no intermediate stages are skipped. The primary evidence (atom-a5-e01) supports structured synthesis, while inferred evidence (atom-a5-e02) highlights risks of stage skipping.\",\n  \"evidence_summary\": {\n    \"atom-a5-e01\": \"Primary evidence for Stage-Gated Synthesis, confirming adherence to structured workflow stages.\",\n    \"atom-a5-e02\": \"Supporting evidence for Stage Skipping, indicating potential risks of bypassing intermediate steps.\"\n  },\n  \"synthesis\": \"The synthesis process must strictly follow stages to avoid skipping. Atom-a5-e01 validates the necessity of sequential stages, while atom-a5-e02 warns against deviations. Tracks should remain separate to ensure each stage's evidence is properly addressed.\",\n  \"recommendation\": \"Maintain separate tracks for proposals to uphold staged synthesis integrity. Prioritize sequential evidence processing as per atom-a5-e01 and mitigate risks identified in atom-a5-e02.\",\n  \"risks\": \"Stage skipping (atom-a5-e02) could compromise synthesis quality. Risks include incomplete analysis, reduced reliability, and potential oversight of critical evidence.\",\n  \"stage_status\": {\n    \"brief\": \"complete\",\n    \"evidence\": \"complete\",\n    \"synthesis\": \"complete\",\n    \"recommendation\": \"complete\",\n    \"risks\": \"complete\"\n  }\n}",
+      "parsed_output": {
+        "brief": "The task requires evaluating whether two proposal tracks should remain separate based on staged research synthesis evidence, ensuring no intermediate stages are skipped. The primary evidence (atom-a5-e01) supports structured synthesis, while inferred evidence (atom-a5-e02) highlights risks of stage skipping.",
+        "evidence_summary": {
+          "atom-a5-e01": "Primary evidence for Stage-Gated Synthesis, confirming adherence to structured workflow stages.",
+          "atom-a5-e02": "Supporting evidence for Stage Skipping, indicating potential risks of bypassing intermediate steps."
+        },
+        "synthesis": "The synthesis process must strictly follow stages to avoid skipping. Atom-a5-e01 validates the necessity of sequential stages, while atom-a5-e02 warns against deviations. Tracks should remain separate to ensure each stage's evidence is properly addressed.",
+        "recommendation": "Maintain separate tracks for proposals to uphold staged synthesis integrity. Prioritize sequential evidence processing as per atom-a5-e01 and mitigate risks identified in atom-a5-e02.",
+        "risks": "Stage skipping (atom-a5-e02) could compromise synthesis quality. Risks include incomplete analysis, reduced reliability, and potential oversight of critical evidence.",
+        "stage_status": {
+          "brief": "complete",
+          "evidence": "complete",
+          "synthesis": "complete",
+          "recommendation": "complete",
+          "risks": "complete"
+        }
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2053
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a6-validator-repair__budget_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a6-validator-repair__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:45:11.483692+00:00",
+      "elapsed_s": 31.25,
+      "raw_answer": "\n\nThe repaired output should include the `evidence_ids` field with the value `[\"atom-a6-e01\"]`, while retaining all existing valid fields unchanged. Since the original output is not provided, the solution assumes the minimal necessary adjustment to address the validator's feedback. \n\n**Answer:**  \nAdd `evidence_ids: [\"atom-a6-e01\"]` to the output, ensuring no other fields are modified.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a6-validator-repair__budget_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a6-validator-repair__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:45:46.898647+00:00",
+      "elapsed_s": 34.66,
+      "raw_answer": "\n\n{\n  \"repaired_output\": {\n    \"evidence_ids\": [\"atom-a6-e01\"],\n    \"other_valid_fields\": \"unchanged_content_from_original_output\"\n  },\n  \"repair_trace\": [\n    {\n      \"action\": \"add_evidence_ids\",\n      \"evidence_used\": \"atom-a6-e01\",\n      \"reason\": \"Validator reported missing evidence_ids field. Primary evidence (atom-a6-e01) from EXTRACTED type in evidence bundle was used to fulfill this requirement.\"\n    }\n  ],\n  \"remaining_warnings\": []\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "evidence_ids": [
+            "atom-a6-e01"
+          ],
+          "other_valid_fields": "unchanged_content_from_original_output"
+        },
+        "repair_trace": [
+          {
+            "action": "add_evidence_ids",
+            "evidence_used": "atom-a6-e01",
+            "reason": "Validator reported missing evidence_ids field. Primary evidence (atom-a6-e01) from EXTRACTED type in evidence bundle was used to fulfill this requirement."
+          }
+        ],
+        "remaining_warnings": []
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.4255
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a6-validator-repair__budget_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a6-validator-repair__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:46:37.486340+00:00",
+      "elapsed_s": 49.81,
+      "raw_answer": "\n\n{\n  \"repaired_output\": {\n    \"evidence_ids\": [\"atom-a6-e01\"],\n    \"other_valid_fields\": {\n      \"composition_role\": \"Shared\"\n    }\n  },\n  \"repair_trace\": [\n    {\n      \"action\": \"add_evidence_ids\",\n      \"reason\": \"Validator feedback required adding evidence_ids using atom-a6-e01\",\n      \"evidence_used\": \"atom-a6-e01\",\n      \"citation\": \"EvidenceBundle item atom-a6-e01 (EXTRACTED) provides primary evidence for Validator Repair\"\n    },\n    {\n      \"action\": \"preserve_existing_fields\",\n      \"reason\": \"All existing valid fields must remain unchanged per validator instructions\",\n      \"fields_preserved\": [\"composition_role\"],\n      \"citation\": \"MemorySlice must_load directive specifies keeping existing valid fields\"\n    }\n  ],\n  \"remaining_warnings\": []\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "evidence_ids": [
+            "atom-a6-e01"
+          ],
+          "other_valid_fields": {
+            "composition_role": "Shared"
+          }
+        },
+        "repair_trace": [
+          {
+            "action": "add_evidence_ids",
+            "reason": "Validator feedback required adding evidence_ids using atom-a6-e01",
+            "evidence_used": "atom-a6-e01",
+            "citation": "EvidenceBundle item atom-a6-e01 (EXTRACTED) provides primary evidence for Validator Repair"
+          },
+          {
+            "action": "preserve_existing_fields",
+            "reason": "All existing valid fields must remain unchanged per validator instructions",
+            "fields_preserved": [
+              "composition_role"
+            ],
+            "citation": "MemorySlice must_load directive specifies keeping existing valid fields"
+          }
+        ],
+        "remaining_warnings": []
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.3067
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a6-validator-repair__strong_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a6-validator-repair__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:47:16.381017+00:00",
+      "elapsed_s": 38.13,
+      "raw_answer": "\n\nThe repaired output should include the `evidence_ids` field with the value `\"atom-a6-e01\"` while retaining all existing valid fields unchanged. Since the original output structure is not provided, the minimal repair is to explicitly add the required field as specified by the validator. \n\n**Answer:**  \nAdd `evidence_ids: [\"atom-a6-e01\"]` to the output, ensuring no other fields are modified.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.0167
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a6-validator-repair__strong_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a6-validator-repair__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:47:51.134126+00:00",
+      "elapsed_s": 33.99,
+      "raw_answer": "\n\n{\n  \"repaired_output\": {\n    \"evidence_ids\": [\"atom-a6-e01\"],\n    \"other_valid_fields\": {\n      \"composition_role\": \"Shared\"\n    }\n  },\n  \"repair_trace\": [\n    {\n      \"step\": 1,\n      \"action\": \"Add evidence_ids field\",\n      \"source\": \"EvidenceBundle/atom-a6-e01\",\n      \"reason\": \"Validator feedback explicitly requested evidence_ids using atom-a6-e01\"\n    },\n    {\n      \"step\": 2,\n      \"action\": \"Preserve existing fields\",\n      \"source\": \"MemorySlice/must_load\",\n      \"reason\": \"Validator instruction specifies to keep all existing valid fields unchanged\"\n    }\n  ],\n  \"remaining_warnings\": [\n    \"Original output lacked evidence_ids field\",\n    \"No other validation issues detected\"\n  ]\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "evidence_ids": [
+            "atom-a6-e01"
+          ],
+          "other_valid_fields": {
+            "composition_role": "Shared"
+          }
+        },
+        "repair_trace": [
+          {
+            "step": 1,
+            "action": "Add evidence_ids field",
+            "source": "EvidenceBundle/atom-a6-e01",
+            "reason": "Validator feedback explicitly requested evidence_ids using atom-a6-e01"
+          },
+          {
+            "step": 2,
+            "action": "Preserve existing fields",
+            "source": "MemorySlice/must_load",
+            "reason": "Validator instruction specifies to keep all existing valid fields unchanged"
+          }
+        ],
+        "remaining_warnings": [
+          "Original output lacked evidence_ids field",
+          "No other validation issues detected"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.1828
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a6-validator-repair__strong_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a6-validator-repair__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:48:27.564994+00:00",
+      "elapsed_s": 35.64,
+      "raw_answer": "\n\n{\n  \"repaired_output\": {\n    \"evidence_ids\": [\"atom-a6-e01\"],\n    \"other_valid_fields\": {\n      \"field1\": \"value1\",\n      \"field2\": \"value2\"\n    }\n  },\n  \"repair_trace\": [\n    {\n      \"action\": \"add_evidence_ids\",\n      \"reason\": \"Validator reported missing evidence_ids field. Added 'atom-a6-e01' as per evidence_bundle instruction.\",\n      \"citation\": \"atom-a6-e01 (Primary evidence for Validator Repair)\"\n    }\n  ],\n  \"remaining_warnings\": []\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "evidence_ids": [
+            "atom-a6-e01"
+          ],
+          "other_valid_fields": {
+            "field1": "value1",
+            "field2": "value2"
+          }
+        },
+        "repair_trace": [
+          {
+            "action": "add_evidence_ids",
+            "reason": "Validator reported missing evidence_ids field. Added 'atom-a6-e01' as per evidence_bundle instruction.",
+            "citation": "atom-a6-e01 (Primary evidence for Validator Repair)"
+          }
+        ],
+        "remaining_warnings": []
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.1518
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a7-traceable-decision__budget_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a7-traceable-decision__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:48:51.390196+00:00",
+      "elapsed_s": 23.06,
+      "raw_answer": "\n\nThe best answer for the task is to select **composition-boundary framing** as the claim level. The evidence indicates that the baseline gap is not applicable (\"n/a\"), but the budget model demonstrates strong improvement. This suggests the decision criteria focus on structuring the model's composition boundaries to optimize performance, aligning with the \"composition-boundary framing\" mechanism. \n\n**Trace:**  \n- Baseline gap: n/a (no reference point for comparison).  \n- Budget model improvement: Strong, implying effective structuring of composition boundaries.  \n- Primary mechanism: TraceLog ensures observability of reasoning via composition-boundary framing.  \n\n**Answer:**  \nClaim level: **composition-boundary framing**. The decision criteria prioritize structuring the model's composition boundaries to achieve strong improvements, as the baseline gap is not applicable.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.1057
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a7-traceable-decision__budget_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a7-traceable-decision__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:49:34.732395+00:00",
+      "elapsed_s": 42.56,
+      "raw_answer": "\n\n{\n  \"decision\": \"budget_model\",\n  \"criteria_used\": [\n    \"Baseline gap is not applicable (n/a)\",\n    \"Budget model demonstrates strong improvement\"\n  ],\n  \"evidence_ids\": [\"atom-a7-e01\", \"atom-a7-e02\"],\n  \"trace\": \"Selected budget_model based on evidence atom-a7-e01 (primary evidence for Traceable Decision) and atom-a7-e02 (supporting evidence for Non-observable reasoning). The absence of a baseline gap (atom-a7-e01) and the strong improvement of the budget model (atom-a7-e02) justify this decision.\"\n}",
+      "parsed_output": {
+        "decision": "budget_model",
+        "criteria_used": [
+          "Baseline gap is not applicable (n/a)",
+          "Budget model demonstrates strong improvement"
+        ],
+        "evidence_ids": [
+          "atom-a7-e01",
+          "atom-a7-e02"
+        ],
+        "trace": "Selected budget_model based on evidence atom-a7-e01 (primary evidence for Traceable Decision) and atom-a7-e02 (supporting evidence for Non-observable reasoning). The absence of a baseline gap (atom-a7-e01) and the strong improvement of the budget model (atom-a7-e02) justify this decision."
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2114
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a7-traceable-decision__budget_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a7-traceable-decision__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:50:11.978411+00:00",
+      "elapsed_s": 36.48,
+      "raw_answer": "\n\n{\n  \"decision\": \"Select the budget model's strong improvement over the baseline gap (n/a) for traceable decision-making.\",\n  \"criteria_used\": [\"gap compression\", \"weak-model enablement\", \"composition-boundary framing\"],\n  \"evidence_ids\": [\"atom-a7-e01\", \"atom-a7-e02\"],\n  \"trace\": [\n    {\n      \"step\": \"1\",\n      \"evidence_id\": \"atom-a7-e01\",\n      \"claim\": \"Primary evidence for Traceable Decision\",\n      \"reasoning\": \"The baseline gap is not applicable (n/a), so the budget model's strong improvement is the critical factor.\"\n    },\n    {\n      \"step\": \"2\",\n      \"evidence_id\": \"atom-a7-e02\",\n      \"claim\": \"Supporting evidence for Non-observable reasoning\",\n      \"reasoning\": \"The budget model's strong improvement addresses non-observable reasoning by providing traceable criteria.\"\n    }\n  ]\n}",
+      "parsed_output": {
+        "decision": "Select the budget model's strong improvement over the baseline gap (n/a) for traceable decision-making.",
+        "criteria_used": [
+          "gap compression",
+          "weak-model enablement",
+          "composition-boundary framing"
+        ],
+        "evidence_ids": [
+          "atom-a7-e01",
+          "atom-a7-e02"
+        ],
+        "trace": [
+          {
+            "step": "1",
+            "evidence_id": "atom-a7-e01",
+            "claim": "Primary evidence for Traceable Decision",
+            "reasoning": "The baseline gap is not applicable (n/a), so the budget model's strong improvement is the critical factor."
+          },
+          {
+            "step": "2",
+            "evidence_id": "atom-a7-e02",
+            "claim": "Supporting evidence for Non-observable reasoning",
+            "reasoning": "The budget model's strong improvement addresses non-observable reasoning by providing traceable criteria."
+          }
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.3108
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a7-traceable-decision__strong_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a7-traceable-decision__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:50:34.281150+00:00",
+      "elapsed_s": 21.52,
+      "raw_answer": "\n\nThe best answer for the task is to select the claim level \"budget model improves strongly\" as the decision criteria directly align with the evidence provided (baseline gap is n/a). The compact trace of the decision criteria involves the TraceLog mechanism, which ensures observability of the reasoning process. \n\n**Answer:**  \nClaim Level: budget model improves strongly  \nTrace Criteria: TraceLog captures the observable improvement in the budget model's performance.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.0945
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a7-traceable-decision__strong_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a7-traceable-decision__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:51:14.572537+00:00",
+      "elapsed_s": 39.54,
+      "raw_answer": "\n\n{\n  \"decision\": \"budget model\",\n  \"criteria_used\": [\"gap compression\", \"weak-model enablement\", \"composition-boundary framing\"],\n  \"evidence_ids\": [\"atom-a7-e01\", \"atom-a7-e02\"],\n  \"trace\": [\n    {\n      \"step\": \"1\",\n      \"reason\": \"Baseline gap is not applicable (evidence: atom-a7-e02)\",\n      \"citation\": \"atom-a7-e02\"\n    },\n    {\n      \"step\": \"2\",\n      \"reason\": \"Budget model demonstrates strong improvement (evidence: atom-a7-e01)\",\n      \"citation\": \"atom-a7-e01\"\n    },\n    {\n      \"step\": \"3\",\n      \"reason\": \"Composition role is shared (per may_load constraints)\",\n      \"citation\": \"memory_slice_mechanism_atom_a7\"\n    }\n  ]\n}",
+      "parsed_output": {
+        "decision": "budget model",
+        "criteria_used": [
+          "gap compression",
+          "weak-model enablement",
+          "composition-boundary framing"
+        ],
+        "evidence_ids": [
+          "atom-a7-e01",
+          "atom-a7-e02"
+        ],
+        "trace": [
+          {
+            "step": "1",
+            "reason": "Baseline gap is not applicable (evidence: atom-a7-e02)",
+            "citation": "atom-a7-e02"
+          },
+          {
+            "step": "2",
+            "reason": "Budget model demonstrates strong improvement (evidence: atom-a7-e01)",
+            "citation": "atom-a7-e01"
+          },
+          {
+            "step": "3",
+            "reason": "Composition role is shared (per may_load constraints)",
+            "citation": "memory_slice_mechanism_atom_a7"
+          }
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0923
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a7-traceable-decision__strong_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a7-traceable-decision__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:51:46.568913+00:00",
+      "elapsed_s": 31.22,
+      "raw_answer": "\n\n{\n  \"decision\": \"Select the budget model due to strong improvement over the baseline gap (n/a).\",\n  \"criteria_used\": [\"TraceLog mechanism prioritizes observable evidence\", \"Baseline gap inactivity negates gap compression relevance\", \"Budget model's strong performance aligns with traceable decision criteria\"],\n  \"evidence_ids\": [\"atom-a7-e01\"],\n  \"trace\": [\n    {\"step\": \"1\", \"claim\": \"Baseline gap is n/a\", \"evidence_id\": \"atom-a7-e01\", \"reason\": \"Primary evidence for Traceable Decision indicates baseline gap inactivity\"},\n    {\"step\": \"2\", \"claim\": \"Budget model shows strong improvement\", \"evidence_id\": \"atom-a7-e01\", \"reason\": \"Evidence explicitly states budget model's strong enhancement\"},\n    {\"step\": \"3\", \"claim\": \"TraceLog requires observable criteria\", \"evidence_id\": \"atom-a7-e01\", \"reason\": \"Primary mechanism under test (TraceLog) demands observable decision factors\"}\n  ]\n}",
+      "parsed_output": {
+        "decision": "Select the budget model due to strong improvement over the baseline gap (n/a).",
+        "criteria_used": [
+          "TraceLog mechanism prioritizes observable evidence",
+          "Baseline gap inactivity negates gap compression relevance",
+          "Budget model's strong performance aligns with traceable decision criteria"
+        ],
+        "evidence_ids": [
+          "atom-a7-e01"
+        ],
+        "trace": [
+          {
+            "step": "1",
+            "claim": "Baseline gap is n/a",
+            "evidence_id": "atom-a7-e01",
+            "reason": "Primary evidence for Traceable Decision indicates baseline gap inactivity"
+          },
+          {
+            "step": "2",
+            "claim": "Budget model shows strong improvement",
+            "evidence_id": "atom-a7-e01",
+            "reason": "Evidence explicitly states budget model's strong enhancement"
+          },
+          {
+            "step": "3",
+            "claim": "TraceLog requires observable criteria",
+            "evidence_id": "atom-a7-e01",
+            "reason": "Primary mechanism under test (TraceLog) demands observable decision factors"
+          }
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.209
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a9-no-overwrite-action-plan__budget_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a9-no-overwrite-action-plan__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:52:20.794581+00:00",
+      "elapsed_s": 33.46,
+      "raw_answer": "\n\nThe requested actions are categorized as follows based on the provided TaskSpec and constraints:\n\n- **create**: README.md, research/04_methods/new.md  \n  (These actions involve creating new files not mentioned as existing or protected in the input.)\n\n- **blocked**: overwrite AGENTS.md  \n  (Overwriting an existing protected file (AGENTS.md) is explicitly prohibited due to the \"unsafe overwrite proposal\" failure mode.)\n\nNo actions fall into the \"skip\" or \"ask-first\" buckets, as the input does not indicate dependencies, conflicts, or approval requirements beyond the protected file status. \n\n**Final Answer**  \n{\n  \"create\": [\"README.md\", \"research/04_methods/new.md\"],\n  \"blocked\": [\"overwrite AGENTS.md\"],\n  \"skip\": [],\n  \"ask_first\": []\n}",
+      "parsed_output": {
+        "create": [
+          "README.md",
+          "research/04_methods/new.md"
+        ],
+        "blocked": [
+          "overwrite AGENTS.md"
+        ],
+        "skip": [],
+        "ask_first": []
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.1154
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a9-no-overwrite-action-plan__budget_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a9-no-overwrite-action-plan__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:52:52.343903+00:00",
+      "elapsed_s": 30.77,
+      "raw_answer": "\n\n{\n  \"create\": [\"README.md\", \"research/04_methods/new.md\"],\n  \"skip\": [],\n  \"blocked\": [\"AGENTS.md\"],\n  \"ask_first\": []\n}",
+      "parsed_output": {
+        "create": [
+          "README.md",
+          "research/04_methods/new.md"
+        ],
+        "skip": [],
+        "blocked": [
+          "AGENTS.md"
+        ],
+        "ask_first": []
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.7143
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a9-no-overwrite-action-plan__budget_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a9-no-overwrite-action-plan__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:53:23.550149+00:00",
+      "elapsed_s": 30.44,
+      "raw_answer": "\n\n{\n  \"create\": [\"README.md\", \"research/04_methods/new.md\"],\n  \"skip\": [],\n  \"blocked\": [\"AGENTS.md\"],\n  \"ask_first\": []\n}",
+      "parsed_output": {
+        "create": [
+          "README.md",
+          "research/04_methods/new.md"
+        ],
+        "skip": [],
+        "blocked": [
+          "AGENTS.md"
+        ],
+        "ask_first": []
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.625
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a9-no-overwrite-action-plan__strong_model__G0__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a9-no-overwrite-action-plan__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:53:51.395952+00:00",
+      "elapsed_s": 27.07,
+      "raw_answer": "\n\nThe requested actions are categorized as follows based on the task input and constraints:\n\n- **Create**: README.md, research/04_methods/new.md  \n  (These files are either new or explicitly requested for creation without conflicts.)  \n\n- **Blocked**: AGENTS.md  \n  (The file exists and is protected, making overwriting unsafe and prohibited.)  \n\n- **Skip**: None  \n  (No actions are explicitly marked to skip.)  \n\n- **Ask-first**: None  \n  (No actions require user confirmation prior to execution.)  \n\nThis classification ensures no unsafe overwrites occur while addressing the creation requests.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.1053
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a9-no-overwrite-action-plan__strong_model__G8__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a9-no-overwrite-action-plan__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:54:23.000367+00:00",
+      "elapsed_s": 30.87,
+      "raw_answer": "\n\n{\n  \"create\": [\"README.md\", \"research/04_methods/new.md\"],\n  \"skip\": [],\n  \"blocked\": [\"AGENTS.md\"],\n  \"ask_first\": []\n}",
+      "parsed_output": {
+        "create": [
+          "README.md",
+          "research/04_methods/new.md"
+        ],
+        "skip": [],
+        "blocked": [
+          "AGENTS.md"
+        ],
+        "ask_first": []
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.1951
+    },
+    {
+      "run_id": "mechanism-atoms-stage6b__a9-no-overwrite-action-plan__strong_model__G9__r1",
+      "stage": "mechanism-atoms-stage6b",
+      "frozen_run_name": "a9-no-overwrite-action-plan__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:54:57.245083+00:00",
+      "elapsed_s": 33.5,
+      "raw_answer": "\n\n{\n  \"create\": [\"README.md\", \"research/04_methods/new.md\"],\n  \"skip\": [],\n  \"blocked\": [\"AGENTS.md\"],\n  \"ask_first\": []\n}",
+      "parsed_output": {
+        "create": [
+          "README.md",
+          "research/04_methods/new.md"
+        ],
+        "skip": [],
+        "blocked": [
+          "AGENTS.md"
+        ],
+        "ask_first": []
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.1905
+    }
+  ]
+}

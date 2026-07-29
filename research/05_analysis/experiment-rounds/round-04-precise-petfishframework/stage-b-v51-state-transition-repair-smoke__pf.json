@@ -1,0 +1,386 @@
+{
+  "stage": "stage-b-v51-state-transition-repair-smoke",
+  "total_runs": 4,
+  "json_valid": 4,
+  "high_similarity": 4,
+  "errors": 0,
+  "timestamp": "2026-07-29T08:42:04.735111+00:00",
+  "runs": [
+    {
+      "run_id": "stage-b-v51-state-transition-repair-smoke__stage-b-v51-state-transition--canonical__budget_model__G9__r1",
+      "stage": "stage-b-v51-state-transition-repair-smoke",
+      "frozen_run_name": "stage-b-v51-state-transition--canonical__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T08:36:56.293517+00:00",
+      "elapsed_s": 67.71,
+      "raw_answer": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\"\n    ]\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"run_targeted_state_transition_repair_smoke\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"evidence_bindings[].slot_id\",\n      \"evidence_bindings[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status"
+          ]
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "claim_alpha",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "run_targeted_state_transition_repair_smoke",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "evidence_bindings[].slot_id",
+            "evidence_bindings[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "stage-b-v51-state-transition-repair-smoke__stage-b-v51-state-transition--canonical__budget_model__G9__r2",
+      "stage": "stage-b-v51-state-transition-repair-smoke",
+      "frozen_run_name": "stage-b-v51-state-transition--canonical__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T08:38:40.717663+00:00",
+      "elapsed_s": 103.68,
+      "raw_answer": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\"\n    ]\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"run_targeted_state_transition_repair_smoke\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"evidence_bindings[].slot_id\",\n      \"evidence_bindings[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status"
+          ]
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "claim_alpha",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "run_targeted_state_transition_repair_smoke",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "evidence_bindings[].slot_id",
+            "evidence_bindings[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "stage-b-v51-state-transition-repair-smoke__stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r1",
+      "stage": "stage-b-v51-state-transition-repair-smoke",
+      "frozen_run_name": "stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T08:40:16.285331+00:00",
+      "elapsed_s": 94.81,
+      "raw_answer": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"permission_to_use_external_model_api\",\n        \"value\": \"approved\",\n        \"source_references\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"branch_currently_checked_out\",\n      \"continuous_integration_result\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_guess_branch_currently_checked_out\",\n      \"do_not_guess_continuous_integration_result\"\n    ]\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"source_references\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"source_references\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"source_references\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"source_references\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"permission_to_use_external_model_api\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"source_references\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"permission_to_use_external_model_api\",\n    \"next_action\": \"run_targeted_state_transition_repair_smoke\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"evidence_bindings[].slot_id\",\n      \"evidence_bindings[].source_references\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].source_references\",\n      \"transition_record.event_id\",\n      \"transition_record.source_references\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "permission_to_use_external_model_api",
+              "value": "approved",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "branch_currently_checked_out",
+            "continuous_integration_result"
+          ],
+          "forbidden_inferences": [
+            "do_not_guess_branch_currently_checked_out",
+            "do_not_guess_continuous_integration_result"
+          ]
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "claim_alpha",
+            "source_references": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "source_references": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "source_references": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "source_references": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "permission_to_use_external_model_api",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "source_references": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "permission_to_use_external_model_api",
+          "next_action": "run_targeted_state_transition_repair_smoke",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "evidence_bindings[].slot_id",
+            "evidence_bindings[].source_references",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].source_references",
+            "transition_record.event_id",
+            "transition_record.source_references"
+          ]
+        }
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "stage-b-v51-state-transition-repair-smoke__stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r2",
+      "stage": "stage-b-v51-state-transition-repair-smoke",
+      "frozen_run_name": "stage-b-v51-state-transition--dual-surface-stress__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T08:42:04.234472+00:00",
+      "elapsed_s": 107.21,
+      "raw_answer": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"permission_to_use_external_model_api\",\n        \"value\": \"approved\",\n        \"source_references\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"branch_currently_checked_out\",\n      \"continuous_integration_result\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_guess_branch_currently_checked_out\",\n      \"do_not_guess_continuous_integration_result\"\n    ]\n  },\n  \"evidence_bindings\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"source_references\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"source_references\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"source_references\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"source_references\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"permission_to_use_external_model_api\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"source_references\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"permission_to_use_external_model_api\",\n    \"next_action\": \"run_targeted_state_transition_repair_smoke\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"evidence_bindings[].slot_id\",\n      \"evidence_bindings[].source_references\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].source_references\",\n      \"transition_record.event_id\",\n      \"transition_record.source_references\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "permission_to_use_external_model_api",
+              "value": "approved",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "branch_currently_checked_out",
+            "continuous_integration_result"
+          ],
+          "forbidden_inferences": [
+            "do_not_guess_branch_currently_checked_out",
+            "do_not_guess_continuous_integration_result"
+          ]
+        },
+        "evidence_bindings": [
+          {
+            "slot_id": "claim_alpha",
+            "source_references": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "source_references": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "source_references": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "source_references": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "permission_to_use_external_model_api",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "source_references": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "permission_to_use_external_model_api",
+          "next_action": "run_targeted_state_transition_repair_smoke",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "evidence_bindings[].slot_id",
+            "evidence_bindings[].source_references",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].source_references",
+            "transition_record.event_id",
+            "transition_record.source_references"
+          ]
+        }
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    }
+  ]
+}

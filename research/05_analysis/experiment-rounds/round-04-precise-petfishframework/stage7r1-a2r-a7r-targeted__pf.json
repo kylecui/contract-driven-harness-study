@@ -1,0 +1,358 @@
+{
+  "stage": "stage7r1-a2r-a7r-targeted",
+  "total_runs": 8,
+  "json_valid": 8,
+  "high_similarity": 1,
+  "errors": 0,
+  "timestamp": "2026-07-29T12:04:40.736585+00:00",
+  "runs": [
+    {
+      "run_id": "stage7r1-a2r-a7r-targeted__a2r1-claim-level-evidence-binding__budget_model__G8__r1",
+      "stage": "stage7r1-a2r-a7r-targeted",
+      "frozen_run_name": "a2r1-claim-level-evidence-binding__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T11:55:53.926807+00:00",
+      "elapsed_s": 19.5,
+      "raw_answer": "\n\n{\n  \"grounded_claims\": [\n    {\n      \"claim\": \"G9 improved structured extraction contract adherence.\",\n      \"evidence_ids\": [\"atom-a2r1-e01\"]\n    },\n    {\n      \"claim\": \"Research workflow G0 had citation grounding failures.\",\n      \"evidence_ids\": [\"atom-a2r1-e02\"]\n    }\n  ],\n  \"unsupported_claims\": [\n    {\n      \"claim\": \"The harness is production ready.\",\n      \"reason\": \"production readiness has no supporting evidence\"\n    }\n  ],\n  \"evidence_ids\": [\"atom-a2r1-e01\", \"atom-a2r1-e02\"]\n}",
+      "parsed_output": {
+        "grounded_claims": [
+          {
+            "claim": "G9 improved structured extraction contract adherence.",
+            "evidence_ids": [
+              "atom-a2r1-e01"
+            ]
+          },
+          {
+            "claim": "Research workflow G0 had citation grounding failures.",
+            "evidence_ids": [
+              "atom-a2r1-e02"
+            ]
+          }
+        ],
+        "unsupported_claims": [
+          {
+            "claim": "The harness is production ready.",
+            "reason": "production readiness has no supporting evidence"
+          }
+        ],
+        "evidence_ids": [
+          "atom-a2r1-e01",
+          "atom-a2r1-e02"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.7674
+    },
+    {
+      "run_id": "stage7r1-a2r-a7r-targeted__a2r1-claim-level-evidence-binding__budget_model__G8__r2",
+      "stage": "stage7r1-a2r-a7r-targeted",
+      "frozen_run_name": "a2r1-claim-level-evidence-binding__budget_model__G8__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T11:56:59.623043+00:00",
+      "elapsed_s": 64.64,
+      "raw_answer": "\n\n{\n  \"grounded_claims\": [\n    {\n      \"claim\": \"G9 improved structured extraction contract adherence.\",\n      \"evidence_ids\": [\"atom-a2r1-e01\"]\n    },\n    {\n      \"claim\": \"Research workflow G0 had citation grounding failures.\",\n      \"evidence_ids\": [\"atom-a2r1-e02\"]\n    }\n  ],\n  \"unsupported_claims\": [\n    {\n      \"claim\": \"The harness is production ready.\",\n      \"reason\": \"production readiness has no supporting evidence\"\n    }\n  ],\n  \"evidence_ids\": [\"atom-a2r1-e01\", \"atom-a2r1-e02\"]\n}",
+      "parsed_output": {
+        "grounded_claims": [
+          {
+            "claim": "G9 improved structured extraction contract adherence.",
+            "evidence_ids": [
+              "atom-a2r1-e01"
+            ]
+          },
+          {
+            "claim": "Research workflow G0 had citation grounding failures.",
+            "evidence_ids": [
+              "atom-a2r1-e02"
+            ]
+          }
+        ],
+        "unsupported_claims": [
+          {
+            "claim": "The harness is production ready.",
+            "reason": "production readiness has no supporting evidence"
+          }
+        ],
+        "evidence_ids": [
+          "atom-a2r1-e01",
+          "atom-a2r1-e02"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.7674
+    },
+    {
+      "run_id": "stage7r1-a2r-a7r-targeted__a2r1-claim-level-evidence-binding__budget_model__G9__r1",
+      "stage": "stage7r1-a2r-a7r-targeted",
+      "frozen_run_name": "a2r1-claim-level-evidence-binding__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T11:58:39.372130+00:00",
+      "elapsed_s": 98.72,
+      "raw_answer": "\n\n{\n  \"grounded_claims\": [\n    {\n      \"claim\": \"G9 improved structured extraction contract adherence.\",\n      \"evidence_ids\": [\"atom-a2r1-e01\"]\n    },\n    {\n      \"claim\": \"Research workflow G0 had citation grounding failures.\",\n      \"evidence_ids\": [\"atom-a2r1-e02\"]\n    }\n  ],\n  \"unsupported_claims\": [\n    {\n      \"claim\": \"The harness is production ready.\",\n      \"reason\": \"No evidence supports production readiness.\"\n    }\n  ],\n  \"evidence_ids\": [\"atom-a2r1-e01\", \"atom-a2r1-e02\"]\n}",
+      "parsed_output": {
+        "grounded_claims": [
+          {
+            "claim": "G9 improved structured extraction contract adherence.",
+            "evidence_ids": [
+              "atom-a2r1-e01"
+            ]
+          },
+          {
+            "claim": "Research workflow G0 had citation grounding failures.",
+            "evidence_ids": [
+              "atom-a2r1-e02"
+            ]
+          }
+        ],
+        "unsupported_claims": [
+          {
+            "claim": "The harness is production ready.",
+            "reason": "No evidence supports production readiness."
+          }
+        ],
+        "evidence_ids": [
+          "atom-a2r1-e01",
+          "atom-a2r1-e02"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.7619
+    },
+    {
+      "run_id": "stage7r1-a2r-a7r-targeted__a2r1-claim-level-evidence-binding__budget_model__G9__r2",
+      "stage": "stage7r1-a2r-a7r-targeted",
+      "frozen_run_name": "a2r1-claim-level-evidence-binding__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T11:59:29.030217+00:00",
+      "elapsed_s": 48.64,
+      "raw_answer": "\n\n{\n  \"grounded_claims\": [\n    {\n      \"claim\": \"G9 improved structured extraction contract adherence.\",\n      \"evidence_ids\": [\"atom-a2r1-e01\"]\n    },\n    {\n      \"claim\": \"Research workflow G0 had citation grounding failures.\",\n      \"evidence_ids\": [\"atom-a2r1-e02\"]\n    }\n  ],\n  \"unsupported_claims\": [\n    {\n      \"claim\": \"The harness is production ready.\",\n      \"reason\": \"production readiness has no supporting evidence\"\n    }\n  ],\n  \"evidence_ids\": [\"atom-a2r1-e01\", \"atom-a2r1-e02\"]\n}",
+      "parsed_output": {
+        "grounded_claims": [
+          {
+            "claim": "G9 improved structured extraction contract adherence.",
+            "evidence_ids": [
+              "atom-a2r1-e01"
+            ]
+          },
+          {
+            "claim": "Research workflow G0 had citation grounding failures.",
+            "evidence_ids": [
+              "atom-a2r1-e02"
+            ]
+          }
+        ],
+        "unsupported_claims": [
+          {
+            "claim": "The harness is production ready.",
+            "reason": "production readiness has no supporting evidence"
+          }
+        ],
+        "evidence_ids": [
+          "atom-a2r1-e01",
+          "atom-a2r1-e02"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "stage7r1-a2r-a7r-targeted__a7r1-rejection-trace-completeness__budget_model__G8__r1",
+      "stage": "stage7r1-a2r-a7r-targeted",
+      "frozen_run_name": "a7r1-rejection-trace-completeness__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T12:00:12.952440+00:00",
+      "elapsed_s": 42.89,
+      "raw_answer": "\n\n{\n  \"selected_option_id\": \"C2\",\n  \"selected_claim\": \"Harness improves absolute contract adherence and enables weak models on mechanism-bound tasks.\",\n  \"rejected_options\": [\n    {\n      \"option_id\": \"C1\",\n      \"reason\": \"Gap compression is not universal across all tasks (atom-a7r1-e02)\",\n      \"evidence_ids\": [\"atom-a7r1-e02\"]\n    },\n    {\n      \"option_id\": \"C3\",\n      \"reason\": \"No evaluation measured prose style (atom-a7r1-e03)\",\n      \"evidence_ids\": [\"atom-a7r1-e03\"]\n    }\n  ],\n  \"decision_trace\": [\n    {\n      \"option_id\": \"C2\",\n      \"support\": \"atom-a7r1-e01 shows weak-model task success improved in Stage7p v2 composition retention, aligning with weak-model enablement on mechanism-bound tasks.\"\n    },\n    {\n      \"option_id\": \"C1\",\n      \"rejection\": \"atom-a7r1-e02 explicitly states gap compression is not universal across all tasks, contradicting C1's universal claim.\"\n    },\n    {\n      \"option_id\": \"C3\",\n      \"rejection\": \"atom-a7r1-e03 confirms no evaluation measured prose style, making C3's claim about prose style improvement unsupported.\"\n    }\n  ],\n  \"evidence_ids\": [\"atom-a7r1-e01\", \"atom-a7r1-e02\", \"atom-a7r1-e03\"]\n}",
+      "parsed_output": {
+        "selected_option_id": "C2",
+        "selected_claim": "Harness improves absolute contract adherence and enables weak models on mechanism-bound tasks.",
+        "rejected_options": [
+          {
+            "option_id": "C1",
+            "reason": "Gap compression is not universal across all tasks (atom-a7r1-e02)",
+            "evidence_ids": [
+              "atom-a7r1-e02"
+            ]
+          },
+          {
+            "option_id": "C3",
+            "reason": "No evaluation measured prose style (atom-a7r1-e03)",
+            "evidence_ids": [
+              "atom-a7r1-e03"
+            ]
+          }
+        ],
+        "decision_trace": [
+          {
+            "option_id": "C2",
+            "support": "atom-a7r1-e01 shows weak-model task success improved in Stage7p v2 composition retention, aligning with weak-model enablement on mechanism-bound tasks."
+          },
+          {
+            "option_id": "C1",
+            "rejection": "atom-a7r1-e02 explicitly states gap compression is not universal across all tasks, contradicting C1's universal claim."
+          },
+          {
+            "option_id": "C3",
+            "rejection": "atom-a7r1-e03 confirms no evaluation measured prose style, making C3's claim about prose style improvement unsupported."
+          }
+        ],
+        "evidence_ids": [
+          "atom-a7r1-e01",
+          "atom-a7r1-e02",
+          "atom-a7r1-e03"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.4957
+    },
+    {
+      "run_id": "stage7r1-a2r-a7r-targeted__a7r1-rejection-trace-completeness__budget_model__G8__r2",
+      "stage": "stage7r1-a2r-a7r-targeted",
+      "frozen_run_name": "a7r1-rejection-trace-completeness__budget_model__G8__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T12:03:14.041814+00:00",
+      "elapsed_s": 180.06,
+      "raw_answer": "\n\n{\n  \"selected_option_id\": \"C2\",\n  \"selected_claim\": \"Harness improves absolute contract adherence and enables weak models on mechanism-bound tasks.\",\n  \"rejected_options\": [\n    {\n      \"option_id\": \"C1\",\n      \"reason\": \"Gap compression is not universal across all tasks\",\n      \"evidence_ids\": [\"atom-a7r1-e02\"]\n    },\n    {\n      \"option_id\": \"C3\",\n      \"reason\": \"No evaluation measured prose style\",\n      \"evidence_ids\": [\"atom-a7r1-e03\"]\n    }\n  ],\n  \"decision_trace\": [\n    {\n      \"option_id\": \"C2\",\n      \"support\": \"atom-a7r1-e01 directly demonstrates weak-model task success improvement in mechanism-bound tasks (Stage7p v2 composition retention).\"\n    },\n    {\n      \"option_id\": \"C1\",\n      \"rejection\": \"atom-a7r1-e02 explicitly states gap compression is not universal across all tasks, contradicting C1's universal claim.\"\n    },\n    {\n      \"option_id\": \"C3\",\n      \"rejection\": \"atom-a7r1-e03 confirms no evaluation measured prose style, making C3's claim about style improvement unmeasured and invalid.\"\n    }\n  ],\n  \"evidence_ids\": [\"atom-a7r1-e01\", \"atom-a7r1-e02\", \"atom-a7r1-e03\"]\n}",
+      "parsed_output": {
+        "selected_option_id": "C2",
+        "selected_claim": "Harness improves absolute contract adherence and enables weak models on mechanism-bound tasks.",
+        "rejected_options": [
+          {
+            "option_id": "C1",
+            "reason": "Gap compression is not universal across all tasks",
+            "evidence_ids": [
+              "atom-a7r1-e02"
+            ]
+          },
+          {
+            "option_id": "C3",
+            "reason": "No evaluation measured prose style",
+            "evidence_ids": [
+              "atom-a7r1-e03"
+            ]
+          }
+        ],
+        "decision_trace": [
+          {
+            "option_id": "C2",
+            "support": "atom-a7r1-e01 directly demonstrates weak-model task success improvement in mechanism-bound tasks (Stage7p v2 composition retention)."
+          },
+          {
+            "option_id": "C1",
+            "rejection": "atom-a7r1-e02 explicitly states gap compression is not universal across all tasks, contradicting C1's universal claim."
+          },
+          {
+            "option_id": "C3",
+            "rejection": "atom-a7r1-e03 confirms no evaluation measured prose style, making C3's claim about style improvement unmeasured and invalid."
+          }
+        ],
+        "evidence_ids": [
+          "atom-a7r1-e01",
+          "atom-a7r1-e02",
+          "atom-a7r1-e03"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.5591
+    },
+    {
+      "run_id": "stage7r1-a2r-a7r-targeted__a7r1-rejection-trace-completeness__budget_model__G9__r1",
+      "stage": "stage7r1-a2r-a7r-targeted",
+      "frozen_run_name": "a7r1-rejection-trace-completeness__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T12:04:04.925520+00:00",
+      "elapsed_s": 49.87,
+      "raw_answer": "\n\n{\n  \"selected_option_id\": \"C2\",\n  \"selected_claim\": \"Harness improves absolute contract adherence and enables weak models on mechanism-bound tasks.\",\n  \"rejected_options\": [\n    {\n      \"option_id\": \"C1\",\n      \"reason\": \"The evidence (atom-a7r1-e02) explicitly states gap compression is not universal across all tasks, contradicting the universal claim in C1.\",\n      \"evidence_ids\": [\"atom-a7r1-e02\"]\n    },\n    {\n      \"option_id\": \"C3\",\n      \"reason\": \"The evidence (atom-a7r1-e03) confirms no evaluation measured prose style, making claims about prose style improvements unverified.\",\n      \"evidence_ids\": [\"atom-a7r1-e03\"]\n    }\n  ],\n  \"decision_trace\": [\n    {\n      \"option_id\": \"C2\",\n      \"support\": \"Evidence atom-a7r1-e01 directly supports weak-model task success improvements on G8/G9, aligning with C2's claim of weak-model enablement on mechanism-bound tasks.\"\n    },\n    {\n      \"option_id\": \"C1\",\n      \"rejection\": \"Evidence atom-a7r1-e02 refutes the universality of gap compression, invalidating C1's assertion of universal performance gap closure.\"\n    },\n    {\n      \"option_id\": \"C3\",\n      \"rejection\": \"Evidence atom-a7r1-e03 explicitly states prose style was not evaluated, rendering C3's claim about style improvements unsupported.\"\n    }\n  ],\n  \"evidence_ids\": [\"atom-a7r1-e01\", \"atom-a7r1-e02\", \"atom-a7r1-e03\"]\n}",
+      "parsed_output": {
+        "selected_option_id": "C2",
+        "selected_claim": "Harness improves absolute contract adherence and enables weak models on mechanism-bound tasks.",
+        "rejected_options": [
+          {
+            "option_id": "C1",
+            "reason": "The evidence (atom-a7r1-e02) explicitly states gap compression is not universal across all tasks, contradicting the universal claim in C1.",
+            "evidence_ids": [
+              "atom-a7r1-e02"
+            ]
+          },
+          {
+            "option_id": "C3",
+            "reason": "The evidence (atom-a7r1-e03) confirms no evaluation measured prose style, making claims about prose style improvements unverified.",
+            "evidence_ids": [
+              "atom-a7r1-e03"
+            ]
+          }
+        ],
+        "decision_trace": [
+          {
+            "option_id": "C2",
+            "support": "Evidence atom-a7r1-e01 directly supports weak-model task success improvements on G8/G9, aligning with C2's claim of weak-model enablement on mechanism-bound tasks."
+          },
+          {
+            "option_id": "C1",
+            "rejection": "Evidence atom-a7r1-e02 refutes the universality of gap compression, invalidating C1's assertion of universal performance gap closure."
+          },
+          {
+            "option_id": "C3",
+            "rejection": "Evidence atom-a7r1-e03 explicitly states prose style was not evaluated, rendering C3's claim about style improvements unsupported."
+          }
+        ],
+        "evidence_ids": [
+          "atom-a7r1-e01",
+          "atom-a7r1-e02",
+          "atom-a7r1-e03"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.6727
+    },
+    {
+      "run_id": "stage7r1-a2r-a7r-targeted__a7r1-rejection-trace-completeness__budget_model__G9__r2",
+      "stage": "stage7r1-a2r-a7r-targeted",
+      "frozen_run_name": "a7r1-rejection-trace-completeness__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T12:04:40.236208+00:00",
+      "elapsed_s": 34.18,
+      "raw_answer": "\n\n{\n  \"selected_option_id\": \"C2\",\n  \"selected_claim\": \"Harness improves absolute contract adherence and enables weak models on mechanism-bound tasks.\",\n  \"rejected_options\": [\n    {\n      \"option_id\": \"C1\",\n      \"reason\": \"Evidence shows gap compression is not universal across all tasks (atom-a7r1-e02), contradicting the universal claim in C1.\",\n      \"evidence_ids\": [\"atom-a7r1-e02\"]\n    },\n    {\n      \"option_id\": \"C3\",\n      \"reason\": \"No evaluation measured prose style (atom-a7r1-e03), making claims about prose style improvement unverified.\",\n      \"evidence_ids\": [\"atom-a7r1-e03\"]\n    }\n  ],\n  \"decision_trace\": [\n    {\n      \"option_id\": \"C2\",\n      \"support\": \"Evidence atom-a7r1-e01 directly supports weak-model task success improvement, aligning with C2's claim about enabling weak models on mechanism-bound tasks.\"\n    },\n    {\n      \"option_id\": \"C1\",\n      \"rejection\": \"Evidence atom-a7r1-e02 explicitly states gap compression is not universal, contradicting C1's universal claim.\"\n    },\n    {\n      \"option_id\": \"C3\",\n      \"rejection\": \"Evidence atom-a7r1-e03 confirms no evaluation measured prose style, violating the rule against claims about unmeasured outcomes.\"\n    }\n  ],\n  \"evidence_ids\": [\"atom-a7r1-e01\", \"atom-a7r1-e02\", \"atom-a7r1-e03\"]\n}",
+      "parsed_output": {
+        "selected_option_id": "C2",
+        "selected_claim": "Harness improves absolute contract adherence and enables weak models on mechanism-bound tasks.",
+        "rejected_options": [
+          {
+            "option_id": "C1",
+            "reason": "Evidence shows gap compression is not universal across all tasks (atom-a7r1-e02), contradicting the universal claim in C1.",
+            "evidence_ids": [
+              "atom-a7r1-e02"
+            ]
+          },
+          {
+            "option_id": "C3",
+            "reason": "No evaluation measured prose style (atom-a7r1-e03), making claims about prose style improvement unverified.",
+            "evidence_ids": [
+              "atom-a7r1-e03"
+            ]
+          }
+        ],
+        "decision_trace": [
+          {
+            "option_id": "C2",
+            "support": "Evidence atom-a7r1-e01 directly supports weak-model task success improvement, aligning with C2's claim about enabling weak models on mechanism-bound tasks."
+          },
+          {
+            "option_id": "C1",
+            "rejection": "Evidence atom-a7r1-e02 explicitly states gap compression is not universal, contradicting C1's universal claim."
+          },
+          {
+            "option_id": "C3",
+            "rejection": "Evidence atom-a7r1-e03 confirms no evaluation measured prose style, violating the rule against claims about unmeasured outcomes."
+          }
+        ],
+        "evidence_ids": [
+          "atom-a7r1-e01",
+          "atom-a7r1-e02",
+          "atom-a7r1-e03"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.5794
+    }
+  ]
+}

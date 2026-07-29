@@ -1,0 +1,401 @@
+{
+  "stage": "stage-b-v5-state-transition-smoke",
+  "total_runs": 4,
+  "json_valid": 4,
+  "high_similarity": 4,
+  "errors": 0,
+  "timestamp": "2026-07-29T08:35:45.321634+00:00",
+  "runs": [
+    {
+      "run_id": "stage-b-v5-state-transition-smoke__stage-b-v5-state-transition--canonical__budget_model__G9__r1",
+      "stage": "stage-b-v5-state-transition-smoke",
+      "frozen_run_name": "stage-b-v5-state-transition--canonical__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T08:30:15.997533+00:00",
+      "elapsed_s": 39.29,
+      "raw_answer": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\"\n    ]\n  },\n  \"grounded_claims\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"claim\": \"Stage B v4-local passed all local gates.\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"claim\": \"A state transition should follow a clean local gate.\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"claim\": \"Stage B v4 recomposition smoke completed four calls.\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"claim\": \"Within this fixture, provider execution is explicitly approved for the state transition.\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"provider_execution\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"grounded_claims[].slot_id\",\n      \"grounded_claims[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status"
+          ]
+        },
+        "grounded_claims": [
+          {
+            "slot_id": "claim_alpha",
+            "claim": "Stage B v4-local passed all local gates.",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "claim": "A state transition should follow a clean local gate.",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "claim": "Stage B v4 recomposition smoke completed four calls.",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "claim": "Within this fixture, provider execution is explicitly approved for the state transition.",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "provider_execution",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "grounded_claims[].slot_id",
+            "grounded_claims[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.8229
+    },
+    {
+      "run_id": "stage-b-v5-state-transition-smoke__stage-b-v5-state-transition--canonical__budget_model__G9__r2",
+      "stage": "stage-b-v5-state-transition-smoke",
+      "frozen_run_name": "stage-b-v5-state-transition--canonical__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T08:33:50.832735+00:00",
+      "elapsed_s": 214.08,
+      "raw_answer": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"network_api_approval\",\n        \"value\": \"approved\",\n        \"evidence_ids\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"current_git_branch\",\n      \"ci_status\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_infer_current_git_branch\",\n      \"do_not_infer_ci_status\"\n    ]\n  },\n  \"grounded_claims\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"claim\": \"Stage B v4-local passed all local gates.\",\n      \"evidence_ids\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"claim\": \"A state transition should follow a clean local gate.\",\n      \"evidence_ids\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"claim\": \"Stage B v4 recomposition smoke completed four calls.\",\n      \"evidence_ids\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"claim\": \"Within this fixture, provider execution is explicitly approved for the state transition.\",\n      \"evidence_ids\": [\n        \"ev-09\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"network_api_approval\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"evidence_ids\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"network_api_approval\",\n    \"next_action\": \"provider_execution\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"grounded_claims[].slot_id\",\n      \"grounded_claims[].evidence_ids\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].evidence_ids\",\n      \"transition_record.event_id\",\n      \"transition_record.evidence_ids\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "network_api_approval",
+              "value": "approved",
+              "evidence_ids": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "current_git_branch",
+            "ci_status"
+          ],
+          "forbidden_inferences": [
+            "do_not_infer_current_git_branch",
+            "do_not_infer_ci_status"
+          ]
+        },
+        "grounded_claims": [
+          {
+            "slot_id": "claim_alpha",
+            "claim": "Stage B v4-local passed all local gates.",
+            "evidence_ids": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "claim": "A state transition should follow a clean local gate.",
+            "evidence_ids": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "claim": "Stage B v4 recomposition smoke completed four calls.",
+            "evidence_ids": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "claim": "Within this fixture, provider execution is explicitly approved for the state transition.",
+            "evidence_ids": [
+              "ev-09"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "network_api_approval",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "evidence_ids": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "network_api_approval",
+          "next_action": "provider_execution",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "grounded_claims[].slot_id",
+            "grounded_claims[].evidence_ids",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].evidence_ids",
+            "transition_record.event_id",
+            "transition_record.evidence_ids"
+          ]
+        }
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.8696
+    },
+    {
+      "run_id": "stage-b-v5-state-transition-smoke__stage-b-v5-state-transition--dual-surface-stress__budget_model__G9__r1",
+      "stage": "stage-b-v5-state-transition-smoke",
+      "frozen_run_name": "stage-b-v5-state-transition--dual-surface-stress__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T08:34:39.694752+00:00",
+      "elapsed_s": 48.1,
+      "raw_answer": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"permission_to_use_external_model_api\",\n        \"value\": \"approved\",\n        \"source_references\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"branch_currently_checked_out\",\n      \"continuous_integration_result\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_guess_branch_currently_checked_out\",\n      \"do_not_guess_continuous_integration_result\"\n    ]\n  },\n  \"grounded_claims\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"claim\": \"Stage B v4-local passed all local gates.\",\n      \"source_references\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"claim\": \"Stage B v4 isolated smoke passed all eight runs.\",\n      \"source_references\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"claim\": \"Stage B v4 recomposition smoke completed four calls.\",\n      \"source_references\": [\n        \"ev-10\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"claim\": \"All four bounded recomposition outputs passed.\",\n      \"source_references\": [\n        \"ev-11\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"permission_to_use_external_model_api\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"source_references\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"permission_to_use_external_model_api\",\n    \"next_action\": \"provider_execution\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"grounded_claims[].slot_id\",\n      \"grounded_claims[].source_references\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].source_references\",\n      \"transition_record.event_id\",\n      \"transition_record.source_references\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "permission_to_use_external_model_api",
+              "value": "approved",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "branch_currently_checked_out",
+            "continuous_integration_result"
+          ],
+          "forbidden_inferences": [
+            "do_not_guess_branch_currently_checked_out",
+            "do_not_guess_continuous_integration_result"
+          ]
+        },
+        "grounded_claims": [
+          {
+            "slot_id": "claim_alpha",
+            "claim": "Stage B v4-local passed all local gates.",
+            "source_references": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "claim": "Stage B v4 isolated smoke passed all eight runs.",
+            "source_references": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "claim": "Stage B v4 recomposition smoke completed four calls.",
+            "source_references": [
+              "ev-10"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "claim": "All four bounded recomposition outputs passed.",
+            "source_references": [
+              "ev-11"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "permission_to_use_external_model_api",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "source_references": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "permission_to_use_external_model_api",
+          "next_action": "provider_execution",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "grounded_claims[].slot_id",
+            "grounded_claims[].source_references",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].source_references",
+            "transition_record.event_id",
+            "transition_record.source_references"
+          ]
+        }
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.8315
+    },
+    {
+      "run_id": "stage-b-v5-state-transition-smoke__stage-b-v5-state-transition--dual-surface-stress__budget_model__G9__r2",
+      "stage": "stage-b-v5-state-transition-smoke",
+      "frozen_run_name": "stage-b-v5-state-transition--dual-surface-stress__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T08:35:44.820775+00:00",
+      "elapsed_s": 64.39,
+      "raw_answer": "\n\n{\n  \"state_inventory\": {\n    \"known_state\": [\n      {\n        \"state_id\": \"permission_to_use_external_model_api\",\n        \"value\": \"approved\",\n        \"source_references\": [\n          \"ev-09\"\n        ]\n      }\n    ],\n    \"unknown_state\": [\n      \"branch_currently_checked_out\",\n      \"continuous_integration_result\"\n    ],\n    \"forbidden_inferences\": [\n      \"do_not_guess_branch_currently_checked_out\",\n      \"do_not_guess_continuous_integration_result\"\n    ]\n  },\n  \"grounded_claims\": [\n    {\n      \"slot_id\": \"claim_alpha\",\n      \"claim\": \"Stage B v4-local passed all local gates.\",\n      \"source_references\": [\n        \"ev-01\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_beta\",\n      \"claim\": \"Stage B v4 isolated smoke passed all eight runs.\",\n      \"source_references\": [\n        \"ev-06\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_gamma\",\n      \"claim\": \"Stage B v4 recomposition smoke completed four calls.\",\n      \"source_references\": [\n        \"ev-10\",\n        \"ev-11\"\n      ]\n    },\n    {\n      \"slot_id\": \"claim_delta\",\n      \"claim\": \"A state transition should follow a clean local gate.\",\n      \"source_references\": [\n        \"ev-08\"\n      ]\n    }\n  ],\n  \"transition_record\": {\n    \"event_id\": \"event-api-approval-001\",\n    \"state_id\": \"permission_to_use_external_model_api\",\n    \"from_status\": \"unknown\",\n    \"to_status\": \"approved\",\n    \"source_references\": [\n      \"ev-09\"\n    ],\n    \"applied\": true\n  },\n  \"transition_gate\": {\n    \"status\": \"open\",\n    \"permitted_action\": \"provider_execution\",\n    \"satisfied_prerequisite\": \"permission_to_use_external_model_api is approved\",\n    \"next_action\": \"provider_execution\",\n    \"support_slot_ids\": [\n      \"claim_alpha\",\n      \"claim_beta\",\n      \"claim_gamma\",\n      \"claim_delta\"\n    ]\n  },\n  \"retention_attestation\": {\n    \"status\": \"preserved_after_transition\",\n    \"immutable_fields\": [\n      \"grounded_claims[].slot_id\",\n      \"grounded_claims[].source_references\",\n      \"state_inventory.unknown_state\",\n      \"state_inventory.forbidden_inferences\",\n      \"state_inventory.known_state[].state_id\",\n      \"state_inventory.known_state[].source_references\",\n      \"transition_record.event_id\",\n      \"transition_record.source_references\"\n    ]\n  }\n}",
+      "parsed_output": {
+        "state_inventory": {
+          "known_state": [
+            {
+              "state_id": "permission_to_use_external_model_api",
+              "value": "approved",
+              "source_references": [
+                "ev-09"
+              ]
+            }
+          ],
+          "unknown_state": [
+            "branch_currently_checked_out",
+            "continuous_integration_result"
+          ],
+          "forbidden_inferences": [
+            "do_not_guess_branch_currently_checked_out",
+            "do_not_guess_continuous_integration_result"
+          ]
+        },
+        "grounded_claims": [
+          {
+            "slot_id": "claim_alpha",
+            "claim": "Stage B v4-local passed all local gates.",
+            "source_references": [
+              "ev-01"
+            ]
+          },
+          {
+            "slot_id": "claim_beta",
+            "claim": "Stage B v4 isolated smoke passed all eight runs.",
+            "source_references": [
+              "ev-06"
+            ]
+          },
+          {
+            "slot_id": "claim_gamma",
+            "claim": "Stage B v4 recomposition smoke completed four calls.",
+            "source_references": [
+              "ev-10",
+              "ev-11"
+            ]
+          },
+          {
+            "slot_id": "claim_delta",
+            "claim": "A state transition should follow a clean local gate.",
+            "source_references": [
+              "ev-08"
+            ]
+          }
+        ],
+        "transition_record": {
+          "event_id": "event-api-approval-001",
+          "state_id": "permission_to_use_external_model_api",
+          "from_status": "unknown",
+          "to_status": "approved",
+          "source_references": [
+            "ev-09"
+          ],
+          "applied": true
+        },
+        "transition_gate": {
+          "status": "open",
+          "permitted_action": "provider_execution",
+          "satisfied_prerequisite": "permission_to_use_external_model_api is approved",
+          "next_action": "provider_execution",
+          "support_slot_ids": [
+            "claim_alpha",
+            "claim_beta",
+            "claim_gamma",
+            "claim_delta"
+          ]
+        },
+        "retention_attestation": {
+          "status": "preserved_after_transition",
+          "immutable_fields": [
+            "grounded_claims[].slot_id",
+            "grounded_claims[].source_references",
+            "state_inventory.unknown_state",
+            "state_inventory.forbidden_inferences",
+            "state_inventory.known_state[].state_id",
+            "state_inventory.known_state[].source_references",
+            "transition_record.event_id",
+            "transition_record.source_references"
+          ]
+        }
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.8061
+    }
+  ]
+}

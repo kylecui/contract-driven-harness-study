@@ -1,0 +1,74 @@
+[
+  {
+    "stage": "stage7-next-method-plan-update",
+    "total_runs": 4,
+    "json_valid": 4,
+    "high_similarity": 2,
+    "errors": 0,
+    "timestamp": "2026-07-29T10:29:11.039673+00:00"
+  },
+  {
+    "stage": "stage7e-evidence-bound-decision",
+    "total_runs": 6,
+    "json_valid": 6,
+    "high_similarity": 0,
+    "errors": 0,
+    "timestamp": "2026-07-29T10:35:08.887882+00:00"
+  },
+  {
+    "stage": "stage7e-v2-retention-decision",
+    "total_runs": 4,
+    "json_valid": 4,
+    "high_similarity": 0,
+    "errors": 0,
+    "timestamp": "2026-07-29T10:40:23.601892+00:00"
+  },
+  {
+    "stage": "stage7e-v3-state-retention-decision",
+    "total_runs": 4,
+    "json_valid": 4,
+    "high_similarity": 0,
+    "errors": 0,
+    "timestamp": "2026-07-29T10:48:09.667667+00:00"
+  },
+  {
+    "stage": "stage7e-v4-known-state-provenance-decision",
+    "total_runs": 4,
+    "json_valid": 4,
+    "high_similarity": 0,
+    "errors": 0,
+    "timestamp": "2026-07-29T10:58:29.514262+00:00"
+  },
+  {
+    "stage": "stage7p-a10-a9-a6",
+    "total_runs": 6,
+    "json_valid": 6,
+    "high_similarity": 0,
+    "errors": 0,
+    "timestamp": "2026-07-29T11:03:30.089373+00:00"
+  },
+  {
+    "stage": "stage7p-v2-a10-a9-a6",
+    "total_runs": 6,
+    "json_valid": 6,
+    "high_similarity": 0,
+    "errors": 0,
+    "timestamp": "2026-07-29T11:07:16.365217+00:00"
+  },
+  {
+    "stage": "stage7r-revised-atoms",
+    "total_runs": 36,
+    "json_valid": 24,
+    "high_similarity": 2,
+    "errors": 0,
+    "timestamp": "2026-07-29T11:55:30.911800+00:00"
+  },
+  {
+    "stage": "stage7r1-a2r-a7r-targeted",
+    "total_runs": 8,
+    "json_valid": 8,
+    "high_similarity": 1,
+    "errors": 0,
+    "timestamp": "2026-07-29T12:04:40.736585+00:00"
+  }
+]

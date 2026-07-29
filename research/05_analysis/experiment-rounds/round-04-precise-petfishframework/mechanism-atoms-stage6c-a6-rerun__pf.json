@@ -1,0 +1,152 @@
+{
+  "stage": "mechanism-atoms-stage6c-a6-rerun",
+  "total_runs": 6,
+  "json_valid": 6,
+  "high_similarity": 0,
+  "errors": 0,
+  "timestamp": "2026-07-29T03:57:55.836457+00:00",
+  "runs": [
+    {
+      "run_id": "mechanism-atoms-stage6c-a6-rerun__a6-validator-repair__budget_model__G0__r1",
+      "stage": "mechanism-atoms-stage6c-a6-rerun",
+      "frozen_run_name": "a6-validator-repair__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:55:19.155382+00:00",
+      "elapsed_s": 18.14,
+      "raw_answer": "\n\n{\"title\": \"Contract-Driven Harness\", \"evidence_ids\": [\"atom-a6-e01\"]}",
+      "parsed_output": {
+        "title": "Contract-Driven Harness",
+        "evidence_ids": [
+          "atom-a6-e01"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.3333
+    },
+    {
+      "run_id": "mechanism-atoms-stage6c-a6-rerun__a6-validator-repair__budget_model__G8__r1",
+      "stage": "mechanism-atoms-stage6c-a6-rerun",
+      "frozen_run_name": "a6-validator-repair__budget_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:55:48.717938+00:00",
+      "elapsed_s": 28.81,
+      "raw_answer": "\n\n{\n  \"repaired_output\": {\n    \"title\": \"Contract-Driven Harness\",\n    \"evidence_ids\": [\"atom-a6-e01\"]\n  },\n  \"repair_trace\": [\n    {\n      \"action\": \"added_missing_evidence_ids\",\n      \"reason\": \"Validator feedback required adding evidence_ids using atom-a6-e01 (Primary evidence for Validator Repair) as per the task specification\",\n      \"citation\": \"EvidenceBundle item atom-a6-e01: 'Primary evidence for Validator Repair.'\"\n    }\n  ],\n  \"remaining_warnings\": []\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "title": "Contract-Driven Harness",
+          "evidence_ids": [
+            "atom-a6-e01"
+          ]
+        },
+        "repair_trace": [
+          {
+            "action": "added_missing_evidence_ids",
+            "reason": "Validator feedback required adding evidence_ids using atom-a6-e01 (Primary evidence for Validator Repair) as per the task specification",
+            "citation": "EvidenceBundle item atom-a6-e01: 'Primary evidence for Validator Repair.'"
+          }
+        ],
+        "remaining_warnings": []
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.3684
+    },
+    {
+      "run_id": "mechanism-atoms-stage6c-a6-rerun__a6-validator-repair__budget_model__G9__r1",
+      "stage": "mechanism-atoms-stage6c-a6-rerun",
+      "frozen_run_name": "a6-validator-repair__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:56:23.032846+00:00",
+      "elapsed_s": 33.56,
+      "raw_answer": "\n\n{\n  \"repaired_output\": {\n    \"title\": \"Contract-Driven Harness\",\n    \"evidence_ids\": [\"atom-a6-e01\"]\n  },\n  \"repair_trace\": [\n    {\n      \"action\": \"add_missing_evidence_ids\",\n      \"reason\": \"Validator feedback requested addition of evidence_ids using atom-a6-e01 (primary evidence for Validator Repair) while preserving existing valid fields\",\n      \"evidence_used\": \"atom-a6-e01\",\n      \"source\": \"a6-fixture\"\n    }\n  ],\n  \"remaining_warnings\": []\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "title": "Contract-Driven Harness",
+          "evidence_ids": [
+            "atom-a6-e01"
+          ]
+        },
+        "repair_trace": [
+          {
+            "action": "add_missing_evidence_ids",
+            "reason": "Validator feedback requested addition of evidence_ids using atom-a6-e01 (primary evidence for Validator Repair) while preserving existing valid fields",
+            "evidence_used": "atom-a6-e01",
+            "source": "a6-fixture"
+          }
+        ],
+        "remaining_warnings": []
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.4
+    },
+    {
+      "run_id": "mechanism-atoms-stage6c-a6-rerun__a6-validator-repair__strong_model__G0__r1",
+      "stage": "mechanism-atoms-stage6c-a6-rerun",
+      "frozen_run_name": "a6-validator-repair__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:56:51.730890+00:00",
+      "elapsed_s": 27.95,
+      "raw_answer": "\n\n{\"title\": \"Contract-Driven Harness\", \"evidence_ids\": \"atom-a6-e01\"}",
+      "parsed_output": {
+        "title": "Contract-Driven Harness",
+        "evidence_ids": "atom-a6-e01"
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2857
+    },
+    {
+      "run_id": "mechanism-atoms-stage6c-a6-rerun__a6-validator-repair__strong_model__G8__r1",
+      "stage": "mechanism-atoms-stage6c-a6-rerun",
+      "frozen_run_name": "a6-validator-repair__strong_model__G8__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:57:31.376849+00:00",
+      "elapsed_s": 38.87,
+      "raw_answer": "\n\n{\n  \"repaired_output\": {\n    \"title\": \"Contract-Driven Harness\",\n    \"evidence_ids\": [\"atom-a6-e01\"]\n  },\n  \"repair_trace\": {\n    \"action\": \"Add missing evidence_ids field\",\n    \"justification\": \"Validator feedback explicitly requested adding evidence_ids using atom-a6-e01 (primary evidence for Validator Repair) while preserving existing valid fields. The original output lacked this field, so it was incorporated directly from the evidence bundle.\",\n    \"citations\": {\n      \"atom-a6-e01\": \"Evidence for Validator Repair (EXTRACTED type) from the provided evidence bundle\"\n    }\n  },\n  \"remaining_warnings\": []\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "title": "Contract-Driven Harness",
+          "evidence_ids": [
+            "atom-a6-e01"
+          ]
+        },
+        "repair_trace": {
+          "action": "Add missing evidence_ids field",
+          "justification": "Validator feedback explicitly requested adding evidence_ids using atom-a6-e01 (primary evidence for Validator Repair) while preserving existing valid fields. The original output lacked this field, so it was incorporated directly from the evidence bundle.",
+          "citations": {
+            "atom-a6-e01": "Evidence for Validator Repair (EXTRACTED type) from the provided evidence bundle"
+          }
+        },
+        "remaining_warnings": []
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.2105
+    },
+    {
+      "run_id": "mechanism-atoms-stage6c-a6-rerun__a6-validator-repair__strong_model__G9__r1",
+      "stage": "mechanism-atoms-stage6c-a6-rerun",
+      "frozen_run_name": "a6-validator-repair__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T03:57:55.336150+00:00",
+      "elapsed_s": 23.18,
+      "raw_answer": "\n\n{\n  \"repaired_output\": {\n    \"title\": \"Contract-Driven Harness\",\n    \"evidence_ids\": [\"atom-a6-e01\"]\n  },\n  \"repair_trace\": [\n    {\n      \"action\": \"add_missing_evidence_ids\",\n      \"reason\": \"Validator feedback requested addition of evidence_ids field using atom-a6-e01 (primary evidence for Validator Repair) while preserving existing valid fields.\",\n      \"evidence_used\": \"atom-a6-e01\",\n      \"source\": \"a6-fixture\"\n    }\n  ],\n  \"remaining_warnings\": []\n}",
+      "parsed_output": {
+        "repaired_output": {
+          "title": "Contract-Driven Harness",
+          "evidence_ids": [
+            "atom-a6-e01"
+          ]
+        },
+        "repair_trace": [
+          {
+            "action": "add_missing_evidence_ids",
+            "reason": "Validator feedback requested addition of evidence_ids field using atom-a6-e01 (primary evidence for Validator Repair) while preserving existing valid fields.",
+            "evidence_used": "atom-a6-e01",
+            "source": "a6-fixture"
+          }
+        ],
+        "remaining_warnings": []
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.215
+    }
+  ]
+}

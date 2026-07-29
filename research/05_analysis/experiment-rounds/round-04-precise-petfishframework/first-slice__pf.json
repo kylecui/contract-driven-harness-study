@@ -1,0 +1,382 @@
+{
+  "stage": "first-slice",
+  "total_runs": 24,
+  "json_valid": 12,
+  "high_similarity": 3,
+  "errors": 0,
+  "timestamp": "2026-07-29T00:46:03.027519+00:00",
+  "runs": [
+    {
+      "run_id": "first-slice__project-initialization__budget_model__G0__r1",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:30:14.436511+00:00",
+      "elapsed_s": 67.08,
+      "raw_answer": "\n\nTo initialize the existing workspace as an academic research project without overwriting any files, the following steps were taken:\n\n1. **Preserved Existing Files**:  \n   - `AGENTS.md` (unchanged, as per the \"do not overwrite\" constraint).  \n   - `.agents/installed-packs.json` (unchanged).  \n   - `.git/` directory (unchanged, assuming it is already initialized).\n\n2. **Created Missing Research Workflow Directories**:  \n   - Added standard directories for research projects: `data/`, `notebooks/`, and `results/`.  \n   - These directories are essential for organizing datasets, analysis scripts, and output files, respectively.\n\nNo additional files were created, as the task explicitly restricts overwriting existing files and only requires missing files to be generated. The structure adheres to academic research conventions while respecting the no-overwrite rule.  \n\n**Final Answer**:  \nThe workspace was initialized by creating the `data/`, `notebooks/`, and `results/` directories without modifying existing files like `AGENTS.md` or `.agents/installed-packs.json`. The `.git/` directory was left untouched.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.0275
+    },
+    {
+      "run_id": "first-slice__project-initialization__budget_model__G0__r2",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__budget_model__G0__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:32:06.826003+00:00",
+      "elapsed_s": 111.64,
+      "raw_answer": "\n\nThe task requires initializing an existing workspace as an academic research project without overwriting existing files. The existing files include `AGENTS.md`, `.agents/installed-packs.json`, and `.git/`, so no changes are needed to these. The key is to create only missing files and ensure the structure aligns with research workflows. \n\nSince no specific missing files are listed in the task input, the most logical step is to create a `README.md` if it does not already exist, as it is a standard file for project documentation. Additionally, ensure that directories like `data`, `notebooks`, `results`, and `docs` are present (if missing) to support a typical research workflow. However, the task explicitly states to create only missing files, so directories are not included unless specified. \n\nFinal answer:  \nCreate a `README.md` file if it is missing, and ensure no existing files like `AGENTS.md` or `.agents/installed-packs.json` are overwritten. No other files or directories are created unless explicitly required.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.0192
+    },
+    {
+      "run_id": "first-slice__project-initialization__budget_model__G0__r3",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__budget_model__G0__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:32:43.801572+00:00",
+      "elapsed_s": 36.22,
+      "raw_answer": "\n\nThe task requires initializing an existing workspace as an academic research project with a no-overwrite policy. Existing files (`AGENTS.md`, `.agents/installed-packs.json`, `.git/`) are preserved, and missing files are created only. The research workflow directories typically include:\n\n- `data/` (for raw/processed datasets)\n- `notebooks/` (for analysis scripts)\n- `results/` (for output files)\n- `scripts/` (for utility or processing code)\n- `docs/` (for documentation and papers)\n\nNo files were overwritten, and only missing directories were created to align with standard research project scaffolding. The final structure respects the constraints and ensures a clean, organized workspace. \n\n**Answer:**  \nCreated research directories: `data/`, `notebooks/`, `results/`, `scripts/`, `docs/`. Existing files (`AGENTS.md`, `.agents/installed-packs.json`, `.git/`) remain untouched.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.0111
+    },
+    {
+      "run_id": "first-slice__project-initialization__budget_model__G9__r1",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:33:26.959934+00:00",
+      "elapsed_s": 42.41,
+      "raw_answer": "\n\n**Checklist for Project Initialization**\n\n**created_files**  \n- `README.md`  \n- `research_plan.md`  \n- `data_schema.md`  \n- `analysis_scripts/`  \n- `bibliography.bib`  \n\n**skipped_files**  \n- `AGENTS.md` (existing file, no overwrite)  \n- `.agents/installed-packs.json` (existing file, no overwrite)  \n- `.git/` (existing directory, no overwrite)  \n\n**risks**  \n- **Risk of file conflicts**: New files might overlap with existing ones if not carefully checked.  \n- **Incomplete scaffolding**: Missing critical directories/files could hinder research workflows.  \n- **Configuration errors**: Incorrect setup of `.gitignore` or directory structures might lead to version control issues.  \n\n**next_steps**  \n1. Add content to `README.md` and `research_plan.md` to outline the project.  \n2. Populate `data_schema.md` with dataset specifications.  \n3. Configure `.gitignore` to exclude non-research files (e.g., logs, temporary files).  \n4. Initialize Git repository if not already done (`git init`).  \n5. Set up environment dependencies in `analysis_scripts/` or `.agents/installed-packs.json` as needed.  \n\n**Tool Trace**  \nNo tools were used, as the task was completed through direct file management and adherence to constraints.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.0165
+    },
+    {
+      "run_id": "first-slice__project-initialization__budget_model__G9__r2",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:34:28.199631+00:00",
+      "elapsed_s": 60.47,
+      "raw_answer": "\n\n**Checklist for Project Initialization**\n\n**created_files**  \n- `data/`  \n- `notebooks/`  \n- `results/`  \n- `scripts/`  \n- `docs/`  \n- `README.md`  \n\n**skipped_files**  \n- `AGENTS.md` (existing file, no overwrite)  \n- `.agents/installed-packs.json` (existing file, no overwrite)  \n- `.git/` (existing directory, no overwrite)  \n\n**risks**  \n- **Risk of incomplete structure**: Missing directories (e.g., `data`, `notebooks`) could hinder research workflow if not properly set up.  \n- **Risk of policy violation**: No-overwrite rules might leave critical directories uncreated if not explicitly checked.  \n- **Risk of redundancy**: Existing files (e.g., `AGENTS.md`) might conflict with default templates if not handled carefully.  \n\n**next_steps**  \n1. Verify the presence of required directories (e.g., `data`, `notebooks`) and ensure they align with the academic research workflow.  \n2. Add a `README.md` to document the project structure and objectives.  \n3. Confirm `.agents/installed-packs.json` and `.git/` are properly configured for the research environment.  \n4. Review the `AGENTS.md` file to ensure it reflects the current project's agent definitions without unintended modifications.  \n\n**Tool Trace**  \n- **Tool Used**: `filesystem` (simulated)  \n- **Purpose**: To create missing directories and files while respecting the no-overwrite policy.  \n- **Action**: Checked existing files and directories, created only those missing (e.g., `data/`, `notebooks/`) to align with academic research standards.  \n\nThis checklist adheres to the no-overwrite constraint, preserves the existing files, and structures the workspace to support academic research workflows.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.0211
+    },
+    {
+      "run_id": "first-slice__project-initialization__budget_model__G9__r3",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__budget_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:35:46.230979+00:00",
+      "elapsed_s": 77.28,
+      "raw_answer": "\n\n**Checklist for Project Initialization**\n\n- **created_files**:  \n  - `README.md` (standard project overview)  \n  - `data/` (directory for raw and processed datasets)  \n  - `notebooks/` (directory for Jupyter notebooks or analysis scripts)  \n  - `src/` (source code directory for research tools)  \n  - `.gitignore` (to exclude unnecessary files from version control)  \n\n- **skipped_files**:  \n  - `AGENTS.md` (existing file, per fixture evidence [fixture-pi-e01])  \n  - `.agents/installed-packs.json` (existing file, per fixture evidence [fixture-pi-e01])  \n  - `.git/` (existing directory, per fixture evidence [fixture-pi-e01])  \n\n- **risks**:  \n  - **Medium Risk**: No-overwrite policy may leave the project structure incomplete if missing files are not identified. Ensure all required directories/files are explicitly created.  \n\n- **next_steps**:  \n  1. Verify the presence of `data/`, `notebooks/`, and `src/` directories.  \n  2. Add a `LICENSE` file if not already present.  \n  3. Configure `.gitignore` to exclude environment files (e.g., `venv/`, `__pycache__`).  \n  4. Update `README.md` with project details and research objectives.  \n\n**Tool Trace**: No tools were used as per the provided constraints. The analysis relied on the task spec, evidence bundle, and output contract to determine file creation and skipping logic.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.0155
+    },
+    {
+      "run_id": "first-slice__project-initialization__strong_model__G0__r1",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:36:43.089693+00:00",
+      "elapsed_s": 56.1,
+      "raw_answer": "\n\nTo initialize the existing workspace as an academic research project without overwriting existing files, the following steps were taken:\n\n1. **Created research workflow directories** to organize the project structure:\n   - `data/` for raw and processed datasets.\n   - `experiments/` for experiment configurations and logs.\n   - `notebooks/` for Jupyter notebooks or analysis scripts.\n   - `results/` for storing output from experiments and analyses.\n\n2. **Generated a README.md** if it was missing, ensuring it does not overwrite an existing file of the same name.\n\n3. **Preserved existing files**:\n   - `AGENTS.md` (unchanged).\n   - `.agents/installed-packs.json` (unchanged).\n   - `.git/` (unchanged, assuming Git is already initialized).\n\nNo files were modified or overwritten beyond creating missing ones. The structure adheres to standard academic research practices while respecting the no-overwrite constraint. \n\n**Answer:**  \nThe workspace was initialized with research directories (`data`, `experiments`, `notebooks`, `results`) and a `README.md` (if missing), without altering existing files like `AGENTS.md`, `.agents/installed-packs.json`, or `.git/`.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.0164
+    },
+    {
+      "run_id": "first-slice__project-initialization__strong_model__G0__r2",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__strong_model__G0__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:37:40.683708+00:00",
+      "elapsed_s": 56.62,
+      "raw_answer": "\n\nTo initialize the existing workspace as an academic research project without overwriting any existing files, the following steps are taken:\n\n1. **Create research workflow directories** to organize project components:\n   - `research/data` for raw and processed datasets.\n   - `research/analysis` for analysis scripts and results.\n   - `research/figures` for visualizations and plots.\n   - `research/scripts` for utility or helper scripts.\n\n2. **Add documentation infrastructure**:\n   - `docs/paper.md` to outline the research paper structure.\n   - `references.bib` for managing academic citations.\n\n3. **Ensure no-overwrite behavior**:\n   - Skip modifying `AGENTS.md`, `.agents/installed-packs.json`, or `.git/` as they already exist.\n\nThese actions align with standard academic project scaffolding while respecting the constraints of not overwriting existing files. The structure promotes modularity, reproducibility, and clarity for research workflows. \n\n**Final Answer**:  \nThe workspace is initialized with the following new files/directories:  \n- `research/data`  \n- `research/analysis`  \n- `research/figures`  \n- `research/scripts`  \n- `docs/paper.md`  \n- `references.bib`  \n\nExisting files (`AGENTS.md`, `.agents/installed-packs.json`, `.git/`) remain untouched.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.0089
+    },
+    {
+      "run_id": "first-slice__project-initialization__strong_model__G0__r3",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__strong_model__G0__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:38:38.586558+00:00",
+      "elapsed_s": 56.9,
+      "raw_answer": "\n\nThe task requires initializing an existing workspace as an academic research project using no-overwrite behavior. Based on the provided input, the following steps were taken:\n\n1. **Preserved Existing Files**:  \n   - `AGENTS.md` was left untouched as per the \"do not overwrite\" constraint.  \n   - `.agents/installed-packs.json` and `.git/` were retained since they already exist.\n\n2. **Created Missing Research Directories**:  \n   - Added standard research workflow directories: `data`, `analysis`, `figures`, `reports`, `scripts`, and `docs` to organize the project structure.  \n   - These directories were created only if they were missing, ensuring no existing files were overwritten.\n\n3. **No Additional Files Created**:  \n   - Only missing files/directories were added. No new files (e.g., `README.md`, `.gitignore`) were introduced unless explicitly required by the task, which was not specified here.\n\n**Final Answer**:  \nThe workspace was initialized by creating the research workflow directories (`data`, `analysis`, `figures`, `reports`, `scripts`, `docs`) without overwriting existing files like `AGENTS.md`, `.agents/installed-packs.json`, or `.git/`. No other files were modified or added.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.0161
+    },
+    {
+      "run_id": "first-slice__project-initialization__strong_model__G9__r1",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:40:02.381542+00:00",
+      "elapsed_s": 82.79,
+      "raw_answer": "\n\n**Checklist for Project Initialization**\n\n- **created_files**:  \n  - `README.md` (standard project overview)  \n  - `.gitignore` (research-specific ignore rules)  \n  - `data/` (directory for raw and processed datasets)  \n  - `results/` (directory for analysis outputs)  \n  - `figures/` (directory for visualizations)  \n  - `scripts/` (scripts for reproducibility)  \n  - `docs/` (documentation and methodology files)  \n\n- **skipped_files**:  \n  - `AGENTS.md` (existing file, no overwrite)  \n  - `.agents/installed-packs.json` (existing file, no overwrite)  \n  - `.git/` (existing directory, no overwrite)  \n\n- **risks**:  \n  - **Risk of incomplete structure**: Missing files/directories might not align with academic research standards.  \n  - **Risk of policy violation**: Could accidentally overwrite existing files if not careful.  \n  - **Risk of directory conflicts**: New directories might clash with existing ones if not checked.  \n\n- **next_steps**:  \n  1. Add detailed documentation to `docs/` (e.g., `methodology.md`, `analysis.md`).  \n  2. Configure `.gitignore` to exclude non-research files.  \n  3. Set up the research router (if applicable) for workflow management.  \n  4. Verify all files/directories adhere to the no-overwrite policy.  \n\n**Important Claims Cited**:  \n- `fixture-pi-e01` (AGENTS.md exists, skipped).  \n- `fixture-pi-e02` (Project profile is academic research, guiding structure creation).  \n\n**Tool Trace**:  \nNo tools were used, as the task explicitly states \"no tools available.\" The reasoning was based on the provided task spec, evidence bundle, and constraints.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.0066
+    },
+    {
+      "run_id": "first-slice__project-initialization__strong_model__G9__r2",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__strong_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:41:12.329769+00:00",
+      "elapsed_s": 68.91,
+      "raw_answer": "\n\n**Checklist for Project Initialization**\n\n- **created_files**:  \n  - `README.md` (standard project documentation)  \n  - `data/` (directory for raw data and datasets)  \n  - `analysis/` (directory for research analysis scripts)  \n  - `scripts/` (directory for utility or automation scripts)  \n  - `.gitignore` (to exclude unnecessary files from version control)  \n\n- **skipped_files**:  \n  - `AGENTS.md` (preserved per no-overwrite policy)  \n  - `.agents/installed-packs.json` (existing file, not overwritten)  \n  - `.git/` (existing directory, not modified)  \n\n- **risks**:  \n  - **Medium Risk**: Potential for unintended file overwrites if existing files are not properly checked. The no-overwrite policy ensures critical files like `AGENTS.md` remain untouched, but new files/directories could conflict with future additions.  \n\n- **next_steps**:  \n  1. Add a `LICENSE` file to define project permissions.  \n  2. Populate `data/` and `analysis/` directories with project-specific files.  \n  3. Configure `.gitignore` to exclude build artifacts or environment files.  \n  4. Update `AGENTS.md` if necessary to align with the research project structure (per allowed tools).  \n\n**Tool Trace**:  \nUsed the `filesystem` tool to verify existing files and create missing ones while adhering to the no-overwrite constraint.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.016
+    },
+    {
+      "run_id": "first-slice__project-initialization__strong_model__G9__r3",
+      "stage": "first-slice",
+      "frozen_run_name": "project-initialization__strong_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:42:11.205696+00:00",
+      "elapsed_s": 58.13,
+      "raw_answer": "\n\n**Checklist for Project Initialization**\n\n- **created_files**:  \n  - `README.md` (standard project overview)  \n  - `.gitignore` (to exclude unnecessary files from version control)  \n  - `LICENSE` (for open-source compliance)  \n  - `data/` (directory for raw and processed datasets)  \n  - `notebooks/` (for Jupyter notebooks and analysis scripts)  \n  - `results/` (to store output from experiments/research)  \n  - `scripts/` (for data processing or utility scripts)  \n  - `docs/` (for research papers, documentation, and methodology)  \n\n- **skipped_files**:  \n  - `AGENTS.md` (existing file, no overwrite)  \n  - `.agents/installed-packs.json` (existing file, no overwrite)  \n  - `.git/` (existing directory, no overwrite)  \n\n- **risks**:  \n  - **Medium Risk**: No-overwrite policy may leave missing files if the existing workspace lacks critical scaffolding (e.g., `.gitignore`, `data/`, `notebooks/`).  \n  - **Potential Incompleteness**: Research workflow directories might not align with specific project needs.  \n\n- **next_steps**:  \n  1. Add content to `README.md` and `docs/` to detail project goals and methodology.  \n  2. Configure `.gitignore` to exclude temporary files, logs, and environment-specific data.  \n  3. Populate `data/` and `notebooks/` with initial datasets and analysis templates.  \n  4. Set up version control workflows in `.github/` (if missing).  \n  5. Validate directory structure against research requirements.  \n\n**Tool Trace**:  \n- Used `filesystem` to create missing files and directories while respecting no-overwrite constraints.  \n- Preserved evidence IDs for claims about existing files and project type.  \n- Adhered to the concise engineering style profile and citation policy for important claims.",
+      "parsed_output": null,
+      "json_valid": false,
+      "text_similarity_to_frozen": 0.0063
+    },
+    {
+      "run_id": "first-slice__structured-extraction__budget_model__G0__r1",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__budget_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:42:24.757745+00:00",
+      "elapsed_s": 12.8,
+      "raw_answer": "\n\n{\n  \"project_title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"backup_venue\": null\n}",
+      "parsed_output": {
+        "project_title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "backup_venue": null
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "first-slice__structured-extraction__budget_model__G0__r2",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__budget_model__G0__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:42:40.033075+00:00",
+      "elapsed_s": 14.53,
+      "raw_answer": "\n\n{\n  \"project_title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"backup_venue\": null\n}",
+      "parsed_output": {
+        "project_title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "backup_venue": null
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "first-slice__structured-extraction__budget_model__G0__r3",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__budget_model__G0__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:42:56.113474+00:00",
+      "elapsed_s": 15.34,
+      "raw_answer": "\n\n{\n  \"project_title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"backup_venue\": null\n}",
+      "parsed_output": {
+        "project_title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "backup_venue": null
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "first-slice__structured-extraction__budget_model__G9__r1",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__budget_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:43:20.955421+00:00",
+      "elapsed_s": 24.1,
+      "raw_answer": "\n\n{\n  \"title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"evidence_ids\": [\"fixture-e01\", \"fixture-e02\", \"fixture-e03\"]\n}",
+      "parsed_output": {
+        "title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "evidence_ids": [
+          "fixture-e01",
+          "fixture-e02",
+          "fixture-e03"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "first-slice__structured-extraction__budget_model__G9__r2",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__budget_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:43:42.984375+00:00",
+      "elapsed_s": 21.26,
+      "raw_answer": "\n\n{\n  \"title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"evidence_ids\": [\"fixture-e01\", \"fixture-e02\", \"fixture-e03\"]\n}",
+      "parsed_output": {
+        "title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "evidence_ids": [
+          "fixture-e01",
+          "fixture-e02",
+          "fixture-e03"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "first-slice__structured-extraction__budget_model__G9__r3",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__budget_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:44:03.700812+00:00",
+      "elapsed_s": 19.96,
+      "raw_answer": "\n\n{\n  \"title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"evidence_ids\": [\"fixture-e01\", \"fixture-e02\", \"fixture-e03\"]\n}",
+      "parsed_output": {
+        "title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "evidence_ids": [
+          "fixture-e01",
+          "fixture-e02",
+          "fixture-e03"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "first-slice__structured-extraction__strong_model__G0__r1",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__strong_model__G0__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:44:18.855588+00:00",
+      "elapsed_s": 14.37,
+      "raw_answer": "\n\n{\n  \"project_title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"backup_venue\": null\n}",
+      "parsed_output": {
+        "project_title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "backup_venue": null
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 1.0
+    },
+    {
+      "run_id": "first-slice__structured-extraction__strong_model__G0__r2",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__strong_model__G0__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:44:33.816435+00:00",
+      "elapsed_s": 14.18,
+      "raw_answer": "\n\n{\n  \"project_title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"backup_venue\": null\n}",
+      "parsed_output": {
+        "project_title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "backup_venue": null
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "first-slice__structured-extraction__strong_model__G0__r3",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__strong_model__G0__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:44:50.073650+00:00",
+      "elapsed_s": 15.47,
+      "raw_answer": "\n\n{\n  \"project_title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"backup_venue\": null\n}",
+      "parsed_output": {
+        "project_title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "backup_venue": null
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "first-slice__structured-extraction__strong_model__G9__r1",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__strong_model__G9__r1",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:45:10.530031+00:00",
+      "elapsed_s": 19.71,
+      "raw_answer": "\n\n{\n  \"title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"evidence_ids\": [\"fixture-e01\", \"fixture-e02\", \"fixture-e03\"]\n}",
+      "parsed_output": {
+        "title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "evidence_ids": [
+          "fixture-e01",
+          "fixture-e02",
+          "fixture-e03"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.6667
+    },
+    {
+      "run_id": "first-slice__structured-extraction__strong_model__G9__r2",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__strong_model__G9__r2",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:45:37.924634+00:00",
+      "elapsed_s": 26.66,
+      "raw_answer": "\n\n{\n  \"title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"evidence_ids\": [\"fixture-e01\", \"fixture-e02\", \"fixture-e03\"]\n}",
+      "parsed_output": {
+        "title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "evidence_ids": [
+          "fixture-e01",
+          "fixture-e02",
+          "fixture-e03"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    },
+    {
+      "run_id": "first-slice__structured-extraction__strong_model__G9__r3",
+      "stage": "first-slice",
+      "frozen_run_name": "structured-extraction__strong_model__G9__r3",
+      "model": "Qwen/Qwen3-8B",
+      "timestamp": "2026-07-29T00:46:02.526596+00:00",
+      "elapsed_s": 23.86,
+      "raw_answer": "\n\n{\n  \"title\": \"Topic-Aware Compaction\",\n  \"target_venue\": \"COLM 2026\",\n  \"primary_metric\": \"token savings\",\n  \"evidence_ids\": [\"fixture-e01\", \"fixture-e02\", \"fixture-e03\"]\n}",
+      "parsed_output": {
+        "title": "Topic-Aware Compaction",
+        "target_venue": "COLM 2026",
+        "primary_metric": "token savings",
+        "evidence_ids": [
+          "fixture-e01",
+          "fixture-e02",
+          "fixture-e03"
+        ]
+      },
+      "json_valid": true,
+      "text_similarity_to_frozen": 0.0
+    }
+  ]
+}
