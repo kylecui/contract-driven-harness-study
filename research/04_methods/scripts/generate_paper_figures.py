@@ -69,7 +69,8 @@ def figure_1_multi_model():
         ("Qwen2.5-7B\n(7B)", 40, 0, "below"),
     ]
 
-    fig, ax = plt.subplots(figsize=(7, 3.5))
+    fig, ax = plt.subplots(figsize=(7, 4.5))
+    fig.subplots_adjust(bottom=0.25)
 
     y_pos = np.arange(len(models))
     colors = [COLOR_ABOVE if m[3] == "above" else COLOR_BELOW for m in models]
@@ -94,31 +95,33 @@ def figure_1_multi_model():
         else:
             ax.text(0.02, i, label, ha="left", va="center", color=COLOR_BELOW if m[3] == "below" else "black", fontweight="bold", fontsize=10)
 
-    # GLM annotation
+    # GLM annotation — simple vertical arrow from text directly above bar end, NO curve
     glm_idx = 3
-    ax.annotate("paraphrase\nvulnerability", xy=(0.75, glm_idx), xytext=(0.45, glm_idx + 0.5),
-                fontsize=8, color="#D32F2F", ha="center",
-                arrowprops=dict(arrowstyle="->", color="#D32F2F", lw=1.2))
+    ax.annotate("← paraphrase\nvulnerability\n(0/8 paraphrase)", xy=(0.75, glm_idx + 0.31), xytext=(0.75, glm_idx + 0.85),
+                fontsize=7.5, color="#D32F2F", ha="center", va="bottom",
+                arrowprops=dict(arrowstyle="-|>", color="#D32F2F", lw=1.5))
 
     ax.set_yticks(y_pos)
     ax.set_yticklabels([m[0] for m in models])
     ax.set_xlabel("Strict Pass Rate (40 runs)")
-    ax.set_xlim(0, 1.1)
+    ax.set_xlim(0, 1.25)
+    ax.set_ylim(-0.8, 6.2)
     ax.xaxis.set_major_formatter(mticker.PercentFormatter(xmax=1.0))
     ax.axvline(x=0.912, color="#90A4AE", linestyle="--", linewidth=0.8, zorder=1)
-    ax.text(0.912, -0.7, "Wilson lower\nbound 0.912", fontsize=7, color="#78909C", ha="center")
+    # Wilson bound label — bottom-left corner, no overlap with legend or title
+    ax.text(0.02, -0.70, "Dashed line: Wilson lower bound 0.912", fontsize=7, color="#78909C", ha="left", va="top")
 
-    # Legend
+    # Legend — BELOW the plot area, horizontal layout
     above_patch = mpatches.Patch(color=COLOR_ABOVE, label="Above-floor models")
     below_patch = mpatches.Patch(color=COLOR_BELOW, label="Below-floor model")
-    ax.legend(handles=[above_patch, below_patch], loc="lower right")
+    ax.legend(handles=[above_patch, below_patch], loc="upper center",
+              bbox_to_anchor=(0.5, -0.22), ncol=2, fontsize=8, framealpha=0.9)
 
     ax.invert_yaxis()
-    ax.set_title("Pass Rates Under a Frozen Contract Across 5 Models", pad=12)
+    ax.set_title("Pass Rates Under a Frozen Contract Across 5 Models", pad=15)
 
-    fig.tight_layout()
-    fig.savefig(OUTPUT_DIR / "figure-1-multi-model-pass-rates.pdf")
-    fig.savefig(OUTPUT_DIR / "figure-1-multi-model-pass-rates.png")
+    fig.savefig(OUTPUT_DIR / "figure-1-multi-model-pass-rates.pdf", bbox_inches="tight")
+    fig.savefig(OUTPUT_DIR / "figure-1-multi-model-pass-rates.png", bbox_inches="tight")
     plt.close(fig)
     print("Figure 1: multi-model pass rates ✓")
 
@@ -197,7 +200,7 @@ def figure_3_stage_d():
     models = ["qwen3-8b", "deepseek-v3.2"]
     model_labels = ["Qwen3-8B", "DeepSeek-V3.2"]
 
-    fig, axes = plt.subplots(1, 3, figsize=(9, 3.5))
+    fig, axes = plt.subplots(1, 3, figsize=(10, 3.8))
 
     # Panel A: Pass rate
     ax = axes[0]
@@ -251,8 +254,8 @@ def figure_3_stage_d():
         ax.text(i - width / 2, g0 + 1.5, f"{g0:.0f}s", ha="center", fontsize=8)
         ax.text(i + width / 2, g9 + 1.5, f"{g9:.0f}s", ha="center", fontsize=8)
 
-    fig.suptitle("Stage D: Contract Stack Converts 0% → 100% at 8.6× Prompt Cost", fontsize=12, y=1.02)
-    fig.tight_layout()
+    fig.suptitle("Stage D: Contract Stack Converts 0% → 100% at 8.6× Prompt Cost", fontsize=12, y=1.08)
+    fig.tight_layout(rect=[0, 0, 1, 0.95])
     fig.savefig(OUTPUT_DIR / "figure-3-stage-d-overhead.pdf")
     fig.savefig(OUTPUT_DIR / "figure-3-stage-d-overhead.png")
     plt.close(fig)
@@ -262,76 +265,79 @@ def figure_3_stage_d():
 # ── Figure 4: Experimental Stage Progression ────────────────────────────────
 
 def figure_4_stage_progression():
-    fig, ax = plt.subplots(figsize=(9, 5))
-    ax.set_xlim(0, 10)
-    ax.set_ylim(0, 10)
+    fig, ax = plt.subplots(figsize=(10, 6))
+    ax.set_xlim(-1.5, 11)
+    ax.set_ylim(-0.5, 11)
     ax.axis("off")
-    ax.set_title("Experimental Progression: From Atoms to Multi-Model Stability", fontsize=13, pad=20)
+    ax.set_title("Experimental Progression: From Atoms to Multi-Model Stability", fontsize=13, pad=25)
 
-    # Define stages as boxes
+    # Phase labels — moved to LEFT margin to avoid crossing arrows
+    phase_labels = [
+        (0, 8.0, "Phase 1:\nMechanism Atoms\n& Composition", "#1565C0"),
+        (0, 4.8, "Phase 2:\nContract Evolution\n& Stability", "#E65100"),
+        (0, 1.5, "Phase 3:\nCross-Model\n& Cost Verification", "#6A1B9A"),
+    ]
+    for x, y, text, color in phase_labels:
+        ax.text(x, y, text, ha="left", va="center", fontsize=8, fontweight="bold",
+                color=color, rotation=0,
+                bbox=dict(boxstyle="round,pad=0.3", facecolor="white", edgecolor=color, alpha=0.9))
+
+    # Stage boxes — wider spacing, no detail text below (moved inside boxes)
     stages = [
-        # (x, y, width, height, label, runs, color, section)
-        (0.5, 7.5, 2.0, 1.2, "Stage 6\nMechanism Atoms", "48 runs\n§4.3", "#BBDEFB", "A1-A10 atoms\nG0/G2/G8/G9"),
-        (3.0, 7.5, 2.0, 1.2, "Stage 7p\nComposition", "12 runs\n§4.4", "#BBDEFB", "A10→A9→A6\npartial macro"),
-        (5.5, 7.5, 2.0, 1.2, "Stage 7r\nRevised Atoms", "44 runs\n§4.5", "#BBDEFB", "A2R-A8R +\ntargeted smoke"),
-        (8.0, 7.5, 1.8, 1.2, "Stage 7e\nRepair Loop", "18 runs\n§4.6", "#C8E6C9", "v1→v4\nevidence-decision"),
+        # (x, y, w, h, label, runs+detail_combined, color)
+        (1.8, 8.5, 1.8, 1.3, "Stage 6\nMechanism Atoms", "48 runs | §4.3\nA1-A10, G0/G2/G8/G9", "#BBDEFB"),
+        (4.0, 8.5, 1.8, 1.3, "Stage 7p\nComposition", "12 runs | §4.4\nA10→A9→A6 macro", "#BBDEFB"),
+        (6.2, 8.5, 1.8, 1.3, "Stage 7r\nRevised Atoms", "44 runs | §4.5\nA2R-A8R + smoke", "#BBDEFB"),
+        (8.4, 8.5, 1.8, 1.3, "Stage 7e\nRepair Loop", "18 runs | §4.6\nv1→v4 iterations", "#C8E6C9"),
 
-        (0.5, 5.0, 2.0, 1.2, "Stage 7-next\nNeighbor Transfer", "4 runs\n§4.7", "#C8E6C9", "method-plan\nmacro"),
-        (3.0, 5.0, 2.5, 1.2, "Stage B v5→v5.3\nContract Evolution", "~68 runs\n§4.8", "#FFE0B2", "state-transition\nrepair trajectory"),
-        (6.0, 5.0, 2.0, 1.2, "Stage B v5.4\nFrozen Stability", "40×3 runs\n§4.8", "#FFCC80", "40/40 Qwen3-8B\nWilson [0.912,1.0]"),
+        (1.8, 5.3, 1.8, 1.3, "Stage 7-next\nNeighbor Transfer", "4 runs | §4.7\nmethod-plan macro", "#C8E6C9"),
+        (4.0, 5.3, 2.2, 1.3, "Stage B v5→v5.3\nContract Evolution", "~68 runs | §4.8\nstate-transition repair", "#FFE0B2"),
+        (6.6, 5.3, 2.0, 1.3, "Stage B v5.4\nFrozen Stability", "40×3 runs | §4.8\n40/40, Wilson [.912,1.0]", "#FFCC80"),
 
-        (1.0, 2.5, 2.5, 1.2, "Multi-Model\nInterchangeability", "200×2 runs\n§4.10", "#E1BEE7", "5 models\n40/40,40/40,40/40,\n30/40,0/40"),
-        (4.0, 2.5, 2.0, 1.2, "Stage D\nCost Matrix", "40×2 runs\n§4.13", "#E1BEE7", "G0 0%→G9 100%\n8.6× token cost"),
-        (6.5, 2.5, 2.5, 1.2, "Reproducibility\n4 Rounds × 1458 calls", "§5.2\n", "#B3E5FC", "v5.4 sim=1.0\n(petfishframework)"),
+        (2.0, 2.0, 2.2, 1.3, "Multi-Model\nInterchangeability", "200×2 runs | §4.10\n40/40,40/40,40/40,30/40,0/40", "#E1BEE7"),
+        (4.6, 2.0, 1.8, 1.3, "Stage D\nCost Matrix", "40×2 runs | §4.13\nG0 0%→G9 100%", "#E1BEE7"),
+        (6.8, 2.0, 2.2, 1.3, "Reproducibility\n4 Rounds × 1458 calls", "§Appendix F\nv5.4 sim=1.0 (pf)", "#B3E5FC"),
 
-        (3.0, 0.3, 4.0, 1.0, "Stage 6 Task Slices (§4.2)", "~50 runs", "#F5F5F5", "structured extraction | project init | research workflow | gap compression"),
+        (4.0, 0.0, 3.5, 0.8, "Task Slices (§4.2)", "~50 runs: extraction, init, workflow | gap compression", "#F5F5F5"),
     ]
 
-    # Draw boxes
     for s in stages:
         x, y, w, h = s[0], s[1], s[2], s[3]
         label = s[4]
-        runs = s[5]
+        detail = s[5]
         color = s[6]
-        detail = s[7] if len(s) > 7 else ""
 
-        rect = mpatches.FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.1",
-                                        facecolor=color, edgecolor="#78909C", linewidth=1.2)
+        rect = mpatches.FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.12",
+                                        facecolor=color, edgecolor="#78909C", linewidth=1.0)
         ax.add_patch(rect)
-        ax.text(x + w / 2, y + h * 0.65, label, ha="center", va="center", fontsize=8, fontweight="bold")
-        ax.text(x + w / 2, y + h * 0.30, runs, ha="center", va="center", fontsize=7, color="#546E7A")
-        if detail:
-            ax.text(x + w / 2, y - 0.25, detail, ha="center", va="top", fontsize=6, color="#90A4AE")
+        ax.text(x + w / 2, y + h * 0.72, label, ha="center", va="center", fontsize=8, fontweight="bold")
+        ax.text(x + w / 2, y + h * 0.28, detail, ha="center", va="center", fontsize=6.5, color="#546E7A")
 
-    # Arrows showing flow
-    arrow_kw = dict(arrowstyle="->", color="#546E7A", lw=1.5, connectionstyle="arc3,rad=0")
+    # Arrows — simplified routing, only horizontal + vertical (no curved arrows)
+    arrow_kw = dict(arrowstyle="->", color="#78909C", lw=1.3)
 
-    # Row 1 horizontal flow
-    ax.annotate("", xy=(3.0, 8.1), xytext=(2.5, 8.1), arrowprops=arrow_kw)
-    ax.annotate("", xy=(5.5, 8.1), xytext=(5.0, 8.1), arrowprops=arrow_kw)
-    ax.annotate("", xy=(8.0, 8.1), xytext=(7.5, 8.1), arrowprops=arrow_kw)
+    # Row 1 horizontal (Phase 1)
+    ax.annotate("", xy=(4.0, 9.15), xytext=(3.6, 9.15), arrowprops=arrow_kw)
+    ax.annotate("", xy=(6.2, 9.15), xytext=(5.8, 9.15), arrowprops=arrow_kw)
+    ax.annotate("", xy=(8.4, 9.15), xytext=(8.0, 9.15), arrowprops=arrow_kw)
 
-    # Row 1 → Row 2
-    ax.annotate("", xy=(1.5, 6.2), xytext=(1.5, 7.5), arrowprops=arrow_kw)  # 6 → 7-next
-    ax.annotate("", xy=(4.0, 6.2), xytext=(4.0, 7.5), arrowprops=arrow_kw)  # 7p → B
-    ax.annotate("", xy=(8.9, 6.2), xytext=(8.9, 7.5), arrowprops=dict(arrowstyle="->", color="#546E7A", lw=1.5, connectionstyle="arc3,rad=-0.3"))
+    # Row 1 → Row 2 (vertical drops, spread out)
+    ax.annotate("", xy=(2.7, 6.6), xytext=(2.7, 8.5), arrowprops=arrow_kw)   # Stage 6 → 7-next
+    ax.annotate("", xy=(5.1, 6.6), xytext=(5.1, 8.5), arrowprops=arrow_kw)   # 7p → B v5
+    ax.annotate("", xy=(7.6, 6.6), xytext=(9.3, 8.5), arrowprops=arrow_kw)   # 7e → B v5.4 (diagonal)
 
     # Row 2 horizontal
-    ax.annotate("", xy=(3.0, 5.6), xytext=(2.5, 5.6), arrowprops=arrow_kw)
-    ax.annotate("", xy=(6.0, 5.6), xytext=(5.5, 5.6), arrowprops=arrow_kw)
+    ax.annotate("", xy=(4.0, 5.95), xytext=(3.6, 5.95), arrowprops=arrow_kw)
+    ax.annotate("", xy=(6.6, 5.95), xytext=(6.2, 5.95), arrowprops=arrow_kw)
 
-    # Row 2 → Row 3
-    ax.annotate("", xy=(2.0, 3.7), xytext=(2.0, 5.0), arrowprops=arrow_kw)
-    ax.annotate("", xy=(5.0, 3.7), xytext=(7.0, 5.0), arrowprops=dict(arrowstyle="->", color="#546E7A", lw=1.5, connectionstyle="arc3,rad=0.2"))
+    # Row 2 → Row 3 (vertical drops)
+    ax.annotate("", xy=(3.1, 3.3), xytext=(3.1, 5.3), arrowprops=arrow_kw)   # Multi-model
+    ax.annotate("", xy=(5.5, 3.3), xytext=(7.6, 5.3), arrowprops=arrow_kw)   # v5.4 → Stage D (diagonal)
+    ax.annotate("", xy=(7.9, 3.3), xytext=(5.5, 5.3), arrowprops=arrow_kw)   # B → Reproducibility (diagonal)
 
     # Row 3 horizontal
-    ax.annotate("", xy=(4.0, 3.1), xytext=(3.5, 3.1), arrowprops=arrow_kw)
-    ax.annotate("", xy=(6.5, 3.1), xytext=(6.0, 3.1), arrowprops=arrow_kw)
-
-    # Phase labels
-    ax.text(5.0, 9.2, "Phase 1: Mechanism Atoms & Composition", ha="center", fontsize=9, fontweight="bold", color="#1565C0")
-    ax.text(5.0, 6.5, "Phase 2: Contract Evolution & Stability", ha="center", fontsize=9, fontweight="bold", color="#E65100")
-    ax.text(5.0, 4.0, "Phase 3: Cross-Model & Cost Verification", ha="center", fontsize=9, fontweight="bold", color="#6A1B9A")
+    ax.annotate("", xy=(4.6, 2.65), xytext=(4.2, 2.65), arrowprops=arrow_kw)
+    ax.annotate("", xy=(6.8, 2.65), xytext=(6.4, 2.65), arrowprops=arrow_kw)
 
     fig.tight_layout()
     fig.savefig(OUTPUT_DIR / "figure-4-stage-progression.pdf")
