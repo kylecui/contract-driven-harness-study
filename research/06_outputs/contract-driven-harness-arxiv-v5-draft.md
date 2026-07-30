@@ -291,7 +291,9 @@ Table 3 summarizes the main claim boundary.
 | Full workflow reliability | not supported | remains a non-claim |
 | Production readiness | not supported | remains a non-claim |
 
-Table 4 summarizes the main empirical layers and the claim each layer permits.
+Table 4 summarizes the main empirical layers and the claim each layer permits. Figure 4 provides a visual map of the experimental progression from mechanism atoms through multi-model verification.
+
+> **Figure 4.** Experimental stage progression. See `figures/figure-4-stage-progression.pdf`. The diagram shows three phases: (1) mechanism atoms and composition (§4.3–4.5), (2) contract evolution and stability (§4.6–4.8), and (3) cross-model and cost verification (§4.9–4.13). Each box gives the stage name, run count, and section reference.
 
 | Layer | Stage | Runs | Failure -> Repair | Outcome | Allowed claim |
 |---|---:|---:|---|---|---|
@@ -441,7 +443,7 @@ The same frozen Stage B v5.4 protocol was executed across five model configurati
 | DeepSeek-V3.2 | DeepSeek MoE | 40/40 | [0.912, 1.000] | Cross-family transfer; exact match with automated replication. |
 | Qwen2.5-7B | Qwen2.5 7B | 0/40 | [0.000, 0.088] | Below-floor structural failure; could not produce valid JSON. |
 
-> **Figure 1.** Pass rates under a frozen contract across 5 models. The figure should plot the author-verified pass rates in the table above; bars or points should be labeled with model family and 95% Wilson intervals.
+> **Figure 1.** Pass rates under a frozen contract across 5 models. See `figures/figure-1-multi-model-pass-rates.pdf`. Bars show strict pass counts out of 40 runs with 95% Wilson intervals; the dashed line marks the 0.912 Wilson lower bound. GLM-4-9B's paraphrase vulnerability is annotated.
 
 Within the above-floor models tested, the frozen contract produced strict-conforming pass rates of 40/40 on Qwen3-8B, Qwen3-14B, and DeepSeek-V3.2, and 30/40 on GLM-4-9B. The contract transfers zero-shot to the Qwen3 and DeepSeek families. In one below-floor model tested (Qwen2.5-7B), we observed structural-level failure (0/40), characterized by inability to produce syntactically valid JSON. We do not claim universal interchangeability; the data show that contract transfer is real but model-family-specific.
 
@@ -473,7 +475,9 @@ Qwen2.5-7B-Instruct is the below-floor candidate in this study. Across 40 runs o
 
 ### 4.13 Stage D Matched Overhead Matrix
 
-Stage D compares the overhead of the no-contract (G0) and full-contract (G9) harness arms on the same frozen controlled-state-mutation macro. The table below gives the matched results for Qwen3-8B and DeepSeek-V3.2. The G0 arm used a minimal prompt that still requested the same JSON schema; the G9 arm used the full contract stack.
+Stage D compares the overhead of the no-contract (G0) and full-contract (G9) harness arms on the same frozen controlled-state-mutation macro. Figure 3 visualizes the comparison; the table below gives the matched results for Qwen3-8B and DeepSeek-V3.2. The G0 arm used a minimal prompt that still requested the same JSON schema; the G9 arm used the full contract stack.
+
+> **Figure 3.** Stage D matched overhead matrix. See `figures/figure-3-stage-d-overhead.pdf`. Three panels: (a) pass rate (G0 0% → G9 100%), (b) average prompt tokens per run (8.6× overhead), (c) average latency.
 
 | Metric | Qwen3-8B G0 | Qwen3-8B G9 | Ratio | DeepSeek-V3.2 G0 | DeepSeek-V3.2 G9 | Ratio |
 |---|---|---:|---:|---|---:|---:|
@@ -646,7 +650,19 @@ GLM-4-9B failures were concentrated in the `unknown_state_paraphrase` condition 
 
 ## Appendix E. Contract Evolution Ledger
 
-This ledger documents how the controlled-state-mutation contract evolved through repair-loop iterations. Each entry records the failure observed, the missing obligation identified, the contract change, and the resulting pass rate. The full ledger is preserved in `research/05_analysis/contract-evolution-ledger.md`.
+This ledger documents how the controlled-state-mutation contract evolved through repair-loop iterations. Each entry records the failure observed, the missing obligation identified, the contract change, and the resulting pass rate. Figure 2 visualizes the convergence trajectory. The full ledger is preserved in `research/05_analysis/contract-evolution-ledger.md`.
+
+> **Figure 2.** Repair-loop convergence: 0/40 → 40/40 over four iterations. See `figures/figure-2-repair-loop-convergence.pdf`. Each point shows the strict pass rate with 95% Wilson interval; annotations describe the obligation surfaced at each step (evidence array, next_action enumeration, transition record structure, canonical-name obligation, attestation field coverage).
+
+## Appendix F. Reproducibility Verification
+
+All experiments reported in this paper were independently reproduced across four rounds totaling 1,458 API calls:
+
+- **Round 01–02** (480 calls): bare API with full provenance capture (prompt, raw response, parsed JSON, metrics per run). Confirmed all multi-model (§4.10) and Stage D (§4.13) results. Stored in `experiment-rounds/round-01-author-verification-20260727/` and `experiment-rounds/round-02-full-reproducibility/`.
+- **Round 03** (469 calls): bare API re-execution of all 29 frozen artifact directories covering §4.2–4.8. Stored in `experiment-rounds/round-03-full-history/`.
+- **Round 04** (509 calls): petfishframework Agent + ReAct() pipeline — the exact original execution path. Stored in `experiment-rounds/round-04-precise-petfishframework/`.
+
+Stage B v5.4 — the paper's headline stability claim — achieved 100% text similarity (sim=1.0) on all 40 runs in Round 04, confirming that the frozen protocol is bit-exact reproducible through the original framework at temperature=0. Earlier stages (7e, 7p, 7r) produced structurally valid but textually divergent outputs, consistent with their longer reasoning chains and higher surface variability. The inter-round comparison is preserved in `experiment-rounds/_comparison-round-01-vs-02.md`.
 
 | Version | Failure observed | Missing obligation | Contract change | Pass rate |
 |---|---|---|---|---:|
