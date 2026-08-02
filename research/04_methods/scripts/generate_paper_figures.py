@@ -69,8 +69,8 @@ def figure_1_multi_model():
         ("Qwen2.5-7B\n(7B)", 40, 0, "below"),
     ]
 
-    fig, ax = plt.subplots(figsize=(7, 4.5))
-    fig.subplots_adjust(bottom=0.25)
+    fig, ax = plt.subplots(figsize=(7, 4))
+    fig.subplots_adjust(top=0.78)
 
     y_pos = np.arange(len(models))
     colors = [COLOR_ABOVE if m[3] == "above" else COLOR_BELOW for m in models]
@@ -95,26 +95,28 @@ def figure_1_multi_model():
         else:
             ax.text(0.02, i, label, ha="left", va="center", color=COLOR_BELOW if m[3] == "below" else "black", fontweight="bold", fontsize=10)
 
-    # No GLM annotation on chart — the 30/40 label inside the bar + paper text §4.10 suffices
-
     ax.set_yticks(y_pos)
     ax.set_yticklabels([m[0] for m in models])
     ax.set_xlabel("Strict Pass Rate (40 runs)")
-    ax.set_xlim(0, 1.25)
-    ax.set_ylim(-0.8, 6.2)
+    ax.set_xlim(0, 1.15)
+    ax.set_ylim(-0.6, 4.6)
     ax.xaxis.set_major_formatter(mticker.PercentFormatter(xmax=1.0))
     ax.axvline(x=0.912, color="#90A4AE", linestyle="--", linewidth=0.8, zorder=1)
-    # Wilson bound label — bottom-left corner, no overlap with legend or title
-    ax.text(0.02, -0.70, "Dashed line: Wilson lower bound 0.912", fontsize=7, color="#78909C", ha="left", va="top")
-
-    # Legend — BELOW the plot area, horizontal layout
-    above_patch = mpatches.Patch(color=COLOR_ABOVE, label="Above-floor models")
-    below_patch = mpatches.Patch(color=COLOR_BELOW, label="Below-floor model")
-    ax.legend(handles=[above_patch, below_patch], loc="upper center",
-              bbox_to_anchor=(0.5, -0.22), ncol=2, fontsize=8, framealpha=0.9)
 
     ax.invert_yaxis()
-    ax.set_title("Pass Rates Under a Frozen Contract Across 5 Models", pad=15)
+
+    # Title
+    fig.suptitle("Pass Rates Under a Frozen Contract Across 5 Models", fontsize=13, y=0.97)
+
+    # Legend — centered below title, above chart (same style as Figure 3)
+    above_patch = mpatches.Patch(color=COLOR_ABOVE, label="Above-floor models")
+    below_patch = mpatches.Patch(color=COLOR_BELOW, label="Below-floor model")
+    fig.legend(handles=[above_patch, below_patch], loc="upper center",
+               bbox_to_anchor=(0.5, 0.88), ncol=2, fontsize=9, frameon=True, edgecolor="#cccccc")
+
+    # Dashed line note — centered below legend
+    fig.text(0.5, 0.83, "Dashed line: Wilson 95% lower bound at 0.912",
+             ha="center", va="top", fontsize=8, color="#78909C")
 
     fig.savefig(OUTPUT_DIR / "figure-1-multi-model-pass-rates.pdf", bbox_inches="tight")
     fig.savefig(OUTPUT_DIR / "figure-1-multi-model-pass-rates.png", bbox_inches="tight")
