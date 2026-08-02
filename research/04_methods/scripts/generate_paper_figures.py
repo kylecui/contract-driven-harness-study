@@ -69,8 +69,8 @@ def figure_1_multi_model():
         ("Qwen2.5-7B\n(7B)", 40, 0, "below"),
     ]
 
-    fig, ax = plt.subplots(figsize=(7, 4))
-    fig.subplots_adjust(top=0.78)
+    fig, ax = plt.subplots(figsize=(7, 4.2))
+    fig.subplots_adjust(top=0.74, bottom=0.12)
 
     y_pos = np.arange(len(models))
     colors = [COLOR_ABOVE if m[3] == "above" else COLOR_BELOW for m in models]
@@ -105,17 +105,18 @@ def figure_1_multi_model():
 
     ax.invert_yaxis()
 
-    # Title
-    fig.suptitle("Pass Rates Under a Frozen Contract Across 5 Models", fontsize=13, y=0.97)
+    # Title — explicitly centered
+    fig.suptitle("Pass Rates Under a Frozen Contract Across 5 Models",
+                 x=0.5, ha="center", fontsize=13, y=0.96)
 
-    # Legend — centered below title, above chart (same style as Figure 3)
+    # Legend — centered below title, with generous gap
     above_patch = mpatches.Patch(color=COLOR_ABOVE, label="Above-floor models")
     below_patch = mpatches.Patch(color=COLOR_BELOW, label="Below-floor model")
     fig.legend(handles=[above_patch, below_patch], loc="upper center",
-               bbox_to_anchor=(0.5, 0.88), ncol=2, fontsize=9, frameon=True, edgecolor="#cccccc")
+               bbox_to_anchor=(0.5, 0.90), ncol=2, fontsize=9, frameon=True, edgecolor="#cccccc")
 
-    # Dashed line note — centered below legend
-    fig.text(0.5, 0.83, "Dashed line: Wilson 95% lower bound at 0.912",
+    # Dashed line note — centered below legend, with clear gap
+    fig.text(0.5, 0.82, "Dashed line: Wilson 95% lower bound at 0.912",
              ha="center", va="top", fontsize=8, color="#78909C")
 
     fig.savefig(OUTPUT_DIR / "figure-1-multi-model-pass-rates.pdf", bbox_inches="tight")
