@@ -95,11 +95,7 @@ def figure_1_multi_model():
         else:
             ax.text(0.02, i, label, ha="left", va="center", color=COLOR_BELOW if m[3] == "below" else "black", fontweight="bold", fontsize=10)
 
-    # GLM annotation — simple vertical arrow from text directly above bar end, NO curve
-    glm_idx = 3
-    ax.annotate("← paraphrase\nvulnerability\n(0/8 paraphrase)", xy=(0.75, glm_idx + 0.31), xytext=(0.75, glm_idx + 0.85),
-                fontsize=7.5, color="#D32F2F", ha="center", va="bottom",
-                arrowprops=dict(arrowstyle="-|>", color="#D32F2F", lw=1.5))
+    # No GLM annotation on chart — the 30/40 label inside the bar + paper text §4.10 suffices
 
     ax.set_yticks(y_pos)
     ax.set_yticklabels([m[0] for m in models])
@@ -202,6 +198,12 @@ def figure_3_stage_d():
 
     fig, axes = plt.subplots(1, 3, figsize=(10, 3.8))
 
+    # Shared legend handles — placed ONCE below suptitle, above subplots
+    g0_patch = mpatches.Patch(color=COLOR_G0, label="G0 (no contract)")
+    g9_patch = mpatches.Patch(color=COLOR_G9, label="G9 (full contract)")
+    fig.legend(handles=[g0_patch, g9_patch], loc="upper center",
+               bbox_to_anchor=(0.5, 0.93), ncol=2, fontsize=9, frameon=True, edgecolor="#cccccc")
+
     # Panel A: Pass rate
     ax = axes[0]
     x = np.arange(len(models))
@@ -216,7 +218,7 @@ def figure_3_stage_d():
     ax.set_ylim(0, 1.25)
     ax.yaxis.set_major_formatter(mticker.PercentFormatter(xmax=1.0))
     ax.set_title("(a) Pass Rate", fontsize=11)
-    ax.legend(fontsize=8)
+    # No per-subplot legend — shared legend is above subplots
 
     for i, (g0, g9) in enumerate(zip(g0_rates, g9_rates)):
         ax.text(i - width / 2, g0 + 0.03, f"{g0:.0%}", ha="center", fontsize=8)
@@ -232,7 +234,7 @@ def figure_3_stage_d():
     ax.set_xticklabels(model_labels)
     ax.set_ylabel("Avg Prompt Tokens / Run")
     ax.set_title("(b) Prompt Cost", fontsize=11)
-    ax.legend(fontsize=8)
+    # No per-subplot legend
 
     for i, (g0, g9) in enumerate(zip(g0_tok, g9_tok)):
         ax.text(i - width / 2, g0 + 30, str(g0), ha="center", fontsize=8)
@@ -248,14 +250,14 @@ def figure_3_stage_d():
     ax.set_xticklabels(model_labels)
     ax.set_ylabel("Avg Latency (s)")
     ax.set_title("(c) Latency", fontsize=11)
-    ax.legend(fontsize=8)
+    # No per-subplot legend
 
     for i, (g0, g9) in enumerate(zip(g0_lat, g9_lat)):
         ax.text(i - width / 2, g0 + 1.5, f"{g0:.0f}s", ha="center", fontsize=8)
         ax.text(i + width / 2, g9 + 1.5, f"{g9:.0f}s", ha="center", fontsize=8)
 
-    fig.suptitle("Stage D: Contract Stack Converts 0% → 100% at 8.6× Prompt Cost", fontsize=12, y=1.08)
-    fig.tight_layout(rect=[0, 0, 1, 0.95])
+    fig.suptitle("Stage D: Contract Stack Converts 0% → 100% at 8.6× Prompt Cost", fontsize=12, y=0.99)
+    fig.tight_layout(rect=(0, 0, 1, 0.88))
     fig.savefig(OUTPUT_DIR / "figure-3-stage-d-overhead.pdf")
     fig.savefig(OUTPUT_DIR / "figure-3-stage-d-overhead.png")
     plt.close(fig)
