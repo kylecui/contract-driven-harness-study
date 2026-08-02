@@ -297,6 +297,8 @@ Table 4 summarizes the main empirical layers and the claim each layer permits. F
 
 > **Figure 4.** Experimental stage progression. See `figures/figure-4-stage-progression.pdf`. The diagram shows three phases: (1) mechanism atoms and composition (§4.3–4.5), (2) contract evolution and stability (§4.6–4.8), and (3) cross-model and cost verification (§4.9–4.13). Each box gives the stage name, run count, and section reference.
 
+The experimental logic proceeds in three phases. **Phase 1** (§4.2–4.5) tests whether broad workflow tasks benefit from harnessing, finds mixed results, and decomposes those workflows into mechanism atoms that can be individually tested and repaired. **Phase 2** (§4.6–4.8) composes atoms into macros, runs the repair-loop protocol on a fixed evidence-decision macro, and tests whether the repaired obligations transfer to a neighboring macro and survive 40 fresh runs under a frozen protocol. **Phase 3** (§4.9–4.13) asks whether these results are reproducible by an external agent, transferable across model families, separable from the implementation framework, capable of detecting below-floor models, and cost-justified relative to using a stronger model directly. Run counts increase as the protocol matures: early atom and composition stages use 6–48 runs for targeted smoke and pilot testing; Stage B v5.4 uses 40 runs for the formal stability estimate; multi-model and Stage D use 200–240 runs for cross-model verification.
+
 | Layer | Stage | Runs | Failure -> Repair | Outcome | Allowed claim | Reproduced |
 |---|---:|---:|---|---|---|---|
 | Task slice | structured extraction | 24 | schema/tool gaps -> G9 packet | key gaps to 0 | conditional gap compression  | R04 |
@@ -316,13 +318,13 @@ Table 4 summarizes the main empirical layers and the claim each layer permits. F
 
 ### 4.2 Task Slices: Strong Absolute Lift, Conditional Gap Compression
 
-The structured-extraction v2 slice provides the clearest positive gap-compression result. Under G0, nonzero baseline gaps appeared on task success, schema validity, tool-call correctness, human acceptance, cost efficiency, and safety consistency. Under G9, all measured nonzero gaps compressed to 0.000, producing compression ratios of 1.000 on those metrics. Citation grounding had a baseline gap of 0.000 and is therefore reported as n/a rather than as compression.
+The structured-extraction v2 slice provides the clearest positive gap-compression result. (Throughout §4.2–4.5, "budget_model" refers to Qwen/Qwen3-8B and "strong_model" refers to deepseek-ai/DeepSeek-V3.2, as defined in §3.3.) Under G0, nonzero baseline gaps appeared on task success, schema validity, tool-call correctness, human acceptance, cost efficiency, and safety consistency. Under G9, all measured nonzero gaps compressed to 0.000, producing compression ratios of 1.000 on those metrics. Citation grounding had a baseline gap of 0.000 and is therefore reported as n/a rather than as compression.
 
 The project-initialization slice shows why gap compression cannot be the universal claim. G9 compressed the task-success gap from 0.111 to 0.000 and the safety-consistency gap from 0.200 to 0.000. Schema validity moved in the opposite direction, from a baseline gap of 0.250 to an arm gap of 0.583, yielding a negative compression ratio of -1.333. Human acceptance and cost efficiency also showed negative compression ratios.
 
 The research-workflow slice further weakens a universal gap-compression story. Several G0 baseline gaps were already 0.000, making compression undefined. G9 compressed schema-validity gap from 0.067 to 0.000, but task-success gap became 0.083 from a 0.000 baseline and human-acceptance/cost-efficiency gap movement was slightly negative.
 
-These results are best interpreted as absolute lift with conditional gap compression, not universal gap closure.
+These results are best interpreted as absolute lift with conditional gap compression, not universal gap closure. The mixed slice-level results motivated the next step: decomposing broad workflows into smaller, independently testable mechanism atoms (Stage 6, §4.3), where each obligation could be isolated, tested, and repaired without the confounding interaction of multiple mechanisms in a single task.
 
 ### 4.3 Mechanism Atoms: Broad Workflows Need Smaller Units
 
@@ -356,7 +358,7 @@ This supports the mechanism-first repair hypothesis: low-cost-model failures on 
 
 ### 4.6 Stage 7e: Iterative Repair Of A Fixed Evidence-Decision Macro
 
-Stage 7e composed a narrow evidence-bound decision macro from state inventory, evidence grounding, evidence-type separation, traceable decision, and stage-gated synthesis mechanisms. The first Stage 7e smoke completed 6/6 runs. Strong_model G8/G9 and low-cost-model G8 passed with task_success=1.000 and atom_primary_metric=1.000. G0 failed for both model tiers. Low-cost-model G9 partially failed with task_success=0.714 because it missed complete decision-trace and stage-gate retention.
+With revised atoms passing individually (§4.5) and composition shown to need explicit retention obligations (§4.4), the next question was whether the repair-loop protocol could converge a composed macro from failing to strict-passing. Stage 7e composed a narrow evidence-bound decision macro from state inventory, evidence grounding, evidence-type separation, traceable decision, and stage-gated synthesis mechanisms. The first Stage 7e smoke completed 6/6 runs. Strong_model G8/G9 and low-cost-model G8 passed with task_success=1.000 and atom_primary_metric=1.000. G0 failed for both model tiers. Low-cost-model G9 partially failed with task_success=0.714 because it missed complete decision-trace and stage-gate retention.
 
 Stage 7e v2 added explicit retention requirements for decision_trace, stage_gate, and carried_obligations. The targeted low-cost-model G8/G9 smoke completed 4/4 targeted smoke runs, and all four targeted runs achieved trace_completeness=1.000 and stage_completion=1.000. However, only 1/4 runs fully passed because the remaining runs omitted Git branch, CI status, or network/API approval unknowns from state_inventory.
 
