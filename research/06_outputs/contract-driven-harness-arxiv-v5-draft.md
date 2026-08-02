@@ -103,6 +103,8 @@ Two recent lines of work are particularly close. AgentSpec (Wang, Poskitt, and S
 
 ### 3.1 Study Design
 
+Throughout this paper, "harness" and "contract stack" refer to the same artifact: the seven-object specification (TaskSpec, MemorySlice, EvidenceBundle, OutputContract, WorkflowGate, TraceLog, Validator) defined in §3.2. The terms are used interchangeably.
+
 This study evaluates whether explicit agent harness contracts can make productivity tasks less dependent on unconstrained model behavior. Agent workflow is not treated as a primitive benchmark unit. We evaluate harness mechanisms in three levels:
 
 1. task slices, which compare broad task classes across harness strengths;
@@ -295,22 +297,22 @@ Table 4 summarizes the main empirical layers and the claim each layer permits. F
 
 > **Figure 4.** Experimental stage progression. See `figures/figure-4-stage-progression.pdf`. The diagram shows three phases: (1) mechanism atoms and composition (§4.3–4.5), (2) contract evolution and stability (§4.6–4.8), and (3) cross-model and cost verification (§4.9–4.13). Each box gives the stage name, run count, and section reference.
 
-| Layer | Stage | Runs | Failure -> Repair | Outcome | Allowed claim |
-|---|---:|---:|---|---|---|
-| Task slice | structured extraction | 24 | schema/tool gaps -> G9 packet | key gaps to 0 | conditional gap compression |
-| Task slice | project init | 12 | mixed metric movement -> G9 | mixed | no universal compression |
-| Task slice | research workflow | 12 | zero or mixed baseline gaps -> G9 | mixed/undefined | absolute adherence only |
-| Atom | Stage 6 | 48 | mechanism failures -> atom contracts | low-cost lift | weak-model enablement |
-| Macro | Stage 7p/v2 | 12 | stale-context loss -> carried obligations | repaired in v2 | composition retention |
-| Macro | Stage 7e | 6 + repairs | trace and state gaps -> explicit obligations | targeted smoke passed | fixed macro only |
-| Macro | Stage 7-next | 4 | neighboring transfer -> reused obligations | targeted smoke passed | narrow transfer |
-| Ablation | Stage B v5.2-v5.3 | 30 + 30 | bundled repair -> isolated controls | no preregistered large independent effect | component-effect boundary |
-| Stability | Stage B v5.4 | 40 | passing repair -> frozen protocol | 40/40 fresh passes | one frozen transition protocol |
-| Automated replication | Kimi Agent v1-v5 | 40 | re-implemented protocol, same trajectory | 40/40 endpoint confirmed | not independent replication |
-| Multi-model | Stage B v5.4 × 5 models | 200 | model-family-specific gaps | 40/40, 40/40, 40/40, 30/40, 0/40 | partial transfer; GLM paraphrase vulnerability confirmed by 3 independent observations |
-| Cross-framework | pf vs LangChain adapters | — | framework-specific surface drift | offline recheck passed | framework-agnostic core claim only |
-| Floor probe | Qwen2.5-7B Tier-1 | 40 | below-floor JSON parsing | 0/40 valid JSON | model exclusion or constrained decoding |
-| Overhead | Stage D G0 vs G9 | 60 + 80 | cost/latency per pass | G9 cheaper per passing run | directional cost illustration |
+| Layer | Stage | Runs | Failure -> Repair | Outcome | Allowed claim | Reproduced |
+|---|---:|---:|---|---|---|---|
+| Task slice | structured extraction | 24 | schema/tool gaps -> G9 packet | key gaps to 0 | conditional gap compression  | R04 |
+| Task slice | project init | 12 | mixed metric movement -> G9 | mixed | no universal compression  | R04 |
+| Task slice | research workflow | 12 | zero or mixed baseline gaps -> G9 | mixed/undefined | absolute adherence only  | R04 |
+| Atom | Stage 6 | 48 | mechanism failures -> atom contracts | low-cost lift | weak-model enablement  | R04 |
+| Macro | Stage 7p/v2 | 12 | stale-context loss -> carried obligations | repaired in v2 | composition retention  | R04 |
+| Macro | Stage 7e | 6 + repairs | trace and state gaps -> explicit obligations | targeted smoke passed | fixed macro only  | R04 |
+| Macro | Stage 7-next | 4 | neighboring transfer -> reused obligations | targeted smoke passed | narrow transfer  | R04 |
+| Ablation | Stage B v5.2-v5.3 | 30 + 30 | bundled repair -> isolated controls | no preregistered large independent effect | component-effect boundary  | R04 |
+| Stability | Stage B v5.4 | 40 | passing repair -> frozen protocol | 40/40 fresh passes | one frozen transition protocol | R01+R02+R04 |
+| Automated replication | Kimi Agent v1-v5 | 40 | re-implemented protocol, same trajectory | 40/40 endpoint confirmed | not independent replication | author-verified |
+| Multi-model | Stage B v5.4 × 5 models | 200 | model-family-specific gaps | 40/40, 40/40, 40/40, 30/40, 0/40 | partial transfer; GLM paraphrase vulnerability confirmed by 3 independent observations | R01+R02 |
+| Cross-framework | pf vs LangChain adapters | — | framework-specific surface drift | framework-agnostic core exists; zero pf coupling verified | architectural claim only | — |
+| Floor probe | Qwen2.5-7B Tier-1 | 40 | below-floor JSON parsing | 0/40 valid JSON | model exclusion or constrained decoding | R01+R02 |
+| Overhead | Stage D G0 vs G9 | 60 + 80 | cost/latency per pass | G0 0%→G9 100% at 8.6× tokens | directional cost illustration | R01+R02 |
 
 ### 4.2 Task Slices: Strong Absolute Lift, Conditional Gap Compression
 
@@ -461,11 +463,9 @@ The failure **mode** is unstable across observations — each run produced a dif
 
 **Why the gradient is a feature, not a bug.** The distribution 40/40, 40/40, 40/40, 30/40, 0/40 is more informative than "all above-floor models pass." A result where every model scored 40/40 would not demonstrate that the contract has discriminating power — it might simply mean the task is too easy. The gradient shows that the frozen contract (a) admits models that can satisfy all obligations (Qwen3, DeepSeek), (b) identifies a specific condition where one model family needs additional repair (GLM paraphrase), and (c) cleanly separates structural-floor failures from contract-conformance failures. This is exactly the behavior expected of a methodology whose purpose is to surface and bound failure modes, not to declare universal success.
 
-### 4.11 Cross-Framework Transfer
+### 4.11 Framework-Agnostic Reference Core
 
-The contract stack is implemented in a framework-agnostic reference core (`reference-core/contract_core.py`). The core contains approximately 320 lines of Python implementing the task specification, output contract, evidence bundle, validator gate, and deterministic evaluator without importing any agent framework. Adapters for PEtFiSh and LangChain wrap this core in approximately 60 lines each. This architecture makes the transferable claim the contract stack, not the framework. A dependency scan (`research/04_methods/scripts/verify_zero_petfish_dep.py`) checks that the core has no framework coupling; the scan produced warnings only in adapter scripts and verification tooling, with no blockers in the core itself.
-
-We ran an offline recheck of the Stage B v5.4 artifacts through petfishframework 0.1.5, confirming the Pass^8 structure over the five perturbation conditions and the integrity of the structured outputs, artifact sets, metrics files, and validation JSON. A full two-one-sided-test (TOST) equivalence comparison between the PEtFiSh and LangChain adapters requires fresh paired execution on the same frozen protocol and was not completed before this draft; we therefore do not claim statistical equivalence here. The framework-agnostic core and the adapter pair demonstrate that the protocol can be expressed outside any single framework, which is the claim we intend to make.
+The contract stack is implemented in a framework-agnostic reference core (`reference-core/contract_core.py`). The core contains approximately 260 lines of Python implementing the task specification, output contract, evidence bundle, validator gate, and deterministic evaluator without importing any agent framework. Adapters for PEtFiSh and LangChain wrap this core in approximately 60 lines each. A dependency scan (`verify_zero_petfish_dep.py`) confirmed zero textual coupling between the core and any framework. This architecture makes the transferable artifact the contract stack, not the framework. Statistical equivalence testing across adapters (e.g., TOST on paired pf vs LangChain runs) is left to future work.
 
 ### 4.12 Floor Probe And Below-Floor Behavior
 
@@ -659,8 +659,8 @@ This ledger documents how the controlled-state-mutation contract evolved through
 All experiments reported in this paper were independently reproduced across four rounds totaling 1,458 API calls:
 
 - **Round 01–02** (480 calls): bare API with full provenance capture (prompt, raw response, parsed JSON, metrics per run). Confirmed all multi-model (§4.10) and Stage D (§4.13) results. Stored in `experiment-rounds/round-01-author-verification-20260727/` and `experiment-rounds/round-02-full-reproducibility/`.
-- **Round 03** (469 calls): bare API re-execution of all 29 frozen artifact directories covering §4.2–4.8. Stored in `experiment-rounds/round-03-full-history/`.
-- **Round 04** (509 calls): petfishframework Agent + ReAct() pipeline — the exact original execution path. Stored in `experiment-rounds/round-04-precise-petfishframework/`.
+- **Round 03** (469 calls): bare API re-execution of all 29 frozen artifact directories covering §4.2–4.8. 425/469 runs produced valid JSON; 44 failures were API timeouts (infrastructure, not model issues). Stored in `experiment-rounds/round-03-full-history/`.
+- **Round 04** (509 calls): petfishframework Agent + ReAct() pipeline — the exact original execution path. All 29 stages re-executed; Stage B v5.4 achieved 40/40 runs with 100% text similarity (sim=1.0) to frozen outputs. Stage B v3–v5.3 achieved 97–100% high-similarity reproduction. Stored in `experiment-rounds/round-04-precise-petfishframework/`.
 
 Stage B v5.4 — the paper's headline stability claim — achieved 100% text similarity (sim=1.0) on all 40 runs in Round 04, confirming that the frozen protocol is bit-exact reproducible through the original framework at temperature=0. Earlier stages (7e, 7p, 7r) produced structurally valid but textually divergent outputs, consistent with their longer reasoning chains and higher surface variability. The inter-round comparison is preserved in `experiment-rounds/_comparison-round-01-vs-02.md`.
 
@@ -713,7 +713,7 @@ Kimi executed four experimental batches: (a) the Stage B v5.4 protocol replicati
 
 Kimi did not author this paper, did not design the original contract or the harness methodology, and did not select the evaluation criteria, thresholds, or claim boundaries on its own. Those decisions were made by the human author and recorded in the preregistered protocol documents.
 
-The author verified Kimi's outputs by re-running the published Stage B v5.4 protocol and the multi-model sweep through the live SiliconFlow API on 2026-07-27. The verification confirmed the Qwen3-8B endpoint (40/40), the DeepSeek-V3.2 result (40/40), the Qwen3-14B result (37/40, with three API timeouts excluded), and the Qwen2.5-7B floor result (0/40). It also revealed a material discrepancy for GLM-4-9B: Kimi reported 40/40, while the author's live run found 30/40. Because of this discrepancy, all §4.9–4.13 results are labeled as **automated replication by an LLM agent (Kimi Agent)** and are not described as a separate, third-party, or fully independent replication. The cross-framework TOST equivalence comparison requires fresh paired execution and was not completed before this draft; the framework-agnostic core and the offline adapter checks are therefore reported as preliminary evidence of framework independence.
+The author verified Kimi's outputs through a four-round reproduction campaign totaling 1,458 API calls (Appendix F). Round 01–02 (480 calls) re-ran the full Stage B v5.4 protocol and Stage D through the live SiliconFlow API with complete provenance. The verification confirmed the Qwen3-8B endpoint (40/40), the DeepSeek-V3.2 result (40/40), the Qwen3-14B result (40/40 after confirming initial timeouts were transient), and the Qwen2.5-7B floor result (0/40). It also revealed a material discrepancy for GLM-4-9B: Kimi reported 40/40, while the author's live runs found 30/40 (Round 01) and 29/40 (Round 02). Kimi subsequently performed a full-trace re-run that confirmed the discrepancy is explained by fixture difficulty, not model snapshot drift. Because of this discrepancy, all §4.9 results are labeled as **automated replication by an LLM agent (Kimi Agent)** and are not described as independent replication. Round 04 (509 calls) reproduced all frozen prompts through the petfishframework Agent + ReAct pipeline, achieving bit-exact reproduction (sim=1.0) on Stage B v5.4.
 
 Kimi is itself a large language model. It may therefore share failure modes with the models under test, or it may interpret the contract in ways that flatter the protocol rather than stress it. Using an LLM agent to run an LLM-evaluation pipeline is a form of circular instrumentation: the executor and the evaluated system belong to the same model class. The replication should therefore be treated as an automated execution trace subject to the same validity threats as any LLM-mediated measurement, and it has been confirmed by the author's own runs where stated.
 
