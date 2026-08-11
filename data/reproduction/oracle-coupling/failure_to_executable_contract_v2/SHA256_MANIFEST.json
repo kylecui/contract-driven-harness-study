@@ -1,0 +1,62 @@
+{
+  "manifest_version": "FECV2-exact-1",
+  "entry_count": 11,
+  "entries_root_sha256": "a4a16b379a8e62ccbc68a5311ab0fd6d1ce331ebb8a1c2e71f8938ac61dfe697",
+  "entries": [
+    {
+      "path": "code/runners/oracle-coupling/failure_to_executable_contract_v2/README.md",
+      "sha256": "2a827502f005c7d049cca33d81befa9f26039b13ff63667748aff4175b9462f3",
+      "bytes": 2336
+    },
+    {
+      "path": "code/runners/oracle-coupling/failure_to_executable_contract_v2/build_artifact_manifest.py",
+      "sha256": "28ec01cb1cc356fe038ab095b57b1ff802728853d40c8c31272567c5d9f67291",
+      "bytes": 749
+    },
+    {
+      "path": "code/runners/oracle-coupling/failure_to_executable_contract_v2/contract_gate.py",
+      "sha256": "87cc193cbba5c6d68f3e39fec2081c1454013f0dd068304b92f27e8060d5f301",
+      "bytes": 8594
+    },
+    {
+      "path": "code/runners/oracle-coupling/failure_to_executable_contract_v2/run_offline_verification.py",
+      "sha256": "1bdc414233d69a3b8cfcc065d04460ce12ea87954aa5acea6ae95a18c1d07039",
+      "bytes": 10913
+    },
+    {
+      "path": "code/runners/oracle-coupling/failure_to_executable_contract_v2/tests/test_contract_gate.py",
+      "sha256": "8dbcb672a92ab680ae19b82a3cdc5447e50fec39ee92e2db61e580d63cf7c8d7",
+      "bytes": 3775
+    },
+    {
+      "path": "code/runners/oracle-coupling/failure_to_executable_contract_v2/verify_manifest.py",
+      "sha256": "d623a888a812add051df19e0f3a8a901d3215de94e57f614762b70223c00b7e2",
+      "bytes": 8391
+    },
+    {
+      "path": "fixtures/oracle-coupling/failure_to_executable_contract_v2.json",
+      "sha256": "337a41e6bd8f1e45ab0d53d1bd5d5430d5529556f54846401890933fe24e66bc",
+      "bytes": 72289
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/failure_to_executable_contract_v2/candidate_corpus.json",
+      "sha256": "3c3dc85efd0262965be9f029d27a19581574ff98607055835b0c1462f4ffdcdd",
+      "bytes": 458390
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/failure_to_executable_contract_v2/candidate_gate_results.csv",
+      "sha256": "37c12ad94310c3c5df20e468105281a419fb2200d9d515c86650c176c2eae227",
+      "bytes": 195478
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/failure_to_executable_contract_v2/execution_traces.json",
+      "sha256": "5fe3f226e4bff8292e4fcc0bc710b2cef3a3138c1a82a80181a851dded5e0d6f",
+      "bytes": 226960
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/failure_to_executable_contract_v2/offline_verification_summary.json",
+      "sha256": "5be19a9be1627fe69c9d7205f7e236b964ecf3c00b6794ca671c44fccd626337",
+      "bytes": 2454
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "manifest_version": "SHAV1-exact-1",
+  "generated_at_utc": "2026-08-11T07:22:49.759294+00:00",
+  "entry_count": 16,
+  "files": [
+    {
+      "path": "code/runners/oracle-coupling/second_harness_audit_v1/README.md",
+      "sha256": "b9391d9d667115011f4929e65713b933624cfb7aa4ca1c902d299f2b1fe32667",
+      "bytes": 2406
+    },
+    {
+      "path": "code/runners/oracle-coupling/second_harness_audit_v1/policy.sql",
+      "sha256": "c048b415c6844f8b914a92b126cb6c93a8f89ba0b8dbb4f155b5d09d6ff6c060",
+      "bytes": 7866
+    },
+    {
+      "path": "code/runners/oracle-coupling/second_harness_audit_v1/sqlite_backend.py",
+      "sha256": "1c343c8293aeb4dc0d182589b1ffec4139874e79b5e1c6fd6d2c29b6305e7f4c",
+      "bytes": 6337
+    },
+    {
+      "path": "code/runners/oracle-coupling/second_harness_audit_v1/run_audit.py",
+      "sha256": "4f95a3b3b5a690565a1123f3db67c120ebad222c817fbe0f9d385066de7cec84",
+      "bytes": 18680
+    },
+    {
+      "path": "code/runners/oracle-coupling/second_harness_audit_v1/tests/test_second_backend.py",
+      "sha256": "56a6c4676caad114651f4a34037fbce56ee6d2e0a67be36c5fec840e47657a73",
+      "bytes": 6428
+    },
+    {
+      "path": "code/runners/oracle-coupling/second_harness_audit_v1/verify_manifest.py",
+      "sha256": "9f58a5aa2e74926a5b161bd586b3af6d608ed99bbee2c73ce7afc47107f5e8d8",
+      "bytes": 8281
+    },
+    {
+      "path": "fixtures/oracle-coupling/failure_to_executable_contract_v2.json",
+      "sha256": "337a41e6bd8f1e45ab0d53d1bd5d5430d5529556f54846401890933fe24e66bc",
+      "bytes": 72289
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/failure_to_executable_contract_v2/candidate_corpus.json",
+      "sha256": "3c3dc85efd0262965be9f029d27a19581574ff98607055835b0c1462f4ffdcdd",
+      "bytes": 458390
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/oracle_independent_compiler_v1/artifacts/compiled_contracts.json",
+      "sha256": "85c0b42179780e0f064856d658ac4a90962a3de6c69cdad3f44b3f84fb1ec467",
+      "bytes": 36400
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/oracle_independent_compiler_v1/artifacts/results.json",
+      "sha256": "097aa45659521bf2fdb58627b898c67a2825276db7f3473e0cbf2a2a19decbdc",
+      "bytes": 28730
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/oracle_independent_compiler_v1/artifacts/SHA256_MANIFEST.json",
+      "sha256": "cdbeba7465e63819315c7aef2e241e38380b68d62fbcc2526bd57932083bb82d",
+      "bytes": 3458
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/second_harness_audit_v1/artifacts/compiler_parity.json",
+      "sha256": "1669a2fa9fd19adc306e27291c07bcabb537797461d03aa4bb284b1fe8316fd2",
+      "bytes": 8651
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/second_harness_audit_v1/artifacts/state_characterisation.json",
+      "sha256": "e833d10ab9cd466f76d259ffe1a7b88b27fef953971e0d512b90f9a4685a8053",
+      "bytes": 1415
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/second_harness_audit_v1/artifacts/audit_summary.json",
+      "sha256": "5b2722dab991b435582d347acc8d9f3e2d129e71552ab79ccf6feafa0deb3971",
+      "bytes": 5345
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/second_harness_audit_v1/artifacts/per_candidate_results.csv",
+      "sha256": "defd9c06115367c3360ecc023a3385d6b721717328f9e7f8979f98bc7ff1a4dd",
+      "bytes": 59766
+    },
+    {
+      "path": "code/runners/oracle-coupling/layout.py",
+      "sha256": "cdf35acebbcd8b84b8b4595294b2d58225d1de64419baa4438bcb6a3964cd90d",
+      "bytes": 2450
+    }
+  ],
+  "entries_root_sha256": "bc55df248142ae8b9d98d67426b14ad2624ba2f1b6cd6efb95c3f62db7e5fcb9"
+}

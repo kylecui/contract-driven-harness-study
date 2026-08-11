@@ -1,0 +1,43 @@
+{
+  "base_fixture_id": "D-ST-01",
+  "probe_unit": "All six state-characterisation probes reuse this single apply fixture; they are named mechanism checks, not independent task samples.",
+  "accepted_action_replay": {
+    "first_accepted": true,
+    "first_wrote": true,
+    "second_accepted": false,
+    "second_reasons": [
+      "stale_live_state"
+    ],
+    "replay_rejected_by_live_state_check": true
+  },
+  "external_live_state_drift": {
+    "candidate_accepted": false,
+    "reasons": [
+      "stale_live_state"
+    ],
+    "external_value_preserved": true
+  },
+  "immutable_live_state_drift": {
+    "candidate_accepted": false,
+    "reasons": [
+      "preserved_live_state_mismatch"
+    ],
+    "modified_preserved_value_retained": true,
+    "rejected_by_preserved_live_state_check": true
+  },
+  "single_writer_serialization": {
+    "second_begin_immediate_error": "database is locked",
+    "second_writer_blocked": true,
+    "boundary": "same database inode and cooperative SQLite writers"
+  },
+  "exception_before_commit": {
+    "rollback_preserved_state": true,
+    "integrity_check": "ok",
+    "boundary": "explicit rollback after an injected pre-commit interruption; not a power-loss test"
+  },
+  "symlink_database_path": {
+    "candidate_accepted": true,
+    "symlink_followed_to_target": true,
+    "boundary": "the database pathname remains trusted; same-user namespace attacks are not eliminated"
+  }
+}

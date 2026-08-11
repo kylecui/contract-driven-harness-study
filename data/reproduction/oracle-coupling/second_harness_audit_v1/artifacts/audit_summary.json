@@ -1,0 +1,141 @@
+{
+  "protocol_id": "second-harness-audit-v1-sqlite-transactional-backend",
+  "timestamp_utc": "2026-08-11T07:22:49.729575+00:00",
+  "evidence_class": "offline_backend_portability_and_transaction_characterisation",
+  "backend": "SQLite transactional policy backend",
+  "runtime": {
+    "python": "3.12.2",
+    "python_sqlite": "3.46.0",
+    "sqlite_cli": "3.51.0 2025-06-12 13:14:41 f0ca7bba1c5e232e5d279fad6338121ab55af0c8c68c84cdfb18ba5114dcaapl (64-bit)",
+    "platform": "macOS-26.6.1-arm64-arm-64bit"
+  },
+  "source_snapshot": {
+    "base_commit": "33de73a00c21ef8562bf9a7a6831c5ac3dafa245",
+    "base_commit_is_ancestor": true,
+    "boundary": "The audit is additive relative to the frozen publication-support base."
+  },
+  "compiler_boundary": {
+    "compiler_protocol_id": "oracle-independent-compiler-positive-control-v1",
+    "compiler_overall_passed": true,
+    "compiled_contracts_sha256": "85c0b42179780e0f064856d658ac4a90962a3de6c69cdad3f44b3f84fb1ec467",
+    "compiler_results_sha256": "097aa45659521bf2fdb58627b898c67a2825276db7f3473e0cbf2a2a19decbdc",
+    "input_boundary": {
+      "top_level_allowlist": [
+        "evidence",
+        "family",
+        "fixture_id",
+        "initial_state",
+        "request",
+        "split"
+      ],
+      "policy_constraint_allowlist": [
+        "editable_paths",
+        "forbidden_inferences",
+        "immutable_paths",
+        "on_block_preserve_paths",
+        "unknown_state"
+      ],
+      "explicitly_excluded_keys": [
+        "answer_key",
+        "distractor_evidence_ids",
+        "expected_output",
+        "gate_rule",
+        "gold",
+        "objective",
+        "required_decision_evidence_ids"
+      ]
+    },
+    "static_leakage_audit_passed": true,
+    "dynamic_leakage_audit_passed": true,
+    "not_blinded": true,
+    "not_independently_authored": true,
+    "fixture_count": 28,
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_count": 28
+  },
+  "finite_corpus": {
+    "candidate_count": 392,
+    "valid_accepted": 56,
+    "valid_rejected": 0,
+    "invalid_accepted": 0,
+    "invalid_rejected": 336,
+    "classification_matches_label": 392,
+    "rejected_state_unchanged": 336,
+    "reason_counts": {
+      "decision_evidence_mismatch": 15,
+      "decision_mismatch": 28,
+      "forbidden_inferences_mismatch": 28,
+      "gate_attestation_mismatch": 28,
+      "next_action_mismatch": 56,
+      "patch_count_mismatch": 45,
+      "patch_evidence_mismatch": 13,
+      "patch_field_or_target_mismatch": 84,
+      "preserved_state_mismatch": 28,
+      "stale_live_state": 28,
+      "task_identity_mismatch": 28,
+      "top_level_field_set_mismatch": 28,
+      "unknown_state_mismatch": 28
+    },
+    "boundary": "The candidate labels and mutation corpus originate from the same authored FEC-v2 package; parity is portability evidence, not external validation."
+  },
+  "state_characterisation": {
+    "base_fixture_id": "D-ST-01",
+    "probe_unit": "All six state-characterisation probes reuse this single apply fixture; they are named mechanism checks, not independent task samples.",
+    "accepted_action_replay": {
+      "first_accepted": true,
+      "first_wrote": true,
+      "second_accepted": false,
+      "second_reasons": [
+        "stale_live_state"
+      ],
+      "replay_rejected_by_live_state_check": true
+    },
+    "external_live_state_drift": {
+      "candidate_accepted": false,
+      "reasons": [
+        "stale_live_state"
+      ],
+      "external_value_preserved": true
+    },
+    "immutable_live_state_drift": {
+      "candidate_accepted": false,
+      "reasons": [
+        "preserved_live_state_mismatch"
+      ],
+      "modified_preserved_value_retained": true,
+      "rejected_by_preserved_live_state_check": true
+    },
+    "single_writer_serialization": {
+      "second_begin_immediate_error": "database is locked",
+      "second_writer_blocked": true,
+      "boundary": "same database inode and cooperative SQLite writers"
+    },
+    "exception_before_commit": {
+      "rollback_preserved_state": true,
+      "integrity_check": "ok",
+      "boundary": "explicit rollback after an injected pre-commit interruption; not a power-loss test"
+    },
+    "symlink_database_path": {
+      "candidate_accepted": true,
+      "symlink_followed_to_target": true,
+      "boundary": "the database pathname remains trusted; same-user namespace attacks are not eliminated"
+    }
+  },
+  "independence_assessment": {
+    "model_call_path_independent": "not_tested_no_model_calls",
+    "rule_evaluator_independent": true,
+    "state_representation_independent": true,
+    "transaction_commit_path_independent": true,
+    "task_authoring_independent": false,
+    "human_investigator_independent": false,
+    "external_system_independent": false
+  },
+  "claim": "The FEC-v2 rules can be ported to a distinct relational evaluator and transactional state backend without reading expected_output at runtime, and SQLite rejects stale replay under the tested cooperative-writer conditions. This does not close the independent-author, independent-task, or external-harness validation gaps.",
+  "non_completion_states": [
+    "independent_author_set_missing",
+    "external_harness_validation_missing",
+    "blind_policy_implementation_missing",
+    "hostile_same_user_namespace_residual",
+    "fresh_model_execution_not_part_of_this_audit"
+  ]
+}

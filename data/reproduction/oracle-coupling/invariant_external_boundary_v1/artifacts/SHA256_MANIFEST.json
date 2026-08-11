@@ -1,0 +1,114 @@
+{
+  "manifest_version": "IEBV1-strict-3",
+  "expected_headers": {
+    "protocol_id": "invariant-external-boundary-v1",
+    "source_commit": "2340fe2d9cd619f73d5b67fa05bf8a08c7cad515",
+    "source_repository_url": "https://github.com/invariantlabs-ai/invariant",
+    "source_license_url": "https://github.com/invariantlabs-ai/invariant/blob/2340fe2d9cd619f73d5b67fa05bf8a08c7cad515/LICENSE",
+    "source_license_spdx": "Apache-2.0",
+    "source_license_sha256": "90154031b70befefac025106f493124530e13c608b876cc1418b5f65ba945f14",
+    "invariant_package_version": "0.3.5",
+    "upstream_readme_sha256": "3fadddc4e6e97a01d6db4255690675a74db4c5435195fe913bc3087ca84e408d",
+    "upstream_pyproject_sha256": "7a16bd7a2b5761c3e5ecface9a344a301a575d68678585166467ed3d3a1aedfd",
+    "upstream_policy_evidence": [
+      {
+        "policy_id": "upstream-readme-voldemort-message",
+        "upstream_file": "README.md",
+        "upstream_line_span": {
+          "start": 50,
+          "end": 52
+        },
+        "policy_source_sha256": "6a622221e5e17d44e4da1fba970aeb628956f75ccf84587a4eacdd51872d43d6",
+        "verbatim_in_upstream_readme": true
+      },
+      {
+        "policy_id": "upstream-readme-external-email",
+        "upstream_file": "README.md",
+        "upstream_line_span": {
+          "start": 28,
+          "end": 38
+        },
+        "policy_source_sha256": "38847d7f409b4e7bc20bdb05bc95cb739f02632090bdaabb6b596b3fc5847d74",
+        "verbatim_in_upstream_readme": true
+      }
+    ],
+    "case_definitions_sha256": "a1df49d729d2007c190162d1dcb1bd0545431e9a4abef437ec5f38f52f624567",
+    "isolated_worker_sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+    "dispatcher_source_sha256": "5823c491c877a13844661724f561808fa62c8b93e4469314b1ea7e1beb2b4ac9",
+    "results_schema_version": "IEBV1-results-2"
+  },
+  "entry_count": 14,
+  "entries_root_sha256": "ccc1c9235fa60b80f160f94081fa30743a0a9c9762f68751740faac156903d75",
+  "entries": [
+    {
+      "path": "code/runners/oracle-coupling/invariant_external_boundary_v1/README.md",
+      "sha256": "c1afecf736e873443e037477150b98085ce64f63287b79998e7183f7c7d5eeab",
+      "bytes": 6297
+    },
+    {
+      "path": "code/runners/oracle-coupling/invariant_external_boundary_v1/external_boundary.py",
+      "sha256": "7f0c58c4e3c17a73d6ca2df12cacf355077e4d865b82883bfdf56f85390862d2",
+      "bytes": 40066
+    },
+    {
+      "path": "code/runners/oracle-coupling/invariant_external_boundary_v1/isolated_evaluator.py",
+      "sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+      "bytes": 2453
+    },
+    {
+      "path": "code/runners/oracle-coupling/invariant_external_boundary_v1/run_experiment.py",
+      "sha256": "07b9803e5960d32aa179a6bd8fdbea811183345cf1a332433c95c260a66266c8",
+      "bytes": 11313
+    },
+    {
+      "path": "code/runners/oracle-coupling/invariant_external_boundary_v1/tests/test_invariant_external_boundary.py",
+      "sha256": "23c43226c78a9c2b6ba779d091ee35b062dc231382ad49bbd730eb71e8b6d040",
+      "bytes": 16326
+    },
+    {
+      "path": "code/runners/oracle-coupling/invariant_external_boundary_v1/verify_manifest.py",
+      "sha256": "6aa753ec69c1fb6c1a77841713bb4c3ab2e29cf58ba95d909f730b440bf5a79d",
+      "bytes": 15420
+    },
+    {
+      "path": "code/runners/oracle-coupling/layout.py",
+      "sha256": "cdf35acebbcd8b84b8b4595294b2d58225d1de64419baa4438bcb6a3964cd90d",
+      "bytes": 2450
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/invariant_external_boundary_v1/artifacts/cases.json",
+      "sha256": "c15306b224960330cc3cca43c1dc2cafd18948cc95cd0c07475c3d373d6f23dc",
+      "bytes": 6673
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/invariant_external_boundary_v1/artifacts/package_versions.json",
+      "sha256": "a570eaf14b195cc713091ac671dea9c28280e3fa5db5f778358b0bb717b1a9e2",
+      "bytes": 483
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/invariant_external_boundary_v1/artifacts/protocol.json",
+      "sha256": "180ebe8ebad97acc3176730a974542791a7cbda66e5bea73d52746a5a70dec03",
+      "bytes": 4281
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/invariant_external_boundary_v1/artifacts/results.json",
+      "sha256": "814cab3fdbfba3b8e249eb5598f82bdb424bf49ad42874bfe65a72fd3531138c",
+      "bytes": 14205
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/invariant_external_boundary_v1/artifacts/run_records.json",
+      "sha256": "88001a5e3704109fabb6268d205f123436f62ed96221c46c0f3c233b3a89b845",
+      "bytes": 54068
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/invariant_external_boundary_v1/artifacts/source_snapshot.json",
+      "sha256": "fa60e152e60c269aca12bfa843439a0f749610f27cc204750424e12781eb8d3e",
+      "bytes": 3181
+    },
+    {
+      "path": "fixtures/oracle-coupling/invariant_external_boundary_v1.json",
+      "sha256": "a1df49d729d2007c190162d1dcb1bd0545431e9a4abef437ec5f38f52f624567",
+      "bytes": 4798
+    }
+  ]
+}

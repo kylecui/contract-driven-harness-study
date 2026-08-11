@@ -1,0 +1,153 @@
+{
+  "protocol_id": "metamorphic-public-input-v1",
+  "overall_passed": true,
+  "base_fixture_count": 28,
+  "baseline_apply_fixture_count": 13,
+  "baseline_decisions": [
+    {
+      "family": "approval_gated_communication",
+      "decision": "apply",
+      "count": 3
+    },
+    {
+      "family": "approval_gated_communication",
+      "decision": "block",
+      "count": 5
+    },
+    {
+      "family": "approval_gated_configuration",
+      "decision": "apply",
+      "count": 5
+    },
+    {
+      "family": "approval_gated_configuration",
+      "decision": "block",
+      "count": 5
+    },
+    {
+      "family": "controlled_state_transition",
+      "decision": "apply",
+      "count": 5
+    },
+    {
+      "family": "controlled_state_transition",
+      "decision": "block",
+      "count": 5
+    }
+  ],
+  "case_count": 167,
+  "invariant_cases_passed": 112,
+  "invariant_case_count": 112,
+  "sensitivity_cases_passed": 55,
+  "sensitivity_case_count": 55,
+  "by_transformation": {
+    "compose_invariant_transforms": 28,
+    "expire_authority": 8,
+    "insert_irrelevant_evidence": 28,
+    "mismatch_authority_scope": 8,
+    "mismatch_authority_target": 13,
+    "mismatch_authorized_destination": 13,
+    "remove_authority": 13,
+    "rename_domain_identifiers": 28,
+    "rename_evidence_identifiers": 28
+  },
+  "by_family_and_relation": [
+    {
+      "family": "approval_gated_communication",
+      "relation": "invariant",
+      "count": 32
+    },
+    {
+      "family": "approval_gated_communication",
+      "relation": "sensitivity",
+      "count": 15
+    },
+    {
+      "family": "approval_gated_configuration",
+      "relation": "invariant",
+      "count": 40
+    },
+    {
+      "family": "approval_gated_configuration",
+      "relation": "sensitivity",
+      "count": 25
+    },
+    {
+      "family": "controlled_state_transition",
+      "relation": "invariant",
+      "count": 40
+    },
+    {
+      "family": "controlled_state_transition",
+      "relation": "sensitivity",
+      "count": 15
+    }
+  ],
+  "failures": [],
+  "coverage_gate": {
+    "passed": true,
+    "checks": {
+      "base_fixture_count_is_28": true,
+      "fixture_family_profile_is_10_10_8": true,
+      "baseline_decision_profile_is_5_5_3_apply": true,
+      "invariant_case_count_is_112": true,
+      "sensitivity_case_count_is_55": true,
+      "transformation_profile_is_complete": true,
+      "family_relation_profile_is_complete": true
+    },
+    "failures": [],
+    "interpretation": "The frozen corpus profile and every declared family-by-relation cell must be non-empty and exact; an all-block compiler cannot pass vacuously."
+  },
+  "statistical_design": {
+    "primary_task_level_reporting_unit": "one frozen public-input task fixture",
+    "primary_task_level_reporting_unit_n": 28,
+    "sensitivity_subset_reporting_unit": "one baseline-apply fixture",
+    "sensitivity_subset_n": 13,
+    "repeated_measures": "Four invariance conditions are nested within each of 28 fixtures; three or five sensitivity conditions are nested within each of 13 baseline-apply fixtures. Derived cases are not independent samples.",
+    "analysis": "exact paired deterministic counts; no p values or population interval",
+    "randomization": "none; transformations and order are fixed",
+    "exclusions": "none",
+    "missing_data": "none"
+  },
+  "bounded_claim": "Across 28 scrubbed public-input fixtures in three already implemented grammars, the compiler preserved its normalized contract under four deterministic semantics-preserving transformations and failed closed under family-applicable authority perturbations of baseline-apply cases.",
+  "non_claims": [
+    "This is author-developed post-hoc metamorphic testing, not independent validation.",
+    "The transformations exercise three known grammars and do not establish unseen-grammar transfer.",
+    "Sensitivity probes establish necessary fail-closed responses for baseline-apply tasks; block-to-apply repair and selective recovery were not tested.",
+    "The run tests runtime dependence on scrubbed public facts; it does not establish cognitive independence during compiler development.",
+    "Exact pass counts describe this finite deterministic suite and are not prevalence estimates.",
+    "The public policy semantics are treated as test premises, not as normatively validated policy."
+  ],
+  "non_completion_states": [
+    "external_validation_missing",
+    "independent_author_set_missing",
+    "unseen_grammar_transfer_not_tested"
+  ],
+  "generated_at_utc": "2026-08-11T07:22:06.928151+00:00",
+  "source_public_input": {
+    "path": "data/reproduction/oracle-coupling/oracle_independent_compiler_v1/artifacts/public_fixtures.json",
+    "sha256": "02e285ab42f1d960457a1d47016411aa540eb621de24a2fdfeed2fb6f8ac573c"
+  },
+  "source_snapshot": {
+    "base_commit": "33de73a00c21ef8562bf9a7a6831c5ac3dafa245",
+    "base_commit_is_ancestor": true,
+    "unexpected_paths_before": [],
+    "unexpected_paths_after": []
+  },
+  "unit_test_execution": {
+    "passed": true,
+    "returncode": 0,
+    "reported_test_count": 12,
+    "expected_test_count": 12,
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "code/runners/oracle-coupling/metamorphic_public_input_v1/tests",
+      "-v"
+    ]
+  },
+  "reproducibility_scope": "Counts, case outcomes, and content hashes are deterministically recomputed. Generated timestamps mean regenerated JSON files are not claimed to be bit-for-bit identical across runs."
+}

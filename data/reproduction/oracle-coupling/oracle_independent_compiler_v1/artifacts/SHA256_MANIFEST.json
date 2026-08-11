@@ -1,0 +1,83 @@
+{
+  "manifest_version": "OIC-v1-strict-2",
+  "generated_at_utc": "2026-08-11T07:21:51.022884+00:00",
+  "source_snapshot_commit": "33de73a00c21ef8562bf9a7a6831c5ac3dafa245",
+  "entry_count": 15,
+  "entries": [
+    {
+      "path": "code/runners/oracle-coupling/failure_to_executable_contract_v2/contract_gate.py",
+      "sha256": "87cc193cbba5c6d68f3e39fec2081c1454013f0dd068304b92f27e8060d5f301",
+      "bytes": 8594
+    },
+    {
+      "path": "code/runners/oracle-coupling/layout.py",
+      "sha256": "cdf35acebbcd8b84b8b4595294b2d58225d1de64419baa4438bcb6a3964cd90d",
+      "bytes": 2450
+    },
+    {
+      "path": "code/runners/oracle-coupling/oracle_independent_compiler_v1/README.md",
+      "sha256": "71cf6d938eea1c91a6e51e3f150989effd09b9a80d4349d5651897f2265b8067",
+      "bytes": 5853
+    },
+    {
+      "path": "code/runners/oracle-coupling/oracle_independent_compiler_v1/policy_rules.py",
+      "sha256": "5cd33508492ee9bb8c4a976f5256e473e899c337b5cf62705532af09fd1b0e0c",
+      "bytes": 2755
+    },
+    {
+      "path": "code/runners/oracle-coupling/oracle_independent_compiler_v1/public_input.py",
+      "sha256": "cd2d90d8883bab260da136a40a1cc79d5a6285c87ce92f7a83a29ad4f4beaaa9",
+      "bytes": 4153
+    },
+    {
+      "path": "code/runners/oracle-coupling/oracle_independent_compiler_v1/public_policy_compiler.py",
+      "sha256": "3c857cd3b8fee72003d51dd600e372da2a01cd255c367d1460b8c72758e36a09",
+      "bytes": 17865
+    },
+    {
+      "path": "code/runners/oracle-coupling/oracle_independent_compiler_v1/run_experiment.py",
+      "sha256": "c5149aad1e0dc075083650971f142702c5876f1ff2d2bb214e7edaebb0fbf599",
+      "bytes": 25221
+    },
+    {
+      "path": "code/runners/oracle-coupling/oracle_independent_compiler_v1/tests/test_oracle_independent_compiler.py",
+      "sha256": "bca954ccd5bec5004bba7258271157c3d76eac791b27b3b75dbb7add06bfb6c3",
+      "bytes": 8318
+    },
+    {
+      "path": "code/runners/oracle-coupling/oracle_independent_compiler_v1/verify_manifest.py",
+      "sha256": "9a2569da0eb88d3934c5080a03427960977a042fe8ddb85563542e4421596287",
+      "bytes": 6319
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/failure_to_executable_contract_v2/candidate_corpus.json",
+      "sha256": "3c3dc85efd0262965be9f029d27a19581574ff98607055835b0c1462f4ffdcdd",
+      "bytes": 458390
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/oracle_independent_compiler_v1/artifacts/compiled_contracts.json",
+      "sha256": "85c0b42179780e0f064856d658ac4a90962a3de6c69cdad3f44b3f84fb1ec467",
+      "bytes": 36400
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/oracle_independent_compiler_v1/artifacts/counterfactual_results.json",
+      "sha256": "9ceae270f112e0c4a463ccd5da6275bc69ccad0bc7d9bf2af0829441ce8e4aec",
+      "bytes": 2664
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/oracle_independent_compiler_v1/artifacts/public_fixtures.json",
+      "sha256": "02e285ab42f1d960457a1d47016411aa540eb621de24a2fdfeed2fb6f8ac573c",
+      "bytes": 32119
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/oracle_independent_compiler_v1/artifacts/results.json",
+      "sha256": "097aa45659521bf2fdb58627b898c67a2825276db7f3473e0cbf2a2a19decbdc",
+      "bytes": 28730
+    },
+    {
+      "path": "fixtures/oracle-coupling/failure_to_executable_contract_v2.json",
+      "sha256": "337a41e6bd8f1e45ab0d53d1bd5d5430d5529556f54846401890933fe24e66bc",
+      "bytes": 72289
+    }
+  ]
+}

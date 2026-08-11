@@ -1,0 +1,43 @@
+{
+  "protocol_id": "metamorphic-public-input-v1",
+  "design_timing": "recorded_post_hoc_with_results_not_preregistered",
+  "runtime": {
+    "python_version": "3.12.2 | packaged by conda-forge | (main, Feb 16 2024, 20:54:21) [Clang 16.0.6 ]",
+    "python_executable": "python"
+  },
+  "input_artifact": "data/reproduction/oracle-coupling/oracle_independent_compiler_v1/artifacts/public_fixtures.json",
+  "input_artifact_sha256": "02e285ab42f1d960457a1d47016411aa540eb621de24a2fdfeed2fb6f8ac573c",
+  "source_fixture_count": 28,
+  "families": [
+    "controlled_state_transition",
+    "approval_gated_configuration",
+    "approval_gated_communication"
+  ],
+  "invariant_relations": [
+    "rename_domain_identifiers",
+    "rename_evidence_identifiers",
+    "insert_irrelevant_evidence",
+    "compose_invariant_transforms"
+  ],
+  "sensitivity_relations": {
+    "all_baseline_apply_fixtures": [
+      "remove_authority",
+      "mismatch_authority_target",
+      "mismatch_authorized_destination"
+    ],
+    "configuration_and_communication_baseline_apply_fixtures": [
+      "mismatch_authority_scope",
+      "expire_authority"
+    ]
+  },
+  "input_boundary": "Only the scrubbed OIC-v1 public-input artifact is loaded. The original authored fixture file is outside this experiment's runtime inputs.",
+  "evaluation_rule": "Invariant cases require input change, exact normalized-contract equality, and raw grounding in transformed identifiers with no stale-value leakage. Sensitivity cases require an exact fail-closed execution projection, including blocked gate, no permitted action, family-specific next action, and exact state preservation.",
+  "analysis_unit": "One base fixture is the primary task-level reporting unit; transformed cases are paired within-fixture deterministic repeated measures.",
+  "coverage_gate": "The frozen 28-task, 5/5/3 apply, 112-invariant, 55-sensitivity, and family-by-relation profiles must all be exact and non-vacuous.",
+  "provenance_dependencies_not_runtime_inputs": [
+    "code/runners/oracle-coupling/oracle_independent_compiler_v1/run_experiment.py",
+    "data/reproduction/oracle-coupling/oracle_independent_compiler_v1/artifacts/results.json",
+    "data/reproduction/oracle-coupling/oracle_independent_compiler_v1/artifacts/SHA256_MANIFEST.json",
+    "fixtures/oracle-coupling/failure_to_executable_contract_v2.json"
+  ]
+}

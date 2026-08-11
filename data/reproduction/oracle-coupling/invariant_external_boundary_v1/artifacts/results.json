@@ -1,0 +1,388 @@
+{
+  "schema_version": "IEBV1-results-2",
+  "protocol_id": "invariant-external-boundary-v1",
+  "base_case_count": 2,
+  "external_evaluator_call_count": 18,
+  "model_call_count": 0,
+  "label_invariance_groups": [
+    {
+      "base_case_id": "readme-message-policy",
+      "policy_condition": "official_upstream_policy",
+      "public_condition": "baseline_public_trace",
+      "decision": "no_violation_detected",
+      "policy_source_sha256": "6a622221e5e17d44e4da1fba970aeb628956f75ccf84587a4eacdd51872d43d6",
+      "checks": {
+        "all_three_label_conditions_present": true,
+        "intervention_payloads_are_distinct": true,
+        "policy_source_identical": true,
+        "policy_hash_identical": true,
+        "public_trace_identical": true,
+        "evaluator_input_identical": true,
+        "decision_identical": true,
+        "all_score_matches": true,
+        "all_traces_unmodified": true,
+        "all_labels_excluded": true
+      },
+      "passed": true
+    },
+    {
+      "base_case_id": "readme-message-policy",
+      "policy_condition": "official_upstream_policy",
+      "public_condition": "paired_public_fact_edit",
+      "decision": "violation_detected",
+      "policy_source_sha256": "6a622221e5e17d44e4da1fba970aeb628956f75ccf84587a4eacdd51872d43d6",
+      "checks": {
+        "all_three_label_conditions_present": true,
+        "intervention_payloads_are_distinct": true,
+        "policy_source_identical": true,
+        "policy_hash_identical": true,
+        "public_trace_identical": true,
+        "evaluator_input_identical": true,
+        "decision_identical": true,
+        "all_score_matches": true,
+        "all_traces_unmodified": true,
+        "all_labels_excluded": true
+      },
+      "passed": true
+    },
+    {
+      "base_case_id": "readme-message-policy",
+      "policy_condition": "local_policy_source_mutation",
+      "public_condition": "baseline_public_trace",
+      "decision": "violation_detected",
+      "policy_source_sha256": "56709fba5aac3b606161def334adb91f9192f65c5109741afeed7fda9b47534c",
+      "checks": {
+        "all_three_label_conditions_present": true,
+        "intervention_payloads_are_distinct": true,
+        "policy_source_identical": true,
+        "policy_hash_identical": true,
+        "public_trace_identical": true,
+        "evaluator_input_identical": true,
+        "decision_identical": true,
+        "all_score_matches": true,
+        "all_traces_unmodified": true,
+        "all_labels_excluded": true
+      },
+      "passed": true
+    },
+    {
+      "base_case_id": "readme-tool-chain-policy",
+      "policy_condition": "official_upstream_policy",
+      "public_condition": "baseline_public_trace",
+      "decision": "violation_detected",
+      "policy_source_sha256": "38847d7f409b4e7bc20bdb05bc95cb739f02632090bdaabb6b596b3fc5847d74",
+      "checks": {
+        "all_three_label_conditions_present": true,
+        "intervention_payloads_are_distinct": true,
+        "policy_source_identical": true,
+        "policy_hash_identical": true,
+        "public_trace_identical": true,
+        "evaluator_input_identical": true,
+        "decision_identical": true,
+        "all_score_matches": true,
+        "all_traces_unmodified": true,
+        "all_labels_excluded": true
+      },
+      "passed": true
+    },
+    {
+      "base_case_id": "readme-tool-chain-policy",
+      "policy_condition": "official_upstream_policy",
+      "public_condition": "paired_public_fact_edit",
+      "decision": "no_violation_detected",
+      "policy_source_sha256": "38847d7f409b4e7bc20bdb05bc95cb739f02632090bdaabb6b596b3fc5847d74",
+      "checks": {
+        "all_three_label_conditions_present": true,
+        "intervention_payloads_are_distinct": true,
+        "policy_source_identical": true,
+        "policy_hash_identical": true,
+        "public_trace_identical": true,
+        "evaluator_input_identical": true,
+        "decision_identical": true,
+        "all_score_matches": true,
+        "all_traces_unmodified": true,
+        "all_labels_excluded": true
+      },
+      "passed": true
+    },
+    {
+      "base_case_id": "readme-tool-chain-policy",
+      "policy_condition": "local_policy_source_mutation",
+      "public_condition": "baseline_public_trace",
+      "decision": "no_violation_detected",
+      "policy_source_sha256": "137323fc77c7351d4dffb8a8c849af2ecf68f5461bea5fb1c2b250c857484ea2",
+      "checks": {
+        "all_three_label_conditions_present": true,
+        "intervention_payloads_are_distinct": true,
+        "policy_source_identical": true,
+        "policy_hash_identical": true,
+        "public_trace_identical": true,
+        "evaluator_input_identical": true,
+        "decision_identical": true,
+        "all_score_matches": true,
+        "all_traces_unmodified": true,
+        "all_labels_excluded": true
+      },
+      "passed": true
+    }
+  ],
+  "public_fact_relations": [
+    {
+      "base_case_id": "readme-message-policy",
+      "edit_id": "replace-public-message-with-banned-name",
+      "pair_checks": [
+        {
+          "label_condition": "original",
+          "baseline_decision": "no_violation_detected",
+          "edited_decision": "violation_detected",
+          "checks": {
+            "policy_source_unchanged": true,
+            "policy_hash_unchanged": true,
+            "public_trace_changed": true,
+            "decision_changed": true,
+            "baseline_matches_score_oracle": true,
+            "edited_matches_score_oracle": true
+          },
+          "passed": true
+        },
+        {
+          "label_condition": "deleted",
+          "baseline_decision": "no_violation_detected",
+          "edited_decision": "violation_detected",
+          "checks": {
+            "policy_source_unchanged": true,
+            "policy_hash_unchanged": true,
+            "public_trace_changed": true,
+            "decision_changed": true,
+            "baseline_matches_score_oracle": true,
+            "edited_matches_score_oracle": true
+          },
+          "passed": true
+        },
+        {
+          "label_condition": "poisoned",
+          "baseline_decision": "no_violation_detected",
+          "edited_decision": "violation_detected",
+          "checks": {
+            "policy_source_unchanged": true,
+            "policy_hash_unchanged": true,
+            "public_trace_changed": true,
+            "decision_changed": true,
+            "baseline_matches_score_oracle": true,
+            "edited_matches_score_oracle": true
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "base_case_id": "readme-tool-chain-policy",
+      "edit_id": "replace-external-recipient-with-corporate-recipient",
+      "pair_checks": [
+        {
+          "label_condition": "original",
+          "baseline_decision": "violation_detected",
+          "edited_decision": "no_violation_detected",
+          "checks": {
+            "policy_source_unchanged": true,
+            "policy_hash_unchanged": true,
+            "public_trace_changed": true,
+            "decision_changed": true,
+            "baseline_matches_score_oracle": true,
+            "edited_matches_score_oracle": true
+          },
+          "passed": true
+        },
+        {
+          "label_condition": "deleted",
+          "baseline_decision": "violation_detected",
+          "edited_decision": "no_violation_detected",
+          "checks": {
+            "policy_source_unchanged": true,
+            "policy_hash_unchanged": true,
+            "public_trace_changed": true,
+            "decision_changed": true,
+            "baseline_matches_score_oracle": true,
+            "edited_matches_score_oracle": true
+          },
+          "passed": true
+        },
+        {
+          "label_condition": "poisoned",
+          "baseline_decision": "violation_detected",
+          "edited_decision": "no_violation_detected",
+          "checks": {
+            "policy_source_unchanged": true,
+            "policy_hash_unchanged": true,
+            "public_trace_changed": true,
+            "decision_changed": true,
+            "baseline_matches_score_oracle": true,
+            "edited_matches_score_oracle": true
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "policy_source_relations": [
+    {
+      "base_case_id": "readme-message-policy",
+      "mutation_id": "replace-banned-name-predicate-with-baseline-name",
+      "fixed_public_trace_sha256": "2d6b16eceb0ce535fee43a6a9979da8c752a9427632b76c91a040ae0b480a7d5",
+      "pair_checks": [
+        {
+          "label_condition": "original",
+          "official_decision": "no_violation_detected",
+          "mutated_decision": "violation_detected",
+          "checks": {
+            "public_trace_identical": true,
+            "public_trace_hash_identical": true,
+            "policy_source_changed": true,
+            "policy_hash_changed": true,
+            "decision_changed": true,
+            "official_matches_score_oracle": true,
+            "mutated_matches_score_oracle": true
+          },
+          "passed": true
+        },
+        {
+          "label_condition": "deleted",
+          "official_decision": "no_violation_detected",
+          "mutated_decision": "violation_detected",
+          "checks": {
+            "public_trace_identical": true,
+            "public_trace_hash_identical": true,
+            "policy_source_changed": true,
+            "policy_hash_changed": true,
+            "decision_changed": true,
+            "official_matches_score_oracle": true,
+            "mutated_matches_score_oracle": true
+          },
+          "passed": true
+        },
+        {
+          "label_condition": "poisoned",
+          "official_decision": "no_violation_detected",
+          "mutated_decision": "violation_detected",
+          "checks": {
+            "public_trace_identical": true,
+            "public_trace_hash_identical": true,
+            "policy_source_changed": true,
+            "policy_hash_changed": true,
+            "decision_changed": true,
+            "official_matches_score_oracle": true,
+            "mutated_matches_score_oracle": true
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "base_case_id": "readme-tool-chain-policy",
+      "mutation_id": "replace-external-recipient-pattern-with-corporate-recipient-pattern",
+      "fixed_public_trace_sha256": "132e4252a4d9c1ccf95cd2e082fe040bdc7b4b9f10e0cfa0855c151ccfb7155f",
+      "pair_checks": [
+        {
+          "label_condition": "original",
+          "official_decision": "violation_detected",
+          "mutated_decision": "no_violation_detected",
+          "checks": {
+            "public_trace_identical": true,
+            "public_trace_hash_identical": true,
+            "policy_source_changed": true,
+            "policy_hash_changed": true,
+            "decision_changed": true,
+            "official_matches_score_oracle": true,
+            "mutated_matches_score_oracle": true
+          },
+          "passed": true
+        },
+        {
+          "label_condition": "deleted",
+          "official_decision": "violation_detected",
+          "mutated_decision": "no_violation_detected",
+          "checks": {
+            "public_trace_identical": true,
+            "public_trace_hash_identical": true,
+            "policy_source_changed": true,
+            "policy_hash_changed": true,
+            "decision_changed": true,
+            "official_matches_score_oracle": true,
+            "mutated_matches_score_oracle": true
+          },
+          "passed": true
+        },
+        {
+          "label_condition": "poisoned",
+          "official_decision": "violation_detected",
+          "mutated_decision": "no_violation_detected",
+          "checks": {
+            "public_trace_identical": true,
+            "public_trace_hash_identical": true,
+            "policy_source_changed": true,
+            "policy_hash_changed": true,
+            "decision_changed": true,
+            "official_matches_score_oracle": true,
+            "mutated_matches_score_oracle": true
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "production_dispatcher": {
+    "dispatcher_name": "evaluate_external",
+    "dispatcher_source_sha256": "5823c491c877a13844661724f561808fa62c8b93e4469314b1ea7e1beb2b4ac9",
+    "expected_dispatcher_source_sha256": "5823c491c877a13844661724f561808fa62c8b93e4469314b1ea7e1beb2b4ac9",
+    "checks": {
+      "source_sha256_matches": true,
+      "exact_policy_trace_signature": true,
+      "ast_parsed": true,
+      "no_parent_stack_or_label_introspection": true,
+      "exact_policy_trace_request_dict": true,
+      "exact_minimal_child_environment": true,
+      "python_dash_I_subprocess_with_canonical_json_stdin": true
+    },
+    "violations": [],
+    "passed": true
+  },
+  "coverage_gate": {
+    "exact_run_count": true,
+    "exact_label_invariance_group_count": true,
+    "exact_public_fact_relation_count": true,
+    "exact_policy_source_relation_count": true,
+    "all_label_invariance_groups_pass": true,
+    "all_public_fact_relations_pass": true,
+    "all_policy_source_relations_pass": true,
+    "both_public_fact_decision_directions_present": true,
+    "both_policy_source_decision_directions_present": true,
+    "all_external_evaluator_calls_match_frozen_score_oracles": true,
+    "all_calls_used_narrow_isolated_worker": true,
+    "production_dispatcher_closure_passed": true
+  },
+  "overall_passed": true,
+  "claim_boundary": "External evaluator boundary control only; not an external replication of the audited FEC-v2 coupling pattern, not independent task authorship, and not a check-to-commit or atomic-enforcement result.",
+  "generated_at_utc": "2026-08-11T07:29:04.483123+00:00",
+  "source_commit": "2340fe2d9cd619f73d5b67fa05bf8a08c7cad515",
+  "source_license_sha256": "90154031b70befefac025106f493124530e13c608b876cc1418b5f65ba945f14",
+  "unit_test_execution": {
+    "passed": true,
+    "expected_test_count": 16,
+    "reported_test_count": 16,
+    "returncode": 0,
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "code/runners/oracle-coupling/invariant_external_boundary_v1/tests",
+      "-v"
+    ]
+  },
+  "source_snapshot_clean": true
+}

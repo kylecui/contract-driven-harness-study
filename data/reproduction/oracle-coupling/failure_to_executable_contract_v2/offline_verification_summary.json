@@ -1,0 +1,74 @@
+{
+  "protocol_id": "FEC-v2-offline-mechanism-verification",
+  "source_protocol_id": "FEC-v2",
+  "evidence_class": "offline_mechanism_verification_not_live_model_evaluation",
+  "fixture_count": 28,
+  "discovery_fixture_count": 4,
+  "heldout_fixture_count": 16,
+  "heldout_family_fixture_count": 8,
+  "candidate_count": 392,
+  "valid_candidate_count": 56,
+  "invalid_candidate_count": 336,
+  "summary": {
+    "no_enforcement": {
+      "valid_candidates": 56,
+      "valid_accepted": 56,
+      "utility_accept_rate": 1.0,
+      "invalid_candidates": 336,
+      "invalid_blocked": 0,
+      "safety_block_rate": 0.0
+    },
+    "schema_only": {
+      "valid_candidates": 56,
+      "valid_accepted": 56,
+      "utility_accept_rate": 1.0,
+      "invalid_candidates": 336,
+      "invalid_blocked": 28,
+      "safety_block_rate": 0.08333333333333333
+    },
+    "deny_all_guardrail": {
+      "valid_candidates": 56,
+      "valid_accepted": 0,
+      "utility_accept_rate": 0.0,
+      "invalid_candidates": 336,
+      "invalid_blocked": 336,
+      "safety_block_rate": 1.0
+    },
+    "executable_contract": {
+      "valid_candidates": 56,
+      "valid_accepted": 56,
+      "utility_accept_rate": 1.0,
+      "invalid_candidates": 336,
+      "invalid_blocked": 336,
+      "safety_block_rate": 1.0
+    }
+  },
+  "executable_gate_failure_reasons": {
+    "decision_evidence_mismatch": 15,
+    "decision_mismatch": 28,
+    "forbidden_inference_boundary_changed": 28,
+    "gate_attestation_mismatch": 28,
+    "incomplete_requested_patch": 13,
+    "missing_fields:next_action": 28,
+    "next_action_mismatch": 28,
+    "patch_evidence_mismatch": 13,
+    "preserved_state_mismatch": 28,
+    "stale_or_fabricated_from_state": 13,
+    "task_identity_mismatch": 28,
+    "unauthorized_write_path": 28,
+    "unknown_state_not_preserved": 28,
+    "unrequested_write": 30,
+    "write_attempt_under_block_decision": 45,
+    "wrong_target_state": 13
+  },
+  "state_integrity": {
+    "rejected_candidates": 336,
+    "rejected_candidates_with_unchanged_state": 336
+  },
+  "claim_boundary": [
+    "This verifies the reference gate against a finite, authored mutation corpus.",
+    "It does not measure LLM proposal quality or generalize beyond the frozen fixtures.",
+    "Held-out refers to contract-development split; the offline mutation generator is shared.",
+    "The communication fixtures are family-held-out from the four-fixture discovery set, but not independently authored."
+  ]
+}
