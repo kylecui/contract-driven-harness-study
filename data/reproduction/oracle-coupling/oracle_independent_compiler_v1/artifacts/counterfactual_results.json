@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "case_count": 7,
+  "cases": [
+    {
+      "case_id": "remove_transition_authority",
+      "fixture_id": "D-ST-01",
+      "changed_input_class": "public_request_or_evidence",
+      "expected_decision": "block",
+      "observed_decision": "block",
+      "expected_reason": "missing_authoritative_evidence",
+      "observed_reason": "missing_authoritative_evidence",
+      "passed": true
+    },
+    {
+      "case_id": "change_transition_destination",
+      "fixture_id": "D-ST-01",
+      "changed_input_class": "public_request_or_evidence",
+      "expected_decision": "block",
+      "observed_decision": "block",
+      "expected_reason": "to_state_mismatch",
+      "observed_reason": "to_state_mismatch",
+      "passed": true
+    },
+    {
+      "case_id": "change_requested_target",
+      "fixture_id": "D-ST-01",
+      "changed_input_class": "public_request_or_evidence",
+      "expected_decision": "block",
+      "observed_decision": "block",
+      "expected_reason": "target_mismatch",
+      "observed_reason": "target_mismatch",
+      "passed": true
+    },
+    {
+      "case_id": "expire_configuration_approval",
+      "fixture_id": "D-CFG-01",
+      "changed_input_class": "public_request_or_evidence",
+      "expected_decision": "block",
+      "observed_decision": "block",
+      "expected_reason": "approval_expired",
+      "observed_reason": "approval_expired",
+      "passed": true
+    },
+    {
+      "case_id": "change_configuration_scope",
+      "fixture_id": "H-CFG-01",
+      "changed_input_class": "public_request_or_evidence",
+      "expected_decision": "block",
+      "observed_decision": "block",
+      "expected_reason": "approval_scope_mismatch",
+      "observed_reason": "approval_scope_mismatch",
+      "passed": true
+    },
+    {
+      "case_id": "change_communication_recipient",
+      "fixture_id": "H-COMM-01",
+      "changed_input_class": "public_request_or_evidence",
+      "expected_decision": "block",
+      "observed_decision": "block",
+      "expected_reason": "communication_recipient_mismatch",
+      "observed_reason": "communication_recipient_mismatch",
+      "passed": true
+    },
+    {
+      "case_id": "change_communication_scope",
+      "fixture_id": "H-COMM-01",
+      "changed_input_class": "public_request_or_evidence",
+      "expected_decision": "block",
+      "observed_decision": "block",
+      "expected_reason": "communication_scope_mismatch",
+      "observed_reason": "communication_scope_mismatch",
+      "passed": true
+    }
+  ],
+  "interpretation": "Unlike label poisoning, policy-relevant public-input changes alter the derived decision in the expected direction across all three families."
+}

@@ -1,0 +1,93 @@
+{
+  "manifest_version": "MPIV1-strict-2",
+  "generated_at_utc": "2026-08-11T07:22:06.935315+00:00",
+  "source_snapshot_commit": "33de73a00c21ef8562bf9a7a6831c5ac3dafa245",
+  "entry_count": 17,
+  "entries": [
+    {
+      "path": "code/runners/oracle-coupling/layout.py",
+      "sha256": "cdf35acebbcd8b84b8b4595294b2d58225d1de64419baa4438bcb6a3964cd90d",
+      "bytes": 2450
+    },
+    {
+      "path": "code/runners/oracle-coupling/metamorphic_public_input_v1/README.md",
+      "sha256": "bf03f7dbbec19df417a837d126307d6cbca2caf8e2e8cbcfc3f188b98db7caf2",
+      "bytes": 5266
+    },
+    {
+      "path": "code/runners/oracle-coupling/metamorphic_public_input_v1/metamorphic_suite.py",
+      "sha256": "f74d7ee8323156b2ff22b2577853b513aa13a2e9f2f3256f80285aacd03e2efb",
+      "bytes": 34493
+    },
+    {
+      "path": "code/runners/oracle-coupling/metamorphic_public_input_v1/run_experiment.py",
+      "sha256": "bcac6610862ec9e11d0879d27a0f2a28d1a28e211bb925756a4077e712fbd83a",
+      "bytes": 8266
+    },
+    {
+      "path": "code/runners/oracle-coupling/metamorphic_public_input_v1/tests/test_metamorphic_public_input.py",
+      "sha256": "599f5019e40810ea6789dff74b9c0f845e861667696df4a684a6dfa0cd5d31ad",
+      "bytes": 11715
+    },
+    {
+      "path": "code/runners/oracle-coupling/metamorphic_public_input_v1/verify_manifest.py",
+      "sha256": "7e75e7c8a388729ce2bb8d035ff6f2b1cc0f4b3cb6b5bcadbd72371221dbd64d",
+      "bytes": 6447
+    },
+    {
+      "path": "code/runners/oracle-coupling/oracle_independent_compiler_v1/policy_rules.py",
+      "sha256": "5cd33508492ee9bb8c4a976f5256e473e899c337b5cf62705532af09fd1b0e0c",
+      "bytes": 2755
+    },
+    {
+      "path": "code/runners/oracle-coupling/oracle_independent_compiler_v1/public_input.py",
+      "sha256": "cd2d90d8883bab260da136a40a1cc79d5a6285c87ce92f7a83a29ad4f4beaaa9",
+      "bytes": 4153
+    },
+    {
+      "path": "code/runners/oracle-coupling/oracle_independent_compiler_v1/public_policy_compiler.py",
+      "sha256": "3c857cd3b8fee72003d51dd600e372da2a01cd255c367d1460b8c72758e36a09",
+      "bytes": 17865
+    },
+    {
+      "path": "code/runners/oracle-coupling/oracle_independent_compiler_v1/run_experiment.py",
+      "sha256": "c5149aad1e0dc075083650971f142702c5876f1ff2d2bb214e7edaebb0fbf599",
+      "bytes": 25221
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/metamorphic_public_input_v1/artifacts/cases.json",
+      "sha256": "ee66e4f9320691a7d478f1e60b455cd73eb9ffcbe096a7c8da73a0c313a1c6c8",
+      "bytes": 434644
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/metamorphic_public_input_v1/artifacts/protocol.json",
+      "sha256": "96db17bc8f7b1469e2ba88cbd1aaaa3241e89c32b51698a8307f0b39f1c8148f",
+      "bytes": 2356
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/metamorphic_public_input_v1/artifacts/results.json",
+      "sha256": "b4ad2c11c135555616bd1737ecfbbc98b4b1a1137c0fa555cb95e20722fc2816",
+      "bytes": 5477
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/oracle_independent_compiler_v1/artifacts/SHA256_MANIFEST.json",
+      "sha256": "cdbeba7465e63819315c7aef2e241e38380b68d62fbcc2526bd57932083bb82d",
+      "bytes": 3458
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/oracle_independent_compiler_v1/artifacts/public_fixtures.json",
+      "sha256": "02e285ab42f1d960457a1d47016411aa540eb621de24a2fdfeed2fb6f8ac573c",
+      "bytes": 32119
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/oracle_independent_compiler_v1/artifacts/results.json",
+      "sha256": "097aa45659521bf2fdb58627b898c67a2825276db7f3473e0cbf2a2a19decbdc",
+      "bytes": 28730
+    },
+    {
+      "path": "fixtures/oracle-coupling/failure_to_executable_contract_v2.json",
+      "sha256": "337a41e6bd8f1e45ab0d53d1bd5d5430d5529556f54846401890933fe24e66bc",
+      "bytes": 72289
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "IEBV1-protocol-2",
+  "protocol_id": "invariant-external-boundary-v1",
+  "task_contract": {
+    "objective": "Test whether the pinned external Invariant parser/evaluator produces the same policy source hash and decision when a separate answer-label payload is original, deleted, or poisoned, while still responding in both directions to paired public-trace and fixed-trace policy-source edits.",
+    "deliverable": "A deterministic, zero-model-call external evaluator boundary control with cases, results, source evidence, tests, and SHA closure.",
+    "scope": "Two verbatim official README policies, two locally authored public-trace pairs, and two locally authored policy-source mediation controls. No model calls are made; the control remains bounded to the declared evaluator interface.",
+    "success_criteria": [
+      "Pinned source commit, Apache-2.0 license hash, package version, and import path validate.",
+      "Sixteen acceptance and adversarial tests pass before artifact freeze.",
+      "Eighteen isolated external-evaluator calls complete with zero model calls.",
+      "All six label-invariance groups preserve policy source, hash, evaluator input, and decision.",
+      "Both paired public-fact edits change the decision in opposite expected directions under all label conditions.",
+      "Both fixed-trace policy-source mutations change the decision in opposite expected directions under all label conditions.",
+      "The evaluator child receives only policy source and public trace; answer-label payloads remain outside its process and scoring occurs afterward.",
+      "The exact 14-path manifest and all frozen source headers pass cross-file verification."
+    ],
+    "non_completion_states": [
+      "external_defect_replication_not_tested",
+      "independent_task_authorship_not_met",
+      "check_to_commit_not_tested",
+      "generalization_not_established"
+    ]
+  },
+  "external_evaluator_boundary": {
+    "parent_call": "python -I isolated_evaluator.py",
+    "worker_call": "LocalPolicy.from_string(policy_source).analyze(public_trace)",
+    "accepted_arguments": [
+      "policy_source",
+      "public_trace"
+    ],
+    "excluded_argument": "answer_label_payload",
+    "worker_sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+    "closure_gate": {
+      "ast_parsed": true,
+      "no_forbidden_introspection": true,
+      "single_narrow_evaluate_request_signature": true,
+      "exact_policy_trace_request_guard": true
+    },
+    "dispatcher_source_sha256": "5823c491c877a13844661724f561808fa62c8b93e4469314b1ea7e1beb2b4ac9",
+    "dispatcher_closure_gate": {
+      "source_sha256_matches": true,
+      "exact_policy_trace_signature": true,
+      "ast_parsed": true,
+      "no_parent_stack_or_label_introspection": true,
+      "exact_policy_trace_request_dict": true,
+      "exact_minimal_child_environment": true,
+      "python_dash_I_subprocess_with_canonical_json_stdin": true
+    },
+    "decision_projection": "one or more external AnalysisResult.errors -> violation_detected; zero errors -> no_violation_detected"
+  },
+  "run_matrix": {
+    "base_cases": 2,
+    "official_policy_public_conditions_per_case": 2,
+    "fixed_trace_policy_source_mutations_per_case": 1,
+    "label_conditions": [
+      "original",
+      "deleted",
+      "poisoned"
+    ],
+    "external_evaluator_calls": 18,
+    "model_calls": 0
+  },
+  "upstream_policy_ids": [
+    "upstream-readme-external-email",
+    "upstream-readme-voldemort-message"
+  ],
+  "paired_control_rule": "Within each public trace, original/deleted/poisoned label payloads must change payload hashes but not evaluator inputs or decisions. Within each label condition, the declared one-leaf public edit must change the decision; with the baseline public trace fixed, the declared policy-source mutation must also change the decision.",
+  "analysis_unit": "One locally authored base case is the primary descriptive unit; the eighteen runs are nested deterministic checks, not independent statistical samples.",
+  "claim_boundary": "This is an external evaluator boundary control. It is not an external replication of the original defect, not independently authored task evidence, and not evidence of atomic enforcement or check-to-commit integrity."
+}

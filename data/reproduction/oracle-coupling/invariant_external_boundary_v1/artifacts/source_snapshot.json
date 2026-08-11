@@ -1,0 +1,77 @@
+{
+  "repository_url": "https://github.com/invariantlabs-ai/invariant",
+  "observed_origin_url": "https://github.com/invariantlabs-ai/invariant.git",
+  "source_root_at_run": "/private/tmp/invariant-2340fe2d",
+  "source_commit": "2340fe2d9cd619f73d5b67fa05bf8a08c7cad515",
+  "source_status_porcelain": "",
+  "license_url": "https://github.com/invariantlabs-ai/invariant/blob/2340fe2d9cd619f73d5b67fa05bf8a08c7cad515/LICENSE",
+  "license_spdx": "Apache-2.0",
+  "license_sha256": "90154031b70befefac025106f493124530e13c608b876cc1418b5f65ba945f14",
+  "license_bytes": 11347,
+  "readme_sha256": "3fadddc4e6e97a01d6db4255690675a74db4c5435195fe913bc3087ca84e408d",
+  "pyproject_sha256": "7a16bd7a2b5761c3e5ecface9a344a301a575d68678585166467ed3d3a1aedfd",
+  "local_policy_implementation_path_at_run": "/private/tmp/invariant-2340fe2d/invariant/analyzer/policy.py",
+  "isolated_worker": {
+    "worker_path": "code/runners/oracle-coupling/invariant_external_boundary_v1/isolated_evaluator.py",
+    "worker_sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+    "checks": {
+      "ast_parsed": true,
+      "no_forbidden_introspection": true,
+      "single_narrow_evaluate_request_signature": true,
+      "exact_policy_trace_request_guard": true
+    }
+  },
+  "production_dispatcher": {
+    "dispatcher_name": "evaluate_external",
+    "dispatcher_source_sha256": "5823c491c877a13844661724f561808fa62c8b93e4469314b1ea7e1beb2b4ac9",
+    "expected_dispatcher_source_sha256": "5823c491c877a13844661724f561808fa62c8b93e4469314b1ea7e1beb2b4ac9",
+    "checks": {
+      "source_sha256_matches": true,
+      "exact_policy_trace_signature": true,
+      "ast_parsed": true,
+      "no_parent_stack_or_label_introspection": true,
+      "exact_policy_trace_request_dict": true,
+      "exact_minimal_child_environment": true,
+      "python_dash_I_subprocess_with_canonical_json_stdin": true
+    },
+    "violations": [],
+    "passed": true
+  },
+  "upstream_policy_evidence": [
+    {
+      "policy_id": "upstream-readme-voldemort-message",
+      "upstream_file": "README.md",
+      "upstream_line_span": {
+        "start": 50,
+        "end": 52
+      },
+      "policy_source_sha256": "6a622221e5e17d44e4da1fba970aeb628956f75ccf84587a4eacdd51872d43d6",
+      "verbatim_in_upstream_readme": true
+    },
+    {
+      "policy_id": "upstream-readme-external-email",
+      "upstream_file": "README.md",
+      "upstream_line_span": {
+        "start": 28,
+        "end": 38
+      },
+      "policy_source_sha256": "38847d7f409b4e7bc20bdb05bc95cb739f02632090bdaabb6b596b3fc5847d74",
+      "verbatim_in_upstream_readme": true
+    }
+  ],
+  "checks": {
+    "commit_matches": true,
+    "source_clean": true,
+    "origin_matches_official_repository": true,
+    "license_hash_matches": true,
+    "package_version_matches": true,
+    "implementation_imported_from_pinned_source": true,
+    "both_policy_sources_verbatim_in_readme": true,
+    "isolated_worker_closure_gate_passed": true,
+    "production_dispatcher_closure_gate_passed": true
+  },
+  "source_clean_before_run": true,
+  "source_clean_after_run": true,
+  "source_status_after_porcelain": "",
+  "source_root_is_external_temp_snapshot": true
+}

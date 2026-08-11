@@ -1,0 +1,186 @@
+{
+  "figure_contract": {
+    "core_conclusion": "The same label and public-fact interventions return contrasting prespecified results for an answer-coupled compiler and two label-separated evaluator boundaries; nested metamorphic checks test non-vacuity.",
+    "archetype": "schematic-led composite",
+    "final_size_mm": [
+      178,
+      112
+    ],
+    "statistics": "Exact deterministic counts only. Primary reporting units are fixed task fixtures and upstream policy examples; transformed conditions and evaluator calls are nested checks."
+  },
+  "panel_a_policy_source_intervention": {
+    "same_team_task_units": 28,
+    "reference_answer_coupled": {
+      "label_reaches_policy": true,
+      "deletion_compile_failures": 28,
+      "poisoning_contract_changes": 28
+    },
+    "same_team_public_input": {
+      "label_reaches_policy": false,
+      "deletion_invariant": 28,
+      "poisoning_invariant": 28,
+      "public_fact_relations_passed": 7,
+      "public_fact_relation_total": 7,
+      "public_fact_base_fixture_count": 4
+    },
+    "external_evaluator_boundary": {
+      "label_reaches_evaluator": false,
+      "label_groups_passed": 6,
+      "label_group_total": 6,
+      "public_fact_relations_passed": 2,
+      "public_fact_relation_total": 2,
+      "boundary_label": "External boundary control; not replication"
+    }
+  },
+  "panel_b_metamorphic_relations": {
+    "primary_task_units": 28,
+    "baseline_apply_task_units": 13,
+    "invariant_rows": [
+      {
+        "transformation": "rename_domain_identifiers",
+        "display_label": "Rename domain identifiers",
+        "passed": 28,
+        "total": 28,
+        "kind": "primitive"
+      },
+      {
+        "transformation": "rename_evidence_identifiers",
+        "display_label": "Rename evidence identifiers",
+        "passed": 28,
+        "total": 28,
+        "kind": "primitive"
+      },
+      {
+        "transformation": "insert_irrelevant_evidence",
+        "display_label": "Insert irrelevant evidence",
+        "passed": 28,
+        "total": 28,
+        "kind": "primitive"
+      },
+      {
+        "transformation": "compose_invariant_transforms",
+        "display_label": "Compose all three",
+        "passed": 28,
+        "total": 28,
+        "kind": "composed"
+      }
+    ],
+    "invariant_passed": 112,
+    "invariant_total": 112,
+    "sensitivity_rows": [
+      {
+        "transformation": "remove_authority",
+        "display_label": "Remove authority",
+        "passed": 13,
+        "total": 13
+      },
+      {
+        "transformation": "mismatch_authority_target",
+        "display_label": "Mismatch authority target",
+        "passed": 13,
+        "total": 13
+      },
+      {
+        "transformation": "mismatch_authorized_destination",
+        "display_label": "Mismatch destination",
+        "passed": 13,
+        "total": 13
+      },
+      {
+        "transformation": "mismatch_authority_scope",
+        "display_label": "Mismatch authority scope",
+        "passed": 8,
+        "total": 8
+      },
+      {
+        "transformation": "expire_authority",
+        "display_label": "Expire authority",
+        "passed": 8,
+        "total": 8
+      }
+    ],
+    "sensitivity_passed": 55,
+    "sensitivity_total": 55,
+    "nested_conditions_notice": "Four invariance conditions are nested within each of 28 fixtures; three or five sensitivity conditions are nested within each of 13 baseline-apply fixtures. Derived cases are not independent samples."
+  },
+  "panel_c_external_boundary_control": {
+    "source_commit": "2340fe2d9cd619f73d5b67fa05bf8a08c7cad515",
+    "policy_examples": [
+      {
+        "policy_id": "readme-message-policy",
+        "label_groups_passed": 3,
+        "label_group_total": 3,
+        "public_fact_relation_passed": true,
+        "public_fact_baseline_decision": "no_violation_detected",
+        "public_fact_edited_decision": "violation_detected",
+        "policy_source_relation_passed": true
+      },
+      {
+        "policy_id": "readme-tool-chain-policy",
+        "label_groups_passed": 3,
+        "label_group_total": 3,
+        "public_fact_relation_passed": true,
+        "public_fact_baseline_decision": "violation_detected",
+        "public_fact_edited_decision": "no_violation_detected",
+        "policy_source_relation_passed": true
+      }
+    ],
+    "policy_example_count": 2,
+    "label_groups_passed": 6,
+    "label_group_total": 6,
+    "public_fact_relations_passed": 2,
+    "public_fact_relation_total": 2,
+    "policy_source_relations_passed": 2,
+    "policy_source_relation_total": 2,
+    "external_evaluator_calls": 18,
+    "model_calls": 0,
+    "claim_boundary": "External evaluator boundary control only; not an external replication of the audited FEC-v2 coupling pattern, not independent task authorship, and not a check-to-commit or atomic-enforcement result.",
+    "external_final_schema_complete": true
+  },
+  "provenance_sources": [
+    {
+      "role": "same_team_boundary_results",
+      "path": "data/reproduction/oracle-coupling/oracle_independent_compiler_v1/artifacts/results.json",
+      "sha256": "097aa45659521bf2fdb58627b898c67a2825276db7f3473e0cbf2a2a19decbdc"
+    },
+    {
+      "role": "metamorphic_protocol",
+      "path": "data/reproduction/oracle-coupling/metamorphic_public_input_v1/artifacts/protocol.json",
+      "sha256": "96db17bc8f7b1469e2ba88cbd1aaaa3241e89c32b51698a8307f0b39f1c8148f"
+    },
+    {
+      "role": "metamorphic_cases",
+      "path": "data/reproduction/oracle-coupling/metamorphic_public_input_v1/artifacts/cases.json",
+      "sha256": "ee66e4f9320691a7d478f1e60b455cd73eb9ffcbe096a7c8da73a0c313a1c6c8"
+    },
+    {
+      "role": "metamorphic_results",
+      "path": "data/reproduction/oracle-coupling/metamorphic_public_input_v1/artifacts/results.json",
+      "sha256": "b4ad2c11c135555616bd1737ecfbbc98b4b1a1137c0fa555cb95e20722fc2816"
+    },
+    {
+      "role": "external_boundary_protocol",
+      "path": "data/reproduction/oracle-coupling/invariant_external_boundary_v1/artifacts/protocol.json",
+      "sha256": "180ebe8ebad97acc3176730a974542791a7cbda66e5bea73d52746a5a70dec03"
+    },
+    {
+      "role": "external_boundary_results",
+      "path": "data/reproduction/oracle-coupling/invariant_external_boundary_v1/artifacts/results.json",
+      "sha256": "814cab3fdbfba3b8e249eb5598f82bdb424bf49ad42874bfe65a72fd3531138c"
+    },
+    {
+      "role": "external_source_snapshot",
+      "path": "data/reproduction/oracle-coupling/invariant_external_boundary_v1/artifacts/source_snapshot.json",
+      "sha256": "fa60e152e60c269aca12bfa843439a0f749610f27cc204750424e12781eb8d3e"
+    }
+  ],
+  "provenance_sha256": {
+    "same_team_boundary_results": "097aa45659521bf2fdb58627b898c67a2825276db7f3473e0cbf2a2a19decbdc",
+    "metamorphic_protocol": "96db17bc8f7b1469e2ba88cbd1aaaa3241e89c32b51698a8307f0b39f1c8148f",
+    "metamorphic_cases": "ee66e4f9320691a7d478f1e60b455cd73eb9ffcbe096a7c8da73a0c313a1c6c8",
+    "metamorphic_results": "b4ad2c11c135555616bd1737ecfbbc98b4b1a1137c0fa555cb95e20722fc2816",
+    "external_boundary_protocol": "180ebe8ebad97acc3176730a974542791a7cbda66e5bea73d52746a5a70dec03",
+    "external_boundary_results": "814cab3fdbfba3b8e249eb5598f82bdb424bf49ad42874bfe65a72fd3531138c",
+    "external_source_snapshot": "fa60e152e60c269aca12bfa843439a0f749610f27cc204750424e12781eb8d3e"
+  }
+}

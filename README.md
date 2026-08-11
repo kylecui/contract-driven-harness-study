@@ -8,13 +8,15 @@ This branch contains the paper, supporting experiments, code, prompts, and repro
 
 | What you need | Where |
 |---|---|
-| **Read the paper** | `research/06_outputs/contract-driven-harness-arxiv-v5-draft.md` |
-| **View figures** | `research/06_outputs/figures/` |
-| **Bibliography** | `research/06_outputs/contract-driven-harness-references.bib` |
+| **Read the paper** | `paper/contract-driven-harness-arxiv-v5-draft.md` |
+| **View figures** | `paper/figures/` |
+| **Bibliography** | `paper/contract-driven-harness-references.bib` |
 | **Reproduce experiments** | See [Reproduction Guide](#reproduction-guide) below |
 | **Verify our claims** | `data/reproduction/` (4 rounds, 1458 API calls) |
 | **Inspect frozen prompts** | `data/frozen-artifacts/real-run-artifacts/` (529 runs × prompt/output/metrics) |
-| **Framework-agnostic core** | `reference-core/contract_core.py` |
+| **Framework-agnostic core** | `code/reference-core/contract_core.py` |
+| **Audit oracle coupling** | `code/runners/oracle-coupling/` |
+| **Inspect audit evidence** | `data/reproduction/oracle-coupling/` |
 
 ## Repository Structure
 
@@ -28,11 +30,12 @@ This branch contains the paper, supporting experiments, code, prompts, and repro
 │   ├── v5-decisions-log.md                           # Decision record D1-D7
 │   ├── v5-reframe-and-scope-limit.md                 # Essence reframe text
 │   ├── methodology-sections-draft.md                 # §3.4-3.5 drafts
-│   └── figures/                                      # 4 rendered figures
+│   └── figures/                                      # Rendered publication figures
 │       ├── figure-1-multi-model-pass-rates.{pdf,png}
 │       ├── figure-2-repair-loop-convergence.{pdf,png}
 │       ├── figure-3-stage-d-overhead.{pdf,png}
-│       └── figure-4-stage-progression.{drawio,pdf,png}
+│       ├── figure-4-stage-progression.{drawio,pdf,png}
+│       └── figure-oracle-coupling-audit.{pdf,png,svg}
 │
 ├── code/                                   # All executable code
 │   ├── reference-core/                               # Framework-agnostic core (MIT)
@@ -40,6 +43,7 @@ This branch contains the paper, supporting experiments, code, prompts, and repro
 │   │   ├── README.md
 │   │   └── LICENSE
 │   └── runners/                                      # Experiment runner scripts
+│       ├── oracle-coupling/                          # Causal policy-source and commit-boundary audits
 │       ├── verify_stage_b_v54_live.py               # Live API verification runner
 │       ├── run_full_experiment.py                   # Full-provenance runner (Stage B + D)
 │       ├── rerun_all_frozen.py                      # Round 03: bare API re-run of all prompts
@@ -54,6 +58,7 @@ This branch contains the paper, supporting experiments, code, prompts, and repro
 │   ├── frozen-artifacts/                             # Original V4 experiment data
 │   │   └── real-run-artifacts/                       # 529 runs, each with prompt.md + output.md + metrics.json
 │   ├── reproduction/                                 # 4-round reproduction campaign (1458 API calls)
+│   │   ├── oracle-coupling/                           # Deterministic causal-audit evidence
 │   │   └── experiment-rounds/
 │   │       ├── round-01-author-verification-20260727/  # 240 runs (bare API)
 │   │       ├── round-02-full-reproducibility/          # 240 runs (full provenance)
@@ -74,6 +79,7 @@ This branch contains the paper, supporting experiments, code, prompts, and repro
 │       └── figure-2-convergence-data.csv            # Figure 2 data
 │
 ├── fixtures/                               # Task definitions and contract specifications
+│   ├── oracle-coupling/                              # Fixed inputs for the causal audits
 │   ├── frozen-protocol-spec-v1.md                    # Frozen protocol specification
 │   ├── [mechanism atoms, macros, perturbations]     # Task fixtures for all stages
 │   └── [provider configs, benchmark matrices]
@@ -147,7 +153,10 @@ Expected: Stage B v5.4 sim=1.0 (bit-exact reproduction).
 ### Evaluating Your Own Output
 
 ```python
-from reference_core.contract_core import ContractHarness, parse_json_output
+import sys
+sys.path.insert(0, "code/reference-core")
+
+from contract_core import ContractHarness, parse_json_output
 import json
 
 reference = json.load(open(
@@ -160,6 +169,60 @@ harness = ContractHarness(reference)
 result = harness.evaluate_raw(your_model_output)
 print(f"Strict pass: {result.strict_pass}, Failed: {result.failed_checks}")
 ```
+
+## Oracle-Coupling Audit
+
+The added audit asks a different question from the model-performance campaign:
+does an executable policy come from public task facts, or from the answer later
+used to score the run?
+
+The authored-oracle FEC-v2 compiler matched all 28 task labels and all 392 frozen
+candidate classifications, but deleting its expected answer prevented 28/28
+compilations and poisoning answer-derived authorization fields changed 28/28
+contracts. A separate public-input compiler reproduced the same finite corpus
+without runtime access to `expected_output` or the preselected evidence fields
+excluded by its allowlist. It remained invariant in 112/112 grounded
+metamorphic conditions and failed closed in 55/55 authority perturbations
+nested within 13 initially allowed tasks.
+
+Two additional controls bound the interpretation. A pinned Invariant evaluator
+kept six of six fixed-input label groups unchanged while responding to two of
+two public-trace edits and two of two policy-source edits across 18 isolated,
+zero-model calls. File and SQLite adapters then tested post-acceptance state
+binding and recorded their residual pathname and same-user trust assumptions.
+
+These are exact deterministic counts, not independent population samples. The
+public-input compiler was developed after seeing three task grammars; the
+external evaluator exercise is a boundary control, not an independent
+replication of the audited FEC-v2 coupling pattern. Task and split identifiers
+and grammar-family metadata remain fixed, and authority sensitivity is tested
+only from apply to block, not through block-to-apply repair. Unseen-grammar
+transfer, independent policy authorship, and complete mediation remain
+unestablished.
+
+Rebuild the deterministic artifacts and rerun their tests in dependency order:
+
+```bash
+python -m unittest discover \
+  -s code/runners/oracle-coupling/failure_to_executable_contract_v2/tests -v
+python code/runners/oracle-coupling/failure_to_executable_contract_v2/run_offline_verification.py \
+  --fixtures fixtures/oracle-coupling/failure_to_executable_contract_v2.json \
+  --output-dir data/reproduction/oracle-coupling/failure_to_executable_contract_v2
+python code/runners/oracle-coupling/failure_to_executable_contract_v2/build_artifact_manifest.py
+python -m unittest discover \
+  -s code/runners/oracle-coupling/oracle_independent_compiler_v1/tests -v
+python code/runners/oracle-coupling/oracle_independent_compiler_v1/run_experiment.py
+python code/runners/oracle-coupling/metamorphic_public_input_v1/run_experiment.py
+python code/runners/oracle-coupling/hardened_state_adapter_v1/run_experiment.py
+python -m unittest discover \
+  -s code/runners/oracle-coupling/second_harness_audit_v1/tests -v
+python code/runners/oracle-coupling/second_harness_audit_v1/run_audit.py
+python code/runners/oracle-coupling/invariant_external_boundary_v1/run_experiment.py
+python code/runners/oracle-coupling/verify_all.py
+```
+
+The external Invariant control additionally requires the pinned source and
+dependency paths described in its README.
 
 ## Claim Verification Matrix
 
@@ -176,6 +239,6 @@ print(f"Strict pass: {result.strict_pass}, Failed: {result.failed_checks}")
 
 ## License
 
-- Code: MIT (see `reference-core/LICENSE`)
+- Code: MIT (see `code/reference-core/LICENSE`)
 - Paper: Author retains copyright
 - Experiment data: Provided for reproducibility verification only

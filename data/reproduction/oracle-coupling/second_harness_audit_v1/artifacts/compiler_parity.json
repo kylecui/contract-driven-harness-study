@@ -1,0 +1,226 @@
+[
+  {
+    "fixture_id": "D-ST-01",
+    "family": "controlled_state_transition",
+    "split": "discovery",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "D-ST-02",
+    "family": "controlled_state_transition",
+    "split": "discovery",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "D-CFG-01",
+    "family": "approval_gated_configuration",
+    "split": "discovery",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "D-CFG-02",
+    "family": "approval_gated_configuration",
+    "split": "discovery",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-ST-01",
+    "family": "controlled_state_transition",
+    "split": "heldout",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-ST-02",
+    "family": "controlled_state_transition",
+    "split": "heldout",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-ST-03",
+    "family": "controlled_state_transition",
+    "split": "heldout",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-ST-04",
+    "family": "controlled_state_transition",
+    "split": "heldout",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-ST-05",
+    "family": "controlled_state_transition",
+    "split": "heldout",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-ST-06",
+    "family": "controlled_state_transition",
+    "split": "heldout",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-ST-07",
+    "family": "controlled_state_transition",
+    "split": "heldout",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-ST-08",
+    "family": "controlled_state_transition",
+    "split": "heldout",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-CFG-01",
+    "family": "approval_gated_configuration",
+    "split": "heldout",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-CFG-02",
+    "family": "approval_gated_configuration",
+    "split": "heldout",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-CFG-03",
+    "family": "approval_gated_configuration",
+    "split": "heldout",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-CFG-04",
+    "family": "approval_gated_configuration",
+    "split": "heldout",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-CFG-05",
+    "family": "approval_gated_configuration",
+    "split": "heldout",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-CFG-06",
+    "family": "approval_gated_configuration",
+    "split": "heldout",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-CFG-07",
+    "family": "approval_gated_configuration",
+    "split": "heldout",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-CFG-08",
+    "family": "approval_gated_configuration",
+    "split": "heldout",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-COMM-01",
+    "family": "approval_gated_communication",
+    "split": "heldout_family",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-COMM-02",
+    "family": "approval_gated_communication",
+    "split": "heldout_family",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-COMM-03",
+    "family": "approval_gated_communication",
+    "split": "heldout_family",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-COMM-04",
+    "family": "approval_gated_communication",
+    "split": "heldout_family",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-COMM-05",
+    "family": "approval_gated_communication",
+    "split": "heldout_family",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-COMM-06",
+    "family": "approval_gated_communication",
+    "split": "heldout_family",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-COMM-07",
+    "family": "approval_gated_communication",
+    "split": "heldout_family",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  },
+  {
+    "fixture_id": "H-COMM-08",
+    "family": "approval_gated_communication",
+    "split": "heldout_family",
+    "policy_source": "oracle_independent_compiler_v1/compiled_contracts.json",
+    "expected_output_available_to_selected_compiler": false,
+    "semantic_parity_with_authored_expected_output": true
+  }
+]

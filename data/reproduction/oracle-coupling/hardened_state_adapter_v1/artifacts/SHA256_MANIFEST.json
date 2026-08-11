@@ -1,0 +1,64 @@
+{
+  "entries": [
+    {
+      "bytes": 3253,
+      "path": "code/runners/oracle-coupling/hardened_state_adapter_v1/README.md",
+      "sha256": "246d76b90d1df8abd0e55d57f0706f076396e522503fc6d6bc47607c3167fc10"
+    },
+    {
+      "bytes": 26582,
+      "path": "code/runners/oracle-coupling/hardened_state_adapter_v1/hardened_adapter.py",
+      "sha256": "78d599d4fce4de9d55d4d5d5e8436c1733d609d6ef632018c26c612363d0bccb"
+    },
+    {
+      "bytes": 10977,
+      "path": "code/runners/oracle-coupling/hardened_state_adapter_v1/run_experiment.py",
+      "sha256": "245a100bea53573071c234acdf7ce7088351ef18605299a2f0909521f1235c43"
+    },
+    {
+      "bytes": 31169,
+      "path": "code/runners/oracle-coupling/hardened_state_adapter_v1/tests/test_hardened_adapter.py",
+      "sha256": "a1720d2726273fc7f38e1b536e3e5c391de76167eaaa720401cb3c28b7a5b106"
+    },
+    {
+      "bytes": 9820,
+      "path": "code/runners/oracle-coupling/hardened_state_adapter_v1/verify_manifest.py",
+      "sha256": "22a31a9096843883dcd18dba65d3aeb27855c9898627250711f1f177c748ebaa"
+    },
+    {
+      "bytes": 9987,
+      "path": "data/reproduction/oracle-coupling/hardened_state_adapter_v1/artifacts/hardened_adapter_results.json",
+      "sha256": "cf2296c83029418fffbe49b272fc4e3b13cb07cd396adb96c318b7f446e1654c"
+    }
+  ],
+  "entries_root_sha256": "bee4465aaeef7e219d65ddfe2708a7b2c4a23e22cb906aa414b9d66280a39e96",
+  "entry_count": 6,
+  "experiment_id": "hardened_state_adapter_v1",
+  "external_input_count": 4,
+  "external_inputs": [
+    {
+      "bytes": 72289,
+      "path": "fixtures/oracle-coupling/failure_to_executable_contract_v2.json",
+      "sha256": "337a41e6bd8f1e45ab0d53d1bd5d5430d5529556f54846401890933fe24e66bc"
+    },
+    {
+      "bytes": 8594,
+      "path": "code/runners/oracle-coupling/failure_to_executable_contract_v2/contract_gate.py",
+      "sha256": "87cc193cbba5c6d68f3e39fec2081c1454013f0dd068304b92f27e8060d5f301"
+    },
+    {
+      "bytes": 10913,
+      "path": "code/runners/oracle-coupling/failure_to_executable_contract_v2/run_offline_verification.py",
+      "sha256": "1bdc414233d69a3b8cfcc065d04460ce12ea87954aa5acea6ae95a18c1d07039"
+    },
+    {
+      "bytes": 2450,
+      "path": "code/runners/oracle-coupling/layout.py",
+      "sha256": "cdf35acebbcd8b84b8b4595294b2d58225d1de64419baa4438bcb6a3964cd90d"
+    }
+  ],
+  "external_inputs_root_sha256": "d0f96ac1004d3af0de2c3cc72a26500cf596c6cea822df794a4fb24b89db3f82",
+  "generated_at_utc": "2026-08-11T07:33:15.152486+00:00",
+  "manifest_self_excluded": true,
+  "manifest_version": "HSAV1-exact-1"
+}
