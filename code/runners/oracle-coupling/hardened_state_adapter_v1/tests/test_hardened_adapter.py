@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import copy
-import fcntl
 import hashlib
 import json
 import multiprocessing
@@ -15,6 +14,11 @@ import unittest
 from pathlib import Path
 from typing import Any
 from unittest.mock import patch
+
+try:
+    import fcntl
+except ImportError:  # Windows lacks POSIX advisory locks; see class skip below.
+    fcntl = None
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -105,6 +109,10 @@ def contention_worker(
         )
 
 
+@unittest.skipUnless(
+    fcntl is not None,
+    "hardened adapter semantics (flock, mode-bit gates, directory fsync) require POSIX",
+)
 class HardenedAdapterTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:

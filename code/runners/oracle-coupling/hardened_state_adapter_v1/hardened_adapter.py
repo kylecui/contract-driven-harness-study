@@ -13,7 +13,6 @@ import contextlib
 import copy
 import dataclasses
 import errno
-import fcntl
 import hashlib
 import json
 import os
@@ -26,6 +25,11 @@ from dataclasses import dataclass
 from pathlib import Path
 from types import MappingProxyType
 from typing import Any, Callable, Iterator
+
+try:
+    import fcntl
+except ImportError:  # Windows: adapter requires POSIX file locking; callers fail closed at use.
+    fcntl = None
 
 
 EXPERIMENT_ROOT = Path(__file__).resolve().parent

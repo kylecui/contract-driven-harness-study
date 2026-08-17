@@ -8,7 +8,7 @@ import json
 import re
 import sys
 from datetime import datetime
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from typing import Any
 
 
@@ -98,14 +98,17 @@ def verify_manifest_payload(manifest: Any) -> list[str]:
         if not isinstance(byte_count, int) or isinstance(byte_count, bool) or byte_count < 0:
             failures.append(f"schema:bytes:{relative_text}")
 
-        relative = Path(relative_text)
+        # Manifest paths are POSIX-convention (forward-slash, repo-relative)
+        # strings; classify them with PurePosixPath so labels are identical on
+        # every host OS. Host Path semantics still govern the containment join.
+        relative = PurePosixPath(relative_text)
         if relative.is_absolute():
             failures.append(f"path:absolute:{relative_text}")
             continue
         if ".." in relative.parts:
             failures.append(f"path:parent:{relative_text}")
             continue
-        path = (REPO_ROOT / relative).resolve()
+        path = (REPO_ROOT / relative_text).resolve()
         try:
             path.relative_to(REPO_ROOT.resolve())
         except ValueError:

@@ -1,6 +1,6 @@
 {
   "manifest_version": "SHAV1-exact-1",
-  "generated_at_utc": "2026-08-11T07:22:49.759294+00:00",
+  "generated_at_utc": "2026-08-17T01:35:16.964022+00:00",
   "entry_count": 16,
   "files": [
     {
@@ -55,7 +55,7 @@
     },
     {
       "path": "data/reproduction/oracle-coupling/oracle_independent_compiler_v1/artifacts/SHA256_MANIFEST.json",
-      "sha256": "cdbeba7465e63819315c7aef2e241e38380b68d62fbcc2526bd57932083bb82d",
+      "sha256": "a98aa13c0e9ff47a41c40de5d7f6cc2c16c746202e4b1116fe419fe222e130a1",
       "bytes": 3458
     },
     {
@@ -84,5 +84,5 @@
       "bytes": 2450
     }
   ],
-  "entries_root_sha256": "bc55df248142ae8b9d98d67426b14ad2624ba2f1b6cd6efb95c3f62db7e5fcb9"
+  "entries_root_sha256": "0e56629667d37fcf73b5a178288cc75751eb02b359ac0e19e5eedcd80fd52be4"
 }

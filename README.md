@@ -224,6 +224,37 @@ python code/runners/oracle-coupling/verify_all.py
 The external Invariant control additionally requires the pinned source and
 dependency paths described in its README.
 
+### Platform Requirements
+
+- **Artifact verification** (`verify_all.py` and all six `SHA256_MANIFEST.json`
+  closures) runs on any OS with Python 3.12+ and git. The manifests hash raw
+  file bytes, so the audited trees must stay LF in the working tree; this is
+  enforced by `eol=lf` rules in `.gitattributes`. Clones made before those
+  rules existed should re-normalize: `git rm -r --cached . && git checkout -- .`
+  (or re-clone) before verifying.
+- **Test suites by platform:**
+  - `failure_to_executable_contract_v2`, `second_harness_audit_v1`,
+    `oracle_independent_compiler_v1`, `metamorphic_public_input_v1`: run on
+    Windows, macOS, and Linux. Manifest path classification uses POSIX path
+    semantics by convention, so failure labels are identical on every OS.
+  - `hardened_state_adapter_v1`: POSIX only. The audited check-to-commit
+    mechanism depends on `fcntl` advisory locks, mode-bit permission gates,
+    and directory `fsync`. On non-POSIX hosts the 21 adapter tests skip
+    gracefully at class level (the 2 manifest-closure tests still run); a
+    POSIX environment (Linux, macOS, or WSL) is required to execute the full
+    suite, and to re-freeze its manifest after any change to its covered
+    files.
+  - `invariant_external_boundary_v1`: any OS, but requires the pinned external
+    source and dependency roots (see its README; configurable via
+    `INVARIANT_SOURCE_ROOT` / `INVARIANT_DEPS_ROOT`).
+- The frozen artifacts embed the original authoring environment (timestamps,
+  Python/SQLite versions, platform strings). Byte-identical regeneration is
+  neither expected nor required; the supported reproduction model is
+  freeze-and-verify — the manifest hashes must match the committed files.
+  The OIC-v1 and MPIV1 manifests were re-ledgered after a cross-platform
+  classification fix in their verifiers; the frozen result artifacts are
+  unchanged.
+
 ## Claim Verification Matrix
 
 | Paper Claim | Section | Data Source | Reproduced |

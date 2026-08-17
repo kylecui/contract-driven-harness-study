@@ -1,1 +1,9 @@
 research/06_outputs/contract-driven-harness-arxiv-v4-frozen.md -text -whitespace
+
+# Oracle-coupling audit trees: the SHA-256 manifests hash raw file bytes, so the
+# working tree must keep LF line endings on every platform (including Windows,
+# where core.autocrlf=true would otherwise corrupt every entry).
+code/runners/oracle-coupling/** text eol=lf
+data/reproduction/oracle-coupling/** text eol=lf
+fixtures/oracle-coupling/** text eol=lf
+data/analysis/oracle-coupling/** text eol=lf

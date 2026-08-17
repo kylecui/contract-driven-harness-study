@@ -6,9 +6,9 @@
       "sha256": "246d76b90d1df8abd0e55d57f0706f076396e522503fc6d6bc47607c3167fc10"
     },
     {
-      "bytes": 26582,
+      "bytes": 26706,
       "path": "code/runners/oracle-coupling/hardened_state_adapter_v1/hardened_adapter.py",
-      "sha256": "78d599d4fce4de9d55d4d5d5e8436c1733d609d6ef632018c26c612363d0bccb"
+      "sha256": "e1f79a1626494097d714924b1746368266005ef5b360efbb0438cd6dae0da3b0"
     },
     {
       "bytes": 10977,
@@ -16,9 +16,9 @@
       "sha256": "245a100bea53573071c234acdf7ce7088351ef18605299a2f0909521f1235c43"
     },
     {
-      "bytes": 31169,
+      "bytes": 31413,
       "path": "code/runners/oracle-coupling/hardened_state_adapter_v1/tests/test_hardened_adapter.py",
-      "sha256": "a1720d2726273fc7f38e1b536e3e5c391de76167eaaa720401cb3c28b7a5b106"
+      "sha256": "c16a6e16218fbe984053799bcd8898072dc76288c009fe766e4b85427fe77786"
     },
     {
       "bytes": 9820,
@@ -31,7 +31,7 @@
       "sha256": "cf2296c83029418fffbe49b272fc4e3b13cb07cd396adb96c318b7f446e1654c"
     }
   ],
-  "entries_root_sha256": "bee4465aaeef7e219d65ddfe2708a7b2c4a23e22cb906aa414b9d66280a39e96",
+  "entries_root_sha256": "3cf778696e1719d79a33cecd7e754a7f4b664cbf12919270fe22c93fcfa7ff1f",
   "entry_count": 6,
   "experiment_id": "hardened_state_adapter_v1",
   "external_input_count": 4,
@@ -58,7 +58,7 @@
     }
   ],
   "external_inputs_root_sha256": "d0f96ac1004d3af0de2c3cc72a26500cf596c6cea822df794a4fb24b89db3f82",
-  "generated_at_utc": "2026-08-11T07:33:15.152486+00:00",
+  "generated_at_utc": "2026-08-17T01:44:50.049903+00:00",
   "manifest_self_excluded": true,
   "manifest_version": "HSAV1-exact-1"
 }

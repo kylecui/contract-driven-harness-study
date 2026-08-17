@@ -1,6 +1,6 @@
 {
   "manifest_version": "OIC-v1-strict-2",
-  "generated_at_utc": "2026-08-11T07:21:51.022884+00:00",
+  "generated_at_utc": "2026-08-17T01:31:25.181209+00:00",
   "source_snapshot_commit": "33de73a00c21ef8562bf9a7a6831c5ac3dafa245",
   "entry_count": 15,
   "entries": [
@@ -46,8 +46,8 @@
     },
     {
       "path": "code/runners/oracle-coupling/oracle_independent_compiler_v1/verify_manifest.py",
-      "sha256": "9a2569da0eb88d3934c5080a03427960977a042fe8ddb85563542e4421596287",
-      "bytes": 6319
+      "sha256": "3e4c4ad5fb7b6fc81820de9ce90f1d3df33c7e651e88c12e18c564af60fb578f",
+      "bytes": 6584
     },
     {
       "path": "data/reproduction/oracle-coupling/failure_to_executable_contract_v2/candidate_corpus.json",
