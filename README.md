@@ -8,7 +8,7 @@ This branch contains the paper, supporting experiments, code, prompts, and repro
 
 | What you need | Where |
 |---|---|
-| **Read the paper** | `paper/contract-driven-harness-arxiv-v5-draft.md` |
+| **Read the paper** | `paper/contract-driven-harness-arxiv-v5.1-draft.md` (v5 draft preserved) |
 | **View figures** | `paper/figures/` |
 | **Bibliography** | `paper/contract-driven-harness-references.bib` |
 | **Reproduce experiments** | See [Reproduction Guide](#reproduction-guide) below |
@@ -22,7 +22,8 @@ This branch contains the paper, supporting experiments, code, prompts, and repro
 
 ```
 ├── paper/                                  # Paper, figures, and supporting documents
-│   ├── contract-driven-harness-arxiv-v5-draft.md     # Latest paper draft
+│   ├── contract-driven-harness-arxiv-v5.1-draft.md   # Latest draft (adds §4.14 oracle-coupling audit)
+│   ├── contract-driven-harness-arxiv-v5-draft.md     # V5 draft (preserved)
 │   ├── contract-driven-harness-arxiv-v4-frozen.md    # V4 frozen body (preserved)
 │   ├── contract-driven-harness-references.bib        # Bibliography (20+ entries)
 │   ├── ai-use-disclosure.md                          # AI assistance disclosure
