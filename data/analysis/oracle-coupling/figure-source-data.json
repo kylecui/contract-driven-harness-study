@@ -13,7 +13,13 @@
     "reference_answer_coupled": {
       "label_reaches_policy": true,
       "deletion_compile_failures": 28,
-      "poisoning_contract_changes": 28
+      "poisoning_contract_changes": 28,
+      "reference_reproduction": {
+        "task_fixture_count": 28,
+        "candidate_classifications": 392,
+        "valid_accepted": 56,
+        "invalid_blocked": 336
+      }
     },
     "same_team_public_input": {
       "label_reaches_policy": false,
@@ -99,6 +105,34 @@
         "total": 8
       }
     ],
+    "sensitivity_action_groups": [
+      {
+        "action": "remove",
+        "relations": [
+          "remove_authority"
+        ],
+        "passed": 13,
+        "total": 13
+      },
+      {
+        "action": "retarget",
+        "relations": [
+          "mismatch_authority_target",
+          "mismatch_authorized_destination",
+          "mismatch_authority_scope"
+        ],
+        "passed": 34,
+        "total": 34
+      },
+      {
+        "action": "expire",
+        "relations": [
+          "expire_authority"
+        ],
+        "passed": 8,
+        "total": 8
+      }
+    ],
     "sensitivity_passed": 55,
     "sensitivity_total": 55,
     "nested_conditions_notice": "Four invariance conditions are nested within each of 28 fixtures; three or five sensitivity conditions are nested within each of 13 baseline-apply fixtures. Derived cases are not independent samples."
@@ -139,6 +173,11 @@
   },
   "provenance_sources": [
     {
+      "role": "fec_offline_summary",
+      "path": "data/reproduction/oracle-coupling/failure_to_executable_contract_v2/offline_verification_summary.json",
+      "sha256": "5be19a9be1627fe69c9d7205f7e236b964ecf3c00b6794ca671c44fccd626337"
+    },
+    {
       "role": "same_team_boundary_results",
       "path": "data/reproduction/oracle-coupling/oracle_independent_compiler_v1/artifacts/results.json",
       "sha256": "097aa45659521bf2fdb58627b898c67a2825276db7f3473e0cbf2a2a19decbdc"
@@ -175,6 +214,7 @@
     }
   ],
   "provenance_sha256": {
+    "fec_offline_summary": "5be19a9be1627fe69c9d7205f7e236b964ecf3c00b6794ca671c44fccd626337",
     "same_team_boundary_results": "097aa45659521bf2fdb58627b898c67a2825276db7f3473e0cbf2a2a19decbdc",
     "metamorphic_protocol": "96db17bc8f7b1469e2ba88cbd1aaaa3241e89c32b51698a8307f0b39f1c8148f",
     "metamorphic_cases": "ee66e4f9320691a7d478f1e60b455cd73eb9ffcbe096a7c8da73a0c313a1c6c8",

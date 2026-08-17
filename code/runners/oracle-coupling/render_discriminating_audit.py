@@ -36,6 +36,14 @@ plt.rcParams.update(
 
 
 ROOT = Path(__file__).resolve().parents[3]
+FEC_OFFLINE_SUMMARY = (
+    ROOT
+    / "data"
+    / "reproduction"
+    / "oracle-coupling"
+    / "failure_to_executable_contract_v2"
+    / "offline_verification_summary.json"
+)
 OIC_RESULTS = (
     ROOT
     / "data"
@@ -141,6 +149,22 @@ TRANSFORMATION_LABELS = {
     "expire_authority": "Expire authority",
 }
 
+# Coarse three-action granularity used by the paper prose (§4.14: "removing,
+# retargeting, or expiring authority"). Every sensitivity family maps to
+# exactly one action; the mapping is asserted in extract_source_data().
+SENSITIVITY_ACTION_GROUPS: list[tuple[str, list[str]]] = [
+    ("remove", ["remove_authority"]),
+    (
+        "retarget",
+        [
+            "mismatch_authority_target",
+            "mismatch_authorized_destination",
+            "mismatch_authority_scope",
+        ],
+    ),
+    ("expire", ["expire_authority"]),
+]
+
 
 def load_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
@@ -162,6 +186,7 @@ def extract_source_data() -> dict:
     """Build a compact, checked figure ledger from frozen artifacts."""
 
     oic = load_json(OIC_RESULTS)
+    fec_summary = load_json(FEC_OFFLINE_SUMMARY)
     metamorphic_protocol = load_json(METAMORPHIC_PROTOCOL)
     metamorphic_cases_artifact = load_json(METAMORPHIC_CASES)
     metamorphic = load_json(METAMORPHIC_RESULTS)
@@ -203,6 +228,25 @@ def extract_source_data() -> dict:
         external_protocol["external_evaluator_boundary"]["excluded_argument"]
         == "answer_label_payload"
     )
+
+    # FEC-v2 authored-oracle reference: the frozen offline corpus it must
+    # reproduce (task labels via fixture parity; candidate classifications
+    # via the executable-contract arm accepting every valid candidate and
+    # blocking every invalid one).
+    assert fec_summary["protocol_id"] == "FEC-v2-offline-mechanism-verification"
+    assert fec_summary["fixture_count"] == task_units
+    fec_arm = fec_summary["summary"]["executable_contract"]
+    assert fec_summary["valid_candidate_count"] + fec_summary[
+        "invalid_candidate_count"
+    ] == fec_summary["candidate_count"]
+    assert fec_arm["valid_accepted"] == fec_summary["valid_candidate_count"]
+    assert fec_arm["invalid_blocked"] == fec_summary["invalid_candidate_count"]
+    reference_reproduction = {
+        "task_fixture_count": fec_summary["fixture_count"],
+        "candidate_classifications": fec_summary["candidate_count"],
+        "valid_accepted": fec_arm["valid_accepted"],
+        "invalid_blocked": fec_arm["invalid_blocked"],
+    }
 
     label_groups = external["label_invariance_groups"]
     public_relations = external["public_fact_relations"]
@@ -260,6 +304,29 @@ def extract_source_data() -> dict:
         "sensitivity_cases_passed"
     ]
 
+    # Group the sensitivity families into the paper's three coarse actions
+    # (remove / retarget / expire); every family maps to exactly one action.
+    grouped_relations: list[str] = []
+    for _, relations in SENSITIVITY_ACTION_GROUPS:
+        grouped_relations.extend(relations)
+    assert sorted(grouped_relations) == sorted(sensitivity_relations)
+    rows_by_relation = {row["transformation"]: row for row in sensitivity_rows}
+    action_groups = []
+    for action, relations in SENSITIVITY_ACTION_GROUPS:
+        group_rows = [rows_by_relation[relation] for relation in relations]
+        action_groups.append(
+            {
+                "action": action,
+                "relations": list(relations),
+                "passed": sum(row["passed"] for row in group_rows),
+                "total": sum(row["total"] for row in group_rows),
+            }
+        )
+    assert sum(group["total"] for group in action_groups) == sensitivity_total
+    assert sum(group["passed"] for group in action_groups) == metamorphic[
+        "sensitivity_cases_passed"
+    ]
+
     # Panel c: preserve policy-level grouping so calls remain visibly nested.
     label_groups_by_policy: dict[str, list[dict]] = defaultdict(list)
     for group in label_groups:
@@ -303,6 +370,7 @@ def extract_source_data() -> dict:
         )
 
     source_files = {
+        "fec_offline_summary": FEC_OFFLINE_SUMMARY,
         "same_team_boundary_results": OIC_RESULTS,
         "metamorphic_protocol": METAMORPHIC_PROTOCOL,
         "metamorphic_cases": METAMORPHIC_CASES,
@@ -338,6 +406,7 @@ def extract_source_data() -> dict:
                 "poisoning_contract_changes": reference[
                     "contracts_changed_after_answer_field_poisoning"
                 ],
+                "reference_reproduction": reference_reproduction,
             },
             "same_team_public_input": {
                 "label_reaches_policy": False,
@@ -371,6 +440,7 @@ def extract_source_data() -> dict:
             "invariant_passed": metamorphic["invariant_cases_passed"],
             "invariant_total": metamorphic["invariant_case_count"],
             "sensitivity_rows": sensitivity_rows,
+            "sensitivity_action_groups": action_groups,
             "sensitivity_passed": metamorphic["sensitivity_cases_passed"],
             "sensitivity_total": metamorphic["sensitivity_case_count"],
             "nested_conditions_notice": metamorphic["statistical_design"][
@@ -489,6 +559,20 @@ def draw_panel_a(ax: mpl.axes.Axes, source: dict) -> None:
             "color": COUPLED,
             "title": "Answer-coupled FEC-v2",
             "subtitle": "authored-oracle compiler",
+            "footnote": (
+                "reference reproduces {cand}/{cand} frozen candidate classifications "
+                "· {valid} valid accepted · {invalid} invalid blocked".format(
+                    cand=panel["reference_answer_coupled"]["reference_reproduction"][
+                        "candidate_classifications"
+                    ],
+                    valid=panel["reference_answer_coupled"]["reference_reproduction"][
+                        "valid_accepted"
+                    ],
+                    invalid=panel["reference_answer_coupled"]["reference_reproduction"][
+                        "invalid_blocked"
+                    ],
+                )
+            ),
             "access_big": "OBSERVED",
             "access_small": "direct label -> policy channel",
             "label_big": f"delete: {panel['reference_answer_coupled']['deletion_compile_failures']}/{task_units}",
@@ -581,6 +665,16 @@ def draw_panel_a(ax: mpl.axes.Axes, source: dict) -> None:
             ha="left",
             va="center",
         )
+        if row.get("footnote"):
+            ax.text(
+                x_system + 0.020,
+                row["y"] + 0.026,
+                row["footnote"],
+                fontsize=5.0,
+                color=MUTED,
+                ha="left",
+                va="center",
+            )
         ax.text(
             x_access + w_access / 2,
             row["y"] + 0.128,
@@ -698,6 +792,109 @@ def draw_relation_list(
         )
 
 
+def draw_grouped_sensitivity_list(
+    ax: mpl.axes.Axes,
+    panel: dict,
+    *,
+    x: float,
+    width: float,
+    color: str,
+) -> None:
+    """Draw the five sensitivity families inside dashed three-action groups.
+
+    The dashed containers map the fine-grained families onto the paper's
+    coarse action granularity (remove / retarget / expire) and carry the
+    per-group subtotals; the family rows keep their exact per-family counts.
+    """
+    rows_by_relation = {
+        row["transformation"]: row for row in panel["sensitivity_rows"]
+    }
+    row_gap = 0.092
+    row_height = row_gap * 0.72
+    box_pad = 0.030
+    box_gap = 0.032
+    top = 0.858
+    for group in panel["sensitivity_action_groups"]:
+        group_rows = [rows_by_relation[r] for r in group["relations"]]
+        box_height = len(group_rows) * row_gap + box_pad
+        box_bottom = top - box_height
+        ax.add_patch(
+            FancyBboxPatch(
+                (x, box_bottom),
+                width,
+                box_height,
+                boxstyle="round,pad=0.004,rounding_size=0.010",
+                facecolor="none",
+                edgecolor=MUTED,
+                linewidth=0.55,
+                linestyle=(0, (2.4, 1.9)),
+                transform=ax.transAxes,
+                clip_on=False,
+                zorder=1,
+            )
+        )
+        ax.text(
+            x + 0.014,
+            top,
+            f"{group['action']} · {group['passed']}/{group['total']}",
+            fontsize=5.35,
+            weight="bold",
+            color=color,
+            ha="left",
+            va="center",
+            transform=ax.transAxes,
+            bbox={
+                "boxstyle": "square,pad=0.22",
+                "facecolor": WHITE,
+                "edgecolor": "none",
+            },
+            zorder=4,
+        )
+        for index, row in enumerate(group_rows):
+            y = top - box_pad - index * row_gap - row_height
+            add_card(
+                ax,
+                x + 0.020,
+                y,
+                width - 0.040,
+                row_height,
+                facecolor=WHITE,
+                edgecolor=HAIRLINE,
+                radius=0.009,
+            )
+            ax.add_patch(
+                Rectangle(
+                    (x + 0.032, y + row_height * 0.30),
+                    0.016,
+                    0.016,
+                    transform=ax.transAxes,
+                    facecolor=color,
+                    edgecolor="none",
+                    zorder=4,
+                )
+            )
+            ax.text(
+                x + 0.058,
+                y + row_height * 0.5,
+                row["display_label"],
+                fontsize=5.25,
+                color=INK,
+                ha="left",
+                va="center",
+            )
+            ax.text(
+                x + width - 0.026,
+                y + row_height * 0.5,
+                f"{row['passed']}/{row['total']}",
+                fontsize=5.55,
+                weight="bold",
+                color=color,
+                ha="right",
+                va="center",
+            )
+        top = box_bottom - box_gap
+
+
 def draw_panel_b(ax: mpl.axes.Axes, source: dict) -> None:
     ax.set_axis_off()
     ax.set_xlim(0, 1)
@@ -749,13 +946,11 @@ def draw_panel_b(ax: mpl.axes.Axes, source: dict) -> None:
         color=PUBLIC,
         composed_fill=PUBLIC_FILL,
     )
-    draw_relation_list(
+    draw_grouped_sensitivity_list(
         ax,
-        panel["sensitivity_rows"],
+        panel,
         x=right_x,
-        y_top=0.746,
         width=right_w,
-        row_gap=0.112,
         color=PASS,
     )
 

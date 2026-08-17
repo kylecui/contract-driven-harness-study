@@ -6,11 +6,11 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-08-11T15:29:05.029646</dc:date>
+    <dc:date>2026-08-17T13:03:27.777213</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -114,7 +114,7 @@ L 375.579944 124.305286
 " style="fill: none; stroke: #ffffff; stroke-width: 1.05; stroke-linecap: square"/>
    </g>
    <g id="text_1">
-    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start" x="12.614173" y="6.4027" transform="rotate(-0 12.614173 6.4027)">a</text>
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start" x="12.614173" y="6.295235" transform="rotate(-0 12.614173 6.295235)">a</text>
    </g>
    <g id="text_2">
     <text style="font-weight: 700; font-size: 7.2px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="24.761622" y="6.505544" transform="rotate(-0 24.761622 6.505544)">The paired test traces the declared policy-source boundary</text>
@@ -123,15 +123,15 @@ L 375.579944 124.305286
     <text style="font-weight: 700; font-size: 5.7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #65717d" x="24.275724" y="32.613696" transform="rotate(-0 24.275724 32.613696)">Evaluator boundary</text>
    </g>
    <g id="text_4">
-    <text style="font-weight: 700; font-size: 5.7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(168.068165 26.592893)">Tested score-label</text>
+    <text style="font-weight: 700; font-size: 5.7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(168.069501 26.409936)">Tested score-label</text>
     <text style="font-weight: 700; font-size: 5.7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(174.359095 32.613696)">path to policy</text>
    </g>
    <g id="text_5">
-    <text style="font-weight: 700; font-size: 5.7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(289.472373 26.592893)">Delete / poison</text>
+    <text style="font-weight: 700; font-size: 5.7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(289.472373 26.409936)">Delete / poison</text>
     <text style="font-weight: 700; font-size: 5.7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(294.850412 32.613696)">score label</text>
    </g>
    <g id="text_6">
-    <text style="font-weight: 700; font-size: 5.7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(410.029055 26.434718)">Edit policy-relevant</text>
+    <text style="font-weight: 700; font-size: 5.7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(410.029055 26.409825)">Edit policy-relevant</text>
     <text style="font-weight: 700; font-size: 5.7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(420.482321 32.613696)">public facts</text>
    </g>
    <g id="patch_5">
@@ -140,33 +140,36 @@ L 22.81803 71.172742
 L 22.81803 44.302856
 L 19.902643 44.302856
 z
-" clip-path="url(#pbeaaae1182)" style="fill: #a84642"/>
+" clip-path="url(#p0db5e06391)" style="fill: #a84642"/>
    </g>
    <g id="text_7">
-    <text style="font-weight: 700; font-size: 6.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="28.162908" y="55.828531" transform="rotate(-0 28.162908 55.828531)">Answer-coupled FEC-v2</text>
+    <text style="font-weight: 700; font-size: 6.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="28.162908" y="55.78776" transform="rotate(-0 28.162908 55.78776)">Answer-coupled FEC-v2</text>
    </g>
    <g id="text_8">
-    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #a84642" x="28.162908" y="64.028742" transform="rotate(-0 28.162908 64.028742)">authored-oracle compiler</text>
+    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #a84642" x="28.162908" y="64.030178" transform="rotate(-0 28.162908 64.030178)">authored-oracle compiler</text>
    </g>
    <g id="text_9">
-    <text style="font-weight: 700; font-size: 6.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #a84642" x="192.882314" y="55.577557" transform="rotate(-0 192.882314 55.577557)">OBSERVED</text>
+    <text style="font-size: 5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #65717d" x="28.162908" y="70.645" transform="rotate(-0 28.162908 70.645)">reference reproduces 392/392 frozen candidate classifications · 56 valid accepted · 336 invalid blocked</text>
    </g>
    <g id="text_10">
-    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #65717d" x="192.882314" y="64.276329" transform="rotate(-0 192.882314 64.276329)">direct label -&gt; policy channel</text>
+    <text style="font-weight: 700; font-size: 6.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #a84642" x="192.882314" y="55.574721" transform="rotate(-0 192.882314 55.574721)">OBSERVED</text>
    </g>
    <g id="text_11">
-    <text style="font-weight: 700; font-size: 6.35px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #a84642" x="309.740771" y="54.146487" transform="rotate(-0 309.740771 54.146487)">delete: 28/28</text>
+    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #65717d" x="192.882314" y="64.307863" transform="rotate(-0 192.882314 64.307863)">direct label -&gt; policy channel</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(291.852568 61.432191)">compile failures</text>
-    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(272.52317 66.879619)">poison: 28/28 contracts changed</text>
+    <text style="font-weight: 700; font-size: 6.35px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #a84642" x="309.740771" y="54.143759" transform="rotate(-0 309.740771 54.143759)">delete: 28/28</text>
    </g>
    <g id="text_13">
-    <text style="font-weight: 700; font-size: 6.35px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #65717d" x="436.317188" y="54.146487" transform="rotate(-0 436.317188 54.146487)">not queried</text>
+    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(291.852568 61.33452)">compile failures</text>
+    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(272.52317 67.007466)">poison: 28/28 contracts changed</text>
    </g>
    <g id="text_14">
-    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(410.553911 61.468015)">known-coupled control</text>
-    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(404.10595 66.84138)">scoped to label dependence</text>
+    <text style="font-weight: 700; font-size: 6.35px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #65717d" x="436.317188" y="54.143759" transform="rotate(-0 436.317188 54.143759)">not queried</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(410.553911 61.303137)">known-coupled control</text>
+    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(404.10595 67.006259)">scoped to label dependence</text>
    </g>
    <g id="patch_6">
     <path d="M 19.902643 110.490824
@@ -174,33 +177,33 @@ L 22.81803 110.490824
 L 22.81803 83.620938
 L 19.902643 83.620938
 z
-" clip-path="url(#pbeaaae1182)" style="fill: #245a8d"/>
-   </g>
-   <g id="text_15">
-    <text style="font-weight: 700; font-size: 6.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="28.162908" y="95.108528" transform="rotate(-0 28.162908 95.108528)">Public-input compiler</text>
+" clip-path="url(#p0db5e06391)" style="fill: #245a8d"/>
    </g>
    <g id="text_16">
-    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #245a8d" x="28.162908" y="103.346824" transform="rotate(-0 28.162908 103.346824)">public-input control</text>
+    <text style="font-weight: 700; font-size: 6.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="28.162908" y="95.105842" transform="rotate(-0 28.162908 95.105842)">Public-input compiler</text>
    </g>
    <g id="text_17">
-    <text style="font-weight: 700; font-size: 6.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #245a8d" x="192.882314" y="94.89564" transform="rotate(-0 192.882314 94.89564)">NOT ADMITTED</text>
+    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #245a8d" x="28.162908" y="103.34826" transform="rotate(-0 28.162908 103.34826)">public-input control</text>
    </g>
    <g id="text_18">
-    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #65717d" x="192.882314" y="103.594412" transform="rotate(-0 192.882314 103.594412)">keys excluded; closure checks passed</text>
+    <text style="font-weight: 700; font-size: 6.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #245a8d" x="192.882314" y="94.892804" transform="rotate(-0 192.882314 94.892804)">NOT ADMITTED</text>
    </g>
    <g id="text_19">
-    <text style="font-weight: 700; font-size: 6.35px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #245a8d" x="309.740771" y="93.46457" transform="rotate(-0 309.740771 93.46457)">28/28 each</text>
+    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #65717d" x="192.882314" y="103.625945" transform="rotate(-0 192.882314 103.625945)">keys excluded; closure checks passed</text>
    </g>
    <g id="text_20">
-    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(281.546131 100.755922)">contracts invariant under</text>
-    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(283.971459 106.129287)">deletion and poisoning</text>
+    <text style="font-weight: 700; font-size: 6.35px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #245a8d" x="309.740771" y="93.461841" transform="rotate(-0 309.740771 93.461841)">28/28 each</text>
    </g>
    <g id="text_21">
-    <text style="font-weight: 700; font-size: 6.35px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #245a8d" x="436.317188" y="93.46457" transform="rotate(-0 436.317188 93.46457)">7/7</text>
+    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(281.546131 101.102825)">contracts invariant under</text>
+    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(283.971459 106.294165)">deletion and poisoning</text>
    </g>
    <g id="text_22">
-    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(407.836883 100.755922)">conditions over 4 fixtures</text>
-    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(406.554614 106.129287)">across all three grammars</text>
+    <text style="font-weight: 700; font-size: 6.35px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #245a8d" x="436.317188" y="93.461841" transform="rotate(-0 436.317188 93.461841)">7/7</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(407.836883 101.134207)">conditions over 4 fixtures</text>
+    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(406.554614 106.294165)">across all three grammars</text>
    </g>
    <g id="patch_7">
     <path d="M 19.902643 149.808907
@@ -208,33 +211,33 @@ L 22.81803 149.808907
 L 22.81803 122.93902
 L 19.902643 122.93902
 z
-" clip-path="url(#pbeaaae1182)" style="fill: #4d7474"/>
-   </g>
-   <g id="text_23">
-    <text style="font-weight: 700; font-size: 6.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="28.162908" y="134.385594" transform="rotate(-0 28.162908 134.385594)">External policy evaluator</text>
+" clip-path="url(#p0db5e06391)" style="fill: #4d7474"/>
    </g>
    <g id="text_24">
-    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #4d7474" x="28.162908" y="142.634145" transform="rotate(-0 28.162908 142.634145)">boundary control · not replication</text>
+    <text style="font-weight: 700; font-size: 6.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="28.162908" y="134.423863" transform="rotate(-0 28.162908 134.423863)">External policy evaluator</text>
    </g>
    <g id="text_25">
-    <text style="font-weight: 700; font-size: 6.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d7474" x="192.882314" y="134.213722" transform="rotate(-0 192.882314 134.213722)">NOT ADMITTED</text>
+    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #4d7474" x="28.162908" y="142.666291" transform="rotate(-0 28.162908 142.666291)">boundary control · not replication</text>
    </g>
    <g id="text_26">
-    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #65717d" x="192.882314" y="142.974052" transform="rotate(-0 192.882314 142.974052)">label absent from evaluator request</text>
+    <text style="font-weight: 700; font-size: 6.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d7474" x="192.882314" y="134.210886" transform="rotate(-0 192.882314 134.210886)">NOT ADMITTED</text>
    </g>
    <g id="text_27">
-    <text style="font-weight: 700; font-size: 6.35px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d7474" x="309.740771" y="132.779675" transform="rotate(-0 309.740771 132.779675)">6/6 groups</text>
+    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #65717d" x="192.882314" y="142.944078" transform="rotate(-0 192.882314 142.944078)">label absent from evaluator request</text>
    </g>
    <g id="text_28">
-    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(281.546935 140.036972)">decision invariant across</text>
-    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(278.248521 145.484401)">original / deleted / poisoned</text>
+    <text style="font-weight: 700; font-size: 6.35px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d7474" x="309.740771" y="132.779861" transform="rotate(-0 309.740771 132.779861)">6/6 groups</text>
    </g>
    <g id="text_29">
-    <text style="font-weight: 700; font-size: 6.35px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d7474" x="436.317188" y="132.782652" transform="rotate(-0 436.317188 132.782652)">2/2</text>
+    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(281.546935 140.420907)">decision invariant across</text>
+    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(278.248521 145.64363)">original / deleted / poisoned</text>
    </g>
    <g id="text_30">
-    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(415.135399 140.074004)">paired public-trace</text>
-    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(405.827981 145.447369)">relations changed decision</text>
+    <text style="font-weight: 700; font-size: 6.35px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d7474" x="436.317188" y="132.779923" transform="rotate(-0 436.317188 132.779923)">2/2</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(415.135399 139.939301)">paired public-trace</text>
+    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(405.827981 145.612248)">relations changed decision</text>
    </g>
   </g>
   <g id="axes_2">
@@ -291,71 +294,113 @@ z
 " style="fill: #e7eff6; stroke: #d7dde3; stroke-width: 0.65; stroke-linejoin: miter"/>
    </g>
    <g id="patch_12">
-    <path d="M 158.303118 218.615001
-L 295.101596 218.615001
-Q 297.682699 218.615001 297.682699 217.624953
-L 297.682699 208.798131
-Q 297.682699 207.808083 295.101596 207.808083
-L 158.303118 207.808083
-Q 155.722015 207.808083 155.722015 208.798131
-L 155.722015 217.624953
-Q 155.722015 218.615001 158.303118 218.615001
+    <path d="M 159.163486 219.495043
+L 294.241228 219.495043
+Q 297.109121 219.495043 297.109121 218.39499
+L 297.109121 206.294411
+Q 297.109121 205.194358 294.241228 205.194358
+L 159.163486 205.194358
+Q 156.295593 205.194358 156.295593 206.294411
+L 156.295593 218.39499
+Q 156.295593 219.495043 159.163486 219.495043
+L 159.163486 219.495043
 z
-" style="fill: #ffffff; stroke: #d7dde3; stroke-width: 0.65; stroke-linejoin: miter"/>
+" style="fill: none; stroke-dasharray: 1.32,1.045; stroke-dashoffset: 0; stroke: #65717d; stroke-width: 0.55; stroke-linejoin: miter"/>
    </g>
    <g id="patch_13">
-    <path d="M 158.303118 230.93559
-L 295.101596 230.93559
-Q 297.682699 230.93559 297.682699 229.945543
-L 297.682699 221.11872
-Q 297.682699 220.128673 295.101596 220.128673
-L 158.303118 220.128673
-Q 155.722015 220.128673 155.722015 221.11872
-L 155.722015 229.945543
-Q 155.722015 230.93559 158.303118 230.93559
+    <path d="M 164.038903 216.881318
+L 289.365811 216.881318
+Q 291.946914 216.881318 291.946914 215.89127
+L 291.946914 209.264553
+Q 291.946914 208.274506 289.365811 208.274506
+L 164.038903 208.274506
+Q 161.4578 208.274506 161.4578 209.264553
+L 161.4578 215.89127
+Q 161.4578 216.881318 164.038903 216.881318
 z
 " style="fill: #ffffff; stroke: #d7dde3; stroke-width: 0.65; stroke-linejoin: miter"/>
    </g>
    <g id="patch_14">
-    <path d="M 158.303118 243.25618
-L 295.101596 243.25618
-Q 297.682699 243.25618 297.682699 242.266133
-L 297.682699 233.43931
-Q 297.682699 232.449263 295.101596 232.449263
-L 158.303118 232.449263
-Q 155.722015 232.449263 155.722015 233.43931
-L 155.722015 242.266133
-Q 155.722015 243.25618 158.303118 243.25618
+    <path d="M 159.163486 256.676823
+L 294.241228 256.676823
+Q 297.109121 256.676823 297.109121 255.57677
+L 297.109121 223.235222
+Q 297.109121 222.135169 294.241228 222.135169
+L 159.163486 222.135169
+Q 156.295593 222.135169 156.295593 223.235222
+L 156.295593 255.57677
+Q 156.295593 256.676823 159.163486 256.676823
+L 159.163486 256.676823
 z
-" style="fill: #ffffff; stroke: #d7dde3; stroke-width: 0.65; stroke-linejoin: miter"/>
+" style="fill: none; stroke-dasharray: 1.32,1.045; stroke-dashoffset: 0; stroke: #65717d; stroke-width: 0.55; stroke-linejoin: miter"/>
    </g>
    <g id="patch_15">
-    <path d="M 158.303118 255.57677
-L 295.101596 255.57677
-Q 297.682699 255.57677 297.682699 254.586723
-L 297.682699 245.7599
-Q 297.682699 244.769853 295.101596 244.769853
-L 158.303118 244.769853
-Q 155.722015 244.769853 155.722015 245.7599
-L 155.722015 254.586723
-Q 155.722015 255.57677 158.303118 255.57677
+    <path d="M 164.038903 233.822129
+L 289.365811 233.822129
+Q 291.946914 233.822129 291.946914 232.832081
+L 291.946914 226.205364
+Q 291.946914 225.215317 289.365811 225.215317
+L 164.038903 225.215317
+Q 161.4578 225.215317 161.4578 226.205364
+L 161.4578 232.832081
+Q 161.4578 233.822129 164.038903 233.822129
 z
 " style="fill: #ffffff; stroke: #d7dde3; stroke-width: 0.65; stroke-linejoin: miter"/>
    </g>
    <g id="patch_16">
-    <path d="M 158.303118 267.89736
-L 295.101596 267.89736
-Q 297.682699 267.89736 297.682699 266.907312
-L 297.682699 258.08049
-Q 297.682699 257.090443 295.101596 257.090443
-L 158.303118 257.090443
-Q 155.722015 257.090443 155.722015 258.08049
-L 155.722015 266.907312
-Q 155.722015 267.89736 158.303118 267.89736
+    <path d="M 164.038903 243.942613
+L 289.365811 243.942613
+Q 291.946914 243.942613 291.946914 242.952566
+L 291.946914 236.325848
+Q 291.946914 235.335801 289.365811 235.335801
+L 164.038903 235.335801
+Q 161.4578 235.335801 161.4578 236.325848
+L 161.4578 242.952566
+Q 161.4578 243.942613 164.038903 243.942613
 z
 " style="fill: #ffffff; stroke: #d7dde3; stroke-width: 0.65; stroke-linejoin: miter"/>
    </g>
    <g id="patch_17">
+    <path d="M 164.038903 254.063098
+L 289.365811 254.063098
+Q 291.946914 254.063098 291.946914 253.07305
+L 291.946914 246.446333
+Q 291.946914 245.456286 289.365811 245.456286
+L 164.038903 245.456286
+Q 161.4578 245.456286 161.4578 246.446333
+L 161.4578 253.07305
+Q 161.4578 254.063098 164.038903 254.063098
+z
+" style="fill: #ffffff; stroke: #d7dde3; stroke-width: 0.65; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 159.163486 273.617634
+L 294.241228 273.617634
+Q 297.109121 273.617634 297.109121 272.517581
+L 297.109121 260.417002
+Q 297.109121 259.316949 294.241228 259.316949
+L 159.163486 259.316949
+Q 156.295593 259.316949 156.295593 260.417002
+L 156.295593 272.517581
+Q 156.295593 273.617634 159.163486 273.617634
+L 159.163486 273.617634
+z
+" style="fill: none; stroke-dasharray: 1.32,1.045; stroke-dashoffset: 0; stroke: #65717d; stroke-width: 0.55; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 164.038903 271.003909
+L 289.365811 271.003909
+Q 291.946914 271.003909 291.946914 270.013861
+L 291.946914 263.387144
+Q 291.946914 262.397097 289.365811 262.397097
+L 164.038903 262.397097
+Q 161.4578 262.397097 161.4578 263.387144
+L 161.4578 270.013861
+Q 161.4578 271.003909 164.038903 271.003909
+z
+" style="fill: #ffffff; stroke: #d7dde3; stroke-width: 0.65; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_20">
     <path d="M 17.77638 294.62864
 L 146.831548 294.62864
 Q 150.273019 294.62864 150.273019 293.308576
@@ -368,7 +413,7 @@ Q 14.334909 294.62864 17.77638 294.62864
 z
 " style="fill: #e7eff6; stroke: #245a8d; stroke-width: 0.65; stroke-linejoin: miter"/>
    </g>
-   <g id="patch_18">
+   <g id="patch_21">
     <path d="M 159.163486 294.62864
 L 294.241228 294.62864
 Q 297.682699 294.62864 297.682699 293.308576
@@ -381,161 +426,194 @@ Q 155.722015 294.62864 159.163486 294.62864
 z
 " style="fill: #e6f2eb; stroke: #2f7d57; stroke-width: 0.65; stroke-linejoin: miter"/>
    </g>
-   <g id="text_31">
-    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start" x="12.614173" y="184.545228" transform="rotate(-0 12.614173 184.545228)">b</text>
-   </g>
    <g id="text_32">
-    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="25.51969" y="184.782041" transform="rotate(-0 25.51969 184.782041)">Public-input metamorphic stress test</text>
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start" x="12.614173" y="184.437763" transform="rotate(-0 12.614173 184.437763)">b</text>
    </g>
    <g id="text_33">
-    <text style="font-weight: 700; font-size: 5.8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #245a8d" x="16.055644" y="201.9676" transform="rotate(-0 16.055644 201.9676)">Invariance · 28 fixed tasks</text>
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="25.51969" y="184.690303" transform="rotate(-0 25.51969 184.690303)">Public-input metamorphic stress test</text>
    </g>
    <g id="text_34">
-    <text style="font-weight: 700; font-size: 5.8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #2f7d57" x="157.44275" y="201.938147" transform="rotate(-0 157.44275 201.938147)">Fail closed · 13 baseline-apply tasks</text>
+    <text style="font-weight: 700; font-size: 5.8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #245a8d" x="16.055644" y="201.965108" transform="rotate(-0 16.055644 201.965108)">Invariance · 28 fixed tasks</text>
    </g>
    <g id="text_35">
-    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="27.240426" y="215.597298" transform="rotate(-0 27.240426 215.597298)">Rename domain identifiers</text>
+    <text style="font-weight: 700; font-size: 5.8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #2f7d57" x="157.44275" y="201.965052" transform="rotate(-0 157.44275 201.965052)">Fail closed · 13 baseline-apply tasks</text>
    </g>
    <g id="text_36">
-    <text style="font-weight: 700; font-size: 5.55px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #245a8d" x="144.537234" y="215.678755" transform="rotate(-0 144.537234 215.678755)">28/28</text>
+    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="27.240426" y="215.598734" transform="rotate(-0 27.240426 215.598734)">Rename domain identifiers</text>
    </g>
    <g id="text_37">
-    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="27.240426" y="231.328051" transform="rotate(-0 27.240426 231.328051)">Rename evidence identifiers</text>
+    <text style="font-weight: 700; font-size: 5.55px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #245a8d" x="144.537234" y="215.67637" transform="rotate(-0 144.537234 215.67637)">28/28</text>
    </g>
    <g id="text_38">
-    <text style="font-weight: 700; font-size: 5.55px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #245a8d" x="144.537234" y="231.409508" transform="rotate(-0 144.537234 231.409508)">28/28</text>
+    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="27.240426" y="231.329487" transform="rotate(-0 27.240426 231.329487)">Rename evidence identifiers</text>
    </g>
    <g id="text_39">
-    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="27.240426" y="247.058804" transform="rotate(-0 27.240426 247.058804)">Insert irrelevant evidence</text>
+    <text style="font-weight: 700; font-size: 5.55px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #245a8d" x="144.537234" y="231.407124" transform="rotate(-0 144.537234 231.407124)">28/28</text>
    </g>
    <g id="text_40">
-    <text style="font-weight: 700; font-size: 5.55px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #245a8d" x="144.537234" y="247.140261" transform="rotate(-0 144.537234 247.140261)">28/28</text>
+    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="27.240426" y="247.06024" transform="rotate(-0 27.240426 247.06024)">Insert irrelevant evidence</text>
    </g>
    <g id="text_41">
-    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="27.240426" y="262.82155" transform="rotate(-0 27.240426 262.82155)">Compose all three</text>
+    <text style="font-weight: 700; font-size: 5.55px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #245a8d" x="144.537234" y="247.137877" transform="rotate(-0 144.537234 247.137877)">28/28</text>
    </g>
    <g id="text_42">
-    <text style="font-weight: 700; font-size: 5.55px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #245a8d" x="144.537234" y="262.871014" transform="rotate(-0 144.537234 262.871014)">28/28</text>
+    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="27.240426" y="262.790993" transform="rotate(-0 27.240426 262.790993)">Compose all three</text>
    </g>
    <g id="text_43">
-    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="168.627532" y="214.476384" transform="rotate(-0 168.627532 214.476384)">Remove authority</text>
+    <text style="font-weight: 700; font-size: 5.55px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #245a8d" x="144.537234" y="262.86863" transform="rotate(-0 144.537234 262.86863)">28/28</text>
    </g>
    <g id="text_44">
-    <text style="font-weight: 700; font-size: 5.55px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #2f7d57" x="291.946914" y="214.588603" transform="rotate(-0 291.946914 214.588603)">13/13</text>
+    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="174.076528" y="213.936503" transform="rotate(-0 174.076528 213.936503)">Remove authority</text>
    </g>
    <g id="text_45">
-    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="168.627532" y="226.796974" transform="rotate(-0 168.627532 226.796974)">Mismatch authority target</text>
+    <text style="font-weight: 700; font-size: 5.55px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #2f7d57" x="288.505443" y="214.014191" transform="rotate(-0 288.505443 214.014191)">13/13</text>
    </g>
    <g id="text_46">
-    <text style="font-weight: 700; font-size: 5.55px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #2f7d57" x="291.946914" y="226.909193" transform="rotate(-0 291.946914 226.909193)">13/13</text>
+    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="174.076528" y="230.877314" transform="rotate(-0 174.076528 230.877314)">Mismatch authority target</text>
    </g>
    <g id="text_47">
-    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="168.627532" y="239.148326" transform="rotate(-0 168.627532 239.148326)">Mismatch destination</text>
+    <text style="font-weight: 700; font-size: 5.55px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #2f7d57" x="288.505443" y="230.955002" transform="rotate(-0 288.505443 230.955002)">13/13</text>
    </g>
    <g id="text_48">
-    <text style="font-weight: 700; font-size: 5.55px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #2f7d57" x="291.946914" y="239.229783" transform="rotate(-0 291.946914 239.229783)">13/13</text>
+    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="174.076528" y="240.99785" transform="rotate(-0 174.076528 240.99785)">Mismatch destination</text>
    </g>
    <g id="text_49">
-    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="168.627532" y="251.438154" transform="rotate(-0 168.627532 251.438154)">Mismatch authority scope</text>
+    <text style="font-weight: 700; font-size: 5.55px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #2f7d57" x="288.505443" y="241.075486" transform="rotate(-0 288.505443 241.075486)">13/13</text>
    </g>
    <g id="text_50">
-    <text style="font-weight: 700; font-size: 5.55px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #2f7d57" x="291.946914" y="251.550373" transform="rotate(-0 291.946914 251.550373)">8/8</text>
+    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="174.076528" y="251.118283" transform="rotate(-0 174.076528 251.118283)">Mismatch authority scope</text>
    </g>
    <g id="text_51">
-    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="168.627532" y="263.758744" transform="rotate(-0 168.627532 263.758744)">Expire authority</text>
+    <text style="font-weight: 700; font-size: 5.55px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #2f7d57" x="288.505443" y="251.195971" transform="rotate(-0 288.505443 251.195971)">8/8</text>
    </g>
    <g id="text_52">
-    <text style="font-weight: 700; font-size: 5.55px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #2f7d57" x="291.946914" y="263.870962" transform="rotate(-0 291.946914 263.870962)">8/8</text>
+    <text style="font-size: 5.25px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="174.076528" y="268.059094" transform="rotate(-0 174.076528 268.059094)">Expire authority</text>
    </g>
    <g id="text_53">
-    <text style="font-weight: 700; font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #245a8d" x="21.79143" y="288.878729" transform="rotate(-0 21.79143 288.878729)">112/112</text>
+    <text style="font-weight: 700; font-size: 5.55px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #2f7d57" x="288.505443" y="268.136782" transform="rotate(-0 288.505443 268.136782)">8/8</text>
    </g>
    <g id="text_54">
-    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(59.074034 285.615742)">nested deterministic conditions</text>
-    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(59.074034 291.06317)">(3 primitive + 1 composed / task)</text>
+    <text style="font-weight: 700; font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #245a8d" x="21.79143" y="288.875679" transform="rotate(-0 21.79143 288.875679)">112/112</text>
    </g>
    <g id="text_55">
-    <text style="font-weight: 700; font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #2f7d57" x="163.178536" y="288.878729" transform="rotate(-0 163.178536 288.878729)">55/55</text>
+    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(59.074034 285.999676)">nested deterministic conditions</text>
+    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(59.074034 291.2224)">(3 primitive + 1 composed / task)</text>
    </g>
    <g id="text_56">
-    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(201.895086 285.585566)">nested authority conditions</text>
-    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(201.895086 291.093346)">(3 or 5 / task, by family)</text>
+    <text style="font-weight: 700; font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #2f7d57" x="163.178536" y="288.875679" transform="rotate(-0 163.178536 288.875679)">55/55</text>
    </g>
-   <g id="patch_19">
+   <g id="text_57">
+    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(201.895086 285.487895)">nested authority conditions</text>
+    <text style="font-size: 5.15px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #65717d" transform="translate(201.895086 291.2224)">(3 or 5 / task, by family)</text>
+   </g>
+   <g id="patch_22">
     <path d="M 18.923537 216.992973
 L 24.085744 216.992973
 L 24.085744 215.012878
 L 18.923537 215.012878
 z
-" clip-path="url(#pab5b40a720)" style="fill: #245a8d"/>
+" clip-path="url(#pa882f10abe)" style="fill: #245a8d"/>
    </g>
-   <g id="patch_20">
+   <g id="patch_23">
     <path d="M 18.923537 232.723726
 L 24.085744 232.723726
 L 24.085744 230.743631
 L 18.923537 230.743631
 z
-" clip-path="url(#pab5b40a720)" style="fill: #245a8d"/>
+" clip-path="url(#pa882f10abe)" style="fill: #245a8d"/>
    </g>
-   <g id="patch_21">
+   <g id="patch_24">
     <path d="M 18.923537 248.454479
 L 24.085744 248.454479
 L 24.085744 246.474384
 L 18.923537 246.474384
 z
-" clip-path="url(#pab5b40a720)" style="fill: #245a8d"/>
+" clip-path="url(#pa882f10abe)" style="fill: #245a8d"/>
    </g>
-   <g id="patch_22">
+   <g id="patch_25">
     <path d="M 18.923537 264.185232
 L 24.085744 264.185232
 L 24.085744 262.205137
 L 18.923537 262.205137
 z
-" clip-path="url(#pab5b40a720)" style="fill: #245a8d"/>
+" clip-path="url(#pa882f10abe)" style="fill: #245a8d"/>
    </g>
-   <g id="patch_23">
-    <path d="M 160.310643 215.306042
-L 165.47285 215.306042
-L 165.47285 213.325947
-L 160.310643 213.325947
+   <g id="text_58">
+    <g id="patch_26">
+     <path d="M 160.2808 209.321804
+L 199.808105 209.321804
+L 199.808105 201.946954
+L 160.2808 201.946954
 z
-" clip-path="url(#pab5b40a720)" style="fill: #2f7d57"/>
-   </g>
-   <g id="patch_24">
-    <path d="M 160.310643 227.626632
-L 165.47285 227.626632
-L 165.47285 225.646537
-L 160.310643 225.646537
-z
-" clip-path="url(#pab5b40a720)" style="fill: #2f7d57"/>
-   </g>
-   <g id="patch_25">
-    <path d="M 160.310643 239.947222
-L 165.47285 239.947222
-L 165.47285 237.967127
-L 160.310643 237.967127
-z
-" clip-path="url(#pab5b40a720)" style="fill: #2f7d57"/>
-   </g>
-   <g id="patch_26">
-    <path d="M 160.310643 252.267812
-L 165.47285 252.267812
-L 165.47285 250.287717
-L 160.310643 250.287717
-z
-" clip-path="url(#pab5b40a720)" style="fill: #2f7d57"/>
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-weight: 700; font-size: 5.35px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #2f7d57" x="161.4578" y="207.018901" transform="rotate(-0 161.4578 207.018901)">remove · 13/13</text>
    </g>
    <g id="patch_27">
-    <path d="M 160.310643 264.588401
-L 165.47285 264.588401
-L 165.47285 262.608307
-L 160.310643 262.608307
+    <path d="M 166.620007 214.035261
+L 171.208635 214.035261
+L 171.208635 212.275177
+L 166.620007 212.275177
 z
-" clip-path="url(#pab5b40a720)" style="fill: #2f7d57"/>
+" clip-path="url(#pa882f10abe)" style="fill: #2f7d57"/>
+   </g>
+   <g id="text_59">
+    <g id="patch_28">
+     <path d="M 160.2808 226.262667
+L 200.69587 226.262667
+L 200.69587 218.887713
+L 160.2808 218.887713
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-weight: 700; font-size: 5.35px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #2f7d57" x="161.4578" y="223.959659" transform="rotate(-0 161.4578 223.959659)">retarget · 34/34</text>
+   </g>
+   <g id="patch_29">
+    <path d="M 166.620007 230.976072
+L 171.208635 230.976072
+L 171.208635 229.215988
+L 166.620007 229.215988
+z
+" clip-path="url(#pa882f10abe)" style="fill: #2f7d57"/>
+   </g>
+   <g id="patch_30">
+    <path d="M 166.620007 241.096557
+L 171.208635 241.096557
+L 171.208635 239.336473
+L 166.620007 239.336473
+z
+" clip-path="url(#pa882f10abe)" style="fill: #2f7d57"/>
+   </g>
+   <g id="patch_31">
+    <path d="M 166.620007 251.217041
+L 171.208635 251.217041
+L 171.208635 249.456957
+L 166.620007 249.456957
+z
+" clip-path="url(#pa882f10abe)" style="fill: #2f7d57"/>
+   </g>
+   <g id="text_60">
+    <g id="patch_32">
+     <path d="M 160.2808 263.444395
+L 190.586878 263.444395
+L 190.586878 256.069545
+L 160.2808 256.069545
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-weight: 700; font-size: 5.35px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #2f7d57" x="161.4578" y="261.141492" transform="rotate(-0 161.4578 261.141492)">expire · 8/8</text>
+   </g>
+   <g id="patch_33">
+    <path d="M 166.620007 268.157852
+L 171.208635 268.157852
+L 171.208635 266.397768
+L 166.620007 266.397768
+z
+" clip-path="url(#pa882f10abe)" style="fill: #2f7d57"/>
    </g>
   </g>
   <g id="axes_3">
-   <g id="patch_28">
+   <g id="patch_34">
     <path d="M 326.788312 206.954442
 L 495.364439 206.954442
 Q 497.462897 206.954442 497.462897 205.634379
@@ -548,7 +626,7 @@ Q 324.689854 206.954442 326.788312 206.954442
 z
 " style="fill: #eef0f2; stroke: #6d737a; stroke-width: 0.65; stroke-linejoin: miter"/>
    </g>
-   <g id="patch_29">
+   <g id="patch_35">
     <path d="M 326.788312 227.855443
 L 495.364439 227.855443
 Q 497.462897 227.855443 497.462897 226.53538
@@ -561,7 +639,7 @@ Q 324.689854 227.855443 326.788312 227.855443
 z
 " style="fill: #e9f1f0; stroke: #4d7474; stroke-width: 0.65; stroke-linejoin: miter"/>
    </g>
-   <g id="patch_30">
+   <g id="patch_36">
     <path d="M 326.788312 248.096412
 L 495.364439 248.096412
 Q 497.462897 248.096412 497.462897 246.776349
@@ -574,7 +652,7 @@ Q 324.689854 248.096412 326.788312 248.096412
 z
 " style="fill: #e6f2eb; stroke: #2f7d57; stroke-width: 0.65; stroke-linejoin: miter"/>
    </g>
-   <g id="patch_31">
+   <g id="patch_37">
     <path d="M 326.788312 268.337381
 L 495.364439 268.337381
 Q 497.462897 268.337381 497.462897 267.017318
@@ -587,7 +665,7 @@ Q 324.689854 268.337381 326.788312 268.337381
 z
 " style="fill: #f7f0e1; stroke: #c28b2c; stroke-width: 0.65; stroke-linejoin: miter"/>
    </g>
-   <g id="patch_32">
+   <g id="patch_38">
     <path d="M 326.788312 291.328482
 L 495.364439 291.328482
 Q 497.462897 291.328482 497.462897 290.008418
@@ -600,64 +678,64 @@ Q 324.689854 291.328482 326.788312 291.328482
 z
 " style="fill: #f6f8fa; stroke: #d7dde3; stroke-width: 0.65; stroke-linejoin: miter"/>
    </g>
-   <g id="text_57">
-    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start" x="323.640625" y="184.545228" transform="rotate(-0 323.640625 184.545228)">c</text>
-   </g>
-   <g id="text_58">
-    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="335.007273" y="184.690166" transform="rotate(-0 335.007273 184.690166)">External evaluator boundary control</text>
-   </g>
-   <g id="text_59">
-    <text style="font-weight: 700; font-size: 5.7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6d737a" x="329.761127" y="202.491705" transform="rotate(-0 329.761127 202.491705)">BOUNDARY CONTROL · NOT REPLICATION</text>
-   </g>
-   <g id="text_60">
-    <text style="font-size: 5.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #65717d" x="492.391623" y="202.363666" transform="rotate(-0 492.391623 202.363666)">pinned 2340fe2d</text>
-   </g>
    <g id="text_61">
-    <text style="font-weight: 700; font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #4d7474" x="330.11087" y="218.827376" transform="rotate(-0 330.11087 218.827376)">6/6</text>
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start" x="323.640625" y="184.437763" transform="rotate(-0 323.640625 184.437763)">c</text>
    </g>
    <g id="text_62">
-    <text style="font-weight: 700; font-size: 5.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="361.587741" y="217.578994" transform="rotate(-0 361.587741 217.578994)">label-invariance groups</text>
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="335.007273" y="184.690166" transform="rotate(-0 335.007273 184.690166)">External evaluator boundary control</text>
    </g>
    <g id="text_63">
-    <text style="font-size: 5.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #65717d" x="361.587741" y="223.091777" transform="rotate(-0 361.587741 223.091777)">original / deleted / poisoned labels</text>
+    <text style="font-weight: 700; font-size: 5.7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6d737a" x="329.761127" y="202.489256" transform="rotate(-0 329.761127 202.489256)">BOUNDARY CONTROL · NOT REPLICATION</text>
    </g>
    <g id="text_64">
-    <text style="font-weight: 700; font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #2f7d57" x="330.11087" y="239.068345" transform="rotate(-0 330.11087 239.068345)">2/2</text>
+    <text style="font-size: 5.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #65717d" x="492.391623" y="202.333982" transform="rotate(-0 492.391623 202.333982)">pinned 2340fe2d</text>
    </g>
    <g id="text_65">
-    <text style="font-weight: 700; font-size: 5.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="361.587741" y="237.889572" transform="rotate(-0 361.587741 237.889572)">public-fact relations</text>
+    <text style="font-weight: 700; font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #4d7474" x="330.11087" y="218.824325" transform="rotate(-0 330.11087 218.824325)">6/6</text>
    </g>
    <g id="text_66">
-    <text style="font-size: 5.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #65717d" x="361.587741" y="243.301668" transform="rotate(-0 361.587741 243.301668)">paired trace edit changes the decision</text>
+    <text style="font-weight: 700; font-size: 5.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="361.587741" y="217.612671" transform="rotate(-0 361.587741 217.612671)">label-invariance groups</text>
    </g>
    <g id="text_67">
-    <text style="font-weight: 700; font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #c28b2c" x="330.11087" y="259.309314" transform="rotate(-0 330.11087 259.309314)">2/2</text>
+    <text style="font-size: 5.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #65717d" x="361.587741" y="223.091926" transform="rotate(-0 361.587741 223.091926)">original / deleted / poisoned labels</text>
    </g>
    <g id="text_68">
-    <text style="font-weight: 700; font-size: 5.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="361.587741" y="258.060932" transform="rotate(-0 361.587741 258.060932)">policy-source relations</text>
+    <text style="font-weight: 700; font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #2f7d57" x="330.11087" y="239.065294" transform="rotate(-0 330.11087 239.065294)">2/2</text>
    </g>
    <g id="text_69">
-    <text style="font-size: 5.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #65717d" x="361.587741" y="263.542637" transform="rotate(-0 361.587741 263.542637)">paired policy edit changes the decision</text>
+    <text style="font-weight: 700; font-size: 5.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="361.587741" y="237.853693" transform="rotate(-0 361.587741 237.853693)">public-fact relations</text>
    </g>
    <g id="text_70">
-    <text style="font-weight: 700; font-size: 5.7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="331.509843" y="282.326583" transform="rotate(-0 331.509843 282.326583)">2 upstream policy examples</text>
+    <text style="font-size: 5.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #65717d" x="361.587741" y="243.332895" transform="rotate(-0 361.587741 243.332895)">paired trace edit changes the decision</text>
    </g>
    <g id="text_71">
-    <text style="font-size: 5.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #65717d" x="331.509843" y="288.246701" transform="rotate(-0 331.509843 288.246701)">calls and intervention conditions are nested</text>
+    <text style="font-weight: 700; font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #c28b2c" x="330.11087" y="259.306263" transform="rotate(-0 330.11087 259.306263)">2/2</text>
    </g>
    <g id="text_72">
-    <text style="font-weight: 700; font-size: 5.7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #4d7474" x="490.642908" y="282.355528" transform="rotate(-0 490.642908 282.355528)">18 evaluator calls</text>
+    <text style="font-weight: 700; font-size: 5.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="361.587741" y="258.094609" transform="rotate(-0 361.587741 258.094609)">policy-source relations</text>
    </g>
    <g id="text_73">
-    <text style="font-size: 5.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #65717d" x="490.642908" y="288.246701" transform="rotate(-0 490.642908 288.246701)">0 model calls</text>
+    <text style="font-size: 5.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #65717d" x="361.587741" y="263.573864" transform="rotate(-0 361.587741 263.573864)">paired policy edit changes the decision</text>
+   </g>
+   <g id="text_74">
+    <text style="font-weight: 700; font-size: 5.7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17212b" x="331.509843" y="282.353023" transform="rotate(-0 331.509843 282.353023)">2 upstream policy examples</text>
+   </g>
+   <g id="text_75">
+    <text style="font-size: 5.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #65717d" x="331.509843" y="288.248095" transform="rotate(-0 331.509843 288.248095)">calls and intervention conditions are nested</text>
+   </g>
+   <g id="text_76">
+    <text style="font-weight: 700; font-size: 5.7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #4d7474" x="490.642908" y="282.353079" transform="rotate(-0 490.642908 282.353079)">18 evaluator calls</text>
+   </g>
+   <g id="text_77">
+    <text style="font-size: 5.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #65717d" x="490.642908" y="288.248095" transform="rotate(-0 490.642908 288.248095)">0 model calls</text>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="pbeaaae1182">
+  <clipPath id="p0db5e06391">
    <rect x="12.614173" y="13.334173" width="485.897953" height="151.807267"/>
   </clipPath>
-  <clipPath id="pab5b40a720">
+  <clipPath id="pa882f10abe">
    <rect x="12.614173" y="190.013631" width="286.789262" height="110.005266"/>
   </clipPath>
  </defs>
