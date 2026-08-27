@@ -47,8 +47,10 @@ The relevant prior work spans agent orchestration, declarative LM programming, s
 
 The distinction is summarized in Table 1.
 
+**Table 1.** Work families and the contribution boundary of this paper.
+
 | Work family | Main focus | What it externalizes | What this paper adds |
-|---|---|---|---|
+|----------------------------|-----------------------------------|---------------------------------------------|---------------------------------------------------------------------------------|
 | Workflow orchestration | execution graph and state | steps, tools, persistence, human checkpoints | obligation-level evaluation and repair |
 | Structured outputs | syntactic output control | schema and format constraints | semantic contract obligations such as evidence, unknown state, and blocked claims |
 | Guardrails and validators | runtime checks and retries | validation policies and failure handling | known-bad-driven repair loops tied to mechanism atoms |
@@ -141,8 +143,10 @@ This map is the method in miniature. Broad tasks expose unstable behavior, mecha
 
 We define a contract-driven harness as a set of explicit control objects around a language model:
 
+**Table 2.** Contract-stack objects and their roles.
+
 | Object | Role |
-|---|---|
+|-----------------------------|-----------------------------------------------------------------------------------|
 | `TaskSpec` | Objective, constraints, success conditions, and non-goals. |
 | `MemorySlice` | Bounded context that may be used, plus excluded or unknown state. |
 | `EvidenceBundle` | Admissible evidence items, evidence types, and source links. |
@@ -169,8 +173,10 @@ We classify each observed failure before repairing it, because contract defects,
 2. **Surface-form check.** Was the obligation semantically satisfied, but rejected by the evaluator because of an unstated surface requirement (e.g., JSON formatting, token casing, or enum phrasing)? If yes, the failure is an **evaluator defect**.
 3. If the obligation was both declared and correctly checked, and the model still violated it, the failure is a **model failure**.
 
+**Table 3.** Failure classification: contract defect versus model failure.
+
 | Failure type | Definition | Repair action | Claim implication |
-|---|---|---|---|
+|----------------|--------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
 | Contract defect | The obligation was missing, ambiguous, or not visible to the model in the output field where it was violated. | Revise the contract and add a known-bad fixture that captures the missing obligation. | Not evidence of a model limitation. |
 | Evaluator defect | The obligation was declared and the model output satisfied it semantically, but the deterministic check rejected a valid surface form. | Revise the evaluator or probe, then re-verify golden and known-bad anchors. | Does not change the model capability claim. |
 | Model failure | The obligation was explicitly declared and the evaluator correctly checked it, yet the model still violated it. | Redesign the mechanism (e.g., add JSON-schema-constrained decoding, or reduce scope) or exclude the model. | This is the only class that evidences a model limitation. |
@@ -189,8 +195,10 @@ In the automated replication, v4 required canonical names for state identifiers.
 
 A protocol is *frozen* when every variable that could invalidate a stability or transfer claim is pinned before execution and verified before the first model call. The frozen items are: (1) sampling parameters, specifically `temperature` (set to 0 and recorded); (2) provider and model identifier, including the exact model version snapshot; (3) prompt artifacts, exported before execution and identified by content hashes; (4) evaluator version, including the exact validator or probe code and fixture version; (5) known-bad set version, identifying the regression fixtures defining the failure modes the protocol claims to avoid; and (6) perturbation set version, identifying the designed perturbations used to test stability.
 
+**Table 4.** Frozen protocol items and the claims they anchor.
+
 | Frozen item | Claim invalidated if the item is not pinned |
-|---|---|
+|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Temperature | A non-zero or changed temperature can alter the sample distribution; the observed pass rate would no longer describe a fixed sampling process. |
 | Provider and model version snapshot | Provider routing, model updates, or quantization changes can change behavior; a stability claim becomes unanchored. |
 | Prompt hash | Any change to the model-visible prompt changes the task; results are not comparable across runs. |
@@ -254,10 +262,12 @@ Stage B extends the loop from targeted repair to ablation and stability confirma
 
 Each evaluated run emits metrics including `task_success`, `schema_validity`, `citation_grounding`, `state_accuracy`, `evidence_type_accuracy`, `stage_completion`, `trace_completeness`, `context_relevance`, and `atom_primary_metric`. The controlled-transition experiments add exact evidence-array preservation, residual-state accuracy, state-transition accuracy, complete-gate accuracy, retention-attestation accuracy, and a strict aggregate controlled-mutation decision.
 
-Table 2 gives a compact reading guide for the core metrics. Detailed thresholds, fixture-specific checks, and evaluator outputs are provided in the reproducibility package.
+Table 5 gives a compact reading guide for the core metrics. Detailed thresholds, fixture-specific checks, and evaluator outputs are provided in the reproducibility package.
+
+**Table 5.** Core metrics and their evaluator types.
 
 | Metric | What it checks | Evaluator type |
-|---|---|---|
+|------------------------|------------------------------------------------------|--------------------------------|
 | `schema_validity` | Required fields and types are present | deterministic schema/field check |
 | `citation_grounding` | Claims carry admissible evidence IDs | deterministic evidence-ID check |
 | `state_accuracy` | Known and unknown state are preserved | fixture-specific state check |
@@ -284,10 +294,12 @@ The Stage B v5.3 experiment plan in the reproducibility package defined the engi
 
 The results support a bounded version of the original hypothesis. Contract-rich harnessing improves absolute contract adherence across several productivity-task settings. It can also compress cross-model gaps in highly constrained tasks when baseline gaps are nonzero. Gap compression is not universal. The more stable result is weak-model enablement on bounded, contract-critical operations: when task obligations are explicit and evaluated deterministically, the low-cost model can reach pass-level behavior on tasks where weaker harnessing or broader prompts were unstable.
 
-Table 3 summarizes the main claim boundary.
+Table 6 summarizes the main claim boundary.
+
+**Table 6.** Main claim boundary.
 
 | Claim | Evidence | Boundary |
-|---|---|---|
+|--------------------------------|------------------------------------------------------------|------------------------------------------------------------|
 | Absolute contract adherence lift | broad slices, mechanism atoms, admitted macros | tested conditions only |
 | Gap compression | strongest in structured extraction | conditional on nonzero baseline gaps and constrained tasks |
 | Weak-model enablement | Stage 6, Stage 7r.1, Stage 7e v4, Stage 7-next, Stage B v5.4 | bounded contract-critical operations |
@@ -295,14 +307,16 @@ Table 3 summarizes the main claim boundary.
 | Full workflow reliability | not supported | remains a non-claim |
 | Production readiness | not supported | remains a non-claim |
 
-Table 4 summarizes the main empirical layers and the claim each layer permits. Figure 4 provides a visual map of the experimental progression from mechanism atoms through multi-model verification.
+Table 7 summarizes the main empirical layers and the claim each layer permits. Figure 4 provides a visual map of the experimental progression from mechanism atoms through multi-model verification.
 
 > **Figure 4.** Experimental stage progression. See `figures/figure-4-stage-progression.pdf`. The diagram shows three phases: (1) mechanism atoms and composition (§4.3–4.5), (2) contract evolution and stability (§4.6–4.8), and (3) cross-model and cost verification (§4.9–4.13). Each box gives the stage name, run count, and section reference.
 
 The experimental logic proceeds in three phases. **Phase 1** (§4.2–4.5) tests whether broad workflow tasks benefit from harnessing, finds mixed results, and decomposes those workflows into mechanism atoms that can be individually tested and repaired. **Phase 2** (§4.6–4.8) composes atoms into macros, runs the repair-loop protocol on a fixed evidence-decision macro, and tests whether the repaired obligations transfer to a neighboring macro and survive 40 fresh runs under a frozen protocol. **Phase 3** (§4.9–4.13) asks whether these results are reproducible by an external agent, transferable across model families, separable from the implementation framework, capable of detecting below-floor models, and cost-justified relative to using a stronger model directly. Run counts increase as the protocol matures: early atom and composition stages use 6–48 runs for targeted smoke and pilot testing; Stage B v5.4 uses 40 runs for the formal stability estimate; multi-model and Stage D use 200–240 runs for cross-model verification.
 
+**Table 7.** Empirical layers and the claims they permit.
+
 | Layer | Stage | Runs | Failure -> Repair | Outcome | Allowed claim | Reproduced |
-|---|---:|---:|---|---|---|---|
+|---------------------|------------------------:|-------------------------------------------------------------------------:|--------------------------------------------------------------------|---------------------------------------------------------|--------------------------------------------------------------------------------------|---------------|
 | Task slice | structured extraction | 24 | schema/tool gaps -> G9 packet | key gaps to 0 | conditional gap compression  | R04 |
 | Task slice | project init | 12 | mixed metric movement -> G9 | mixed | no universal compression  | R04 |
 | Task slice | research workflow | 12 | zero or mixed baseline gaps -> G9 | mixed/undefined | absolute adherence only  | R04 |
@@ -405,8 +419,10 @@ Stage B v5.4 asked a different preregistered question: whether the frozen explic
 
 All 40 runs passed the strict controlled-mutation metric and every component metric. Each perturbation condition passed 8/8. The pooled strict rate was 1.000 with a two-sided 95% Wilson interval of [0.912, 1.000]. Each 8/8 condition has the wider interval [0.676, 1.000].
 
+**Table 8.** Stage B v5.4 per-condition results over 40 fresh runs.
+
 | Condition | Passes | Rate | 95% Wilson interval |
-|---|---:|---:|---:|
+|------------------------|------:|-----:|-------------------:|
 | canonical | 8/8 | 1.000 | [0.676, 1.000] |
 | field alias | 8/8 | 1.000 | [0.676, 1.000] |
 | evidence order | 8/8 | 1.000 | [0.676, 1.000] |
@@ -426,8 +442,10 @@ It does not convert the mixed v5.3 ablation into a causal-effect result. It also
 
 We report an automated replication by an LLM agent (Kimi Agent, Moonshot AI) of the Stage B controlled-state-mutation repair-loop trajectory. Kimi re-implemented a simplified fixture family following the published protocol design and ran the same sequence of repair-loop iterations on Qwen3-8B. The agent observed a trajectory structurally similar to the author's repair loop: the initial contract passed 0/40 strict runs, intermediate repairs surfaced missing obligations, and the final repaired contract passed 40/40 across the five perturbation conditions. This is not an independent replication by a separate human investigator; it is an automated execution trace produced by an LLM agent using the author's SiliconFlow API key.
 
+**Table 9.** Stage B repair-loop convergence by iteration.
+
 | Iteration | Pass rate | Key obligation surfaced |
-|---|---|---|
+|---------|-----------------|---------------------------------------------------------------------------------------------|
 | v1 | 0/40 | Initial contract (same as author's v5): missing gate, `next_action` enum, and citation policy |
 | v2 | single-point pass | Exact evidence array + `next_action` enumeration |
 | v3 | 21/40 | Full `transition_record` JSON structure |
@@ -442,8 +460,10 @@ After the author's multi-model verification (§4.10) identified a material discr
 
 The same frozen Stage B v5.4 protocol was executed across five model configurations to test whether the contract transfers to other model families without modification. The table below gives the author-verified pass rates. The label "author-verified" is important: the data were produced by the author via the live SiliconFlow API on 2026-07-27, not by the automated replication alone.
 
+**Table 10.** Author-verified multi-model interchangeability results.
+
 | Model | Family | Author verified | Wilson 95% CI | Notes |
-|---|---|---:|---|---|
+|-------------|------------|---------------:|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Qwen3-8B | Qwen3 8B | 40/40 | [0.912, 1.000] | Primary low-cost model; exact match with automated replication and V4 frozen result. |
 | GLM-4-9B | GLM 9B | 30/40 | [0.598, 0.858] | Failures concentrated in `unknown_state_paraphrase` (0/8) and `field_alias` (6/8). |
 | Qwen3-14B | Qwen3 14B | 40/40 | [0.912, 1.000] | Initial run had 3 API read timeouts in canonical; targeted re-run (8/8 pass, 0 timeouts, avg 7.1s latency) confirmed timeouts were transient infrastructure issues. |
@@ -458,8 +478,10 @@ Within the above-floor models tested, the frozen contract produced strict-confor
 
 Three independent observations of GLM-4-9B under the paraphrase condition are now on record:
 
+**Table 11.** Independent observations of the GLM-4-9B paraphrase failure.
+
 | Observer | Date | Failure mode observed |
-|---|---|---|
+|-------------------------------------------|----------|---------------------------------------------------------------------------------------------|
 | Author (live API) | 2026-07-27 | Over-generation: added fabricated third state `permission_to_use_external_model_api` |
 | Kimi Agent (adversarial variant first test) | 2026-07-27 | Label normalization: shortened `branch_currently_checked_out` to `current_branch` |
 | Kimi Agent (full-trace re-run) | 2026-07-27 | Language mixing: output Chinese paraphrases of labels instead of preserving canonical strings |
@@ -484,8 +506,10 @@ Stage D compares the overhead of the no-contract (G0) and full-contract (G9) har
 
 > **Figure 3.** Stage D matched overhead matrix. See `figures/figure-3-stage-d-overhead.pdf`. Three panels: (a) pass rate (G0 0% → G9 100%), (b) average prompt tokens per run (8.6× overhead), (c) average latency.
 
+**Table 12.** Stage D overhead metrics: G0 versus G9.
+
 | Metric | Qwen3-8B G0 | Qwen3-8B G9 | Ratio | DeepSeek-V3.2 G0 | DeepSeek-V3.2 G9 | Ratio |
-|---|---|---:|---:|---|---:|---:|
+|---------------------|-----------|------------:|-----:|----------------|----------------:|-----:|
 | Pass rate | 0/20 (0%) | 40/40 (100%) | — | 0/20 (0%) | 40/40 (100%) | — |
 | Prompt tokens/run | 247 | 2128 | 8.6× | 251 | 2210 | 8.8× |
 | Completion tokens/run | 1344 | 1333 | 1.0× | 254 | 478 | 1.9× |
@@ -493,8 +517,10 @@ Stage D compares the overhead of the no-contract (G0) and full-contract (G9) har
 
 Both models scored 0/20 without the contract and 40/40 with it. The contract stack — not the model — is the binding constraint on strict adherence in this task family. The full contract adds approximately 1,880 prompt tokens per call, which at SiliconFlow pricing costs approximately ¥0.001 per run. G9 latency is comparable to or lower than G0 on Qwen3-8B because the contract constrains the model to a compact structured output rather than allowing an unstructured "thinking aloud" response.
 
+**Table 13.** Stage D cost per passing run.
+
 | Strategy | Cost per 40-run batch | Pass rate | Cost per passing run |
-|---|---|---|---|
+|-----------------------------------------------|-----------------------|------------|--------------------|
 | G0 Qwen3-8B (cheap model, no contract) | ¥0.7 (20 runs × ¥0.035) | 0/20 (0%) | ∞ |
 | G0 DeepSeek-V3.2 (premium model, no contract) | ¥0.8 (20 runs × ¥0.040) | 0/20 (0%) | ∞ |
 | G9 Qwen3-8B (cheap model, full contract) | ¥3.5 (40 runs × ¥0.087) | 40/40 (100%) | ¥0.087 |
@@ -615,8 +641,10 @@ This paper should not claim:
 
 ## Appendix B. Contribution-To-Evaluation Alignment
 
+**Table B.1.** Contribution-to-evaluation alignment.
+
 | Contribution | Evaluation support | Boundary |
-|---|---|---|
+|---------------------------------|-----------------------------------------------------------------------|---------------------------------------------------------------------------------|
 | Contract-driven harness model | Task slices and methods artifacts | Method definition, not a production-readiness claim. |
 | Mechanism atoms | Atom definition, coverage framework, Stage 6-7 atom results | Atom pass does not prove workflow pass. |
 | Conditional gap compression | Structured extraction, project initialization, research workflow slices | Compression only when baseline gaps are nonzero and gap movement is not reversed. |
@@ -627,8 +655,10 @@ This paper should not claim:
 
 ## Appendix C. Evidence Traceability Matrix
 
+**Table C.1.** Evidence traceability matrix.
+
 | Paper claim | Evidence IDs | Source IDs | Status |
-|---|---|---|---|
+|------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
 | Contract-rich harnessing improves absolute contract adherence and can compress gaps under constrained conditions. | P2-E28, P2-E30, P2-E32, P2-E33 | P2-SILICONFLOW-V2-FULL24, P2-SILICONFLOW-PROJECT-INIT-12, P2-SILICONFLOW-RESEARCH-WORKFLOW-12, P2-CLAIM-BOUNDARY-MEMO | Supported with conditional wording. |
 | Structured extraction is the clearest positive gap-compression task slice. | P2-E27, P2-E28 | P2-SILICONFLOW-V2-FULL24 | Supported for tested SiliconFlow v2 slice. |
 | Project initialization and research workflow do not support universal gap compression. | P2-E30, P2-E32, P2-E33 | P2-SILICONFLOW-PROJECT-INIT-12, P2-SILICONFLOW-RESEARCH-WORKFLOW-12, P2-CLAIM-BOUNDARY-MEMO | Supported; use mixed/undefined wording. |
@@ -650,8 +680,10 @@ This paper should not claim:
 
 This appendix contains the full author-verified multi-model records for the Stage B v5.4 frozen protocol. All runs used SiliconFlow, temperature 0, and the same frozen prompt/evaluator/perturbation manifest. Qwen3-8B was the primary model; the other four models provided auxiliary confirmation. The verification was run on 2026-07-27 with the runner script `research/04_methods/scripts/verify_stage_b_v54_live.py`.
 
+**Table D.1.** Multi-model strict-pass summary.
+
 | Model | Model ID | Family | Pass | Fail | Rate | Wilson 95% CI |
-|---|---|---|---|---:|---:|---:|
+|-------------|---------------------------|------------|----|----:|-----:|--------------:|
 | Qwen3-8B | `Qwen/Qwen3-8B` | Qwen3 8B | 40 | 0 | 1.000 | [0.912, 1.000] |
 | GLM-4-9B | `THUDM/GLM-4-9B-0414` | GLM 9B | 30 | 10 | 0.750 | [0.598, 0.858] |
 | Qwen3-14B | `Qwen/Qwen3-14B` | Qwen3 14B | 37* | 3 | 0.925 | [0.801, 0.974] |
@@ -662,8 +694,10 @@ This appendix contains the full author-verified multi-model records for the Stag
 
 Per-condition strict-pass counts (8 runs per condition):
 
+**Table D.2.** Per-condition strict-pass counts by model.
+
 | Condition | Qwen3-8B | GLM-4-9B | Qwen3-14B | DeepSeek-V3.2 | Qwen2.5-7B |
-|---|---|---:|---:|---:|---:|---:|
+|------------------------|--------|--------:|---------:|-------------:|----------:|
 | canonical | 8/8 | 8/8 | 5/8* | 8/8 | 0/8 |
 | field_alias | 8/8 | 6/8 | 8/8 | 8/8 | 0/8 |
 | evidence_order_shuffled | 8/8 | 8/8 | 8/8 | 8/8 | 0/8 |
@@ -691,8 +725,10 @@ All experiments reported in this paper were independently reproduced across four
 
 Stage B v5.4 — the paper's headline stability claim — achieved 100% text similarity (sim=1.0) on all 40 runs in Round 04, confirming that the frozen protocol is bit-exact reproducible through the original framework at temperature=0. Earlier stages (7e, 7p, 7r) produced structurally valid but textually divergent outputs, consistent with their longer reasoning chains and higher surface variability. The inter-round comparison is preserved in `experiment-rounds/_comparison-round-01-vs-02.md`.
 
+**Table D.3.** Contract evolution ledger.
+
 | Version | Failure observed | Missing obligation | Contract change | Pass rate |
-|---|---|---|---|---:|
+|-------|----------------------------|------------------------------------------------------|-------------------------------------------------------|-------------------------------:|
 | v4 | — | Exact evidence array, closed-vocabulary retention | Baseline exact-retention contract | 4/4 local gate |
 | v5 | 0/4 strict pass | Transition gate, `next_action` enum, evidence citation | Add transition event, postconditions, record | 0/4 |
 | v5.1 | Contract defects from v5 | Gate visibility, immutable evidence bindings | Full model-visible gate, `evidence_bindings` separation | 4/4 smoke |
