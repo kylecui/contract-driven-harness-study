@@ -464,13 +464,15 @@ The same frozen Stage B v5.4 protocol was executed across five model configurati
 |-------------|------------|---------------:|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Qwen3-8B | Qwen3 8B | 40/40 | [0.912, 1.000] | Primary low-cost model; exact match with automated replication and V4 frozen result. |
 | GLM-4-9B | GLM 9B | 30/40 | [0.598, 0.858] | Failures concentrated in `unknown_state_paraphrase` (0/8) and `field_alias` (6/8). |
-| Qwen3-14B | Qwen3 14B | 40/40 | [0.912, 1.000] | Initial run had 3 API read timeouts in canonical; targeted re-run (8/8 pass, 0 timeouts, avg 7.1s latency) confirmed timeouts were transient infrastructure issues. |
+| Qwen3-14B | Qwen3 14B | 40/40* | [0.912, 1.000] | Initial run had 3 API read timeouts in canonical; targeted re-run (8/8 pass, 0 timeouts, avg 7.1s latency) confirmed timeouts were transient infrastructure issues. |
 | DeepSeek-V3.2 | DeepSeek MoE | 40/40 | [0.912, 1.000] | Cross-family transfer; exact match with automated replication. |
 | Qwen2.5-7B | Qwen2.5 7B | 0/40 | [0.000, 0.088] | Below-floor structural failure; could not produce valid JSON. |
 
-> **Figure 1.** Pass rates under a frozen contract across 5 models. See `figures/figure-1-multi-model-pass-rates.pdf`. Bars show strict pass counts out of 40 runs with 95% Wilson intervals; the dashed line marks the 0.912 Wilson lower bound. GLM-4-9B's paraphrase vulnerability is annotated.
+\* Adjudicated endpoint, not a single observed batch: the raw 40-run gate observed 37/40 (three API read timeouts in the canonical condition); see Appendix D for raw counts and the re-run evidence supporting the adjudication.
 
-Within the above-floor models tested, the frozen contract produced strict-conforming pass rates of 40/40 on Qwen3-8B, Qwen3-14B, and DeepSeek-V3.2, and 30/40 on GLM-4-9B. The contract transfers zero-shot to the Qwen3 and DeepSeek families. In one below-floor model tested (Qwen2.5-7B), we observed structural-level failure (0/40), characterized by inability to produce syntactically valid JSON. We do not claim universal interchangeability; the data show that contract transfer is real but model-family-specific.
+> **Figure 1.** Pass rates under a frozen contract across 5 models. See `figures/figure-1-multi-model-pass-rates.pdf`. Bars show strict pass counts out of 40 runs with 95% Wilson intervals; the dashed line marks the 0.912 Wilson lower bound. GLM-4-9B's paraphrase vulnerability is annotated. Qwen3-14B shows the adjudicated endpoint (initial 37/40 with three transient API timeouts; targeted canonical re-run 8/8 — Appendix D).
+
+Within the above-floor models tested, the frozen contract produced strict-conforming pass rates of 40/40 on Qwen3-8B, Qwen3-14B (adjudicated after transient API timeouts; Appendix D), and DeepSeek-V3.2, and 30/40 on GLM-4-9B. The contract transfers zero-shot to the Qwen3 and DeepSeek families. In one below-floor model tested (Qwen2.5-7B), we observed structural-level failure (0/40), characterized by inability to produce syntactically valid JSON. We do not claim universal interchangeability; the data show that contract transfer is real but model-family-specific.
 
 **GLM-4-9B paraphrase vulnerability.** GLM-4-9B's 30/40 result drew scrutiny because the automated replication had reported 40/40. After the author's live API verification returned 30/40, Kimi Agent performed a full-trace re-run (§4.9) that confirmed the discrepancy and explained it. Kimi tested GLM-4-9B on two fixture variants: the original single-residual fixture (40/40) and a harder double-residual adversarial variant matching the author's fixture structure (8/8 canonical, 1/8 paraphrase). The discrepancy is explained by fixture difficulty: the author's fixture includes two residual unknown states plus a semantically adjacent "tempting" state (an evidence item mentioning a related but out-of-scope permission), which creates a pressure axis absent from the simpler original fixture.
 
@@ -688,7 +690,7 @@ This appendix contains the full author-verified multi-model records for the Stag
 | DeepSeek-V3.2 | `deepseek-ai/DeepSeek-V3.2` | DeepSeek MoE | 40 | 0 | 1.000 | [0.912, 1.000] |
 | Qwen2.5-7B | `Qwen/Qwen2.5-7B-Instruct` | Qwen2.5 7B | 0 | 40 | 0.000 | [0.000, 0.088] |
 
-* Qwen3-14B: three failures were API read timeouts on the first three calls of the canonical condition; all 37 valid calls passed.
+* Qwen3-14B: three failures were API read timeouts on the first three calls of the canonical condition; all 37 valid calls passed. A targeted re-run of the canonical condition (8/8 pass, 0 timeouts, avg 7.1 s latency) confirmed the timeouts were transient infrastructure faults, not model failures; §4.10 therefore reports the adjudicated endpoint 40/40 with Wilson CI [0.912, 1.000].
 
 Per-condition strict-pass counts (8 runs per condition):
 
