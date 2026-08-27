@@ -436,7 +436,7 @@ We report an automated replication by an LLM agent (Kimi Agent, Moonshot AI) of 
 
 The author verified the endpoint by re-running the frozen Stage B v5.4 protocol on Qwen3-8B through the live SiliconFlow API. The author-verified result was 40/40 strict passes, matching the automated replication exactly. The raw author-confirmation records, runner script, and execution manifest are preserved in the reproducibility package. The contract evolution ledger in Appendix E documents the v1→v5 obligation changes that produced the 0/40 → 40/40 trajectory.
 
-After the author's multi-model verification (§4.10) identified a material discrepancy in GLM-4-9B, Kimi Agent performed a full-trace re-run on 2026-07-27 with complete prompt/output capture across five groups: (A) GLM-4-9B on the original single-residual fixture, (B) GLM-4-9B on a harder double-residual adversarial variant matching the author's fixture structure, and (C) Qwen3-8B on the same adversarial variant. The results (Group A: 40/40; Group B canonical: 8/8; Group B paraphrase: 1/8; Group C: 8/8 + 8/8) confirmed that the GLM discrepancy is explained by fixture difficulty, not model snapshot drift. Kimi's README explicitly states: "你的 fixture（双残留 + 语义相邻诱惑项）对 GLM 的压力维度在我的原始 fixture（单残留）中不存在。差异由 fixture 难度解释，非快照漂移." The full raw traces (including untruncated model outputs for every run) are preserved in the supplementary materials.
+After the author's multi-model verification (§4.10) identified a material discrepancy in GLM-4-9B, Kimi Agent performed a full-trace re-run on 2026-07-27 with complete prompt/output capture across five groups: (A) GLM-4-9B on the original single-residual fixture, (B) GLM-4-9B on a harder double-residual adversarial variant matching the author's fixture structure, and (C) Qwen3-8B on the same adversarial variant. The results (Group A: 40/40; Group B canonical: 8/8; Group B paraphrase: 1/8; Group C: 8/8 + 8/8) confirmed that the GLM discrepancy is explained by fixture difficulty, not model snapshot drift. Kimi's README explicitly states (translated from the original Chinese): "Your fixture (double-residual plus semantically adjacent tempting options) stresses GLM along a dimension absent from my original single-residual fixture. The discrepancy is explained by fixture difficulty, not snapshot drift." The original Chinese text and the full raw traces (including untruncated model outputs for every run) are preserved in the supplementary materials.
 
 ### 4.10 Multi-Model Interchangeability
 
@@ -732,6 +732,7 @@ The core traceability files are:
 - `code/runners/oracle-coupling/` (audit runners; §4.14)
 - `data/reproduction/oracle-coupling/` (frozen audit artifacts and SHA-256 closures; §4.14)
 - `data/analysis/oracle-coupling/figure-source-data.json` (Figure 5 source data)
+- `data/kimi-replication/kimi-automated-replication/` (Kimi Agent raw traces and README; §4.9, including the original Chinese text of the quoted fixture-difficulty statement)
 
 External references are prepared in `research/06_outputs/contract-driven-harness-references.bib`. Local empirical claims should be checked against Appendix C and the evidence ledger rather than treated as ordinary literature citations.
 
