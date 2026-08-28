@@ -790,11 +790,10 @@ This disclosure is provided in line with the AI assistance and reproducibility p
 
 ## References
 
-- Amini, Soufiane and others (2025). Open Agent Specification (Agent Spec): A Unified Representation for AI Agents. arXiv:2510.04173.
 - Amodei, Dario and Olah, Chris and Steinhardt, Jacob and Christiano, Paul and Schulman, John and Mané, Dan (2016). Concrete Problems in AI Safety. arXiv:1606.06565. doi:10.48550/arXiv.1606.06565.
 - Anthropic (n.d.). Building Effective Agents. https://www.anthropic.com/engineering/building-effective-agents. [Accessed 2026-06-09]
 - Barr, Earl T. and Harman, Mark and McMinn, Phil and Shahbaz, Muzammil and Yoo, Shin (2015). The Oracle Problem in Software Testing: A Survey. IEEE Transactions on Software Engineering, 41(5), pp. 507–525. doi:10.1109/TSE.2014.2372785.
-- Bhardwaj, A. (2026). Agent Behavioral Contracts: Formal Specification and Runtime Enforcement for Reliable Autonomous AI Agents. arXiv:2602.22302. doi:10.48550/arXiv.2602.22302. [Abstract from arXiv; detailed overview via alphaXiv, accessed 2026-07-27]
+- Bhardwaj, V. P. (2026). Agent Behavioral Contracts: Formal Specification and Runtime Enforcement for Reliable Autonomous AI Agents. arXiv:2602.22302. doi:10.48550/arXiv.2602.22302. [Abstract from arXiv; detailed overview via alphaXiv, accessed 2026-07-27]
 - Chen, Tsong Yueh and Kuo, Fei-Ching and Liu, Huai and Poon, Pak-Lok and Towey, Dave and Tse, T. H. and Zhou, Zhi Quan (2018). Metamorphic Testing: A Review of Challenges and Opportunities. ACM Computing Surveys, 51(1), pp. 4:1–4:27. doi:10.1145/3143561.
 - Chennabasappa, Sahana and Nikolaidis, Cyrus and Song, Daniel and Molnar, David and Ding, Stephanie and Wan, Shengye and Whitman, Spencer and Deason, Lauren and Doucette, Nicholas and Montilla, Abraham and Gampa, Alekhya and de Paola, Beto and Gabi, Dominik and Crnkovich, James and Testud, Jean-Christophe and He, Kat and Chaturvedi, Rashnil and Zhou, Wu and Saxe, Joshua (2025). LlamaFirewall: An Open Source Guardrail System for Building Secure AI Agents. arXiv:2505.03574. doi:10.48550/arXiv.2505.03574.
 - Contract-Driven Harness Study (2026). Local Experiment Artifacts and Evidence Ledger. Local reproducibility package under research/.
@@ -818,6 +817,7 @@ This disclosure is provided in line with the AI assistance and reproducibility p
 - Singhvi, Arjun and others (2023). DSPy Assertions: Computational Constraints for Self-Refining Language Model Pipelines. arXiv:2312.13382. doi:10.48550/arXiv.2312.13382.
 - Skalse, Joar and Howe, Nikolaus H. R. and Krasheninnikov, Dmitrii and Krueger, David (2022). Defining and Characterizing Reward Hacking. Advances in Neural Information Processing Systems 35 (NeurIPS 2022).
 - Wang, Pengcheng and others (2026). AgentSPEX: An Agent SPecification and EXecution Language. arXiv:2604.13346. doi:10.48550/arXiv.2604.13346.
+- Wang, H. and Poskitt, C. M. and Sun, J. (2026). AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents. arXiv:2503.18666. doi:10.48550/arXiv.2503.18666.
 - Weyuker, Elaine J. (1982). On Testing Non-Testable Programs. The Computer Journal, 25(4), pp. 465–470. doi:10.1093/comjnl/25.4.465.
 - Xavier, Melwin and M A, Vaisakh and Jolly, Melveena and Xavier, Midhun (2026). Agentproof: Static Verification of Agent Workflow Graphs. arXiv:2603.20356. doi:10.48550/arXiv.2603.20356.
 - Yao, Shunyu and others (2022). ReAct: Synergizing Reasoning and Acting in Language Models. arXiv:2210.03629.
