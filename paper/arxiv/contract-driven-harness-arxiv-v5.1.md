@@ -817,7 +817,7 @@ This disclosure is provided in line with the AI assistance and reproducibility p
 - Singhvi, Arjun and others (2023). DSPy Assertions: Computational Constraints for Self-Refining Language Model Pipelines. arXiv:2312.13382. doi:10.48550/arXiv.2312.13382.
 - Skalse, Joar and Howe, Nikolaus H. R. and Krasheninnikov, Dmitrii and Krueger, David (2022). Defining and Characterizing Reward Hacking. Advances in Neural Information Processing Systems 35 (NeurIPS 2022).
 - Wang, Pengcheng and others (2026). AgentSPEX: An Agent SPecification and EXecution Language. arXiv:2604.13346. doi:10.48550/arXiv.2604.13346.
-- Wang, H. and Poskitt, C. M. and Sun, J. (2026). AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents. arXiv:2503.18666. doi:10.48550/arXiv.2503.18666.
+- Wang, H. and Poskitt, C. M. and Sun, J. (2026). AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents. 2026 IEEE/ACM 48th International Conference on Software Engineering (ICSE '26), ACM. arXiv:2503.18666. doi:10.48550/arXiv.2503.18666.
 - Weyuker, Elaine J. (1982). On Testing Non-Testable Programs. The Computer Journal, 25(4), pp. 465–470. doi:10.1093/comjnl/25.4.465.
 - Xavier, Melwin and M A, Vaisakh and Jolly, Melveena and Xavier, Midhun (2026). Agentproof: Static Verification of Agent Workflow Graphs. arXiv:2603.20356. doi:10.48550/arXiv.2603.20356.
 - Yao, Shunyu and others (2022). ReAct: Synergizing Reasoning and Acting in Language Models. arXiv:2210.03629.

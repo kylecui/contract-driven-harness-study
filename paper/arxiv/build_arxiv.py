@@ -84,10 +84,15 @@ def fmt_entry(entry: dict) -> str:
     elif entry["type"] == "inproceedings":
         pieces = [entry.get("booktitle", "")]
     else:
-        if "eprint" in entry:
+        if "howpublished" in entry:
+            how = entry["howpublished"].replace("\\url{", "").rstrip("}")
+            pieces = [how]
+            if "eprint" in entry:
+                pieces.append(f"arXiv:{entry['eprint']}")
+        elif "eprint" in entry:
             pieces = [f"arXiv:{entry['eprint']}"]
-        elif "howpublished" in entry:
-            pieces = [entry["howpublished"].replace("\\url{", "").rstrip("}")]
+        else:
+            pieces = []
     doi = entry.get("doi", "")
     if doi:
         pieces.append(f"doi:{doi}")
