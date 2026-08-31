@@ -1,0 +1,39 @@
+{
+  "manifest_version": "ETB-v1-exact-1",
+  "generated_at_utc": "2026-08-31T04:37:31.043657+00:00",
+  "entry_count": 6,
+  "entries_root_sha256": "ff8ec96489ab4bc1c9e5d02b11fcd4ba58e72b2b56ecb70100add2a1b380032d",
+  "entries": [
+    {
+      "path": "code/runners/oracle-coupling/external_tau_bench_v1/README.md",
+      "sha256": "643a14ce3ddef6e9573bbeb79f4b349eb554f067d26b5773baf25014dae2a389",
+      "bytes": 2497
+    },
+    {
+      "path": "code/runners/oracle-coupling/external_tau_bench_v1/run_audit.py",
+      "sha256": "1cc36698f51e4a9719d0988b998dfe03a9a8378d474f49582d6eba19accd63cd",
+      "bytes": 11283
+    },
+    {
+      "path": "code/runners/oracle-coupling/external_tau_bench_v1/verify_manifest.py",
+      "sha256": "971fce33b735df415c92dbafaeef4a7781838d3362704ae59364b47aa96c0da9",
+      "bytes": 4365
+    },
+    {
+      "path": "code/runners/oracle-coupling/external_tau_bench_v1/tests/test_external_tau_bench.py",
+      "sha256": "0a4220ee46e4c8a53736b7d1328de46e96c06e09f62df9b815239b27e8aeca51",
+      "bytes": 1673
+    },
+    {
+      "path": "code/runners/oracle-coupling/layout.py",
+      "sha256": "cdf35acebbcd8b84b8b4595294b2d58225d1de64419baa4438bcb6a3964cd90d",
+      "bytes": 2450
+    },
+    {
+      "path": "data/reproduction/oracle-coupling/external_tau_bench_v1/artifacts/results.json",
+      "sha256": "c5822be72a50c0155abea769cd2acb87785bfe155ac579f7b2e5728b004fd94e",
+      "bytes": 2273
+    }
+  ],
+  "external_pin_note": "The tau-bench source tree is external and pinned by commit in results.json; this manifest closes over the audit code and the frozen results only."
+}

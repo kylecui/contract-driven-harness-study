@@ -1,0 +1,59 @@
+{
+  "protocol_id": "ETB-v1",
+  "external_source": {
+    "url": "https://github.com/sierra-research/tau-bench",
+    "pinned_commit": "59a200c6d575d595120f1cb70fea53cef0632f6b",
+    "reward_path": "tau_bench/envs/base.py::Env.calculate_reward",
+    "task_split": "dev",
+    "task_index": 14,
+    "task_user": "james_kim_7213",
+    "target_order_id": "#W3289292",
+    "golden_city": "San Antonio",
+    "poison_city": "Houston",
+    "agent_wrong_city": "Chicago"
+  },
+  "cases": {
+    "baseline_matching_state": {
+      "reward": 1.0,
+      "r_actions": 1.0,
+      "gt_data_hash": "83d475ed78e6366d48d5f4b4dff25842ad5503a13b3f3ef4ff41b921937d0be0"
+    },
+    "baseline_perturbed_state": {
+      "reward": 0.0,
+      "r_actions": 0.0,
+      "gt_data_hash": "83d475ed78e6366d48d5f4b4dff25842ad5503a13b3f3ef4ff41b921937d0be0"
+    },
+    "golden_deletion": {
+      "reward": 0.0,
+      "r_actions": 0.0,
+      "gt_data_hash": "5a4b2cb59f4d12dea7e4adff24a7f8fada510ead49372ea4a729a82bbb5f49b5"
+    },
+    "golden_poisoning_city_original_agent": {
+      "reward": 0.0,
+      "r_actions": 0.0,
+      "gt_data_hash": "23aaade97cee666bf8d1ba16f8f24aaf7b7dc764f6baac111599680e122bc83c"
+    },
+    "golden_poisoning_city_matched_agent": {
+      "reward": 1.0,
+      "r_actions": 1.0,
+      "gt_data_hash": "23aaade97cee666bf8d1ba16f8f24aaf7b7dc764f6baac111599680e122bc83c"
+    },
+    "public_fact_counterfactual": {
+      "reward": 1.0,
+      "r_actions": 1.0,
+      "gt_data_hash": "c9a3e43d6d7fb9695671ce03beabc132cd5e6f1e0491f25faa0acde4d4855e48"
+    }
+  },
+  "checks": {
+    "baseline_matching_scores_1": true,
+    "baseline_perturbed_scores_0": true,
+    "deletion_flips_correct_state_to_0": true,
+    "poisoning_flips_original_state_to_0": true,
+    "poisoning_matched_state_scores_1": true,
+    "policy_moved_with_golden_field": true,
+    "public_fact_change_still_scores_1": true
+  },
+  "overall_passed": true,
+  "claim_boundary": "Paired-intervention audit of one external benchmark's reward dependence structure on one retail task, executed offline with synthetic agent states (zero LLM calls). Demonstrates the golden-actions replay signature; no claim about tau-bench task quality, other splits, or agent behavior.",
+  "generated_at_utc": "2026-08-31T04:37:31.037654+00:00"
+}
