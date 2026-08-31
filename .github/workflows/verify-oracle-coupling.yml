@@ -1,0 +1,61 @@
+name: verify-oracle-coupling
+
+on:
+  push:
+    paths:
+      - "code/runners/oracle-coupling/**"
+      - "data/reproduction/oracle-coupling/**"
+      - "fixtures/oracle-coupling/**"
+      - ".github/workflows/verify-oracle-coupling.yml"
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Manifest verification (all seven components)
+        run: |
+          python code/runners/oracle-coupling/verify_all.py | tee verify_all.json
+          python - <<'EOF'
+          import json
+          d = json.load(open("verify_all.json"))
+          assert d["passed"] and d["verified_components"] == d["component_count"], d
+          print("verified:", d["verified_components"], "/", d["component_count"])
+          EOF
+
+      - name: Unit tests (runnable modules; invariant_external_boundary_v1 requires the pinned external source and is verified via its manifest above)
+        run: |
+          set -e
+          for f in failure_to_executable_contract_v2 \
+                   oracle_independent_compiler_v1 \
+                   metamorphic_public_input_v1 \
+                   hardened_state_adapter_v1 \
+                   second_harness_audit_v1 \
+                   executed_counterfactual_v1; do
+            echo "=== $f ==="
+            python -m unittest discover -s "code/runners/oracle-coupling/$f/tests"
+          done
+
+      - name: Executed-counterfactual regeneration check (informational determinism witness)
+        run: |
+          python code/runners/oracle-coupling/executed_counterfactual_v1/run_counterfactual.py | tee ecf_run.json
+          python - <<'EOF'
+          import json
+          d = json.load(open("ecf_run.json"))
+          assert d["overall_passed"] is True, d
+          print("ECF-v1 regenerated and passed on third-party environment")
+          EOF
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verification-outputs
+          path: |
+            verify_all.json
+            ecf_run.json
