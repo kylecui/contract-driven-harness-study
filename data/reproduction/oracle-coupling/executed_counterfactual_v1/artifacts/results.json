@@ -1,0 +1,84 @@
+{
+  "protocol_id": "ECF-v1",
+  "fixture_id": "D-ST-01",
+  "interventions": {
+    "target_counterfactual": {
+      "field": "expected_output.state_patch[0].to",
+      "old": "approved",
+      "new": "on_hold"
+    },
+    "evidence_counterfactual": {
+      "field": "expected_output.evidence_bindings[decision].evidence_ids",
+      "old": [
+        "EV-AUTH-01"
+      ],
+      "new": [
+        "EV-NOTE-01"
+      ]
+    }
+  },
+  "cases": [
+    {
+      "label": "baseline_canonical",
+      "accepted": true,
+      "reason_codes": [],
+      "wrote": true,
+      "before_hash": "6d6d90935a641fe552f7bf5b67f3341940a681c449cc45472e1e0c06a970a48b",
+      "after_hash": "3e32183d39a9667d8d7a71000b105256b3a92b3cc25ac0ec9710880e332fe276",
+      "observed_project_status": "approved",
+      "passed": true
+    },
+    {
+      "label": "target_cf_canonical_rejected",
+      "accepted": false,
+      "reason_codes": [
+        "wrong_target_state"
+      ],
+      "wrote": false,
+      "before_hash": "6d6d90935a641fe552f7bf5b67f3341940a681c449cc45472e1e0c06a970a48b",
+      "after_hash": "6d6d90935a641fe552f7bf5b67f3341940a681c449cc45472e1e0c06a970a48b",
+      "observed_project_status": "pending",
+      "passed": true
+    },
+    {
+      "label": "target_cf_adapted_writes_replacement",
+      "accepted": true,
+      "reason_codes": [],
+      "wrote": true,
+      "before_hash": "6d6d90935a641fe552f7bf5b67f3341940a681c449cc45472e1e0c06a970a48b",
+      "after_hash": "03bf00c378c45ef2df31de6c9a25810e97f2b0c226de878030752208cac2e90e",
+      "observed_project_status": "on_hold",
+      "passed": true
+    },
+    {
+      "label": "evidence_cf_canonical_rejected",
+      "accepted": false,
+      "reason_codes": [
+        "decision_evidence_mismatch"
+      ],
+      "wrote": false,
+      "before_hash": "6d6d90935a641fe552f7bf5b67f3341940a681c449cc45472e1e0c06a970a48b",
+      "after_hash": "6d6d90935a641fe552f7bf5b67f3341940a681c449cc45472e1e0c06a970a48b",
+      "observed_project_status": "pending",
+      "passed": true
+    },
+    {
+      "label": "evidence_cf_distractor_binding_accepted",
+      "accepted": true,
+      "reason_codes": [],
+      "wrote": true,
+      "before_hash": "6d6d90935a641fe552f7bf5b67f3341940a681c449cc45472e1e0c06a970a48b",
+      "after_hash": "3e32183d39a9667d8d7a71000b105256b3a92b3cc25ac0ec9710880e332fe276",
+      "observed_project_status": "approved",
+      "passed": true
+    }
+  ],
+  "checks": {
+    "baseline_writes_expected_destination": true,
+    "target_redirects_accepted_write": true,
+    "evidence_requires_distractor": true
+  },
+  "overall_passed": true,
+  "claim_boundary": "Mechanism witnesses on one controlled-transition fixture: they establish that answer-derived fields reach the write point. Not task samples; no prevalence, repair-direction, or cross-grammar claim.",
+  "generated_at_utc": "2026-08-31T03:27:38.188494+00:00"
+}

@@ -48,6 +48,9 @@ def main() -> int:
         run_verifier(
             "code/runners/oracle-coupling/invariant_external_boundary_v1/verify_manifest.py"
         ),
+        run_verifier(
+            "code/runners/oracle-coupling/executed_counterfactual_v1/verify_manifest.py"
+        ),
     ]
     failures = [failure for result in results for failure in result["failures"]]
     print(
